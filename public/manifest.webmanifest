@@ -1,0 +1,16 @@
+{
+  "name": "SAP TM Master Pro",
+  "short_name": "SAP TM Pro",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0F172A",
+  "theme_color": "#0F172A",
+  "description": "Premium SAP S/4HANA Transportation Management learning platform",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

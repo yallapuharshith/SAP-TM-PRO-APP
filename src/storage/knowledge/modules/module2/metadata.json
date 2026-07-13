@@ -1,0 +1,9 @@
+{
+  "id": "module2",
+  "title": "Execution and Tendering",
+  "description": "Freight order lifecycle, tendering, events, and collaboration.",
+  "unitCount": 2,
+  "topicCount": 5,
+  "recommendedHours": 7,
+  "difficulty": "Intermediate"
+}

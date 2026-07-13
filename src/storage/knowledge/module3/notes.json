@@ -1,0 +1,16 @@
+﻿[
+  {
+    "id": "module3.N1",
+    "module": "module3",
+    "topicId": "module3.T1",
+    "title": "Placeholder note title",
+    "summary": "Placeholder note summary",
+    "fullContent": "Placeholder note content",
+    "importantPoints": ["Placeholder point"],
+    "consultantNotes": ["Placeholder consultant note"],
+    "realWorldExamples": ["Placeholder real-world example"],
+    "commonMistakes": ["Placeholder common mistake"],
+    "interviewQuestions": ["Placeholder interview question"],
+    "revisionChecklist": ["Placeholder checklist item"]
+  }
+]

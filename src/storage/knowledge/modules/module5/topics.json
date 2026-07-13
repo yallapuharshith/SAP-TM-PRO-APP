@@ -1,0 +1,67 @@
+[
+  {
+    "id": "module5.T1",
+    "module": "module5",
+    "unit": "Unit 1",
+    "title": "Case Study Diagnostics",
+    "description": "Structured root-cause analysis for TM issues.",
+    "difficulty": "Hard",
+    "estimatedStudyTime": 50,
+    "prerequisites": ["module4.T3", "module3.T3"],
+    "relatedTopics": ["module5.T4"],
+    "revisionWeight": 1,
+    "tags": ["Case Study", "Diagnostics"]
+  },
+  {
+    "id": "module5.T2",
+    "module": "module5",
+    "unit": "Unit 1",
+    "title": "Certification Strategy",
+    "description": "Readiness patterns for SAP TM certification attempts.",
+    "difficulty": "Medium",
+    "estimatedStudyTime": 35,
+    "prerequisites": ["module1.T3", "module3.T3"],
+    "relatedTopics": ["module5.T3"],
+    "revisionWeight": 0.95,
+    "tags": ["Certification", "Readiness"]
+  },
+  {
+    "id": "module5.T3",
+    "module": "module5",
+    "unit": "Unit 1",
+    "title": "Interview Readiness",
+    "description": "Consultant-level interview and scenario answers.",
+    "difficulty": "Medium",
+    "estimatedStudyTime": 40,
+    "prerequisites": ["module5.T2"],
+    "relatedTopics": ["module2.T5"],
+    "revisionWeight": 0.9,
+    "tags": ["Interview", "Consultant"]
+  },
+  {
+    "id": "module5.T4",
+    "module": "module5",
+    "unit": "Unit 2",
+    "title": "Adaptive Revision Playbook",
+    "description": "Targeted revision using weak-topic and wrong-answer loops.",
+    "difficulty": "Hard",
+    "estimatedStudyTime": 45,
+    "prerequisites": ["module5.T1"],
+    "relatedTopics": ["module5.T2"],
+    "revisionWeight": 1,
+    "tags": ["Revision", "Adaptive"]
+  },
+  {
+    "id": "module5.T5",
+    "module": "module5",
+    "unit": "Unit 2",
+    "title": "Project Simulation",
+    "description": "End-to-end project scenario solving for confidence.",
+    "difficulty": "Hard",
+    "estimatedStudyTime": 60,
+    "prerequisites": ["module2.T4", "module3.T5", "module4.T5"],
+    "relatedTopics": ["module5.T1"],
+    "revisionWeight": 1,
+    "tags": ["Simulation", "Project"]
+  }
+]

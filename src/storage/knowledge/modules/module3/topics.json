@@ -1,0 +1,67 @@
+[
+  {
+    "id": "module3.T1",
+    "module": "module3",
+    "unit": "Unit 1",
+    "title": "Charge Type Foundations",
+    "description": "Modeling transportation cost components.",
+    "difficulty": "Easy",
+    "estimatedStudyTime": 30,
+    "prerequisites": ["module1.T1"],
+    "relatedTopics": ["module3.T2"],
+    "revisionWeight": 0.82,
+    "tags": ["Charges", "Cost"]
+  },
+  {
+    "id": "module3.T2",
+    "module": "module3",
+    "unit": "Unit 1",
+    "title": "Rate Determination",
+    "description": "Rate tables and pricing conditions.",
+    "difficulty": "Medium",
+    "estimatedStudyTime": 35,
+    "prerequisites": ["module3.T1"],
+    "relatedTopics": ["module3.T3"],
+    "revisionWeight": 0.9,
+    "tags": ["Rates", "Pricing"]
+  },
+  {
+    "id": "module3.T3",
+    "module": "module3",
+    "unit": "Unit 1",
+    "title": "Freight Settlement Preconditions",
+    "description": "Execution status and settlement readiness.",
+    "difficulty": "Hard",
+    "estimatedStudyTime": 40,
+    "prerequisites": ["module2.T1", "module3.T2"],
+    "relatedTopics": ["module5.T5"],
+    "revisionWeight": 1,
+    "tags": ["Settlement", "Finance"]
+  },
+  {
+    "id": "module3.T4",
+    "module": "module3",
+    "unit": "Unit 2",
+    "title": "Charge Troubleshooting",
+    "description": "Diagnostics for pricing and settlement failures.",
+    "difficulty": "Hard",
+    "estimatedStudyTime": 45,
+    "prerequisites": ["module3.T3"],
+    "relatedTopics": ["module5.T1"],
+    "revisionWeight": 0.95,
+    "tags": ["Troubleshooting", "Charge Trace"]
+  },
+  {
+    "id": "module3.T5",
+    "module": "module3",
+    "unit": "Unit 2",
+    "title": "Partial and Final Settlement",
+    "description": "Settlement orchestration patterns by process state.",
+    "difficulty": "Medium",
+    "estimatedStudyTime": 35,
+    "prerequisites": ["module3.T3"],
+    "relatedTopics": ["module2.T4"],
+    "revisionWeight": 0.87,
+    "tags": ["Settlement", "Lifecycle"]
+  }
+]

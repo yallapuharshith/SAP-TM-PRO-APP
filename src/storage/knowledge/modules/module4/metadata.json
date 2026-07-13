@@ -1,0 +1,9 @@
+{
+  "id": "module4",
+  "title": "Master Data and Integration",
+  "description": "Locations, resources, ERP integration, and data governance.",
+  "unitCount": 2,
+  "topicCount": 5,
+  "recommendedHours": 8,
+  "difficulty": "Intermediate"
+}

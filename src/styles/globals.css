@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --bg-app: #0f172a;
+  --text-app: #f8fafc;
+  --glass-bg: rgba(30, 41, 59, 0.6);
+}
+
+:root:not(.dark) {
+  color-scheme: light;
+  --bg-app: #eaf2ff;
+  --text-app: #0f172a;
+  --glass-bg: rgba(248, 250, 252, 0.7);
+}
+
+* {
+  @apply border-slate-700;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg-app);
+  color: var(--text-app);
+  font-family: Manrope, 'Segoe UI', sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+.glass-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(14px);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(148, 163, 184, 0.08);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: linear-gradient(#2563eb, #06b6d4);
+}

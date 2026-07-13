@@ -1,0 +1,33 @@
+[
+  {
+    "id": "module1.N1",
+    "module": "module1",
+    "topicId": "module1.T1",
+    "title": "Freight Unit Building Rule Essentials",
+    "summary": "FUBR defines split, merge, and relevance behavior for demand conversion.",
+    "fullContent": "Freight Unit Building Rule configuration determines how demand documents transform into freight units. Core controls include grouping dimensions, split triggers, and relevance checks.",
+    "importantPoints": [
+      "Map business split logic by plant, route, and delivery date",
+      "Align FU granularity with planning strategy",
+      "Validate document relevance preconditions"
+    ],
+    "consultantNotes": [
+      "Audit FUBR after each release transport",
+      "Keep a regression matrix for key delivery types"
+    ],
+    "realWorldExamples": [
+      "Regional dispatch center splits FU by delivery zone and loading day"
+    ],
+    "commonMistakes": [
+      "Over-splitting FU causing excessive planning complexity"
+    ],
+    "interviewQuestions": [
+      "How would you tune FUBR for mixed pallet and parcel flows?"
+    ],
+    "revisionChecklist": [
+      "Review split conditions",
+      "Verify determination logs",
+      "Test with representative demand set"
+    ]
+  }
+]

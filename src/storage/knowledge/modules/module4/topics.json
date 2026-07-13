@@ -1,0 +1,67 @@
+[
+  {
+    "id": "module4.T1",
+    "module": "module4",
+    "unit": "Unit 1",
+    "title": "Location and Lane Modeling",
+    "description": "Building a reliable transportation network.",
+    "difficulty": "Easy",
+    "estimatedStudyTime": 30,
+    "prerequisites": [],
+    "relatedTopics": ["module1.T2"],
+    "revisionWeight": 0.84,
+    "tags": ["Locations", "Lanes"]
+  },
+  {
+    "id": "module4.T2",
+    "module": "module4",
+    "unit": "Unit 1",
+    "title": "Business Partners and Roles",
+    "description": "Role assignment and process ownership.",
+    "difficulty": "Medium",
+    "estimatedStudyTime": 35,
+    "prerequisites": ["module4.T1"],
+    "relatedTopics": ["module2.T2"],
+    "revisionWeight": 0.86,
+    "tags": ["Business Partner", "Roles"]
+  },
+  {
+    "id": "module4.T3",
+    "module": "module4",
+    "unit": "Unit 1",
+    "title": "Embedded TM Integration",
+    "description": "Demand document replication and relevance controls.",
+    "difficulty": "Medium",
+    "estimatedStudyTime": 40,
+    "prerequisites": ["module1.T1"],
+    "relatedTopics": ["module5.T1"],
+    "revisionWeight": 0.92,
+    "tags": ["Integration", "Embedded TM"]
+  },
+  {
+    "id": "module4.T4",
+    "module": "module4",
+    "unit": "Unit 2",
+    "title": "Incoterms and Responsibility",
+    "description": "Planning boundaries from trade terms.",
+    "difficulty": "Easy",
+    "estimatedStudyTime": 25,
+    "prerequisites": ["module4.T3"],
+    "relatedTopics": ["module1.T1"],
+    "revisionWeight": 0.8,
+    "tags": ["Incoterms", "Ownership"]
+  },
+  {
+    "id": "module4.T5",
+    "module": "module4",
+    "unit": "Unit 2",
+    "title": "Data Quality and Governance",
+    "description": "Preventing duplicate and inconsistent transactional flow.",
+    "difficulty": "Hard",
+    "estimatedStudyTime": 45,
+    "prerequisites": ["module4.T3"],
+    "relatedTopics": ["module5.T4"],
+    "revisionWeight": 1,
+    "tags": ["Data Quality", "Governance"]
+  }
+]

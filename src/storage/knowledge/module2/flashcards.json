@@ -1,0 +1,11 @@
+﻿[
+  {
+    "id": "module2.F1",
+    "module": "module2",
+    "topicId": "module2.T1",
+    "front": "Placeholder flashcard front",
+    "back": "Placeholder flashcard back",
+    "difficulty": "Medium",
+    "tags": ["placeholder", "flashcard"]
+  }
+]

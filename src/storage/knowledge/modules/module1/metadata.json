@@ -1,0 +1,9 @@
+{
+  "id": "module1",
+  "title": "Transportation Planning Foundation",
+  "description": "Core planning entities, FU creation, and network fundamentals.",
+  "unitCount": 2,
+  "topicCount": 5,
+  "recommendedHours": 6,
+  "difficulty": "Beginner"
+}

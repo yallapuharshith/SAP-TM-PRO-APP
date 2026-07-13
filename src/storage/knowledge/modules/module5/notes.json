@@ -1,0 +1,32 @@
+[
+  {
+    "id": "module5.N1",
+    "module": "module5",
+    "topicId": "module5.T4",
+    "title": "Adaptive Revision Strategy",
+    "summary": "Revision efficiency improves using weak-topic and wrong-answer loops.",
+    "fullContent": "Adaptive revision schedules prioritize high-revision-weight topics, recent mistakes, and lower-confidence domains.",
+    "importantPoints": [
+      "Review weak topics daily",
+      "Re-attempt wrong questions in spaced intervals",
+      "Pair consultant notes with practice"
+    ],
+    "consultantNotes": [
+      "A 20-minute targeted revision block is often enough for retention"
+    ],
+    "realWorldExamples": [
+      "Learners improved mock score by 14% with adaptive queues"
+    ],
+    "commonMistakes": [
+      "Repeating solved easy topics while ignoring weak areas"
+    ],
+    "interviewQuestions": [
+      "How do you build a data-driven revision strategy?"
+    ],
+    "revisionChecklist": [
+      "Rank weak topics",
+      "Review consultant notes",
+      "Practice adaptive set"
+    ]
+  }
+]

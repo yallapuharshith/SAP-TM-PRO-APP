@@ -1,0 +1,11 @@
+﻿[
+  {
+    "id": "module1.I1",
+    "module": "module1",
+    "topicId": "module1.T1",
+    "question": "Placeholder interview question",
+    "answerGuide": "Placeholder answer guidance",
+    "difficulty": "Medium",
+    "tags": ["placeholder", "interview"]
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "module4.N1",
+    "module": "module4",
+    "topicId": "module4.T3",
+    "title": "Embedded TM Integration Controls",
+    "summary": "Replication quality and transport relevance govern planning readiness.",
+    "fullContent": "Embedded integration reliability is achieved by controlled relevance determination, robust ID mappings, and duplicate-safe inbound processing.",
+    "importantPoints": [
+      "Confirm transport relevance at source",
+      "Track inbound processing IDs",
+      "Enforce duplicate check controls"
+    ],
+    "consultantNotes": [
+      "Maintain integration test scripts across transport cycles"
+    ],
+    "realWorldExamples": [
+      "Duplicate FO creation eliminated after idempotency key enforcement"
+    ],
+    "commonMistakes": [
+      "Assuming replication equals planning readiness"
+    ],
+    "interviewQuestions": [
+      "How do you prevent duplicate processing in TM integration?"
+    ],
+    "revisionChecklist": [
+      "Run relevance validation",
+      "Inspect processing logs",
+      "Verify idempotency behavior"
+    ]
+  }
+]

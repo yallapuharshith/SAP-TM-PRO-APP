@@ -1,0 +1,21 @@
+﻿[
+  {
+    "id": "module5.Q1",
+    "module": "module5",
+    "unit": "Unit 1",
+    "topic": "module5.T1",
+    "subTopic": "Placeholder sub-topic",
+    "difficulty": "Medium",
+    "questionType": "single_correct",
+    "question": "Placeholder question text",
+    "options": [
+      { "id": "A", "text": "Placeholder option A" },
+      { "id": "B", "text": "Placeholder option B" }
+    ],
+    "answer": "A",
+    "explanation": "Placeholder explanation",
+    "estimatedTime": 90,
+    "negativeMarks": 0,
+    "tags": ["placeholder"]
+  }
+]

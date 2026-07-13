@@ -1,0 +1,32 @@
+[
+  {
+    "id": "module3.N1",
+    "module": "module3",
+    "topicId": "module3.T3",
+    "title": "Freight Settlement Readiness",
+    "summary": "Settlement requires complete execution and accurate pricing structures.",
+    "fullContent": "Freight settlement orchestration depends on status progression, charge completeness, and finance integration controls.",
+    "importantPoints": [
+      "Validate settlement profile mapping",
+      "Confirm all charge lines are calculated",
+      "Ensure execution status is compliant"
+    ],
+    "consultantNotes": [
+      "Use charge trace and status snapshots in troubleshooting workshops"
+    ],
+    "realWorldExamples": [
+      "A project reduced settlement failures by adding status gate validation"
+    ],
+    "commonMistakes": [
+      "Running settlement before event completion"
+    ],
+    "interviewQuestions": [
+      "How do you debug settlement block reasons quickly?"
+    ],
+    "revisionChecklist": [
+      "Check status chain",
+      "Review charge completeness",
+      "Verify finance posting preconditions"
+    ]
+  }
+]

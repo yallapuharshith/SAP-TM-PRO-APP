@@ -1,0 +1,32 @@
+[
+  {
+    "id": "module2.N1",
+    "module": "module2",
+    "topicId": "module2.T2",
+    "title": "Tendering Strategy Playbook",
+    "summary": "Tendering success depends on realistic planning constraints and communication fallback.",
+    "fullContent": "Carrier tender acceptance rates improve when pickup windows, transit assumptions, and SLA commitments are realistic and traceable.",
+    "importantPoints": [
+      "Define fallback carrier hierarchy",
+      "Use SLA-compatible tender windows",
+      "Track rejection reasons for continuous tuning"
+    ],
+    "consultantNotes": [
+      "Start with limited pilot lanes before global rollout"
+    ],
+    "realWorldExamples": [
+      "A shipper reduced rejection by 22% after lane-specific pickup calibration"
+    ],
+    "commonMistakes": [
+      "Ignoring calendar mismatch between shipper and carrier"
+    ],
+    "interviewQuestions": [
+      "How do you design fallback tendering strategy in SAP TM?"
+    ],
+    "revisionChecklist": [
+      "Validate calendar assumptions",
+      "Review rejection dashboards",
+      "Test fallback sequence"
+    ]
+  }
+]

@@ -1,0 +1,67 @@
+[
+  {
+    "id": "module1.T1",
+    "module": "module1",
+    "unit": "Unit 1",
+    "title": "Freight Unit Building Rule",
+    "description": "Design FU split and consolidation logic.",
+    "difficulty": "Easy",
+    "estimatedStudyTime": 30,
+    "prerequisites": [],
+    "relatedTopics": ["module1.T2"],
+    "revisionWeight": 0.9,
+    "tags": ["FUBR", "Planning"]
+  },
+  {
+    "id": "module1.T2",
+    "module": "module1",
+    "unit": "Unit 1",
+    "title": "Transportation Network Basics",
+    "description": "Locations, lanes, and planning relevance.",
+    "difficulty": "Medium",
+    "estimatedStudyTime": 35,
+    "prerequisites": ["module1.T1"],
+    "relatedTopics": ["module4.T1"],
+    "revisionWeight": 0.85,
+    "tags": ["Network", "Lanes"]
+  },
+  {
+    "id": "module1.T3",
+    "module": "module1",
+    "unit": "Unit 1",
+    "title": "Optimizer Fundamentals",
+    "description": "Constraint and objective design for planning quality.",
+    "difficulty": "Hard",
+    "estimatedStudyTime": 45,
+    "prerequisites": ["module1.T2"],
+    "relatedTopics": ["module5.T3"],
+    "revisionWeight": 1,
+    "tags": ["Optimizer", "Constraints"]
+  },
+  {
+    "id": "module1.T4",
+    "module": "module1",
+    "unit": "Unit 2",
+    "title": "Transportation Cockpit",
+    "description": "Interactive planning and manual assignment.",
+    "difficulty": "Medium",
+    "estimatedStudyTime": 40,
+    "prerequisites": ["module1.T1"],
+    "relatedTopics": ["module2.T2"],
+    "revisionWeight": 0.8,
+    "tags": ["Cockpit", "Manual Planning"]
+  },
+  {
+    "id": "module1.T5",
+    "module": "module1",
+    "unit": "Unit 2",
+    "title": "Constraint Management",
+    "description": "Incompatibility settings and consolidation boundaries.",
+    "difficulty": "Medium",
+    "estimatedStudyTime": 30,
+    "prerequisites": ["module1.T3"],
+    "relatedTopics": ["module3.T1"],
+    "revisionWeight": 0.88,
+    "tags": ["Constraints", "Consolidation"]
+  }
+]

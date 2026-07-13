@@ -1,0 +1,15 @@
+﻿[
+  {
+    "id": "module4.R1",
+    "module": "module4",
+    "topicId": "module4.T1",
+    "title": "Placeholder revision title",
+    "summary": "Placeholder revision summary",
+    "checklist": [
+      "Placeholder checklist item 1",
+      "Placeholder checklist item 2"
+    ],
+    "priority": 1,
+    "tags": ["placeholder", "revision"]
+  }
+]

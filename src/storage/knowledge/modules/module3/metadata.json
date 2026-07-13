@@ -1,0 +1,9 @@
+{
+  "id": "module3",
+  "title": "Charge and Settlement",
+  "description": "Costing, rate determination, and settlement orchestration.",
+  "unitCount": 2,
+  "topicCount": 5,
+  "recommendedHours": 8,
+  "difficulty": "Intermediate"
+}

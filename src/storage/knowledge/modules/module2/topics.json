@@ -1,0 +1,67 @@
+[
+  {
+    "id": "module2.T1",
+    "module": "module2",
+    "unit": "Unit 1",
+    "title": "Freight Order Lifecycle",
+    "description": "Statuses and execution controls.",
+    "difficulty": "Easy",
+    "estimatedStudyTime": 30,
+    "prerequisites": ["module1.T1"],
+    "relatedTopics": ["module2.T2"],
+    "revisionWeight": 0.82,
+    "tags": ["Execution", "FO"]
+  },
+  {
+    "id": "module2.T2",
+    "module": "module2",
+    "unit": "Unit 1",
+    "title": "Tendering Strategy",
+    "description": "Carrier communication and fallback rules.",
+    "difficulty": "Medium",
+    "estimatedStudyTime": 35,
+    "prerequisites": ["module2.T1"],
+    "relatedTopics": ["module2.T5"],
+    "revisionWeight": 0.9,
+    "tags": ["Tendering", "Carrier"]
+  },
+  {
+    "id": "module2.T3",
+    "module": "module2",
+    "unit": "Unit 1",
+    "title": "Event Management",
+    "description": "Milestone-driven execution visibility.",
+    "difficulty": "Medium",
+    "estimatedStudyTime": 35,
+    "prerequisites": ["module2.T1"],
+    "relatedTopics": ["module3.T2"],
+    "revisionWeight": 0.9,
+    "tags": ["Events", "Visibility"]
+  },
+  {
+    "id": "module2.T4",
+    "module": "module2",
+    "unit": "Unit 2",
+    "title": "Collaborative Execution",
+    "description": "Carrier acceptance and execution monitoring.",
+    "difficulty": "Hard",
+    "estimatedStudyTime": 45,
+    "prerequisites": ["module2.T2", "module2.T3"],
+    "relatedTopics": ["module5.T2"],
+    "revisionWeight": 1,
+    "tags": ["Collaboration", "Lifecycle"]
+  },
+  {
+    "id": "module2.T5",
+    "module": "module2",
+    "unit": "Unit 2",
+    "title": "Operational Scenario Handling",
+    "description": "Late events and tender rejection playbooks.",
+    "difficulty": "Hard",
+    "estimatedStudyTime": 50,
+    "prerequisites": ["module2.T4"],
+    "relatedTopics": ["module5.T4"],
+    "revisionWeight": 1,
+    "tags": ["Scenario", "Operations"]
+  }
+]

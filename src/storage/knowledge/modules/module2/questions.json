@@ -1,0 +1,5241 @@
+[
+  {
+    "id": "M2Q001",
+    "module": "module2",
+    "unit": "Unit 1",
+    "topic": "module2.T1",
+    "subTopic": "FO Lifecycle",
+    "difficulty": "Easy",
+    "questionType": "single_correct",
+    "question": "What is typically required before operational freight order execution?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Carrier assignment"
+      },
+      {
+        "id": "B",
+        "text": "Printer template"
+      },
+      {
+        "id": "C",
+        "text": "Warehouse queue release"
+      },
+      {
+        "id": "D",
+        "text": "Route color profile"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Carrier assignment is a key precondition for execution processes.",
+    "consultantTip": "Add status checks before release.",
+    "realProjectScenario": "Execution release failed due to missing carrier assignment.",
+    "commonMistake": "Releasing FO prematurely.",
+    "sapConfiguration": [
+      "Execution Status Management"
+    ],
+    "sapTransactions": [
+      "/SCMTMS/TOR"
+    ],
+    "sapTables": [
+      "/SCMTMS/D_TORROT"
+    ],
+    "interviewQuestion": "How do you enforce FO readiness checks?",
+    "certificationReference": "TM Execution",
+    "estimatedTime": 90,
+    "negativeMarks": 0.5,
+    "tags": [
+      "Execution",
+      "FO"
+    ]
+  },
+  {
+    "id": "M2Q002",
+    "module": "module2",
+    "unit": "Unit 1",
+    "topic": "module2.T2",
+    "subTopic": "Tendering Document",
+    "difficulty": "Medium",
+    "questionType": "single_correct",
+    "question": "Which document is typically sent to a carrier during tendering?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Freight order"
+      },
+      {
+        "id": "B",
+        "text": "Freight unit"
+      },
+      {
+        "id": "C",
+        "text": "Settlement document"
+      },
+      {
+        "id": "D",
+        "text": "Billing request"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Tendering flow is usually based on freight orders.",
+    "consultantTip": "Keep tender output channels resilient.",
+    "realProjectScenario": "Tender response SLA improved after output queue monitoring.",
+    "commonMistake": "Skipping fallback tendering setup.",
+    "sapConfiguration": [
+      "Tendering Strategy",
+      "Carrier Communication"
+    ],
+    "sapTransactions": [
+      "/SCMTMS/TEND"
+    ],
+    "sapTables": [
+      "/SCMTMS/D_TOR"
+    ],
+    "interviewQuestion": "How do you implement fallback tendering?",
+    "certificationReference": "TM Tendering",
+    "estimatedTime": 90,
+    "negativeMarks": 0.5,
+    "tags": [
+      "Tendering",
+      "Carrier"
+    ]
+  },
+  {
+    "id": "M2Q003",
+    "module": "module2",
+    "unit": "Unit 1",
+    "topic": "module2.T3",
+    "subTopic": "Event Visibility",
+    "difficulty": "Medium",
+    "questionType": "true_false",
+    "question": "Event updates improve execution visibility and downstream process control.",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Milestone event updates drive status progression and transparency.",
+    "consultantTip": "Prioritize key event mappings with transport partners.",
+    "realProjectScenario": "ETA reliability improved after telematics events integration.",
+    "commonMistake": "Not validating event timeliness.",
+    "sapConfiguration": [
+      "Event Management Profiles"
+    ],
+    "sapTransactions": [
+      "/SCMTMS/EM"
+    ],
+    "sapTables": [
+      "/SCMTMS/D_EVT"
+    ],
+    "interviewQuestion": "How do delayed events impact operations?",
+    "certificationReference": "TM Event Management",
+    "estimatedTime": 80,
+    "negativeMarks": 0.5,
+    "tags": [
+      "Events",
+      "Visibility"
+    ]
+  },
+  {
+    "id": "M2Q004",
+    "module": "module2",
+    "unit": "Unit 2",
+    "topic": "module2.T4",
+    "subTopic": "Execution Sequence",
+    "difficulty": "Hard",
+    "questionType": "sequence",
+    "question": "Arrange collaborative execution sequence.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tender Sent"
+      },
+      {
+        "id": "B",
+        "text": "Tender Accepted"
+      },
+      {
+        "id": "C",
+        "text": "Departure Event"
+      },
+      {
+        "id": "D",
+        "text": "Proof of Delivery"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "explanation": "Tender acceptance precedes physical movement and final delivery event.",
+    "consultantTip": "Use event-driven status audits.",
+    "realProjectScenario": "Missing acceptance event caused tracking gaps.",
+    "commonMistake": "Expecting POD without proper milestone chain.",
+    "sapConfiguration": [
+      "Milestone Status Mapping"
+    ],
+    "sapTransactions": [
+      "/SCMTMS/TOR"
+    ],
+    "sapTables": [
+      "/SCMTMS/D_TORSTAT"
+    ],
+    "interviewQuestion": "How do you debug execution milestone gaps?",
+    "certificationReference": "TM Execution Flow",
+    "estimatedTime": 150,
+    "negativeMarks": 1,
+    "tags": [
+      "Sequence",
+      "Execution"
+    ]
+  },
+  {
+    "id": "M2Q005",
+    "module": "module2",
+    "unit": "Unit 2",
+    "topic": "module2.T5",
+    "subTopic": "Tender Rejection Scenario",
+    "difficulty": "Hard",
+    "questionType": "case_study",
+    "question": "Carriers reject tenders due to unrealistic pickup windows. Best root-fix?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Refine planning calendars and loading durations"
+      },
+      {
+        "id": "B",
+        "text": "Disable tendering"
+      },
+      {
+        "id": "C",
+        "text": "Delete old freight orders"
+      },
+      {
+        "id": "D",
+        "text": "Skip status checks"
+      }
+    ],
+    "answer": "A",
+    "explanation": "Operational constraints must reflect physical and contractual reality.",
+    "consultantTip": "Validate assumptions with carrier operations.",
+    "realProjectScenario": "Schedule calibration reduced tender rejection by 18%.",
+    "commonMistake": "Treating rejection as communication issue only.",
+    "sapConfiguration": [
+      "Resource Calendar",
+      "Loading Duration"
+    ],
+    "sapTransactions": [
+      "/SCMTMS/RES01"
+    ],
+    "sapTables": [
+      "/SCMTMS/D_CAL"
+    ],
+    "interviewQuestion": "How do you align planning constraints with carrier SLAs?",
+    "certificationReference": "TM Scenario Readiness",
+    "estimatedTime": 160,
+    "negativeMarks": 1,
+    "tags": [
+      "Case Study",
+      "Tendering",
+      "Calendar"
+    ]
+  },
+  {
+    "id": "M2T1Q001",
+    "module": "module2",
+    "unit": "Topic 1",
+    "topic": "SAP Transportation Management",
+    "subTopic": "Purpose of SAP TM",
+    "difficulty": "Certification",
+    "questionType": "single_correct",
+    "question": "What is the PRIMARY objective of SAP Transportation Management (SAP TM)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "To manage warehouse bin determination."
+      },
+      {
+        "id": "B",
+        "text": "To optimize transportation planning, execution, freight costing, and settlement across the logistics network."
+      },
+      {
+        "id": "C",
+        "text": "To maintain financial accounting documents."
+      },
+      {
+        "id": "D",
+        "text": "To perform production planning."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "SAP TM is designed to plan, optimize, execute, monitor, charge, and settle transportation processes across multiple transportation modes.",
+    "consultantTip": "Transportation Planning + Execution + Freight Costing + Settlement = SAP TM.",
+    "realProjectScenario": "A global manufacturer reduced transportation cost by consolidating shipments through SAP TM optimization.",
+    "commonMistake": "Confusing SAP TM responsibilities with SAP EWM warehouse operations.",
+    "sapConfiguration": [
+      "Transportation Management Basic Settings"
+    ],
+    "sapTransactions": [
+      "/SCMTMS/PLN"
+    ],
+    "sapTables": [
+      "/SCMTMS/D_TORROT"
+    ],
+    "interviewQuestion": "Why would a customer implement SAP TM instead of using only SD shipment functionality?",
+    "certificationReference": "SAP TM Fundamentals",
+    "estimatedTime": 120,
+    "negativeMarks": 1,
+    "tags": [
+      "TM",
+      "Overview",
+      "Planning"
+    ]
+  },
+  {
+    "id": "M2T1Q002",
+    "module": "module2",
+    "unit": "Topic 1",
+    "topic": "SAP Transportation Management",
+    "subTopic": "Business Benefits",
+    "difficulty": "Expert",
+    "questionType": "multiple_correct",
+    "question": "Which business benefits are typically achieved by implementing SAP Transportation Management?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Transportation planning optimization"
+      },
+      {
+        "id": "B",
+        "text": "Freight cost reduction through consolidation"
+      },
+      {
+        "id": "C",
+        "text": "Transportation visibility and event monitoring"
+      },
+      {
+        "id": "D",
+        "text": "Automatic elimination of every transportation delay"
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "SAP TM improves planning efficiency, shipment consolidation, carrier collaboration, visibility, and freight settlement. It cannot guarantee elimination of transportation delays.",
+    "consultantTip": "Beware of certification options containing absolute words like 'always' or 'every'.",
+    "realProjectScenario": "Shipment consolidation reduced transportation spend by 18% for a retail customer.",
+    "commonMistake": "Believing SAP TM eliminates operational transportation risks.",
+    "sapConfiguration": [],
+    "sapTransactions": [],
+    "sapTables": [],
+    "interviewQuestion": "Which KPIs usually improve after SAP TM implementation?",
+    "certificationReference": "SAP TM Benefits",
+    "estimatedTime": 150,
+    "negativeMarks": 1,
+    "tags": [
+      "Business Benefits",
+      "Optimization",
+      "TM"
+    ]
+  },
+  {
+    "id": "M2T1Q003",
+    "module": "module2",
+    "unit": "Topic 1",
+    "topic": "SAP Transportation Management",
+    "subTopic": "Embedded TM",
+    "difficulty": "Consultant",
+    "questionType": "scenario",
+    "question": "A customer running SAP S/4HANA wants transportation planning tightly integrated with Sales, Purchasing, Delivery Processing, and Finance while minimizing system interfaces. Which deployment option should the consultant recommend FIRST?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Embedded SAP TM"
+      },
+      {
+        "id": "B",
+        "text": "Standalone SAP TM without integration"
+      },
+      {
+        "id": "C",
+        "text": "Legacy LE-TRA"
+      },
+      {
+        "id": "D",
+        "text": "Manual transportation planning"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Embedded SAP TM provides native integration within SAP S/4HANA, reducing interfaces and simplifying master data synchronization.",
+    "consultantTip": "Embedded TM is the preferred deployment model for many new SAP S/4HANA implementations.",
+    "realProjectScenario": "A customer eliminated CIF-related integration complexity by adopting Embedded TM.",
+    "commonMistake": "Assuming standalone TM is always the recommended deployment.",
+    "sapConfiguration": [],
+    "sapTransactions": [],
+    "sapTables": [],
+    "interviewQuestion": "What are the advantages of Embedded TM over Standalone TM?",
+    "certificationReference": "Embedded TM",
+    "estimatedTime": 180,
+    "negativeMarks": 1,
+    "tags": [
+      "Embedded TM",
+      "Architecture",
+      "Integration"
+    ]
+  },
+  {
+    "id": "M2T1Q004",
+    "module": "module2",
+    "unit": "Topic 1",
+    "topic": "SAP Transportation Management",
+    "subTopic": "TM Scope",
+    "difficulty": "Certification",
+    "questionType": "assertion_reason",
+    "question": "Assertion (A): SAP TM manages transportation planning and execution. Reason (R): SAP TM supports transportation optimization, freight costing, carrier selection, execution, and freight settlement within one application.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Both Assertion and Reason are true, and Reason correctly explains Assertion."
+      },
+      {
+        "id": "B",
+        "text": "Both Assertion and Reason are true, but Reason does not correctly explain Assertion."
+      },
+      {
+        "id": "C",
+        "text": "Assertion is true, Reason is false."
+      },
+      {
+        "id": "D",
+        "text": "Assertion is false, Reason is true."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "SAP TM supports the complete transportation lifecycle from planning through freight settlement.",
+    "consultantTip": "Planning + Execution + Charges + Settlement is one continuous process.",
+    "realProjectScenario": "A freight order was planned, executed, freight costed, and settled without leaving SAP TM.",
+    "commonMistake": "Thinking SAP TM is only a planning application.",
+    "sapConfiguration": [],
+    "sapTransactions": [],
+    "sapTables": [],
+    "interviewQuestion": "Explain the end-to-end transportation lifecycle in SAP TM.",
+    "certificationReference": "SAP TM Overview",
+    "estimatedTime": 150,
+    "negativeMarks": 1,
+    "tags": [
+      "Lifecycle",
+      "TM",
+      "Planning"
+    ]
+  },
+  {
+    "id": "M2T1Q005",
+    "module": "module2",
+    "unit": "Topic 1",
+    "topic": "SAP Transportation Management",
+    "subTopic": "Implementation Decision",
+    "difficulty": "Architect",
+    "questionType": "case_study",
+    "question": "A logistics company currently plans shipments manually using spreadsheets. Freight costs are inconsistent, carrier utilization is poor, and there is no transportation visibility after shipment creation. Which SAP TM capability would provide the GREATEST overall business value?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Integrated transportation planning, optimization, execution monitoring, freight settlement, and carrier collaboration."
+      },
+      {
+        "id": "B",
+        "text": "Replacing SAP SD pricing procedures."
+      },
+      {
+        "id": "C",
+        "text": "Implementing only SAP GUI personalization."
+      },
+      {
+        "id": "D",
+        "text": "Creating additional manual transportation spreadsheets."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "SAP TM delivers end-to-end transportation management capabilities, enabling optimization, visibility, freight settlement, and carrier collaboration.",
+    "consultantTip": "When answering architect-level questions, focus on business transformation rather than isolated features.",
+    "realProjectScenario": "A 3PL provider implemented SAP TM and improved carrier utilization while reducing freight spend through optimized planning.",
+    "commonMistake": "Solving logistics problems with manual processes instead of integrated transportation management.",
+    "sapConfiguration": [],
+    "sapTransactions": [],
+    "sapTables": [],
+    "interviewQuestion": "How would you justify SAP TM to a logistics director?",
+    "certificationReference": "SAP TM Business Value",
+    "estimatedTime": 300,
+    "negativeMarks": 1,
+    "tags": [
+      "Architecture",
+      "Business Case",
+      "TM",
+      "Transportation"
+    ]
+  },
+  {
+    "id": "M2T1Q006",
+    "module": "module2",
+    "unit": "Topic 1",
+    "topic": "SAP Transportation Management",
+    "subTopic": "Standalone TM vs Embedded TM",
+    "difficulty": "Architect",
+    "questionType": "multiple_correct",
+    "question": "Which statements correctly compare Standalone SAP TM and Embedded SAP TM?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Embedded TM runs inside the SAP S/4HANA system."
+      },
+      {
+        "id": "B",
+        "text": "Standalone TM typically requires master and transactional data integration with ERP."
+      },
+      {
+        "id": "C",
+        "text": "Embedded TM completely eliminates every integration scenario."
+      },
+      {
+        "id": "D",
+        "text": "Standalone TM is often selected for highly distributed enterprise landscapes."
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "Embedded TM simplifies ERP integration because it resides within SAP S/4HANA, while Standalone TM requires integration. However, Embedded TM still integrates with systems such as EWM, GTS, external carriers, and tracking platforms.",
+    "consultantTip": "Embedded TM reduces-but does not eliminate-integration complexity.",
+    "realProjectScenario": "A customer migrated from Standalone TM to Embedded TM to remove CIF integration with ERP.",
+    "commonMistake": "Believing Embedded TM requires no interfaces.",
+    "sapConfiguration": [
+      "Basic TM Integration"
+    ],
+    "sapTransactions": [],
+    "sapTables": [],
+    "interviewQuestion": "When would you recommend Standalone TM instead of Embedded TM?",
+    "certificationReference": "Embedded TM Architecture",
+    "estimatedTime": 180,
+    "negativeMarks": 1,
+    "tags": [
+      "Embedded TM",
+      "Standalone TM",
+      "Architecture"
+    ]
+  },
+  {
+    "id": "M2T1Q007",
+    "module": "module2",
+    "unit": "Topic 1",
+    "topic": "SAP Transportation Management",
+    "subTopic": "LE-TRA vs SAP TM",
+    "difficulty": "Expert",
+    "questionType": "single_correct",
+    "question": "Which capability BEST differentiates SAP Transportation Management from classic LE-TRA?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Advanced transportation optimization and freight planning."
+      },
+      {
+        "id": "B",
+        "text": "Sales order processing."
+      },
+      {
+        "id": "C",
+        "text": "Material valuation."
+      },
+      {
+        "id": "D",
+        "text": "Financial document posting."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "SAP TM provides advanced planning, optimization, carrier selection, freight settlement, and transportation visibility beyond the capabilities of LE-TRA.",
+    "consultantTip": "LE-TRA focused primarily on shipment processing, whereas SAP TM manages the complete transportation lifecycle.",
+    "realProjectScenario": "A manufacturer replaced LE-TRA because optimization and carrier tendering were required.",
+    "commonMistake": "Thinking SAP TM is simply a renamed LE-TRA.",
+    "sapConfiguration": [],
+    "sapTransactions": [],
+    "sapTables": [],
+    "interviewQuestion": "Why did SAP replace LE-TRA with SAP TM?",
+    "certificationReference": "TM Overview",
+    "estimatedTime": 120,
+    "negativeMarks": 1,
+    "tags": [
+      "LE-TRA",
+      "TM",
+      "Migration"
+    ]
+  },
+  {
+    "id": "M2T1Q008",
+    "module": "module2",
+    "unit": "Topic 1",
+    "topic": "SAP Transportation Management",
+    "subTopic": "Transportation Cockpit",
+    "difficulty": "Consultant",
+    "questionType": "scenario",
+    "question": "A transportation planner must manually consolidate Freight Units, assign resources, monitor capacities, and create Freight Orders through a single planning interface. Which SAP TM application should be used?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Transportation Cockpit"
+      },
+      {
+        "id": "B",
+        "text": "Fiori Launchpad Designer"
+      },
+      {
+        "id": "C",
+        "text": "Business Partner Maintenance"
+      },
+      {
+        "id": "D",
+        "text": "Condition Technique"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Transportation Cockpit provides the central planning workspace for planners to perform manual transportation planning activities.",
+    "consultantTip": "Transportation Cockpit is one of the most frequently demonstrated applications during SAP TM implementations.",
+    "realProjectScenario": "Planners consolidated 120 Freight Units into optimized Freight Orders using Transportation Cockpit.",
+    "commonMistake": "Thinking the Cockpit is only for monitoring.",
+    "sapConfiguration": [
+      "Planning Profile",
+      "Selection Profile"
+    ],
+    "sapTransactions": [
+      "/SCMTMS/PLN"
+    ],
+    "sapTables": [],
+    "interviewQuestion": "What planning activities can be performed in Transportation Cockpit?",
+    "certificationReference": "Transportation Cockpit",
+    "estimatedTime": 180,
+    "negativeMarks": 1,
+    "tags": [
+      "Cockpit",
+      "Planning",
+      "Manual Planning"
+    ]
+  },
+  {
+    "id": "M2T1Q009",
+    "module": "module2",
+    "unit": "Topic 1",
+    "topic": "SAP Transportation Management",
+    "subTopic": "Transportation Planning",
+    "difficulty": "Architect",
+    "questionType": "assertion_reason",
+    "question": "Assertion (A): Transportation planning in SAP TM can be performed manually, automatically, or using optimization algorithms. Reason (R): SAP TM supports multiple planning strategies depending on business requirements, planning profiles, constraints, and optimization settings.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Both Assertion and Reason are true, and Reason correctly explains Assertion."
+      },
+      {
+        "id": "B",
+        "text": "Both Assertion and Reason are true, but Reason does not correctly explain Assertion."
+      },
+      {
+        "id": "C",
+        "text": "Assertion is true, Reason is false."
+      },
+      {
+        "id": "D",
+        "text": "Assertion is false, Reason is true."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "SAP TM supports multiple planning approaches ranging from manual planning to optimizer-driven planning based on planning profiles and constraints.",
+    "consultantTip": "Manual planning and optimization are complementary rather than mutually exclusive.",
+    "realProjectScenario": "Automatic optimization generated the initial transportation plan, while planners manually adjusted exceptions in Transportation Cockpit.",
+    "commonMistake": "Assuming optimization completely replaces manual planning.",
+    "sapConfiguration": [
+      "Planning Profiles"
+    ],
+    "sapTransactions": [],
+    "sapTables": [],
+    "interviewQuestion": "When would you use manual planning instead of optimization?",
+    "certificationReference": "Planning Strategies",
+    "estimatedTime": 180,
+    "negativeMarks": 1,
+    "tags": [
+      "Planning",
+      "Optimizer",
+      "Cockpit"
+    ]
+  },
+  {
+    "id": "M2T1Q010",
+    "module": "module2",
+    "unit": "Topic 1",
+    "topic": "SAP Transportation Management",
+    "subTopic": "Transportation Network",
+    "difficulty": "Architect",
+    "questionType": "case_study",
+    "question": "A customer reports that transportation planning cannot determine valid routes between shipping locations even though Freight Units are being created successfully. Which master data area should the consultant investigate FIRST?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Transportation Network (Locations, Transportation Lanes, and Connections)"
+      },
+      {
+        "id": "B",
+        "text": "Pricing Procedure"
+      },
+      {
+        "id": "C",
+        "text": "Output Management"
+      },
+      {
+        "id": "D",
+        "text": "FI Posting Periods"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Transportation planning depends on transportation network master data such as locations, transportation lanes, and valid connections. Missing or invalid network master data commonly causes routing failures.",
+    "consultantTip": "When routing fails, verify the transportation network before debugging planning logic.",
+    "realProjectScenario": "A planning issue was traced to expired transportation lane validity dates after a master data migration.",
+    "commonMistake": "Investigating planning profiles before validating transportation network master data.",
+    "sapConfiguration": [
+      "Transportation Network"
+    ],
+    "sapTransactions": [
+      "/SCMTMS/LOC3"
+    ],
+    "sapTables": [
+      "/SCMTMS/D_LOC"
+    ],
+    "interviewQuestion": "Which master data objects are required before transportation planning can determine routes?",
+    "certificationReference": "Transportation Network",
+    "estimatedTime": 240,
+    "negativeMarks": 1,
+    "tags": [
+      "Network",
+      "Locations",
+      "Transportation Lanes",
+      "Routing"
+    ]
+  },
+  {
+    "id": "M2T1Q011",
+    "module": "module2",
+    "unit": "Topic 1",
+    "topic": "SAP Transportation Management",
+    "subTopic": "Transportation Order (TOR)",
+    "difficulty": "Expert",
+    "questionType": "single_correct",
+    "question": "Which Business Object forms the foundation for most transportation execution documents in SAP TM?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Business Partner (BP)"
+      },
+      {
+        "id": "B",
+        "text": "Transportation Order (TOR)"
+      },
+      {
+        "id": "C",
+        "text": "Handling Unit (HU)"
+      },
+      {
+        "id": "D",
+        "text": "Delivery Document"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Transportation Order (TOR) is the central SAP TM business object. Freight Units, Freight Orders, Freight Bookings and Forwarding Orders are implemented as TOR document types.",
+    "consultantTip": "Remember this: FU, FO, FB, FWO are TOR types-not separate business objects.",
+    "realProjectScenario": "A consultant debugging Freight Order creation first analyzed the underlying TOR hierarchy using BOPF.",
+    "commonMistake": "Treating Freight Order and Freight Unit as unrelated business objects.",
+    "sapConfiguration": [
+      "Transportation Order Management"
+    ],
+    "sapTransactions": [],
+    "sapTables": [
+      "/SCMTMS/D_TORROT"
+    ],
+    "interviewQuestion": "Explain why SAP designed Freight Orders and Freight Units using the TOR object model.",
+    "certificationReference": "Transportation Order",
+    "estimatedTime": 180,
+    "negativeMarks": 1,
+    "tags": [
+      "TOR",
+      "BOPF",
+      "Transportation Order"
+    ]
+  },
+  {
+    "id": "M2T1Q012",
+    "module": "module2",
+    "unit": "Topic 1",
+    "topic": "SAP Transportation Management",
+    "subTopic": "TOR Object Model",
+    "difficulty": "Architect",
+    "questionType": "multiple_correct",
+    "question": "Which business documents are implemented as Transportation Orders (TOR) in SAP TM?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Freight Unit"
+      },
+      {
+        "id": "B",
+        "text": "Freight Order"
+      },
+      {
+        "id": "C",
+        "text": "Freight Booking"
+      },
+      {
+        "id": "D",
+        "text": "Material Master"
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "Freight Unit, Freight Order and Freight Booking are all Transportation Order document types implemented on the TOR business object.",
+    "consultantTip": "Certification exams love asking which objects belong to TOR.",
+    "realProjectScenario": "Custom validations implemented on the TOR root automatically applied to Freight Orders and Freight Units.",
+    "commonMistake": "Confusing ERP master data with TM business objects.",
+    "sapConfiguration": [],
+    "sapTransactions": [],
+    "sapTables": [
+      "/SCMTMS/D_TORROT"
+    ],
+    "interviewQuestion": "Which TM documents are based on the TOR framework?",
+    "certificationReference": "TOR Object Model",
+    "estimatedTime": 150,
+    "negativeMarks": 1,
+    "tags": [
+      "TOR",
+      "FO",
+      "FU",
+      "FB"
+    ]
+  },
+  {
+    "id": "M2T1Q013",
+    "module": "module2",
+    "unit": "Topic 1",
+    "topic": "SAP Transportation Management",
+    "subTopic": "BOPF",
+    "difficulty": "Architect",
+    "questionType": "scenario",
+    "question": "A developer needs to enhance Freight Order validation during save without modifying SAP standard code. Which SAP framework should be used?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Business Object Processing Framework (BOPF)"
+      },
+      {
+        "id": "B",
+        "text": "Condition Technique"
+      },
+      {
+        "id": "C",
+        "text": "Output Determination"
+      },
+      {
+        "id": "D",
+        "text": "Pricing Procedure"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "SAP TM business objects are implemented using BOPF, which provides determinations, validations, actions, associations and extensibility.",
+    "consultantTip": "Nearly every TM enhancement eventually touches BOPF.",
+    "realProjectScenario": "A custom BOPF validation prevented planners from creating Freight Orders without assigned carriers.",
+    "commonMistake": "Attempting classic user exits instead of BOPF enhancements.",
+    "sapConfiguration": [],
+    "sapTransactions": [
+      "/BOBF/CONF_UI"
+    ],
+    "sapTables": [],
+    "interviewQuestion": "Why is BOPF fundamental to SAP TM development?",
+    "certificationReference": "BOPF",
+    "estimatedTime": 240,
+    "negativeMarks": 1,
+    "tags": [
+      "BOPF",
+      "Enhancement",
+      "Validation"
+    ]
+  },
+  {
+    "id": "M2T1Q014",
+    "module": "module2",
+    "unit": "Topic 1",
+    "topic": "SAP Transportation Management",
+    "subTopic": "Freight Unit",
+    "difficulty": "Consultant",
+    "questionType": "assertion_reason",
+    "question": "Assertion (A): Freight Units represent transportation demand in SAP TM. Reason (R): Freight Units are created from logistics execution documents according to Freight Unit Building Rules (FUBR).",
+    "options": [
+      {
+        "id": "A",
+        "text": "Both Assertion and Reason are true, and Reason correctly explains Assertion."
+      },
+      {
+        "id": "B",
+        "text": "Both Assertion and Reason are true, but Reason does not correctly explain Assertion."
+      },
+      {
+        "id": "C",
+        "text": "Assertion is true, Reason is false."
+      },
+      {
+        "id": "D",
+        "text": "Assertion is false, Reason is true."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Freight Units are transportation demand documents generated according to Freight Unit Building Rules based on ERP logistics documents.",
+    "consultantTip": "No FUBR -> No Freight Unit -> No Transportation Planning.",
+    "realProjectScenario": "A missing FUBR prevented sales orders from generating Freight Units during integration testing.",
+    "commonMistake": "Believing Freight Orders are created directly from Sales Orders.",
+    "sapConfiguration": [
+      "Freight Unit Building Rules"
+    ],
+    "sapTransactions": [
+      "/SCMTMS/FUBR"
+    ],
+    "sapTables": [
+      "/SCMTMS/D_FUBR"
+    ],
+    "interviewQuestion": "Explain the complete Freight Unit creation process.",
+    "certificationReference": "Freight Unit",
+    "estimatedTime": 180,
+    "negativeMarks": 1,
+    "tags": [
+      "Freight Unit",
+      "FUBR",
+      "Planning"
+    ]
+  },
+  {
+    "id": "M2T1Q015",
+    "module": "module2",
+    "unit": "Topic 1",
+    "topic": "SAP Transportation Management",
+    "subTopic": "Transportation Demand",
+    "difficulty": "Architect",
+    "questionType": "case_study",
+    "question": "A customer reports that Freight Orders are never generated even though Transportation Cockpit is functioning correctly. Investigation shows no Freight Units exist in the system. Which configuration should be verified FIRST?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Freight Unit Building Rules (FUBR)"
+      },
+      {
+        "id": "B",
+        "text": "Output Management"
+      },
+      {
+        "id": "C",
+        "text": "Settlement Profile"
+      },
+      {
+        "id": "D",
+        "text": "Print Forms"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Transportation planning requires Freight Units. If Freight Units are missing, the first area to verify is Freight Unit Building Rules and demand integration.",
+    "consultantTip": "Always troubleshoot upstream. No FU means planning cannot produce Freight Orders.",
+    "realProjectScenario": "A transportation project was blocked because a newly introduced delivery type had not been assigned to a Freight Unit Building Rule.",
+    "commonMistake": "Debugging optimizer settings before confirming Freight Unit creation.",
+    "sapConfiguration": [
+      "Freight Unit Building Rules"
+    ],
+    "sapTransactions": [
+      "/SCMTMS/FUBR"
+    ],
+    "sapTables": [
+      "/SCMTMS/D_FUBR"
+    ],
+    "interviewQuestion": "How would you troubleshoot a situation where Freight Orders are not being created?",
+    "certificationReference": "FUBR Configuration",
+    "estimatedTime": 300,
+    "negativeMarks": 1,
+    "tags": [
+      "FUBR",
+      "Freight Unit",
+      "Freight Order",
+      "Troubleshooting"
+    ]
+  },
+  {
+    "id": "M2T1Q016",
+    "module": "module2",
+    "unit": "Topic 1",
+    "topic": "SAP Transportation Management",
+    "subTopic": "Freight Unit vs Freight Order",
+    "difficulty": "Expert",
+    "questionType": "multiple_correct",
+    "question": "Which statements correctly describe the relationship between Freight Units (FU) and Freight Orders (FO)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A Freight Unit represents transportation demand."
+      },
+      {
+        "id": "B",
+        "text": "A Freight Order represents the transportation execution plan."
+      },
+      {
+        "id": "C",
+        "text": "Multiple Freight Units can be assigned to a single Freight Order."
+      },
+      {
+        "id": "D",
+        "text": "Freight Orders are always created before Freight Units."
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "Freight Units represent demand, while Freight Orders represent execution. During planning, one or more Freight Units are consolidated into Freight Orders.",
+    "consultantTip": "Think: FU = WHAT needs to move. FO = HOW it will move.",
+    "realProjectScenario": "Thirty customer deliveries were consolidated into one truck, resulting in thirty Freight Units assigned to a single Freight Order.",
+    "commonMistake": "Confusing Freight Units with execution documents.",
+    "sapConfiguration": [
+      "Planning Profiles",
+      "FUBR"
+    ],
+    "sapTransactions": [
+      "/SCMTMS/PLN"
+    ],
+    "sapTables": [
+      "/SCMTMS/D_TORROT"
+    ],
+    "interviewQuestion": "Explain the business difference between Freight Unit and Freight Order.",
+    "certificationReference": "Transportation Planning",
+    "estimatedTime": 180,
+    "negativeMarks": 1,
+    "tags": [
+      "Freight Unit",
+      "Freight Order",
+      "Planning"
+    ]
+  },
+  {
+    "id": "M2T1Q017",
+    "module": "module2",
+    "unit": "Topic 1",
+    "topic": "SAP Transportation Management",
+    "subTopic": "Freight Booking",
+    "difficulty": "Consultant",
+    "questionType": "single_correct",
+    "question": "In SAP TM, a Freight Booking is primarily used for which transportation scenario?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Road transportation"
+      },
+      {
+        "id": "B",
+        "text": "Ocean and Air transportation where capacity is reserved with a carrier."
+      },
+      {
+        "id": "C",
+        "text": "Warehouse picking."
+      },
+      {
+        "id": "D",
+        "text": "Production confirmation."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Freight Bookings are commonly used for ocean and air freight where transportation capacity is booked with carriers.",
+    "consultantTip": "Road -> Freight Order. Ocean/Air -> Freight Booking (in many scenarios).",
+    "realProjectScenario": "A shipping line booking was created as a Freight Booking before containers were loaded.",
+    "commonMistake": "Using Freight Orders for every transportation mode.",
+    "sapConfiguration": [
+      "Freight Booking Types"
+    ],
+    "sapTransactions": [],
+    "sapTables": [
+      "/SCMTMS/D_TORROT"
+    ],
+    "interviewQuestion": "When would you choose a Freight Booking instead of a Freight Order?",
+    "certificationReference": "Freight Booking",
+    "estimatedTime": 150,
+    "negativeMarks": 1,
+    "tags": [
+      "Freight Booking",
+      "Ocean",
+      "Air"
+    ]
+  },
+  {
+    "id": "M2T1Q018",
+    "module": "module2",
+    "unit": "Topic 1",
+    "topic": "SAP Transportation Management",
+    "subTopic": "Forwarding Order",
+    "difficulty": "Architect",
+    "questionType": "scenario",
+    "question": "A logistics service provider (LSP) receives a transportation request from a customer and must organize transportation using multiple subcontracted carriers. Which SAP TM document typically represents the customer's transportation request?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Freight Order"
+      },
+      {
+        "id": "B",
+        "text": "Forwarding Order"
+      },
+      {
+        "id": "C",
+        "text": "Freight Unit"
+      },
+      {
+        "id": "D",
+        "text": "Freight Settlement Document"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Forwarding Orders are commonly used by logistics service providers to represent customer transportation requests before execution planning.",
+    "consultantTip": "Forwarding Order is heavily used in LSP business scenarios.",
+    "realProjectScenario": "An LSP received a customer request, created a Forwarding Order, and then planned multiple Freight Orders for different subcontractors.",
+    "commonMistake": "Confusing customer demand with transportation execution.",
+    "sapConfiguration": [
+      "Forwarding Order Types"
+    ],
+    "sapTransactions": [],
+    "sapTables": [
+      "/SCMTMS/D_TORROT"
+    ],
+    "interviewQuestion": "Explain the business purpose of a Forwarding Order.",
+    "certificationReference": "LSP Processes",
+    "estimatedTime": 180,
+    "negativeMarks": 1,
+    "tags": [
+      "Forwarding Order",
+      "LSP",
+      "TOR"
+    ]
+  },
+  {
+    "id": "M2T1Q019",
+    "module": "module2",
+    "unit": "Topic 1",
+    "topic": "SAP Transportation Management",
+    "subTopic": "Transportation Planning Flow",
+    "difficulty": "Architect",
+    "questionType": "order_sequence",
+    "question": "Arrange the following SAP TM planning objects in the correct logical sequence for a standard shipper scenario.",
+    "options": {
+      "items": [
+        {
+          "id": "A",
+          "text": "ERP Delivery / Order"
+        },
+        {
+          "id": "B",
+          "text": "Freight Unit"
+        },
+        {
+          "id": "C",
+          "text": "Freight Order"
+        },
+        {
+          "id": "D",
+          "text": "Freight Settlement"
+        }
+      ]
+    },
+    "correctAnswer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "explanation": "Demand originates in ERP, Freight Units are created through FUBR, planners create Freight Orders, and finally Freight Settlement occurs after execution.",
+    "consultantTip": "Memorize this flow-it appears repeatedly in certification exams.",
+    "realProjectScenario": "A sales delivery generated Freight Units, planners consolidated them into Freight Orders, and settlement occurred after proof of delivery.",
+    "commonMistake": "Thinking Freight Orders are generated directly from deliveries.",
+    "sapConfiguration": [
+      "FUBR",
+      "Planning Profiles"
+    ],
+    "sapTransactions": [
+      "/SCMTMS/PLN"
+    ],
+    "sapTables": [],
+    "interviewQuestion": "Walk through the complete transportation lifecycle in SAP TM.",
+    "certificationReference": "Transportation Process Flow",
+    "estimatedTime": 240,
+    "negativeMarks": 1,
+    "tags": [
+      "Planning Flow",
+      "Freight Unit",
+      "Freight Order",
+      "Settlement"
+    ]
+  },
+  {
+    "id": "M2T1Q020",
+    "module": "module2",
+    "unit": "Topic 1",
+    "topic": "SAP Transportation Management",
+    "subTopic": "Consolidation Logic",
+    "difficulty": "Senior Consultant",
+    "questionType": "case_study",
+    "question": "A customer has 150 outbound deliveries for nearby destinations. The business objective is to minimize transportation costs while respecting vehicle capacity, delivery time windows, and incompatible products. Which SAP TM capability provides the greatest value?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Transportation planning and optimization to consolidate Freight Units into optimized Freight Orders."
+      },
+      {
+        "id": "B",
+        "text": "Creating one Freight Order for every Freight Unit."
+      },
+      {
+        "id": "C",
+        "text": "Disabling capacity constraints during planning."
+      },
+      {
+        "id": "D",
+        "text": "Skipping Freight Unit creation and manually assigning deliveries to trucks."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "SAP TM optimization considers capacities, time windows, incompatibilities, and costs to consolidate Freight Units into efficient Freight Orders while respecting planning constraints.",
+    "consultantTip": "The optimizer's goal is not merely consolidation-it is finding the best feasible transportation plan.",
+    "realProjectScenario": "A retail customer reduced transportation costs by 22% after enabling optimizer-based consolidation with proper planning constraints.",
+    "commonMistake": "Maximizing truck utilization while ignoring service levels and hard constraints.",
+    "sapConfiguration": [
+      "Optimizer Profile",
+      "Planning Profile",
+      "Constraint Settings"
+    ],
+    "sapTransactions": [
+      "/SCMTMS/PLN_OPT"
+    ],
+    "sapTables": [],
+    "interviewQuestion": "How does SAP TM balance cost optimization with operational constraints?",
+    "certificationReference": "Transportation Optimization",
+    "estimatedTime": 300,
+    "negativeMarks": 1,
+    "tags": [
+      "Optimizer",
+      "Freight Unit",
+      "Freight Order",
+      "Consolidation"
+    ]
+  },
+  {
+    "id": "M2T1Q021",
+    "module": "module2",
+    "unit": "Topic 1",
+    "topic": "SAP Transportation Management",
+    "subTopic": "Business Partner",
+    "difficulty": "Expert",
+    "questionType": "multiple_correct",
+    "question": "Which Business Partner roles are commonly used in SAP Transportation Management?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Carrier"
+      },
+      {
+        "id": "B",
+        "text": "Shipper"
+      },
+      {
+        "id": "C",
+        "text": "Consignee"
+      },
+      {
+        "id": "D",
+        "text": "Profit Center"
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "Business Partners such as Carrier, Shipper, Consignee, and Logistics Service Provider participate in transportation planning and execution. Profit Center is an organizational accounting object, not a Business Partner role.",
+    "consultantTip": "Nearly every transportation document references one or more Business Partners.",
+    "realProjectScenario": "Carrier determination failed because the carrier Business Partner lacked the required transportation role.",
+    "commonMistake": "Confusing ERP organizational objects with Business Partners.",
+    "sapConfiguration": [
+      "Business Partner Integration"
+    ],
+    "sapTransactions": [
+      "BP"
+    ],
+    "sapTables": [
+      "BUT000"
+    ],
+    "interviewQuestion": "Which Business Partner roles are mandatory for transportation execution?",
+    "certificationReference": "Business Partner Integration",
+    "estimatedTime": 180,
+    "negativeMarks": 1,
+    "tags": [
+      "Business Partner",
+      "Carrier",
+      "BP"
+    ]
+  },
+  {
+    "id": "M2T1Q022",
+    "module": "module2",
+    "unit": "Topic 1",
+    "topic": "SAP Transportation Management",
+    "subTopic": "Locations",
+    "difficulty": "Consultant",
+    "questionType": "single_correct",
+    "question": "Which master data object represents physical places such as plants, warehouses, ports, airports, and customer sites in SAP TM?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Location"
+      },
+      {
+        "id": "B",
+        "text": "Transportation Lane"
+      },
+      {
+        "id": "C",
+        "text": "Resource"
+      },
+      {
+        "id": "D",
+        "text": "Planning Profile"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Locations represent physical points in the transportation network including plants, distribution centers, ports, terminals, and customer locations.",
+    "consultantTip": "No Locations -> No Transportation Network.",
+    "realProjectScenario": "Transportation planning failed because the newly opened warehouse had not been created as a TM Location.",
+    "commonMistake": "Using Business Partners instead of Locations for routing.",
+    "sapConfiguration": [
+      "Location Management"
+    ],
+    "sapTransactions": [
+      "/SCMTMS/LOC3"
+    ],
+    "sapTables": [
+      "/SCMTMS/D_LOC"
+    ],
+    "interviewQuestion": "What is the difference between a Business Partner and a Location in SAP TM?",
+    "certificationReference": "Location Master Data",
+    "estimatedTime": 150,
+    "negativeMarks": 1,
+    "tags": [
+      "Location",
+      "Master Data",
+      "TM"
+    ]
+  },
+  {
+    "id": "M2T1Q023",
+    "module": "module2",
+    "unit": "Topic 1",
+    "topic": "SAP Transportation Management",
+    "subTopic": "Transportation Zones",
+    "difficulty": "Architect",
+    "questionType": "scenario",
+    "question": "A customer wants to define freight rates for 'South India' instead of maintaining separate rates for every individual city. Which SAP TM master data concept should be used?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Transportation Zone"
+      },
+      {
+        "id": "B",
+        "text": "Planning Profile"
+      },
+      {
+        "id": "C",
+        "text": "Freight Unit"
+      },
+      {
+        "id": "D",
+        "text": "Settlement Profile"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Transportation Zones group multiple locations into logical regions for planning, routing, and charge calculation.",
+    "consultantTip": "Zones dramatically reduce maintenance effort for freight agreements.",
+    "realProjectScenario": "A logistics company maintained regional freight rates using transportation zones instead of thousands of individual locations.",
+    "commonMistake": "Creating duplicate freight agreements for every city.",
+    "sapConfiguration": [
+      "Transportation Zones"
+    ],
+    "sapTransactions": [],
+    "sapTables": [],
+    "interviewQuestion": "Why are Transportation Zones important in charge management?",
+    "certificationReference": "Transportation Network",
+    "estimatedTime": 180,
+    "negativeMarks": 1,
+    "tags": [
+      "Transportation Zone",
+      "Charges",
+      "Planning"
+    ]
+  },
+  {
+    "id": "M2T1Q024",
+    "module": "module2",
+    "unit": "Topic 1",
+    "topic": "SAP Transportation Management",
+    "subTopic": "Transportation Lanes",
+    "difficulty": "Senior Consultant",
+    "questionType": "assertion_reason",
+    "question": "Assertion (A): Transportation Lanes are essential for route determination in SAP TM. Reason (R): Transportation Lanes define valid connections between locations together with attributes such as transportation mode, distance, and validity period.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Both Assertion and Reason are true, and Reason correctly explains Assertion."
+      },
+      {
+        "id": "B",
+        "text": "Both Assertion and Reason are true, but Reason does not correctly explain Assertion."
+      },
+      {
+        "id": "C",
+        "text": "Assertion is true, Reason is false."
+      },
+      {
+        "id": "D",
+        "text": "Assertion is false, Reason is true."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Transportation Lanes model valid transportation paths and provide planning-relevant information such as transportation mode, duration, and validity.",
+    "consultantTip": "Always verify lane validity dates when planning suddenly stops working.",
+    "realProjectScenario": "Freight planning failed because the transportation lane validity expired at month-end.",
+    "commonMistake": "Checking optimizer settings before validating transportation lanes.",
+    "sapConfiguration": [
+      "Transportation Network"
+    ],
+    "sapTransactions": [
+      "/SCMTMS/TL1"
+    ],
+    "sapTables": [
+      "/SCMTMS/D_TORL"
+    ],
+    "interviewQuestion": "How do Transportation Lanes influence transportation planning?",
+    "certificationReference": "Transportation Network",
+    "estimatedTime": 180,
+    "negativeMarks": 1,
+    "tags": [
+      "Transportation Lane",
+      "Routing",
+      "Planning"
+    ]
+  },
+  {
+    "id": "M2T1Q025",
+    "module": "module2",
+    "unit": "Topic 1",
+    "topic": "SAP Transportation Management",
+    "subTopic": "Transportation Resources",
+    "difficulty": "Architect",
+    "questionType": "case_study",
+    "question": "A planner reports that SAP TM cannot assign any truck during transportation planning even though valid Freight Units and Transportation Lanes exist. Which master data should be investigated FIRST?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Transportation Resources and their capacities/calendars."
+      },
+      {
+        "id": "B",
+        "text": "Output Management."
+      },
+      {
+        "id": "C",
+        "text": "Pricing Procedure."
+      },
+      {
+        "id": "D",
+        "text": "SAPscript Forms."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Transportation Resources represent vehicles, drivers, and equipment. Missing capacities, invalid calendars, or unavailable resources commonly prevent successful planning.",
+    "consultantTip": "If lanes exist but no vehicle is assigned, investigate resources before debugging the optimizer.",
+    "realProjectScenario": "Truck assignment failed because the resource calendar marked every vehicle as unavailable during the planning period.",
+    "commonMistake": "Blaming the optimizer when the actual issue is missing resource master data.",
+    "sapConfiguration": [
+      "Resource Management",
+      "Calendars"
+    ],
+    "sapTransactions": [],
+    "sapTables": [],
+    "interviewQuestion": "What master data would you verify if SAP TM cannot assign vehicles?",
+    "certificationReference": "Transportation Resources",
+    "estimatedTime": 300,
+    "negativeMarks": 1,
+    "tags": [
+      "Resource",
+      "Truck",
+      "Capacity",
+      "Planning"
+    ]
+  },
+  {
+    "id": "M2T1Q026",
+    "module": "module2",
+    "unit": "Topic 1",
+    "topic": "SAP Transportation Management",
+    "subTopic": "Planning Profiles",
+    "difficulty": "Senior Consultant",
+    "questionType": "multiple_correct",
+    "question": "Which activities are controlled by a Planning Profile in SAP TM?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Planning layouts and cockpit behavior"
+      },
+      {
+        "id": "B",
+        "text": "Available planning strategies and actions"
+      },
+      {
+        "id": "C",
+        "text": "Displayed planning objects and resources"
+      },
+      {
+        "id": "D",
+        "text": "SAP user password policies"
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "Planning Profiles define planner behavior inside Transportation Cockpit including layouts, planning strategies, actions, displayed objects, and available resources.",
+    "consultantTip": "Planning Profile determines how planners work-not how data is created.",
+    "realProjectScenario": "Separate Planning Profiles were created for domestic and international transportation planners.",
+    "commonMistake": "Confusing Planning Profile with FUBR configuration.",
+    "sapConfiguration": [
+      "Planning Profiles"
+    ],
+    "sapTransactions": [
+      "/SCMTMS/PLN"
+    ],
+    "sapTables": [],
+    "interviewQuestion": "What is the purpose of a Planning Profile?",
+    "certificationReference": "Planning Profiles",
+    "estimatedTime": 180,
+    "negativeMarks": 1,
+    "tags": [
+      "Planning Profile",
+      "Cockpit",
+      "Planning"
+    ]
+  },
+  {
+    "id": "M2T1Q027",
+    "module": "module2",
+    "unit": "Topic 1",
+    "topic": "SAP Transportation Management",
+    "subTopic": "Selection Profiles",
+    "difficulty": "Expert",
+    "questionType": "single_correct",
+    "question": "What is the PRIMARY purpose of a Selection Profile in SAP TM Transportation Cockpit?",
+    "options": [
+      {
+        "id": "A",
+        "text": "To determine which transportation objects are loaded into the planning workspace."
+      },
+      {
+        "id": "B",
+        "text": "To calculate freight charges."
+      },
+      {
+        "id": "C",
+        "text": "To determine pricing procedures."
+      },
+      {
+        "id": "D",
+        "text": "To create Freight Unit Building Rules."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Selection Profiles determine which Freight Units, Freight Orders, Resources, and other planning objects are displayed in Transportation Cockpit.",
+    "consultantTip": "Selection Profile = What planners see. Planning Profile = What planners can do.",
+    "realProjectScenario": "Regional planners loaded only South India Freight Units using customized Selection Profiles.",
+    "commonMistake": "Confusing Selection Profiles with Planning Profiles.",
+    "sapConfiguration": [
+      "Selection Profiles"
+    ],
+    "sapTransactions": [
+      "/SCMTMS/PLN"
+    ],
+    "sapTables": [],
+    "interviewQuestion": "Differentiate Planning Profile and Selection Profile.",
+    "certificationReference": "Transportation Cockpit",
+    "estimatedTime": 150,
+    "negativeMarks": 1,
+    "tags": [
+      "Selection Profile",
+      "Cockpit"
+    ]
+  },
+  {
+    "id": "M2T1Q028",
+    "module": "module2",
+    "unit": "Topic 1",
+    "topic": "SAP Transportation Management",
+    "subTopic": "Optimizer Profile",
+    "difficulty": "Architect",
+    "questionType": "scenario",
+    "question": "A customer wants transportation planning to minimize freight cost while considering truck capacity, delivery priorities, time windows, and incompatibility constraints. Which configuration should be reviewed FIRST?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Optimizer Profile"
+      },
+      {
+        "id": "B",
+        "text": "Output Management"
+      },
+      {
+        "id": "C",
+        "text": "Settlement Profile"
+      },
+      {
+        "id": "D",
+        "text": "SAPscript Layout"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Optimizer Profiles define optimization objectives, planning constraints, penalties, and optimization strategies.",
+    "consultantTip": "The optimizer doesn't 'guess'-it follows the rules configured in the Optimizer Profile.",
+    "realProjectScenario": "Changing the optimizer objective from shortest distance to lowest transportation cost reduced annual freight spend significantly.",
+    "commonMistake": "Changing planning logic without reviewing Optimizer Profile settings.",
+    "sapConfiguration": [
+      "Optimizer Profiles"
+    ],
+    "sapTransactions": [
+      "/SCMTMS/PLN_OPT"
+    ],
+    "sapTables": [],
+    "interviewQuestion": "Which parameters are configured in an Optimizer Profile?",
+    "certificationReference": "Optimizer",
+    "estimatedTime": 210,
+    "negativeMarks": 1,
+    "tags": [
+      "Optimizer",
+      "Planning",
+      "Constraints"
+    ]
+  },
+  {
+    "id": "M2T1Q029",
+    "module": "module2",
+    "unit": "Topic 1",
+    "topic": "SAP Transportation Management",
+    "subTopic": "Planning Constraints",
+    "difficulty": "Architect",
+    "questionType": "assertion_reason",
+    "question": "Assertion (A): Transportation optimization must respect hard planning constraints. Reason (R): Violating hard constraints such as vehicle capacity or mandatory incompatibility rules may result in infeasible transportation plans.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Both Assertion and Reason are true, and Reason correctly explains Assertion."
+      },
+      {
+        "id": "B",
+        "text": "Both Assertion and Reason are true, but Reason does not correctly explain Assertion."
+      },
+      {
+        "id": "C",
+        "text": "Assertion is true, Reason is false."
+      },
+      {
+        "id": "D",
+        "text": "Assertion is false, Reason is true."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Hard constraints cannot be violated by the optimizer because doing so would produce invalid transportation plans.",
+    "consultantTip": "Certification exams frequently distinguish hard constraints from optimization objectives.",
+    "realProjectScenario": "An optimizer run returned 'No Feasible Solution' because every available truck exceeded configured capacity limits.",
+    "commonMistake": "Expecting the optimizer to ignore hard constraints automatically.",
+    "sapConfiguration": [
+      "Constraint Settings"
+    ],
+    "sapTransactions": [
+      "/SCMTMS/PLN_OPT"
+    ],
+    "sapTables": [],
+    "interviewQuestion": "Explain the difference between hard and soft constraints.",
+    "certificationReference": "Optimization Constraints",
+    "estimatedTime": 180,
+    "negativeMarks": 1,
+    "tags": [
+      "Constraints",
+      "Optimizer",
+      "Planning"
+    ]
+  },
+  {
+    "id": "M2T1Q030",
+    "module": "module2",
+    "unit": "Topic 1",
+    "topic": "SAP Transportation Management",
+    "subTopic": "Optimization Troubleshooting",
+    "difficulty": "Architect",
+    "questionType": "case_study",
+    "question": "An optimizer execution consistently returns 'No Feasible Solution' even though Freight Units, Transportation Lanes, and Resources exist. Which consultant approach is MOST appropriate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Systematically review hard constraints such as capacities, calendars, incompatibility rules, time windows, and resource availability before changing optimization parameters."
+      },
+      {
+        "id": "B",
+        "text": "Disable all planning constraints permanently."
+      },
+      {
+        "id": "C",
+        "text": "Create one Freight Order for every Freight Unit."
+      },
+      {
+        "id": "D",
+        "text": "Restart the SAP application server."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Most optimization failures result from conflicting planning constraints or inconsistent master data rather than optimizer defects.",
+    "consultantTip": "When troubleshooting the optimizer, validate data first, configuration second, and optimization strategy third.",
+    "realProjectScenario": "Planning failed because resource calendars blocked vehicle availability during customer-required delivery windows.",
+    "commonMistake": "Treating optimizer failures as technical issues instead of business rule conflicts.",
+    "sapConfiguration": [
+      "Optimizer Profile",
+      "Constraint Settings",
+      "Resource Calendars"
+    ],
+    "sapTransactions": [
+      "/SCMTMS/PLN_OPT"
+    ],
+    "sapTables": [],
+    "interviewQuestion": "Describe your troubleshooting approach when SAP TM optimization returns no feasible solution.",
+    "certificationReference": "Optimizer Troubleshooting",
+    "estimatedTime": 300,
+    "negativeMarks": 1,
+    "tags": [
+      "Optimizer",
+      "Troubleshooting",
+      "Planning",
+      "Constraints"
+    ]
+  },
+  {
+    "id": "M2T2Q046",
+    "module": "module2",
+    "unit": "Topic 2",
+    "topic": "Transportation Charge Management",
+    "subTopic": "Invoice Verification",
+    "difficulty": "Architect",
+    "questionType": "multiple_correct",
+    "question": "Which statements are true regarding invoice verification during Freight Settlement in SAP TM?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Carrier invoices can be compared against Freight Settlement Documents."
+      },
+      {
+        "id": "B",
+        "text": "Invoice verification helps detect pricing discrepancies before payment."
+      },
+      {
+        "id": "C",
+        "text": "Invoice verification can be integrated with SAP ERP/S4HANA."
+      },
+      {
+        "id": "D",
+        "text": "Invoice verification creates Transportation Lanes."
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "Invoice verification validates carrier invoices against Freight Settlement Documents before financial posting. Transportation Lanes are unrelated to invoice verification.",
+    "consultantTip": "Many organizations automate invoice verification to reduce manual payment errors.",
+    "realProjectScenario": "A carrier invoice was blocked because the billed fuel surcharge exceeded the Freight Settlement amount.",
+    "commonMistake": "Paying carrier invoices without validating them against settlement documents.",
+    "sapConfiguration": [
+      "Invoice Verification",
+      "Freight Settlement",
+      "ERP Integration"
+    ],
+    "sapTransactions": [],
+    "sapTables": [],
+    "interviewQuestion": "How is invoice verification performed in SAP TM?",
+    "certificationReference": "Freight Settlement",
+    "estimatedTime": 210,
+    "negativeMarks": 1,
+    "tags": [
+      "Invoice Verification",
+      "Settlement",
+      "Finance"
+    ]
+  },
+  {
+    "id": "M2T2Q047",
+    "module": "module2",
+    "unit": "Topic 2",
+    "topic": "Transportation Charge Management",
+    "subTopic": "Settlement Profile",
+    "difficulty": "Senior Consultant",
+    "questionType": "single_correct",
+    "question": "What is the primary purpose of a Settlement Profile in SAP TM?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Control how Freight Settlement Documents are created and processed."
+      },
+      {
+        "id": "B",
+        "text": "Determine Freight Unit split logic."
+      },
+      {
+        "id": "C",
+        "text": "Maintain transportation lanes."
+      },
+      {
+        "id": "D",
+        "text": "Assign warehouse resources."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Settlement Profiles define settlement behavior, document creation rules, and ERP integration during Freight Settlement.",
+    "consultantTip": "Incorrect Settlement Profiles often prevent Freight Settlement Document creation.",
+    "realProjectScenario": "Settlement processing failed because a newly introduced Freight Order type was not assigned to the appropriate Settlement Profile.",
+    "commonMistake": "Confusing Settlement Profiles with Planning Profiles.",
+    "sapConfiguration": [
+      "Settlement Profile"
+    ],
+    "sapTransactions": [],
+    "sapTables": [],
+    "interviewQuestion": "What is configured inside a Settlement Profile?",
+    "certificationReference": "Settlement Configuration",
+    "estimatedTime": 180,
+    "negativeMarks": 1,
+    "tags": [
+      "Settlement Profile",
+      "Configuration"
+    ]
+  },
+  {
+    "id": "M2T2Q048",
+    "module": "module2",
+    "unit": "Topic 2",
+    "topic": "Transportation Charge Management",
+    "subTopic": "Accrual Management",
+    "difficulty": "Architect",
+    "questionType": "scenario",
+    "question": "A company wants transportation expenses to be recognized immediately after transportation execution, even though the carrier invoice will arrive several weeks later. Which SAP TM capability supports this business requirement?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Accrual posting through Freight Settlement integration."
+      },
+      {
+        "id": "B",
+        "text": "Transportation Lane determination."
+      },
+      {
+        "id": "C",
+        "text": "Freight Unit Building Rules."
+      },
+      {
+        "id": "D",
+        "text": "Selection Profiles."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Accrual management allows transportation costs to be recognized before the carrier invoice is received, supporting accurate financial reporting.",
+    "consultantTip": "Accruals are frequently required during month-end financial closing.",
+    "realProjectScenario": "The finance department posted transportation accruals at month-end and cleared them automatically when the carrier invoice arrived.",
+    "commonMistake": "Waiting for the carrier invoice before recognizing transportation expenses.",
+    "sapConfiguration": [
+      "Freight Settlement",
+      "Accrual Management"
+    ],
+    "sapTransactions": [],
+    "sapTables": [],
+    "interviewQuestion": "Why are accruals important in SAP TM Freight Settlement?",
+    "certificationReference": "Financial Integration",
+    "estimatedTime": 240,
+    "negativeMarks": 1,
+    "tags": [
+      "Accrual",
+      "Settlement",
+      "Finance"
+    ]
+  },
+  {
+    "id": "M2T2Q049",
+    "module": "module2",
+    "unit": "Topic 2",
+    "topic": "Transportation Charge Management",
+    "subTopic": "End-to-End Charge Flow",
+    "difficulty": "Solution Architect",
+    "questionType": "order_sequence",
+    "question": "Arrange the following SAP TM charge management activities in the correct sequence.",
+    "options": {
+      "items": [
+        {
+          "id": "A",
+          "text": "Freight Agreement Determination"
+        },
+        {
+          "id": "B",
+          "text": "Charge Calculation"
+        },
+        {
+          "id": "C",
+          "text": "Freight Settlement Document Creation"
+        },
+        {
+          "id": "D",
+          "text": "ERP Financial Posting"
+        },
+        {
+          "id": "E",
+          "text": "Invoice Verification"
+        }
+      ]
+    },
+    "correctAnswer": [
+      "A",
+      "B",
+      "C",
+      "E",
+      "D"
+    ],
+    "explanation": "SAP TM first determines the Freight Agreement, calculates transportation charges, creates the Freight Settlement Document, performs invoice verification, and finally posts financial information to ERP.",
+    "consultantTip": "Understanding this sequence is essential for troubleshooting Charge Management.",
+    "realProjectScenario": "A production issue was traced to an incorrect Freight Agreement, preventing the rest of the settlement process.",
+    "commonMistake": "Assuming ERP posting occurs before invoice verification.",
+    "sapConfiguration": [
+      "Charge Management",
+      "Freight Settlement",
+      "ERP Integration"
+    ],
+    "sapTransactions": [],
+    "sapTables": [],
+    "interviewQuestion": "Describe the complete SAP TM Charge Management process from pricing to financial posting.",
+    "certificationReference": "Transportation Charge Management",
+    "estimatedTime": 300,
+    "negativeMarks": 1,
+    "tags": [
+      "Charge Management",
+      "Settlement",
+      "ERP"
+    ]
+  },
+  {
+    "id": "M2T2Q050",
+    "module": "module2",
+    "unit": "Topic 2",
+    "topic": "Transportation Charge Management",
+    "subTopic": "Production Support",
+    "difficulty": "Solution Architect",
+    "questionType": "case_study",
+    "question": "After go-live, Freight Orders are planned correctly and freight charges are calculated successfully. However, Finance reports that no accounting documents are created. Which troubleshooting sequence is MOST appropriate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Verify Settlement Profile → Check Freight Settlement Document creation → Validate ERP/FI integration → Review posting logs and application logs."
+      },
+      {
+        "id": "B",
+        "text": "Reconfigure Freight Unit Building Rules."
+      },
+      {
+        "id": "C",
+        "text": "Increase optimizer runtime."
+      },
+      {
+        "id": "D",
+        "text": "Modify Transportation Lanes."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "If planning and pricing are successful but accounting documents are missing, the issue usually lies in Freight Settlement configuration or ERP financial integration.",
+    "consultantTip": "Always isolate Planning, Pricing, Settlement, and Finance into separate troubleshooting stages.",
+    "realProjectScenario": "Financial postings failed because the ERP integration destination was inactive after a production transport.",
+    "commonMistake": "Investigating pricing when the failure occurs during financial integration.",
+    "sapConfiguration": [
+      "Settlement Profile",
+      "Freight Settlement",
+      "ERP Integration",
+      "Financial Posting"
+    ],
+    "sapTransactions": [],
+    "sapTables": [],
+    "interviewQuestion": "How would you troubleshoot missing financial postings after successful Freight Settlement?",
+    "certificationReference": "SAP TM Production Support",
+    "estimatedTime": 360,
+    "negativeMarks": 1,
+    "tags": [
+      "Production Support",
+      "Settlement",
+      "Finance",
+      "Integration"
+    ]
+  },
+  {
+    "id": "M2T2Q041",
+    "module": "module2",
+    "unit": "Topic 2",
+    "topic": "Transportation Charge Management",
+    "subTopic": "Freight Settlement Fundamentals",
+    "difficulty": "Senior Consultant",
+    "questionType": "multiple_correct",
+    "question": "Which statements correctly describe Freight Settlement in SAP TM?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Freight Settlement converts calculated transportation charges into settlement documents."
+      },
+      {
+        "id": "B",
+        "text": "Settlement documents can be transferred to SAP ERP/S4HANA Financials."
+      },
+      {
+        "id": "C",
+        "text": "Freight Settlement is normally performed after transportation execution."
+      },
+      {
+        "id": "D",
+        "text": "Freight Settlement creates Freight Units."
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "Freight Settlement creates settlement documents using calculated transportation charges and transfers financial information to ERP. It does not create Freight Units.",
+    "consultantTip": "Planning → Execution → Settlement is the normal SAP TM lifecycle.",
+    "realProjectScenario": "After Proof of Delivery, SAP TM automatically generated Freight Settlement Documents and posted them to S/4HANA Finance.",
+    "commonMistake": "Trying to perform Freight Settlement before transportation execution is complete.",
+    "sapConfiguration": [
+      "Freight Settlement",
+      "Settlement Profile"
+    ],
+    "sapTransactions": [],
+    "sapTables": [],
+    "interviewQuestion": "Explain the Freight Settlement process in SAP TM.",
+    "certificationReference": "Freight Settlement",
+    "estimatedTime": 180,
+    "negativeMarks": 1,
+    "tags": [
+      "Freight Settlement",
+      "Settlement Document",
+      "Finance"
+    ]
+  },
+  {
+    "id": "M2T2Q042",
+    "module": "module2",
+    "unit": "Topic 2",
+    "topic": "Transportation Charge Management",
+    "subTopic": "Settlement Document",
+    "difficulty": "Consultant",
+    "questionType": "single_correct",
+    "question": "What is the primary purpose of a Freight Settlement Document (FSD) in SAP TM?",
+    "options": [
+      {
+        "id": "A",
+        "text": "To represent transportation charges for financial settlement and ERP integration."
+      },
+      {
+        "id": "B",
+        "text": "To create Transportation Lanes."
+      },
+      {
+        "id": "C",
+        "text": "To determine Freight Unit Building Rules."
+      },
+      {
+        "id": "D",
+        "text": "To maintain carrier master data."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The Freight Settlement Document contains transportation charges that are transferred to financial systems for invoice processing and accounting.",
+    "consultantTip": "Think of the FSD as the financial representation of transportation execution.",
+    "realProjectScenario": "Each completed Freight Order automatically generated an FSD for carrier invoice verification.",
+    "commonMistake": "Confusing Freight Orders with Freight Settlement Documents.",
+    "sapConfiguration": [
+      "Settlement Document"
+    ],
+    "sapTransactions": [],
+    "sapTables": [],
+    "interviewQuestion": "What information does a Freight Settlement Document contain?",
+    "certificationReference": "Freight Settlement",
+    "estimatedTime": 150,
+    "negativeMarks": 1,
+    "tags": [
+      "FSD",
+      "Settlement"
+    ]
+  },
+  {
+    "id": "M2T2Q043",
+    "module": "module2",
+    "unit": "Topic 2",
+    "topic": "Transportation Charge Management",
+    "subTopic": "Charge Distribution",
+    "difficulty": "Architect",
+    "questionType": "scenario",
+    "question": "A Freight Order contains deliveries for three different customers. The transportation cost must be allocated proportionally based on shipment weight before financial posting. Which SAP TM capability supports this requirement?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Charge Distribution during Freight Settlement."
+      },
+      {
+        "id": "B",
+        "text": "Transportation Lane determination."
+      },
+      {
+        "id": "C",
+        "text": "Freight Unit Building Rules."
+      },
+      {
+        "id": "D",
+        "text": "Selection Profiles."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Charge Distribution allocates transportation costs across business documents using configured distribution rules such as weight, volume, or quantity.",
+    "consultantTip": "Distribution rules are essential when multiple business documents share one shipment.",
+    "realProjectScenario": "Transportation charges were distributed across ten deliveries based on gross weight before posting to Finance.",
+    "commonMistake": "Expecting Calculation Sheets to perform charge allocation.",
+    "sapConfiguration": [
+      "Charge Distribution",
+      "Freight Settlement"
+    ],
+    "sapTransactions": [],
+    "sapTables": [],
+    "interviewQuestion": "How are transportation charges distributed across multiple deliveries?",
+    "certificationReference": "Charge Distribution",
+    "estimatedTime": 210,
+    "negativeMarks": 1,
+    "tags": [
+      "Charge Distribution",
+      "Settlement"
+    ]
+  },
+  {
+    "id": "M2T2Q044",
+    "module": "module2",
+    "unit": "Topic 2",
+    "topic": "Transportation Charge Management",
+    "subTopic": "FI Integration",
+    "difficulty": "Senior Consultant",
+    "questionType": "assertion_reason",
+    "question": "Assertion (A): SAP TM Freight Settlement integrates with SAP Financial Accounting. Reason (R): Freight Settlement Documents can transfer transportation cost information for invoice verification and accounting postings.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Both Assertion and Reason are true, and Reason correctly explains Assertion."
+      },
+      {
+        "id": "B",
+        "text": "Both Assertion and Reason are true, but Reason does not correctly explain Assertion."
+      },
+      {
+        "id": "C",
+        "text": "Assertion is true, Reason is false."
+      },
+      {
+        "id": "D",
+        "text": "Assertion is false, Reason is true."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "SAP TM integrates with SAP ERP/S4HANA Financials by transferring settlement information for invoice processing and accounting.",
+    "consultantTip": "Freight Settlement is the bridge between Transportation Management and Finance.",
+    "realProjectScenario": "Carrier invoices were automatically matched against Freight Settlement Documents before payment approval.",
+    "commonMistake": "Assuming financial postings occur directly from Freight Orders.",
+    "sapConfiguration": [
+      "Freight Settlement",
+      "ERP Integration"
+    ],
+    "sapTransactions": [],
+    "sapTables": [],
+    "interviewQuestion": "How does SAP TM integrate with SAP FI during Freight Settlement?",
+    "certificationReference": "Financial Integration",
+    "estimatedTime": 180,
+    "negativeMarks": 1,
+    "tags": [
+      "FI",
+      "Settlement",
+      "Integration"
+    ]
+  },
+  {
+    "id": "M2T2Q045",
+    "module": "module2",
+    "unit": "Topic 2",
+    "topic": "Transportation Charge Management",
+    "subTopic": "Settlement Troubleshooting",
+    "difficulty": "Solution Architect",
+    "questionType": "case_study",
+    "question": "Transportation planning and charge calculation complete successfully, but no Freight Settlement Document is created. Which troubleshooting sequence is MOST appropriate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Verify Settlement Profile → Check execution completion status → Validate settlement relevance → Review ERP integration and application logs."
+      },
+      {
+        "id": "B",
+        "text": "Increase optimizer runtime."
+      },
+      {
+        "id": "C",
+        "text": "Modify Transportation Lanes."
+      },
+      {
+        "id": "D",
+        "text": "Reconfigure Freight Unit Building Rules."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Freight Settlement requires successful execution, settlement relevance, correct settlement profiles, and valid integration settings before generating an FSD.",
+    "consultantTip": "Always verify business process completion before debugging financial integration.",
+    "realProjectScenario": "No Freight Settlement Documents were created because the Freight Order status had not reached the required execution milestone.",
+    "commonMistake": "Investigating pricing configuration when settlement prerequisites are incomplete.",
+    "sapConfiguration": [
+      "Settlement Profile",
+      "Settlement Relevance",
+      "ERP Integration"
+    ],
+    "sapTransactions": [],
+    "sapTables": [],
+    "interviewQuestion": "How would you troubleshoot missing Freight Settlement Documents after transportation execution?",
+    "certificationReference": "Freight Settlement Troubleshooting",
+    "estimatedTime": 300,
+    "negativeMarks": 1,
+    "tags": [
+      "Freight Settlement",
+      "Troubleshooting",
+      "Integration"
+    ]
+  },
+  {
+    "id": "M2T2Q036",
+    "module": "module2",
+    "unit": "Topic 2",
+    "topic": "Transportation Charge Management",
+    "subTopic": "Calculation Sheet",
+    "difficulty": "Senior Consultant",
+    "questionType": "multiple_correct",
+    "question": "Which statements correctly describe a Calculation Sheet in SAP TM?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It controls the sequence of freight charge calculation."
+      },
+      {
+        "id": "B",
+        "text": "It references one or more Charge Types."
+      },
+      {
+        "id": "C",
+        "text": "It can contain multiple calculation steps."
+      },
+      {
+        "id": "D",
+        "text": "It stores carrier master data."
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "A Calculation Sheet defines the pricing flow by arranging Charge Types into calculation steps. It does not contain master data such as carriers.",
+    "consultantTip": "Think of the Calculation Sheet as the pricing engine workflow.",
+    "realProjectScenario": "A customer configured one Calculation Sheet with base freight, fuel surcharge, toll, detention, and discount calculations.",
+    "commonMistake": "Using multiple Calculation Sheets where a single sheet with multiple steps is sufficient.",
+    "sapConfiguration": [
+      "Calculation Sheet"
+    ],
+    "sapTransactions": [],
+    "sapTables": [],
+    "interviewQuestion": "Explain how a Calculation Sheet controls freight charge calculation.",
+    "certificationReference": "Transportation Charge Management",
+    "estimatedTime": 180,
+    "negativeMarks": 1,
+    "tags": [
+      "Calculation Sheet",
+      "Charge Management"
+    ]
+  },
+  {
+    "id": "M2T2Q037",
+    "module": "module2",
+    "unit": "Topic 2",
+    "topic": "Transportation Charge Management",
+    "subTopic": "Charge Item",
+    "difficulty": "Consultant",
+    "questionType": "single_correct",
+    "question": "What is a Charge Item in SAP TM?",
+    "options": [
+      {
+        "id": "A",
+        "text": "An individual calculated pricing component generated during charge calculation."
+      },
+      {
+        "id": "B",
+        "text": "A transportation lane."
+      },
+      {
+        "id": "C",
+        "text": "A freight unit."
+      },
+      {
+        "id": "D",
+        "text": "A business partner role."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Each pricing component calculated during freight charge determination is represented as a Charge Item.",
+    "consultantTip": "Every line you see in freight pricing usually represents a Charge Item.",
+    "realProjectScenario": "Separate Charge Items were generated for line-haul, fuel surcharge, toll, and unloading charges.",
+    "commonMistake": "Confusing Charge Types with Charge Items.",
+    "sapConfiguration": [
+      "Charge Types",
+      "Calculation Sheet"
+    ],
+    "sapTransactions": [],
+    "sapTables": [],
+    "interviewQuestion": "What is the difference between a Charge Type and a Charge Item?",
+    "certificationReference": "Charge Calculation",
+    "estimatedTime": 150,
+    "negativeMarks": 1,
+    "tags": [
+      "Charge Item",
+      "Pricing"
+    ]
+  },
+  {
+    "id": "M2T2Q038",
+    "module": "module2",
+    "unit": "Topic 2",
+    "topic": "Transportation Charge Management",
+    "subTopic": "Access Sequence",
+    "difficulty": "Architect",
+    "questionType": "scenario",
+    "question": "A logistics company maintains different freight rates based on Carrier, Transportation Zone, Shipping Condition, and Means of Transport. Which SAP TM concept determines the sequence in which these conditions are evaluated?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Access Sequence"
+      },
+      {
+        "id": "B",
+        "text": "Planning Profile"
+      },
+      {
+        "id": "C",
+        "text": "Transportation Lane"
+      },
+      {
+        "id": "D",
+        "text": "Selection Profile"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Access Sequences determine the order in which condition records are searched to identify the applicable pricing information.",
+    "consultantTip": "Always verify Access Sequence configuration before creating duplicate freight agreements.",
+    "realProjectScenario": "Carrier-specific rates were ignored because the generic condition was placed before the specific condition in the Access Sequence.",
+    "commonMistake": "Maintaining duplicate Rate Tables instead of correcting the Access Sequence.",
+    "sapConfiguration": [
+      "Access Sequence",
+      "Charge Management"
+    ],
+    "sapTransactions": [],
+    "sapTables": [],
+    "interviewQuestion": "How does an Access Sequence work in SAP TM pricing?",
+    "certificationReference": "Charge Determination",
+    "estimatedTime": 240,
+    "negativeMarks": 1,
+    "tags": [
+      "Access Sequence",
+      "Pricing"
+    ]
+  },
+  {
+    "id": "M2T2Q039",
+    "module": "module2",
+    "unit": "Topic 2",
+    "topic": "Transportation Charge Management",
+    "subTopic": "Charge Calculation",
+    "difficulty": "Senior Consultant",
+    "questionType": "assertion_reason",
+    "question": "Assertion (A): One Freight Order may contain multiple Charge Items after pricing. Reason (R): SAP TM calculates each pricing component independently and combines them into the total transportation charge.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Both Assertion and Reason are true, and Reason correctly explains Assertion."
+      },
+      {
+        "id": "B",
+        "text": "Both Assertion and Reason are true, but Reason does not correctly explain Assertion."
+      },
+      {
+        "id": "C",
+        "text": "Assertion is true, Reason is false."
+      },
+      {
+        "id": "D",
+        "text": "Assertion is false, Reason is true."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Each Charge Type produces a separate Charge Item. SAP TM aggregates these Charge Items into the final transportation charge.",
+    "consultantTip": "Review individual Charge Items before investigating the total freight amount.",
+    "realProjectScenario": "A Freight Order contained nine Charge Items including line-haul, fuel, toll, waiting charges, and tax.",
+    "commonMistake": "Looking only at the final freight amount instead of analyzing each Charge Item.",
+    "sapConfiguration": [
+      "Charge Types",
+      "Calculation Sheet"
+    ],
+    "sapTransactions": [],
+    "sapTables": [],
+    "interviewQuestion": "Why does one Freight Order contain multiple Charge Items?",
+    "certificationReference": "Transportation Charge Calculation",
+    "estimatedTime": 180,
+    "negativeMarks": 1,
+    "tags": [
+      "Charge Item",
+      "Pricing"
+    ]
+  },
+  {
+    "id": "M2T2Q040",
+    "module": "module2",
+    "unit": "Topic 2",
+    "topic": "Transportation Charge Management",
+    "subTopic": "Pricing Troubleshooting",
+    "difficulty": "Solution Architect",
+    "questionType": "case_study",
+    "question": "A customer notices that the Base Freight charge is calculated correctly, but Fuel Surcharge and Toll charges are missing from every Freight Order. Which investigation should be performed FIRST?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Verify the Calculation Sheet steps, Charge Type assignments, and Access Sequence configuration."
+      },
+      {
+        "id": "B",
+        "text": "Modify Transportation Lanes."
+      },
+      {
+        "id": "C",
+        "text": "Increase optimizer runtime."
+      },
+      {
+        "id": "D",
+        "text": "Reconfigure Freight Unit Building Rules."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "If only specific pricing components are missing, the issue usually lies in the Calculation Sheet, Charge Type configuration, Access Sequence, or missing condition records.",
+    "consultantTip": "Troubleshoot missing Charge Items individually instead of analyzing only the total freight amount.",
+    "realProjectScenario": "Fuel surcharge was omitted because the Charge Type step had been accidentally removed from the Calculation Sheet transport.",
+    "commonMistake": "Assuming Rate Tables are incorrect before checking whether the relevant Charge Type is executed.",
+    "sapConfiguration": [
+      "Calculation Sheet",
+      "Charge Types",
+      "Access Sequence"
+    ],
+    "sapTransactions": [],
+    "sapTables": [],
+    "interviewQuestion": "How would you troubleshoot missing surcharge calculations in SAP TM?",
+    "certificationReference": "Transportation Charge Management",
+    "estimatedTime": 300,
+    "negativeMarks": 1,
+    "tags": [
+      "Charge Management",
+      "Calculation Sheet",
+      "Troubleshooting"
+    ]
+  },
+  {
+    "id": "M2T2Q031",
+    "module": "module2",
+    "unit": "Topic 2",
+    "topic": "Transportation Charge Management",
+    "subTopic": "Freight Agreements",
+    "difficulty": "Senior Consultant",
+    "questionType": "multiple_correct",
+    "question": "Which statements correctly describe Freight Agreements in SAP Transportation Management?",
+    "options": [
+      {
+        "id": "A",
+        "text": "They store transportation pricing agreements between a shipper and a carrier."
+      },
+      {
+        "id": "B",
+        "text": "They determine which Calculation Sheet and Rate Table should be used."
+      },
+      {
+        "id": "C",
+        "text": "They are evaluated during charge determination."
+      },
+      {
+        "id": "D",
+        "text": "They permanently store Freight Order execution events."
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "Freight Agreements define commercial transportation contracts. During charge calculation, SAP TM determines the appropriate Freight Agreement and applies the linked Calculation Sheet and Rate Tables.",
+    "consultantTip": "Always verify Freight Agreement determination before debugging Calculation Sheets.",
+    "realProjectScenario": "Two carriers serviced the same lane with different contract rates. SAP TM selected the correct agreement based on validity and carrier determination.",
+    "commonMistake": "Maintaining pricing directly in Calculation Sheets instead of Freight Agreements.",
+    "sapConfiguration": [
+      "Freight Agreement",
+      "Charge Management"
+    ],
+    "sapTransactions": [],
+    "sapTables": [],
+    "interviewQuestion": "What is the role of Freight Agreements in SAP TM pricing?",
+    "certificationReference": "Transportation Charge Management",
+    "estimatedTime": 210,
+    "negativeMarks": 1,
+    "tags": [
+      "Freight Agreement",
+      "Pricing",
+      "Charge Management"
+    ]
+  },
+  {
+    "id": "M2T2Q032",
+    "module": "module2",
+    "unit": "Topic 2",
+    "topic": "Transportation Charge Management",
+    "subTopic": "Charge Determination",
+    "difficulty": "Consultant",
+    "questionType": "single_correct",
+    "question": "During transportation charge calculation, which object is responsible for determining the applicable commercial contract?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Freight Agreement"
+      },
+      {
+        "id": "B",
+        "text": "Transportation Lane"
+      },
+      {
+        "id": "C",
+        "text": "Planning Profile"
+      },
+      {
+        "id": "D",
+        "text": "Selection Profile"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Charge determination begins by identifying the applicable Freight Agreement before applying Calculation Sheets and Rate Tables.",
+    "consultantTip": "If the wrong contract is selected, verify agreement determination before checking rates.",
+    "realProjectScenario": "Freight charges were incorrect because an expired Freight Agreement was still being selected.",
+    "commonMistake": "Assuming Transportation Lanes determine pricing contracts.",
+    "sapConfiguration": [
+      "Charge Determination"
+    ],
+    "sapTransactions": [],
+    "sapTables": [],
+    "interviewQuestion": "How does SAP TM determine the correct Freight Agreement?",
+    "certificationReference": "Charge Determination",
+    "estimatedTime": 180,
+    "negativeMarks": 1,
+    "tags": [
+      "Charge Determination",
+      "Freight Agreement"
+    ]
+  },
+  {
+    "id": "M2T2Q033",
+    "module": "module2",
+    "unit": "Topic 2",
+    "topic": "Transportation Charge Management",
+    "subTopic": "Scale Bases",
+    "difficulty": "Architect",
+    "questionType": "scenario",
+    "question": "A carrier charges transportation based on shipment weight up to 500 kg, then applies different prices for 500–1000 kg and above 1000 kg. Which SAP TM feature should implement this pricing model?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Rate Table with Weight Scale Base"
+      },
+      {
+        "id": "B",
+        "text": "Transportation Lane"
+      },
+      {
+        "id": "C",
+        "text": "Planning Profile"
+      },
+      {
+        "id": "D",
+        "text": "Business Partner Role"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Scale Bases allow pricing to vary according to attributes such as weight, volume, quantity, distance, or duration.",
+    "consultantTip": "Scale Bases are among the most frequently customized objects in Charge Management.",
+    "realProjectScenario": "A logistics company maintained more than 150 weight slabs for domestic road transportation pricing.",
+    "commonMistake": "Creating multiple Calculation Sheets instead of maintaining pricing scales.",
+    "sapConfiguration": [
+      "Rate Tables",
+      "Scale Base"
+    ],
+    "sapTransactions": [],
+    "sapTables": [],
+    "interviewQuestion": "What are Scale Bases in SAP TM?",
+    "certificationReference": "Rate Tables",
+    "estimatedTime": 210,
+    "negativeMarks": 1,
+    "tags": [
+      "Scale Base",
+      "Rate Table",
+      "Weight"
+    ]
+  },
+  {
+    "id": "M2T2Q034",
+    "module": "module2",
+    "unit": "Topic 2",
+    "topic": "Transportation Charge Management",
+    "subTopic": "Agreement Validity",
+    "difficulty": "Senior Consultant",
+    "questionType": "assertion_reason",
+    "question": "Assertion (A): Freight Agreement validity periods directly affect charge determination. Reason (R): SAP TM ignores expired Freight Agreements during pricing determination.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Both Assertion and Reason are true, and Reason correctly explains Assertion."
+      },
+      {
+        "id": "B",
+        "text": "Both Assertion and Reason are true, but Reason does not correctly explain Assertion."
+      },
+      {
+        "id": "C",
+        "text": "Assertion is true, Reason is false."
+      },
+      {
+        "id": "D",
+        "text": "Assertion is false, Reason is true."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Only valid Freight Agreements are considered during charge determination. Incorrect validity periods frequently cause pricing failures.",
+    "consultantTip": "Validity dates should always be part of pricing troubleshooting.",
+    "realProjectScenario": "Transportation charges became zero because the carrier contract expired at midnight after month-end.",
+    "commonMistake": "Checking Rate Tables before verifying contract validity.",
+    "sapConfiguration": [
+      "Freight Agreement"
+    ],
+    "sapTransactions": [],
+    "sapTables": [],
+    "interviewQuestion": "How do validity dates affect Freight Agreement determination?",
+    "certificationReference": "Transportation Charge Management",
+    "estimatedTime": 180,
+    "negativeMarks": 1,
+    "tags": [
+      "Validity",
+      "Freight Agreement",
+      "Pricing"
+    ]
+  },
+  {
+    "id": "M2T2Q035",
+    "module": "module2",
+    "unit": "Topic 2",
+    "topic": "Transportation Charge Management",
+    "subTopic": "Pricing Troubleshooting",
+    "difficulty": "Solution Architect",
+    "questionType": "case_study",
+    "question": "A Freight Order is created successfully and the correct carrier is assigned. However, freight charges remain zero. Which troubleshooting sequence is MOST appropriate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Verify Freight Agreement determination → Check agreement validity → Validate Calculation Sheet → Verify Rate Table → Review Scale Base."
+      },
+      {
+        "id": "B",
+        "text": "Increase optimizer runtime."
+      },
+      {
+        "id": "C",
+        "text": "Reconfigure Transportation Lanes."
+      },
+      {
+        "id": "D",
+        "text": "Modify Freight Unit Building Rules."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Successful planning with zero freight charges generally indicates a pricing configuration issue rather than a planning problem.",
+    "consultantTip": "Always troubleshoot Charge Management in the same order as SAP TM executes charge determination.",
+    "realProjectScenario": "A missing Rate Table assignment in the Freight Agreement caused all transportation charges to calculate as zero after go-live.",
+    "commonMistake": "Investigating planning configuration instead of pricing determination.",
+    "sapConfiguration": [
+      "Freight Agreement",
+      "Calculation Sheet",
+      "Rate Table",
+      "Scale Base"
+    ],
+    "sapTransactions": [],
+    "sapTables": [],
+    "interviewQuestion": "Describe your troubleshooting approach when Freight Orders calculate zero transportation charges.",
+    "certificationReference": "Transportation Charge Management",
+    "estimatedTime": 300,
+    "negativeMarks": 1,
+    "tags": [
+      "Charge Management",
+      "Pricing",
+      "Troubleshooting"
+    ]
+  },
+  {
+    "id": "M2T2Q026",
+    "module": "module2",
+    "unit": "Topic 2",
+    "topic": "Business Partner & Organizational Management",
+    "subTopic": "Charge Management Fundamentals",
+    "difficulty": "Senior Consultant",
+    "questionType": "multiple_correct",
+    "question": "Which components are fundamental to SAP TM Charge Management?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Charge Types"
+      },
+      {
+        "id": "B",
+        "text": "Calculation Sheets"
+      },
+      {
+        "id": "C",
+        "text": "Rate Tables"
+      },
+      {
+        "id": "D",
+        "text": "Production Versions"
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "Charge Types, Calculation Sheets, and Rate Tables form the core of SAP TM Charge Management. Production Versions belong to SAP PP and are unrelated to transportation charges.",
+    "consultantTip": "Remember the hierarchy: Charge Type → Calculation Sheet → Rate Table → Freight Charges.",
+    "realProjectScenario": "A logistics provider reused one Calculation Sheet with multiple Rate Tables to support different countries.",
+    "commonMistake": "Creating separate Calculation Sheets when only Rate Tables need to change.",
+    "sapConfiguration": [
+      "Charge Management",
+      "Calculation Sheet"
+    ],
+    "sapTransactions": [],
+    "sapTables": [],
+    "interviewQuestion": "What are the major components of SAP TM Charge Management?",
+    "certificationReference": "Charge Management",
+    "estimatedTime": 180,
+    "negativeMarks": 1,
+    "tags": [
+      "Charge Management",
+      "Calculation Sheet",
+      "Rate Table"
+    ]
+  },
+  {
+    "id": "M2T2Q027",
+    "module": "module2",
+    "unit": "Topic 2",
+    "topic": "Business Partner & Organizational Management",
+    "subTopic": "Charge Types",
+    "difficulty": "Consultant",
+    "questionType": "single_correct",
+    "question": "What is the primary purpose of a Charge Type in SAP TM?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Represent a specific transportation cost component such as base freight, fuel surcharge, or toll."
+      },
+      {
+        "id": "B",
+        "text": "Define transportation lanes."
+      },
+      {
+        "id": "C",
+        "text": "Create Business Partners."
+      },
+      {
+        "id": "D",
+        "text": "Generate Freight Units."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Charge Types represent individual pricing components that together form the overall transportation charge.",
+    "consultantTip": "Think of Charge Types as the building blocks of freight pricing.",
+    "realProjectScenario": "A shipment contained separate Charge Types for line-haul freight, fuel surcharge, and unloading fees.",
+    "commonMistake": "Using one Charge Type to represent all transportation costs.",
+    "sapConfiguration": [
+      "Charge Types"
+    ],
+    "sapTransactions": [],
+    "sapTables": [],
+    "interviewQuestion": "What is the purpose of a Charge Type?",
+    "certificationReference": "Charge Types",
+    "estimatedTime": 150,
+    "negativeMarks": 1,
+    "tags": [
+      "Charge Type",
+      "Pricing"
+    ]
+  },
+  {
+    "id": "M2T2Q028",
+    "module": "module2",
+    "unit": "Topic 2",
+    "topic": "Business Partner & Organizational Management",
+    "subTopic": "Calculation Sheet",
+    "difficulty": "Architect",
+    "questionType": "scenario",
+    "question": "A customer requires freight charges to be calculated as: Base Freight + Fuel Surcharge + Toll Charge − Promotional Discount. Which SAP TM object should orchestrate this pricing sequence?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Calculation Sheet"
+      },
+      {
+        "id": "B",
+        "text": "Transportation Lane"
+      },
+      {
+        "id": "C",
+        "text": "Planning Profile"
+      },
+      {
+        "id": "D",
+        "text": "Business Partner Role"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The Calculation Sheet controls the sequence and logic of freight charge calculation by combining multiple Charge Types.",
+    "consultantTip": "Calculation Sheets define the pricing flow—not the actual rates.",
+    "realProjectScenario": "A retailer configured one Calculation Sheet containing twelve Charge Types for domestic transportation pricing.",
+    "commonMistake": "Maintaining pricing logic directly in Rate Tables.",
+    "sapConfiguration": [
+      "Calculation Sheet"
+    ],
+    "sapTransactions": [],
+    "sapTables": [],
+    "interviewQuestion": "How does a Calculation Sheet work in SAP TM?",
+    "certificationReference": "Charge Calculation",
+    "estimatedTime": 210,
+    "negativeMarks": 1,
+    "tags": [
+      "Calculation Sheet",
+      "Charge Management"
+    ]
+  },
+  {
+    "id": "M2T2Q029",
+    "module": "module2",
+    "unit": "Topic 2",
+    "topic": "Business Partner & Organizational Management",
+    "subTopic": "Rate Tables",
+    "difficulty": "Senior Consultant",
+    "questionType": "assertion_reason",
+    "question": "Assertion (A): Rate Tables store the pricing values used during freight charge calculation. Reason (R): Rate Tables can determine transportation charges using factors such as weight, volume, distance, quantity, or zones.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Both Assertion and Reason are true, and Reason correctly explains Assertion."
+      },
+      {
+        "id": "B",
+        "text": "Both Assertion and Reason are true, but Reason does not correctly explain Assertion."
+      },
+      {
+        "id": "C",
+        "text": "Assertion is true, Reason is false."
+      },
+      {
+        "id": "D",
+        "text": "Assertion is false, Reason is true."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Rate Tables store pricing values and support different scale bases such as distance, weight, quantity, zones, and volume.",
+    "consultantTip": "Calculation Sheet defines the logic; Rate Table provides the values.",
+    "realProjectScenario": "A carrier contract calculated freight using distance slabs maintained in a Rate Table.",
+    "commonMistake": "Expecting Rate Tables to control pricing sequence.",
+    "sapConfiguration": [
+      "Rate Tables"
+    ],
+    "sapTransactions": [],
+    "sapTables": [],
+    "interviewQuestion": "What information is maintained in a Rate Table?",
+    "certificationReference": "Rate Tables",
+    "estimatedTime": 180,
+    "negativeMarks": 1,
+    "tags": [
+      "Rate Table",
+      "Pricing",
+      "Charges"
+    ]
+  },
+  {
+    "id": "M2T2Q030",
+    "module": "module2",
+    "unit": "Topic 2",
+    "topic": "Business Partner & Organizational Management",
+    "subTopic": "Charge Management Troubleshooting",
+    "difficulty": "Solution Architect",
+    "questionType": "case_study",
+    "question": "A Freight Order is created successfully, but no freight charges are calculated even though the carrier and route are determined correctly. Which investigation should be performed FIRST?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Verify Charge Management configuration, including Charge Types, Calculation Sheets, Rate Tables, and Freight Agreements."
+      },
+      {
+        "id": "B",
+        "text": "Modify Transportation Lanes."
+      },
+      {
+        "id": "C",
+        "text": "Reconfigure Business Partner roles."
+      },
+      {
+        "id": "D",
+        "text": "Increase optimizer runtime."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "If planning succeeds but pricing fails, the issue typically lies in Charge Management configuration rather than planning or master data.",
+    "consultantTip": "Separate planning issues from pricing issues when troubleshooting SAP TM.",
+    "realProjectScenario": "A freight agreement had expired, preventing Rate Table determination and resulting in zero freight charges.",
+    "commonMistake": "Debugging planning logic when the issue is actually in charge determination.",
+    "sapConfiguration": [
+      "Charge Management",
+      "Calculation Sheets",
+      "Freight Agreements"
+    ],
+    "sapTransactions": [],
+    "sapTables": [],
+    "interviewQuestion": "How would you troubleshoot freight charges that are not calculated?",
+    "certificationReference": "Charge Management Troubleshooting",
+    "estimatedTime": 300,
+    "negativeMarks": 1,
+    "tags": [
+      "Charge Management",
+      "Pricing",
+      "Troubleshooting"
+    ]
+  },
+  {
+    "id": "M2T2Q021",
+    "module": "module2",
+    "unit": "Topic 2",
+    "topic": "Business Partner & Organizational Management",
+    "subTopic": "Transportation Network",
+    "difficulty": "Senior Consultant",
+    "questionType": "multiple_correct",
+    "question": "Which master data objects collectively form the Transportation Network in SAP TM?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Locations"
+      },
+      {
+        "id": "B",
+        "text": "Transportation Lanes"
+      },
+      {
+        "id": "C",
+        "text": "Transportation Zones"
+      },
+      {
+        "id": "D",
+        "text": "Profit Centers"
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "The Transportation Network consists of Locations, Transportation Lanes, Transportation Zones, and related planning master data. Profit Centers belong to Financial Accounting and Controlling.",
+    "consultantTip": "Think of the Transportation Network as the road map used by the optimizer.",
+    "realProjectScenario": "A missing Transportation Zone assignment prevented regional freight agreements from being selected.",
+    "commonMistake": "Assuming organizational structures are part of the Transportation Network.",
+    "sapConfiguration": [
+      "Transportation Network"
+    ],
+    "sapTransactions": [
+      "/SCMTMS/LOC3",
+      "/SCMTMS/TL1"
+    ],
+    "sapTables": [],
+    "interviewQuestion": "Which master data objects build the Transportation Network in SAP TM?",
+    "certificationReference": "Transportation Network",
+    "estimatedTime": 180,
+    "negativeMarks": 1,
+    "tags": [
+      "Transportation Network",
+      "Locations",
+      "Lanes",
+      "Zones"
+    ]
+  },
+  {
+    "id": "M2T2Q022",
+    "module": "module2",
+    "unit": "Topic 2",
+    "topic": "Business Partner & Organizational Management",
+    "subTopic": "Geographical Coordinates",
+    "difficulty": "Consultant",
+    "questionType": "single_correct",
+    "question": "Why are geographical coordinates (latitude and longitude) maintained for Locations in SAP TM?",
+    "options": [
+      {
+        "id": "A",
+        "text": "To support distance calculation, mapping, and route optimization."
+      },
+      {
+        "id": "B",
+        "text": "To determine Business Partner roles."
+      },
+      {
+        "id": "C",
+        "text": "To calculate payroll."
+      },
+      {
+        "id": "D",
+        "text": "To create Freight Settlement Documents."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Geographical coordinates support routing, visualization, distance calculation, and optimization.",
+    "consultantTip": "Poor location coordinates often lead to unrealistic routing distances.",
+    "realProjectScenario": "Incorrect warehouse coordinates caused the optimizer to calculate routes hundreds of kilometers longer than expected.",
+    "commonMistake": "Maintaining only postal addresses without validating map coordinates.",
+    "sapConfiguration": [
+      "Location Management"
+    ],
+    "sapTransactions": [
+      "/SCMTMS/LOC3"
+    ],
+    "sapTables": [],
+    "interviewQuestion": "Why are latitude and longitude maintained for Locations?",
+    "certificationReference": "Location Master",
+    "estimatedTime": 150,
+    "negativeMarks": 1,
+    "tags": [
+      "Location",
+      "Coordinates",
+      "Distance"
+    ]
+  },
+  {
+    "id": "M2T2Q023",
+    "module": "module2",
+    "unit": "Topic 2",
+    "topic": "Business Partner & Organizational Management",
+    "subTopic": "Time Zones",
+    "difficulty": "Architect",
+    "questionType": "scenario",
+    "question": "A shipment moves from Germany to India. Pickup and delivery times appear inconsistent because both locations are displayed using the same local time. Which master data should be verified FIRST?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Location time zone configuration."
+      },
+      {
+        "id": "B",
+        "text": "Carrier Business Partner role."
+      },
+      {
+        "id": "C",
+        "text": "Optimizer Profile."
+      },
+      {
+        "id": "D",
+        "text": "Output Management."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Each Location should have the correct time zone maintained so transportation scheduling reflects local times accurately.",
+    "consultantTip": "International implementations frequently encounter time-zone-related scheduling issues.",
+    "realProjectScenario": "Departure and arrival timestamps appeared incorrect because the destination warehouse had the wrong time zone maintained.",
+    "commonMistake": "Assuming SAP automatically derives the correct operational time zone from the country.",
+    "sapConfiguration": [
+      "Location Management"
+    ],
+    "sapTransactions": [
+      "/SCMTMS/LOC3"
+    ],
+    "sapTables": [],
+    "interviewQuestion": "How do time zones influence transportation scheduling?",
+    "certificationReference": "Location Master",
+    "estimatedTime": 180,
+    "negativeMarks": 1,
+    "tags": [
+      "Time Zone",
+      "Scheduling",
+      "Location"
+    ]
+  },
+  {
+    "id": "M2T2Q024",
+    "module": "module2",
+    "unit": "Topic 2",
+    "topic": "Business Partner & Organizational Management",
+    "subTopic": "Distance Determination",
+    "difficulty": "Senior Consultant",
+    "questionType": "assertion_reason",
+    "question": "Assertion (A): Accurate distance information improves transportation optimization. Reason (R): Distance influences routing decisions, transit duration, and freight charge calculation in many planning scenarios.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Both Assertion and Reason are true, and Reason correctly explains Assertion."
+      },
+      {
+        "id": "B",
+        "text": "Both Assertion and Reason are true, but Reason does not correctly explain Assertion."
+      },
+      {
+        "id": "C",
+        "text": "Assertion is true, Reason is false."
+      },
+      {
+        "id": "D",
+        "text": "Assertion is false, Reason is true."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Distance is an important planning attribute that affects optimization objectives, transit time calculations, and charge determination.",
+    "consultantTip": "Inaccurate distances produce inaccurate planning costs.",
+    "realProjectScenario": "Freight costs doubled after incorrect lane distances were loaded during a master data migration.",
+    "commonMistake": "Treating distance as purely informational rather than planning-relevant.",
+    "sapConfiguration": [
+      "Transportation Lanes",
+      "Distance Determination"
+    ],
+    "sapTransactions": [],
+    "sapTables": [],
+    "interviewQuestion": "Why is accurate distance master data important in SAP TM?",
+    "certificationReference": "Transportation Planning",
+    "estimatedTime": 180,
+    "negativeMarks": 1,
+    "tags": [
+      "Distance",
+      "Routing",
+      "Charges"
+    ]
+  },
+  {
+    "id": "M2T2Q025",
+    "module": "module2",
+    "unit": "Topic 2",
+    "topic": "Business Partner & Organizational Management",
+    "subTopic": "Location Hierarchy",
+    "difficulty": "Solution Architect",
+    "questionType": "case_study",
+    "question": "A global organization wants transportation planning to support Country → Region → Distribution Center → Warehouse relationships for reporting and planning purposes. Which SAP TM master data concept should be designed carefully?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Location hierarchy together with Transportation Zones."
+      },
+      {
+        "id": "B",
+        "text": "PPF Action Profiles."
+      },
+      {
+        "id": "C",
+        "text": "Freight Settlement Profiles."
+      },
+      {
+        "id": "D",
+        "text": "Business Partner tax classifications."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Location hierarchies and Transportation Zones provide structured geographical organization for planning, reporting, and charge management.",
+    "consultantTip": "Design the geographical hierarchy before loading master data into production.",
+    "realProjectScenario": "A multinational retailer grouped more than 3,000 warehouse locations into regional transportation zones to simplify planning and freight agreements.",
+    "commonMistake": "Creating flat location structures that become difficult to maintain as the business grows.",
+    "sapConfiguration": [
+      "Location Management",
+      "Transportation Zones"
+    ],
+    "sapTransactions": [
+      "/SCMTMS/LOC3"
+    ],
+    "sapTables": [],
+    "interviewQuestion": "How would you model a global location hierarchy in SAP TM?",
+    "certificationReference": "Transportation Network Design",
+    "estimatedTime": 300,
+    "negativeMarks": 1,
+    "tags": [
+      "Location",
+      "Transportation Zone",
+      "Hierarchy",
+      "Planning"
+    ]
+  },
+  {
+    "id": "M2T2Q016",
+    "module": "module2",
+    "unit": "Topic 2",
+    "topic": "Business Partner & Organizational Management",
+    "subTopic": "Location Master",
+    "difficulty": "Senior Consultant",
+    "questionType": "multiple_correct",
+    "question": "Which statements correctly describe Location master data in SAP TM?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Locations represent physical places such as plants, warehouses, ports, terminals, and customer sites."
+      },
+      {
+        "id": "B",
+        "text": "Locations participate in transportation planning and routing."
+      },
+      {
+        "id": "C",
+        "text": "Locations are used during freight charge determination."
+      },
+      {
+        "id": "D",
+        "text": "Locations replace Business Partners in SAP TM."
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "Locations model physical logistics points used throughout planning, routing, scheduling, and charge calculation. They complement Business Partners rather than replacing them.",
+    "consultantTip": "Business Partner = Who. Location = Where.",
+    "realProjectScenario": "A new distribution center was created as a Location before transportation planning could begin.",
+    "commonMistake": "Using customer Business Partners directly for routing without proper Location master data.",
+    "sapConfiguration": [
+      "Location Management"
+    ],
+    "sapTransactions": [
+      "/SCMTMS/LOC3"
+    ],
+    "sapTables": [
+      "/SCMTMS/D_LOC"
+    ],
+    "interviewQuestion": "Explain the difference between a Business Partner and a Location.",
+    "certificationReference": "Location Master Data",
+    "estimatedTime": 180,
+    "negativeMarks": 1,
+    "tags": [
+      "Location",
+      "Master Data"
+    ]
+  },
+  {
+    "id": "M2T2Q017",
+    "module": "module2",
+    "unit": "Topic 2",
+    "topic": "Business Partner & Organizational Management",
+    "subTopic": "Transportation Lane",
+    "difficulty": "Expert",
+    "questionType": "single_correct",
+    "question": "What is the primary purpose of a Transportation Lane in SAP TM?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Define valid transportation connections between locations."
+      },
+      {
+        "id": "B",
+        "text": "Maintain carrier invoices."
+      },
+      {
+        "id": "C",
+        "text": "Store Business Partner addresses."
+      },
+      {
+        "id": "D",
+        "text": "Create Freight Settlement Documents."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Transportation Lanes define valid logistics connections between locations together with transportation modes, duration, and validity.",
+    "consultantTip": "No Lane = No Route.",
+    "realProjectScenario": "Planning failed because the lane between the warehouse and customer had expired.",
+    "commonMistake": "Confusing transportation lanes with transportation resources.",
+    "sapConfiguration": [
+      "Transportation Network"
+    ],
+    "sapTransactions": [
+      "/SCMTMS/TL1"
+    ],
+    "sapTables": [
+      "/SCMTMS/D_TORL"
+    ],
+    "interviewQuestion": "Why are Transportation Lanes essential for planning?",
+    "certificationReference": "Transportation Network",
+    "estimatedTime": 150,
+    "negativeMarks": 1,
+    "tags": [
+      "Lane",
+      "Routing"
+    ]
+  },
+  {
+    "id": "M2T2Q018",
+    "module": "module2",
+    "unit": "Topic 2",
+    "topic": "Business Partner & Organizational Management",
+    "subTopic": "Distance & Duration",
+    "difficulty": "Architect",
+    "questionType": "scenario",
+    "question": "A planner notices that transit times calculated during planning are significantly shorter than actual transportation times. Which master data should be investigated FIRST?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Transportation Lane distance and duration."
+      },
+      {
+        "id": "B",
+        "text": "Business Partner tax classification."
+      },
+      {
+        "id": "C",
+        "text": "Output Management."
+      },
+      {
+        "id": "D",
+        "text": "Freight Settlement Profile."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Transportation Lanes contain planning information such as transit duration and distance, which directly influence scheduling.",
+    "consultantTip": "Incorrect lane duration results in incorrect scheduling.",
+    "realProjectScenario": "Planning promised same-day delivery because lane duration was maintained as 2 hours instead of 20 hours.",
+    "commonMistake": "Adjusting optimizer parameters when the issue is inaccurate master data.",
+    "sapConfiguration": [
+      "Transportation Lanes"
+    ],
+    "sapTransactions": [
+      "/SCMTMS/TL1"
+    ],
+    "sapTables": [],
+    "interviewQuestion": "How is transit duration determined in SAP TM?",
+    "certificationReference": "Transportation Network",
+    "estimatedTime": 210,
+    "negativeMarks": 1,
+    "tags": [
+      "Transit Time",
+      "Lane",
+      "Scheduling"
+    ]
+  },
+  {
+    "id": "M2T2Q019",
+    "module": "module2",
+    "unit": "Topic 2",
+    "topic": "Business Partner & Organizational Management",
+    "subTopic": "Routing Determination",
+    "difficulty": "Senior Consultant",
+    "questionType": "assertion_reason",
+    "question": "Assertion (A): Transportation Lane validity periods directly affect route determination. Reason (R): Expired or inactive lanes cannot be selected during transportation planning.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Both Assertion and Reason are true, and Reason correctly explains Assertion."
+      },
+      {
+        "id": "B",
+        "text": "Both Assertion and Reason are true, but Reason does not correctly explain Assertion."
+      },
+      {
+        "id": "C",
+        "text": "Assertion is true, Reason is false."
+      },
+      {
+        "id": "D",
+        "text": "Assertion is false, Reason is true."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Transportation planning considers only valid transportation lanes. Expired lanes are excluded from route determination.",
+    "consultantTip": "Always verify lane validity after master data transports.",
+    "realProjectScenario": "Planning stopped overnight because lane validity expired at month-end.",
+    "commonMistake": "Blaming the optimizer instead of checking lane validity.",
+    "sapConfiguration": [
+      "Transportation Network"
+    ],
+    "sapTransactions": [
+      "/SCMTMS/TL1"
+    ],
+    "sapTables": [],
+    "interviewQuestion": "How do lane validity dates influence planning?",
+    "certificationReference": "Transportation Lanes",
+    "estimatedTime": 180,
+    "negativeMarks": 1,
+    "tags": [
+      "Lane",
+      "Validity",
+      "Routing"
+    ]
+  },
+  {
+    "id": "M2T2Q020",
+    "module": "module2",
+    "unit": "Topic 2",
+    "topic": "Business Partner & Organizational Management",
+    "subTopic": "Routing Troubleshooting",
+    "difficulty": "Solution Architect",
+    "questionType": "case_study",
+    "question": "Freight Units are generated successfully, but route determination fails for every shipment between two locations. Which troubleshooting sequence is MOST appropriate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Verify Location master data → Check Transportation Lane existence and validity → Validate transportation mode → Review planning profile."
+      },
+      {
+        "id": "B",
+        "text": "Increase optimizer runtime."
+      },
+      {
+        "id": "C",
+        "text": "Modify Business Partner roles."
+      },
+      {
+        "id": "D",
+        "text": "Reconfigure Freight Settlement."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Routing failures are typically caused by missing locations, invalid transportation lanes, incorrect transportation modes, or planning profile settings.",
+    "consultantTip": "Follow the routing chain: Location → Lane → Mode → Planning.",
+    "realProjectScenario": "A transportation lane transport was missed during deployment, preventing route determination in production.",
+    "commonMistake": "Investigating execution or settlement before validating the transportation network.",
+    "sapConfiguration": [
+      "Location",
+      "Transportation Lane",
+      "Planning Profile"
+    ],
+    "sapTransactions": [
+      "/SCMTMS/LOC3",
+      "/SCMTMS/TL1"
+    ],
+    "sapTables": [],
+    "interviewQuestion": "Describe your troubleshooting approach when route determination fails.",
+    "certificationReference": "Transportation Network Troubleshooting",
+    "estimatedTime": 300,
+    "negativeMarks": 1,
+    "tags": [
+      "Routing",
+      "Transportation Lane",
+      "Troubleshooting"
+    ]
+  },
+  {
+    "id": "M2T2Q011",
+    "module": "module2",
+    "unit": "Topic 2",
+    "topic": "Business Partner & Organizational Management",
+    "subTopic": "Transportation Zones",
+    "difficulty": "Senior Consultant",
+    "questionType": "multiple_correct",
+    "question": "What are the primary purposes of Transportation Zones in SAP TM?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Group multiple locations into logical planning regions."
+      },
+      {
+        "id": "B",
+        "text": "Simplify charge calculation and rate maintenance."
+      },
+      {
+        "id": "C",
+        "text": "Support route and transportation lane determination."
+      },
+      {
+        "id": "D",
+        "text": "Store vehicle maintenance history."
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "Transportation Zones group locations to simplify planning, routing, and charge calculation. They are not used for fleet maintenance.",
+    "consultantTip": "Large implementations use zones extensively to reduce freight agreement maintenance.",
+    "realProjectScenario": "Instead of maintaining rates for 2,500 cities, a customer maintained rates for 25 transportation zones.",
+    "commonMistake": "Creating separate freight agreements for every location.",
+    "sapConfiguration": [
+      "Transportation Zones"
+    ],
+    "sapTransactions": [],
+    "sapTables": [],
+    "interviewQuestion": "Why are Transportation Zones important in SAP TM?",
+    "certificationReference": "Transportation Network",
+    "estimatedTime": 180,
+    "negativeMarks": 1,
+    "tags": [
+      "Transportation Zone",
+      "Master Data"
+    ]
+  },
+  {
+    "id": "M2T2Q012",
+    "module": "module2",
+    "unit": "Topic 2",
+    "topic": "Business Partner & Organizational Management",
+    "subTopic": "Means of Transport",
+    "difficulty": "Consultant",
+    "questionType": "single_correct",
+    "question": "What is the primary purpose of Means of Transport master data in SAP TM?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Represent transportation modes such as Road, Rail, Ocean, and Air for planning and execution."
+      },
+      {
+        "id": "B",
+        "text": "Maintain employee travel expenses."
+      },
+      {
+        "id": "C",
+        "text": "Create freight settlement documents."
+      },
+      {
+        "id": "D",
+        "text": "Maintain customer credit limits."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Means of Transport defines the transportation mode used during planning and execution.",
+    "consultantTip": "Mode of Transport affects routing, planning, transit time, and charge calculation.",
+    "realProjectScenario": "Ocean Freight Orders automatically selected vessel schedules because the planning profile was configured for Ocean transport.",
+    "commonMistake": "Confusing transportation mode with transportation resource.",
+    "sapConfiguration": [
+      "Means of Transport"
+    ],
+    "sapTransactions": [],
+    "sapTables": [],
+    "interviewQuestion": "How does Means of Transport influence transportation planning?",
+    "certificationReference": "Transportation Modes",
+    "estimatedTime": 150,
+    "negativeMarks": 1,
+    "tags": [
+      "Mode of Transport",
+      "Planning"
+    ]
+  },
+  {
+    "id": "M2T2Q013",
+    "module": "module2",
+    "unit": "Topic 2",
+    "topic": "Business Partner & Organizational Management",
+    "subTopic": "Transportation Resources",
+    "difficulty": "Architect",
+    "questionType": "scenario",
+    "question": "A transportation planner notices that no truck is proposed during planning, although valid Freight Units and Transportation Lanes exist. Resource master data appears incomplete. Which missing information is MOST likely preventing planning?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Resource capacity or availability calendar."
+      },
+      {
+        "id": "B",
+        "text": "Company logo."
+      },
+      {
+        "id": "C",
+        "text": "Output type."
+      },
+      {
+        "id": "D",
+        "text": "Billing document number."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Transportation Resources require capacities and availability calendars for successful planning.",
+    "consultantTip": "A truck without capacity or availability is effectively unusable.",
+    "realProjectScenario": "Planning failed because all truck calendars showed maintenance shutdown during the requested shipping dates.",
+    "commonMistake": "Changing optimizer settings before checking resource master data.",
+    "sapConfiguration": [
+      "Transportation Resources",
+      "Calendars"
+    ],
+    "sapTransactions": [],
+    "sapTables": [],
+    "interviewQuestion": "Which resource master data is mandatory for planning?",
+    "certificationReference": "Resource Management",
+    "estimatedTime": 210,
+    "negativeMarks": 1,
+    "tags": [
+      "Resources",
+      "Capacity",
+      "Planning"
+    ]
+  },
+  {
+    "id": "M2T2Q014",
+    "module": "module2",
+    "unit": "Topic 2",
+    "topic": "Business Partner & Organizational Management",
+    "subTopic": "Capacity Management",
+    "difficulty": "Senior Consultant",
+    "questionType": "assertion_reason",
+    "question": "Assertion (A): Resource capacities influence transportation planning results. Reason (R): The optimizer checks configured weight, volume, and other capacity limits before assigning Freight Units to transportation resources.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Both Assertion and Reason are true, and Reason correctly explains Assertion."
+      },
+      {
+        "id": "B",
+        "text": "Both Assertion and Reason are true, but Reason does not correctly explain Assertion."
+      },
+      {
+        "id": "C",
+        "text": "Assertion is true, Reason is false."
+      },
+      {
+        "id": "D",
+        "text": "Assertion is false, Reason is true."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Capacity limits are hard planning constraints that directly influence optimization results.",
+    "consultantTip": "Weight, volume, pallet positions, and equipment limitations should all be validated during planning.",
+    "realProjectScenario": "Optimization returned no feasible solution because every available vehicle exceeded its configured weight capacity.",
+    "commonMistake": "Ignoring capacity master data while troubleshooting planning failures.",
+    "sapConfiguration": [
+      "Resource Capacity"
+    ],
+    "sapTransactions": [
+      "/SCMTMS/PLN_OPT"
+    ],
+    "sapTables": [],
+    "interviewQuestion": "How does resource capacity influence the optimizer?",
+    "certificationReference": "Capacity Planning",
+    "estimatedTime": 180,
+    "negativeMarks": 1,
+    "tags": [
+      "Capacity",
+      "Optimizer"
+    ]
+  },
+  {
+    "id": "M2T2Q015",
+    "module": "module2",
+    "unit": "Topic 2",
+    "topic": "Business Partner & Organizational Management",
+    "subTopic": "Resource Calendars",
+    "difficulty": "Solution Architect",
+    "questionType": "case_study",
+    "question": "A transportation optimizer reports 'No Available Resource' even though trucks exist in the system and have sufficient capacity. Which investigation should be performed FIRST?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Verify the resource availability calendars and validity periods."
+      },
+      {
+        "id": "B",
+        "text": "Reconfigure Freight Unit Building Rules."
+      },
+      {
+        "id": "C",
+        "text": "Increase optimizer timeout."
+      },
+      {
+        "id": "D",
+        "text": "Modify Business Partner roles."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Even if vehicles have sufficient capacity, they cannot be assigned if they are unavailable according to their calendars or validity periods.",
+    "consultantTip": "Resource availability is one of the first things to check when planning cannot assign vehicles.",
+    "realProjectScenario": "A public holiday calendar incorrectly marked all vehicles unavailable, preventing transportation planning across the country.",
+    "commonMistake": "Assuming the optimizer is malfunctioning when the issue is resource availability.",
+    "sapConfiguration": [
+      "Resource Calendars",
+      "Resource Availability"
+    ],
+    "sapTransactions": [],
+    "sapTables": [],
+    "interviewQuestion": "How would you troubleshoot 'No Available Resource' errors in SAP TM?",
+    "certificationReference": "Resource Management",
+    "estimatedTime": 300,
+    "negativeMarks": 1,
+    "tags": [
+      "Calendar",
+      "Resources",
+      "Troubleshooting"
+    ]
+  },
+  {
+    "id": "M2T2Q006",
+    "module": "module2",
+    "unit": "Topic 2",
+    "topic": "Business Partner & Organizational Management",
+    "subTopic": "Transportation Planning Organization",
+    "difficulty": "Senior Consultant",
+    "questionType": "multiple_correct",
+    "question": "Why are Organizational Units important in SAP TM?",
+    "options": [
+      {
+        "id": "A",
+        "text": "They define planning responsibility."
+      },
+      {
+        "id": "B",
+        "text": "They support authorization management."
+      },
+      {
+        "id": "C",
+        "text": "They enable separation of business processes across regions or business units."
+      },
+      {
+        "id": "D",
+        "text": "They replace Business Partners."
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "Organizational Units define ownership, authorization, and planning responsibility. They complement Business Partners rather than replacing them.",
+    "consultantTip": "Business Partner = External business entity. Organization = Internal responsibility.",
+    "realProjectScenario": "European and APAC planners worked independently using different organizational units while sharing the same SAP TM system.",
+    "commonMistake": "Using Business Partners instead of Organizational Units for internal planning responsibility.",
+    "sapConfiguration": [
+      "Organizational Management"
+    ],
+    "sapTransactions": [],
+    "sapTables": [],
+    "interviewQuestion": "Why are Organizational Units required in SAP TM?",
+    "certificationReference": "Organizational Management",
+    "estimatedTime": 180,
+    "negativeMarks": 1,
+    "tags": [
+      "Organization",
+      "Authorization",
+      "Planning"
+    ]
+  },
+  {
+    "id": "M2T2Q007",
+    "module": "module2",
+    "unit": "Topic 2",
+    "topic": "Business Partner & Organizational Management",
+    "subTopic": "Organizational Determination",
+    "difficulty": "Architect",
+    "questionType": "single_correct",
+    "question": "Which SAP TM mechanism determines the responsible planning organization for newly created transportation documents?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Organizational Determination"
+      },
+      {
+        "id": "B",
+        "text": "Condition Technique"
+      },
+      {
+        "id": "C",
+        "text": "PPF Action Profile"
+      },
+      {
+        "id": "D",
+        "text": "Output Management"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Organizational Determination assigns the appropriate organizational unit based on configured business rules.",
+    "consultantTip": "Incorrect organizational determination often causes authorization and workload assignment issues.",
+    "realProjectScenario": "New Freight Orders were automatically assigned to the APAC planning organization based on shipping location.",
+    "commonMistake": "Assigning organizations manually instead of configuring determination rules.",
+    "sapConfiguration": [
+      "Organizational Determination"
+    ],
+    "sapTransactions": [],
+    "sapTables": [],
+    "interviewQuestion": "How does SAP TM determine the responsible planning organization?",
+    "certificationReference": "Organizational Determination",
+    "estimatedTime": 180,
+    "negativeMarks": 1,
+    "tags": [
+      "Organization",
+      "Determination"
+    ]
+  },
+  {
+    "id": "M2T2Q008",
+    "module": "module2",
+    "unit": "Topic 2",
+    "topic": "Business Partner & Organizational Management",
+    "subTopic": "Company Code Integration",
+    "difficulty": "Consultant",
+    "questionType": "scenario",
+    "question": "A company operates multiple Company Codes but wants centralized transportation planning through one SAP TM planning organization. Which statement best describes this scenario?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Multiple Company Codes can share the same transportation planning organization if business requirements allow."
+      },
+      {
+        "id": "B",
+        "text": "Each Company Code must have a separate SAP TM system."
+      },
+      {
+        "id": "C",
+        "text": "Each Company Code requires a separate optimizer."
+      },
+      {
+        "id": "D",
+        "text": "Transportation planning is restricted to one Company Code only."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "SAP TM organizational design is flexible and can support centralized or decentralized transportation planning depending on business requirements.",
+    "consultantTip": "SAP TM organizational design should reflect business operations—not necessarily ERP organizational structures.",
+    "realProjectScenario": "Five regional Company Codes used a single central transportation planning team for carrier optimization.",
+    "commonMistake": "Assuming every ERP organizational object requires its own TM organization.",
+    "sapConfiguration": [
+      "Organizational Management"
+    ],
+    "sapTransactions": [],
+    "sapTables": [],
+    "interviewQuestion": "Can multiple Company Codes share one planning organization?",
+    "certificationReference": "Organizational Design",
+    "estimatedTime": 180,
+    "negativeMarks": 1,
+    "tags": [
+      "Company Code",
+      "Organization"
+    ]
+  },
+  {
+    "id": "M2T2Q009",
+    "module": "module2",
+    "unit": "Topic 2",
+    "topic": "Business Partner & Organizational Management",
+    "subTopic": "Authorization",
+    "difficulty": "Senior Consultant",
+    "questionType": "assertion_reason",
+    "question": "Assertion (A): Organizational structures influence user authorizations in SAP TM. Reason (R): Planning responsibilities and document ownership can be controlled using organizational assignments together with authorization concepts.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Both Assertion and Reason are true, and Reason correctly explains Assertion."
+      },
+      {
+        "id": "B",
+        "text": "Both Assertion and Reason are true, but Reason does not correctly explain Assertion."
+      },
+      {
+        "id": "C",
+        "text": "Assertion is true, Reason is false."
+      },
+      {
+        "id": "D",
+        "text": "Assertion is false, Reason is true."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Organizational assignments work together with authorization concepts to ensure users access only the transportation documents relevant to their responsibilities.",
+    "consultantTip": "Authorization issues are often caused by organizational assignments rather than missing roles.",
+    "realProjectScenario": "Regional planners could access only Freight Orders belonging to their assigned planning organization.",
+    "commonMistake": "Checking PFCG roles before validating organizational assignments.",
+    "sapConfiguration": [
+      "Organizational Management",
+      "Authorization"
+    ],
+    "sapTransactions": [],
+    "sapTables": [],
+    "interviewQuestion": "How do organizational structures influence SAP TM security?",
+    "certificationReference": "Authorization",
+    "estimatedTime": 180,
+    "negativeMarks": 1,
+    "tags": [
+      "Authorization",
+      "Organization"
+    ]
+  },
+  {
+    "id": "M2T2Q010",
+    "module": "module2",
+    "unit": "Topic 2",
+    "topic": "Business Partner & Organizational Management",
+    "subTopic": "Organizational Troubleshooting",
+    "difficulty": "Solution Architect",
+    "questionType": "case_study",
+    "question": "A planner can successfully create Freight Orders but cannot view Freight Orders created by colleagues within the same transportation department. Which investigation should be performed FIRST?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Verify organizational assignments and authorization settings for the affected users."
+      },
+      {
+        "id": "B",
+        "text": "Modify Freight Unit Building Rules."
+      },
+      {
+        "id": "C",
+        "text": "Reconfigure Transportation Lanes."
+      },
+      {
+        "id": "D",
+        "text": "Increase optimizer runtime."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Visibility issues are commonly caused by organizational assignments or authorization configuration rather than planning configuration.",
+    "consultantTip": "Always separate document creation issues from document visibility issues.",
+    "realProjectScenario": "Freight Orders were created correctly, but planners could not access them because they belonged to a different planning organization.",
+    "commonMistake": "Debugging planning configuration instead of checking authorizations.",
+    "sapConfiguration": [
+      "Organizational Management",
+      "Authorization"
+    ],
+    "sapTransactions": [],
+    "sapTables": [],
+    "interviewQuestion": "How would you troubleshoot document visibility issues in SAP TM?",
+    "certificationReference": "Security and Organizational Management",
+    "estimatedTime": 300,
+    "negativeMarks": 1,
+    "tags": [
+      "Organization",
+      "Authorization",
+      "Troubleshooting"
+    ]
+  },
+  {
+    "id": "M2T2Q001",
+    "module": "module2",
+    "unit": "Topic 2",
+    "topic": "Business Partner & Organizational Management",
+    "subTopic": "Business Partner Integration",
+    "difficulty": "Senior Consultant",
+    "questionType": "multiple_correct",
+    "question": "Which statements about Business Partners (BP) in SAP TM are correct?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A Business Partner can perform multiple transportation-related roles."
+      },
+      {
+        "id": "B",
+        "text": "The same Business Partner can act as both Carrier and Customer in different business scenarios."
+      },
+      {
+        "id": "C",
+        "text": "Business Partners are used only during Freight Settlement."
+      },
+      {
+        "id": "D",
+        "text": "Business Partners participate throughout transportation planning and execution."
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "SAP Business Partners are central master data objects. A single BP may have multiple roles and participate throughout transportation planning, execution, tendering, and settlement.",
+    "consultantTip": "One BP can have multiple roles—don't create duplicate Business Partners unnecessarily.",
+    "realProjectScenario": "A logistics provider acted as both a customer for inbound shipments and a carrier for outbound deliveries using the same Business Partner.",
+    "commonMistake": "Creating separate Business Partners instead of assigning additional roles.",
+    "sapConfiguration": [
+      "Business Partner Roles"
+    ],
+    "sapTransactions": [
+      "BP"
+    ],
+    "sapTables": [
+      "BUT000"
+    ],
+    "interviewQuestion": "Can one Business Partner perform multiple roles in SAP TM?",
+    "certificationReference": "Business Partner",
+    "estimatedTime": 180,
+    "negativeMarks": 1,
+    "tags": [
+      "Business Partner",
+      "BP",
+      "Master Data"
+    ]
+  },
+  {
+    "id": "M2T2Q002",
+    "module": "module2",
+    "unit": "Topic 2",
+    "topic": "Business Partner & Organizational Management",
+    "subTopic": "Carrier Master Data",
+    "difficulty": "Consultant",
+    "questionType": "single_correct",
+    "question": "Which Business Partner role is primarily responsible for physically executing transportation in SAP TM?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Carrier"
+      },
+      {
+        "id": "B",
+        "text": "Consignee"
+      },
+      {
+        "id": "C",
+        "text": "Ship-to Party"
+      },
+      {
+        "id": "D",
+        "text": "Employee"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The Carrier Business Partner executes transportation services and is assigned to Freight Orders or Freight Bookings.",
+    "consultantTip": "Carrier assignment is essential before tendering and execution.",
+    "realProjectScenario": "Carrier tendering failed because the carrier Business Partner lacked the required transportation role.",
+    "commonMistake": "Confusing the customer's Ship-to Party with the transportation carrier.",
+    "sapConfiguration": [
+      "Carrier Determination"
+    ],
+    "sapTransactions": [
+      "BP"
+    ],
+    "sapTables": [],
+    "interviewQuestion": "Which Business Partner executes transportation services?",
+    "certificationReference": "Carrier Management",
+    "estimatedTime": 120,
+    "negativeMarks": 1,
+    "tags": [
+      "Carrier",
+      "Business Partner"
+    ]
+  },
+  {
+    "id": "M2T2Q003",
+    "module": "module2",
+    "unit": "Topic 2",
+    "topic": "Business Partner & Organizational Management",
+    "subTopic": "Organizational Structure",
+    "difficulty": "Architect",
+    "questionType": "scenario",
+    "question": "A multinational organization wants different transportation planners to manage domestic and export operations independently while sharing the same SAP TM system. Which SAP concept should be configured?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Organizational Units and Organizational Structure"
+      },
+      {
+        "id": "B",
+        "text": "Output Types"
+      },
+      {
+        "id": "C",
+        "text": "Pricing Procedures"
+      },
+      {
+        "id": "D",
+        "text": "Material Groups"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Organizational structures separate responsibilities, planning areas, and authorizations while operating within the same SAP TM landscape.",
+    "consultantTip": "Organizational design directly affects planning responsibility and reporting.",
+    "realProjectScenario": "Domestic and international planning teams used different organizational units while sharing common transportation resources.",
+    "commonMistake": "Using Business Partners instead of Organizational Units for internal responsibilities.",
+    "sapConfiguration": [
+      "Organizational Management"
+    ],
+    "sapTransactions": [],
+    "sapTables": [],
+    "interviewQuestion": "How is organizational responsibility modeled in SAP TM?",
+    "certificationReference": "Organizational Management",
+    "estimatedTime": 180,
+    "negativeMarks": 1,
+    "tags": [
+      "Organization",
+      "Planning",
+      "Structure"
+    ]
+  },
+  {
+    "id": "M2T2Q004",
+    "module": "module2",
+    "unit": "Topic 2",
+    "topic": "Business Partner & Organizational Management",
+    "subTopic": "Business Partner Roles",
+    "difficulty": "Senior Consultant",
+    "questionType": "assertion_reason",
+    "question": "Assertion (A): A single Business Partner can be assigned multiple transportation-related roles in SAP TM. Reason (R): Business Partner roles determine how the same master record participates in different transportation processes without duplicating master data.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Both Assertion and Reason are true, and Reason correctly explains Assertion."
+      },
+      {
+        "id": "B",
+        "text": "Both Assertion and Reason are true, but Reason does not correctly explain Assertion."
+      },
+      {
+        "id": "C",
+        "text": "Assertion is true, Reason is false."
+      },
+      {
+        "id": "D",
+        "text": "Assertion is false, Reason is true."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Business Partner roles allow a single BP to participate in multiple transportation scenarios without creating duplicate master records.",
+    "consultantTip": "BP Roles = Reuse master data, avoid duplication.",
+    "realProjectScenario": "One logistics provider acted as both Carrier and Vendor through different BP roles.",
+    "commonMistake": "Creating multiple Business Partners for the same legal entity.",
+    "sapConfiguration": [
+      "Business Partner Roles"
+    ],
+    "sapTransactions": [
+      "BP"
+    ],
+    "sapTables": [
+      "BUT100"
+    ],
+    "interviewQuestion": "Why are Business Partner roles preferred over creating multiple Business Partners?",
+    "certificationReference": "Business Partner",
+    "estimatedTime": 180,
+    "negativeMarks": 1,
+    "tags": [
+      "BP",
+      "Roles",
+      "Master Data"
+    ]
+  },
+  {
+    "id": "M2T2Q005",
+    "module": "module2",
+    "unit": "Topic 2",
+    "topic": "Business Partner & Organizational Management",
+    "subTopic": "Business Partner Troubleshooting",
+    "difficulty": "Solution Architect",
+    "questionType": "case_study",
+    "question": "Carrier determination fails during Freight Order planning even though the carrier Business Partner exists in the system. Which investigation should be performed FIRST?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Verify that the Business Partner has the required transportation role and relevant organizational assignments."
+      },
+      {
+        "id": "B",
+        "text": "Increase optimizer runtime."
+      },
+      {
+        "id": "C",
+        "text": "Modify Freight Unit Building Rules."
+      },
+      {
+        "id": "D",
+        "text": "Reconfigure Transportation Lanes."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "If the carrier exists but cannot be selected, the first step is to verify Business Partner roles, assignments, and transportation-specific master data before investigating planning logic.",
+    "consultantTip": "Always validate master data before debugging configuration.",
+    "realProjectScenario": "Carrier determination failed because the transportation service provider role had not been assigned to the Business Partner.",
+    "commonMistake": "Changing planning configuration when the actual issue is incomplete BP master data.",
+    "sapConfiguration": [
+      "Business Partner",
+      "Carrier Determination"
+    ],
+    "sapTransactions": [
+      "BP"
+    ],
+    "sapTables": [
+      "BUT000",
+      "BUT100"
+    ],
+    "interviewQuestion": "How would you troubleshoot carrier determination failures?",
+    "certificationReference": "Business Partner Integration",
+    "estimatedTime": 300,
+    "negativeMarks": 1,
+    "tags": [
+      "Business Partner",
+      "Carrier",
+      "Troubleshooting"
+    ]
+  },
+  {
+    "id": "M2T1Q046",
+    "module": "module2",
+    "unit": "Topic 1",
+    "topic": "SAP Transportation Management",
+    "subTopic": "End-to-End Document Flow",
+    "difficulty": "Solution Architect",
+    "questionType": "order_sequence",
+    "question": "Arrange the following objects in the correct end-to-end SAP TM transportation planning sequence for a standard outbound process.",
+    "options": {
+      "items": [
+        {
+          "id": "A",
+          "text": "ERP Sales Order / Outbound Delivery"
+        },
+        {
+          "id": "B",
+          "text": "Transportation Requirement (OTR/DTR)"
+        },
+        {
+          "id": "C",
+          "text": "Freight Unit"
+        },
+        {
+          "id": "D",
+          "text": "Freight Order"
+        },
+        {
+          "id": "E",
+          "text": "Freight Settlement Document"
+        }
+      ]
+    },
+    "correctAnswer": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "explanation": "Business documents generate transportation requirements, which create Freight Units through FUBR. Freight Units are planned into Freight Orders, followed by freight settlement after execution.",
+    "consultantTip": "Memorize this lifecycle—it appears frequently in certification and implementation discussions.",
+    "realProjectScenario": "A global manufacturer used Delivery-Based Transportation Planning where outbound deliveries generated DTRs before Freight Unit creation.",
+    "commonMistake": "Assuming Freight Orders are created directly from ERP deliveries.",
+    "sapConfiguration": [
+      "Transportation Relevance",
+      "FUBR",
+      "Planning Profile"
+    ],
+    "sapTransactions": [
+      "/SCMTMS/PLN"
+    ],
+    "sapTables": [],
+    "interviewQuestion": "Describe the complete SAP TM document flow from ERP demand to settlement.",
+    "certificationReference": "Transportation Process Flow",
+    "estimatedTime": 240,
+    "negativeMarks": 1,
+    "tags": [
+      "Document Flow",
+      "OTR",
+      "DTR",
+      "Freight Unit",
+      "Freight Order"
+    ]
+  },
+  {
+    "id": "M2T1Q047",
+    "module": "module2",
+    "unit": "Topic 1",
+    "topic": "SAP Transportation Management",
+    "subTopic": "TOR Hierarchy",
+    "difficulty": "Architect",
+    "questionType": "multiple_correct",
+    "question": "Which SAP TM documents are implemented as Transportation Order (TOR) document types?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Freight Unit"
+      },
+      {
+        "id": "B",
+        "text": "Freight Order"
+      },
+      {
+        "id": "C",
+        "text": "Freight Booking"
+      },
+      {
+        "id": "D",
+        "text": "Forwarding Order"
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "explanation": "Freight Units, Freight Orders, Freight Bookings, and Forwarding Orders are all implemented as Transportation Order (TOR) document types within SAP TM.",
+    "consultantTip": "Whenever you hear FU, FO, FB, or FWO, think 'TOR subtype'.",
+    "realProjectScenario": "A BOPF enhancement developed at the TOR level automatically applied to Freight Orders and Freight Bookings.",
+    "commonMistake": "Treating these documents as unrelated business objects.",
+    "sapConfiguration": [
+      "Transportation Order Types"
+    ],
+    "sapTransactions": [],
+    "sapTables": [
+      "/SCMTMS/D_TORROT"
+    ],
+    "interviewQuestion": "Explain the TOR hierarchy in SAP TM.",
+    "certificationReference": "TOR Business Object",
+    "estimatedTime": 180,
+    "negativeMarks": 1,
+    "tags": [
+      "TOR",
+      "Freight Unit",
+      "Freight Order",
+      "Forwarding Order"
+    ]
+  },
+  {
+    "id": "M2T1Q048",
+    "module": "module2",
+    "unit": "Topic 1",
+    "topic": "SAP Transportation Management",
+    "subTopic": "Planning Architecture",
+    "difficulty": "Architect",
+    "questionType": "assertion_reason",
+    "question": "Assertion (A): Freight Unit Building Rules and the Transportation Optimizer perform different responsibilities within SAP TM. Reason (R): FUBR creates transportation demand by generating Freight Units, whereas the Optimizer determines an efficient execution plan by assigning Freight Units to transportation resources while considering planning constraints.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Both Assertion and Reason are true, and Reason correctly explains Assertion."
+      },
+      {
+        "id": "B",
+        "text": "Both Assertion and Reason are true, but Reason does not correctly explain Assertion."
+      },
+      {
+        "id": "C",
+        "text": "Assertion is true, Reason is false."
+      },
+      {
+        "id": "D",
+        "text": "Assertion is false, Reason is true."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "FUBR and the Optimizer belong to different phases of transportation planning. FUBR creates Freight Units, while the Optimizer creates efficient transportation plans using those Freight Units.",
+    "consultantTip": "FUBR creates demand; Optimizer creates execution.",
+    "realProjectScenario": "The project team initially tuned optimizer parameters, but the actual issue was incorrect Freight Unit creation caused by FUBR configuration.",
+    "commonMistake": "Expecting the Optimizer to fix incorrectly generated Freight Units.",
+    "sapConfiguration": [
+      "FUBR",
+      "Optimizer Profile"
+    ],
+    "sapTransactions": [
+      "/SCMTMS/FUBR",
+      "/SCMTMS/PLN_OPT"
+    ],
+    "sapTables": [],
+    "interviewQuestion": "Explain the relationship between FUBR and the Transportation Optimizer.",
+    "certificationReference": "Planning Architecture",
+    "estimatedTime": 210,
+    "negativeMarks": 1,
+    "tags": [
+      "FUBR",
+      "Optimizer",
+      "Planning"
+    ]
+  },
+  {
+    "id": "M2T1Q049",
+    "module": "module2",
+    "unit": "Topic 1",
+    "topic": "SAP Transportation Management",
+    "subTopic": "Cross-System Integration",
+    "difficulty": "Solution Architect",
+    "questionType": "scenario",
+    "question": "A delivery is successfully transferred from SAP SD to SAP TM, Freight Units are generated, and a Freight Order is planned. However, warehouse loading confirmations never update the Freight Order execution status. Which integration should be investigated FIRST?",
+    "options": [
+      {
+        "id": "A",
+        "text": "SAP TM ↔ SAP EWM execution integration"
+      },
+      {
+        "id": "B",
+        "text": "FUBR determination"
+      },
+      {
+        "id": "C",
+        "text": "Transportation Lane configuration"
+      },
+      {
+        "id": "D",
+        "text": "Carrier determination"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Planning has completed successfully, so the remaining issue lies in execution. Warehouse loading confirmations are exchanged through TM-EWM integration.",
+    "consultantTip": "Always isolate whether the issue belongs to planning, execution, or settlement before troubleshooting.",
+    "realProjectScenario": "Warehouse tasks were confirmed in EWM, but execution events were not mapped correctly to Freight Order statuses in TM.",
+    "commonMistake": "Investigating planning configuration after successful Freight Order creation.",
+    "sapConfiguration": [
+      "TM-EWM Integration",
+      "Execution Events"
+    ],
+    "sapTransactions": [],
+    "sapTables": [],
+    "interviewQuestion": "How would you troubleshoot TM-EWM execution integration?",
+    "certificationReference": "Execution Integration",
+    "estimatedTime": 240,
+    "negativeMarks": 1,
+    "tags": [
+      "TM",
+      "EWM",
+      "Integration",
+      "Execution"
+    ]
+  },
+  {
+    "id": "M2T1Q050",
+    "module": "module2",
+    "unit": "Topic 1",
+    "topic": "SAP Transportation Management",
+    "subTopic": "Production Support",
+    "difficulty": "Solution Architect",
+    "questionType": "case_study",
+    "question": "Following go-live, users report that transportation planning has stopped completely for newly created deliveries. Investigation confirms that deliveries are transferred to TM, but no Freight Units are generated. Which troubleshooting sequence is MOST appropriate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Verify Transportation Relevance → Check FUBR determination → Validate FUBR split/grouping rules → Review application logs before investigating optimizer configuration."
+      },
+      {
+        "id": "B",
+        "text": "Increase optimizer runtime and recreate Freight Orders."
+      },
+      {
+        "id": "C",
+        "text": "Reconfigure carrier tendering."
+      },
+      {
+        "id": "D",
+        "text": "Maintain additional transportation lanes."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Without Freight Units, transportation planning cannot begin. The logical troubleshooting sequence starts with transportation relevance and FUBR determination before moving to planning or optimization.",
+    "consultantTip": "Production support is most effective when troubleshooting follows the actual document flow instead of random configuration checks.",
+    "realProjectScenario": "A transport request accidentally removed FUBR determination for a new delivery type, preventing Freight Unit creation across the entire organization.",
+    "commonMistake": "Debugging optimizer issues before confirming Freight Unit generation.",
+    "sapConfiguration": [
+      "Transportation Relevance",
+      "FUBR Determination",
+      "FUBR",
+      "Application Logs"
+    ],
+    "sapTransactions": [
+      "/SCMTMS/FUBR"
+    ],
+    "sapTables": [
+      "/SCMTMS/D_FUBR"
+    ],
+    "interviewQuestion": "Describe your end-to-end troubleshooting strategy when no Freight Units are generated after go-live.",
+    "certificationReference": "SAP TM Production Support",
+    "estimatedTime": 360,
+    "negativeMarks": 1,
+    "tags": [
+      "Production Support",
+      "FUBR",
+      "Troubleshooting",
+      "Go-Live"
+    ]
+  },
+  {
+    "id": "M2T1Q041",
+    "module": "module2",
+    "unit": "Topic 1",
+    "topic": "SAP Transportation Management",
+    "subTopic": "Freight Order Lifecycle",
+    "difficulty": "Senior Consultant",
+    "questionType": "multiple_correct",
+    "question": "Which activities are typically performed during the lifecycle of a Freight Order (FO) in SAP TM?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Carrier assignment"
+      },
+      {
+        "id": "B",
+        "text": "Transportation execution monitoring"
+      },
+      {
+        "id": "C",
+        "text": "Freight charge calculation"
+      },
+      {
+        "id": "D",
+        "text": "Material Requirements Planning (MRP)"
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "A Freight Order progresses through planning, carrier assignment, execution, charge calculation, and settlement. MRP belongs to Production Planning, not Transportation Management.",
+    "consultantTip": "A Freight Order is the central execution document in road transportation scenarios.",
+    "realProjectScenario": "A Freight Order was created, assigned to a carrier, executed, monitored, and finally settled automatically.",
+    "commonMistake": "Assuming Freight Orders are only planning documents.",
+    "sapConfiguration": [
+      "Freight Order Types"
+    ],
+    "sapTransactions": [
+      "/SCMTMS/TOR"
+    ],
+    "sapTables": [
+      "/SCMTMS/D_TORROT"
+    ],
+    "interviewQuestion": "Explain the complete lifecycle of a Freight Order.",
+    "certificationReference": "Freight Order",
+    "estimatedTime": 180,
+    "negativeMarks": 1,
+    "tags": [
+      "Freight Order",
+      "Execution",
+      "Lifecycle"
+    ]
+  },
+  {
+    "id": "M2T1Q042",
+    "module": "module2",
+    "unit": "Topic 1",
+    "topic": "SAP Transportation Management",
+    "subTopic": "Carrier Assignment",
+    "difficulty": "Architect",
+    "questionType": "single_correct",
+    "question": "During transportation planning, which Business Partner role is typically assigned to execute the transportation service represented by a Freight Order?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Carrier"
+      },
+      {
+        "id": "B",
+        "text": "Consignee"
+      },
+      {
+        "id": "C",
+        "text": "Sold-to Party"
+      },
+      {
+        "id": "D",
+        "text": "Purchasing Group"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The Carrier Business Partner is responsible for executing the transportation service associated with the Freight Order.",
+    "consultantTip": "Always distinguish business roles from ERP organizational elements.",
+    "realProjectScenario": "Freight Orders could not be tendered because no carrier had been assigned.",
+    "commonMistake": "Assigning the ship-to customer instead of the transportation carrier.",
+    "sapConfiguration": [
+      "Carrier Determination"
+    ],
+    "sapTransactions": [
+      "BP"
+    ],
+    "sapTables": [],
+    "interviewQuestion": "How is a carrier assigned to a Freight Order?",
+    "certificationReference": "Carrier Management",
+    "estimatedTime": 150,
+    "negativeMarks": 1,
+    "tags": [
+      "Carrier",
+      "Business Partner",
+      "Freight Order"
+    ]
+  },
+  {
+    "id": "M2T1Q043",
+    "module": "module2",
+    "unit": "Topic 1",
+    "topic": "SAP Transportation Management",
+    "subTopic": "Tendering",
+    "difficulty": "Senior Consultant",
+    "questionType": "scenario",
+    "question": "A company wants SAP TM to automatically send transportation requests to multiple approved carriers and award the Freight Order to the best accepted offer. Which SAP TM process supports this requirement?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Carrier Tendering"
+      },
+      {
+        "id": "B",
+        "text": "Freight Unit Building"
+      },
+      {
+        "id": "C",
+        "text": "Material Ledger"
+      },
+      {
+        "id": "D",
+        "text": "Output Determination"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Carrier Tendering allows transportation requests to be sent to one or more carriers for acceptance according to business rules and tendering strategies.",
+    "consultantTip": "Tendering begins after transportation planning—not before Freight Units are created.",
+    "realProjectScenario": "The first carrier rejected the tender, so SAP TM automatically forwarded it to the next preferred carrier.",
+    "commonMistake": "Confusing carrier tendering with Freight Settlement.",
+    "sapConfiguration": [
+      "Tendering Profiles"
+    ],
+    "sapTransactions": [],
+    "sapTables": [],
+    "interviewQuestion": "Explain the carrier tendering process in SAP TM.",
+    "certificationReference": "Carrier Tendering",
+    "estimatedTime": 210,
+    "negativeMarks": 1,
+    "tags": [
+      "Tendering",
+      "Carrier",
+      "Execution"
+    ]
+  },
+  {
+    "id": "M2T1Q044",
+    "module": "module2",
+    "unit": "Topic 1",
+    "topic": "SAP Transportation Management",
+    "subTopic": "Execution Status",
+    "difficulty": "Architect",
+    "questionType": "assertion_reason",
+    "question": "Assertion (A): Freight Order execution status changes throughout the transportation process. Reason (R): Execution events such as loading, departure, arrival, and proof of delivery update transportation execution progress in SAP TM.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Both Assertion and Reason are true, and Reason correctly explains Assertion."
+      },
+      {
+        "id": "B",
+        "text": "Both Assertion and Reason are true, but Reason does not correctly explain Assertion."
+      },
+      {
+        "id": "C",
+        "text": "Assertion is true, Reason is false."
+      },
+      {
+        "id": "D",
+        "text": "Assertion is false, Reason is true."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Execution events drive Freight Order status progression and provide transportation visibility throughout execution.",
+    "consultantTip": "Status management is event-driven in transportation execution.",
+    "realProjectScenario": "A delay notification was automatically triggered because the departure event was received later than planned.",
+    "commonMistake": "Updating execution status manually instead of integrating operational events.",
+    "sapConfiguration": [
+      "Execution Status",
+      "Event Management"
+    ],
+    "sapTransactions": [],
+    "sapTables": [],
+    "interviewQuestion": "How are Freight Order execution statuses updated?",
+    "certificationReference": "Transportation Execution",
+    "estimatedTime": 180,
+    "negativeMarks": 1,
+    "tags": [
+      "Execution",
+      "Status",
+      "Events"
+    ]
+  },
+  {
+    "id": "M2T1Q045",
+    "module": "module2",
+    "unit": "Topic 1",
+    "topic": "SAP Transportation Management",
+    "subTopic": "Transportation Execution Troubleshooting",
+    "difficulty": "Solution Architect",
+    "questionType": "case_study",
+    "question": "A Freight Order has been planned successfully, but execution events such as 'Departure' and 'Arrival' are not updating the document status even though the carrier confirms they have been sent. Which investigation should the consultant perform FIRST?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Verify event integration, event mapping, and execution status profile configuration before investigating planning logic."
+      },
+      {
+        "id": "B",
+        "text": "Reconfigure the Freight Unit Building Rule."
+      },
+      {
+        "id": "C",
+        "text": "Create a new Planning Profile."
+      },
+      {
+        "id": "D",
+        "text": "Increase optimizer runtime."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "If planning is successful but execution statuses do not change, the issue is typically related to event integration, event mapping, or status profile configuration rather than planning configuration.",
+    "consultantTip": "Separate planning problems from execution problems during troubleshooting.",
+    "realProjectScenario": "Carrier events reached SAP Integration Suite successfully, but incorrect event mapping prevented Freight Order status updates.",
+    "commonMistake": "Debugging optimizer settings when the issue is in execution event processing.",
+    "sapConfiguration": [
+      "Event Management",
+      "Status Profiles",
+      "Execution Integration"
+    ],
+    "sapTransactions": [],
+    "sapTables": [],
+    "interviewQuestion": "How would you troubleshoot Freight Order status updates that are not occurring after carrier events?",
+    "certificationReference": "Transportation Execution",
+    "estimatedTime": 300,
+    "negativeMarks": 1,
+    "tags": [
+      "Execution",
+      "Events",
+      "Troubleshooting",
+      "Freight Order"
+    ]
+  },
+  {
+    "id": "M2T1Q036",
+    "module": "module2",
+    "unit": "Topic 1",
+    "topic": "SAP Transportation Management",
+    "subTopic": "Freight Unit Building Rules (FUBR)",
+    "difficulty": "Senior Consultant",
+    "questionType": "multiple_correct",
+    "question": "Which functions are performed by Freight Unit Building Rules (FUBR) in SAP TM?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Determine how transportation demand is split into Freight Units."
+      },
+      {
+        "id": "B",
+        "text": "Control grouping and consolidation logic during Freight Unit creation."
+      },
+      {
+        "id": "C",
+        "text": "Determine Freight Settlement posting to Financial Accounting."
+      },
+      {
+        "id": "D",
+        "text": "Define scheduling behavior for Freight Unit creation."
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "FUBR controls Freight Unit creation by defining split criteria, grouping logic, scheduling, and planning-relevant attributes. Financial posting is handled during settlement, not by FUBR.",
+    "consultantTip": "Remember: FUBR creates transportation demand—not accounting documents.",
+    "realProjectScenario": "Different FUBRs were configured for parcel deliveries and full truckload shipments to achieve different consolidation behavior.",
+    "commonMistake": "Thinking FUBR influences Freight Settlement.",
+    "sapConfiguration": [
+      "Freight Unit Building Rule"
+    ],
+    "sapTransactions": [
+      "/SCMTMS/FUBR"
+    ],
+    "sapTables": [
+      "/SCMTMS/D_FUBR"
+    ],
+    "interviewQuestion": "Which business processes are controlled by FUBR?",
+    "certificationReference": "Freight Unit Building",
+    "estimatedTime": 180,
+    "negativeMarks": 1,
+    "tags": [
+      "FUBR",
+      "Freight Unit",
+      "Planning"
+    ]
+  },
+  {
+    "id": "M2T1Q037",
+    "module": "module2",
+    "unit": "Topic 1",
+    "topic": "SAP Transportation Management",
+    "subTopic": "FUBR Determination",
+    "difficulty": "Architect",
+    "questionType": "single_correct",
+    "question": "When multiple Freight Unit Building Rules are maintained in the system, how does SAP TM determine which FUBR should be applied?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Based on configured determination criteria such as document type, organizational data, and condition evaluation."
+      },
+      {
+        "id": "B",
+        "text": "Alphabetically by FUBR ID."
+      },
+      {
+        "id": "C",
+        "text": "The oldest FUBR created in the system."
+      },
+      {
+        "id": "D",
+        "text": "Random selection."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "SAP TM determines the applicable FUBR using configured determination logic based on relevant business attributes.",
+    "consultantTip": "Whenever the wrong Freight Unit is created, verify FUBR determination before checking planning logic.",
+    "realProjectScenario": "An incorrect organizational assignment caused the wrong FUBR to be selected, resulting in unexpected Freight Unit splitting.",
+    "commonMistake": "Assuming the system always uses the first configured FUBR.",
+    "sapConfiguration": [
+      "FUBR Determination"
+    ],
+    "sapTransactions": [
+      "/SCMTMS/FUBR"
+    ],
+    "sapTables": [
+      "/SCMTMS/D_FUBR"
+    ],
+    "interviewQuestion": "How does SAP TM determine which FUBR should be used?",
+    "certificationReference": "FUBR Determination",
+    "estimatedTime": 180,
+    "negativeMarks": 1,
+    "tags": [
+      "FUBR",
+      "Determination"
+    ]
+  },
+  {
+    "id": "M2T1Q038",
+    "module": "module2",
+    "unit": "Topic 1",
+    "topic": "SAP Transportation Management",
+    "subTopic": "Freight Unit Split",
+    "difficulty": "Senior Consultant",
+    "questionType": "scenario",
+    "question": "A customer requires one delivery containing frozen goods and ambient goods to always generate two separate Freight Units. Which SAP TM configuration should implement this requirement?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Configure Freight Unit Building Rules with appropriate split conditions."
+      },
+      {
+        "id": "B",
+        "text": "Create two Planning Profiles."
+      },
+      {
+        "id": "C",
+        "text": "Maintain separate Output Types."
+      },
+      {
+        "id": "D",
+        "text": "Configure two Freight Settlement Profiles."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "FUBR split conditions determine how transportation demand is divided into multiple Freight Units based on business requirements.",
+    "consultantTip": "Split conditions are one of the most frequently customized parts of FUBR.",
+    "realProjectScenario": "Frozen and ambient products were separated because different vehicle temperature requirements prevented consolidation.",
+    "commonMistake": "Trying to implement demand splitting through planning profiles.",
+    "sapConfiguration": [
+      "Split Rules"
+    ],
+    "sapTransactions": [
+      "/SCMTMS/FUBR"
+    ],
+    "sapTables": [
+      "/SCMTMS/D_FUBR"
+    ],
+    "interviewQuestion": "How would you configure product-based Freight Unit splitting?",
+    "certificationReference": "Freight Unit Split",
+    "estimatedTime": 210,
+    "negativeMarks": 1,
+    "tags": [
+      "Split",
+      "FUBR",
+      "Freight Unit"
+    ]
+  },
+  {
+    "id": "M2T1Q039",
+    "module": "module2",
+    "unit": "Topic 1",
+    "topic": "SAP Transportation Management",
+    "subTopic": "FUBR Scheduling",
+    "difficulty": "Architect",
+    "questionType": "assertion_reason",
+    "question": "Assertion (A): Freight Unit Building Rules influence scheduling information within Freight Units. Reason (R): FUBR can determine planning-relevant dates, times, and scheduling behavior during Freight Unit creation.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Both Assertion and Reason are true, and Reason correctly explains Assertion."
+      },
+      {
+        "id": "B",
+        "text": "Both Assertion and Reason are true, but Reason does not correctly explain Assertion."
+      },
+      {
+        "id": "C",
+        "text": "Assertion is true, Reason is false."
+      },
+      {
+        "id": "D",
+        "text": "Assertion is false, Reason is true."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "FUBR determines planning-relevant scheduling information that is subsequently used during transportation planning and optimization.",
+    "consultantTip": "Incorrect scheduling in Freight Units often originates from FUBR configuration.",
+    "realProjectScenario": "Pickup windows were calculated incorrectly because scheduling settings inside the FUBR were incomplete.",
+    "commonMistake": "Debugging the optimizer when the issue originates in Freight Unit creation.",
+    "sapConfiguration": [
+      "Scheduling"
+    ],
+    "sapTransactions": [
+      "/SCMTMS/FUBR"
+    ],
+    "sapTables": [],
+    "interviewQuestion": "How does FUBR influence transportation scheduling?",
+    "certificationReference": "Scheduling",
+    "estimatedTime": 180,
+    "negativeMarks": 1,
+    "tags": [
+      "Scheduling",
+      "FUBR",
+      "Planning"
+    ]
+  },
+  {
+    "id": "M2T1Q040",
+    "module": "module2",
+    "unit": "Topic 1",
+    "topic": "SAP Transportation Management",
+    "subTopic": "FUBR Troubleshooting",
+    "difficulty": "Solution Architect",
+    "questionType": "case_study",
+    "question": "Following a new SAP TM deployment, planners notice that every outbound delivery generates a separate Freight Unit, preventing shipment consolidation and dramatically increasing the number of Freight Orders. Which area should be investigated FIRST?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Freight Unit Building Rule grouping and split criteria."
+      },
+      {
+        "id": "B",
+        "text": "Output Management."
+      },
+      {
+        "id": "C",
+        "text": "Print Form configuration."
+      },
+      {
+        "id": "D",
+        "text": "Financial Posting configuration."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Unexpected Freight Unit proliferation is commonly caused by incorrect grouping or split criteria within the Freight Unit Building Rule.",
+    "consultantTip": "Whenever Freight Units are unexpectedly split, investigate FUBR before examining optimizer settings.",
+    "realProjectScenario": "A missing grouping criterion caused over 40,000 unnecessary Freight Units during User Acceptance Testing.",
+    "commonMistake": "Attempting to solve Freight Unit creation issues through Transportation Cockpit planning.",
+    "sapConfiguration": [
+      "FUBR",
+      "Grouping Rules",
+      "Split Conditions"
+    ],
+    "sapTransactions": [
+      "/SCMTMS/FUBR"
+    ],
+    "sapTables": [
+      "/SCMTMS/D_FUBR"
+    ],
+    "interviewQuestion": "How would you troubleshoot excessive Freight Unit creation after go-live?",
+    "certificationReference": "FUBR Troubleshooting",
+    "estimatedTime": 300,
+    "negativeMarks": 1,
+    "tags": [
+      "FUBR",
+      "Troubleshooting",
+      "Grouping",
+      "Split"
+    ]
+  },
+  {
+    "id": "M2T1Q031",
+    "module": "module2",
+    "unit": "Topic 1",
+    "topic": "SAP Transportation Management",
+    "subTopic": "SAP SD Integration",
+    "difficulty": "Senior Consultant",
+    "questionType": "multiple_correct",
+    "question": "Which SAP SD business documents can act as transportation demand sources for SAP TM depending on the integration scenario?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sales Orders"
+      },
+      {
+        "id": "B",
+        "text": "Outbound Deliveries"
+      },
+      {
+        "id": "C",
+        "text": "Billing Documents"
+      },
+      {
+        "id": "D",
+        "text": "Stock Transport Orders"
+      }
+    ],
+    "correctAnswer": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "Transportation demand can originate from Sales Orders (OTR), Outbound Deliveries (DTR), or Stock Transport Orders depending on the implemented business scenario. Billing documents do not create transportation demand.",
+    "consultantTip": "Always identify whether the customer uses Order-Based or Delivery-Based Transportation Planning.",
+    "realProjectScenario": "An automotive customer planned transportation directly from Sales Orders, while another customer planned only after Delivery creation.",
+    "commonMistake": "Assuming Billing Documents participate in transportation planning.",
+    "sapConfiguration": [
+      "Transportation Relevance",
+      "Integration Settings"
+    ],
+    "sapTransactions": [],
+    "sapTables": [],
+    "interviewQuestion": "Which ERP documents can generate transportation demand in SAP TM?",
+    "certificationReference": "ERP Integration",
+    "estimatedTime": 210,
+    "negativeMarks": 1,
+    "tags": [
+      "SD",
+      "Integration",
+      "OTR",
+      "DTR"
+    ]
+  },
+  {
+    "id": "M2T1Q032",
+    "module": "module2",
+    "unit": "Topic 1",
+    "topic": "SAP Transportation Management",
+    "subTopic": "Order-Based vs Delivery-Based Planning",
+    "difficulty": "Architect",
+    "questionType": "single_correct",
+    "question": "What is the primary difference between Order-Based Transportation Requirement (OTR) and Delivery-Based Transportation Requirement (DTR) in SAP TM?",
+    "options": [
+      {
+        "id": "A",
+        "text": "OTR is created from ERP Sales Orders or Purchase Orders, while DTR is created from Delivery documents."
+      },
+      {
+        "id": "B",
+        "text": "OTR is used only for air freight and DTR only for road freight."
+      },
+      {
+        "id": "C",
+        "text": "DTR is created after Freight Settlement."
+      },
+      {
+        "id": "D",
+        "text": "There is no functional difference between OTR and DTR."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "OTR represents transportation demand based on business orders, while DTR represents transportation demand based on logistics execution documents such as deliveries.",
+    "consultantTip": "The planning trigger determines whether the business follows an OTR or DTR process.",
+    "realProjectScenario": "A retail customer used Delivery-Based planning because warehouse picking had to finish before transportation planning.",
+    "commonMistake": "Treating OTR and DTR as interchangeable.",
+    "sapConfiguration": [
+      "Transportation Relevance"
+    ],
+    "sapTransactions": [],
+    "sapTables": [],
+    "interviewQuestion": "When would you recommend Order-Based Transportation Planning instead of Delivery-Based?",
+    "certificationReference": "Transportation Requirement",
+    "estimatedTime": 180,
+    "negativeMarks": 1,
+    "tags": [
+      "OTR",
+      "DTR",
+      "Integration"
+    ]
+  },
+  {
+    "id": "M2T1Q033",
+    "module": "module2",
+    "unit": "Topic 1",
+    "topic": "SAP Transportation Management",
+    "subTopic": "Transportation Relevance",
+    "difficulty": "Expert",
+    "questionType": "scenario",
+    "question": "A newly created delivery is not transferred to SAP TM, while older deliveries are transferred successfully. The integration infrastructure is functioning correctly. Which configuration should the consultant verify FIRST?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Transportation Relevance configuration for the new delivery type."
+      },
+      {
+        "id": "B",
+        "text": "Output Management."
+      },
+      {
+        "id": "C",
+        "text": "Print Forms."
+      },
+      {
+        "id": "D",
+        "text": "Freight Settlement Profile."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "If only one document type fails integration while others work correctly, transportation relevance is one of the first configuration areas to verify.",
+    "consultantTip": "Production support often begins by checking whether the document is actually transportation relevant.",
+    "realProjectScenario": "A custom delivery type failed TM integration because Transportation Relevance had not been maintained.",
+    "commonMistake": "Debugging middleware before validating application configuration.",
+    "sapConfiguration": [
+      "Transportation Relevance"
+    ],
+    "sapTransactions": [],
+    "sapTables": [],
+    "interviewQuestion": "What would you check if deliveries are not transferred to SAP TM?",
+    "certificationReference": "ERP Integration",
+    "estimatedTime": 210,
+    "negativeMarks": 1,
+    "tags": [
+      "Transportation Relevance",
+      "Integration",
+      "Delivery"
+    ]
+  },
+  {
+    "id": "M2T1Q034",
+    "module": "module2",
+    "unit": "Topic 1",
+    "topic": "SAP Transportation Management",
+    "subTopic": "SAP EWM Integration",
+    "difficulty": "Architect",
+    "questionType": "assertion_reason",
+    "question": "Assertion (A): SAP TM and SAP EWM frequently exchange transportation execution information. Reason (R): Transportation planning performed in SAP TM influences warehouse activities such as loading and transportation execution, while warehouse completion updates transportation execution status.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Both Assertion and Reason are true, and Reason correctly explains Assertion."
+      },
+      {
+        "id": "B",
+        "text": "Both Assertion and Reason are true, but Reason does not correctly explain Assertion."
+      },
+      {
+        "id": "C",
+        "text": "Assertion is true, Reason is false."
+      },
+      {
+        "id": "D",
+        "text": "Assertion is false, Reason is true."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "SAP TM and SAP EWM integrate closely during transportation execution. Transportation planning drives warehouse loading activities, while warehouse confirmations update transportation execution progress.",
+    "consultantTip": "TM plans the movement; EWM executes warehouse operations supporting that movement.",
+    "realProjectScenario": "Warehouse loading completion in EWM automatically updated the Freight Order execution status in TM.",
+    "commonMistake": "Treating TM and EWM as independent execution systems.",
+    "sapConfiguration": [
+      "TM-EWM Integration"
+    ],
+    "sapTransactions": [],
+    "sapTables": [],
+    "interviewQuestion": "Explain the interaction between SAP TM and SAP EWM during outbound logistics.",
+    "certificationReference": "TM-EWM Integration",
+    "estimatedTime": 180,
+    "negativeMarks": 1,
+    "tags": [
+      "TM",
+      "EWM",
+      "Integration"
+    ]
+  },
+  {
+    "id": "M2T1Q035",
+    "module": "module2",
+    "unit": "Topic 1",
+    "topic": "SAP Transportation Management",
+    "subTopic": "End-to-End Integration",
+    "difficulty": "Solution Architect",
+    "questionType": "case_study",
+    "question": "A company uses SAP SD, SAP TM, SAP EWM, and SAP FI. Which sequence BEST represents the standard outbound logistics process from transportation planning through financial settlement?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sales Order → Freight Settlement → Delivery → Freight Order → Goods Issue"
+      },
+      {
+        "id": "B",
+        "text": "Sales Order/Delivery → Transportation Requirement → Freight Unit → Freight Order → Warehouse Execution → Goods Issue → Freight Settlement → Financial Posting"
+      },
+      {
+        "id": "C",
+        "text": "Delivery → Invoice → Freight Unit → Freight Order"
+      },
+      {
+        "id": "D",
+        "text": "Freight Order → Sales Order → Warehouse Task → Billing"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The standard process begins with business demand, creates transportation demand, generates Freight Units, plans Freight Orders, executes warehouse and transportation activities, and finally performs freight settlement and financial posting.",
+    "consultantTip": "Architect-level questions often require understanding the complete cross-application process rather than individual TM transactions.",
+    "realProjectScenario": "A manufacturing company integrated SAP SD, TM, EWM, and FI to automate transportation planning, warehouse execution, and freight settlement.",
+    "commonMistake": "Placing Freight Settlement before transportation execution.",
+    "sapConfiguration": [
+      "TM Integration",
+      "Freight Settlement"
+    ],
+    "sapTransactions": [],
+    "sapTables": [],
+    "interviewQuestion": "Walk through the complete outbound process involving SAP SD, TM, EWM, and FI.",
+    "certificationReference": "End-to-End Integration",
+    "estimatedTime": 300,
+    "negativeMarks": 1,
+    "tags": [
+      "Integration",
+      "SD",
+      "TM",
+      "EWM",
+      "FI"
+    ]
+  }
+]

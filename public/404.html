@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redirecting...</title>
+  </head>
+  <body>
+    <script>
+      (function () {
+        var path = window.location.pathname || '/';
+        var segments = path.split('/').filter(Boolean);
+
+        // If there is no path segment, just send to root hash route.
+        if (segments.length === 0) {
+          window.location.replace('/#/');
+          return;
+        }
+
+        // For GitHub Pages project sites:
+        // /<repo>/<route> -> /<repo>/#/<route>
+        var repoBase = '/' + segments[0];
+        var routeSegments = segments.slice(1);
+        var routePath = routeSegments.length ? '/' + routeSegments.join('/') : '/';
+        var target =
+          repoBase +
+          '/#' +
+          routePath +
+          (window.location.search || '') +
+          (window.location.hash || '');
+
+        window.location.replace(target);
+      })();
+    </script>
+  </body>
+</html>
