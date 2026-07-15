@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { ArrowRight, Info, Keyboard, TimerReset } from 'lucide-react';
 import { useEffect, useState } from 'react';
-import { useNavigate, useSearchParams } from 'react-router-dom';
+import { useNavigate, useParams, useSearchParams } from 'react-router-dom';
 import { useExam } from '../components/exam-engine/ExamContext';
 import { knowledgeRepository } from '../services/KnowledgeRepository';
 
@@ -27,14 +27,17 @@ function RuleItem({ icon: Icon, title, text }) {
 
 function ExamInstructions() {
   const navigate = useNavigate();
+  const params = useParams();
   const [searchParams] = useSearchParams();
   const { continueExam, startExam, resetExam, status, counts, loading } = useExam();
   const [modules, setModules] = useState([]);
 
-  const moduleId = searchParams.get('moduleId') || undefined;
+  const moduleId = params.moduleId || searchParams.get('moduleId') || undefined;
   const rawTopicId = searchParams.get('topicId');
   const topicId = rawTopicId && /^\d+$/.test(rawTopicId) ? Number(rawTopicId) : rawTopicId || undefined;
   const subTopic = searchParams.get('subTopic') || undefined;
+
+  const startRoute = moduleId ? `/exam/module/${moduleId}/test` : '/exam/start';
 
   const selectedModule = modules.find((item) => item.id === moduleId);
 
@@ -47,8 +50,12 @@ function ExamInstructions() {
     .join(' | ');
 
   useEffect(() => {
+    // Skip automatic session restore for scoped starts to avoid overwriting module/topic test intent.
+    if (moduleId || topicId !== undefined || subTopic) {
+      return;
+    }
     continueExam();
-  }, [continueExam]);
+  }, [continueExam, moduleId, subTopic, topicId]);
 
   useEffect(() => {
     async function loadModules() {
@@ -60,7 +67,7 @@ function ExamInstructions() {
 
   const start = async () => {
     await startExam({ moduleId, topicId, subTopic });
-    navigate('/exam/start');
+    navigate(startRoute);
   };
 
   const startAllQuestions = async () => {
@@ -70,12 +77,11 @@ function ExamInstructions() {
   };
 
   const resume = () => {
-    navigate('/exam/start');
+    navigate(startRoute);
   };
 
   const startModuleWise = async (selectedModuleId) => {
-    await startExam({ moduleId: selectedModuleId });
-    navigate('/exam/start');
+    navigate(`/exam/module/${selectedModuleId}`);
   };
 
   return (

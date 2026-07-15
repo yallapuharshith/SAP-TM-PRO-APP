@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { Check } from 'lucide-react';
 import { cn } from '../../utils/cn';
 
-function OptionCard({ id, label, selected, onSelect, mode = 'single' }) {
+function OptionCard({ id, label, selected, onSelect, mode = 'single', displayIndex }) {
   return (
     <motion.button
       whileHover={{ y: -2 }}
@@ -26,7 +26,7 @@ function OptionCard({ id, label, selected, onSelect, mode = 'single' }) {
             <div className="grid h-full w-full place-items-center">{selected ? <Check className="h-3 w-3" /> : ''}</div>
           </div>
           <div>
-            <p className="text-xs uppercase tracking-wide text-slate-400">{id}</p>
+            <p className="text-xs uppercase tracking-wide text-slate-400">Option {displayIndex ?? id}</p>
             <p className="text-sm text-slate-100">{label}</p>
           </div>
         </div>

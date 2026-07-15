@@ -8,6 +8,7 @@ import Settings from './pages/Settings';
 import ExamInstructions from './pages/ExamInstructions';
 import ExamPage from './pages/ExamPage';
 import ExamResult from './pages/ExamResult';
+import SmartRevision from './pages/SmartRevision';
 
 function App() {
   return (
@@ -46,10 +47,34 @@ function App() {
           }
         />
         <Route
+          path="/exam/module/:moduleId"
+          element={
+            <AppShell pageTitle="Module Exam Instructions">
+              <ExamInstructions />
+            </AppShell>
+          }
+        />
+        <Route
+          path="/exam/module/:moduleId/test"
+          element={
+            <AppShell pageTitle="Module Question Test">
+              <ExamPage />
+            </AppShell>
+          }
+        />
+        <Route
           path="/exam/result"
           element={
             <AppShell pageTitle="Exam Result">
               <ExamResult />
+            </AppShell>
+          }
+        />
+        <Route
+          path="/revision"
+          element={
+            <AppShell pageTitle="Smart Revision">
+              <SmartRevision />
             </AppShell>
           }
         />

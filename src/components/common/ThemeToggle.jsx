@@ -7,7 +7,7 @@ function ThemeToggle({ isDark, onToggle }) {
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.96 }}
       onClick={onToggle}
-      className="inline-flex min-h-11 min-w-11 items-center gap-2 rounded-xl border border-white/20 bg-white/10 px-3 py-2 text-sm text-slate-100 backdrop-blur-lg transition-all hover:bg-white/15"
+      className="inline-flex min-h-11 min-w-11 items-center gap-2 rounded-xl border border-slate-300/40 bg-white/80 px-3 py-2 text-sm text-slate-700 backdrop-blur-lg transition-all hover:bg-white dark:border-white/20 dark:bg-white/10 dark:text-slate-100 dark:hover:bg-white/15"
       type="button"
       aria-label="Toggle theme"
     >

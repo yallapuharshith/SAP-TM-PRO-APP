@@ -46,7 +46,7 @@ function Sidebar({ isOpen, onClose }) {
           </div>
           <button
             type="button"
-            className="min-h-11 min-w-11 rounded-lg p-1 text-slate-300 hover:bg-white/10 lg:hidden"
+            className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-lg p-1 text-slate-300 hover:bg-white/10 lg:hidden"
             onClick={onClose}
             aria-label="Close sidebar"
           >
@@ -71,7 +71,9 @@ function Sidebar({ isOpen, onClose }) {
                   )
                 }
               >
-                <Icon className="h-4 w-4" />
+                <span className="inline-flex h-5 w-5 items-center justify-center">
+                  <Icon className="h-4 w-4 shrink-0" />
+                </span>
                 <span>{item.label}</span>
               </NavLink>
             );

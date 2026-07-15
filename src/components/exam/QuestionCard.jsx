@@ -32,11 +32,12 @@ function SequenceBuilder({ options, answer, onChange }) {
         )}
       </div>
       <div className="grid gap-2 md:grid-cols-2">
-        {options.map((option) => (
+        {options.map((option, index) => (
           <OptionCard
             key={option.id}
             id={option.id}
             label={option.text}
+            displayIndex={index + 1}
             selected={selected.includes(option.id)}
             onSelect={() => toggleChoice(option.id)}
             mode="multiple"
@@ -79,9 +80,15 @@ function QuestionCard({ question, answer, onChange }) {
   }
 
   const type = question.type || question.questionType;
-  const isSingle = type === 'single_correct' || type === 'true_false' || type === 'case_study' || type === 'scenario';
+  const hasArrayOptions = Array.isArray(question.options);
+  const isSingle = type === 'single_correct'
+    || type === 'true_false'
+    || type === 'case_study'
+    || type === 'scenario'
+    || type === 'assertion_reason'
+    || (!type && hasArrayOptions);
   const isMulti = type === 'multiple_correct';
-  const isSequence = type === 'sequence' || type === 'drag_drop';
+  const isSequence = type === 'sequence' || type === 'drag_drop' || type === 'order_sequence';
   const isMatch = type === 'match_following';
 
   return (
@@ -104,13 +111,14 @@ function QuestionCard({ question, answer, onChange }) {
         <h4 className="text-base font-semibold leading-relaxed text-white">{question.question}</h4>
       </div>
 
-      {isSingle && Array.isArray(question.options) && (
+      {isSingle && hasArrayOptions && (
         <div className="space-y-2">
-          {question.options.map((option) => (
+          {question.options.map((option, index) => (
             <OptionCard
               key={option.id}
               id={option.id}
               label={option.text}
+              displayIndex={index + 1}
               selected={answer === option.id}
               onSelect={() => onChange(option.id)}
             />
@@ -118,9 +126,9 @@ function QuestionCard({ question, answer, onChange }) {
         </div>
       )}
 
-      {isMulti && Array.isArray(question.options) && (
+      {isMulti && hasArrayOptions && (
         <div className="space-y-2">
-          {question.options.map((option) => {
+          {question.options.map((option, index) => {
             const selectedAnswers = Array.isArray(answer) ? answer : [];
             const selected = selectedAnswers.includes(option.id);
 
@@ -129,6 +137,7 @@ function QuestionCard({ question, answer, onChange }) {
                 key={option.id}
                 id={option.id}
                 label={option.text}
+                displayIndex={index + 1}
                 selected={selected}
                 mode="multiple"
                 onSelect={() => {
@@ -144,7 +153,7 @@ function QuestionCard({ question, answer, onChange }) {
         </div>
       )}
 
-      {isSequence && Array.isArray(question.options) && (
+      {isSequence && hasArrayOptions && (
         <SequenceBuilder options={question.options} answer={answer} onChange={onChange} />
       )}
 

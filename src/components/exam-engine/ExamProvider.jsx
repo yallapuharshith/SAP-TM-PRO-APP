@@ -24,7 +24,7 @@ const initialState = {
 };
 
 function normalizeAnswer(question, answer) {
-  if (question.type === 'multiple_correct' || question.type === 'sequence') {
+  if (question.type === 'multiple_correct' || question.type === 'sequence' || question.type === 'order_sequence' || question.type === 'drag_drop') {
     return Array.isArray(answer) ? answer : [];
   }
 

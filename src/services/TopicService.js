@@ -70,9 +70,7 @@ function buildTopicsFromQuestions(moduleId, questions) {
     }
 
     const questionSubTopic = String(question.subTopic || '').trim();
-    const groupKey = questionSubTopic
-      ? `${topicValue.key}::${questionSubTopic}`
-      : topicValue.key;
+    const groupKey = topicValue.key;
     const id = `${moduleId}.TOPIC.${groupKey}`;
     const unit = formatUnit(question.unit);
     const current = topicMap.get(id);
@@ -82,22 +80,20 @@ function buildTopicsFromQuestions(moduleId, questions) {
         id,
         module: moduleId,
         unit,
-        topicId: groupKey,
-        filterSubTopic: questionSubTopic || undefined,
+        topicId: topicValue.key,
         topicLabel: topicValue.label,
         sortNumber: topicValue.sortNumber,
         sortText: topicValue.sortText,
         title: topicValue.label,
-        subTopic: questionSubTopic,
+        subTopics: questionSubTopic ? [questionSubTopic] : [],
         questionCount: 1,
       });
       continue;
     }
 
     current.questionCount += 1;
-    if (!current.subTopic && questionSubTopic) {
-      current.subTopic = questionSubTopic;
-      current.filterSubTopic = questionSubTopic;
+    if (questionSubTopic && !current.subTopics.includes(questionSubTopic)) {
+      current.subTopics.push(questionSubTopic);
     }
   }
 
@@ -116,9 +112,7 @@ function buildTopicsFromQuestions(moduleId, questions) {
     })
     .map((topic) => ({
       ...topic,
-      title: topic.subTopic
-        ? `${topic.topicLabel} - ${topic.subTopic}`
-        : topic.topicLabel,
+      title: topic.topicLabel,
     }));
 }
 

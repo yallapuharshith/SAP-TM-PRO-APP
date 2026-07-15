@@ -9,7 +9,7 @@ function AppShell({ pageTitle, children }) {
   const { isSidebarOpen, closeSidebar, openSidebar } = useSidebar();
 
   return (
-    <div className="relative min-h-screen overflow-hidden bg-appbg text-textmain">
+    <div className="relative min-h-screen overflow-hidden bg-[var(--bg-app)] text-[var(--text-app)]">
       <div className="pointer-events-none absolute inset-0 bg-mesh-gradient opacity-90" />
       <div className="relative flex min-h-screen">
         <div className="hidden lg:block">

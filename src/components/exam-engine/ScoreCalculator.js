@@ -1,8 +1,19 @@
-function areArraysEqual(a, b) {
+function areUnorderedArraysEqual(a, b) {
   if (a.length !== b.length) {
     return false;
   }
-  return [...a].sort().every((value, index) => value === [...b].sort()[index]);
+
+  const sortedA = [...a].sort();
+  const sortedB = [...b].sort();
+  return sortedA.every((value, index) => value === sortedB[index]);
+}
+
+function areOrderedArraysEqual(a, b) {
+  if (a.length !== b.length) {
+    return false;
+  }
+
+  return a.every((value, index) => value === b[index]);
 }
 
 function isMatchAnswerEqual(expected, actual) {
@@ -19,7 +30,7 @@ export function isAnswered(question, answer) {
     return false;
   }
 
-  if (question.type === 'multiple_correct' || question.type === 'sequence') {
+  if (question.type === 'multiple_correct' || question.type === 'sequence' || question.type === 'order_sequence' || question.type === 'drag_drop') {
     return Array.isArray(answer) && answer.length > 0;
   }
 
@@ -35,8 +46,12 @@ export function isCorrect(question, answer) {
     return false;
   }
 
-  if (question.type === 'multiple_correct' || question.type === 'sequence') {
-    return areArraysEqual(question.correctAnswer, answer);
+  if (question.type === 'multiple_correct') {
+    return areUnorderedArraysEqual(question.correctAnswer, answer);
+  }
+
+  if (question.type === 'sequence' || question.type === 'order_sequence' || question.type === 'drag_drop') {
+    return areOrderedArraysEqual(question.correctAnswer, answer);
   }
 
   if (question.type === 'match_following') {

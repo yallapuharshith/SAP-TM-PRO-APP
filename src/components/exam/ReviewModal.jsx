@@ -1,16 +1,44 @@
 import { AnimatePresence, motion } from 'framer-motion';
 
-function formatAnswer(answer) {
+function getOptionLabel(question, optionId) {
+  if (!Array.isArray(question?.options)) {
+    return String(optionId ?? 'Not answered');
+  }
+
+  const match = question.options.find((option) => String(option.id) === String(optionId));
+  if (!match) {
+    return String(optionId ?? 'Not answered');
+  }
+
+  return match.text;
+}
+
+function getMatchSideLabel(list, id) {
+  const match = Array.isArray(list) ? list.find((item) => String(item.id) === String(id)) : null;
+  return match?.text || String(id);
+}
+
+function formatAnswer(answer, question) {
   if (Array.isArray(answer)) {
-    return answer.length > 0 ? answer.join(', ') : 'Not answered';
+    return answer.length > 0
+      ? answer.map((item) => getOptionLabel(question, item)).join(', ')
+      : 'Not answered';
   }
 
   if (answer && typeof answer === 'object') {
-    const pairs = Object.entries(answer).map(([left, right]) => `${left} -> ${right}`);
+    const pairs = Object.entries(answer).map(([left, right]) => {
+      const leftLabel = getMatchSideLabel(question?.options?.left, left);
+      const rightLabel = getMatchSideLabel(question?.options?.right, right);
+      return `${leftLabel} -> ${rightLabel}`;
+    });
     return pairs.length > 0 ? pairs.join(' | ') : 'Not answered';
   }
 
-  return answer || 'Not answered';
+  if (!answer) {
+    return 'Not answered';
+  }
+
+  return getOptionLabel(question, answer);
 }
 
 function ReviewModal({ open, question, yourAnswer, onClose }) {
@@ -35,11 +63,11 @@ function ReviewModal({ open, question, yourAnswer, onClose }) {
             <div className="mt-4 grid gap-3 md:grid-cols-2">
               <div className="rounded-xl border border-primary/35 bg-primary/10 p-3">
                 <p className="text-xs uppercase tracking-wide text-primary">Your Answer</p>
-                <p className="mt-1 text-sm text-slate-100">{formatAnswer(yourAnswer)}</p>
+                <p className="mt-1 text-sm text-slate-100">{formatAnswer(yourAnswer, question)}</p>
               </div>
               <div className="rounded-xl border border-success/35 bg-success/10 p-3">
                 <p className="text-xs uppercase tracking-wide text-success">Correct Answer</p>
-                <p className="mt-1 text-sm text-slate-100">{formatAnswer(question.correctAnswer)}</p>
+                <p className="mt-1 text-sm text-slate-100">{formatAnswer(question.correctAnswer, question)}</p>
               </div>
             </div>
 

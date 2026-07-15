@@ -107,7 +107,7 @@ function ExamPage() {
           onNext={nextQuestion}
           onMarkReview={() => toggleMarkForReview(currentQuestion.id)}
           onBookmark={() => toggleBookmark(currentQuestion.id)}
-          onSave={() => goToQuestion(currentIndex)}
+          onSave={nextQuestion}
           onSubmit={() => setSubmitOpen(true)}
         />
       </div>
