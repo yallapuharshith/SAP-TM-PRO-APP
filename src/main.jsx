@@ -31,24 +31,22 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', async () => {
-    if (import.meta.env.PROD) {
-      navigator.serviceWorker.register(`${import.meta.env.BASE_URL}sw.js`).catch(() => {
-        // Service worker registration is optional.
-      });
-      return;
-    }
-
-    // In development, remove existing service workers/caches to avoid stale JSON chunks.
+    // Always remove previously registered service workers/caches to avoid stale
+    // GitHub Pages assets after new deployments.
     try {
       const registrations = await navigator.serviceWorker.getRegistrations();
       await Promise.all(registrations.map((registration) => registration.unregister()));
 
       if ('caches' in window) {
         const keys = await window.caches.keys();
-        await Promise.all(keys.map((key) => window.caches.delete(key)));
+        await Promise.all(
+          keys
+            .filter((key) => key.startsWith('sap-tm-master-pro'))
+            .map((key) => window.caches.delete(key))
+        );
       }
     } catch {
-      // Ignore cleanup errors in local development.
+      // Ignore cleanup errors.
     }
   });
 }
