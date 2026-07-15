@@ -1,0 +1,293 @@
+{
+  "id": "M10T2",
+  "module": {
+    "id": 10,
+    "title": "SAP TM Implementation, Methodology & Best Practices",
+    "sequence": 10
+  },
+  "topic": {
+    "id": 2,
+    "title": "SAP Activate Methodology for SAP TM Implementation",
+    "sequence": 2
+  },
+  "metadata": {
+    "difficulty": "Beginner",
+    "estimatedReadingTime": 35,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-15",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "SAP Activate",
+      "Implementation Methodology"
+    ],
+    "prerequisites": [
+      "M10T1"
+    ],
+    "learningPath": [
+      "Study",
+      "Viva",
+      "Hands-on",
+      "MCQ"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Understand SAP Activate",
+      "description": "Explain SAP Activate as the recommended implementation approach for SAP TM projects."
+    },
+    {
+      "id": "LO2",
+      "title": "Understand phase-wise execution",
+      "description": "Describe Discover, Prepare, Explore, Realize, Deploy, and Run activities."
+    },
+    {
+      "id": "LO3",
+      "title": "Understand fit-to-standard value",
+      "description": "Clarify how workshops and best practices reduce customization and project risk."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "SAP Activate Methodology for SAP TM Implementation"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "SAP Activate is SAP's recommended implementation methodology for SAP S/4HANA Transportation Management projects. It combines SAP Best Practices, Guided Configuration and Agile project management to deliver faster, lower-risk implementations. The methodology emphasizes iterative development, continuous testing and active business participation."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Key Concept",
+      "content": "SAP Activate is the standard implementation methodology for modern SAP S/4HANA projects, including SAP Transportation Management."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Objectives of SAP Activate"
+    },
+    {
+      "id": "SEC5",
+      "type": "bullet-list",
+      "items": [
+        "Accelerate project implementation",
+        "Reduce implementation risk",
+        "Use SAP Best Practices",
+        "Support agile delivery",
+        "Improve project governance",
+        "Ensure business involvement",
+        "Simplify system deployment"
+      ]
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "SAP Activate Phases"
+    },
+    {
+      "id": "SEC7",
+      "type": "process-flow",
+      "title": "SAP Activate Lifecycle",
+      "orientation": "horizontal",
+      "steps": [
+        "Discover",
+        "Prepare",
+        "Explore",
+        "Realize",
+        "Deploy",
+        "Run"
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "Activities in Each Phase"
+    },
+    {
+      "id": "SEC9",
+      "type": "table",
+      "title": "SAP Activate Phases Explained",
+      "headers": [
+        "Phase",
+        "Major Activities"
+      ],
+      "rows": [
+        [
+          "Discover",
+          "Business case, solution evaluation"
+        ],
+        [
+          "Prepare",
+          "Project planning, team setup"
+        ],
+        [
+          "Explore",
+          "Fit-to-standard workshops"
+        ],
+        [
+          "Realize",
+          "Configuration, development, testing"
+        ],
+        [
+          "Deploy",
+          "Cutover, go-live, production migration"
+        ],
+        [
+          "Run",
+          "Support and continuous improvement"
+        ]
+      ]
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "SAP Activate Components"
+    },
+    {
+      "id": "SEC11",
+      "type": "table",
+      "title": "Core Components",
+      "headers": [
+        "Component",
+        "Purpose"
+      ],
+      "rows": [
+        [
+          "SAP Best Practices",
+          "Standard business processes"
+        ],
+        [
+          "Guided Configuration",
+          "Simplified system setup"
+        ],
+        [
+          "Agile Methodology",
+          "Iterative project delivery"
+        ],
+        [
+          "Fit-to-Standard",
+          "Business process validation"
+        ],
+        [
+          "Project Roadmap",
+          "Implementation guidance"
+        ]
+      ]
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Business Scenario"
+    },
+    {
+      "id": "SEC13",
+      "type": "paragraph",
+      "content": "A global manufacturing company implements SAP TM using SAP Activate. During the Explore phase, business users participate in Fit-to-Standard workshops to validate transportation processes. In the Realize phase, the project team configures SAP TM, performs testing and prepares for production deployment."
+    },
+    {
+      "id": "SEC14",
+      "type": "comparison",
+      "title": "Traditional ASAP vs SAP Activate",
+      "leftTitle": "ASAP Methodology",
+      "rightTitle": "SAP Activate",
+      "rows": [
+        {
+          "feature": "Approach",
+          "left": "Traditional Waterfall",
+          "right": "Agile & Iterative"
+        },
+        {
+          "feature": "Configuration",
+          "left": "Blueprint-Based",
+          "right": "Fit-to-Standard"
+        },
+        {
+          "feature": "Implementation Speed",
+          "left": "Moderate",
+          "right": "Faster"
+        }
+      ]
+    },
+    {
+      "id": "SEC15",
+      "type": "heading",
+      "title": "Business Benefits"
+    },
+    {
+      "id": "SEC16",
+      "type": "bullet-list",
+      "items": [
+        "Faster implementation",
+        "Reduced project risk",
+        "Better business participation",
+        "Improved solution quality",
+        "Lower implementation costs",
+        "Simplified upgrades"
+      ]
+    },
+    {
+      "id": "SEC17",
+      "type": "callout",
+      "calloutType": "best-practice",
+      "title": "Best Practice",
+      "content": "Adopt Fit-to-Standard workshops before considering custom developments. Standard SAP processes often satisfy business requirements with lower implementation effort."
+    },
+    {
+      "id": "SEC18",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real Project Example",
+      "content": "An international logistics provider implemented SAP TM using SAP Activate across multiple countries. The agile delivery approach shortened the implementation timeline while improving collaboration between business users and consultants."
+    },
+    {
+      "id": "SEC19",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Interview Tip",
+      "content": "Remember the SAP Activate phases in order: Discover → Prepare → Explore → Realize → Deploy → Run. This sequence is frequently tested in SAP certification exams."
+    },
+    {
+      "id": "SEC20",
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Common Mistake",
+      "content": "Skipping Fit-to-Standard workshops often leads to unnecessary customizations, increased costs and more complex future upgrades."
+    },
+    {
+      "id": "SEC21",
+      "type": "heading",
+      "title": "Revision Summary"
+    },
+    {
+      "id": "SEC22",
+      "type": "bullet-list",
+      "items": [
+        "SAP Activate is the recommended implementation methodology for SAP TM.",
+        "It consists of six phases: Discover, Prepare, Explore, Realize, Deploy and Run.",
+        "Fit-to-Standard workshops reduce unnecessary customization.",
+        "SAP Best Practices and Agile delivery accelerate implementations.",
+        "SAP Activate improves project quality while reducing implementation risk."
+      ]
+    }
+  ],
+  "relatedLearning": {
+    "viva": [
+      "V-M10-T2-001"
+    ],
+    "handsOnLabs": [
+      "LAB-M10-002"
+    ],
+    "caseStudies": [
+      "CASE-M10-002"
+    ],
+    "practiceMcqs": [
+      "M10T2Q001"
+    ]
+  }
+}

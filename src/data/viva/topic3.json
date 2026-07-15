@@ -1,0 +1,278 @@
+{
+  "id": "VIVA-T3",
+  "section": {
+    "id": "viva",
+    "title": "Viva Preparation",
+    "sequence": 1
+  },
+  "topic": {
+    "id": 3,
+    "title": "SAP TM Scenario-Based Viva Questions & Model Answers",
+    "sequence": 3
+  },
+  "metadata": {
+    "difficulty": "Beginner",
+    "estimatedReadingTime": 35,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-15",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "Scenario-Based Viva",
+      "Model Answers"
+    ],
+    "prerequisites": [
+      "VIVA-T2"
+    ],
+    "learningPath": [
+      "Viva",
+      "Study",
+      "MCQ"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Understand scenario answering approach",
+      "description": "Explain business problems by mapping SAP TM objects, processes, and business outcomes."
+    },
+    {
+      "id": "LO2",
+      "title": "Understand implementation scenario handling",
+      "description": "Apply consultant-level reasoning for fit-to-standard, go-live, hypercare, and performance challenges."
+    },
+    {
+      "id": "LO3",
+      "title": "Understand end-to-end viva problem solving",
+      "description": "Use structured scenario responses across transportation lifecycle questions."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "SAP TM Scenario-Based Viva Questions & Model Answers"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "Scenario-based questions are the most important part of SAP TM viva examinations. Instead of asking definitions, interviewers present a business problem and expect candidates to explain how SAP TM solves it. These questions evaluate conceptual understanding, logical thinking and business process knowledge."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Answer Framework",
+      "content": "For every scenario answer: Understand the problem → Identify SAP TM objects → Explain the process → State the business benefit."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Common Scenario Questions"
+    },
+    {
+      "id": "SEC5",
+      "type": "table",
+      "title": "Scenario-Based Viva Questions",
+      "headers": [
+        "Business Scenario",
+        "Expected Discussion"
+      ],
+      "rows": [
+        [
+          "Customer places a sales order.",
+          "Explain Sales Order → Delivery → Freight Unit → Freight Order → Execution → Settlement."
+        ],
+        [
+          "Truck capacity is full.",
+          "Explain planning optimization and load consolidation."
+        ],
+        [
+          "Preferred carrier is unavailable.",
+          "Explain carrier selection strategy and alternative carrier determination."
+        ],
+        [
+          "Shipment is delayed.",
+          "Explain event management, alerts and replanning."
+        ],
+        [
+          "Freight invoice differs from planned charges.",
+          "Explain charge calculation and freight settlement validation."
+        ],
+        [
+          "Warehouse delays loading.",
+          "Explain SAP EWM integration and execution synchronization."
+        ]
+      ]
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "Problem Solving Flow"
+    },
+    {
+      "id": "SEC7",
+      "type": "process-flow",
+      "title": "Scenario Answer Process",
+      "orientation": "horizontal",
+      "steps": [
+        "Business Problem",
+        "Identify SAP TM Objects",
+        "Explain Process",
+        "Business Decision",
+        "Expected Result"
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "Implementation Scenarios"
+    },
+    {
+      "id": "SEC9",
+      "type": "table",
+      "title": "Project-Based Questions",
+      "headers": [
+        "Question",
+        "Model Answer"
+      ],
+      "rows": [
+        [
+          "Users reject standard SAP process.",
+          "Conduct Fit-to-Standard workshops before considering customization."
+        ],
+        [
+          "Go-Live is approaching.",
+          "Complete testing, master data validation, user training and cutover planning."
+        ],
+        [
+          "Production issue after Go-Live.",
+          "Handle through Hypercare and root cause analysis."
+        ],
+        [
+          "System is slow.",
+          "Analyze bottlenecks, database, planning engine and interfaces before tuning."
+        ]
+      ]
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "End-to-End Business Scenario"
+    },
+    {
+      "id": "SEC11",
+      "type": "paragraph",
+      "content": "Scenario: A customer places an urgent order requiring same-day delivery. Explain how SAP TM handles the process. A strong answer includes transportation demand creation, Freight Unit generation, planning optimization, carrier selection based on availability, Freight Order creation, execution monitoring, event management and freight settlement."
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Consultant Thinking"
+    },
+    {
+      "id": "SEC13",
+      "type": "comparison",
+      "title": "Functional User vs SAP TM Consultant",
+      "leftTitle": "Functional User",
+      "rightTitle": "SAP TM Consultant",
+      "rows": [
+        {
+          "feature": "Focus",
+          "left": "Execute Daily Transactions",
+          "right": "Design Complete Solution"
+        },
+        {
+          "feature": "Knowledge",
+          "left": "Business Process",
+          "right": "Business + System Configuration"
+        },
+        {
+          "feature": "Approach",
+          "left": "Follow Process",
+          "right": "Optimize Process"
+        }
+      ]
+    },
+    {
+      "id": "SEC14",
+      "type": "heading",
+      "title": "High-Frequency Scenario Topics"
+    },
+    {
+      "id": "SEC15",
+      "type": "bullet-list",
+      "items": [
+        "Carrier selection",
+        "Freight Unit planning",
+        "Freight Order execution",
+        "Transportation proposal",
+        "Charge calculation",
+        "Freight settlement",
+        "Transportation delays",
+        "Warehouse integration",
+        "Reporting and KPIs",
+        "Go-Live support"
+      ]
+    },
+    {
+      "id": "SEC16",
+      "type": "callout",
+      "calloutType": "best-practice",
+      "title": "Best Practice",
+      "content": "While answering scenarios, always explain why SAP performs each step and how it improves business efficiency rather than simply listing the sequence of transactions."
+    },
+    {
+      "id": "SEC17",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Example Answer",
+      "content": "Question: A shipment is delayed because the assigned carrier cancels at the last minute. Answer: SAP TM identifies the exception, replans the shipment, applies carrier selection rules to choose another eligible carrier, creates or updates the Freight Order, notifies stakeholders and continues execution with minimal business disruption."
+    },
+    {
+      "id": "SEC18",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Interview Tip",
+      "content": "Most interviewers intentionally ask practical scenarios instead of direct definitions. They want to evaluate your problem-solving approach and understanding of the end-to-end transportation lifecycle."
+    },
+    {
+      "id": "SEC19",
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Common Mistake",
+      "content": "Avoid jumping directly to technical configuration. First explain the business requirement, then describe the SAP TM solution and finally mention the business benefit."
+    },
+    {
+      "id": "SEC20",
+      "type": "heading",
+      "title": "Revision Checklist"
+    },
+    {
+      "id": "SEC21",
+      "type": "bullet-list",
+      "items": [
+        "Practice at least 20 business scenarios.",
+        "Understand object relationships (Delivery → Freight Unit → Freight Order → Settlement).",
+        "Explain business benefits in every answer.",
+        "Think like a consultant, not just an end user.",
+        "Use practical examples to support your explanations."
+      ]
+    }
+  ],
+  "relatedLearning": {
+    "viva": [
+      "V-M11-T3-001"
+    ],
+    "handsOnLabs": [
+      "LAB-M11-003"
+    ],
+    "caseStudies": [
+      "CASE-M11-003"
+    ],
+    "practiceMcqs": [
+      "M11T3Q001"
+    ]
+  }
+}

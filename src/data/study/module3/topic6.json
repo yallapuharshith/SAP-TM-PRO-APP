@@ -1,0 +1,257 @@
+{
+  "id": "M3T6",
+  "module": {
+    "id": 3,
+    "title": "SAP TM Organizational Structure & Master Data",
+    "sequence": 3
+  },
+  "topic": {
+    "id": 6,
+    "title": "SAP TM Organizational Model - End-to-End Business Process",
+    "sequence": 6
+  },
+  "metadata": {
+    "difficulty": "Beginner",
+    "estimatedReadingTime": 35,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-15",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "Organizational Model",
+      "End-to-End Process"
+    ],
+    "prerequisites": [
+      "M3T1",
+      "M3T2",
+      "M3T3",
+      "M3T4",
+      "M3T5"
+    ],
+    "learningPath": [
+      "Study",
+      "Viva",
+      "Hands-on",
+      "MCQ"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Understand end-to-end organizational flow",
+      "description": "Explain how organizational units participate from demand creation to freight settlement."
+    },
+    {
+      "id": "LO2",
+      "title": "Understand automatic organizational determination",
+      "description": "Identify how planning organization, group and planner are assigned automatically."
+    },
+    {
+      "id": "LO3",
+      "title": "Differentiate organizational and enterprise structures",
+      "description": "Clarify responsibility model versus business entity model in SAP TM."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "End-to-End Organizational Process in SAP TM"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "The SAP TM Organizational Model is involved throughout the transportation lifecycle. From the creation of transportation demand to freight settlement, organizational units determine who plans, executes, monitors and settles transportation activities."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Key Concept",
+      "content": "The Organizational Model ensures that every transportation activity is assigned to the correct planner, execution team and settlement organization."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "End-to-End Transportation Process"
+    },
+    {
+      "id": "SEC5",
+      "type": "process-flow",
+      "title": "Complete SAP TM Organizational Flow",
+      "orientation": "horizontal",
+      "steps": [
+        "Sales Order",
+        "Outbound Delivery",
+        "Freight Unit",
+        "Planning Organization",
+        "Planning Group",
+        "Transportation Planner",
+        "Freight Order",
+        "Carrier",
+        "Execution",
+        "Freight Settlement"
+      ]
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "Organizational Responsibilities"
+    },
+    {
+      "id": "SEC7",
+      "type": "table",
+      "title": "Responsibilities by Process",
+      "headers": [
+        "Process",
+        "Responsible Organizational Unit"
+      ],
+      "rows": [
+        [
+          "Transportation Planning",
+          "Planning Organization"
+        ],
+        [
+          "Planner Assignment",
+          "Planning Group"
+        ],
+        [
+          "Shipment Optimization",
+          "Transportation Planner"
+        ],
+        [
+          "Carrier Selection",
+          "Planning Organization"
+        ],
+        [
+          "Transportation Execution",
+          "Carrier & Execution Team"
+        ],
+        [
+          "Freight Settlement",
+          "Settlement Organization"
+        ]
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "Automatic Organizational Determination"
+    },
+    {
+      "id": "SEC9",
+      "type": "bullet-list",
+      "items": [
+        "Planning Organization determination",
+        "Planning Group determination",
+        "Planner assignment",
+        "Carrier assignment",
+        "Settlement organization determination",
+        "Monitoring responsibility assignment"
+      ]
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "Business Scenario"
+    },
+    {
+      "id": "SEC11",
+      "type": "paragraph",
+      "content": "A retail company receives an outbound delivery from its Hyderabad plant. Based on the shipping location and transportation zone, SAP TM automatically assigns the South Planning Organization. A planner optimizes Freight Units into Freight Orders, assigns a carrier and monitors execution until freight settlement."
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Business Benefits"
+    },
+    {
+      "id": "SEC13",
+      "type": "bullet-list",
+      "items": [
+        "Clear ownership of transportation activities",
+        "Automatic planner assignment",
+        "Improved workload balancing",
+        "Standardized transportation processes",
+        "Reduced manual intervention",
+        "Better operational visibility"
+      ]
+    },
+    {
+      "id": "SEC14",
+      "type": "comparison",
+      "title": "Organizational Model vs Enterprise Structure",
+      "leftTitle": "Enterprise Structure",
+      "rightTitle": "Organizational Model",
+      "rows": [
+        {
+          "feature": "Purpose",
+          "left": "Defines Business Entities",
+          "right": "Defines Responsibilities"
+        },
+        {
+          "feature": "Examples",
+          "left": "Company Code, Plant",
+          "right": "Planning Organization, Planning Group"
+        },
+        {
+          "feature": "Usage",
+          "left": "Business Transactions",
+          "right": "Transportation Planning"
+        }
+      ]
+    },
+    {
+      "id": "SEC15",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real Project Example",
+      "content": "A multinational FMCG company configured separate Planning Organizations for Domestic and Export logistics. Freight Units were automatically assigned based on transportation zones, reducing manual planner allocation and improving planning efficiency."
+    },
+    {
+      "id": "SEC16",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Interview Tip",
+      "content": "Explain the complete flow: Business Document -> Freight Unit -> Planning Organization -> Planner -> Freight Order -> Carrier -> Settlement. This is a favorite certification and interview question."
+    },
+    {
+      "id": "SEC17",
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Common Mistake",
+      "content": "Do not confuse organizational assignment with resource assignment. Organizational assignment determines the responsible planner, while resource assignment allocates trucks, trailers and drivers."
+    },
+    {
+      "id": "SEC18",
+      "type": "heading",
+      "title": "Revision Summary"
+    },
+    {
+      "id": "SEC19",
+      "type": "bullet-list",
+      "items": [
+        "Organizational Model controls transportation responsibilities.",
+        "Planning Organizations manage transportation planning.",
+        "Planning Groups assign planners.",
+        "Automatic responsibility determination improves efficiency.",
+        "The Organizational Model supports the complete transportation lifecycle."
+      ]
+    }
+  ],
+  "relatedLearning": {
+    "viva": [
+      "V-M3-T6-001"
+    ],
+    "handsOnLabs": [
+      "LAB-M3-006"
+    ],
+    "caseStudies": [
+      "CASE-M3-006"
+    ],
+    "practiceMcqs": [
+      "M3T6Q001"
+    ]
+  }
+}

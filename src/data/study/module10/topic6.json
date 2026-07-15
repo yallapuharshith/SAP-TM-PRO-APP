@@ -1,0 +1,294 @@
+{
+  "id": "M10T6",
+  "module": {
+    "id": 10,
+    "title": "SAP TM Implementation, Methodology & Best Practices",
+    "sequence": 10
+  },
+  "topic": {
+    "id": 6,
+    "title": "SAP TM Support, AMS & Production Operations",
+    "sequence": 6
+  },
+  "metadata": {
+    "difficulty": "Beginner",
+    "estimatedReadingTime": 35,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-15",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "AMS",
+      "Production Support"
+    ],
+    "prerequisites": [
+      "M10T5"
+    ],
+    "learningPath": [
+      "Study",
+      "Viva",
+      "Hands-on",
+      "MCQ"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Understand AMS objectives",
+      "description": "Explain post-hypercare support goals for stability, incident handling, and continuity."
+    },
+    {
+      "id": "LO2",
+      "title": "Understand support operations",
+      "description": "Describe ticket lifecycle, priority handling, monitoring, and enhancement delivery."
+    },
+    {
+      "id": "LO3",
+      "title": "Understand long-term reliability",
+      "description": "Clarify root cause analysis and knowledge management for sustainable production operations."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "SAP TM Support, AMS & Production Operations"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "After Hypercare, SAP Transportation Management enters the Production Support or Application Management Services (AMS) phase. The objective of AMS is to keep the SAP TM system stable, resolve incidents, perform enhancements, monitor integrations and ensure transportation operations continue without business interruption."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Key Concept",
+      "content": "Implementation delivers the solution, while AMS ensures the solution continues to operate efficiently throughout its lifecycle."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Objectives of SAP TM AMS"
+    },
+    {
+      "id": "SEC5",
+      "type": "bullet-list",
+      "items": [
+        "Maintain production stability",
+        "Resolve business incidents",
+        "Monitor interfaces and integrations",
+        "Implement approved enhancements",
+        "Optimize system performance",
+        "Support business users",
+        "Ensure SLA compliance"
+      ]
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "Production Support Lifecycle"
+    },
+    {
+      "id": "SEC7",
+      "type": "process-flow",
+      "title": "AMS Support Process",
+      "orientation": "horizontal",
+      "steps": [
+        "Incident Logged",
+        "Ticket Assignment",
+        "Issue Analysis",
+        "Resolution",
+        "User Validation",
+        "Ticket Closure",
+        "Knowledge Update"
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "Common AMS Activities"
+    },
+    {
+      "id": "SEC9",
+      "type": "table",
+      "title": "Support Responsibilities",
+      "headers": [
+        "Activity",
+        "Business Purpose"
+      ],
+      "rows": [
+        [
+          "Incident Resolution",
+          "Restore business operations"
+        ],
+        [
+          "Service Requests",
+          "Small business changes"
+        ],
+        [
+          "System Monitoring",
+          "Detect production issues"
+        ],
+        [
+          "Performance Tuning",
+          "Improve response time"
+        ],
+        [
+          "Transport Management",
+          "Deploy approved changes"
+        ],
+        [
+          "Knowledge Management",
+          "Document recurring solutions"
+        ]
+      ]
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "Incident Priority Levels"
+    },
+    {
+      "id": "SEC11",
+      "type": "table",
+      "title": "Typical Priority Classification",
+      "headers": [
+        "Priority",
+        "Example"
+      ],
+      "rows": [
+        [
+          "P1 - Critical",
+          "Production system unavailable"
+        ],
+        [
+          "P2 - High",
+          "Major transportation process blocked"
+        ],
+        [
+          "P3 - Medium",
+          "Limited business impact"
+        ],
+        [
+          "P4 - Low",
+          "Minor issue or cosmetic defect"
+        ],
+        [
+          "Service Request",
+          "Configuration enhancement"
+        ]
+      ]
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Business Scenario"
+    },
+    {
+      "id": "SEC13",
+      "type": "paragraph",
+      "content": "A production issue prevents Freight Orders from being created because of a failed integration with SAP S/4HANA. The AMS team receives a Priority-1 incident, restores the interface, validates transportation planning with business users and documents the root cause to prevent future occurrences."
+    },
+    {
+      "id": "SEC14",
+      "type": "comparison",
+      "title": "Implementation Team vs AMS Team",
+      "leftTitle": "Implementation Team",
+      "rightTitle": "AMS Team",
+      "rows": [
+        {
+          "feature": "Primary Focus",
+          "left": "Build & Deploy Solution",
+          "right": "Operate & Support Solution"
+        },
+        {
+          "feature": "Work Type",
+          "left": "Projects",
+          "right": "Operations & Enhancements"
+        },
+        {
+          "feature": "Goal",
+          "left": "Successful Go-Live",
+          "right": "Stable Production System"
+        }
+      ]
+    },
+    {
+      "id": "SEC15",
+      "type": "heading",
+      "title": "Business Benefits"
+    },
+    {
+      "id": "SEC16",
+      "type": "bullet-list",
+      "items": [
+        "Stable transportation operations",
+        "Quick incident resolution",
+        "Higher system availability",
+        "Improved user satisfaction",
+        "Continuous business improvement",
+        "Reduced operational risk"
+      ]
+    },
+    {
+      "id": "SEC17",
+      "type": "callout",
+      "calloutType": "best-practice",
+      "title": "Best Practice",
+      "content": "Maintain a detailed knowledge base for recurring SAP TM issues and perform root cause analysis instead of repeatedly applying temporary fixes."
+    },
+    {
+      "id": "SEC18",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real Project Example",
+      "content": "A global logistics provider established a 24x7 AMS support team for SAP TM. Automated monitoring and documented runbooks reduced the average incident resolution time by more than 40%."
+    },
+    {
+      "id": "SEC19",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Interview Tip",
+      "content": "In SAP TM support interviews, expect questions about incident priorities (P1-P4), SLA management, root cause analysis, interface monitoring and production support responsibilities."
+    },
+    {
+      "id": "SEC20",
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Common Mistake",
+      "content": "Closing an incident without identifying its root cause may result in repeated production issues and increased operational costs."
+    },
+    {
+      "id": "SEC21",
+      "type": "heading",
+      "title": "Revision Summary"
+    },
+    {
+      "id": "SEC22",
+      "type": "bullet-list",
+      "items": [
+        "AMS begins after Hypercare and focuses on production support.",
+        "Common AMS activities include incident management, monitoring and enhancements.",
+        "Priority levels help determine response urgency.",
+        "Root cause analysis is essential for long-term stability.",
+        "Effective AMS ensures reliable and continuous SAP TM operations."
+      ]
+    }
+  ],
+  "relatedLearning": {
+    "viva": [
+      "V-M10-T6-001"
+    ],
+    "handsOnLabs": [
+      "LAB-M10-006"
+    ],
+    "caseStudies": [
+      "CASE-M10-006"
+    ],
+    "practiceMcqs": [
+      "M10T6Q001"
+    ]
+  }
+}

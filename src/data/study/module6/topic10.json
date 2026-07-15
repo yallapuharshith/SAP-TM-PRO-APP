@@ -1,0 +1,319 @@
+{
+  "id": "M6T10",
+  "module": {
+    "id": 6,
+    "title": "SAP TM Freight Execution Management",
+    "sequence": 6
+  },
+  "topic": {
+    "id": 10,
+    "title": "End-to-End Transportation Execution Process",
+    "sequence": 10
+  },
+  "metadata": {
+    "difficulty": "Beginner",
+    "estimatedReadingTime": 35,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-15",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "Transportation Execution",
+      "Freight Settlement"
+    ],
+    "prerequisites": [
+      "M6T9"
+    ],
+    "learningPath": [
+      "Study",
+      "Viva",
+      "Hands-on",
+      "MCQ"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Understand end-to-end execution",
+      "description": "Explain complete transportation execution lifecycle from release through settlement."
+    },
+    {
+      "id": "LO2",
+      "title": "Understand integrated TM components",
+      "description": "Describe how events, exceptions, dashboards, and settlement work together."
+    },
+    {
+      "id": "LO3",
+      "title": "Understand execution success factors",
+      "description": "Clarify data, integration, tracking, and collaboration factors for reliable execution."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "End-to-End Transportation Execution Process"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "Transportation Execution is the complete operational lifecycle that begins after transportation planning and ends with freight settlement. SAP TM coordinates carriers, resources, execution events, monitoring, proof of delivery and settlement to ensure shipments are transported efficiently while maintaining complete business visibility."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Key Concept",
+      "content": "Transportation Planning prepares the shipment. Transportation Execution performs, monitors and completes the shipment."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Complete Execution Lifecycle"
+    },
+    {
+      "id": "SEC5",
+      "type": "process-flow",
+      "title": "SAP TM Execution Flow",
+      "orientation": "horizontal",
+      "steps": [
+        "Freight Order Created",
+        "Carrier Confirmation",
+        "Resource Assignment",
+        "Shipment Release",
+        "Loading",
+        "Departure",
+        "In Transit",
+        "Arrival",
+        "Proof of Delivery",
+        "Freight Settlement"
+      ]
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "Execution Activities"
+    },
+    {
+      "id": "SEC7",
+      "type": "table",
+      "title": "Transportation Execution Stages",
+      "headers": [
+        "Stage",
+        "Business Activity"
+      ],
+      "rows": [
+        [
+          "Release",
+          "Shipment ready for execution"
+        ],
+        [
+          "Carrier Confirmation",
+          "Carrier accepts shipment"
+        ],
+        [
+          "Loading",
+          "Goods loaded onto resource"
+        ],
+        [
+          "Departure",
+          "Shipment begins transportation"
+        ],
+        [
+          "Transit Monitoring",
+          "Track transportation events"
+        ],
+        [
+          "Arrival",
+          "Vehicle reaches destination"
+        ],
+        [
+          "Proof of Delivery",
+          "Customer confirms receipt"
+        ],
+        [
+          "Settlement",
+          "Carrier payment processing"
+        ]
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "Integrated SAP TM Components"
+    },
+    {
+      "id": "SEC9",
+      "type": "table",
+      "title": "Component Integration",
+      "headers": [
+        "Component",
+        "Role"
+      ],
+      "rows": [
+        [
+          "Freight Order",
+          "Execution document"
+        ],
+        [
+          "Carrier",
+          "Transportation provider"
+        ],
+        [
+          "Resource",
+          "Vehicle and equipment"
+        ],
+        [
+          "Event Management",
+          "Shipment milestone tracking"
+        ],
+        [
+          "Exception Management",
+          "Issue detection and resolution"
+        ],
+        [
+          "Execution Dashboard",
+          "Real-time monitoring"
+        ],
+        [
+          "Freight Settlement",
+          "Carrier payment"
+        ]
+      ]
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "Business Scenario"
+    },
+    {
+      "id": "SEC11",
+      "type": "paragraph",
+      "content": "An automotive manufacturer ships engine components from Pune to Chennai. SAP TM releases the Freight Order, confirms the carrier, assigns a truck, captures loading and departure events through GPS integration, monitors shipment progress, records Proof of Delivery at the destination plant and automatically creates the Freight Settlement Document for carrier payment."
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Execution Success Factors"
+    },
+    {
+      "id": "SEC13",
+      "type": "bullet-list",
+      "items": [
+        "Accurate master data",
+        "Reliable carrier communication",
+        "Real-time event tracking",
+        "Correct resource assignment",
+        "Proactive exception management",
+        "Electronic proof of delivery",
+        "Automated freight settlement"
+      ]
+    },
+    {
+      "id": "SEC14",
+      "type": "comparison",
+      "title": "Planning Phase vs Execution Phase",
+      "leftTitle": "Transportation Planning",
+      "rightTitle": "Transportation Execution",
+      "rows": [
+        {
+          "feature": "Primary Object",
+          "left": "Freight Unit",
+          "right": "Freight Order"
+        },
+        {
+          "feature": "Purpose",
+          "left": "Create transportation plan",
+          "right": "Execute transportation"
+        },
+        {
+          "feature": "Focus",
+          "left": "Optimization",
+          "right": "Monitoring & Delivery"
+        },
+        {
+          "feature": "Completion",
+          "left": "Freight Order Created",
+          "right": "Freight Settlement"
+        }
+      ]
+    },
+    {
+      "id": "SEC15",
+      "type": "heading",
+      "title": "Business Benefits"
+    },
+    {
+      "id": "SEC16",
+      "type": "bullet-list",
+      "items": [
+        "End-to-end shipment visibility",
+        "Improved customer service",
+        "Reduced transportation delays",
+        "Better carrier collaboration",
+        "Higher execution accuracy",
+        "Faster freight settlement",
+        "Complete logistics traceability"
+      ]
+    },
+    {
+      "id": "SEC17",
+      "type": "callout",
+      "calloutType": "best-practice",
+      "title": "Best Practice",
+      "content": "Integrate SAP TM with GPS, telematics, mobile applications and EDI-enabled carriers to automate execution events, improve shipment visibility and reduce manual effort."
+    },
+    {
+      "id": "SEC18",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real Project Example",
+      "content": "A global manufacturing company integrated SAP TM with its transport management network. More than 95% of shipment events were captured automatically, reducing manual tracking effort by 75% while significantly improving on-time delivery performance."
+    },
+    {
+      "id": "SEC19",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Interview Tip",
+      "content": "For SAP TM certification and interviews, remember the complete execution sequence: Freight Order -> Carrier -> Resource -> Loading -> Departure -> Transit -> Arrival -> Proof of Delivery -> Freight Settlement."
+    },
+    {
+      "id": "SEC20",
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Common Mistake",
+      "content": "Many learners assume transportation ends after delivery. In SAP TM, the business process is complete only after Proof of Delivery is recorded and Freight Settlement has been processed."
+    },
+    {
+      "id": "SEC21",
+      "type": "heading",
+      "title": "Revision Summary"
+    },
+    {
+      "id": "SEC22",
+      "type": "bullet-list",
+      "items": [
+        "Transportation Execution begins after Freight Order creation.",
+        "Execution includes carrier confirmation, loading, transit monitoring and delivery.",
+        "Event Management and Exception Management ensure shipment visibility.",
+        "Proof of Delivery is required before freight settlement.",
+        "Freight Settlement completes the end-to-end transportation execution lifecycle."
+      ]
+    }
+  ],
+  "relatedLearning": {
+    "viva": [
+      "V-M6-T10-001"
+    ],
+    "handsOnLabs": [
+      "LAB-M6-010"
+    ],
+    "caseStudies": [
+      "CASE-M6-010"
+    ],
+    "practiceMcqs": [
+      "M6T10Q001"
+    ]
+  }
+}

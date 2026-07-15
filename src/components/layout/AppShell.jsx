@@ -3,10 +3,17 @@ import Sidebar from './Sidebar';
 import PageContainer from './PageContainer';
 import { useTheme } from '../../hooks/useTheme';
 import { useSidebar } from '../../hooks/useSidebar';
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 function AppShell({ pageTitle, children }) {
   const { isDark, toggleTheme } = useTheme();
   const { isSidebarOpen, closeSidebar, openSidebar } = useSidebar();
+  const location = useLocation();
+
+  useEffect(() => {
+    closeSidebar();
+  }, [location.pathname, location.search, closeSidebar]);
 
   return (
     <div className="relative min-h-screen overflow-hidden bg-[var(--bg-app)] text-[var(--text-app)]">

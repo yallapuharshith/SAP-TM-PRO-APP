@@ -1,0 +1,285 @@
+{
+  "id": "M6T2",
+  "module": {
+    "id": 6,
+    "title": "SAP TM Freight Execution Management",
+    "sequence": 6
+  },
+  "topic": {
+    "id": 2,
+    "title": "Freight Booking Management",
+    "sequence": 2
+  },
+  "metadata": {
+    "difficulty": "Beginner",
+    "estimatedReadingTime": 35,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-15",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "Freight Booking",
+      "International Transportation"
+    ],
+    "prerequisites": [
+      "M6T1"
+    ],
+    "learningPath": [
+      "Study",
+      "Viva",
+      "Hands-on",
+      "MCQ"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Understand freight booking",
+      "description": "Explain booking as capacity reservation for long-distance and international shipments."
+    },
+    {
+      "id": "LO2",
+      "title": "Understand booking lifecycle",
+      "description": "Describe booking flow from planning through confirmation and execution handoff."
+    },
+    {
+      "id": "LO3",
+      "title": "Differentiate booking and order",
+      "description": "Clarify reservation document versus execution document roles."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "Freight Booking Management"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "A Freight Booking (FB) is the execution document used primarily for long-distance and international transportation, especially Ocean and Air Freight. It reserves transportation capacity with a carrier before the physical shipment is executed. Unlike a Freight Order, which is commonly used for road transportation, a Freight Booking secures transportation space on vessels, aircraft or trains."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Key Concept",
+      "content": "Freight Booking reserves transportation capacity, while Freight Order manages the execution of transportation."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Objectives of Freight Booking"
+    },
+    {
+      "id": "SEC5",
+      "type": "bullet-list",
+      "items": [
+        "Reserve transportation capacity",
+        "Support ocean transportation",
+        "Support air transportation",
+        "Manage carrier commitments",
+        "Track international shipments",
+        "Coordinate multimodal transportation"
+      ]
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "Freight Booking Lifecycle"
+    },
+    {
+      "id": "SEC7",
+      "type": "process-flow",
+      "title": "Freight Booking Process",
+      "orientation": "horizontal",
+      "steps": [
+        "Freight Units",
+        "Transportation Planning",
+        "Carrier Selection",
+        "Freight Booking",
+        "Capacity Confirmation",
+        "Freight Order",
+        "Execution"
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "Information Maintained"
+    },
+    {
+      "id": "SEC9",
+      "type": "table",
+      "title": "Freight Booking Data",
+      "headers": [
+        "Information",
+        "Purpose"
+      ],
+      "rows": [
+        [
+          "Carrier",
+          "Transportation provider"
+        ],
+        [
+          "Transportation Mode",
+          "Ocean, Air or Rail"
+        ],
+        [
+          "Departure Port",
+          "Shipment origin"
+        ],
+        [
+          "Arrival Port",
+          "Shipment destination"
+        ],
+        [
+          "Departure Schedule",
+          "Planned departure"
+        ],
+        [
+          "Capacity Reserved",
+          "Reserved transportation space"
+        ],
+        [
+          "Freight Units",
+          "Transportation demand"
+        ]
+      ]
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "Typical Freight Booking Process"
+    },
+    {
+      "id": "SEC11",
+      "type": "process-flow",
+      "title": "International Shipment",
+      "orientation": "horizontal",
+      "steps": [
+        "Export Order",
+        "Freight Unit",
+        "Freight Booking",
+        "Carrier Confirmation",
+        "Freight Order",
+        "Shipment"
+      ]
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Business Scenario"
+    },
+    {
+      "id": "SEC13",
+      "type": "paragraph",
+      "content": "A company exports machinery from Chennai to Hamburg using ocean freight. SAP TM creates a Freight Booking to reserve container space on a shipping vessel. After the carrier confirms the booking, Freight Orders are created for pre-carriage and on-carriage transportation."
+    },
+    {
+      "id": "SEC14",
+      "type": "comparison",
+      "title": "Freight Booking vs Freight Order",
+      "leftTitle": "Freight Booking",
+      "rightTitle": "Freight Order",
+      "rows": [
+        {
+          "feature": "Purpose",
+          "left": "Reserve Capacity",
+          "right": "Execute Transportation"
+        },
+        {
+          "feature": "Transportation",
+          "left": "Ocean/Air/Rail",
+          "right": "Mostly Road"
+        },
+        {
+          "feature": "Carrier Confirmation",
+          "left": "Required",
+          "right": "Usually Already Assigned"
+        },
+        {
+          "feature": "Execution",
+          "left": "Capacity Reservation",
+          "right": "Physical Shipment"
+        }
+      ]
+    },
+    {
+      "id": "SEC15",
+      "type": "heading",
+      "title": "Business Benefits"
+    },
+    {
+      "id": "SEC16",
+      "type": "bullet-list",
+      "items": [
+        "Guaranteed transportation capacity",
+        "Improved international logistics",
+        "Better carrier collaboration",
+        "Support for multimodal transport",
+        "Improved shipment visibility",
+        "Reduced booking errors"
+      ]
+    },
+    {
+      "id": "SEC17",
+      "type": "callout",
+      "calloutType": "best-practice",
+      "title": "Best Practice",
+      "content": "Create Freight Bookings as early as possible for ocean and air shipments because transportation capacity may be limited during peak seasons."
+    },
+    {
+      "id": "SEC18",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real Project Example",
+      "content": "An electronics exporter uses SAP TM Freight Bookings to reserve container slots with multiple ocean carriers. Early booking reduced shipment delays during peak export seasons by more than 25%."
+    },
+    {
+      "id": "SEC19",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Interview Tip",
+      "content": "Remember: Freight Booking reserves transportation capacity, while Freight Order executes transportation. This distinction is frequently tested in SAP TM certification exams."
+    },
+    {
+      "id": "SEC20",
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Common Mistake",
+      "content": "Do not use Freight Booking for every shipment. It is primarily intended for long-distance, multimodal, ocean and air transportation scenarios."
+    },
+    {
+      "id": "SEC21",
+      "type": "heading",
+      "title": "Revision Summary"
+    },
+    {
+      "id": "SEC22",
+      "type": "bullet-list",
+      "items": [
+        "Freight Booking reserves transportation capacity.",
+        "It is mainly used for Ocean, Air and Rail transportation.",
+        "Carrier confirmation is an important part of the booking process.",
+        "Freight Booking works together with Freight Orders in multimodal logistics.",
+        "It improves international transportation planning and execution."
+      ]
+    }
+  ],
+  "relatedLearning": {
+    "viva": [
+      "V-M6-T2-001"
+    ],
+    "handsOnLabs": [
+      "LAB-M6-002"
+    ],
+    "caseStudies": [
+      "CASE-M6-002"
+    ],
+    "practiceMcqs": [
+      "M6T2Q001"
+    ]
+  }
+}

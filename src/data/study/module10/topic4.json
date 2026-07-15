@@ -1,0 +1,293 @@
+{
+  "id": "M10T4",
+  "module": {
+    "id": 10,
+    "title": "SAP TM Implementation, Methodology & Best Practices",
+    "sequence": 10
+  },
+  "topic": {
+    "id": 4,
+    "title": "Testing Strategy in SAP TM (Unit, Integration, UAT & Regression)",
+    "sequence": 4
+  },
+  "metadata": {
+    "difficulty": "Beginner",
+    "estimatedReadingTime": 35,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-15",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "Testing Strategy",
+      "UAT"
+    ],
+    "prerequisites": [
+      "M10T3"
+    ],
+    "learningPath": [
+      "Study",
+      "Viva",
+      "Hands-on",
+      "MCQ"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Understand SAP TM testing scope",
+      "description": "Explain validation of planning, execution, settlement, and integration before go-live."
+    },
+    {
+      "id": "LO2",
+      "title": "Understand test type sequencing",
+      "description": "Describe Unit, SIT, UAT, and Regression testing flow and purpose."
+    },
+    {
+      "id": "LO3",
+      "title": "Understand testing ownership",
+      "description": "Identify responsibilities across consultants, QA, business users, and project leadership."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "Testing Strategy in SAP Transportation Management"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "Testing is one of the most critical phases of an SAP TM implementation. It validates that transportation planning, execution, settlement and integration processes work correctly before production deployment. SAP TM projects typically perform multiple testing cycles including Unit Testing, System Integration Testing (SIT), User Acceptance Testing (UAT) and Regression Testing."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Key Concept",
+      "content": "Testing verifies that the configured SAP TM solution satisfies both technical requirements and business expectations before Go-Live."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Objectives of Testing"
+    },
+    {
+      "id": "SEC5",
+      "type": "bullet-list",
+      "items": [
+        "Validate business processes",
+        "Verify system configuration",
+        "Ensure integration works correctly",
+        "Identify defects before production",
+        "Confirm business requirements",
+        "Reduce Go-Live risks",
+        "Improve overall solution quality"
+      ]
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "Testing Lifecycle"
+    },
+    {
+      "id": "SEC7",
+      "type": "process-flow",
+      "title": "SAP TM Testing Flow",
+      "orientation": "horizontal",
+      "steps": [
+        "Configuration",
+        "Unit Testing",
+        "Integration Testing",
+        "User Acceptance Testing",
+        "Regression Testing",
+        "Go-Live"
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "Types of Testing"
+    },
+    {
+      "id": "SEC9",
+      "type": "table",
+      "title": "SAP TM Testing Types",
+      "headers": [
+        "Testing Type",
+        "Purpose"
+      ],
+      "rows": [
+        [
+          "Unit Testing",
+          "Verify individual configuration objects"
+        ],
+        [
+          "System Integration Testing (SIT)",
+          "Validate end-to-end process integration"
+        ],
+        [
+          "User Acceptance Testing (UAT)",
+          "Business user validation"
+        ],
+        [
+          "Regression Testing",
+          "Verify existing functionality after changes"
+        ],
+        [
+          "Performance Testing",
+          "Evaluate system performance under load"
+        ],
+        [
+          "Security Testing",
+          "Validate authorization and access control"
+        ]
+      ]
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "Responsibilities"
+    },
+    {
+      "id": "SEC11",
+      "type": "table",
+      "title": "Testing Ownership",
+      "headers": [
+        "Role",
+        "Primary Responsibility"
+      ],
+      "rows": [
+        [
+          "Functional Consultant",
+          "Unit Testing"
+        ],
+        [
+          "Technical Consultant",
+          "Integration validation"
+        ],
+        [
+          "Business User",
+          "User Acceptance Testing"
+        ],
+        [
+          "QA Team",
+          "Regression testing"
+        ],
+        [
+          "Project Manager",
+          "Testing coordination"
+        ]
+      ]
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Business Scenario"
+    },
+    {
+      "id": "SEC13",
+      "type": "paragraph",
+      "content": "A company configures Freight Order planning in SAP TM. Consultants first perform Unit Testing. Integration Testing validates communication with SAP S/4HANA and SAP EWM. Business users then execute UAT using real transportation scenarios before approving the solution for production deployment."
+    },
+    {
+      "id": "SEC14",
+      "type": "comparison",
+      "title": "SIT vs UAT",
+      "leftTitle": "System Integration Testing",
+      "rightTitle": "User Acceptance Testing",
+      "rows": [
+        {
+          "feature": "Performed By",
+          "left": "Project Team",
+          "right": "Business Users"
+        },
+        {
+          "feature": "Purpose",
+          "left": "Technical Validation",
+          "right": "Business Validation"
+        },
+        {
+          "feature": "Focus",
+          "left": "End-to-End Integration",
+          "right": "Business Process Acceptance"
+        }
+      ]
+    },
+    {
+      "id": "SEC15",
+      "type": "heading",
+      "title": "Business Benefits"
+    },
+    {
+      "id": "SEC16",
+      "type": "bullet-list",
+      "items": [
+        "Higher solution quality",
+        "Reduced production defects",
+        "Successful Go-Live",
+        "Improved user confidence",
+        "Lower implementation risk",
+        "Stable transportation operations"
+      ]
+    },
+    {
+      "id": "SEC17",
+      "type": "callout",
+      "calloutType": "best-practice",
+      "title": "Best Practice",
+      "content": "Execute end-to-end business scenarios during UAT using realistic master data and production-like transportation processes instead of isolated test cases."
+    },
+    {
+      "id": "SEC18",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real Project Example",
+      "content": "A multinational logistics company executed over 1,200 SAP TM test cases covering planning, carrier selection, freight settlement and integration with SAP EWM before Go-Live. The extensive testing resulted in a highly stable production environment."
+    },
+    {
+      "id": "SEC19",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Interview Tip",
+      "content": "Remember the testing sequence: Unit Testing → System Integration Testing (SIT) → User Acceptance Testing (UAT) → Regression Testing → Go-Live."
+    },
+    {
+      "id": "SEC20",
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Common Mistake",
+      "content": "Successful Unit Testing does not guarantee a successful implementation. Integration and business process validation through SIT and UAT are equally important."
+    },
+    {
+      "id": "SEC21",
+      "type": "heading",
+      "title": "Revision Summary"
+    },
+    {
+      "id": "SEC22",
+      "type": "bullet-list",
+      "items": [
+        "SAP TM projects perform Unit, Integration, UAT and Regression Testing.",
+        "SIT validates technical integration across systems.",
+        "UAT confirms that business requirements are satisfied.",
+        "Regression Testing ensures existing functionality remains unaffected.",
+        "Comprehensive testing significantly reduces Go-Live risks."
+      ]
+    }
+  ],
+  "relatedLearning": {
+    "viva": [
+      "V-M10-T4-001"
+    ],
+    "handsOnLabs": [
+      "LAB-M10-004"
+    ],
+    "caseStudies": [
+      "CASE-M10-004"
+    ],
+    "practiceMcqs": [
+      "M10T4Q001"
+    ]
+  }
+}

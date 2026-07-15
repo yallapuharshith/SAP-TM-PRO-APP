@@ -1,0 +1,297 @@
+{
+  "id": "M9T7",
+  "module": {
+    "id": 9,
+    "title": "SAP TM Reporting, Analytics & Performance Management",
+    "sequence": 9
+  },
+  "topic": {
+    "id": 7,
+    "title": "SAP Analytics Cloud (SAC) Integration for SAP TM",
+    "sequence": 7
+  },
+  "metadata": {
+    "difficulty": "Beginner",
+    "estimatedReadingTime": 35,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-15",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "SAP Analytics Cloud",
+      "SAC Integration"
+    ],
+    "prerequisites": [
+      "M9T6"
+    ],
+    "learningPath": [
+      "Study",
+      "Viva",
+      "Hands-on",
+      "MCQ"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Understand SAC integration role",
+      "description": "Explain SAC as strategic analytics extension over SAP TM operational reporting."
+    },
+    {
+      "id": "LO2",
+      "title": "Understand SAC capabilities",
+      "description": "Describe dashboards, predictive analytics, planning, drill-down, and mobile access."
+    },
+    {
+      "id": "LO3",
+      "title": "Understand enterprise analytics value",
+      "description": "Clarify combining logistics, finance, and sales data for executive decisions."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "SAP Analytics Cloud (SAC) Integration for SAP TM"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "SAP Analytics Cloud (SAC) extends SAP Transportation Management by providing advanced dashboards, interactive visualizations, predictive analytics and executive reporting. While SAP TM provides operational reports, SAC combines transportation data with finance, sales and supply chain information to deliver enterprise-wide business insights."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Key Concept",
+      "content": "SAP TM manages transportation operations, whereas SAP Analytics Cloud transforms transportation data into strategic business intelligence."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Objectives of SAC Integration"
+    },
+    {
+      "id": "SEC5",
+      "type": "bullet-list",
+      "items": [
+        "Create executive dashboards",
+        "Analyze transportation KPIs",
+        "Support predictive analytics",
+        "Combine logistics and financial data",
+        "Provide enterprise reporting",
+        "Improve strategic decision-making",
+        "Enable self-service analytics"
+      ]
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "Analytics Process"
+    },
+    {
+      "id": "SEC7",
+      "type": "process-flow",
+      "title": "SAP TM to SAC Analytics Flow",
+      "orientation": "horizontal",
+      "steps": [
+        "Transportation Data",
+        "SAP TM",
+        "SAP Analytics Cloud",
+        "Dashboards",
+        "Predictive Analytics",
+        "Business Decisions"
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "Typical SAC Dashboards"
+    },
+    {
+      "id": "SEC9",
+      "type": "table",
+      "title": "Transportation Analytics",
+      "headers": [
+        "Dashboard",
+        "Business Purpose"
+      ],
+      "rows": [
+        [
+          "Transportation Cost",
+          "Freight spending analysis"
+        ],
+        [
+          "Carrier Performance",
+          "Carrier comparison"
+        ],
+        [
+          "Delivery Performance",
+          "On-time delivery analysis"
+        ],
+        [
+          "Shipment Volume",
+          "Transportation trends"
+        ],
+        [
+          "Resource Utilization",
+          "Fleet efficiency"
+        ],
+        [
+          "Exception Analytics",
+          "Operational risk analysis"
+        ]
+      ]
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "SAC Capabilities"
+    },
+    {
+      "id": "SEC11",
+      "type": "table",
+      "title": "Key Features",
+      "headers": [
+        "Feature",
+        "Benefit"
+      ],
+      "rows": [
+        [
+          "Interactive Dashboards",
+          "Visual reporting"
+        ],
+        [
+          "Predictive Analytics",
+          "Forecast future trends"
+        ],
+        [
+          "Planning",
+          "Business forecasting"
+        ],
+        [
+          "Data Visualization",
+          "Charts and graphs"
+        ],
+        [
+          "Drill-Down Analysis",
+          "Detailed investigation"
+        ],
+        [
+          "Mobile Access",
+          "Anywhere reporting"
+        ]
+      ]
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Business Scenario"
+    },
+    {
+      "id": "SEC13",
+      "type": "paragraph",
+      "content": "A logistics director uses SAP Analytics Cloud to analyze transportation costs across multiple countries. The dashboard predicts increasing freight costs in one region due to seasonal demand, allowing management to negotiate carrier contracts before costs rise."
+    },
+    {
+      "id": "SEC14",
+      "type": "comparison",
+      "title": "SAP TM Reports vs SAP Analytics Cloud",
+      "leftTitle": "SAP TM Reports",
+      "rightTitle": "SAP Analytics Cloud",
+      "rows": [
+        {
+          "feature": "Focus",
+          "left": "Operational Reporting",
+          "right": "Strategic Analytics"
+        },
+        {
+          "feature": "Analytics",
+          "left": "Basic KPIs",
+          "right": "Advanced & Predictive"
+        },
+        {
+          "feature": "Audience",
+          "left": "Operations Team",
+          "right": "Business Management"
+        }
+      ]
+    },
+    {
+      "id": "SEC15",
+      "type": "heading",
+      "title": "Business Benefits"
+    },
+    {
+      "id": "SEC16",
+      "type": "bullet-list",
+      "items": [
+        "Advanced business intelligence",
+        "Predictive transportation analytics",
+        "Enterprise-wide reporting",
+        "Improved executive decision-making",
+        "Better logistics planning",
+        "Enhanced business visibility"
+      ]
+    },
+    {
+      "id": "SEC17",
+      "type": "callout",
+      "calloutType": "best-practice",
+      "title": "Best Practice",
+      "content": "Combine SAP TM operational data with finance, sales and procurement information in SAP Analytics Cloud to gain a complete view of supply chain performance."
+    },
+    {
+      "id": "SEC18",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real Project Example",
+      "content": "A multinational manufacturing company integrated SAP TM with SAP Analytics Cloud to monitor transportation costs globally. Predictive dashboards helped reduce annual freight expenses by identifying high-cost transportation lanes before budget overruns occurred."
+    },
+    {
+      "id": "SEC19",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Interview Tip",
+      "content": "SAP Analytics Cloud is primarily used for dashboards, predictive analytics, planning and executive reporting—not for transportation execution."
+    },
+    {
+      "id": "SEC20",
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Common Mistake",
+      "content": "SAP Analytics Cloud complements SAP TM but does not replace its operational reporting or transportation management capabilities."
+    },
+    {
+      "id": "SEC21",
+      "type": "heading",
+      "title": "Revision Summary"
+    },
+    {
+      "id": "SEC22",
+      "type": "bullet-list",
+      "items": [
+        "SAP Analytics Cloud provides advanced analytics for SAP TM.",
+        "SAC supports dashboards, predictive analytics and planning.",
+        "Transportation data can be combined with enterprise business data.",
+        "SAC enables executive-level reporting and strategic decisions.",
+        "SAP TM manages operations, while SAC provides business intelligence."
+      ]
+    }
+  ],
+  "relatedLearning": {
+    "viva": [
+      "V-M9-T7-001"
+    ],
+    "handsOnLabs": [
+      "LAB-M9-007"
+    ],
+    "caseStudies": [
+      "CASE-M9-007"
+    ],
+    "practiceMcqs": [
+      "M9T7Q001"
+    ]
+  }
+}

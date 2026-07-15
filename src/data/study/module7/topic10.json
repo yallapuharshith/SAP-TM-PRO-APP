@@ -1,0 +1,313 @@
+{
+  "id": "M7T10",
+  "module": {
+    "id": 7,
+    "title": "SAP TM Freight Settlement & Charge Management",
+    "sequence": 7
+  },
+  "topic": {
+    "id": 10,
+    "title": "End-to-End Freight Settlement Process",
+    "sequence": 10
+  },
+  "metadata": {
+    "difficulty": "Beginner",
+    "estimatedReadingTime": 35,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-15",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "Freight Settlement",
+      "End-to-End Process"
+    ],
+    "prerequisites": [
+      "M7T9"
+    ],
+    "learningPath": [
+      "Study",
+      "Viva",
+      "Hands-on",
+      "MCQ"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Understand end-to-end settlement lifecycle",
+      "description": "Explain complete flow from POD through charge, verification, posting, and payment."
+    },
+    {
+      "id": "LO2",
+      "title": "Understand system integration",
+      "description": "Describe SAP TM and SAP S/4HANA finance integration across settlement stages."
+    },
+    {
+      "id": "LO3",
+      "title": "Understand settlement success factors",
+      "description": "Clarify master data, pricing setup, automation, and monitoring requirements."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "End-to-End Freight Settlement Process"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "Freight Settlement is the final phase of the SAP Transportation Management lifecycle. It begins after transportation execution is completed and Proof of Delivery is confirmed. SAP TM calculates transportation charges, validates carrier invoices, creates Freight Settlement Documents, integrates with SAP S/4HANA Finance and completes carrier payment. This process ensures accurate financial reconciliation between logistics operations and accounting."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Key Concept",
+      "content": "The SAP TM lifecycle ends only after Freight Settlement is completed and the carrier has been financially settled."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Complete Freight Settlement Lifecycle"
+    },
+    {
+      "id": "SEC5",
+      "type": "process-flow",
+      "title": "End-to-End Freight Settlement Flow",
+      "orientation": "horizontal",
+      "steps": [
+        "Transportation Execution Completed",
+        "Proof of Delivery",
+        "Charge Calculation",
+        "Freight Agreement Lookup",
+        "Freight Settlement Document",
+        "Invoice Verification",
+        "Financial Posting",
+        "Accounts Payable",
+        "Carrier Payment",
+        "Settlement Completed"
+      ]
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "Settlement Activities"
+    },
+    {
+      "id": "SEC7",
+      "type": "table",
+      "title": "Settlement Process Stages",
+      "headers": [
+        "Stage",
+        "Business Activity"
+      ],
+      "rows": [
+        [
+          "Charge Calculation",
+          "Calculate transportation charges"
+        ],
+        [
+          "Rate Determination",
+          "Apply freight agreements"
+        ],
+        [
+          "Settlement Document",
+          "Generate FSD"
+        ],
+        [
+          "Invoice Verification",
+          "Validate carrier invoice"
+        ],
+        [
+          "Financial Posting",
+          "Create accounting entries"
+        ],
+        [
+          "Payment Processing",
+          "Pay carrier"
+        ],
+        [
+          "Analytics",
+          "Monitor settlement KPIs"
+        ]
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "Integrated SAP Components"
+    },
+    {
+      "id": "SEC9",
+      "type": "table",
+      "title": "Cross-System Integration",
+      "headers": [
+        "Component",
+        "Responsibility"
+      ],
+      "rows": [
+        [
+          "SAP TM",
+          "Transportation management"
+        ],
+        [
+          "Freight Agreement",
+          "Pricing contract"
+        ],
+        [
+          "Charge Calculation",
+          "Transportation pricing"
+        ],
+        [
+          "SAP S/4HANA Finance",
+          "Financial posting"
+        ],
+        [
+          "Accounts Payable",
+          "Carrier payment"
+        ],
+        [
+          "Controlling",
+          "Cost analysis"
+        ]
+      ]
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "Business Scenario"
+    },
+    {
+      "id": "SEC11",
+      "type": "paragraph",
+      "content": "A retail company delivers products to 500 stores daily. After delivery confirmation, SAP TM automatically calculates transportation charges using Freight Agreements, generates Freight Settlement Documents, verifies carrier invoices, posts accounting entries to SAP S/4HANA Finance and schedules electronic payments through Accounts Payable."
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Critical Success Factors"
+    },
+    {
+      "id": "SEC13",
+      "type": "bullet-list",
+      "items": [
+        "Accurate freight agreements",
+        "Well-maintained rate tables",
+        "Correct charge calculation sheets",
+        "Successful Proof of Delivery",
+        "Reliable financial integration",
+        "Automated invoice verification",
+        "Continuous settlement monitoring"
+      ]
+    },
+    {
+      "id": "SEC14",
+      "type": "comparison",
+      "title": "Transportation Execution vs Freight Settlement",
+      "leftTitle": "Transportation Execution",
+      "rightTitle": "Freight Settlement",
+      "rows": [
+        {
+          "feature": "Purpose",
+          "left": "Move Goods",
+          "right": "Pay Carrier"
+        },
+        {
+          "feature": "Primary Document",
+          "left": "Freight Order",
+          "right": "Freight Settlement Document"
+        },
+        {
+          "feature": "Business Area",
+          "left": "Logistics",
+          "right": "Finance"
+        },
+        {
+          "feature": "Completion",
+          "left": "Proof of Delivery",
+          "right": "Carrier Payment"
+        }
+      ]
+    },
+    {
+      "id": "SEC15",
+      "type": "heading",
+      "title": "Business Benefits"
+    },
+    {
+      "id": "SEC16",
+      "type": "bullet-list",
+      "items": [
+        "Automated carrier payments",
+        "Accurate transportation costing",
+        "Reduced financial errors",
+        "Improved audit compliance",
+        "Faster settlement cycle",
+        "Complete logistics-finance integration",
+        "Enhanced transportation cost visibility"
+      ]
+    },
+    {
+      "id": "SEC17",
+      "type": "callout",
+      "calloutType": "best-practice",
+      "title": "Best Practice",
+      "content": "Automate the entire Freight Settlement lifecycle by integrating SAP TM with SAP S/4HANA Finance, electronic invoicing and carrier portals. This minimizes manual intervention and improves settlement accuracy."
+    },
+    {
+      "id": "SEC18",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real Project Example",
+      "content": "A multinational FMCG company automated settlement for over 50,000 Freight Orders each month. Automatic charge calculation, invoice verification and financial integration reduced settlement time from ten days to less than two days while significantly improving carrier satisfaction."
+    },
+    {
+      "id": "SEC19",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Interview Tip",
+      "content": "Be able to explain the complete Freight Settlement flow: Freight Order → Proof of Delivery → Charge Calculation → Freight Agreement → Freight Settlement Document → Invoice Verification → Financial Posting → Accounts Payable → Carrier Payment."
+    },
+    {
+      "id": "SEC20",
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Common Mistake",
+      "content": "Many beginners think Freight Settlement ends with FSD creation. In reality, the business process concludes only after invoice verification, financial posting and successful carrier payment."
+    },
+    {
+      "id": "SEC21",
+      "type": "heading",
+      "title": "Revision Summary"
+    },
+    {
+      "id": "SEC22",
+      "type": "bullet-list",
+      "items": [
+        "Freight Settlement is the final SAP TM business process.",
+        "Freight Settlement begins after Proof of Delivery.",
+        "Charge Calculation uses Freight Agreements and Rate Tables.",
+        "Freight Settlement Documents integrate SAP TM with SAP S/4HANA Finance.",
+        "Invoice Verification validates carrier invoices before payment.",
+        "Accounts Payable processes the final carrier payment.",
+        "The end-to-end process ensures complete logistics and finance integration."
+      ]
+    }
+  ],
+  "relatedLearning": {
+    "viva": [
+      "V-M7-T10-001"
+    ],
+    "handsOnLabs": [
+      "LAB-M7-010"
+    ],
+    "caseStudies": [
+      "CASE-M7-010"
+    ],
+    "practiceMcqs": [
+      "M7T10Q001"
+    ]
+  }
+}

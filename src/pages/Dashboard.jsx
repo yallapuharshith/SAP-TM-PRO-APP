@@ -16,9 +16,9 @@ function Dashboard() {
   const [moduleCount, setModuleCount] = useState(0);
 
   const spotlightRouteById = {
-    'stream-track': '/study',
+    'stream-track': '/study-notes',
     'cert-readiness': '/exam',
-    'bookmark-focus': '/study?section=notes',
+    'bookmark-focus': '/study-notes?section=notes',
   };
 
   useEffect(() => {

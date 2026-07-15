@@ -1,0 +1,293 @@
+{
+  "id": "M8T7",
+  "module": {
+    "id": 8,
+    "title": "SAP TM Integration & Cross-System Connectivity",
+    "sequence": 8
+  },
+  "topic": {
+    "id": 7,
+    "title": "SAP BTP & Cloud Integration",
+    "sequence": 7
+  },
+  "metadata": {
+    "difficulty": "Beginner",
+    "estimatedReadingTime": 35,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-15",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "SAP BTP",
+      "Cloud Integration"
+    ],
+    "prerequisites": [
+      "M8T6"
+    ],
+    "learningPath": [
+      "Study",
+      "Viva",
+      "Hands-on",
+      "MCQ"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Understand BTP integration role",
+      "description": "Explain SAP BTP as the central cloud integration platform for SAP TM landscapes."
+    },
+    {
+      "id": "LO2",
+      "title": "Understand BTP services",
+      "description": "Describe Integration Suite, API management, event, identity, and connectivity services."
+    },
+    {
+      "id": "LO3",
+      "title": "Understand cloud integration benefits",
+      "description": "Clarify security, scalability, and simplification of enterprise integrations."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "SAP BTP & Cloud Integration"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "SAP Business Technology Platform (SAP BTP) provides the cloud integration foundation for SAP Transportation Management. It enables SAP TM to connect securely with SAP cloud applications, on-premise systems and third-party logistics solutions through APIs, integration flows and event-driven communication."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Key Concept",
+      "content": "SAP BTP acts as the integration platform that securely connects SAP TM with SAP and non-SAP applications."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Objectives of SAP BTP Integration"
+    },
+    {
+      "id": "SEC5",
+      "type": "bullet-list",
+      "items": [
+        "Connect cloud and on-premise systems",
+        "Enable secure API communication",
+        "Support real-time data exchange",
+        "Simplify enterprise integration",
+        "Provide scalable cloud connectivity",
+        "Reduce custom integrations",
+        "Enable digital transformation"
+      ]
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "Cloud Integration Flow"
+    },
+    {
+      "id": "SEC7",
+      "type": "process-flow",
+      "title": "SAP BTP Integration Architecture",
+      "orientation": "horizontal",
+      "steps": [
+        "SAP S/4HANA",
+        "SAP BTP",
+        "SAP TM",
+        "Carrier Systems",
+        "IoT Devices",
+        "Business Network"
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "SAP BTP Services Used"
+    },
+    {
+      "id": "SEC9",
+      "type": "table",
+      "title": "Key SAP BTP Services",
+      "headers": [
+        "Service",
+        "Purpose"
+      ],
+      "rows": [
+        [
+          "Integration Suite",
+          "Application integration"
+        ],
+        [
+          "API Management",
+          "Secure API governance"
+        ],
+        [
+          "Event Mesh",
+          "Event-driven messaging"
+        ],
+        [
+          "Cloud Connector",
+          "Secure on-premise connectivity"
+        ],
+        [
+          "Identity Authentication",
+          "User authentication"
+        ],
+        [
+          "Business Rules",
+          "Decision automation"
+        ]
+      ]
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "Integration Scenarios"
+    },
+    {
+      "id": "SEC11",
+      "type": "table",
+      "title": "Typical Cloud Integrations",
+      "headers": [
+        "Integration",
+        "Business Purpose"
+      ],
+      "rows": [
+        [
+          "SAP S/4HANA ↔ SAP TM",
+          "Business document exchange"
+        ],
+        [
+          "SAP TM ↔ SAP Business Network",
+          "Carrier collaboration"
+        ],
+        [
+          "SAP TM ↔ GPS Providers",
+          "Vehicle tracking"
+        ],
+        [
+          "SAP TM ↔ Third-Party Logistics",
+          "Shipment execution"
+        ],
+        [
+          "SAP TM ↔ SAP Analytics Cloud",
+          "Reporting and dashboards"
+        ]
+      ]
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Business Scenario"
+    },
+    {
+      "id": "SEC13",
+      "type": "paragraph",
+      "content": "A global manufacturer operates SAP S/4HANA on-premise and SAP TM in the cloud. SAP BTP Integration Suite synchronizes deliveries, Freight Orders and shipment events while securely connecting external carriers through APIs and SAP Business Network."
+    },
+    {
+      "id": "SEC14",
+      "type": "comparison",
+      "title": "Traditional Integration vs SAP BTP Integration",
+      "leftTitle": "Traditional Integration",
+      "rightTitle": "SAP BTP Integration",
+      "rows": [
+        {
+          "feature": "Architecture",
+          "left": "Point-to-Point",
+          "right": "Central Integration Platform"
+        },
+        {
+          "feature": "Scalability",
+          "left": "Limited",
+          "right": "Highly Scalable"
+        },
+        {
+          "feature": "API Management",
+          "left": "Manual",
+          "right": "Centralized"
+        }
+      ]
+    },
+    {
+      "id": "SEC15",
+      "type": "heading",
+      "title": "Business Benefits"
+    },
+    {
+      "id": "SEC16",
+      "type": "bullet-list",
+      "items": [
+        "Secure cloud connectivity",
+        "Reduced integration complexity",
+        "Real-time information exchange",
+        "Faster onboarding of partners",
+        "Improved scalability",
+        "Simplified enterprise architecture"
+      ]
+    },
+    {
+      "id": "SEC17",
+      "type": "callout",
+      "calloutType": "best-practice",
+      "title": "Best Practice",
+      "content": "Use SAP Integration Suite for standard integrations and APIs instead of developing custom point-to-point interfaces whenever possible."
+    },
+    {
+      "id": "SEC18",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real Project Example",
+      "content": "A multinational logistics organization migrated its SAP TM integrations to SAP BTP Integration Suite, reducing interface maintenance by over 50% while improving system reliability and monitoring."
+    },
+    {
+      "id": "SEC19",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Interview Tip",
+      "content": "For SAP TM interviews, remember that SAP BTP is the recommended integration platform for connecting SAP TM with cloud services, APIs and external business partners."
+    },
+    {
+      "id": "SEC20",
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Common Mistake",
+      "content": "SAP BTP is an integration platform, not a replacement for SAP TM. Transportation planning and execution remain SAP TM responsibilities."
+    },
+    {
+      "id": "SEC21",
+      "type": "heading",
+      "title": "Revision Summary"
+    },
+    {
+      "id": "SEC22",
+      "type": "bullet-list",
+      "items": [
+        "SAP BTP provides cloud integration capabilities for SAP TM.",
+        "Integration Suite, API Management and Event Mesh are major BTP services.",
+        "SAP BTP connects SAP TM with SAP systems and third-party applications.",
+        "Cloud integration supports secure, scalable and real-time communication.",
+        "SAP BTP simplifies enterprise-wide logistics integration."
+      ]
+    }
+  ],
+  "relatedLearning": {
+    "viva": [
+      "V-M8-T7-001"
+    ],
+    "handsOnLabs": [
+      "LAB-M8-007"
+    ],
+    "caseStudies": [
+      "CASE-M8-007"
+    ],
+    "practiceMcqs": [
+      "M8T7Q001"
+    ]
+  }
+}

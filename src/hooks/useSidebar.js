@@ -1,7 +1,19 @@
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 
 export function useSidebar() {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
+
+  const openSidebar = useCallback(() => {
+    setSidebarOpen(true);
+  }, []);
+
+  const closeSidebar = useCallback(() => {
+    setSidebarOpen(false);
+  }, []);
+
+  const toggleSidebar = useCallback(() => {
+    setSidebarOpen((prev) => !prev);
+  }, []);
 
   useEffect(() => {
     const onResize = () => {
@@ -16,8 +28,8 @@ export function useSidebar() {
 
   return {
     isSidebarOpen,
-    openSidebar: () => setSidebarOpen(true),
-    closeSidebar: () => setSidebarOpen(false),
-    toggleSidebar: () => setSidebarOpen((prev) => !prev),
+    openSidebar,
+    closeSidebar,
+    toggleSidebar,
   };
 }

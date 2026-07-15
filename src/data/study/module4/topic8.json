@@ -1,0 +1,295 @@
+{
+  "id": "M4T8",
+  "module": {
+    "id": 4,
+    "title": "SAP TM Master Data Management",
+    "sequence": 4
+  },
+  "topic": {
+    "id": 8,
+    "title": "Package Building Profile Master Data",
+    "sequence": 8
+  },
+  "metadata": {
+    "difficulty": "Beginner",
+    "estimatedReadingTime": 35,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-15",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "Package Building Profile",
+      "Master Data"
+    ],
+    "prerequisites": [
+      "M4T1",
+      "M4T2",
+      "M4T3",
+      "M4T4",
+      "M4T5",
+      "M4T6",
+      "M4T7"
+    ],
+    "learningPath": [
+      "Study",
+      "Viva",
+      "Hands-on",
+      "MCQ"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Understand package building profile",
+      "description": "Explain how package building rules shape handling units before transportation planning."
+    },
+    {
+      "id": "LO2",
+      "title": "Understand package strategies",
+      "description": "Identify pallet, container and mixed-package approaches for planning optimization."
+    },
+    {
+      "id": "LO3",
+      "title": "Understand planning impact",
+      "description": "Describe effects of packaging quality on loading, capacity and freight optimization."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "Package Building Profile"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "A Package Building Profile (PBP) defines how products are packed into handling units before transportation planning begins. It specifies packaging rules, capacity limits and packaging hierarchy, allowing SAP TM to optimize loading, resource utilization and freight planning."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Key Concept",
+      "content": "SAP TM plans transportation based on packaged goods. The Package Building Profile determines how products are grouped into handling units before Freight Units are planned."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Objectives of Package Building"
+    },
+    {
+      "id": "SEC5",
+      "type": "bullet-list",
+      "items": [
+        "Optimize packaging",
+        "Reduce transportation cost",
+        "Improve truck utilization",
+        "Generate handling units",
+        "Support loading optimization",
+        "Improve freight planning"
+      ]
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "Package Building Process"
+    },
+    {
+      "id": "SEC7",
+      "type": "process-flow",
+      "title": "Package Building Flow",
+      "orientation": "horizontal",
+      "steps": [
+        "Sales Order",
+        "Delivery",
+        "Package Building Profile",
+        "Handling Units",
+        "Freight Unit",
+        "Transportation Planning",
+        "Freight Order"
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "Package Building Components"
+    },
+    {
+      "id": "SEC9",
+      "type": "table",
+      "title": "Package Building Attributes",
+      "headers": [
+        "Component",
+        "Purpose"
+      ],
+      "rows": [
+        [
+          "Packaging Material",
+          "Box, Pallet, Container"
+        ],
+        [
+          "Maximum Weight",
+          "Weight limit"
+        ],
+        [
+          "Maximum Volume",
+          "Volume limit"
+        ],
+        [
+          "Stackability",
+          "Stacking rules"
+        ],
+        [
+          "Loading Constraints",
+          "Transportation restrictions"
+        ],
+        [
+          "Package Hierarchy",
+          "Parent-child package structure"
+        ]
+      ]
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "Package Building Strategy"
+    },
+    {
+      "id": "SEC11",
+      "type": "table",
+      "title": "Common Strategies",
+      "headers": [
+        "Strategy",
+        "Description"
+      ],
+      "rows": [
+        [
+          "Single Item",
+          "One product per package"
+        ],
+        [
+          "Mixed Package",
+          "Multiple products together"
+        ],
+        [
+          "Pallet-Based",
+          "Products packed onto pallets"
+        ],
+        [
+          "Container-Based",
+          "Packages grouped into containers"
+        ]
+      ]
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Business Scenario"
+    },
+    {
+      "id": "SEC13",
+      "type": "paragraph",
+      "content": "A beverage company ships 2,400 bottles to a distributor. SAP TM uses the Package Building Profile to pack 24 bottles into one carton, 40 cartons onto one pallet and multiple pallets into a truck. Transportation planning is performed using these handling units rather than individual bottles."
+    },
+    {
+      "id": "SEC14",
+      "type": "comparison",
+      "title": "Package Building vs Resource Planning",
+      "leftTitle": "Package Building",
+      "rightTitle": "Resource Planning",
+      "rows": [
+        {
+          "feature": "Focus",
+          "left": "How goods are packed",
+          "right": "How goods are transported"
+        },
+        {
+          "feature": "Object",
+          "left": "Handling Units",
+          "right": "Vehicles & Resources"
+        },
+        {
+          "feature": "Occurs Before",
+          "left": "Transportation Planning",
+          "right": "Transportation Execution"
+        }
+      ]
+    },
+    {
+      "id": "SEC15",
+      "type": "heading",
+      "title": "Business Benefits"
+    },
+    {
+      "id": "SEC16",
+      "type": "bullet-list",
+      "items": [
+        "Better vehicle utilization",
+        "Reduced freight cost",
+        "Improved loading efficiency",
+        "Standardized packaging",
+        "Accurate capacity planning",
+        "Faster transportation planning"
+      ]
+    },
+    {
+      "id": "SEC17",
+      "type": "callout",
+      "calloutType": "best-practice",
+      "title": "Best Practice",
+      "content": "Maintain realistic package dimensions and weight limits. Accurate package data significantly improves transportation optimization and vehicle loading."
+    },
+    {
+      "id": "SEC18",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real Project Example",
+      "content": "A consumer goods company introduced Package Building Profiles for palletization. Vehicle utilization increased by 22% because SAP TM planned shipments using optimized pallet configurations instead of individual cartons."
+    },
+    {
+      "id": "SEC19",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Interview Tip",
+      "content": "Package Building Profiles are frequently discussed in advanced SAP TM interviews. Remember that package building occurs before Freight Unit planning and directly influences capacity planning."
+    },
+    {
+      "id": "SEC20",
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Common Mistake",
+      "content": "Do not confuse Package Building Profiles with Loading Profiles. Package Building defines how products are packed, whereas loading determines how packages are arranged inside transportation resources."
+    },
+    {
+      "id": "SEC21",
+      "type": "heading",
+      "title": "Revision Summary"
+    },
+    {
+      "id": "SEC22",
+      "type": "bullet-list",
+      "items": [
+        "Package Building Profiles define packaging rules.",
+        "Handling Units are generated before transportation planning.",
+        "Accurate packaging improves capacity utilization.",
+        "Package Building supports vehicle optimization.",
+        "Package Building is a key master data object in SAP TM."
+      ]
+    }
+  ],
+  "relatedLearning": {
+    "viva": [
+      "V-M4-T8-001"
+    ],
+    "handsOnLabs": [
+      "LAB-M4-008"
+    ],
+    "caseStudies": [
+      "CASE-M4-008"
+    ],
+    "practiceMcqs": [
+      "M4T8Q001"
+    ]
+  }
+}

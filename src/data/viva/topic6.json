@@ -1,0 +1,337 @@
+{
+  "id": "VIVA-T6",
+  "section": {
+    "id": "viva",
+    "title": "Viva Preparation",
+    "sequence": 1
+  },
+  "topic": {
+    "id": 6,
+    "title": "SAP TM End-to-End Mock Viva (Accenture Final Assessment Style)",
+    "sequence": 6
+  },
+  "metadata": {
+    "difficulty": "Beginner",
+    "estimatedReadingTime": 35,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-15",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "End-to-End Mock Viva",
+      "Final Assessment"
+    ],
+    "prerequisites": [
+      "VIVA-T5"
+    ],
+    "learningPath": [
+      "Viva",
+      "Study",
+      "MCQ"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Understand final assessment structure",
+      "description": "Practice progression from SAP TM fundamentals to consultant-level scenario and implementation discussions."
+    },
+    {
+      "id": "LO2",
+      "title": "Understand consultant-level explanation quality",
+      "description": "Deliver business-first, process-driven answers with strong communication and confidence."
+    },
+    {
+      "id": "LO3",
+      "title": "Understand full lifecycle articulation",
+      "description": "Explain complete transportation flow from order to settlement and reporting in viva settings."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "SAP TM End-to-End Mock Viva (Accenture Final Assessment Style)"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "This mock viva simulates the final technical assessment conducted after SAP TM stream training. The interviewer evaluates conceptual understanding, business process knowledge, communication skills, problem-solving ability and confidence. Questions become progressively more difficult, moving from fundamentals to consultant-level implementation scenarios."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Assessment Strategy",
+      "content": "Interviewers assess not only whether your answer is correct, but also whether you can explain the business process logically and confidently."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Round 1 – Fundamentals"
+    },
+    {
+      "id": "SEC5",
+      "type": "table",
+      "title": "Basic Questions",
+      "headers": [
+        "Question",
+        "Expected Answer"
+      ],
+      "rows": [
+        [
+          "What is SAP Transportation Management?",
+          "Transportation planning, execution and freight settlement solution."
+        ],
+        [
+          "Why is SAP TM implemented?",
+          "Optimize transportation cost, planning and execution."
+        ],
+        [
+          "What is Transportation Demand?",
+          "Business requirement requiring transportation."
+        ],
+        [
+          "What is a Freight Unit?",
+          "Planning object created from transportation demand."
+        ],
+        [
+          "What is a Freight Order?",
+          "Transportation execution document."
+        ]
+      ]
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "Round 2 – Functional Questions"
+    },
+    {
+      "id": "SEC7",
+      "type": "table",
+      "title": "Business Process Questions",
+      "headers": [
+        "Question",
+        "Expected Discussion"
+      ],
+      "rows": [
+        [
+          "Explain Transportation Proposal.",
+          "Planning recommendation generated before Freight Order creation."
+        ],
+        [
+          "Explain Carrier Selection.",
+          "Selection based on cost, service level, capacity and business rules."
+        ],
+        [
+          "What is Resource Management?",
+          "Management of trucks, trailers and drivers."
+        ],
+        [
+          "Explain Freight Settlement.",
+          "Charge calculation, invoice verification and carrier payment."
+        ],
+        [
+          "Why integrate SAP TM with SAP EWM?",
+          "Synchronize warehouse and transportation execution."
+        ]
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "Round 3 – Scenario Questions"
+    },
+    {
+      "id": "SEC9",
+      "type": "table",
+      "title": "Consultant Scenarios",
+      "headers": [
+        "Scenario",
+        "Expected Consultant Approach"
+      ],
+      "rows": [
+        [
+          "Truck breaks down during delivery.",
+          "Exception management, replanning and alternate resource assignment."
+        ],
+        [
+          "Carrier rejects shipment.",
+          "Execute carrier selection again and assign another carrier."
+        ],
+        [
+          "Freight cost is unexpectedly high.",
+          "Analyze charge calculation, carrier rates and planning optimization."
+        ],
+        [
+          "Shipment is delayed because of warehouse issues.",
+          "Coordinate through SAP EWM integration and replan transportation."
+        ],
+        [
+          "Production issue after Go-Live.",
+          "Hypercare support, root cause analysis and permanent resolution."
+        ]
+      ]
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "Round 4 – Implementation Questions"
+    },
+    {
+      "id": "SEC11",
+      "type": "table",
+      "title": "Implementation Knowledge",
+      "headers": [
+        "Question",
+        "Expected Answer"
+      ],
+      "rows": [
+        [
+          "Explain SAP Activate phases.",
+          "Discover → Prepare → Explore → Realize → Deploy → Run."
+        ],
+        [
+          "Why is UAT important?",
+          "Business validation before production."
+        ],
+        [
+          "What happens during Hypercare?",
+          "Immediate production stabilization."
+        ],
+        [
+          "What is AMS?",
+          "Application Management Services after Hypercare."
+        ],
+        [
+          "What is the purpose of regression testing?",
+          "Ensure existing functionality remains unaffected."
+        ]
+      ]
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Complete Business Flow"
+    },
+    {
+      "id": "SEC13",
+      "type": "process-flow",
+      "title": "Explain This Flow During Viva",
+      "orientation": "horizontal",
+      "steps": [
+        "Sales Order",
+        "Outbound Delivery",
+        "Freight Unit",
+        "Transportation Planning",
+        "Transportation Proposal",
+        "Carrier Selection",
+        "Freight Order",
+        "Execution",
+        "Freight Settlement",
+        "Reporting"
+      ]
+    },
+    {
+      "id": "SEC14",
+      "type": "comparison",
+      "title": "Junior Candidate vs Consultant-Level Candidate",
+      "leftTitle": "Junior",
+      "rightTitle": "Consultant",
+      "rows": [
+        {
+          "feature": "Answers",
+          "left": "Definition only",
+          "right": "Definition + Business Process + Example"
+        },
+        {
+          "feature": "Thinking",
+          "left": "Transaction oriented",
+          "right": "Business solution oriented"
+        },
+        {
+          "feature": "Communication",
+          "left": "Basic",
+          "right": "Structured and confident"
+        }
+      ]
+    },
+    {
+      "id": "SEC15",
+      "type": "heading",
+      "title": "Final Preparation Checklist"
+    },
+    {
+      "id": "SEC16",
+      "type": "bullet-list",
+      "items": [
+        "Explain every SAP TM object confidently.",
+        "Know the complete transportation lifecycle.",
+        "Understand SAP TM integrations.",
+        "Practice implementation and support scenarios.",
+        "Prepare HR and behavioral answers.",
+        "Answer using business examples."
+      ]
+    },
+    {
+      "id": "SEC17",
+      "type": "callout",
+      "calloutType": "best-practice",
+      "title": "Best Practice",
+      "content": "Treat every answer as if you are explaining the solution to a customer. Focus on the business problem first, then explain how SAP TM solves it."
+    },
+    {
+      "id": "SEC18",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Consultant-Level Sample Answer",
+      "content": "Question: Explain the complete SAP TM process. Answer: Transportation demand originates from an outbound delivery. SAP TM creates Freight Units, optimizes planning, selects the most suitable carrier, generates Freight Orders, monitors execution through events, calculates freight charges, performs Freight Settlement and finally provides analytical reports for continuous improvement."
+    },
+    {
+      "id": "SEC19",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Accenture Assessment Tip",
+      "content": "Many final assessments are scenario-based. If you don't remember a technical term, explain the business process logically instead of remaining silent."
+    },
+    {
+      "id": "SEC20",
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Common Mistake",
+      "content": "Do not rush your answers. Speak slowly, explain the sequence of events and clearly state the business benefit at the end of each response."
+    },
+    {
+      "id": "SEC21",
+      "type": "heading",
+      "title": "Sprint 3 Completion Summary"
+    },
+    {
+      "id": "SEC22",
+      "type": "bullet-list",
+      "items": [
+        "Viva preparation completed.",
+        "Frequently asked technical and functional questions covered.",
+        "Scenario-based consultant questions practiced.",
+        "HR and managerial interview preparation completed.",
+        "Accenture-style final mock viva completed.",
+        "Ready for SAP TM stream viva and certification interview."
+      ]
+    }
+  ],
+  "relatedLearning": {
+    "viva": [
+      "V-M11-T6-001"
+    ],
+    "handsOnLabs": [
+      "LAB-M11-006"
+    ],
+    "caseStudies": [
+      "CASE-M11-006"
+    ],
+    "practiceMcqs": [
+      "M11T6Q001"
+    ]
+  }
+}

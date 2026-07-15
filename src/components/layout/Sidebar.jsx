@@ -1,6 +1,6 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import { GraduationCap, X } from 'lucide-react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import { navItems } from '../../data/navigation';
 import { cn } from '../../utils/cn';
 
@@ -10,6 +10,30 @@ const sidebarVariants = {
 };
 
 function Sidebar({ isOpen, onClose }) {
+  const location = useLocation();
+
+  const isItemActive = (item) => {
+    const [targetPath, targetQuery = ''] = String(item.path || '').split('?');
+    if (location.pathname !== targetPath) {
+      return false;
+    }
+
+    if (!targetQuery) {
+      return true;
+    }
+
+    const expected = new URLSearchParams(targetQuery);
+    const current = new URLSearchParams(location.search);
+
+    for (const [key, value] of expected.entries()) {
+      if (current.get(key) !== value) {
+        return false;
+      }
+    }
+
+    return true;
+  };
+
   return (
     <>
       <AnimatePresence>
@@ -57,15 +81,18 @@ function Sidebar({ isOpen, onClose }) {
         <nav className="space-y-2">
           {navItems.map((item) => {
             const Icon = item.icon;
+            const active = isItemActive(item);
+
             return (
               <NavLink
                 key={item.path}
                 to={item.path}
+                end={Boolean(item.end)}
                 onClick={onClose}
-                className={({ isActive }) =>
+                className={() =>
                   cn(
                     'group flex min-h-11 items-center gap-3 rounded-xl px-3 py-3 text-sm font-medium transition-all',
-                    isActive
+                    active
                       ? 'bg-gradient-to-r from-primary/40 to-accent/30 text-white shadow-soft'
                       : 'text-slate-300 hover:bg-white/10 hover:text-white'
                   )

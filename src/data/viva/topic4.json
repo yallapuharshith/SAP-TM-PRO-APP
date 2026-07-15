@@ -1,0 +1,312 @@
+{
+  "id": "VIVA-T4",
+  "section": {
+    "id": "viva",
+    "title": "Viva Preparation",
+    "sequence": 1
+  },
+  "topic": {
+    "id": 4,
+    "title": "SAP TM Mock Viva Round (Certification & Accenture Style)",
+    "sequence": 4
+  },
+  "metadata": {
+    "difficulty": "Beginner",
+    "estimatedReadingTime": 35,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-15",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "Mock Viva",
+      "Interview Practice"
+    ],
+    "prerequisites": [
+      "VIVA-T3"
+    ],
+    "learningPath": [
+      "Viva",
+      "Study",
+      "MCQ"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Understand mock viva progression",
+      "description": "Practice moving from basic concepts to consultant-level scenario explanations."
+    },
+    {
+      "id": "LO2",
+      "title": "Understand consultant-quality answering",
+      "description": "Deliver structured answers linking business need, process logic, and SAP TM capabilities."
+    },
+    {
+      "id": "LO3",
+      "title": "Understand interview readiness expectations",
+      "description": "Build confidence for certification and enterprise interview styles with timed responses."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "SAP TM Mock Viva Round (Certification & Accenture Style)"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "This mock viva simulates the style of questions commonly asked during SAP TM stream assessments, certification interviews and Accenture technical viva rounds. Questions progress from basic concepts to consultant-level business scenarios."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Mock Viva Rule",
+      "content": "Answer every question confidently within 60–90 seconds. Begin with the business purpose before explaining SAP TM functionality."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Round 1 – Basic Questions"
+    },
+    {
+      "id": "SEC5",
+      "type": "table",
+      "title": "Fundamental Questions",
+      "headers": [
+        "Question",
+        "Key Points Expected"
+      ],
+      "rows": [
+        [
+          "What is SAP TM?",
+          "Transportation planning, execution and settlement."
+        ],
+        [
+          "Why do companies implement SAP TM?",
+          "Cost optimization, visibility and efficient logistics."
+        ],
+        [
+          "What is Transportation Demand?",
+          "Business requirement for transportation."
+        ],
+        [
+          "What is a Freight Unit?",
+          "Planning object generated from demand."
+        ],
+        [
+          "What is a Freight Order?",
+          "Execution document assigned to resources."
+        ]
+      ]
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "Round 2 – Intermediate Questions"
+    },
+    {
+      "id": "SEC7",
+      "type": "table",
+      "title": "Functional Understanding",
+      "headers": [
+        "Question",
+        "Expected Discussion"
+      ],
+      "rows": [
+        [
+          "Explain Carrier Selection.",
+          "Rules, cost, service level and capacity."
+        ],
+        [
+          "Difference between Freight Unit and Freight Order?",
+          "Planning vs execution."
+        ],
+        [
+          "What is Transportation Proposal?",
+          "Planning recommendation."
+        ],
+        [
+          "Explain Freight Settlement.",
+          "Carrier invoice validation and settlement."
+        ],
+        [
+          "How does SAP TM integrate with SAP EWM?",
+          "Warehouse and transportation synchronization."
+        ]
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "Round 3 – Scenario Questions"
+    },
+    {
+      "id": "SEC9",
+      "type": "table",
+      "title": "Business Scenarios",
+      "headers": [
+        "Scenario",
+        "Expected Solution"
+      ],
+      "rows": [
+        [
+          "Preferred carrier rejects transportation.",
+          "Replanning using carrier selection strategy."
+        ],
+        [
+          "Vehicle capacity is insufficient.",
+          "Split Freight Units or optimize planning."
+        ],
+        [
+          "Shipment is delayed.",
+          "Exception management and event monitoring."
+        ],
+        [
+          "Freight invoice is incorrect.",
+          "Charge recalculation and settlement verification."
+        ],
+        [
+          "Warehouse loading is delayed.",
+          "Coordinate through SAP EWM integration."
+        ]
+      ]
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "Consultant-Level Question"
+    },
+    {
+      "id": "SEC11",
+      "type": "paragraph",
+      "content": "Question: Explain the complete transportation lifecycle in SAP TM from customer order to carrier payment. A consultant-level answer should cover Sales Order, Delivery, Freight Unit, Planning, Transportation Proposal, Carrier Selection, Freight Order, Execution, Event Management, Charge Calculation, Freight Settlement and Reporting."
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Mock Interview Flow"
+    },
+    {
+      "id": "SEC13",
+      "type": "process-flow",
+      "title": "Typical Accenture Viva",
+      "orientation": "horizontal",
+      "steps": [
+        "Self Introduction",
+        "Basic SAP TM",
+        "Business Process",
+        "Scenario Questions",
+        "Implementation Questions",
+        "Project Discussion",
+        "Conclusion"
+      ]
+    },
+    {
+      "id": "SEC14",
+      "type": "comparison",
+      "title": "Average Candidate vs Excellent Candidate",
+      "leftTitle": "Average",
+      "rightTitle": "Excellent",
+      "rows": [
+        {
+          "feature": "Answers",
+          "left": "Definition only",
+          "right": "Definition + Process + Example"
+        },
+        {
+          "feature": "Communication",
+          "left": "Short responses",
+          "right": "Structured explanations"
+        },
+        {
+          "feature": "Business Understanding",
+          "left": "Limited",
+          "right": "Strong consultant mindset"
+        }
+      ]
+    },
+    {
+      "id": "SEC15",
+      "type": "heading",
+      "title": "Top 10 Must-Prepare Questions"
+    },
+    {
+      "id": "SEC16",
+      "type": "bullet-list",
+      "items": [
+        "Explain SAP TM architecture.",
+        "Explain Freight Unit lifecycle.",
+        "Explain Freight Order lifecycle.",
+        "Difference between Planning and Execution.",
+        "Carrier Selection process.",
+        "Charge Management process.",
+        "Freight Settlement process.",
+        "SAP Activate methodology.",
+        "SAP TM integration landscape.",
+        "Complete end-to-end transportation flow."
+      ]
+    },
+    {
+      "id": "SEC17",
+      "type": "callout",
+      "calloutType": "best-practice",
+      "title": "Best Practice",
+      "content": "Maintain eye contact, structure every answer logically and always relate SAP TM functionality to a real business outcome such as reduced transportation cost or improved delivery performance."
+    },
+    {
+      "id": "SEC18",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Model Consultant Answer",
+      "content": "Question: Why is SAP TM better than manual transportation planning? Answer: SAP TM automates transportation planning, optimizes routes and carrier selection, reduces logistics costs, improves resource utilization, provides real-time shipment visibility and integrates seamlessly with SAP S/4HANA, EWM and Business Network."
+    },
+    {
+      "id": "SEC19",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Accenture Viva Tip",
+      "content": "Accenture interviewers often ask 'Why' before 'How'. Explain the business need first, then describe how SAP TM solves it."
+    },
+    {
+      "id": "SEC20",
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Common Mistake",
+      "content": "Speaking only about SAP transactions without explaining the business objective gives the impression of memorization rather than understanding."
+    },
+    {
+      "id": "SEC21",
+      "type": "heading",
+      "title": "Final Mock Viva Checklist"
+    },
+    {
+      "id": "SEC22",
+      "type": "bullet-list",
+      "items": [
+        "Practice answering within 90 seconds.",
+        "Explain business purpose before technical details.",
+        "Use real-world transportation examples.",
+        "Know the complete SAP TM lifecycle.",
+        "Revise integrations, planning, execution and settlement.",
+        "Be prepared for follow-up scenario questions."
+      ]
+    }
+  ],
+  "relatedLearning": {
+    "viva": [
+      "V-M11-T4-001"
+    ],
+    "handsOnLabs": [
+      "LAB-M11-004"
+    ],
+    "caseStudies": [
+      "CASE-M11-004"
+    ],
+    "practiceMcqs": [
+      "M11T4Q001"
+    ]
+  }
+}

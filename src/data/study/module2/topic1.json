@@ -1,0 +1,305 @@
+{
+  "id": "M2T1",
+  "module": {
+    "id": 2,
+    "title": "Transportation Management Foundations",
+    "sequence": 2
+  },
+  "topic": {
+    "id": 1,
+    "title": "Introduction to SAP S/4HANA Transportation Management",
+    "sequence": 1
+  },
+  "metadata": {
+    "difficulty": "Beginner",
+    "estimatedReadingTime": 35,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-15",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "S4HANA",
+      "Transportation"
+    ],
+    "prerequisites": [
+      "M1T1",
+      "M1T2",
+      "M1T3",
+      "M1T4",
+      "M1T5",
+      "M1T6"
+    ],
+    "learningPath": [
+      "Study",
+      "Viva",
+      "Hands-on",
+      "MCQ"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Understand SAP TM",
+      "description": "Explain the role of SAP TM in SAP S/4HANA logistics."
+    },
+    {
+      "id": "LO2",
+      "title": "Identify key capabilities",
+      "description": "Recognize planning, execution, tracking and settlement capabilities."
+    },
+    {
+      "id": "LO3",
+      "title": "Explain integration",
+      "description": "Describe SAP TM integration with SD, MM, EWM and FI."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "Introduction to SAP Transportation Management (SAP TM)"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "SAP Transportation Management (SAP TM) is an advanced logistics solution within SAP S/4HANA that helps organizations plan, optimize, execute, monitor and settle transportation activities. It enables companies to reduce logistics costs, improve service levels, optimize vehicle utilization and gain end-to-end visibility across transportation operations."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Definition",
+      "content": "SAP TM is the central application responsible for transportation planning, carrier collaboration, freight execution, tracking and freight settlement."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Why Organizations Need SAP TM"
+    },
+    {
+      "id": "SEC5",
+      "type": "bullet-list",
+      "items": [
+        "Reduce transportation costs",
+        "Optimize vehicle utilization",
+        "Improve delivery performance",
+        "Automate transportation planning",
+        "Improve shipment visibility",
+        "Support multi-modal transportation",
+        "Integrate with warehouse and ERP systems"
+      ]
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "Business Scenario"
+    },
+    {
+      "id": "SEC7",
+      "type": "paragraph",
+      "content": "ABC Electronics ships products from three manufacturing plants to customers across India. Manual planning resulted in partially loaded trucks, delayed deliveries and high freight costs. After implementing SAP TM, shipments were automatically consolidated, optimal carriers were selected and transportation costs were significantly reduced."
+    },
+    {
+      "id": "SEC8",
+      "type": "process-flow",
+      "title": "Transportation Lifecycle",
+      "orientation": "horizontal",
+      "steps": [
+        "Sales Order",
+        "Delivery",
+        "Freight Unit",
+        "Transportation Planning",
+        "Carrier Selection",
+        "Freight Order",
+        "Execution",
+        "Tracking",
+        "Freight Settlement"
+      ]
+    },
+    {
+      "id": "SEC9",
+      "type": "heading",
+      "title": "Objectives of SAP TM"
+    },
+    {
+      "id": "SEC10",
+      "type": "table",
+      "title": "Business Objectives",
+      "headers": [
+        "Objective",
+        "Business Value"
+      ],
+      "rows": [
+        [
+          "Transportation Planning",
+          "Optimized shipment planning"
+        ],
+        [
+          "Carrier Selection",
+          "Choose the most suitable carrier"
+        ],
+        [
+          "Freight Cost Optimization",
+          "Reduce transportation expenses"
+        ],
+        [
+          "Shipment Visibility",
+          "Track transportation in real time"
+        ],
+        [
+          "Freight Settlement",
+          "Automate transportation billing"
+        ]
+      ]
+    },
+    {
+      "id": "SEC11",
+      "type": "heading",
+      "title": "Key Capabilities of SAP TM"
+    },
+    {
+      "id": "SEC12",
+      "type": "bullet-list",
+      "items": [
+        "Transportation Planning",
+        "Freight Order Management",
+        "Freight Booking",
+        "Carrier Management",
+        "Charge Calculation",
+        "Transportation Execution",
+        "Event Management",
+        "Freight Settlement",
+        "Transportation Analytics"
+      ]
+    },
+    {
+      "id": "SEC13",
+      "type": "heading",
+      "title": "SAP TM Landscape"
+    },
+    {
+      "id": "SEC14",
+      "type": "process-flow",
+      "title": "SAP TM Integration Landscape",
+      "orientation": "vertical",
+      "steps": [
+        "SAP S/4HANA",
+        "SAP TM",
+        "SAP EWM",
+        "Carriers",
+        "Customers",
+        "Finance"
+      ]
+    },
+    {
+      "id": "SEC15",
+      "type": "heading",
+      "title": "Business Benefits"
+    },
+    {
+      "id": "SEC16",
+      "type": "bullet-list",
+      "items": [
+        "Lower freight cost",
+        "Better customer service",
+        "Higher truck utilization",
+        "Automated transportation planning",
+        "Real-time shipment tracking",
+        "Integrated logistics execution",
+        "Improved business visibility"
+      ]
+    },
+    {
+      "id": "SEC17",
+      "type": "heading",
+      "title": "Where SAP TM Fits"
+    },
+    {
+      "id": "SEC18",
+      "type": "table",
+      "title": "Integration with SAP Modules",
+      "headers": [
+        "Module",
+        "Integration"
+      ],
+      "rows": [
+        [
+          "SD",
+          "Outbound Deliveries"
+        ],
+        [
+          "MM",
+          "Inbound Deliveries"
+        ],
+        [
+          "EWM",
+          "Warehouse Execution"
+        ],
+        [
+          "FI",
+          "Freight Settlement"
+        ],
+        [
+          "GTS",
+          "Trade Compliance"
+        ],
+        [
+          "BTP",
+          "Extensions & APIs"
+        ]
+      ]
+    },
+    {
+      "id": "SEC19",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real Project Example",
+      "content": "A global FMCG company implemented SAP TM to consolidate outbound deliveries from multiple plants. Vehicle utilization increased by 23%, transportation costs reduced by 18% and shipment visibility improved significantly."
+    },
+    {
+      "id": "SEC20",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Interview Tip",
+      "content": "When asked 'Why SAP TM?', answer with business benefits such as transportation optimization, carrier selection, freight cost reduction, shipment visibility and end-to-end logistics integration instead of simply saying it is used for transportation."
+    },
+    {
+      "id": "SEC21",
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Common Mistake",
+      "content": "Do not confuse SAP TM with SAP EWM. SAP TM manages transportation planning and execution, while SAP EWM manages warehouse operations."
+    },
+    {
+      "id": "SEC22",
+      "type": "heading",
+      "title": "Revision Summary"
+    },
+    {
+      "id": "SEC23",
+      "type": "bullet-list",
+      "items": [
+        "SAP TM manages transportation planning and execution.",
+        "It integrates with SD, MM, EWM and FI.",
+        "SAP TM optimizes freight cost and vehicle utilization.",
+        "It provides shipment visibility and freight settlement.",
+        "SAP TM is a core logistics solution within SAP S/4HANA."
+      ]
+    }
+  ],
+  "relatedLearning": {
+    "viva": [
+      "V-M2-T1-001"
+    ],
+    "handsOnLabs": [
+      "LAB-M2-001"
+    ],
+    "caseStudies": [
+      "CASE-M2-001"
+    ],
+    "practiceMcqs": [
+      "M2T1Q001"
+    ]
+  }
+}

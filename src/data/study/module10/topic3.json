@@ -1,0 +1,303 @@
+{
+  "id": "M10T3",
+  "module": {
+    "id": 10,
+    "title": "SAP TM Implementation, Methodology & Best Practices",
+    "sequence": 10
+  },
+  "topic": {
+    "id": 3,
+    "title": "SAP TM Project Lifecycle & Implementation Phases",
+    "sequence": 3
+  },
+  "metadata": {
+    "difficulty": "Beginner",
+    "estimatedReadingTime": 35,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-15",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "Project Lifecycle",
+      "Implementation Phases"
+    ],
+    "prerequisites": [
+      "M10T2"
+    ],
+    "learningPath": [
+      "Study",
+      "Viva",
+      "Hands-on",
+      "MCQ"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Understand lifecycle-driven implementation",
+      "description": "Explain structured SAP TM phases from requirements to post-go-live support."
+    },
+    {
+      "id": "LO2",
+      "title": "Understand phase activities and roles",
+      "description": "Identify major activities, stakeholders, and responsibilities across implementation phases."
+    },
+    {
+      "id": "LO3",
+      "title": "Understand go-live stabilization",
+      "description": "Describe the purpose of hypercare and disciplined transition to steady-state support."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "SAP TM Project Lifecycle & Implementation Phases"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "An SAP Transportation Management implementation follows a structured project lifecycle to ensure successful delivery. The lifecycle includes requirement gathering, solution design, configuration, testing, deployment and post-go-live support. Each phase has defined deliverables, stakeholders and quality checkpoints to minimize project risk."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Key Concept",
+      "content": "A successful SAP TM project depends on following a structured implementation lifecycle rather than focusing only on system configuration."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Objectives of the Project Lifecycle"
+    },
+    {
+      "id": "SEC5",
+      "type": "bullet-list",
+      "items": [
+        "Deliver SAP TM successfully",
+        "Reduce implementation risks",
+        "Ensure business alignment",
+        "Validate solution quality",
+        "Prepare users for go-live",
+        "Provide production support",
+        "Enable continuous improvement"
+      ]
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "SAP TM Project Lifecycle"
+    },
+    {
+      "id": "SEC7",
+      "type": "process-flow",
+      "title": "Project Phases",
+      "orientation": "horizontal",
+      "steps": [
+        "Requirement Gathering",
+        "Solution Design",
+        "Configuration",
+        "Testing",
+        "User Training",
+        "Go-Live",
+        "Hypercare",
+        "Production Support"
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "Major Activities"
+    },
+    {
+      "id": "SEC9",
+      "type": "table",
+      "title": "Implementation Activities",
+      "headers": [
+        "Phase",
+        "Primary Activities"
+      ],
+      "rows": [
+        [
+          "Requirement Gathering",
+          "Business process analysis"
+        ],
+        [
+          "Solution Design",
+          "Functional & technical design"
+        ],
+        [
+          "Configuration",
+          "System customizing"
+        ],
+        [
+          "Testing",
+          "Unit, integration and UAT"
+        ],
+        [
+          "Training",
+          "End-user education"
+        ],
+        [
+          "Go-Live",
+          "Production deployment"
+        ],
+        [
+          "Hypercare",
+          "Immediate production support"
+        ]
+      ]
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "Project Roles"
+    },
+    {
+      "id": "SEC11",
+      "type": "table",
+      "title": "Implementation Team",
+      "headers": [
+        "Role",
+        "Responsibility"
+      ],
+      "rows": [
+        [
+          "Project Manager",
+          "Overall project delivery"
+        ],
+        [
+          "SAP TM Consultant",
+          "Configuration and design"
+        ],
+        [
+          "Business User",
+          "Requirement validation"
+        ],
+        [
+          "Technical Consultant",
+          "Integration and development"
+        ],
+        [
+          "Testing Team",
+          "Quality assurance"
+        ],
+        [
+          "Support Team",
+          "Post go-live support"
+        ]
+      ]
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Business Scenario"
+    },
+    {
+      "id": "SEC13",
+      "type": "paragraph",
+      "content": "During an SAP TM implementation, business users participate in requirement workshops and user acceptance testing. After successful testing, the project moves to production. During the Hypercare period, consultants resolve production issues quickly before transferring the system to the support team."
+    },
+    {
+      "id": "SEC14",
+      "type": "comparison",
+      "title": "Go-Live vs Hypercare",
+      "leftTitle": "Go-Live",
+      "rightTitle": "Hypercare",
+      "rows": [
+        {
+          "feature": "Purpose",
+          "left": "Production Deployment",
+          "right": "Production Stabilization"
+        },
+        {
+          "feature": "Duration",
+          "left": "Single Event",
+          "right": "Several Weeks"
+        },
+        {
+          "feature": "Focus",
+          "left": "System Availability",
+          "right": "Issue Resolution"
+        }
+      ]
+    },
+    {
+      "id": "SEC15",
+      "type": "heading",
+      "title": "Business Benefits"
+    },
+    {
+      "id": "SEC16",
+      "type": "bullet-list",
+      "items": [
+        "Controlled implementation",
+        "Reduced production issues",
+        "Better user adoption",
+        "Improved project governance",
+        "Higher solution quality",
+        "Successful business transition"
+      ]
+    },
+    {
+      "id": "SEC17",
+      "type": "callout",
+      "calloutType": "best-practice",
+      "title": "Best Practice",
+      "content": "Do not rush the Go-Live phase. Ensure successful User Acceptance Testing (UAT), complete user training and validated master data before moving to production."
+    },
+    {
+      "id": "SEC18",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real Project Example",
+      "content": "A logistics company scheduled a four-week Hypercare period after SAP TM go-live. Critical transportation issues were resolved immediately, resulting in stable production operations and minimal business disruption."
+    },
+    {
+      "id": "SEC19",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Interview Tip",
+      "content": "Know the implementation sequence: Requirements → Design → Configuration → Testing → Training → Go-Live → Hypercare → Support. This is commonly asked in SAP implementation interviews."
+    },
+    {
+      "id": "SEC20",
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Common Mistake",
+      "content": "Skipping comprehensive testing or reducing the Hypercare period often leads to production issues, user dissatisfaction and increased support costs."
+    },
+    {
+      "id": "SEC21",
+      "type": "heading",
+      "title": "Revision Summary"
+    },
+    {
+      "id": "SEC22",
+      "type": "bullet-list",
+      "items": [
+        "SAP TM projects follow a structured implementation lifecycle.",
+        "Testing and user training are essential before Go-Live.",
+        "Hypercare stabilizes the production environment after deployment.",
+        "Project success depends on collaboration between business and technical teams.",
+        "A disciplined project lifecycle minimizes implementation risk."
+      ]
+    }
+  ],
+  "relatedLearning": {
+    "viva": [
+      "V-M10-T3-001"
+    ],
+    "handsOnLabs": [
+      "LAB-M10-003"
+    ],
+    "caseStudies": [
+      "CASE-M10-003"
+    ],
+    "practiceMcqs": [
+      "M10T3Q001"
+    ]
+  }
+}

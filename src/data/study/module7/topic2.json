@@ -1,0 +1,301 @@
+{
+  "id": "M7T2",
+  "module": {
+    "id": 7,
+    "title": "SAP TM Freight Settlement & Charge Management",
+    "sequence": 7
+  },
+  "topic": {
+    "id": 2,
+    "title": "Charge Calculation & Charge Management",
+    "sequence": 2
+  },
+  "metadata": {
+    "difficulty": "Beginner",
+    "estimatedReadingTime": 35,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-15",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "Charge Calculation",
+      "Charge Management"
+    ],
+    "prerequisites": [
+      "M7T1"
+    ],
+    "learningPath": [
+      "Study",
+      "Viva",
+      "Hands-on",
+      "MCQ"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Understand charge management",
+      "description": "Explain transportation pricing logic and how charge management supports settlement."
+    },
+    {
+      "id": "LO2",
+      "title": "Understand charge calculation flow",
+      "description": "Describe agreement determination, sheet application, and charge validation sequence."
+    },
+    {
+      "id": "LO3",
+      "title": "Understand pricing factors",
+      "description": "Clarify how distance, weight, mode, surcharges, and service levels affect cost."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "Charge Calculation & Charge Management"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "Charge Management is the SAP TM functionality responsible for calculating transportation costs. It determines freight charges using predefined charge calculation sheets, freight agreements, rate tables and calculation rules. The calculated charges are later transferred to Freight Settlement for carrier payment."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Key Concept",
+      "content": "Charge Calculation determines HOW MUCH transportation costs before Freight Settlement pays the carrier."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Objectives of Charge Management"
+    },
+    {
+      "id": "SEC5",
+      "type": "bullet-list",
+      "items": [
+        "Calculate transportation charges",
+        "Apply freight agreements",
+        "Support automatic pricing",
+        "Reduce manual calculations",
+        "Ensure pricing consistency",
+        "Provide settlement values",
+        "Support financial accuracy"
+      ]
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "Charge Calculation Process"
+    },
+    {
+      "id": "SEC7",
+      "type": "process-flow",
+      "title": "Charge Calculation Flow",
+      "orientation": "horizontal",
+      "steps": [
+        "Freight Order",
+        "Determine Freight Agreement",
+        "Apply Charge Calculation Sheet",
+        "Calculate Charges",
+        "Validate Results",
+        "Freight Settlement"
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "Charge Calculation Factors"
+    },
+    {
+      "id": "SEC9",
+      "type": "table",
+      "title": "Pricing Factors",
+      "headers": [
+        "Factor",
+        "Business Purpose"
+      ],
+      "rows": [
+        [
+          "Distance",
+          "Distance-based pricing"
+        ],
+        [
+          "Weight",
+          "Weight-based charges"
+        ],
+        [
+          "Volume",
+          "Volume pricing"
+        ],
+        [
+          "Transportation Mode",
+          "Road, Rail, Air or Ocean rates"
+        ],
+        [
+          "Carrier",
+          "Carrier-specific pricing"
+        ],
+        [
+          "Service Level",
+          "Express or standard transportation"
+        ],
+        [
+          "Fuel Surcharge",
+          "Variable fuel adjustment"
+        ]
+      ]
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "Charge Components"
+    },
+    {
+      "id": "SEC11",
+      "type": "table",
+      "title": "Typical Freight Charges",
+      "headers": [
+        "Charge",
+        "Example"
+      ],
+      "rows": [
+        [
+          "Base Freight",
+          "Transportation charge"
+        ],
+        [
+          "Fuel Surcharge",
+          "Fuel cost adjustment"
+        ],
+        [
+          "Handling Charge",
+          "Loading and unloading"
+        ],
+        [
+          "Waiting Charge",
+          "Vehicle waiting time"
+        ],
+        [
+          "Toll Charges",
+          "Road toll expenses"
+        ],
+        [
+          "Insurance",
+          "Cargo insurance"
+        ]
+      ]
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Business Scenario"
+    },
+    {
+      "id": "SEC13",
+      "type": "paragraph",
+      "content": "A shipment weighing 12 tons travels 650 kilometers by road. SAP TM retrieves the carrier's freight agreement, applies the charge calculation sheet, calculates the base freight, fuel surcharge and toll charges, then passes the total amount to Freight Settlement."
+    },
+    {
+      "id": "SEC14",
+      "type": "comparison",
+      "title": "Charge Calculation vs Freight Settlement",
+      "leftTitle": "Charge Calculation",
+      "rightTitle": "Freight Settlement",
+      "rows": [
+        {
+          "feature": "Purpose",
+          "left": "Calculate Charges",
+          "right": "Pay Carrier"
+        },
+        {
+          "feature": "Output",
+          "left": "Calculated Costs",
+          "right": "Settlement Document"
+        },
+        {
+          "feature": "Business Area",
+          "left": "Transportation Pricing",
+          "right": "Financial Processing"
+        }
+      ]
+    },
+    {
+      "id": "SEC15",
+      "type": "heading",
+      "title": "Business Benefits"
+    },
+    {
+      "id": "SEC16",
+      "type": "bullet-list",
+      "items": [
+        "Accurate freight pricing",
+        "Automatic charge calculation",
+        "Reduced manual effort",
+        "Improved financial control",
+        "Consistent carrier payments",
+        "Better transportation cost analysis"
+      ]
+    },
+    {
+      "id": "SEC17",
+      "type": "callout",
+      "calloutType": "best-practice",
+      "title": "Best Practice",
+      "content": "Maintain standardized Charge Calculation Sheets and regularly update freight agreements to ensure accurate pricing and settlement."
+    },
+    {
+      "id": "SEC18",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real Project Example",
+      "content": "A manufacturing company automated charge calculations for more than 18,000 monthly shipments. Freight pricing accuracy improved significantly while manual pricing effort was almost eliminated."
+    },
+    {
+      "id": "SEC19",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Interview Tip",
+      "content": "Remember the sequence: Freight Agreement -> Charge Calculation Sheet -> Charge Calculation -> Freight Settlement Document. This sequence is frequently tested in SAP TM certification exams."
+    },
+    {
+      "id": "SEC20",
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Common Mistake",
+      "content": "Charge Calculation only computes transportation costs. It does not post accounting entries or make carrier payments—that occurs during Freight Settlement."
+    },
+    {
+      "id": "SEC21",
+      "type": "heading",
+      "title": "Revision Summary"
+    },
+    {
+      "id": "SEC22",
+      "type": "bullet-list",
+      "items": [
+        "Charge Management calculates transportation costs.",
+        "Charge Calculation uses freight agreements and pricing rules.",
+        "Multiple charge components contribute to the final freight cost.",
+        "Calculated charges are transferred to Freight Settlement.",
+        "Accurate charge configuration ensures correct carrier payments."
+      ]
+    }
+  ],
+  "relatedLearning": {
+    "viva": [
+      "V-M7-T2-001"
+    ],
+    "handsOnLabs": [
+      "LAB-M7-002"
+    ],
+    "caseStudies": [
+      "CASE-M7-002"
+    ],
+    "practiceMcqs": [
+      "M7T2Q001"
+    ]
+  }
+}

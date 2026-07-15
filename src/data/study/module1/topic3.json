@@ -1,0 +1,292 @@
+{
+  "id": "M1T3",
+  "module": {
+    "id": 1,
+    "title": "ERP & SAP Overview",
+    "sequence": 1
+  },
+  "topic": {
+    "id": 3,
+    "title": "SAP S/4HANA Architecture & Core Components",
+    "sequence": 3
+  },
+  "metadata": {
+    "difficulty": "Beginner",
+    "estimatedReadingTime": 35,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-15",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP",
+      "S4HANA",
+      "Architecture"
+    ],
+    "prerequisites": [
+      "M1T1",
+      "M1T2"
+    ],
+    "learningPath": [
+      "Study",
+      "Viva",
+      "Hands-on",
+      "MCQ"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Understand SAP S/4HANA",
+      "description": "Explain what makes SAP S/4HANA different from ECC."
+    },
+    {
+      "id": "LO2",
+      "title": "Describe architecture layers",
+      "description": "Identify presentation, application and database tiers."
+    },
+    {
+      "id": "LO3",
+      "title": "Recognize core components",
+      "description": "List major S/4HANA components and business value."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "What is SAP S/4HANA?"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "SAP S/4HANA is SAP's next-generation Enterprise Resource Planning (ERP) suite built exclusively on the SAP HANA in-memory database. It enables organizations to run transactional and analytical workloads in real time while providing a simplified data model and modern user experience."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Key Point",
+      "content": "S/4HANA is not just an upgrade of SAP ECC. It is a redesigned ERP suite optimized for the SAP HANA database."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "SAP S/4HANA Architecture"
+    },
+    {
+      "id": "SEC5",
+      "type": "paragraph",
+      "content": "SAP S/4HANA follows a three-layer architecture consisting of the Presentation Layer, Application Layer and Database Layer. This architecture provides scalability, security and high performance."
+    },
+    {
+      "id": "SEC6",
+      "type": "process-flow",
+      "title": "Three-Tier Architecture",
+      "orientation": "vertical",
+      "steps": [
+        "Presentation Layer (SAP GUI / SAP Fiori)",
+        "Application Layer (Business Logic)",
+        "SAP HANA Database"
+      ]
+    },
+    {
+      "id": "SEC7",
+      "type": "table",
+      "title": "Architecture Layers",
+      "headers": [
+        "Layer",
+        "Responsibility"
+      ],
+      "rows": [
+        [
+          "Presentation Layer",
+          "User Interface using SAP GUI and SAP Fiori"
+        ],
+        [
+          "Application Layer",
+          "Business Logic, Processing, Authorization"
+        ],
+        [
+          "Database Layer",
+          "SAP HANA stores transactional and master data"
+        ]
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "Core Components of SAP S/4HANA"
+    },
+    {
+      "id": "SEC9",
+      "type": "table",
+      "title": "Core Components",
+      "headers": [
+        "Component",
+        "Purpose"
+      ],
+      "rows": [
+        [
+          "SAP HANA",
+          "In-memory database"
+        ],
+        [
+          "SAP Fiori",
+          "Modern user experience"
+        ],
+        [
+          "Embedded Analytics",
+          "Real-time reporting"
+        ],
+        [
+          "Business Partner",
+          "Unified master data model"
+        ],
+        [
+          "Core ERP",
+          "Finance, Logistics, Procurement, Manufacturing"
+        ],
+        [
+          "Extension Framework",
+          "Custom applications using SAP BTP"
+        ]
+      ]
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "Key Features of SAP HANA"
+    },
+    {
+      "id": "SEC11",
+      "type": "bullet-list",
+      "items": [
+        "In-memory database",
+        "Column-based storage",
+        "Real-time analytics",
+        "High-speed transactions",
+        "Data compression",
+        "Parallel processing",
+        "Reduced data redundancy"
+      ]
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "SAP GUI vs SAP Fiori"
+    },
+    {
+      "id": "SEC13",
+      "type": "comparison",
+      "title": "Comparison",
+      "leftTitle": "SAP GUI",
+      "rightTitle": "SAP Fiori",
+      "rows": [
+        {
+          "feature": "Interface",
+          "left": "Desktop Client",
+          "right": "Browser Based"
+        },
+        {
+          "feature": "Navigation",
+          "left": "Transaction Codes",
+          "right": "Role Based Apps"
+        },
+        {
+          "feature": "User Experience",
+          "left": "Traditional",
+          "right": "Modern & Responsive"
+        },
+        {
+          "feature": "Mobile Support",
+          "left": "Limited",
+          "right": "Excellent"
+        }
+      ]
+    },
+    {
+      "id": "SEC14",
+      "type": "heading",
+      "title": "Deployment Options"
+    },
+    {
+      "id": "SEC15",
+      "type": "bullet-list",
+      "items": [
+        "On-Premise",
+        "Private Cloud",
+        "Public Cloud",
+        "Hybrid Deployment"
+      ]
+    },
+    {
+      "id": "SEC16",
+      "type": "heading",
+      "title": "Business Benefits"
+    },
+    {
+      "id": "SEC17",
+      "type": "bullet-list",
+      "items": [
+        "Real-time reporting",
+        "Simplified data model",
+        "Lower operational cost",
+        "Improved performance",
+        "Enhanced user experience",
+        "Integrated AI capabilities",
+        "Faster business decisions"
+      ]
+    },
+    {
+      "id": "SEC18",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real Project Example",
+      "content": "A global retail company migrated from SAP ECC to SAP S/4HANA and reduced financial closing time from 5 days to less than 1 day due to real-time processing and embedded analytics."
+    },
+    {
+      "id": "SEC19",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Interview Tip",
+      "content": "When asked 'Why S/4HANA?', explain the simplified data model, SAP HANA database, embedded analytics, SAP Fiori and improved business performance instead of only saying 'it's faster'."
+    },
+    {
+      "id": "SEC20",
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Common Mistake",
+      "content": "Do not say SAP HANA and SAP S/4HANA are the same. SAP HANA is the database platform, while SAP S/4HANA is the ERP application running on HANA."
+    },
+    {
+      "id": "SEC21",
+      "type": "heading",
+      "title": "Revision Summary"
+    },
+    {
+      "id": "SEC22",
+      "type": "bullet-list",
+      "items": [
+        "SAP S/4HANA runs exclusively on SAP HANA.",
+        "Three-tier architecture improves scalability.",
+        "SAP Fiori provides the modern user experience.",
+        "Embedded Analytics enables real-time reporting.",
+        "Business Partner is the unified master data object."
+      ]
+    }
+  ],
+  "relatedLearning": {
+    "viva": [
+      "V-M1-T3-001"
+    ],
+    "handsOnLabs": [
+      "LAB-M1-003"
+    ],
+    "caseStudies": [
+      "CASE-M1-003"
+    ],
+    "practiceMcqs": [
+      "M1T3Q001"
+    ]
+  }
+}

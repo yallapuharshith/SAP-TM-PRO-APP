@@ -1,0 +1,293 @@
+{
+  "id": "M7T6",
+  "module": {
+    "id": 7,
+    "title": "SAP TM Freight Settlement & Charge Management",
+    "sequence": 7
+  },
+  "topic": {
+    "id": 6,
+    "title": "Invoice Verification & Financial Integration",
+    "sequence": 6
+  },
+  "metadata": {
+    "difficulty": "Beginner",
+    "estimatedReadingTime": 35,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-15",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "Invoice Verification",
+      "Financial Integration"
+    ],
+    "prerequisites": [
+      "M7T5"
+    ],
+    "learningPath": [
+      "Study",
+      "Viva",
+      "Hands-on",
+      "MCQ"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Understand invoice verification",
+      "description": "Explain validation of carrier invoices against freight settlement data."
+    },
+    {
+      "id": "LO2",
+      "title": "Understand financial integration",
+      "description": "Describe integration between SAP TM and SAP S/4HANA Finance for postings and payment."
+    },
+    {
+      "id": "LO3",
+      "title": "Understand verification controls",
+      "description": "Clarify validation rules and automated matching for payment accuracy."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "Invoice Verification & Financial Integration"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "Invoice Verification is the process of validating the carrier's invoice against the Freight Settlement Document (FSD). SAP TM integrates with SAP S/4HANA Finance to ensure that only verified transportation charges are posted and paid. This integration eliminates manual reconciliation and improves financial accuracy."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Key Concept",
+      "content": "SAP TM calculates transportation charges, while SAP S/4HANA Finance verifies and processes financial payment."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Objectives of Invoice Verification"
+    },
+    {
+      "id": "SEC5",
+      "type": "bullet-list",
+      "items": [
+        "Validate carrier invoices",
+        "Compare invoices with Freight Settlement Documents",
+        "Detect pricing discrepancies",
+        "Automate financial postings",
+        "Reduce payment errors",
+        "Improve audit compliance",
+        "Support automatic payment processing"
+      ]
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "Invoice Verification Process"
+    },
+    {
+      "id": "SEC7",
+      "type": "process-flow",
+      "title": "Financial Integration Flow",
+      "orientation": "horizontal",
+      "steps": [
+        "Freight Settlement Document",
+        "Carrier Invoice",
+        "Invoice Verification",
+        "Financial Posting",
+        "Accounts Payable",
+        "Carrier Payment"
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "Verification Checks"
+    },
+    {
+      "id": "SEC9",
+      "type": "table",
+      "title": "Invoice Validation Rules",
+      "headers": [
+        "Validation",
+        "Purpose"
+      ],
+      "rows": [
+        [
+          "Carrier",
+          "Correct transportation provider"
+        ],
+        [
+          "Amount",
+          "Charge accuracy"
+        ],
+        [
+          "Currency",
+          "Correct settlement currency"
+        ],
+        [
+          "Freight Order",
+          "Document reference"
+        ],
+        [
+          "Tax",
+          "Applicable tax validation"
+        ],
+        [
+          "Settlement Status",
+          "Ready for payment"
+        ]
+      ]
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "Financial Integration"
+    },
+    {
+      "id": "SEC11",
+      "type": "table",
+      "title": "SAP Integration",
+      "headers": [
+        "System",
+        "Responsibility"
+      ],
+      "rows": [
+        [
+          "SAP TM",
+          "Transportation charges"
+        ],
+        [
+          "SAP S/4HANA Finance",
+          "Financial posting"
+        ],
+        [
+          "Accounts Payable",
+          "Carrier payment"
+        ],
+        [
+          "General Ledger",
+          "Accounting entries"
+        ],
+        [
+          "Controlling",
+          "Cost analysis"
+        ]
+      ]
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Business Scenario"
+    },
+    {
+      "id": "SEC13",
+      "type": "paragraph",
+      "content": "A carrier submits an invoice for ₹145,000 after transporting goods. SAP TM compares the invoice with the Freight Settlement Document. Since all transportation charges match, SAP S/4HANA Finance automatically posts the accounting entries and schedules the payment through Accounts Payable."
+    },
+    {
+      "id": "SEC14",
+      "type": "comparison",
+      "title": "Freight Settlement vs Invoice Verification",
+      "leftTitle": "Freight Settlement",
+      "rightTitle": "Invoice Verification",
+      "rows": [
+        {
+          "feature": "Purpose",
+          "left": "Calculate Charges",
+          "right": "Validate Charges"
+        },
+        {
+          "feature": "Performed In",
+          "left": "SAP TM",
+          "right": "SAP Finance Integration"
+        },
+        {
+          "feature": "Result",
+          "left": "Settlement Document",
+          "right": "Approved Payment"
+        }
+      ]
+    },
+    {
+      "id": "SEC15",
+      "type": "heading",
+      "title": "Business Benefits"
+    },
+    {
+      "id": "SEC16",
+      "type": "bullet-list",
+      "items": [
+        "Reduced payment disputes",
+        "Automatic invoice validation",
+        "Improved accounting accuracy",
+        "Faster payment processing",
+        "Reduced manual reconciliation",
+        "Complete financial transparency"
+      ]
+    },
+    {
+      "id": "SEC17",
+      "type": "callout",
+      "calloutType": "best-practice",
+      "title": "Best Practice",
+      "content": "Configure automatic invoice matching with appropriate tolerance limits so only genuine pricing differences require manual review."
+    },
+    {
+      "id": "SEC18",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real Project Example",
+      "content": "A global retail company automated invoice verification for over 20,000 carrier invoices each month. More than 92% of invoices were matched automatically, reducing finance processing effort significantly."
+    },
+    {
+      "id": "SEC19",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Interview Tip",
+      "content": "Remember the sequence: Freight Settlement Document -> Carrier Invoice -> Invoice Verification -> Financial Posting -> Carrier Payment."
+    },
+    {
+      "id": "SEC20",
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Common Mistake",
+      "content": "Invoice Verification does not calculate transportation charges. It validates the carrier invoice against the already calculated Freight Settlement Document."
+    },
+    {
+      "id": "SEC21",
+      "type": "heading",
+      "title": "Revision Summary"
+    },
+    {
+      "id": "SEC22",
+      "type": "bullet-list",
+      "items": [
+        "Invoice Verification validates carrier invoices.",
+        "Freight Settlement Documents are the basis for verification.",
+        "SAP TM integrates with SAP S/4HANA Finance for financial postings.",
+        "Automatic matching reduces payment errors.",
+        "Verified invoices proceed to Accounts Payable for carrier payment."
+      ]
+    }
+  ],
+  "relatedLearning": {
+    "viva": [
+      "V-M7-T6-001"
+    ],
+    "handsOnLabs": [
+      "LAB-M7-006"
+    ],
+    "caseStudies": [
+      "CASE-M7-006"
+    ],
+    "practiceMcqs": [
+      "M7T6Q001"
+    ]
+  }
+}

@@ -1,0 +1,271 @@
+{
+  "id": "M3T7",
+  "module": {
+    "id": 3,
+    "title": "SAP TM Organizational Structure & Master Data",
+    "sequence": 3
+  },
+  "topic": {
+    "id": 7,
+    "title": "SAP TM Organizational Model - Best Practices & Real-World Implementation",
+    "sequence": 7
+  },
+  "metadata": {
+    "difficulty": "Beginner",
+    "estimatedReadingTime": 35,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-15",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "Organizational Model",
+      "Best Practices"
+    ],
+    "prerequisites": [
+      "M3T1",
+      "M3T2",
+      "M3T3",
+      "M3T4",
+      "M3T5",
+      "M3T6"
+    ],
+    "learningPath": [
+      "Study",
+      "Viva",
+      "Hands-on",
+      "MCQ"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Understand organizational model implementation",
+      "description": "Explain how to design and roll out organizational structures for transportation planning."
+    },
+    {
+      "id": "LO2",
+      "title": "Apply best practices",
+      "description": "Use scalable, business-driven planning organizations and responsibility rules."
+    },
+    {
+      "id": "LO3",
+      "title": "Identify implementation pitfalls",
+      "description": "Recognize common mistakes and governance risks in real-world projects."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "Organizational Model Implementation"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "Designing an effective Organizational Model is one of the most important implementation activities in SAP TM. A well-designed model improves planner productivity, enables automatic responsibility determination and supports scalable transportation operations."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Implementation Principle",
+      "content": "Design the Organizational Model based on business processes rather than organizational charts. Transportation responsibilities should reflect operational needs."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Implementation Steps"
+    },
+    {
+      "id": "SEC5",
+      "type": "process-flow",
+      "title": "Organizational Model Setup",
+      "orientation": "vertical",
+      "steps": [
+        "Analyze Business Process",
+        "Identify Planning Regions",
+        "Create Planning Organizations",
+        "Create Planning Groups",
+        "Assign Transportation Planners",
+        "Configure Responsibility Rules",
+        "Test Transportation Planning",
+        "Go Live"
+      ]
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "Best Practices"
+    },
+    {
+      "id": "SEC7",
+      "type": "bullet-list",
+      "items": [
+        "Use regional Planning Organizations.",
+        "Keep Planning Groups business-oriented.",
+        "Automate planner determination wherever possible.",
+        "Minimize manual planner assignment.",
+        "Reuse organizational objects across transportation scenarios.",
+        "Review planner workload regularly."
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "Typical Organizational Design"
+    },
+    {
+      "id": "SEC9",
+      "type": "table",
+      "title": "Example Structure",
+      "headers": [
+        "Level",
+        "Example"
+      ],
+      "rows": [
+        [
+          "Planning Organization",
+          "India Logistics"
+        ],
+        [
+          "Planning Group",
+          "South Region"
+        ],
+        [
+          "Planner",
+          "Road Transportation Team"
+        ],
+        [
+          "Execution Team",
+          "Carrier Operations"
+        ],
+        [
+          "Settlement Team",
+          "Finance Logistics"
+        ]
+      ]
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "Common Responsibility Rules"
+    },
+    {
+      "id": "SEC11",
+      "type": "table",
+      "title": "Rule Examples",
+      "headers": [
+        "Condition",
+        "Assigned Team"
+      ],
+      "rows": [
+        [
+          "Transportation Zone = South",
+          "South Planning Team"
+        ],
+        [
+          "Mode = Ocean",
+          "Ocean Planning Team"
+        ],
+        [
+          "Mode = Air",
+          "Air Logistics Team"
+        ],
+        [
+          "Customer Type = Export",
+          "International Planning Team"
+        ],
+        [
+          "Plant = Hyderabad",
+          "Hyderabad Planning Team"
+        ]
+      ]
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Business Scenario"
+    },
+    {
+      "id": "SEC13",
+      "type": "paragraph",
+      "content": "A multinational automotive manufacturer operates in 12 countries. Instead of maintaining one central planning team, the company creates regional Planning Organizations for Asia, Europe and North America. Responsibility determination automatically routes Freight Units to the correct planning team based on Transportation Zone and Plant."
+    },
+    {
+      "id": "SEC14",
+      "type": "heading",
+      "title": "Implementation Challenges"
+    },
+    {
+      "id": "SEC15",
+      "type": "bullet-list",
+      "items": [
+        "Incorrect planner assignment",
+        "Unbalanced workload",
+        "Duplicate organizational units",
+        "Overly complex responsibility rules",
+        "Poor authorization design",
+        "Lack of organizational governance"
+      ]
+    },
+    {
+      "id": "SEC16",
+      "type": "callout",
+      "calloutType": "best-practice",
+      "title": "Best Practice",
+      "content": "Keep responsibility rules simple, scalable and business-driven. Complex rule sets become difficult to maintain and troubleshoot."
+    },
+    {
+      "id": "SEC17",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real Project Example",
+      "content": "A retail company reduced transportation planning time by 35% after replacing manual planner assignment with automatic responsibility determination based on Transportation Zones and Shipping Points."
+    },
+    {
+      "id": "SEC18",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Interview Tip",
+      "content": "Implementation interviews often ask how you would design Planning Organizations for a multinational company. Explain the design using regions, transportation modes and business units rather than individual users."
+    },
+    {
+      "id": "SEC19",
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Common Mistake",
+      "content": "Avoid creating Planning Organizations for every planner. Planning Organizations should represent business responsibility, while planners belong to Planning Groups."
+    },
+    {
+      "id": "SEC20",
+      "type": "heading",
+      "title": "Revision Summary"
+    },
+    {
+      "id": "SEC21",
+      "type": "bullet-list",
+      "items": [
+        "Organizational design should follow business processes.",
+        "Use automatic responsibility determination whenever possible.",
+        "Planning Organizations represent business responsibility.",
+        "Planning Groups organize planners.",
+        "Simple organizational models are easier to maintain and scale."
+      ]
+    }
+  ],
+  "relatedLearning": {
+    "viva": [
+      "V-M3-T7-001"
+    ],
+    "handsOnLabs": [
+      "LAB-M3-007"
+    ],
+    "caseStudies": [
+      "CASE-M3-007"
+    ],
+    "practiceMcqs": [
+      "M3T7Q001"
+    ]
+  }
+}

@@ -1,0 +1,298 @@
+{
+  "id": "M8T6",
+  "module": {
+    "id": 8,
+    "title": "SAP TM Integration & Cross-System Connectivity",
+    "sequence": 8
+  },
+  "topic": {
+    "id": 6,
+    "title": "EDI, IDoc & API Integration in SAP TM",
+    "sequence": 6
+  },
+  "metadata": {
+    "difficulty": "Beginner",
+    "estimatedReadingTime": 35,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-15",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "EDI",
+      "IDoc",
+      "API Integration"
+    ],
+    "prerequisites": [
+      "M8T5"
+    ],
+    "learningPath": [
+      "Study",
+      "Viva",
+      "Hands-on",
+      "MCQ"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Understand integration technologies",
+      "description": "Explain EDI, IDoc, XML, and API options used by SAP TM integrations."
+    },
+    {
+      "id": "LO2",
+      "title": "Understand document exchange patterns",
+      "description": "Describe common inbound and outbound logistics documents in integrated flows."
+    },
+    {
+      "id": "LO3",
+      "title": "Differentiate IDoc and API usage",
+      "description": "Clarify SAP-to-SAP asynchronous exchange versus modern real-time integrations."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "EDI, IDoc & API Integration"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "SAP Transportation Management communicates with external carriers, logistics providers and SAP systems using standard integration technologies such as Electronic Data Interchange (EDI), Intermediate Documents (IDocs), XML messages and REST/OData APIs. These technologies automate business document exchange and eliminate manual communication."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Key Concept",
+      "content": "Integration technologies transport business information between SAP TM and external systems—they do not perform transportation planning themselves."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Objectives"
+    },
+    {
+      "id": "SEC5",
+      "type": "bullet-list",
+      "items": [
+        "Exchange business documents automatically",
+        "Integrate external carrier systems",
+        "Reduce manual data entry",
+        "Support real-time communication",
+        "Improve data consistency",
+        "Enable system interoperability",
+        "Automate logistics processes"
+      ]
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "Integration Process"
+    },
+    {
+      "id": "SEC7",
+      "type": "process-flow",
+      "title": "External Communication Flow",
+      "orientation": "horizontal",
+      "steps": [
+        "SAP TM",
+        "IDoc / API / EDI",
+        "Middleware",
+        "Carrier System",
+        "Execution Updates",
+        "SAP TM"
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "Integration Technologies"
+    },
+    {
+      "id": "SEC9",
+      "type": "table",
+      "title": "Communication Methods",
+      "headers": [
+        "Technology",
+        "Purpose"
+      ],
+      "rows": [
+        [
+          "IDoc",
+          "SAP-to-SAP document exchange"
+        ],
+        [
+          "EDI",
+          "Business document exchange with partners"
+        ],
+        [
+          "REST API",
+          "Modern real-time integration"
+        ],
+        [
+          "OData",
+          "SAP service integration"
+        ],
+        [
+          "XML",
+          "Structured message exchange"
+        ],
+        [
+          "SOAP Web Services",
+          "Enterprise application integration"
+        ]
+      ]
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "Business Documents Exchanged"
+    },
+    {
+      "id": "SEC11",
+      "type": "table",
+      "title": "Typical Integration Documents",
+      "headers": [
+        "Document",
+        "Direction"
+      ],
+      "rows": [
+        [
+          "Freight Tender",
+          "SAP TM → Carrier"
+        ],
+        [
+          "Tender Response",
+          "Carrier → SAP TM"
+        ],
+        [
+          "Shipment Status",
+          "Carrier → SAP TM"
+        ],
+        [
+          "Proof of Delivery",
+          "Carrier → SAP TM"
+        ],
+        [
+          "Carrier Invoice",
+          "Carrier → SAP TM"
+        ],
+        [
+          "Freight Settlement Data",
+          "SAP TM → Finance"
+        ]
+      ]
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Business Scenario"
+    },
+    {
+      "id": "SEC13",
+      "type": "paragraph",
+      "content": "A Freight Order is automatically transmitted to a carrier through an EDI message. The carrier accepts the shipment, sends shipment status updates using APIs and finally transmits Proof of Delivery electronically. SAP TM updates transportation execution without any manual intervention."
+    },
+    {
+      "id": "SEC14",
+      "type": "comparison",
+      "title": "IDoc vs API",
+      "leftTitle": "IDoc",
+      "rightTitle": "REST/OData API",
+      "rows": [
+        {
+          "feature": "Typical Usage",
+          "left": "SAP-to-SAP Integration",
+          "right": "Modern Cloud Integration"
+        },
+        {
+          "feature": "Communication",
+          "left": "Asynchronous",
+          "right": "Usually Real-Time"
+        },
+        {
+          "feature": "Common Scenario",
+          "left": "ERP Integration",
+          "right": "External Applications"
+        }
+      ]
+    },
+    {
+      "id": "SEC15",
+      "type": "heading",
+      "title": "Business Benefits"
+    },
+    {
+      "id": "SEC16",
+      "type": "bullet-list",
+      "items": [
+        "Automatic document exchange",
+        "Reduced manual effort",
+        "Real-time communication",
+        "Improved data quality",
+        "Faster transportation execution",
+        "Better partner collaboration"
+      ]
+    },
+    {
+      "id": "SEC17",
+      "type": "callout",
+      "calloutType": "best-practice",
+      "title": "Best Practice",
+      "content": "Use APIs for modern cloud integrations and IDocs for standard SAP-to-SAP communication wherever appropriate. Follow SAP integration standards to simplify maintenance."
+    },
+    {
+      "id": "SEC18",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real Project Example",
+      "content": "A logistics company integrated SAP TM with more than 150 carriers using APIs and EDI. Shipment status updates became fully automated, reducing manual tracking activities by nearly 80%."
+    },
+    {
+      "id": "SEC19",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Interview Tip",
+      "content": "Remember: IDoc is traditionally used for SAP system integration, EDI is widely used for B2B partner communication and REST/OData APIs are commonly used for modern integrations."
+    },
+    {
+      "id": "SEC20",
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Common Mistake",
+      "content": "Integration technologies transfer business information only. Transportation planning, optimization and settlement remain SAP TM business functions."
+    },
+    {
+      "id": "SEC21",
+      "type": "heading",
+      "title": "Revision Summary"
+    },
+    {
+      "id": "SEC22",
+      "type": "bullet-list",
+      "items": [
+        "SAP TM integrates using IDocs, EDI, APIs, XML and web services.",
+        "IDocs are commonly used for SAP-to-SAP integration.",
+        "EDI enables electronic business document exchange with partners.",
+        "REST/OData APIs support modern real-time integrations.",
+        "Automated integration improves transportation efficiency and data accuracy."
+      ]
+    }
+  ],
+  "relatedLearning": {
+    "viva": [
+      "V-M8-T6-001"
+    ],
+    "handsOnLabs": [
+      "LAB-M8-006"
+    ],
+    "caseStudies": [
+      "CASE-M8-006"
+    ],
+    "practiceMcqs": [
+      "M8T6Q001"
+    ]
+  }
+}

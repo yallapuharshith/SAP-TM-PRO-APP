@@ -1,0 +1,306 @@
+{
+  "id": "M3T1",
+  "module": {
+    "id": 3,
+    "title": "SAP TM Organizational Structure & Master Data",
+    "sequence": 3
+  },
+  "topic": {
+    "id": 1,
+    "title": "SAP TM Organizational Model & Organizational Units",
+    "sequence": 1
+  },
+  "metadata": {
+    "difficulty": "Beginner",
+    "estimatedReadingTime": 35,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-15",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "Organizational Model",
+      "Planning Organization"
+    ],
+    "prerequisites": [
+      "M2T5"
+    ],
+    "learningPath": [
+      "Study",
+      "Viva",
+      "Hands-on",
+      "MCQ"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Understand TM organizational model",
+      "description": "Explain how SAP TM organizational units define transportation responsibilities."
+    },
+    {
+      "id": "LO2",
+      "title": "Differentiate planning organization and group",
+      "description": "Clarify scope and purpose of planning organizations versus planning groups."
+    },
+    {
+      "id": "LO3",
+      "title": "Identify planner responsibilities",
+      "description": "Recognize key planning, optimization and execution-monitoring duties."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "SAP TM Organizational Model"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "The SAP TM Organizational Model defines the organizational hierarchy responsible for transportation planning, execution, monitoring and freight settlement. It controls how transportation activities are managed, assigned and reported within an organization."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Key Concept",
+      "content": "Enterprise Structure defines where business happens, whereas the TM Organizational Model defines who performs transportation activities."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Purpose of Organizational Model"
+    },
+    {
+      "id": "SEC5",
+      "type": "bullet-list",
+      "items": [
+        "Assign transportation responsibilities",
+        "Support transportation planning",
+        "Enable authorization management",
+        "Manage planning organizations",
+        "Support freight settlement",
+        "Improve reporting"
+      ]
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "SAP TM Organizational Hierarchy"
+    },
+    {
+      "id": "SEC7",
+      "type": "process-flow",
+      "title": "TM Organization Structure",
+      "orientation": "vertical",
+      "steps": [
+        "Client",
+        "Company Code",
+        "Planning Organization",
+        "Planning Group",
+        "Transportation Planner",
+        "Execution Team"
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "Organizational Units"
+    },
+    {
+      "id": "SEC9",
+      "type": "table",
+      "title": "TM Organizational Units",
+      "headers": [
+        "Organizational Unit",
+        "Purpose"
+      ],
+      "rows": [
+        [
+          "Planning Organization",
+          "Responsible for transportation planning"
+        ],
+        [
+          "Planning Group",
+          "Group of transportation planners"
+        ],
+        [
+          "Transportation Planner",
+          "Executes transportation planning activities"
+        ],
+        [
+          "Execution Organization",
+          "Monitors shipment execution"
+        ],
+        [
+          "Settlement Organization",
+          "Handles freight settlement activities"
+        ]
+      ]
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "Planning Organization"
+    },
+    {
+      "id": "SEC11",
+      "type": "paragraph",
+      "content": "Planning Organizations represent the business units responsible for transportation planning. They determine which planners can create, modify and optimize transportation plans."
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Planning Groups"
+    },
+    {
+      "id": "SEC13",
+      "type": "paragraph",
+      "content": "Planning Groups categorize transportation planners based on geography, business unit or transportation responsibility. This improves workload distribution and reporting."
+    },
+    {
+      "id": "SEC14",
+      "type": "heading",
+      "title": "Transportation Planner"
+    },
+    {
+      "id": "SEC15",
+      "type": "paragraph",
+      "content": "Transportation Planners create Freight Orders, optimize Freight Units, assign carriers, monitor transportation execution and resolve transportation exceptions."
+    },
+    {
+      "id": "SEC16",
+      "type": "table",
+      "title": "Planner Responsibilities",
+      "headers": [
+        "Activity",
+        "Description"
+      ],
+      "rows": [
+        [
+          "Planning",
+          "Create transportation plans"
+        ],
+        [
+          "Optimization",
+          "Consolidate Freight Units"
+        ],
+        [
+          "Carrier Assignment",
+          "Assign transportation providers"
+        ],
+        [
+          "Monitoring",
+          "Track transportation execution"
+        ],
+        [
+          "Exception Handling",
+          "Resolve transportation issues"
+        ]
+      ]
+    },
+    {
+      "id": "SEC17",
+      "type": "heading",
+      "title": "Integration with SAP TM"
+    },
+    {
+      "id": "SEC18",
+      "type": "bullet-list",
+      "items": [
+        "Transportation Cockpit",
+        "Planning Profiles",
+        "Business Partners",
+        "Resources",
+        "Freight Orders",
+        "Freight Units"
+      ]
+    },
+    {
+      "id": "SEC19",
+      "type": "heading",
+      "title": "Business Scenario"
+    },
+    {
+      "id": "SEC20",
+      "type": "paragraph",
+      "content": "ABC Logistics has separate planning teams for North, South, East and West regions. Each Planning Organization manages transportation within its region, while Planning Groups divide work among transportation planners responsible for different customers."
+    },
+    {
+      "id": "SEC21",
+      "type": "comparison",
+      "title": "Planning Organization vs Planning Group",
+      "leftTitle": "Planning Organization",
+      "rightTitle": "Planning Group",
+      "rows": [
+        {
+          "feature": "Purpose",
+          "left": "Business Unit",
+          "right": "Planner Team"
+        },
+        {
+          "feature": "Scope",
+          "left": "Organization",
+          "right": "Operational"
+        },
+        {
+          "feature": "Responsibility",
+          "left": "Transportation Planning",
+          "right": "Planner Assignment"
+        }
+      ]
+    },
+    {
+      "id": "SEC22",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real Project Example",
+      "content": "A global logistics provider created separate Planning Organizations for Asia, Europe and North America. Each region had dedicated Planning Groups responsible for domestic and international transportation planning."
+    },
+    {
+      "id": "SEC23",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Interview Tip",
+      "content": "Interviewers frequently ask the difference between Enterprise Structure and Organizational Model. Enterprise Structure defines business entities, whereas the Organizational Model defines transportation responsibilities."
+    },
+    {
+      "id": "SEC24",
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Common Mistake",
+      "content": "Do not confuse Planning Organization with Company Code. Company Code belongs to Enterprise Structure, while Planning Organization exists only within SAP TM."
+    },
+    {
+      "id": "SEC25",
+      "type": "heading",
+      "title": "Revision Summary"
+    },
+    {
+      "id": "SEC26",
+      "type": "bullet-list",
+      "items": [
+        "Planning Organization manages transportation planning.",
+        "Planning Groups organize transportation planners.",
+        "Transportation Planners execute planning activities.",
+        "TM Organizational Model defines responsibilities.",
+        "Enterprise Structure and Organizational Model are different concepts."
+      ]
+    }
+  ],
+  "relatedLearning": {
+    "viva": [
+      "V-M3-T1-001"
+    ],
+    "handsOnLabs": [
+      "LAB-M3-001"
+    ],
+    "caseStudies": [
+      "CASE-M3-001"
+    ],
+    "practiceMcqs": [
+      "M3T1Q001"
+    ]
+  }
+}

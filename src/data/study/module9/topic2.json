@@ -1,0 +1,301 @@
+{
+  "id": "M9T2",
+  "module": {
+    "id": 9,
+    "title": "SAP TM Reporting, Analytics & Performance Management",
+    "sequence": 9
+  },
+  "topic": {
+    "id": 2,
+    "title": "Key Performance Indicators (KPIs) in SAP TM",
+    "sequence": 2
+  },
+  "metadata": {
+    "difficulty": "Beginner",
+    "estimatedReadingTime": 35,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-15",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "KPI",
+      "Performance Management"
+    ],
+    "prerequisites": [
+      "M9T1"
+    ],
+    "learningPath": [
+      "Study",
+      "Viva",
+      "Hands-on",
+      "MCQ"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Understand KPI purpose",
+      "description": "Explain KPIs as measurable indicators for transportation efficiency and quality."
+    },
+    {
+      "id": "LO2",
+      "title": "Understand KPI categories",
+      "description": "Describe planning, execution, settlement, financial, carrier, and resource KPIs."
+    },
+    {
+      "id": "LO3",
+      "title": "Understand KPI-driven improvement",
+      "description": "Clarify how KPI analysis enables corrective actions and performance optimization."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "Key Performance Indicators (KPIs) in SAP TM"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "Key Performance Indicators (KPIs) are measurable values used to evaluate the efficiency, effectiveness and quality of transportation operations. SAP TM provides standard KPIs that help organizations monitor planning, execution, freight settlement, carrier performance and transportation costs. These KPIs enable data-driven decision making and continuous process improvement."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Key Concept",
+      "content": "KPIs transform transportation data into measurable business performance indicators."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Objectives of KPIs"
+    },
+    {
+      "id": "SEC5",
+      "type": "bullet-list",
+      "items": [
+        "Measure transportation performance",
+        "Monitor operational efficiency",
+        "Evaluate carrier performance",
+        "Analyze transportation costs",
+        "Support management decisions",
+        "Identify process improvements",
+        "Track business goals"
+      ]
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "KPI Measurement Process"
+    },
+    {
+      "id": "SEC7",
+      "type": "process-flow",
+      "title": "KPI Lifecycle",
+      "orientation": "horizontal",
+      "steps": [
+        "Transportation Activities",
+        "Business Data",
+        "KPI Calculation",
+        "Dashboard",
+        "Analysis",
+        "Business Improvement"
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "Important Transportation KPIs"
+    },
+    {
+      "id": "SEC9",
+      "type": "table",
+      "title": "Common SAP TM KPIs",
+      "headers": [
+        "KPI",
+        "Business Value"
+      ],
+      "rows": [
+        [
+          "On-Time Delivery (%)",
+          "Delivery performance"
+        ],
+        [
+          "Transportation Cost",
+          "Cost control"
+        ],
+        [
+          "Vehicle Utilization",
+          "Fleet efficiency"
+        ],
+        [
+          "Carrier Performance",
+          "Carrier evaluation"
+        ],
+        [
+          "Average Transit Time",
+          "Execution efficiency"
+        ],
+        [
+          "Shipment Delay Rate",
+          "Service quality"
+        ],
+        [
+          "Freight Cost per Shipment",
+          "Cost analysis"
+        ]
+      ]
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "KPI Categories"
+    },
+    {
+      "id": "SEC11",
+      "type": "table",
+      "title": "Performance Categories",
+      "headers": [
+        "Category",
+        "Example KPI"
+      ],
+      "rows": [
+        [
+          "Planning",
+          "Planning Cycle Time"
+        ],
+        [
+          "Execution",
+          "On-Time Delivery"
+        ],
+        [
+          "Settlement",
+          "Settlement Cycle Time"
+        ],
+        [
+          "Financial",
+          "Freight Cost"
+        ],
+        [
+          "Carrier",
+          "Carrier Acceptance Rate"
+        ],
+        [
+          "Resource",
+          "Truck Utilization"
+        ]
+      ]
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Business Scenario"
+    },
+    {
+      "id": "SEC13",
+      "type": "paragraph",
+      "content": "A logistics company notices its On-Time Delivery KPI has dropped from 96% to 89%. SAP TM dashboards reveal that delays are primarily caused by one transportation carrier. Based on KPI analysis, management reallocates shipments to better-performing carriers, restoring service levels."
+    },
+    {
+      "id": "SEC14",
+      "type": "comparison",
+      "title": "Operational KPI vs Strategic KPI",
+      "leftTitle": "Operational KPI",
+      "rightTitle": "Strategic KPI",
+      "rows": [
+        {
+          "feature": "Focus",
+          "left": "Daily Operations",
+          "right": "Long-Term Performance"
+        },
+        {
+          "feature": "Users",
+          "left": "Transportation Planners",
+          "right": "Senior Management"
+        },
+        {
+          "feature": "Example",
+          "left": "Shipment Delays",
+          "right": "Annual Transportation Cost"
+        }
+      ]
+    },
+    {
+      "id": "SEC15",
+      "type": "heading",
+      "title": "Business Benefits"
+    },
+    {
+      "id": "SEC16",
+      "type": "bullet-list",
+      "items": [
+        "Objective performance measurement",
+        "Improved transportation planning",
+        "Better carrier management",
+        "Reduced logistics costs",
+        "Higher customer satisfaction",
+        "Continuous operational improvement"
+      ]
+    },
+    {
+      "id": "SEC17",
+      "type": "callout",
+      "calloutType": "best-practice",
+      "title": "Best Practice",
+      "content": "Track a small set of meaningful KPIs instead of monitoring too many metrics. Focus on indicators that directly support business objectives."
+    },
+    {
+      "id": "SEC18",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real Project Example",
+      "content": "A global FMCG company monitored carrier acceptance rate, truck utilization and freight cost per shipment using SAP TM dashboards. Continuous KPI monitoring reduced transportation costs by approximately 12% within one year."
+    },
+    {
+      "id": "SEC19",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Interview Tip",
+      "content": "Remember the most commonly tested SAP TM KPIs: On-Time Delivery, Transportation Cost, Vehicle Utilization, Carrier Performance and Freight Cost per Shipment."
+    },
+    {
+      "id": "SEC20",
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Common Mistake",
+      "content": "A KPI is useful only if corrective actions are taken based on its results. Simply monitoring KPIs without improvement initiatives provides limited business value."
+    },
+    {
+      "id": "SEC21",
+      "type": "heading",
+      "title": "Revision Summary"
+    },
+    {
+      "id": "SEC22",
+      "type": "bullet-list",
+      "items": [
+        "KPIs measure transportation performance.",
+        "SAP TM provides planning, execution, financial and carrier KPIs.",
+        "KPIs support operational and strategic decision-making.",
+        "Dashboards visualize KPI trends for business users.",
+        "Continuous KPI monitoring improves logistics performance."
+      ]
+    }
+  ],
+  "relatedLearning": {
+    "viva": [
+      "V-M9-T2-001"
+    ],
+    "handsOnLabs": [
+      "LAB-M9-002"
+    ],
+    "caseStudies": [
+      "CASE-M9-002"
+    ],
+    "practiceMcqs": [
+      "M9T2Q001"
+    ]
+  }
+}

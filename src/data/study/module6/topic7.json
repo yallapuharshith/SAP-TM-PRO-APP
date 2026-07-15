@@ -1,0 +1,277 @@
+{
+  "id": "M6T7",
+  "module": {
+    "id": 6,
+    "title": "SAP TM Freight Execution Management",
+    "sequence": 6
+  },
+  "topic": {
+    "id": 7,
+    "title": "Transportation Execution Documents & Business Documents",
+    "sequence": 7
+  },
+  "metadata": {
+    "difficulty": "Beginner",
+    "estimatedReadingTime": 35,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-15",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "Transportation Documents",
+      "Freight Settlement"
+    ],
+    "prerequisites": [
+      "M6T6"
+    ],
+    "learningPath": [
+      "Study",
+      "Viva",
+      "Hands-on",
+      "MCQ"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Understand SAP TM business documents",
+      "description": "Explain key documents used for transportation planning, execution, and settlement."
+    },
+    {
+      "id": "LO2",
+      "title": "Understand end-to-end document flow",
+      "description": "Describe document progression from source demand to freight settlement."
+    },
+    {
+      "id": "LO3",
+      "title": "Differentiate planning and execution documents",
+      "description": "Clarify responsibilities of freight units, freight orders, and bookings."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "Transportation Execution Documents"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "Transportation Execution in SAP TM involves multiple business documents that work together throughout the logistics lifecycle. Each document has a specific responsibility, beginning with transportation demand and ending with freight settlement. Understanding the relationship between these documents is essential for both SAP TM implementation and certification."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Key Concept",
+      "content": "SAP TM uses different business documents for planning, execution and settlement. Each document serves a unique purpose in the transportation process."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Transportation Documents"
+    },
+    {
+      "id": "SEC5",
+      "type": "table",
+      "title": "Major SAP TM Documents",
+      "headers": [
+        "Document",
+        "Primary Purpose"
+      ],
+      "rows": [
+        [
+          "Freight Unit",
+          "Transportation Demand"
+        ],
+        [
+          "Freight Order",
+          "Road Transportation Execution"
+        ],
+        [
+          "Freight Booking",
+          "Capacity Reservation"
+        ],
+        [
+          "Forwarding Order",
+          "Customer Transportation Request"
+        ],
+        [
+          "Freight Settlement Document",
+          "Carrier Payment"
+        ]
+      ]
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "Document Flow"
+    },
+    {
+      "id": "SEC7",
+      "type": "process-flow",
+      "title": "End-to-End Document Flow",
+      "orientation": "horizontal",
+      "steps": [
+        "Sales Order",
+        "Delivery",
+        "Freight Unit",
+        "Freight Order / Freight Booking",
+        "Transportation Execution",
+        "Proof of Delivery",
+        "Freight Settlement"
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "Execution Documents"
+    },
+    {
+      "id": "SEC9",
+      "type": "table",
+      "title": "Execution Responsibilities",
+      "headers": [
+        "Document",
+        "Business Responsibility"
+      ],
+      "rows": [
+        [
+          "Freight Unit",
+          "Represents transportation demand"
+        ],
+        [
+          "Freight Order",
+          "Controls shipment execution"
+        ],
+        [
+          "Freight Booking",
+          "Reserves transportation capacity"
+        ],
+        [
+          "Proof of Delivery",
+          "Confirms successful delivery"
+        ],
+        [
+          "Freight Settlement Document",
+          "Settles transportation charges"
+        ]
+      ]
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "Business Scenario"
+    },
+    {
+      "id": "SEC11",
+      "type": "paragraph",
+      "content": "A customer places an order for machinery. SAP S/4HANA creates an Outbound Delivery, SAP TM generates a Freight Unit, the optimizer creates a Freight Order, the shipment is executed, Proof of Delivery is received and finally a Freight Settlement Document is generated to pay the carrier."
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Document Relationships"
+    },
+    {
+      "id": "SEC13",
+      "type": "comparison",
+      "title": "Planning Documents vs Execution Documents",
+      "leftTitle": "Planning",
+      "rightTitle": "Execution",
+      "rows": [
+        {
+          "feature": "Primary Document",
+          "left": "Freight Unit",
+          "right": "Freight Order"
+        },
+        {
+          "feature": "Purpose",
+          "left": "Transportation Planning",
+          "right": "Shipment Execution"
+        },
+        {
+          "feature": "Created From",
+          "left": "ERP Business Documents",
+          "right": "Transportation Planning"
+        }
+      ]
+    },
+    {
+      "id": "SEC14",
+      "type": "heading",
+      "title": "Business Benefits"
+    },
+    {
+      "id": "SEC15",
+      "type": "bullet-list",
+      "items": [
+        "Clear transportation workflow",
+        "Complete shipment traceability",
+        "Standardized execution process",
+        "Better document integration",
+        "Improved audit compliance",
+        "Efficient freight settlement"
+      ]
+    },
+    {
+      "id": "SEC16",
+      "type": "callout",
+      "calloutType": "best-practice",
+      "title": "Best Practice",
+      "content": "Maintain document consistency throughout the transportation lifecycle. Avoid manual document creation unless required for exceptional business scenarios."
+    },
+    {
+      "id": "SEC17",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real Project Example",
+      "content": "A multinational logistics company processes over 40,000 Freight Orders daily. Every document is automatically linked from Freight Unit creation through Freight Settlement, providing complete end-to-end transportation traceability."
+    },
+    {
+      "id": "SEC18",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Interview Tip",
+      "content": "Certification exams commonly ask the sequence of SAP TM documents. Remember: Delivery -> Freight Unit -> Freight Order/Freight Booking -> Freight Settlement Document."
+    },
+    {
+      "id": "SEC19",
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Common Mistake",
+      "content": "Do not confuse Freight Booking with Freight Settlement. Freight Booking reserves transportation capacity, whereas Freight Settlement calculates and pays transportation charges."
+    },
+    {
+      "id": "SEC20",
+      "type": "heading",
+      "title": "Revision Summary"
+    },
+    {
+      "id": "SEC21",
+      "type": "bullet-list",
+      "items": [
+        "Freight Unit represents transportation demand.",
+        "Freight Order manages transportation execution.",
+        "Freight Booking reserves carrier capacity.",
+        "Proof of Delivery confirms successful shipment completion.",
+        "Freight Settlement Document is generated after execution for carrier payment."
+      ]
+    }
+  ],
+  "relatedLearning": {
+    "viva": [
+      "V-M6-T7-001"
+    ],
+    "handsOnLabs": [
+      "LAB-M6-007"
+    ],
+    "caseStudies": [
+      "CASE-M6-007"
+    ],
+    "practiceMcqs": [
+      "M6T7Q001"
+    ]
+  }
+}

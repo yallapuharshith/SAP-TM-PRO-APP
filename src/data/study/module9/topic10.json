@@ -1,0 +1,327 @@
+{
+  "id": "M9T10",
+  "module": {
+    "id": 9,
+    "title": "SAP TM Reporting, Analytics & Performance Management",
+    "sequence": 9
+  },
+  "topic": {
+    "id": 10,
+    "title": "End-to-End Reporting & Analytics in SAP TM",
+    "sequence": 10
+  },
+  "metadata": {
+    "difficulty": "Beginner",
+    "estimatedReadingTime": 35,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-15",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "Reporting",
+      "Analytics"
+    ],
+    "prerequisites": [
+      "M9T9"
+    ],
+    "learningPath": [
+      "Study",
+      "Viva",
+      "Hands-on",
+      "MCQ"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Understand end-to-end analytics lifecycle",
+      "description": "Explain how planning, execution, settlement, and integration data drive business intelligence."
+    },
+    {
+      "id": "LO2",
+      "title": "Understand reporting technologies",
+      "description": "Identify SAP Fiori, SAP Analytics Cloud, embedded analytics, and KPI frameworks."
+    },
+    {
+      "id": "LO3",
+      "title": "Understand decision-driven improvement",
+      "description": "Describe how analytics insights support optimization and continuous improvement."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "End-to-End Reporting & Analytics in SAP TM"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "Reporting and Analytics complete the SAP Transportation Management lifecycle by converting transportation data into actionable business intelligence. Information collected during planning, execution, freight settlement and integration is transformed into dashboards, KPIs and executive reports that support operational monitoring, strategic planning and continuous improvement."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Key Concept",
+      "content": "Every transportation activity generates business data. Reporting transforms that data into information, while analytics converts information into better business decisions."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Complete Analytics Lifecycle"
+    },
+    {
+      "id": "SEC5",
+      "type": "process-flow",
+      "title": "End-to-End Analytics Flow",
+      "orientation": "horizontal",
+      "steps": [
+        "Transportation Planning",
+        "Transportation Execution",
+        "Freight Settlement",
+        "Business Data Collection",
+        "KPIs & Dashboards",
+        "Analytics",
+        "Management Decisions",
+        "Continuous Improvement"
+      ]
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "Reporting Across SAP TM"
+    },
+    {
+      "id": "SEC7",
+      "type": "table",
+      "title": "Reporting by Business Area",
+      "headers": [
+        "Business Area",
+        "Typical Reports"
+      ],
+      "rows": [
+        [
+          "Planning",
+          "Freight Orders, Planning Efficiency"
+        ],
+        [
+          "Execution",
+          "Shipment Status, Delays"
+        ],
+        [
+          "Carrier Management",
+          "Carrier Scorecards"
+        ],
+        [
+          "Freight Settlement",
+          "Transportation Costs"
+        ],
+        [
+          "Finance",
+          "Settlement & Invoice Reports"
+        ],
+        [
+          "Management",
+          "Executive Dashboards"
+        ]
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "Major KPIs"
+    },
+    {
+      "id": "SEC9",
+      "type": "table",
+      "title": "Most Important SAP TM KPIs",
+      "headers": [
+        "KPI",
+        "Business Value"
+      ],
+      "rows": [
+        [
+          "On-Time Delivery",
+          "Customer satisfaction"
+        ],
+        [
+          "Transportation Cost",
+          "Cost optimization"
+        ],
+        [
+          "Carrier Performance",
+          "Vendor evaluation"
+        ],
+        [
+          "Vehicle Utilization",
+          "Fleet efficiency"
+        ],
+        [
+          "Freight Cost per Shipment",
+          "Financial performance"
+        ],
+        [
+          "Exception Rate",
+          "Operational quality"
+        ],
+        [
+          "Settlement Cycle Time",
+          "Financial efficiency"
+        ]
+      ]
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "Reporting Technologies"
+    },
+    {
+      "id": "SEC11",
+      "type": "table",
+      "title": "SAP Reporting Solutions",
+      "headers": [
+        "Technology",
+        "Purpose"
+      ],
+      "rows": [
+        [
+          "SAP Fiori",
+          "Operational dashboards"
+        ],
+        [
+          "SAP Analytics Cloud",
+          "Executive analytics"
+        ],
+        [
+          "Embedded Analytics",
+          "Real-time reporting"
+        ],
+        [
+          "KPIs",
+          "Performance measurement"
+        ],
+        [
+          "Predictive Analytics",
+          "Future forecasting"
+        ]
+      ]
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Business Scenario"
+    },
+    {
+      "id": "SEC13",
+      "type": "paragraph",
+      "content": "A global logistics company reviews monthly SAP TM dashboards. Operational reports identify delayed shipments, carrier scorecards highlight underperforming providers, transportation cost analytics reveal expensive routes and predictive analytics forecast seasonal capacity shortages. Based on these insights, management optimizes carrier allocation, transportation planning and budgeting."
+    },
+    {
+      "id": "SEC14",
+      "type": "comparison",
+      "title": "Reporting vs Analytics",
+      "leftTitle": "Reporting",
+      "rightTitle": "Analytics",
+      "rows": [
+        {
+          "feature": "Purpose",
+          "left": "Display Business Information",
+          "right": "Generate Business Insights"
+        },
+        {
+          "feature": "Focus",
+          "left": "Past & Present",
+          "right": "Present & Future"
+        },
+        {
+          "feature": "Business Outcome",
+          "left": "Visibility",
+          "right": "Decision Support"
+        },
+        {
+          "feature": "Examples",
+          "left": "Shipment Reports",
+          "right": "Cost Forecasting"
+        }
+      ]
+    },
+    {
+      "id": "SEC15",
+      "type": "heading",
+      "title": "Business Benefits"
+    },
+    {
+      "id": "SEC16",
+      "type": "bullet-list",
+      "items": [
+        "Complete transportation visibility",
+        "Improved strategic planning",
+        "Lower transportation costs",
+        "Higher operational efficiency",
+        "Better customer service",
+        "Data-driven business decisions",
+        "Continuous supply chain improvement"
+      ]
+    },
+    {
+      "id": "SEC17",
+      "type": "callout",
+      "calloutType": "best-practice",
+      "title": "Best Practice",
+      "content": "Combine operational dashboards, KPIs, predictive analytics and executive reporting to create a complete transportation performance management framework."
+    },
+    {
+      "id": "SEC18",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real Project Example",
+      "content": "A multinational automotive manufacturer integrated SAP TM reporting with SAP Analytics Cloud and predictive analytics. By monitoring transportation KPIs continuously, the company improved carrier performance, reduced freight costs and increased on-time delivery across multiple regions."
+    },
+    {
+      "id": "SEC19",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Interview Tip",
+      "content": "For SAP TM certification, remember the complete reporting hierarchy: Operational Reports → KPIs → Dashboards → Analytics → Executive Decision Support → Continuous Improvement."
+    },
+    {
+      "id": "SEC20",
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Common Mistake",
+      "content": "Reporting alone does not improve transportation performance. Business value is realized only when analytical insights lead to measurable operational improvements."
+    },
+    {
+      "id": "SEC21",
+      "type": "heading",
+      "title": "Revision Summary"
+    },
+    {
+      "id": "SEC22",
+      "type": "bullet-list",
+      "items": [
+        "Reporting converts transportation data into business information.",
+        "Analytics transforms information into business decisions.",
+        "KPIs measure transportation performance across all business processes.",
+        "SAP Fiori and SAP Analytics Cloud provide powerful reporting capabilities.",
+        "Continuous analytics supports ongoing transportation optimization and strategic planning."
+      ]
+    }
+  ],
+  "relatedLearning": {
+    "viva": [
+      "V-M9-T10-001"
+    ],
+    "handsOnLabs": [
+      "LAB-M9-010"
+    ],
+    "caseStudies": [
+      "CASE-M9-010"
+    ],
+    "practiceMcqs": [
+      "M9T10Q001"
+    ]
+  }
+}

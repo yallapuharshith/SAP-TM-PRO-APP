@@ -1,0 +1,80 @@
+{
+  "id": "module1.transport-planning-basics",
+  "moduleId": "module1",
+  "moduleTitle": "Module 1 - Transportation Planning Foundation",
+  "title": "Transportation Planning Basics",
+  "difficulty": "Beginner",
+  "estimatedMinutes": 14,
+  "relatedLinks": [
+    { "label": "Practice MCQ: Module 1", "href": "#/exam/module/module1" },
+    { "label": "SAP Help Portal", "href": "https://help.sap.com/" }
+  ],
+  "sections": [
+    {
+      "id": "m1-overview",
+      "title": "Overview",
+      "content": [
+        { "type": "heading", "level": 3, "text": "Why Transportation Planning Matters" },
+        { "type": "paragraph", "text": "Transportation planning in SAP TM aligns freight demand, available resources, and cost constraints to ensure efficient and compliant movement execution." },
+        {
+          "type": "callout",
+          "calloutType": "tip",
+          "title": "Exam Tip",
+          "text": "Focus on planning sequence order and master-data dependencies for scenario-based questions."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Capture freight demand from ERP or external systems",
+            "Determine feasible routing and capacity",
+            "Balance service level agreements against freight cost"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m1-core-entities",
+      "title": "Core Planning Entities",
+      "content": [
+        { "type": "paragraph", "text": "The entities below are foundational in planning and appear repeatedly in both implementation and certification assessments." },
+        {
+          "type": "table",
+          "columns": ["Entity", "Purpose", "Typical Source"],
+          "rows": [
+            ["Freight Unit", "Planning demand object", "ERP Order/Delivery"],
+            ["Freight Order", "Execution-level document", "TM Planning"],
+            ["Resource", "Vehicle or transport capacity", "Master Data"]
+          ]
+        },
+        {
+          "type": "image",
+          "src": "https://picsum.photos/seed/saptm-module1/1200/480",
+          "alt": "Transportation planning concept flow",
+          "caption": "Conceptual planning flow from demand to execution."
+        }
+      ]
+    },
+    {
+      "id": "m1-checklist",
+      "title": "Planning Readiness Checklist",
+      "content": [
+        {
+          "type": "callout",
+          "calloutType": "warning",
+          "title": "Common Failure Point",
+          "text": "Incomplete location and business partner master data can invalidate planning proposals."
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "Validate location master and hierarchy assignment",
+            "Verify resource and carrier availability windows",
+            "Confirm charge profile and planning profile linkage"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,297 @@
+{
+  "id": "M10T7",
+  "module": {
+    "id": 10,
+    "title": "SAP TM Implementation, Methodology & Best Practices",
+    "sequence": 10
+  },
+  "topic": {
+    "id": 7,
+    "title": "SAP TM Security, Authorizations & Roles",
+    "sequence": 7
+  },
+  "metadata": {
+    "difficulty": "Beginner",
+    "estimatedReadingTime": 35,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-15",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "Security",
+      "Authorizations"
+    ],
+    "prerequisites": [
+      "M10T6"
+    ],
+    "learningPath": [
+      "Study",
+      "Viva",
+      "Hands-on",
+      "MCQ"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Understand SAP TM security model",
+      "description": "Explain role-based access and integrated authorization concepts for transportation operations."
+    },
+    {
+      "id": "LO2",
+      "title": "Understand authorization components",
+      "description": "Describe users, roles, authorization objects, profiles, and business catalogs/roles."
+    },
+    {
+      "id": "LO3",
+      "title": "Understand compliance controls",
+      "description": "Clarify segregation of duties, least privilege, and governance through periodic role reviews."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "SAP TM Security, Authorizations & Roles"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "Security in SAP Transportation Management ensures that users can access only the transportation data and business functions required for their responsibilities. SAP TM uses role-based authorizations integrated with SAP S/4HANA authorization concepts to protect business information, enforce segregation of duties and maintain compliance."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Key Concept",
+      "content": "Authentication identifies who the user is, while authorization determines what the user is allowed to do."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Objectives of SAP TM Security"
+    },
+    {
+      "id": "SEC5",
+      "type": "bullet-list",
+      "items": [
+        "Protect transportation data",
+        "Control user access",
+        "Enforce role-based security",
+        "Support compliance requirements",
+        "Prevent unauthorized changes",
+        "Maintain auditability",
+        "Ensure secure business operations"
+      ]
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "Authorization Process"
+    },
+    {
+      "id": "SEC7",
+      "type": "process-flow",
+      "title": "User Authorization Flow",
+      "orientation": "horizontal",
+      "steps": [
+        "User Login",
+        "Authentication",
+        "Role Assignment",
+        "Authorization Check",
+        "Access Granted",
+        "Business Transaction"
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "Typical SAP TM Roles"
+    },
+    {
+      "id": "SEC9",
+      "type": "table",
+      "title": "Business Roles",
+      "headers": [
+        "Role",
+        "Typical Responsibilities"
+      ],
+      "rows": [
+        [
+          "Transportation Planner",
+          "Create and manage Freight Orders"
+        ],
+        [
+          "Dispatcher",
+          "Monitor transportation execution"
+        ],
+        [
+          "Freight Settlement Specialist",
+          "Manage freight settlement documents"
+        ],
+        [
+          "Transportation Manager",
+          "Approve transportation decisions"
+        ],
+        [
+          "System Administrator",
+          "User and security administration"
+        ],
+        [
+          "Business Analyst",
+          "Reporting and analytics"
+        ]
+      ]
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "Security Components"
+    },
+    {
+      "id": "SEC11",
+      "type": "table",
+      "title": "Authorization Elements",
+      "headers": [
+        "Component",
+        "Purpose"
+      ],
+      "rows": [
+        [
+          "User",
+          "Individual identity"
+        ],
+        [
+          "Role",
+          "Collection of authorizations"
+        ],
+        [
+          "Authorization Object",
+          "Permission control"
+        ],
+        [
+          "Profile",
+          "Assigned security settings"
+        ],
+        [
+          "Business Catalog",
+          "Fiori application access"
+        ],
+        [
+          "Business Role",
+          "Role-based navigation"
+        ]
+      ]
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Business Scenario"
+    },
+    {
+      "id": "SEC13",
+      "type": "paragraph",
+      "content": "A transportation planner can create Freight Orders but cannot approve freight settlement payments. Only a Freight Settlement Specialist with the appropriate authorization role can perform settlement activities, ensuring segregation of duties and financial control."
+    },
+    {
+      "id": "SEC14",
+      "type": "comparison",
+      "title": "Authentication vs Authorization",
+      "leftTitle": "Authentication",
+      "rightTitle": "Authorization",
+      "rows": [
+        {
+          "feature": "Purpose",
+          "left": "Verify User Identity",
+          "right": "Control User Permissions"
+        },
+        {
+          "feature": "Question",
+          "left": "Who are you?",
+          "right": "What can you do?"
+        },
+        {
+          "feature": "Example",
+          "left": "User Login",
+          "right": "Create Freight Order"
+        }
+      ]
+    },
+    {
+      "id": "SEC15",
+      "type": "heading",
+      "title": "Business Benefits"
+    },
+    {
+      "id": "SEC16",
+      "type": "bullet-list",
+      "items": [
+        "Secure transportation data",
+        "Compliance with audit requirements",
+        "Reduced fraud risk",
+        "Role-based access control",
+        "Improved operational security",
+        "Better governance"
+      ]
+    },
+    {
+      "id": "SEC17",
+      "type": "callout",
+      "calloutType": "best-practice",
+      "title": "Best Practice",
+      "content": "Apply the Principle of Least Privilege (PoLP). Grant users only the minimum authorizations required to perform their business responsibilities."
+    },
+    {
+      "id": "SEC18",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real Project Example",
+      "content": "A global logistics provider established a 24×7 AMS support team for SAP TM. Automated monitoring and documented runbooks reduced the average incident resolution time by more than 40%."
+    },
+    {
+      "id": "SEC19",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Interview Tip",
+      "content": "Frequently tested concepts include authentication vs authorization, role-based access control (RBAC), segregation of duties (SoD) and the Principle of Least Privilege."
+    },
+    {
+      "id": "SEC20",
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Common Mistake",
+      "content": "Assigning excessive authorizations to users increases security risks and violates compliance requirements. Regular role reviews should be performed."
+    },
+    {
+      "id": "SEC21",
+      "type": "heading",
+      "title": "Revision Summary"
+    },
+    {
+      "id": "SEC22",
+      "type": "bullet-list",
+      "items": [
+        "SAP TM uses role-based authorization for secure access.",
+        "Authentication verifies identity; authorization controls permissions.",
+        "Business roles simplify user access management.",
+        "Segregation of duties reduces financial and operational risks.",
+        "Proper authorization management is essential for secure SAP TM operations."
+      ]
+    }
+  ],
+  "relatedLearning": {
+    "viva": [
+      "V-M10-T7-001"
+    ],
+    "handsOnLabs": [
+      "LAB-M10-007"
+    ],
+    "caseStudies": [
+      "CASE-M10-007"
+    ],
+    "practiceMcqs": [
+      "M10T7Q001"
+    ]
+  }
+}

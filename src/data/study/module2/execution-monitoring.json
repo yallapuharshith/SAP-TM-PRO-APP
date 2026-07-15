@@ -1,0 +1,50 @@
+{
+  "id": "module2.execution-monitoring",
+  "moduleId": "module2",
+  "moduleTitle": "Module 2 - Execution and Tendering",
+  "title": "Execution Monitoring",
+  "difficulty": "Intermediate",
+  "estimatedMinutes": 12,
+  "relatedLinks": [
+    { "label": "Start Practice MCQ", "href": "#/exam" },
+    { "label": "Smart Revision", "href": "#/revision" }
+  ],
+  "sections": [
+    {
+      "id": "exec-events",
+      "title": "Event Management",
+      "content": [
+        { "type": "paragraph", "text": "Execution monitoring in SAP TM uses event milestones to track shipment progress, exceptions, and SLA breaches." },
+        {
+          "type": "callout",
+          "calloutType": "tip",
+          "text": "Map event codes consistently across carrier integration channels to avoid duplicate milestone statuses."
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "Define expected event sequence per transportation mode",
+            "Capture actual event updates via integration",
+            "Trigger alerts and escalation for delayed milestones"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "exec-kpi",
+      "title": "Operational KPIs",
+      "content": [
+        {
+          "type": "table",
+          "columns": ["KPI", "Description", "Target"],
+          "rows": [
+            ["On-time Pickup", "Pickup at planned timestamp", ">= 95%"],
+            ["On-time Delivery", "Delivery within SLA window", ">= 96%"],
+            ["Exception Closure Time", "Average issue resolution duration", "< 4h"]
+          ]
+        }
+      ]
+    }
+  ]
+}

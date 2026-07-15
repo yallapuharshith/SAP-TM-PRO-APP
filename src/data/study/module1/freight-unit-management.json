@@ -1,0 +1,53 @@
+{
+  "id": "module1.freight-unit-management",
+  "moduleId": "module1",
+  "moduleTitle": "Module 1 - Transportation Planning Foundation",
+  "title": "Freight Unit Management",
+  "difficulty": "Intermediate",
+  "estimatedMinutes": 11,
+  "relatedLinks": [
+    { "label": "Study Notes Home", "href": "#/study-notes" },
+    { "label": "Module 1 Analytics", "href": "#/analytics" }
+  ],
+  "sections": [
+    {
+      "id": "fu-lifecycle",
+      "title": "Freight Unit Lifecycle",
+      "content": [
+        { "type": "heading", "level": 3, "text": "Creation and Split Rules" },
+        { "type": "paragraph", "text": "Freight units are generated from logistics execution documents and can split based on quantity, dates, or incompatibility constraints." },
+        {
+          "type": "callout",
+          "calloutType": "example",
+          "title": "Scenario",
+          "text": "A single sales order can produce multiple freight units when delivery windows differ by destination region."
+        }
+      ]
+    },
+    {
+      "id": "fu-planning",
+      "title": "FU Planning Considerations",
+      "content": [
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "FU incompatibility profiles",
+            "Capacity and loading constraints",
+            "Pickup and delivery time window adherence",
+            "Cost and preferred carrier policies"
+          ]
+        },
+        {
+          "type": "table",
+          "columns": ["Planning Constraint", "Impact"],
+          "rows": [
+            ["Hard Time Window", "Can block automatic assignment"],
+            ["Dangerous Goods", "Requires specialized resources"],
+            ["Regional Restriction", "Limits route alternatives"]
+          ]
+        }
+      ]
+    }
+  ]
+}

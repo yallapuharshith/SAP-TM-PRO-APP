@@ -1,0 +1,274 @@
+{
+  "id": "M5T8",
+  "module": {
+    "id": 5,
+    "title": "SAP TM Transportation Planning",
+    "sequence": 5
+  },
+  "topic": {
+    "id": 8,
+    "title": "Transportation Planning Strategies (Manual, Interactive & Automatic Planning)",
+    "sequence": 8
+  },
+  "metadata": {
+    "difficulty": "Beginner",
+    "estimatedReadingTime": 35,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-15",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "Planning Strategy",
+      "Automatic Planning"
+    ],
+    "prerequisites": [
+      "M5T1",
+      "M5T2",
+      "M5T3",
+      "M5T4",
+      "M5T5",
+      "M5T6",
+      "M5T7"
+    ],
+    "learningPath": [
+      "Study",
+      "Viva",
+      "Hands-on",
+      "MCQ"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Understand planning strategies",
+      "description": "Differentiate manual, interactive, automatic and background planning approaches."
+    },
+    {
+      "id": "LO2",
+      "title": "Select appropriate strategy",
+      "description": "Align strategy selection with shipment complexity, volume and control requirements."
+    },
+    {
+      "id": "LO3",
+      "title": "Understand planner role",
+      "description": "Clarify how planner intervention changes across strategy types."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "Transportation Planning Strategies"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "SAP TM supports multiple transportation planning strategies to accommodate different business scenarios. Organizations may choose manual planning, interactive planning or fully automatic planning depending on shipment complexity, business rules and operational requirements."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Key Concept",
+      "content": "The planning strategy determines who makes planning decisions-the transportation planner, the optimization engine or both together."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Planning Strategies"
+    },
+    {
+      "id": "SEC5",
+      "type": "table",
+      "title": "Available Planning Strategies",
+      "headers": [
+        "Strategy",
+        "Description"
+      ],
+      "rows": [
+        [
+          "Manual Planning",
+          "Planner creates Freight Orders manually"
+        ],
+        [
+          "Interactive Planning",
+          "Planner works with optimizer recommendations"
+        ],
+        [
+          "Automatic Planning",
+          "System plans shipments automatically"
+        ],
+        [
+          "Background Planning",
+          "Planning executed through scheduled jobs"
+        ]
+      ]
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "Planning Workflow"
+    },
+    {
+      "id": "SEC7",
+      "type": "process-flow",
+      "title": "Planning Strategy Flow",
+      "orientation": "horizontal",
+      "steps": [
+        "Transportation Demand",
+        "Select Planning Strategy",
+        "Run Planning",
+        "Review Results",
+        "Adjust if Needed",
+        "Create Freight Order",
+        "Release"
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "Manual Planning"
+    },
+    {
+      "id": "SEC9",
+      "type": "bullet-list",
+      "items": [
+        "Planner controls every planning decision",
+        "Suitable for exceptional shipments",
+        "Useful for urgent transportation",
+        "High flexibility",
+        "Requires planner expertise"
+      ]
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "Interactive Planning"
+    },
+    {
+      "id": "SEC11",
+      "type": "bullet-list",
+      "items": [
+        "Optimizer proposes transportation plans",
+        "Planner reviews recommendations",
+        "Manual adjustments are allowed",
+        "Most commonly used planning strategy",
+        "Balances automation with business control"
+      ]
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Automatic Planning"
+    },
+    {
+      "id": "SEC13",
+      "type": "bullet-list",
+      "items": [
+        "No planner intervention required",
+        "Optimizer creates Freight Orders automatically",
+        "Ideal for repetitive transportation",
+        "Supports high shipment volumes",
+        "Can run in the background"
+      ]
+    },
+    {
+      "id": "SEC14",
+      "type": "comparison",
+      "title": "Manual vs Interactive vs Automatic",
+      "leftTitle": "Manual",
+      "rightTitle": "Automatic",
+      "rows": [
+        {
+          "feature": "Decision Maker",
+          "left": "Planner",
+          "right": "Optimizer"
+        },
+        {
+          "feature": "Planning Speed",
+          "left": "Slow",
+          "right": "Very Fast"
+        },
+        {
+          "feature": "Human Intervention",
+          "left": "High",
+          "right": "Minimal"
+        },
+        {
+          "feature": "Best For",
+          "left": "Special Shipments",
+          "right": "Daily High Volume Planning"
+        }
+      ]
+    },
+    {
+      "id": "SEC15",
+      "type": "heading",
+      "title": "Business Scenario"
+    },
+    {
+      "id": "SEC16",
+      "type": "paragraph",
+      "content": "An e-commerce company plans over 20,000 deliveries every day. SAP TM automatically creates Freight Orders overnight using background planning. Transportation planners review only exception cases in the morning."
+    },
+    {
+      "id": "SEC17",
+      "type": "callout",
+      "calloutType": "best-practice",
+      "title": "Best Practice",
+      "content": "Use automatic planning for repetitive daily shipments and manual planning only for exceptional or high-priority transportation requests."
+    },
+    {
+      "id": "SEC18",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real Project Example",
+      "content": "A global retail company schedules automatic transportation planning every night at 1:00 AM. More than 95% of shipments are planned automatically, while planners manually handle only exception Freight Units."
+    },
+    {
+      "id": "SEC19",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Interview Tip",
+      "content": "Interactive Planning is the most commonly implemented strategy because it combines optimizer efficiency with planner expertise."
+    },
+    {
+      "id": "SEC20",
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Common Mistake",
+      "content": "Automatic planning does not eliminate planners. Transportation planners still manage exceptions, urgent shipments and optimization validation."
+    },
+    {
+      "id": "SEC21",
+      "type": "heading",
+      "title": "Revision Summary"
+    },
+    {
+      "id": "SEC22",
+      "type": "bullet-list",
+      "items": [
+        "SAP TM supports Manual, Interactive and Automatic Planning.",
+        "Interactive Planning is the most common implementation.",
+        "Automatic Planning is ideal for large shipment volumes.",
+        "Manual Planning is used for exceptional transportation scenarios.",
+        "Background Planning enables unattended optimization."
+      ]
+    }
+  ],
+  "relatedLearning": {
+    "viva": [
+      "V-M5-T8-001"
+    ],
+    "handsOnLabs": [
+      "LAB-M5-008"
+    ],
+    "caseStudies": [
+      "CASE-M5-008"
+    ],
+    "practiceMcqs": [
+      "M5T8Q001"
+    ]
+  }
+}

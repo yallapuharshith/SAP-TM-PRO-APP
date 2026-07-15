@@ -1,0 +1,302 @@
+{
+  "id": "M2T3",
+  "module": {
+    "id": 2,
+    "title": "Transportation Management Foundations",
+    "sequence": 2
+  },
+  "topic": {
+    "id": 3,
+    "title": "SAP TM Deployment Options & System Landscape",
+    "sequence": 3
+  },
+  "metadata": {
+    "difficulty": "Beginner",
+    "estimatedReadingTime": 35,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-15",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "Deployment",
+      "System Landscape"
+    ],
+    "prerequisites": [
+      "M2T1",
+      "M2T2"
+    ],
+    "learningPath": [
+      "Study",
+      "Viva",
+      "Hands-on",
+      "MCQ"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Understand TM deployment models",
+      "description": "Differentiate Embedded TM, Standalone TM, cloud and hybrid approaches."
+    },
+    {
+      "id": "LO2",
+      "title": "Compare Embedded and Standalone",
+      "description": "Explain architecture, integration and maintenance differences."
+    },
+    {
+      "id": "LO3",
+      "title": "Know integration landscape",
+      "description": "Identify core systems integrated with SAP TM in real projects."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "SAP TM Deployment Options"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "SAP Transportation Management can be deployed in different architectures depending on business size, complexity and integration requirements. Organizations can implement SAP TM as Embedded TM within SAP S/4HANA or as a Standalone TM system."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Key Concept",
+      "content": "Embedded TM is recommended for most SAP S/4HANA customers, while Standalone TM is generally used for large enterprises requiring advanced transportation planning."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Deployment Models"
+    },
+    {
+      "id": "SEC5",
+      "type": "table",
+      "title": "SAP TM Deployment Types",
+      "headers": [
+        "Deployment",
+        "Description"
+      ],
+      "rows": [
+        [
+          "Embedded TM",
+          "Transportation Management built directly into SAP S/4HANA."
+        ],
+        [
+          "Standalone TM",
+          "Independent SAP TM system integrated with ERP."
+        ],
+        [
+          "Cloud Deployment",
+          "SAP-hosted cloud environment."
+        ],
+        [
+          "Hybrid Deployment",
+          "Combination of on-premise and cloud systems."
+        ]
+      ]
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "Embedded SAP TM"
+    },
+    {
+      "id": "SEC7",
+      "type": "bullet-list",
+      "items": [
+        "Runs inside SAP S/4HANA",
+        "No CIF integration required",
+        "Shared master data",
+        "Simpler architecture",
+        "Lower maintenance effort",
+        "Recommended for new S/4HANA implementations"
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "Standalone SAP TM"
+    },
+    {
+      "id": "SEC9",
+      "type": "bullet-list",
+      "items": [
+        "Separate SAP TM server",
+        "Integrated with ERP systems",
+        "Supports complex logistics networks",
+        "Suitable for enterprise-scale planning",
+        "Independent upgrade lifecycle"
+      ]
+    },
+    {
+      "id": "SEC10",
+      "type": "comparison",
+      "title": "Embedded TM vs Standalone TM",
+      "leftTitle": "Embedded TM",
+      "rightTitle": "Standalone TM",
+      "rows": [
+        {
+          "feature": "System",
+          "left": "Inside S/4HANA",
+          "right": "Separate Application"
+        },
+        {
+          "feature": "Master Data",
+          "left": "Shared",
+          "right": "Replicated"
+        },
+        {
+          "feature": "Integration",
+          "left": "Native",
+          "right": "Interfaces Required"
+        },
+        {
+          "feature": "Maintenance",
+          "left": "Lower",
+          "right": "Higher"
+        },
+        {
+          "feature": "Recommended For",
+          "left": "Most Customers",
+          "right": "Large Enterprises"
+        }
+      ]
+    },
+    {
+      "id": "SEC11",
+      "type": "heading",
+      "title": "SAP TM System Landscape"
+    },
+    {
+      "id": "SEC12",
+      "type": "process-flow",
+      "title": "Integrated Landscape",
+      "orientation": "horizontal",
+      "steps": [
+        "SAP S/4HANA",
+        "SAP TM",
+        "SAP EWM",
+        "Carrier",
+        "Customer",
+        "Finance"
+      ]
+    },
+    {
+      "id": "SEC13",
+      "type": "heading",
+      "title": "Systems Integrated with SAP TM"
+    },
+    {
+      "id": "SEC14",
+      "type": "table",
+      "title": "Integration Landscape",
+      "headers": [
+        "System",
+        "Purpose"
+      ],
+      "rows": [
+        [
+          "SAP SD",
+          "Outbound Deliveries"
+        ],
+        [
+          "SAP MM",
+          "Inbound Deliveries"
+        ],
+        [
+          "SAP EWM",
+          "Warehouse Execution"
+        ],
+        [
+          "SAP GTS",
+          "Trade Compliance"
+        ],
+        [
+          "SAP Event Management",
+          "Shipment Tracking"
+        ],
+        [
+          "Carrier Systems",
+          "Transportation Execution"
+        ],
+        [
+          "SAP FI",
+          "Freight Settlement"
+        ]
+      ]
+    },
+    {
+      "id": "SEC15",
+      "type": "heading",
+      "title": "Business Benefits"
+    },
+    {
+      "id": "SEC16",
+      "type": "bullet-list",
+      "items": [
+        "Simplified architecture",
+        "Reduced integration effort",
+        "Improved data consistency",
+        "Better performance",
+        "Lower implementation cost",
+        "Scalable transportation planning"
+      ]
+    },
+    {
+      "id": "SEC17",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real Project Example",
+      "content": "A pharmaceutical company migrated from Standalone SAP TM to Embedded TM after implementing SAP S/4HANA, reducing interface maintenance while improving planning performance."
+    },
+    {
+      "id": "SEC18",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Interview Tip",
+      "content": "Know the difference between Embedded TM and Standalone TM. This is one of the most frequently asked SAP TM implementation questions."
+    },
+    {
+      "id": "SEC19",
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Common Mistake",
+      "content": "Do not assume Embedded TM has fewer capabilities. In modern SAP S/4HANA releases, Embedded TM supports most transportation planning scenarios required by customers."
+    },
+    {
+      "id": "SEC20",
+      "type": "heading",
+      "title": "Revision Summary"
+    },
+    {
+      "id": "SEC21",
+      "type": "bullet-list",
+      "items": [
+        "Embedded TM runs inside SAP S/4HANA.",
+        "Standalone TM is a separate application.",
+        "Embedded TM is preferred for most implementations.",
+        "SAP TM integrates with SD, MM, EWM, FI and external carriers.",
+        "Deployment choice depends on business requirements."
+      ]
+    }
+  ],
+  "relatedLearning": {
+    "viva": [
+      "V-M2-T3-001"
+    ],
+    "handsOnLabs": [
+      "LAB-M2-003"
+    ],
+    "caseStudies": [
+      "CASE-M2-003"
+    ],
+    "practiceMcqs": [
+      "M2T3Q001"
+    ]
+  }
+}

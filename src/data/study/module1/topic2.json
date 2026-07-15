@@ -1,0 +1,187 @@
+{
+  "id": "M1T2",
+  "module": {
+    "id": 1,
+    "title": "ERP & SAP Overview",
+    "sequence": 1
+  },
+  "topic": {
+    "id": 2,
+    "title": "Evolution of ERP & Introduction to SAP",
+    "sequence": 2
+  },
+  "metadata": {
+    "difficulty": "Beginner",
+    "estimatedReadingTime": 30,
+    "estimatedRevisionTime": 10,
+    "version": "1.0",
+    "lastUpdated": "2026-07-15",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "ERP",
+      "SAP",
+      "S4HANA"
+    ],
+    "prerequisites": [
+      "M1T1"
+    ],
+    "learningPath": [
+      "Study",
+      "Viva",
+      "Hands-on",
+      "MCQ"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Understand ERP evolution",
+      "description": "Explain how enterprise systems evolved from manual methods to intelligent ERP."
+    },
+    {
+      "id": "LO2",
+      "title": "Explain SAP",
+      "description": "Describe SAP as an ERP provider and its role in enterprise transformation."
+    },
+    {
+      "id": "LO3",
+      "title": "Identify SAP portfolio",
+      "description": "Recognize key SAP products and their business purpose."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "Evolution of Business Systems"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "Business software evolved from manual record keeping to modern intelligent ERP systems. As organizations grew, isolated applications could no longer support integrated business operations, leading to the development of Enterprise Resource Planning (ERP)."
+    },
+    {
+      "id": "SEC3",
+      "type": "table",
+      "title": "Evolution of Enterprise Systems",
+      "headers": [
+        "Generation",
+        "Description"
+      ],
+      "rows": [
+        ["Manual Systems", "Paper-based records and ledgers"],
+        ["Standalone Applications", "Separate software for each department"],
+        ["MRP", "Material Requirements Planning"],
+        ["MRP II", "Manufacturing Resource Planning"],
+        ["ERP", "Enterprise-wide integrated business system"],
+        ["SAP S/4HANA", "Next-generation intelligent ERP"]
+      ]
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "What is SAP?"
+    },
+    {
+      "id": "SEC5",
+      "type": "paragraph",
+      "content": "SAP stands for Systems, Applications and Products in Data Processing. It is one of the world's leading providers of enterprise application software, helping organizations manage finance, logistics, procurement, manufacturing, sales and transportation through an integrated platform."
+    },
+    {
+      "id": "SEC6",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Interview Tip",
+      "content": "ERP is a business concept. SAP is a company that provides ERP software."
+    },
+    {
+      "id": "SEC7",
+      "type": "heading",
+      "title": "Why Companies Choose SAP"
+    },
+    {
+      "id": "SEC8",
+      "type": "bullet-list",
+      "items": [
+        "Integrated business processes",
+        "Real-time reporting",
+        "Scalable architecture",
+        "Global compliance",
+        "Industry best practices",
+        "Cloud and On-Premise deployment",
+        "Powerful analytics",
+        "AI-enabled business processes"
+      ]
+    },
+    {
+      "id": "SEC9",
+      "type": "heading",
+      "title": "SAP Product Portfolio"
+    },
+    {
+      "id": "SEC10",
+      "type": "table",
+      "title": "Major SAP Solutions",
+      "headers": [
+        "Product",
+        "Purpose"
+      ],
+      "rows": [
+        ["SAP S/4HANA", "Enterprise Resource Planning"],
+        ["SAP TM", "Transportation Management"],
+        ["SAP EWM", "Warehouse Management"],
+        ["SAP Ariba", "Procurement"],
+        ["SAP SuccessFactors", "Human Resources"],
+        ["SAP BTP", "Business Technology Platform"],
+        ["SAP IBP", "Integrated Business Planning"],
+        ["SAP Analytics Cloud", "Reporting & Analytics"]
+      ]
+    },
+    {
+      "id": "SEC11",
+      "type": "heading",
+      "title": "Business Benefits of SAP"
+    },
+    {
+      "id": "SEC12",
+      "type": "bullet-list",
+      "items": [
+        "Single source of truth",
+        "Reduced operational costs",
+        "Automation of business processes",
+        "Improved customer satisfaction",
+        "Better decision making",
+        "Higher productivity",
+        "Global business support"
+      ]
+    },
+    {
+      "id": "SEC13",
+      "type": "callout",
+      "calloutType": "best-practice",
+      "title": "Best Practice",
+      "content": "Organizations should implement standard SAP processes wherever possible instead of heavily customizing the system."
+    },
+    {
+      "id": "SEC14",
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Common Mistake",
+      "content": "Many beginners think SAP is only used by large companies. Today, SAP provides solutions suitable for businesses of various sizes through cloud offerings."
+    }
+  ],
+  "relatedLearning": {
+    "viva": [
+      "V-M1-T2-001"
+    ],
+    "handsOnLabs": [
+      "LAB-M1-002"
+    ],
+    "caseStudies": [
+      "CASE-M1-002"
+    ],
+    "practiceMcqs": [
+      "M1T2Q001"
+    ]
+  }
+}

@@ -1,0 +1,298 @@
+{
+  "id": "M5T4",
+  "module": {
+    "id": 5,
+    "title": "SAP TM Transportation Planning",
+    "sequence": 5
+  },
+  "topic": {
+    "id": 4,
+    "title": "Transportation Cockpit",
+    "sequence": 4
+  },
+  "metadata": {
+    "difficulty": "Beginner",
+    "estimatedReadingTime": 35,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-15",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "Transportation Cockpit",
+      "Planning Workspace"
+    ],
+    "prerequisites": [
+      "M5T1",
+      "M5T2",
+      "M5T3"
+    ],
+    "learningPath": [
+      "Study",
+      "Viva",
+      "Hands-on",
+      "MCQ"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Understand Transportation Cockpit",
+      "description": "Explain the cockpit as central interface for planner-driven and optimizer-driven operations."
+    },
+    {
+      "id": "LO2",
+      "title": "Understand planning methods",
+      "description": "Differentiate manual, interactive, optimizer and background planning methods."
+    },
+    {
+      "id": "LO3",
+      "title": "Understand planning workflow",
+      "description": "Describe end-to-end cockpit flow from loading demand to saving freight plans."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "Transportation Cockpit"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "The Transportation Cockpit is the primary planning workspace in SAP Transportation Management. It provides transportation planners with a graphical interface to view Freight Units, Freight Orders, Resources and transportation demand, enabling manual, interactive and optimizer-based planning."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Key Concept",
+      "content": "The Transportation Cockpit is the central planning tool where transportation planners create, modify, optimize and monitor transportation plans."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Objectives of Transportation Cockpit"
+    },
+    {
+      "id": "SEC5",
+      "type": "bullet-list",
+      "items": [
+        "View transportation demand",
+        "Perform manual planning",
+        "Execute optimizer planning",
+        "Assign resources",
+        "Assign carriers",
+        "Monitor transportation plans",
+        "Manage transportation exceptions"
+      ]
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "Transportation Cockpit Layout"
+    },
+    {
+      "id": "SEC7",
+      "type": "table",
+      "title": "Main Cockpit Areas",
+      "headers": [
+        "Area",
+        "Purpose"
+      ],
+      "rows": [
+        [
+          "Freight Unit List",
+          "Displays transportation demand"
+        ],
+        [
+          "Freight Order List",
+          "Displays planned shipments"
+        ],
+        [
+          "Resource View",
+          "Shows available vehicles"
+        ],
+        [
+          "Planning Timeline",
+          "Displays transportation schedule"
+        ],
+        [
+          "Map View",
+          "Visualizes transportation routes"
+        ],
+        [
+          "Planning Messages",
+          "Displays planning warnings and errors"
+        ]
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "Transportation Cockpit Workflow"
+    },
+    {
+      "id": "SEC9",
+      "type": "process-flow",
+      "title": "Planning Workflow",
+      "orientation": "horizontal",
+      "steps": [
+        "Load Freight Units",
+        "Analyze Demand",
+        "Run Optimizer",
+        "Assign Carrier",
+        "Assign Resource",
+        "Create Freight Order",
+        "Save Plan"
+      ]
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "Planning Methods"
+    },
+    {
+      "id": "SEC11",
+      "type": "table",
+      "title": "Planning Types",
+      "headers": [
+        "Planning Method",
+        "Description"
+      ],
+      "rows": [
+        [
+          "Manual Planning",
+          "Planner creates Freight Orders manually"
+        ],
+        [
+          "Interactive Planning",
+          "Planner modifies optimizer suggestions"
+        ],
+        [
+          "Optimizer Planning",
+          "System automatically creates optimized plans"
+        ],
+        [
+          "Background Planning",
+          "Planning executed automatically in scheduled jobs"
+        ]
+      ]
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Business Scenario"
+    },
+    {
+      "id": "SEC13",
+      "type": "paragraph",
+      "content": "A transportation planner receives 250 Freight Units for today's deliveries. Using the Transportation Cockpit, the planner reviews transportation demand, executes the optimizer, validates the proposed Freight Orders, assigns available trucks and releases shipments for execution."
+    },
+    {
+      "id": "SEC14",
+      "type": "comparison",
+      "title": "Manual Planning vs Optimizer Planning",
+      "leftTitle": "Manual",
+      "rightTitle": "Optimizer",
+      "rows": [
+        {
+          "feature": "Decision Maker",
+          "left": "Transportation Planner",
+          "right": "Optimization Engine"
+        },
+        {
+          "feature": "Planning Speed",
+          "left": "Lower",
+          "right": "Very Fast"
+        },
+        {
+          "feature": "Optimization Quality",
+          "left": "Planner Experience",
+          "right": "Rule-Based Optimization"
+        },
+        {
+          "feature": "Suitable For",
+          "left": "Special Cases",
+          "right": "Large Daily Planning"
+        }
+      ]
+    },
+    {
+      "id": "SEC15",
+      "type": "heading",
+      "title": "Benefits of Transportation Cockpit"
+    },
+    {
+      "id": "SEC16",
+      "type": "bullet-list",
+      "items": [
+        "Central planning workspace",
+        "Real-time transportation visibility",
+        "Fast shipment planning",
+        "Interactive optimization",
+        "Better resource utilization",
+        "Exception management",
+        "Improved planner productivity"
+      ]
+    },
+    {
+      "id": "SEC17",
+      "type": "callout",
+      "calloutType": "best-practice",
+      "title": "Best Practice",
+      "content": "Always review optimizer proposals before releasing Freight Orders. Business constraints or exceptional customer requirements may require manual adjustments."
+    },
+    {
+      "id": "SEC18",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real Project Example",
+      "content": "A logistics company uses the Transportation Cockpit to plan over 12,000 Freight Units daily. Optimizer-based planning reduced manual planning time by 65% while increasing truck utilization by 21%."
+    },
+    {
+      "id": "SEC19",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Interview Tip",
+      "content": "Transportation Cockpit is one of the most frequently discussed SAP TM planning tools. Be prepared to explain its purpose, layout and planning methods."
+    },
+    {
+      "id": "SEC20",
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Common Mistake",
+      "content": "The Transportation Cockpit does not create transportation demand. Freight Units are created first, then loaded into the Cockpit for planning."
+    },
+    {
+      "id": "SEC21",
+      "type": "heading",
+      "title": "Revision Summary"
+    },
+    {
+      "id": "SEC22",
+      "type": "bullet-list",
+      "items": [
+        "Transportation Cockpit is the planner's primary workspace.",
+        "It supports manual, interactive and optimizer-based planning.",
+        "Freight Units are loaded into the Cockpit for planning.",
+        "Freight Orders are created from planned Freight Units.",
+        "The Cockpit improves transportation planning efficiency and visibility."
+      ]
+    }
+  ],
+  "relatedLearning": {
+    "viva": [
+      "V-M5-T4-001"
+    ],
+    "handsOnLabs": [
+      "LAB-M5-004"
+    ],
+    "caseStudies": [
+      "CASE-M5-004"
+    ],
+    "practiceMcqs": [
+      "M5T4Q001"
+    ]
+  }
+}

@@ -1,0 +1,298 @@
+{
+  "id": "M3T2",
+  "module": {
+    "id": 3,
+    "title": "SAP TM Organizational Structure & Master Data",
+    "sequence": 3
+  },
+  "topic": {
+    "id": 2,
+    "title": "SAP TM Organizational Units & Their Business Roles",
+    "sequence": 2
+  },
+  "metadata": {
+    "difficulty": "Beginner",
+    "estimatedReadingTime": 35,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-15",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "Organizational Unit",
+      "Business Role"
+    ],
+    "prerequisites": [
+      "M3T1"
+    ],
+    "learningPath": [
+      "Study",
+      "Viva",
+      "Hands-on",
+      "MCQ"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Understand business roles in TM",
+      "description": "Identify key SAP TM roles and their contribution in transportation lifecycle phases."
+    },
+    {
+      "id": "LO2",
+      "title": "Differentiate planner and dispatcher",
+      "description": "Explain planning versus execution responsibilities across organizational roles."
+    },
+    {
+      "id": "LO3",
+      "title": "Understand role collaboration",
+      "description": "Describe how planning, execution, warehouse and settlement teams coordinate."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "Business Roles in SAP TM"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "SAP Transportation Management assigns transportation responsibilities through organizational units and business roles. Each role participates in a specific phase of the transportation lifecycle such as planning, execution, monitoring or settlement."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Key Concept",
+      "content": "A business role defines WHAT a user performs, while the organizational unit defines WHERE the responsibility belongs."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Major Business Roles"
+    },
+    {
+      "id": "SEC5",
+      "type": "table",
+      "title": "SAP TM Business Roles",
+      "headers": [
+        "Role",
+        "Primary Responsibility"
+      ],
+      "rows": [
+        [
+          "Transportation Planner",
+          "Transportation Planning"
+        ],
+        [
+          "Dispatcher",
+          "Resource Assignment"
+        ],
+        [
+          "Carrier",
+          "Transportation Execution"
+        ],
+        [
+          "Warehouse Operator",
+          "Goods Loading & Unloading"
+        ],
+        [
+          "Freight Settlement Specialist",
+          "Transportation Billing"
+        ],
+        [
+          "Transportation Manager",
+          "Monitoring & KPIs"
+        ]
+      ]
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "Transportation Planner Responsibilities"
+    },
+    {
+      "id": "SEC7",
+      "type": "bullet-list",
+      "items": [
+        "Review Freight Units",
+        "Execute transportation planning",
+        "Consolidate shipments",
+        "Assign carriers",
+        "Create Freight Orders",
+        "Optimize transportation cost",
+        "Monitor planning exceptions"
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "Dispatcher Responsibilities"
+    },
+    {
+      "id": "SEC9",
+      "type": "bullet-list",
+      "items": [
+        "Assign vehicles",
+        "Assign drivers",
+        "Allocate resources",
+        "Schedule transportation",
+        "Monitor departures",
+        "Handle transportation delays"
+      ]
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "Carrier Responsibilities"
+    },
+    {
+      "id": "SEC11",
+      "type": "bullet-list",
+      "items": [
+        "Accept transportation orders",
+        "Execute shipments",
+        "Update shipment status",
+        "Submit freight invoices",
+        "Provide proof of delivery"
+      ]
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Transportation Manager Responsibilities"
+    },
+    {
+      "id": "SEC13",
+      "type": "table",
+      "title": "Manager Activities",
+      "headers": [
+        "Activity",
+        "Business Objective"
+      ],
+      "rows": [
+        [
+          "Monitor KPIs",
+          "Improve transportation efficiency"
+        ],
+        [
+          "Review Planning",
+          "Optimize resource utilization"
+        ],
+        [
+          "Analyze Freight Cost",
+          "Reduce logistics expenses"
+        ],
+        [
+          "Manage Exceptions",
+          "Improve customer service"
+        ]
+      ]
+    },
+    {
+      "id": "SEC14",
+      "type": "heading",
+      "title": "Role Collaboration"
+    },
+    {
+      "id": "SEC15",
+      "type": "process-flow",
+      "title": "Transportation Execution Collaboration",
+      "orientation": "horizontal",
+      "steps": [
+        "Planner",
+        "Dispatcher",
+        "Carrier",
+        "Warehouse",
+        "Customer",
+        "Settlement"
+      ]
+    },
+    {
+      "id": "SEC16",
+      "type": "heading",
+      "title": "Business Scenario"
+    },
+    {
+      "id": "SEC17",
+      "type": "paragraph",
+      "content": "A transportation planner creates Freight Orders for today's deliveries. The dispatcher assigns trucks and drivers. The carrier executes transportation, while the warehouse loads goods. After delivery, the freight settlement specialist validates carrier invoices before payment."
+    },
+    {
+      "id": "SEC18",
+      "type": "comparison",
+      "title": "Planner vs Dispatcher",
+      "leftTitle": "Transportation Planner",
+      "rightTitle": "Dispatcher",
+      "rows": [
+        {
+          "feature": "Focus",
+          "left": "Planning",
+          "right": "Execution"
+        },
+        {
+          "feature": "Main Activity",
+          "left": "Freight Orders",
+          "right": "Vehicle Assignment"
+        },
+        {
+          "feature": "Optimization",
+          "left": "Yes",
+          "right": "Limited"
+        }
+      ]
+    },
+    {
+      "id": "SEC19",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real Project Example",
+      "content": "An automotive manufacturer has one central Planning Organization with 15 planners. Dispatchers assign over 250 trucks daily, while regional transportation managers monitor delivery KPIs using SAP TM dashboards."
+    },
+    {
+      "id": "SEC20",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Interview Tip",
+      "content": "Know the responsibilities of Transportation Planner, Dispatcher and Carrier. These roles are commonly discussed in SAP TM interviews and implementation workshops."
+    },
+    {
+      "id": "SEC21",
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Common Mistake",
+      "content": "Do not assume the Carrier performs transportation planning. Planning is done by the Transportation Planner; the Carrier executes the assigned transportation."
+    },
+    {
+      "id": "SEC22",
+      "type": "heading",
+      "title": "Revision Summary"
+    },
+    {
+      "id": "SEC23",
+      "type": "bullet-list",
+      "items": [
+        "Transportation Planner plans shipments.",
+        "Dispatcher assigns resources.",
+        "Carrier executes transportation.",
+        "Transportation Manager monitors KPIs.",
+        "Business roles collaborate throughout the transportation lifecycle."
+      ]
+    }
+  ],
+  "relatedLearning": {
+    "viva": [
+      "V-M3-T2-001"
+    ],
+    "handsOnLabs": [
+      "LAB-M3-002"
+    ],
+    "caseStudies": [
+      "CASE-M3-002"
+    ],
+    "practiceMcqs": [
+      "M3T2Q001"
+    ]
+  }
+}

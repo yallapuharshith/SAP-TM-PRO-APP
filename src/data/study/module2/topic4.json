@@ -1,0 +1,284 @@
+{
+  "id": "M2T4",
+  "module": {
+    "id": 2,
+    "title": "Transportation Management Foundations",
+    "sequence": 2
+  },
+  "topic": {
+    "id": 4,
+    "title": "SAP TM Business Processes & Transportation Scenarios",
+    "sequence": 4
+  },
+  "metadata": {
+    "difficulty": "Beginner",
+    "estimatedReadingTime": 35,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-15",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "Business Process",
+      "Transportation Scenario"
+    ],
+    "prerequisites": [
+      "M2T1",
+      "M2T2",
+      "M2T3"
+    ],
+    "learningPath": [
+      "Study",
+      "Viva",
+      "Hands-on",
+      "MCQ"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Identify TM transportation scenarios",
+      "description": "Understand inbound, outbound, intercompany, returns and multimodal logistics flows."
+    },
+    {
+      "id": "LO2",
+      "title": "Explain inbound and outbound processes",
+      "description": "Describe process triggers, planning and execution flow in each scenario."
+    },
+    {
+      "id": "LO3",
+      "title": "Understand multimodal transportation",
+      "description": "Explain how SAP TM plans shipments across multiple transportation modes."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "Transportation Scenarios in SAP TM"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "SAP Transportation Management supports multiple transportation scenarios including inbound logistics, outbound logistics, intercompany movements, returns processing and multimodal transportation. The system optimizes transportation planning while providing end-to-end visibility."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Key Concept",
+      "content": "The same SAP TM planning engine can manage inbound, outbound and internal transportation using different business documents."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Major Transportation Scenarios"
+    },
+    {
+      "id": "SEC5",
+      "type": "table",
+      "title": "Business Scenarios",
+      "headers": [
+        "Scenario",
+        "Description"
+      ],
+      "rows": [
+        [
+          "Inbound Transportation",
+          "Goods moving from suppliers to company warehouses."
+        ],
+        [
+          "Outbound Transportation",
+          "Goods delivered from company to customers."
+        ],
+        [
+          "Intercompany Transportation",
+          "Goods transferred between company locations."
+        ],
+        [
+          "Returns Transportation",
+          "Products returned by customers."
+        ],
+        [
+          "Stock Transfer",
+          "Inventory movement between plants."
+        ],
+        [
+          "Multimodal Transportation",
+          "Transportation using multiple modes like road, rail and sea."
+        ]
+      ]
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "Outbound Transportation Process"
+    },
+    {
+      "id": "SEC7",
+      "type": "process-flow",
+      "title": "Outbound Flow",
+      "orientation": "horizontal",
+      "steps": [
+        "Sales Order",
+        "Outbound Delivery",
+        "Freight Unit",
+        "Transportation Planning",
+        "Carrier Assignment",
+        "Freight Order",
+        "Execution",
+        "Delivery",
+        "Freight Settlement"
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "Inbound Transportation Process"
+    },
+    {
+      "id": "SEC9",
+      "type": "process-flow",
+      "title": "Inbound Flow",
+      "orientation": "horizontal",
+      "steps": [
+        "Purchase Order",
+        "Inbound Delivery",
+        "Freight Unit",
+        "Planning",
+        "Carrier",
+        "Freight Order",
+        "Warehouse Receipt"
+      ]
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "Transportation Modes"
+    },
+    {
+      "id": "SEC11",
+      "type": "table",
+      "title": "Modes of Transport",
+      "headers": [
+        "Mode",
+        "Typical Usage"
+      ],
+      "rows": [
+        [
+          "Road",
+          "Domestic transportation"
+        ],
+        [
+          "Rail",
+          "Bulk transportation"
+        ],
+        [
+          "Ocean",
+          "International shipping"
+        ],
+        [
+          "Air",
+          "Urgent deliveries"
+        ],
+        [
+          "Courier",
+          "Small parcel shipments"
+        ]
+      ]
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Multimodal Transportation"
+    },
+    {
+      "id": "SEC13",
+      "type": "paragraph",
+      "content": "SAP TM supports multimodal transportation where a shipment travels through multiple transportation modes, such as truck to port, ocean vessel to destination country and truck to final customer."
+    },
+    {
+      "id": "SEC14",
+      "type": "process-flow",
+      "title": "Multimodal Example",
+      "orientation": "horizontal",
+      "steps": [
+        "Factory",
+        "Truck",
+        "Port",
+        "Ocean Vessel",
+        "Destination Port",
+        "Truck",
+        "Customer"
+      ]
+    },
+    {
+      "id": "SEC15",
+      "type": "heading",
+      "title": "Business Benefits"
+    },
+    {
+      "id": "SEC16",
+      "type": "bullet-list",
+      "items": [
+        "Optimized transportation planning",
+        "Reduced logistics cost",
+        "Better resource utilization",
+        "Improved shipment visibility",
+        "Support for global logistics",
+        "Automated carrier selection"
+      ]
+    },
+    {
+      "id": "SEC17",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real Project Example",
+      "content": "A consumer goods company transports products from its manufacturing plant to a seaport by truck, ships them internationally by ocean vessel and delivers them to retailers using local road carriers. SAP TM manages the complete multimodal process within one transportation plan."
+    },
+    {
+      "id": "SEC18",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Interview Tip",
+      "content": "Interviewers often ask the difference between inbound and outbound transportation. Always explain both the business document that starts the process and the business objective."
+    },
+    {
+      "id": "SEC19",
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Common Mistake",
+      "content": "Do not assume SAP TM is only used for outbound logistics. It supports inbound, outbound, intercompany, returns and multimodal transportation."
+    },
+    {
+      "id": "SEC20",
+      "type": "heading",
+      "title": "Revision Summary"
+    },
+    {
+      "id": "SEC21",
+      "type": "bullet-list",
+      "items": [
+        "SAP TM supports inbound and outbound transportation.",
+        "Multimodal transportation combines multiple transport modes.",
+        "Freight Units are planned into Freight Orders.",
+        "Different business documents trigger different transportation scenarios.",
+        "Transportation planning is optimized using SAP TM."
+      ]
+    }
+  ],
+  "relatedLearning": {
+    "viva": [
+      "V-M2-T4-001"
+    ],
+    "handsOnLabs": [
+      "LAB-M2-004"
+    ],
+    "caseStudies": [
+      "CASE-M2-004"
+    ],
+    "practiceMcqs": [
+      "M2T4Q001"
+    ]
+  }
+}

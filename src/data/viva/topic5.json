@@ -1,0 +1,291 @@
+{
+  "id": "VIVA-T5",
+  "section": {
+    "id": "viva",
+    "title": "Viva Preparation",
+    "sequence": 1
+  },
+  "topic": {
+    "id": 5,
+    "title": "SAP TM HR & Managerial Viva Preparation",
+    "sequence": 5
+  },
+  "metadata": {
+    "difficulty": "Beginner",
+    "estimatedReadingTime": 35,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-15",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "HR Viva",
+      "Managerial Preparation"
+    ],
+    "prerequisites": [
+      "VIVA-T4"
+    ],
+    "learningPath": [
+      "Viva",
+      "Study",
+      "MCQ"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Understand HR and managerial interview expectations",
+      "description": "Explain communication, professionalism, collaboration, and problem-solving behaviors expected in viva rounds."
+    },
+    {
+      "id": "LO2",
+      "title": "Understand structured behavioral answering",
+      "description": "Apply the STAR method and business-value framing for experience and situational questions."
+    },
+    {
+      "id": "LO3",
+      "title": "Understand business-oriented SAP TM communication",
+      "description": "Connect technical SAP TM concepts with operational outcomes and leadership-level discussions."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "SAP TM HR & Managerial Viva Preparation"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "The HR and Managerial Viva evaluates communication skills, problem-solving ability, teamwork, learning attitude and understanding of SAP TM from a business perspective. Candidates are expected to explain concepts clearly, demonstrate professionalism and relate SAP TM to real business scenarios."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Key Strategy",
+      "content": "Use the STAR method (Situation, Task, Action, Result) for experience-based questions and always connect your answers to business value."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Common HR Questions"
+    },
+    {
+      "id": "SEC5",
+      "type": "table",
+      "title": "Frequently Asked HR Questions",
+      "headers": [
+        "Question",
+        "Expected Answer Focus"
+      ],
+      "rows": [
+        [
+          "Tell me about yourself.",
+          "Education, skills and SAP TM learning journey."
+        ],
+        [
+          "Why SAP TM?",
+          "Interest in logistics and enterprise solutions."
+        ],
+        [
+          "Why should we hire you?",
+          "Learning ability, problem-solving and teamwork."
+        ],
+        [
+          "What are your strengths?",
+          "Adaptability, analytical thinking, communication."
+        ],
+        [
+          "What is your biggest weakness?",
+          "Mention one and explain improvement efforts."
+        ],
+        [
+          "Where do you see yourself in 5 years?",
+          "SAP TM consultant or solution expert."
+        ]
+      ]
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "Managerial Questions"
+    },
+    {
+      "id": "SEC7",
+      "type": "table",
+      "title": "Leadership & Project Questions",
+      "headers": [
+        "Question",
+        "Expected Discussion"
+      ],
+      "rows": [
+        [
+          "How would you handle a production issue?",
+          "Prioritize, analyze, communicate and resolve."
+        ],
+        [
+          "How do you manage deadlines?",
+          "Planning, prioritization and tracking."
+        ],
+        [
+          "Describe a challenging project.",
+          "Explain problem, action and outcome."
+        ],
+        [
+          "How do you work in a team?",
+          "Collaboration and knowledge sharing."
+        ],
+        [
+          "How do you learn new technologies?",
+          "Training, documentation and hands-on practice."
+        ]
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "SAP TM Business Questions"
+    },
+    {
+      "id": "SEC9",
+      "type": "bullet-list",
+      "items": [
+        "Why is transportation optimization important?",
+        "How does SAP TM reduce logistics costs?",
+        "Why is integration with SAP S/4HANA required?",
+        "How do KPIs improve transportation performance?",
+        "What is the role of SAP Analytics Cloud?",
+        "How does SAP TM improve customer satisfaction?"
+      ]
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "Behavioral Scenario"
+    },
+    {
+      "id": "SEC11",
+      "type": "paragraph",
+      "content": "Question: During Go-Live, users report that Freight Orders are not being created. How would you respond? A strong answer includes staying calm, gathering information, checking interfaces and master data, involving the appropriate support teams, communicating with stakeholders and validating the solution before closing the issue."
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Ideal Interview Structure"
+    },
+    {
+      "id": "SEC13",
+      "type": "process-flow",
+      "title": "Answer Framework",
+      "orientation": "horizontal",
+      "steps": [
+        "Listen Carefully",
+        "Understand the Question",
+        "Answer Clearly",
+        "Provide Example",
+        "Summarize"
+      ]
+    },
+    {
+      "id": "SEC14",
+      "type": "comparison",
+      "title": "Poor Response vs Professional Response",
+      "leftTitle": "Poor",
+      "rightTitle": "Professional",
+      "rows": [
+        {
+          "feature": "Communication",
+          "left": "Short and unclear",
+          "right": "Structured and confident"
+        },
+        {
+          "feature": "Examples",
+          "left": "No practical example",
+          "right": "Business-oriented example"
+        },
+        {
+          "feature": "Problem Solving",
+          "left": "Reactive",
+          "right": "Analytical and proactive"
+        }
+      ]
+    },
+    {
+      "id": "SEC15",
+      "type": "heading",
+      "title": "Managerial Expectations"
+    },
+    {
+      "id": "SEC16",
+      "type": "bullet-list",
+      "items": [
+        "Clear communication",
+        "Positive attitude",
+        "Customer focus",
+        "Analytical thinking",
+        "Team collaboration",
+        "Willingness to learn",
+        "Professional behavior"
+      ]
+    },
+    {
+      "id": "SEC17",
+      "type": "callout",
+      "calloutType": "best-practice",
+      "title": "Best Practice",
+      "content": "Support your answers with examples from academic projects, internships or training. Even simple examples demonstrate practical thinking."
+    },
+    {
+      "id": "SEC18",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Sample Answer",
+      "content": "Question: Why do you want to work in SAP TM? Answer: SAP TM combines technology with real-world logistics processes. I enjoy solving business problems through technology, and SAP TM allows me to optimize transportation, reduce costs and improve supply chain efficiency while continuously learning new SAP innovations."
+    },
+    {
+      "id": "SEC19",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "HR Tip",
+      "content": "Maintain a positive attitude throughout the interview. If you don't know an answer, explain your thought process and how you would find the solution instead of guessing."
+    },
+    {
+      "id": "SEC20",
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Common Mistake",
+      "content": "Avoid criticizing previous projects, trainers or teammates. Focus on what you learned and how you improved."
+    },
+    {
+      "id": "SEC21",
+      "type": "heading",
+      "title": "Final HR & Managerial Checklist"
+    },
+    {
+      "id": "SEC22",
+      "type": "bullet-list",
+      "items": [
+        "Prepare a concise self-introduction.",
+        "Know why you chose SAP TM.",
+        "Practice STAR-based behavioral answers.",
+        "Explain business value in technical discussions.",
+        "Demonstrate confidence, professionalism and a willingness to learn."
+      ]
+    }
+  ],
+  "relatedLearning": {
+    "viva": [
+      "V-M11-T5-001"
+    ],
+    "handsOnLabs": [
+      "LAB-M11-005"
+    ],
+    "caseStudies": [
+      "CASE-M11-005"
+    ],
+    "practiceMcqs": [
+      "M11T5Q001"
+    ]
+  }
+}

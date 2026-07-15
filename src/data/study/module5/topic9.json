@@ -1,0 +1,303 @@
+{
+  "id": "M5T9",
+  "module": {
+    "id": 5,
+    "title": "SAP TM Transportation Planning",
+    "sequence": 5
+  },
+  "topic": {
+    "id": 9,
+    "title": "Planning Constraints & Planning Profiles",
+    "sequence": 9
+  },
+  "metadata": {
+    "difficulty": "Beginner",
+    "estimatedReadingTime": 35,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-15",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "Planning Constraint",
+      "Planning Profile"
+    ],
+    "prerequisites": [
+      "M5T1",
+      "M5T2",
+      "M5T3",
+      "M5T4",
+      "M5T5",
+      "M5T6",
+      "M5T7",
+      "M5T8"
+    ],
+    "learningPath": [
+      "Study",
+      "Viva",
+      "Hands-on",
+      "MCQ"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Understand planning constraints",
+      "description": "Explain mandatory rules that must not be violated during transportation planning."
+    },
+    {
+      "id": "LO2",
+      "title": "Understand planning profiles",
+      "description": "Describe profile components controlling cockpit and optimizer behavior."
+    },
+    {
+      "id": "LO3",
+      "title": "Differentiate profile and constraint",
+      "description": "Clarify planning behavior configuration versus planning limitations."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "Planning Constraints & Planning Profiles"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "Transportation Planning in SAP TM is governed by Planning Constraints and Planning Profiles. Constraints define the rules that must never be violated during planning, while Planning Profiles determine how the optimizer and Transportation Cockpit execute transportation planning."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Key Concept",
+      "content": "Planning Profiles define how planning is executed, whereas Planning Constraints define what the optimizer is allowed or not allowed to do."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Objectives of Planning Profiles"
+    },
+    {
+      "id": "SEC5",
+      "type": "bullet-list",
+      "items": [
+        "Control planning behavior",
+        "Configure optimization settings",
+        "Define planning strategies",
+        "Improve planning consistency",
+        "Reduce manual effort",
+        "Support planner productivity"
+      ]
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "Planning Constraints"
+    },
+    {
+      "id": "SEC7",
+      "type": "table",
+      "title": "Common Planning Constraints",
+      "headers": [
+        "Constraint",
+        "Purpose"
+      ],
+      "rows": [
+        [
+          "Vehicle Capacity",
+          "Prevent overloading"
+        ],
+        [
+          "Delivery Time Window",
+          "Meet customer commitments"
+        ],
+        [
+          "Driver Working Hours",
+          "Legal compliance"
+        ],
+        [
+          "Transportation Lane",
+          "Allow valid routes only"
+        ],
+        [
+          "Carrier Availability",
+          "Assign available carrier"
+        ],
+        [
+          "Product Compatibility",
+          "Separate incompatible products"
+        ],
+        [
+          "Loading Restrictions",
+          "Support safe transportation"
+        ]
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "Planning Profile Components"
+    },
+    {
+      "id": "SEC9",
+      "type": "table",
+      "title": "Planning Profile Configuration",
+      "headers": [
+        "Component",
+        "Purpose"
+      ],
+      "rows": [
+        [
+          "Planning Strategy",
+          "Manual or automatic planning"
+        ],
+        [
+          "Optimizer Settings",
+          "Optimization objectives"
+        ],
+        [
+          "Selection Profile",
+          "Transportation demand filtering"
+        ],
+        [
+          "Scheduling Parameters",
+          "Pickup and delivery timing"
+        ],
+        [
+          "Default Values",
+          "Planning defaults"
+        ]
+      ]
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "Planning Execution"
+    },
+    {
+      "id": "SEC11",
+      "type": "process-flow",
+      "title": "Planning Profile Execution",
+      "orientation": "horizontal",
+      "steps": [
+        "Load Freight Units",
+        "Apply Planning Profile",
+        "Validate Constraints",
+        "Run Optimizer",
+        "Generate Freight Orders",
+        "Planner Review"
+      ]
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Business Scenario"
+    },
+    {
+      "id": "SEC13",
+      "type": "paragraph",
+      "content": "A refrigerated food company configures a Planning Profile that prioritizes delivery time over transportation cost. The optimizer only selects refrigerated vehicles, validates driver schedules and ensures all deliveries reach customers within the committed delivery window."
+    },
+    {
+      "id": "SEC14",
+      "type": "comparison",
+      "title": "Planning Profile vs Planning Constraint",
+      "leftTitle": "Planning Profile",
+      "rightTitle": "Planning Constraint",
+      "rows": [
+        {
+          "feature": "Purpose",
+          "left": "Controls planning behavior",
+          "right": "Limits planning decisions"
+        },
+        {
+          "feature": "Configured By",
+          "left": "Planner/Consultant",
+          "right": "Business Rules"
+        },
+        {
+          "feature": "Example",
+          "left": "Automatic Planning",
+          "right": "Maximum Vehicle Capacity"
+        }
+      ]
+    },
+    {
+      "id": "SEC15",
+      "type": "heading",
+      "title": "Business Benefits"
+    },
+    {
+      "id": "SEC16",
+      "type": "bullet-list",
+      "items": [
+        "Consistent transportation planning",
+        "Reduced planning errors",
+        "Higher optimization quality",
+        "Improved legal compliance",
+        "Better planner productivity",
+        "Reliable transportation execution"
+      ]
+    },
+    {
+      "id": "SEC17",
+      "type": "callout",
+      "calloutType": "best-practice",
+      "title": "Best Practice",
+      "content": "Keep Planning Profiles standardized across similar business processes. Avoid creating excessive profile variations unless business requirements clearly justify them."
+    },
+    {
+      "id": "SEC18",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real Project Example",
+      "content": "A pharmaceutical company created separate Planning Profiles for domestic and export shipments. Domestic planning prioritized transportation cost, while export planning prioritized transit time and regulatory compliance."
+    },
+    {
+      "id": "SEC19",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Interview Tip",
+      "content": "Certification questions frequently distinguish Planning Profiles from Planning Constraints. Profiles define planning behavior; constraints define planning limitations."
+    },
+    {
+      "id": "SEC20",
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Common Mistake",
+      "content": "Do not configure optimization objectives that conflict with mandatory planning constraints. Constraints always take precedence over optimization goals."
+    },
+    {
+      "id": "SEC21",
+      "type": "heading",
+      "title": "Revision Summary"
+    },
+    {
+      "id": "SEC22",
+      "type": "bullet-list",
+      "items": [
+        "Planning Profiles configure transportation planning behavior.",
+        "Planning Constraints define mandatory business rules.",
+        "The optimizer validates all constraints before creating Freight Orders.",
+        "Profiles improve consistency across planning activities.",
+        "Constraints ensure legal and operational compliance."
+      ]
+    }
+  ],
+  "relatedLearning": {
+    "viva": [
+      "V-M5-T9-001"
+    ],
+    "handsOnLabs": [
+      "LAB-M5-009"
+    ],
+    "caseStudies": [
+      "CASE-M5-009"
+    ],
+    "practiceMcqs": [
+      "M5T9Q001"
+    ]
+  }
+}

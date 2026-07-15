@@ -1,0 +1,171 @@
+{
+  "id": "M1T1",
+  "module": {
+    "id": 1,
+    "title": "ERP & SAP Overview",
+    "sequence": 1
+  },
+  "topic": {
+    "id": 1,
+    "title": "Introduction to ERP",
+    "sequence": 1
+  },
+  "metadata": {
+    "difficulty": "Beginner",
+    "estimatedReadingTime": 30,
+    "estimatedRevisionTime": 10,
+    "version": "1.0",
+    "lastUpdated": "2026-07-15",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "ERP",
+      "SAP",
+      "S4HANA"
+    ],
+    "prerequisites": [],
+    "learningPath": [
+      "Study",
+      "Viva",
+      "Hands-on",
+      "MCQ"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Understand Enterprise Resource Planning",
+      "description": "Explain the purpose and importance of ERP systems."
+    },
+    {
+      "id": "LO2",
+      "title": "Explain SAP",
+      "description": "Describe SAP and its role as an ERP solution."
+    },
+    {
+      "id": "LO3",
+      "title": "Understand SAP S/4HANA",
+      "description": "Explain why SAP S/4HANA is the next-generation ERP platform."
+    },
+    {
+      "id": "LO4",
+      "title": "Identify Core SAP Modules",
+      "description": "Recognize major SAP functional modules and their purpose."
+    },
+    {
+      "id": "LO5",
+      "title": "Understand Business Process Integration",
+      "description": "Explain how ERP integrates enterprise departments."
+    }
+  ],
+
+  "businessBackground": {
+    "title": "Why ERP Exists",
+    "problem": "Organizations traditionally managed Sales, Procurement, Finance, Warehouse, and Logistics using independent systems. This caused duplicate data, manual communication, delayed reporting, and operational inefficiencies.",
+    "solution": "ERP centralizes business processes into one integrated system with a shared database.",
+    "benefits": [
+      "Real-time information",
+      "Single source of truth",
+      "Reduced manual work",
+      "Improved collaboration",
+      "Better business decisions"
+    ]
+  },
+
+  "businessScenario": {
+    "company": "ABC Electronics",
+    "industry": "Manufacturing",
+    "problem": "Sales receives a large customer order while inventory, warehouse, procurement and transportation operate independently.",
+    "solution": "SAP ERP integrates every department so information automatically flows from Sales to Inventory, Procurement, Warehouse, Transportation and Finance.",
+    "businessBenefit": "Faster order fulfillment, lower transportation cost and higher customer satisfaction."
+  },
+
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "What is ERP?"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "Enterprise Resource Planning (ERP) is an integrated business management system that connects multiple departments through a centralized database. Instead of each department maintaining separate systems, ERP provides a single source of truth for all business operations."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Remember",
+      "content": "ERP is a business concept. SAP is one of the software companies that provides ERP solutions."
+    },
+    {
+      "id": "SEC4",
+      "type": "table",
+      "title": "Business Problems Before ERP",
+      "headers": [
+        "Problem",
+        "Business Impact"
+      ],
+      "rows": [
+        [
+          "Duplicate Data",
+          "Departments maintain inconsistent records"
+        ],
+        [
+          "Manual Processes",
+          "Higher chance of human errors"
+        ],
+        [
+          "No Integration",
+          "Departments work independently"
+        ],
+        [
+          "Poor Visibility",
+          "Management lacks real-time information"
+        ]
+      ]
+    }
+  ],
+
+  "processFlows": [
+    {
+      "id": "PF1",
+      "title": "ERP Business Process",
+      "orientation": "vertical",
+      "steps": [
+        "Customer Order",
+        "Sales",
+        "Inventory Check",
+        "Procurement",
+        "Warehouse",
+        "Transportation",
+        "Billing",
+        "Payment"
+      ]
+    }
+  ],
+
+  "revisionSummary": [
+    "ERP integrates enterprise departments.",
+    "SAP is an ERP software provider.",
+    "ERP uses one centralized database.",
+    "Business processes become standardized.",
+    "Transportation Management is part of the integrated ERP landscape."
+  ],
+
+  "relatedLearning": {
+    "viva": [
+      "V-M1-T1-001",
+      "V-M1-T1-002"
+    ],
+    "handsOnLabs": [
+      "LAB-M1-001"
+    ],
+    "caseStudies": [
+      "CASE-M1-001"
+    ],
+    "practiceMcqs": [
+      "M1T1Q001",
+      "M1T1Q002"
+    ]
+  }
+}

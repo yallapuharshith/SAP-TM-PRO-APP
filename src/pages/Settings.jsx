@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { Database, MoonStar, RotateCcw, Settings2, ShieldCheck, Sparkles } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { useTheme } from '../hooks/useTheme';
+import AdminPanel from './AdminPanel';
 
 const SETTINGS_KEY = 'sap-tm-master-pro-ui-settings-v1';
 const STUDY_PROGRESS_KEY = 'sap-tm-master-pro-study-progress-v1';
@@ -44,6 +45,7 @@ function Settings() {
   const { isDark, toggleTheme } = useTheme();
   const [preferences, setPreferences] = useState(getDefaultPreferences());
   const [status, setStatus] = useState('');
+  const [showAdminAccess, setShowAdminAccess] = useState(false);
 
   useEffect(() => {
     try {
@@ -223,6 +225,40 @@ function Settings() {
             <RotateCcw className="h-3.5 w-3.5" />
             Run Settings Check
           </button>
+        </motion.article>
+
+        <motion.article
+          initial={{ opacity: 0, y: 14 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.18 }}
+          className="glass-card rounded-2xl border border-white/10 p-5 shadow-soft xl:col-span-2"
+        >
+          <div className="mb-3 inline-flex rounded-xl bg-primary/15 p-2 text-primary">
+            <ShieldCheck className="h-4 w-4" />
+          </div>
+          <h4 className="text-sm font-semibold text-white">Admin Controls</h4>
+          <p className="mt-1 text-xs text-slate-300">Open admin login from here. After successful login, admin tools will load below.</p>
+
+          {!showAdminAccess ? (
+            <button
+              type="button"
+              onClick={() => setShowAdminAccess(true)}
+              className="mt-4 rounded-lg border border-primary/40 bg-primary/20 px-4 py-2 text-sm font-semibold text-primary hover:bg-primary/30"
+            >
+              Admin Access
+            </button>
+          ) : (
+            <div className="mt-4 space-y-3">
+              <button
+                type="button"
+                onClick={() => setShowAdminAccess(false)}
+                className="rounded-lg border border-white/20 px-3 py-1.5 text-xs font-semibold text-slate-200 hover:bg-white/10"
+              >
+                Hide Admin Panel
+              </button>
+              <AdminPanel />
+            </div>
+          )}
         </motion.article>
       </section>
     </div>

@@ -38,7 +38,7 @@ function Navbar({ pageTitle, isDark, onThemeToggle, onMenuClick }) {
           </motion.button>
           <button
             type="button"
-            onClick={() => navigate('/study?section=notes')}
+            onClick={() => navigate('/study-notes?section=study')}
             className="hidden min-h-11 min-w-11 items-center justify-center rounded-xl border border-white/15 bg-white/10 p-2 text-slate-100 hover:bg-white/15 sm:inline-flex"
             aria-label="Search"
           >

@@ -1,0 +1,296 @@
+{
+  "id": "M4T3",
+  "module": {
+    "id": 4,
+    "title": "SAP TM Master Data Management",
+    "sequence": 4
+  },
+  "topic": {
+    "id": 3,
+    "title": "Location Master Data",
+    "sequence": 3
+  },
+  "metadata": {
+    "difficulty": "Beginner",
+    "estimatedReadingTime": 35,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-15",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "Location",
+      "Master Data"
+    ],
+    "prerequisites": [
+      "M4T1",
+      "M4T2"
+    ],
+    "learningPath": [
+      "Study",
+      "Viva",
+      "Hands-on",
+      "MCQ"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Understand location master data",
+      "description": "Explain location as the physical anchor for transportation planning and execution."
+    },
+    {
+      "id": "LO2",
+      "title": "Identify location types and attributes",
+      "description": "Recognize plants, warehouses, ports and key location attributes used in TM."
+    },
+    {
+      "id": "LO3",
+      "title": "Understand location integration",
+      "description": "Describe how locations connect with zones, lanes, freight units and freight orders."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "Location Master Data in SAP TM"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "Location is one of the most critical master data objects in SAP TM. Every transportation process starts from a source location and ends at a destination location. Locations represent physical places where transportation activities occur."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Key Concept",
+      "content": "Without valid Locations, SAP TM cannot create Freight Units, determine routes, calculate distances or perform transportation planning."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Purpose of Locations"
+    },
+    {
+      "id": "SEC5",
+      "type": "bullet-list",
+      "items": [
+        "Pickup Point",
+        "Delivery Point",
+        "Warehouse",
+        "Manufacturing Plant",
+        "Distribution Center",
+        "Port",
+        "Airport",
+        "Rail Terminal"
+      ]
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "Types of Locations"
+    },
+    {
+      "id": "SEC7",
+      "type": "table",
+      "title": "Location Types",
+      "headers": [
+        "Location Type",
+        "Business Purpose"
+      ],
+      "rows": [
+        [
+          "Plant",
+          "Manufacturing or Production Facility"
+        ],
+        [
+          "Warehouse",
+          "Storage and Distribution"
+        ],
+        [
+          "Customer",
+          "Delivery Destination"
+        ],
+        [
+          "Supplier",
+          "Pickup Location"
+        ],
+        [
+          "Port",
+          "Ocean Transportation"
+        ],
+        [
+          "Airport",
+          "Air Transportation"
+        ],
+        [
+          "Rail Terminal",
+          "Rail Transportation"
+        ]
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "Location Master Data Attributes"
+    },
+    {
+      "id": "SEC9",
+      "type": "table",
+      "title": "Important Attributes",
+      "headers": [
+        "Attribute",
+        "Purpose"
+      ],
+      "rows": [
+        [
+          "Location ID",
+          "Unique Identifier"
+        ],
+        [
+          "Address",
+          "Transportation Planning"
+        ],
+        [
+          "GPS Coordinates",
+          "Distance Calculation"
+        ],
+        [
+          "Time Zone",
+          "Scheduling"
+        ],
+        [
+          "Calendar",
+          "Working Days"
+        ],
+        [
+          "Location Type",
+          "Business Classification"
+        ]
+      ]
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "Location Integration"
+    },
+    {
+      "id": "SEC11",
+      "type": "process-flow",
+      "title": "Location Usage",
+      "orientation": "horizontal",
+      "steps": [
+        "Business Partner",
+        "Location",
+        "Transportation Zone",
+        "Transportation Lane",
+        "Freight Unit",
+        "Freight Order"
+      ]
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Business Scenario"
+    },
+    {
+      "id": "SEC13",
+      "type": "paragraph",
+      "content": "ABC Manufacturing ships products from its Hyderabad Plant to customers in Bengaluru. SAP TM identifies the pickup Location (Plant), delivery Location (Customer), validates the Transportation Lane and plans the shipment using the available Resources."
+    },
+    {
+      "id": "SEC14",
+      "type": "comparison",
+      "title": "Plant vs Warehouse",
+      "leftTitle": "Plant",
+      "rightTitle": "Warehouse",
+      "rows": [
+        {
+          "feature": "Purpose",
+          "left": "Manufacturing",
+          "right": "Storage"
+        },
+        {
+          "feature": "Activities",
+          "left": "Production",
+          "right": "Inventory Handling"
+        },
+        {
+          "feature": "Integration",
+          "left": "PP, TM",
+          "right": "EWM, TM"
+        }
+      ]
+    },
+    {
+      "id": "SEC15",
+      "type": "heading",
+      "title": "Business Benefits"
+    },
+    {
+      "id": "SEC16",
+      "type": "bullet-list",
+      "items": [
+        "Accurate route planning",
+        "Distance calculation",
+        "Optimized scheduling",
+        "Improved shipment visibility",
+        "Correct freight calculation",
+        "Efficient transportation execution"
+      ]
+    },
+    {
+      "id": "SEC17",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real Project Example",
+      "content": "An e-commerce company maintains over 2,500 warehouse and customer locations in SAP TM. GPS coordinates are used by the optimizer to calculate the shortest routes, reducing transportation distance and fuel costs."
+    },
+    {
+      "id": "SEC18",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Interview Tip",
+      "content": "Expect questions like 'What is a Location in SAP TM?' and 'How is Location different from Business Partner?'. A Business Partner identifies a business entity, whereas a Location identifies the physical place where transportation activities occur."
+    },
+    {
+      "id": "SEC19",
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Common Mistake",
+      "content": "Do not confuse Business Partner with Location. One Business Partner can have multiple Locations, such as headquarters, warehouses and delivery sites."
+    },
+    {
+      "id": "SEC20",
+      "type": "heading",
+      "title": "Revision Summary"
+    },
+    {
+      "id": "SEC21",
+      "type": "bullet-list",
+      "items": [
+        "Location represents a physical transportation point.",
+        "Locations support routing and scheduling.",
+        "GPS coordinates improve transportation optimization.",
+        "One Business Partner can have multiple Locations.",
+        "Locations are essential for Freight Unit and Freight Order planning."
+      ]
+    }
+  ],
+  "relatedLearning": {
+    "viva": [
+      "V-M4-T3-001"
+    ],
+    "handsOnLabs": [
+      "LAB-M4-003"
+    ],
+    "caseStudies": [
+      "CASE-M4-003"
+    ],
+    "practiceMcqs": [
+      "M4T3Q001"
+    ]
+  }
+}

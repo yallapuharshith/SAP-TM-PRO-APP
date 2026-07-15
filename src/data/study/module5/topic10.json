@@ -1,0 +1,296 @@
+{
+  "id": "M5T10",
+  "module": {
+    "id": 5,
+    "title": "SAP TM Transportation Planning",
+    "sequence": 5
+  },
+  "topic": {
+    "id": 10,
+    "title": "End-to-End Transportation Planning Process",
+    "sequence": 10
+  },
+  "metadata": {
+    "difficulty": "Beginner",
+    "estimatedReadingTime": 35,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-15",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "End-to-End Planning",
+      "Freight Settlement"
+    ],
+    "prerequisites": [
+      "M5T1",
+      "M5T2",
+      "M5T3",
+      "M5T4",
+      "M5T5",
+      "M5T6",
+      "M5T7",
+      "M5T8",
+      "M5T9"
+    ],
+    "learningPath": [
+      "Study",
+      "Viva",
+      "Hands-on",
+      "MCQ"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Understand end-to-end planning lifecycle",
+      "description": "Explain full planning flow from ERP demand to freight settlement."
+    },
+    {
+      "id": "LO2",
+      "title": "Understand decision points",
+      "description": "Identify key planning decisions across consolidation, optimization and assignment stages."
+    },
+    {
+      "id": "LO3",
+      "title": "Differentiate ERP and TM responsibilities",
+      "description": "Clarify business document ownership and execution scope between ERP and SAP TM."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "End-to-End Transportation Planning Process"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "The end-to-end transportation planning process in SAP TM transforms transportation demand into executable shipments. Starting from ERP business documents, SAP TM creates Freight Units, performs optimization, selects carriers and resources, generates Freight Orders and finally releases them for transportation execution."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Key Concept",
+      "content": "Transportation Planning is a complete business process, not a single activity. Every step depends on accurate master data and planning rules."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Complete Transportation Planning Flow"
+    },
+    {
+      "id": "SEC5",
+      "type": "process-flow",
+      "title": "SAP TM End-to-End Planning",
+      "orientation": "horizontal",
+      "steps": [
+        "Sales Order",
+        "Outbound Delivery",
+        "Freight Unit Building",
+        "Transportation Cockpit",
+        "Optimizer",
+        "Carrier Selection",
+        "Resource Assignment",
+        "Freight Order",
+        "Execution",
+        "Freight Settlement"
+      ]
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "Planning Activities"
+    },
+    {
+      "id": "SEC7",
+      "type": "table",
+      "title": "Planning Lifecycle",
+      "headers": [
+        "Stage",
+        "Business Activity"
+      ],
+      "rows": [
+        [
+          "Transportation Demand",
+          "Create Freight Units"
+        ],
+        [
+          "Planning",
+          "Consolidate shipments"
+        ],
+        [
+          "Optimization",
+          "Reduce cost and improve utilization"
+        ],
+        [
+          "Carrier Assignment",
+          "Select transportation provider"
+        ],
+        [
+          "Resource Planning",
+          "Assign vehicles and equipment"
+        ],
+        [
+          "Execution",
+          "Create and execute Freight Orders"
+        ],
+        [
+          "Settlement",
+          "Calculate and settle freight charges"
+        ]
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "Planning Decision Points"
+    },
+    {
+      "id": "SEC9",
+      "type": "bullet-list",
+      "items": [
+        "Should Freight Units be consolidated?",
+        "Which transportation mode should be used?",
+        "Which carrier offers the best service?",
+        "Which resource is available?",
+        "Can capacity constraints be satisfied?",
+        "Can delivery commitments be met?"
+      ]
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "Business Scenario"
+    },
+    {
+      "id": "SEC11",
+      "type": "paragraph",
+      "content": "A manufacturing company receives 500 customer deliveries every day. SAP TM automatically creates Freight Units from outbound deliveries, consolidates compatible shipments, optimizes routes, assigns approved carriers and available trucks, generates Freight Orders and releases them for execution. After delivery, freight charges are calculated and settled with the carrier."
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Business Benefits"
+    },
+    {
+      "id": "SEC13",
+      "type": "bullet-list",
+      "items": [
+        "Lower transportation cost",
+        "Higher vehicle utilization",
+        "Reduced manual planning",
+        "Improved on-time delivery",
+        "Automated transportation planning",
+        "End-to-end shipment visibility",
+        "Accurate freight settlement"
+      ]
+    },
+    {
+      "id": "SEC14",
+      "type": "comparison",
+      "title": "ERP vs SAP TM Responsibilities",
+      "leftTitle": "SAP S/4HANA ERP",
+      "rightTitle": "SAP Transportation Management",
+      "rows": [
+        {
+          "feature": "Business Documents",
+          "left": "Sales Orders & Deliveries",
+          "right": "Freight Units & Freight Orders"
+        },
+        {
+          "feature": "Planning",
+          "left": "Logistics Preparation",
+          "right": "Transportation Planning"
+        },
+        {
+          "feature": "Execution",
+          "left": "Goods Issue",
+          "right": "Transportation Execution"
+        },
+        {
+          "feature": "Settlement",
+          "left": "Financial Posting",
+          "right": "Freight Settlement"
+        }
+      ]
+    },
+    {
+      "id": "SEC15",
+      "type": "heading",
+      "title": "Success Factors"
+    },
+    {
+      "id": "SEC16",
+      "type": "bullet-list",
+      "items": [
+        "High-quality master data",
+        "Correct Freight Unit Building Rules",
+        "Accurate Planning Profiles",
+        "Well-maintained carrier agreements",
+        "Reliable resource availability",
+        "Appropriate optimizer configuration"
+      ]
+    },
+    {
+      "id": "SEC17",
+      "type": "callout",
+      "calloutType": "best-practice",
+      "title": "Best Practice",
+      "content": "Implement automatic planning for standard transportation scenarios and reserve manual planning for exceptions. This provides the best balance between efficiency and business control."
+    },
+    {
+      "id": "SEC18",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real Project Example",
+      "content": "A multinational FMCG company processes over 30,000 Freight Units daily. SAP TM automatically creates optimized Freight Orders overnight, assigns preferred carriers, validates capacities and releases shipments before business hours, reducing transportation planning effort by over 70%."
+    },
+    {
+      "id": "SEC19",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Interview Tip",
+      "content": "Be able to explain the complete SAP TM planning flow from Sales Order -> Delivery -> Freight Unit -> Transportation Cockpit -> Optimizer -> Carrier Selection -> Resource Assignment -> Freight Order -> Execution -> Freight Settlement."
+    },
+    {
+      "id": "SEC20",
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Common Mistake",
+      "content": "Many beginners believe Freight Orders are created directly from Sales Orders. In SAP TM, Freight Orders are created only after Freight Units have been built and transportation planning has been completed."
+    },
+    {
+      "id": "SEC21",
+      "type": "heading",
+      "title": "Revision Summary"
+    },
+    {
+      "id": "SEC22",
+      "type": "bullet-list",
+      "items": [
+        "Transportation Planning starts with Freight Units.",
+        "The optimizer creates efficient transportation plans.",
+        "Carrier Selection occurs before Resource Assignment.",
+        "Freight Orders are the primary execution documents.",
+        "Transportation Planning ends with Freight Settlement after execution.",
+        "Accurate master data is essential for every planning step."
+      ]
+    }
+  ],
+  "relatedLearning": {
+    "viva": [
+      "V-M5-T10-001"
+    ],
+    "handsOnLabs": [
+      "LAB-M5-010"
+    ],
+    "caseStudies": [
+      "CASE-M5-010"
+    ],
+    "practiceMcqs": [
+      "M5T10Q001"
+    ]
+  }
+}

@@ -1,0 +1,299 @@
+{
+  "id": "M5T6",
+  "module": {
+    "id": 5,
+    "title": "SAP TM Transportation Planning",
+    "sequence": 5
+  },
+  "topic": {
+    "id": 6,
+    "title": "Carrier Selection & Carrier Assignment",
+    "sequence": 6
+  },
+  "metadata": {
+    "difficulty": "Beginner",
+    "estimatedReadingTime": 35,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-15",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "Carrier Selection",
+      "Carrier Assignment"
+    ],
+    "prerequisites": [
+      "M5T1",
+      "M5T2",
+      "M5T3",
+      "M5T4",
+      "M5T5"
+    ],
+    "learningPath": [
+      "Study",
+      "Viva",
+      "Hands-on",
+      "MCQ"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Understand carrier selection",
+      "description": "Explain carrier evaluation using rates, service, availability and agreements."
+    },
+    {
+      "id": "LO2",
+      "title": "Understand assignment methods",
+      "description": "Differentiate manual, automatic, tendering and contract-based assignment."
+    },
+    {
+      "id": "LO3",
+      "title": "Differentiate carrier and resource assignment",
+      "description": "Clarify selecting transport company versus assigning physical assets."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "Carrier Selection & Assignment"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "Carrier Selection is the process of choosing the most suitable transportation service provider to execute a shipment. SAP TM evaluates multiple carriers using predefined business rules such as freight rates, transit time, service level, carrier availability and contractual agreements before assigning a carrier to a Freight Order."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Key Concept",
+      "content": "A Carrier is a Business Partner that provides transportation services. Carrier Selection occurs after transportation planning and before transportation execution."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Objectives of Carrier Selection"
+    },
+    {
+      "id": "SEC5",
+      "type": "bullet-list",
+      "items": [
+        "Select the best transportation provider",
+        "Reduce freight costs",
+        "Meet delivery commitments",
+        "Improve transportation reliability",
+        "Support contractual compliance",
+        "Increase customer satisfaction"
+      ]
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "Carrier Selection Process"
+    },
+    {
+      "id": "SEC7",
+      "type": "process-flow",
+      "title": "Carrier Assignment Workflow",
+      "orientation": "horizontal",
+      "steps": [
+        "Freight Unit",
+        "Transportation Planning",
+        "Freight Order",
+        "Evaluate Carriers",
+        "Select Carrier",
+        "Assign Carrier",
+        "Transportation Execution"
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "Carrier Evaluation Criteria"
+    },
+    {
+      "id": "SEC9",
+      "type": "table",
+      "title": "Carrier Selection Factors",
+      "headers": [
+        "Criteria",
+        "Business Purpose"
+      ],
+      "rows": [
+        [
+          "Freight Rate",
+          "Lowest transportation cost"
+        ],
+        [
+          "Transit Time",
+          "Meet delivery schedule"
+        ],
+        [
+          "Carrier Availability",
+          "Resource availability"
+        ],
+        [
+          "Service Level",
+          "Performance and reliability"
+        ],
+        [
+          "Transportation Mode",
+          "Road, Rail, Air or Ocean support"
+        ],
+        [
+          "Contract Agreement",
+          "Preferred carrier selection"
+        ]
+      ]
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "Carrier Assignment Methods"
+    },
+    {
+      "id": "SEC11",
+      "type": "table",
+      "title": "Assignment Types",
+      "headers": [
+        "Method",
+        "Description"
+      ],
+      "rows": [
+        [
+          "Manual Assignment",
+          "Planner selects carrier manually"
+        ],
+        [
+          "Automatic Assignment",
+          "SAP TM selects carrier based on rules"
+        ],
+        [
+          "Tendering",
+          "Multiple carriers bid for shipment"
+        ],
+        [
+          "Contract-Based",
+          "Carrier selected from negotiated agreements"
+        ]
+      ]
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Business Scenario"
+    },
+    {
+      "id": "SEC13",
+      "type": "paragraph",
+      "content": "A company needs to transport electronics from Bengaluru to Mumbai. SAP TM evaluates three approved carriers based on freight rates, delivery time and historical performance. The system automatically assigns the carrier that offers the lowest cost while meeting the required delivery date."
+    },
+    {
+      "id": "SEC14",
+      "type": "comparison",
+      "title": "Manual vs Automatic Carrier Assignment",
+      "leftTitle": "Manual Assignment",
+      "rightTitle": "Automatic Assignment",
+      "rows": [
+        {
+          "feature": "Decision Maker",
+          "left": "Transportation Planner",
+          "right": "SAP TM Rules Engine"
+        },
+        {
+          "feature": "Speed",
+          "left": "Slower",
+          "right": "Instant"
+        },
+        {
+          "feature": "Consistency",
+          "left": "Depends on Planner",
+          "right": "Rule-Based"
+        },
+        {
+          "feature": "Scalability",
+          "left": "Limited",
+          "right": "High"
+        }
+      ]
+    },
+    {
+      "id": "SEC15",
+      "type": "heading",
+      "title": "Benefits of Carrier Selection"
+    },
+    {
+      "id": "SEC16",
+      "type": "bullet-list",
+      "items": [
+        "Reduced freight cost",
+        "Improved on-time delivery",
+        "Better carrier utilization",
+        "Automated planning",
+        "Improved service quality",
+        "Contract compliance",
+        "Higher customer satisfaction"
+      ]
+    },
+    {
+      "id": "SEC17",
+      "type": "callout",
+      "calloutType": "best-practice",
+      "title": "Best Practice",
+      "content": "Maintain carrier performance metrics and freight agreements regularly so SAP TM can make accurate carrier selection decisions."
+    },
+    {
+      "id": "SEC18",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real Project Example",
+      "content": "An automotive manufacturer implemented automatic carrier selection using freight agreements and carrier KPIs. Manual carrier assignment reduced by 90%, while transportation costs decreased by 12%."
+    },
+    {
+      "id": "SEC19",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Interview Tip",
+      "content": "Remember that a Carrier is maintained as a Business Partner in SAP TM. Carrier Selection uses business rules, freight agreements and performance indicators, not random selection."
+    },
+    {
+      "id": "SEC20",
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Common Mistake",
+      "content": "Do not confuse Carrier Selection with Resource Assignment. Carrier Selection chooses the transportation company, while Resource Assignment allocates the physical vehicle or equipment."
+    },
+    {
+      "id": "SEC21",
+      "type": "heading",
+      "title": "Revision Summary"
+    },
+    {
+      "id": "SEC22",
+      "type": "bullet-list",
+      "items": [
+        "Carrier Selection determines the transportation provider.",
+        "Carriers are Business Partners in SAP TM.",
+        "Selection can be manual, automatic or tender-based.",
+        "Carrier selection considers cost, transit time and service level.",
+        "Resource Assignment occurs after Carrier Selection."
+      ]
+    }
+  ],
+  "relatedLearning": {
+    "viva": [
+      "V-M5-T6-001"
+    ],
+    "handsOnLabs": [
+      "LAB-M5-006"
+    ],
+    "caseStudies": [
+      "CASE-M5-006"
+    ],
+    "practiceMcqs": [
+      "M5T6Q001"
+    ]
+  }
+}

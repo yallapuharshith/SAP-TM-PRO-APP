@@ -1,0 +1,293 @@
+{
+  "id": "M7T9",
+  "module": {
+    "id": 7,
+    "title": "SAP TM Freight Settlement & Charge Management",
+    "sequence": 7
+  },
+  "topic": {
+    "id": 9,
+    "title": "Freight Settlement Monitoring & Analytics",
+    "sequence": 9
+  },
+  "metadata": {
+    "difficulty": "Beginner",
+    "estimatedReadingTime": 35,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-15",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "Freight Settlement Monitoring",
+      "Analytics"
+    ],
+    "prerequisites": [
+      "M7T8"
+    ],
+    "learningPath": [
+      "Study",
+      "Viva",
+      "Hands-on",
+      "MCQ"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Understand settlement monitoring",
+      "description": "Explain real-time tracking of settlement lifecycle and payment progress."
+    },
+    {
+      "id": "LO2",
+      "title": "Understand settlement analytics",
+      "description": "Describe KPI-based analysis for cost optimization and carrier performance."
+    },
+    {
+      "id": "LO3",
+      "title": "Differentiate monitoring vs analytics",
+      "description": "Clarify current operational tracking versus historical trend analysis."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "Freight Settlement Monitoring & Analytics"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "Freight Settlement Monitoring enables logistics and finance teams to track the complete settlement lifecycle from charge calculation to carrier payment. SAP TM provides dashboards, analytical reports and KPIs that help organizations monitor settlement accuracy, payment status, carrier performance and transportation costs."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Key Concept",
+      "content": "Monitoring ensures that every Freight Settlement Document is processed correctly, while analytics help optimize transportation costs and carrier performance."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Objectives of Settlement Monitoring"
+    },
+    {
+      "id": "SEC5",
+      "type": "bullet-list",
+      "items": [
+        "Track Freight Settlement Documents",
+        "Monitor carrier payments",
+        "Identify settlement delays",
+        "Analyze transportation costs",
+        "Measure carrier performance",
+        "Support financial audits",
+        "Improve settlement efficiency"
+      ]
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "Settlement Monitoring Process"
+    },
+    {
+      "id": "SEC7",
+      "type": "process-flow",
+      "title": "Settlement Monitoring Flow",
+      "orientation": "horizontal",
+      "steps": [
+        "Freight Settlement Document",
+        "Invoice Verification",
+        "Financial Posting",
+        "Payment Status",
+        "Analytics Dashboard",
+        "Performance Review"
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "Settlement KPIs"
+    },
+    {
+      "id": "SEC9",
+      "type": "table",
+      "title": "Important KPIs",
+      "headers": [
+        "KPI",
+        "Business Purpose"
+      ],
+      "rows": [
+        [
+          "Settlement Cycle Time",
+          "Measure processing efficiency"
+        ],
+        [
+          "Average Freight Cost",
+          "Transportation cost analysis"
+        ],
+        [
+          "Invoice Match Rate",
+          "Verification accuracy"
+        ],
+        [
+          "Payment Processing Time",
+          "Finance performance"
+        ],
+        [
+          "Settlement Exceptions",
+          "Issue identification"
+        ],
+        [
+          "Carrier Cost Trend",
+          "Cost optimization"
+        ]
+      ]
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "Dashboard Components"
+    },
+    {
+      "id": "SEC11",
+      "type": "table",
+      "title": "Monitoring Dashboard",
+      "headers": [
+        "Component",
+        "Purpose"
+      ],
+      "rows": [
+        [
+          "Settlement Status",
+          "Track processing stage"
+        ],
+        [
+          "Invoice Monitor",
+          "Review carrier invoices"
+        ],
+        [
+          "Payment Dashboard",
+          "Monitor payment progress"
+        ],
+        [
+          "Cost Analytics",
+          "Transportation spending"
+        ],
+        [
+          "Carrier Performance",
+          "Evaluate service providers"
+        ]
+      ]
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Business Scenario"
+    },
+    {
+      "id": "SEC13",
+      "type": "paragraph",
+      "content": "A logistics manager reviews the monthly settlement dashboard and discovers that one carrier consistently submits invoices requiring manual corrections. The analytics reveal a high mismatch rate, prompting contract review and process improvements with the carrier."
+    },
+    {
+      "id": "SEC14",
+      "type": "comparison",
+      "title": "Operational Monitoring vs Analytical Reporting",
+      "leftTitle": "Monitoring",
+      "rightTitle": "Analytics",
+      "rows": [
+        {
+          "feature": "Purpose",
+          "left": "Track Current Status",
+          "right": "Analyze Historical Data"
+        },
+        {
+          "feature": "Users",
+          "left": "Operations Team",
+          "right": "Management"
+        },
+        {
+          "feature": "Time Focus",
+          "left": "Real-Time",
+          "right": "Trend Analysis"
+        }
+      ]
+    },
+    {
+      "id": "SEC15",
+      "type": "heading",
+      "title": "Business Benefits"
+    },
+    {
+      "id": "SEC16",
+      "type": "bullet-list",
+      "items": [
+        "Improved payment visibility",
+        "Reduced settlement delays",
+        "Better carrier evaluation",
+        "Lower transportation costs",
+        "Improved financial control",
+        "Enhanced decision making"
+      ]
+    },
+    {
+      "id": "SEC17",
+      "type": "callout",
+      "calloutType": "best-practice",
+      "title": "Best Practice",
+      "content": "Review settlement KPIs regularly to identify payment bottlenecks, recurring invoice discrepancies and opportunities for transportation cost optimization."
+    },
+    {
+      "id": "SEC18",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real Project Example",
+      "content": "A global logistics provider implemented SAP TM settlement analytics and reduced average settlement processing time from seven days to less than three days by identifying recurring approval bottlenecks."
+    },
+    {
+      "id": "SEC19",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Interview Tip",
+      "content": "Know the difference between monitoring and analytics. Monitoring focuses on current settlement status, while analytics focuses on trends, KPIs and business improvement."
+    },
+    {
+      "id": "SEC20",
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Common Mistake",
+      "content": "Do not rely only on settlement completion. Regular KPI analysis is essential for identifying cost-saving opportunities and improving carrier performance."
+    },
+    {
+      "id": "SEC21",
+      "type": "heading",
+      "title": "Revision Summary"
+    },
+    {
+      "id": "SEC22",
+      "type": "bullet-list",
+      "items": [
+        "Settlement Monitoring tracks Freight Settlement Documents and payments.",
+        "Analytics provide insights into transportation costs and carrier performance.",
+        "KPIs measure settlement efficiency and invoice accuracy.",
+        "Dashboards support operational and management decisions.",
+        "Continuous monitoring improves financial and logistics performance."
+      ]
+    }
+  ],
+  "relatedLearning": {
+    "viva": [
+      "V-M7-T9-001"
+    ],
+    "handsOnLabs": [
+      "LAB-M7-009"
+    ],
+    "caseStudies": [
+      "CASE-M7-009"
+    ],
+    "practiceMcqs": [
+      "M7T9Q001"
+    ]
+  }
+}

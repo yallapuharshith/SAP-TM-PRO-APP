@@ -1,0 +1,261 @@
+{
+  "id": "M2T5",
+  "module": {
+    "id": 2,
+    "title": "Transportation Management Foundations",
+    "sequence": 2
+  },
+  "topic": {
+    "id": 5,
+    "title": "SAP TM Business Documents & Transportation Order Types",
+    "sequence": 5
+  },
+  "metadata": {
+    "difficulty": "Beginner",
+    "estimatedReadingTime": 35,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-15",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "Business Documents",
+      "Transportation Order"
+    ],
+    "prerequisites": [
+      "M2T1",
+      "M2T2",
+      "M2T3",
+      "M2T4"
+    ],
+    "learningPath": [
+      "Study",
+      "Viva",
+      "Hands-on",
+      "MCQ"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Understand TOR document types",
+      "description": "Identify Transportation Order-based documents and their lifecycle role in SAP TM."
+    },
+    {
+      "id": "LO2",
+      "title": "Explain end-to-end document flow",
+      "description": "Describe progression from ERP trigger documents to freight settlement."
+    },
+    {
+      "id": "LO3",
+      "title": "Differentiate FU, FO and FB",
+      "description": "Clarify planning and execution differences among core TM documents."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "Transportation Business Documents"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "SAP TM manages transportation using Transportation Orders (TOR). Different TOR types represent different stages of the transportation lifecycle, from transportation demand to execution and settlement."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Key Concept",
+      "content": "Transportation Order (TOR) is the parent business object in SAP TM. Freight Unit, Freight Order, Freight Booking and Forwarding Order are different TOR document types."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Transportation Order Types"
+    },
+    {
+      "id": "SEC5",
+      "type": "table",
+      "title": "Transportation Documents",
+      "headers": [
+        "Document",
+        "Purpose",
+        "Lifecycle"
+      ],
+      "rows": [
+        [
+          "Forwarding Order",
+          "Customer transportation request",
+          "Planning"
+        ],
+        [
+          "Freight Unit",
+          "Transportation demand",
+          "Planning"
+        ],
+        [
+          "Freight Order",
+          "Transportation execution",
+          "Execution"
+        ],
+        [
+          "Freight Booking",
+          "Air/Ocean booking",
+          "Execution"
+        ],
+        [
+          "Freight Settlement Document",
+          "Freight invoice settlement",
+          "Settlement"
+        ]
+      ]
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "Complete Transportation Document Flow"
+    },
+    {
+      "id": "SEC7",
+      "type": "process-flow",
+      "title": "SAP TM Document Lifecycle",
+      "orientation": "horizontal",
+      "steps": [
+        "Sales Order",
+        "Outbound Delivery",
+        "Freight Unit",
+        "Transportation Planning",
+        "Freight Order",
+        "Execution",
+        "Freight Settlement"
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "Forwarding Order"
+    },
+    {
+      "id": "SEC9",
+      "type": "paragraph",
+      "content": "A Forwarding Order represents a customer's transportation request. It is commonly used by logistics service providers (LSPs) who receive transportation requests from customers and execute them through planning and carrier assignment."
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "Freight Unit"
+    },
+    {
+      "id": "SEC11",
+      "type": "paragraph",
+      "content": "Freight Units are automatically created from ERP documents such as Outbound Deliveries or Purchase Orders. They represent transportation demand and are the primary planning objects in SAP TM."
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Freight Order"
+    },
+    {
+      "id": "SEC13",
+      "type": "paragraph",
+      "content": "A Freight Order is generated after transportation planning. It contains routes, stages, assigned resources, carrier information and execution details required for transporting goods."
+    },
+    {
+      "id": "SEC14",
+      "type": "heading",
+      "title": "Freight Booking"
+    },
+    {
+      "id": "SEC15",
+      "type": "paragraph",
+      "content": "Freight Booking is primarily used for ocean and air transportation where transportation capacity must be reserved with external carriers before execution."
+    },
+    {
+      "id": "SEC16",
+      "type": "comparison",
+      "title": "Freight Unit vs Freight Order vs Freight Booking",
+      "leftTitle": "Planning",
+      "rightTitle": "Execution",
+      "rows": [
+        {
+          "feature": "Freight Unit",
+          "left": "Transportation Demand",
+          "right": "No"
+        },
+        {
+          "feature": "Freight Order",
+          "left": "Planned Shipment",
+          "right": "Yes"
+        },
+        {
+          "feature": "Freight Booking",
+          "left": "Capacity Reservation",
+          "right": "Yes"
+        }
+      ]
+    },
+    {
+      "id": "SEC17",
+      "type": "heading",
+      "title": "Business Example"
+    },
+    {
+      "id": "SEC18",
+      "type": "paragraph",
+      "content": "Three outbound deliveries are generated for a customer. SAP TM creates three Freight Units. The optimizer consolidates them into one Freight Order and assigns a carrier. The shipment is executed and transportation charges are settled using a Freight Settlement Document."
+    },
+    {
+      "id": "SEC19",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real Project Example",
+      "content": "An FMCG company generates over 5,000 Freight Units every day. SAP TM automatically consolidates them into optimized Freight Orders, reducing the number of truck trips and lowering transportation costs."
+    },
+    {
+      "id": "SEC20",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Interview Tip",
+      "content": "One of the most common SAP TM interview questions is 'Explain the complete transportation document lifecycle.' Practice explaining the document flow from Sales Order to Freight Settlement without hesitation."
+    },
+    {
+      "id": "SEC21",
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Common Mistake",
+      "content": "Do not confuse Freight Booking with Freight Order. Freight Booking is mainly used for Air and Ocean transportation, whereas Freight Order is used for transportation execution across different modes."
+    },
+    {
+      "id": "SEC22",
+      "type": "heading",
+      "title": "Revision Summary"
+    },
+    {
+      "id": "SEC23",
+      "type": "bullet-list",
+      "items": [
+        "Transportation Order is the parent business object.",
+        "Freight Unit represents transportation demand.",
+        "Freight Order represents execution.",
+        "Freight Booking is mainly used for air and ocean transport.",
+        "Freight Settlement Document settles transportation charges."
+      ]
+    }
+  ],
+  "relatedLearning": {
+    "viva": [
+      "V-M2-T5-001"
+    ],
+    "handsOnLabs": [
+      "LAB-M2-005"
+    ],
+    "caseStudies": [
+      "CASE-M2-005"
+    ],
+    "practiceMcqs": [
+      "M2T5Q001"
+    ]
+  }
+}

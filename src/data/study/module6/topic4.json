@@ -1,0 +1,288 @@
+{
+  "id": "M6T4",
+  "module": {
+    "id": 6,
+    "title": "SAP TM Freight Execution Management",
+    "sequence": 6
+  },
+  "topic": {
+    "id": 4,
+    "title": "Transportation Execution Process",
+    "sequence": 4
+  },
+  "metadata": {
+    "difficulty": "Beginner",
+    "estimatedReadingTime": 35,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-15",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "Transportation Execution",
+      "Freight Order"
+    ],
+    "prerequisites": [
+      "M6T3"
+    ],
+    "learningPath": [
+      "Study",
+      "Viva",
+      "Hands-on",
+      "MCQ"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Understand execution process",
+      "description": "Describe operational steps from release through completion and proof of delivery."
+    },
+    {
+      "id": "LO2",
+      "title": "Understand execution activities",
+      "description": "Explain dispatch, loading, transit monitoring, delivery, and completion tasks."
+    },
+    {
+      "id": "LO3",
+      "title": "Understand status-driven monitoring",
+      "description": "Clarify how execution events update shipment status and control operations."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "Transportation Execution Process"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "Transportation Execution is the operational phase where planned shipments are physically transported from the source location to the destination. SAP TM manages execution activities such as dispatching, loading, departure, in-transit monitoring, proof of delivery and completion of Freight Orders."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Key Concept",
+      "content": "Planning creates Freight Orders; Transportation Execution performs the actual movement of goods."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Objectives of Transportation Execution"
+    },
+    {
+      "id": "SEC5",
+      "type": "bullet-list",
+      "items": [
+        "Execute transportation plans",
+        "Monitor shipment progress",
+        "Track transportation events",
+        "Manage transportation exceptions",
+        "Provide shipment visibility",
+        "Support proof of delivery",
+        "Enable freight settlement"
+      ]
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "Transportation Execution Workflow"
+    },
+    {
+      "id": "SEC7",
+      "type": "process-flow",
+      "title": "Execution Flow",
+      "orientation": "horizontal",
+      "steps": [
+        "Freight Order",
+        "Release",
+        "Loading",
+        "Departure",
+        "In Transit",
+        "Arrival",
+        "Unloading",
+        "Proof of Delivery",
+        "Completion"
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "Execution Activities"
+    },
+    {
+      "id": "SEC9",
+      "type": "table",
+      "title": "Transportation Activities",
+      "headers": [
+        "Activity",
+        "Purpose"
+      ],
+      "rows": [
+        [
+          "Dispatch",
+          "Assign vehicle for execution"
+        ],
+        [
+          "Loading",
+          "Load goods onto vehicle"
+        ],
+        [
+          "Departure",
+          "Shipment leaves origin"
+        ],
+        [
+          "Transit Monitoring",
+          "Track shipment location"
+        ],
+        [
+          "Delivery",
+          "Deliver goods"
+        ],
+        [
+          "Proof of Delivery",
+          "Confirm successful delivery"
+        ],
+        [
+          "Completion",
+          "Close execution process"
+        ]
+      ]
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "Execution Status Updates"
+    },
+    {
+      "id": "SEC11",
+      "type": "process-flow",
+      "title": "Status Monitoring",
+      "orientation": "horizontal",
+      "steps": [
+        "Loading",
+        "Departed",
+        "In Transit",
+        "Arrived",
+        "Delivered",
+        "Completed"
+      ]
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Business Scenario"
+    },
+    {
+      "id": "SEC13",
+      "type": "paragraph",
+      "content": "A truck carrying electronics leaves the Hyderabad warehouse. SAP TM records loading completion, updates the departure event, tracks the vehicle using GPS integration, records proof of delivery at the customer site in Chennai and automatically updates the Freight Order status to Completed."
+    },
+    {
+      "id": "SEC14",
+      "type": "comparison",
+      "title": "Transportation Planning vs Transportation Execution",
+      "leftTitle": "Planning",
+      "rightTitle": "Execution",
+      "rows": [
+        {
+          "feature": "Purpose",
+          "left": "Prepare transportation",
+          "right": "Perform transportation"
+        },
+        {
+          "feature": "Main Document",
+          "left": "Freight Unit",
+          "right": "Freight Order"
+        },
+        {
+          "feature": "Focus",
+          "left": "Optimization",
+          "right": "Shipment Monitoring"
+        },
+        {
+          "feature": "Users",
+          "left": "Transportation Planner",
+          "right": "Dispatcher & Carrier"
+        }
+      ]
+    },
+    {
+      "id": "SEC15",
+      "type": "heading",
+      "title": "Business Benefits"
+    },
+    {
+      "id": "SEC16",
+      "type": "bullet-list",
+      "items": [
+        "Real-time shipment visibility",
+        "Improved customer communication",
+        "Reduced transportation delays",
+        "Better carrier coordination",
+        "Accurate execution records",
+        "Improved operational control"
+      ]
+    },
+    {
+      "id": "SEC17",
+      "type": "callout",
+      "calloutType": "best-practice",
+      "title": "Best Practice",
+      "content": "Capture execution events in real time using mobile applications, GPS devices or carrier integration to maintain accurate shipment visibility."
+    },
+    {
+      "id": "SEC18",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real Project Example",
+      "content": "A logistics provider integrated telematics with SAP TM to receive automatic arrival and departure events. Dispatchers could monitor more than 2,000 active shipments in real time without manual status updates."
+    },
+    {
+      "id": "SEC19",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Interview Tip",
+      "content": "Transportation Execution begins after the Freight Order is released. Remember the typical execution sequence: Loading -> Departure -> In Transit -> Delivery -> Proof of Delivery -> Completion."
+    },
+    {
+      "id": "SEC20",
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Common Mistake",
+      "content": "Execution is not limited to moving goods. It also includes event tracking, status management, proof of delivery and exception handling."
+    },
+    {
+      "id": "SEC21",
+      "type": "heading",
+      "title": "Revision Summary"
+    },
+    {
+      "id": "SEC22",
+      "type": "bullet-list",
+      "items": [
+        "Transportation Execution performs the physical shipment.",
+        "Freight Orders drive execution activities.",
+        "Execution events update shipment status.",
+        "Proof of Delivery confirms successful transportation.",
+        "Execution data is later used for freight settlement."
+      ]
+    }
+  ],
+  "relatedLearning": {
+    "viva": [
+      "V-M6-T4-001"
+    ],
+    "handsOnLabs": [
+      "LAB-M6-004"
+    ],
+    "caseStudies": [
+      "CASE-M6-004"
+    ],
+    "practiceMcqs": [
+      "M6T4Q001"
+    ]
+  }
+}

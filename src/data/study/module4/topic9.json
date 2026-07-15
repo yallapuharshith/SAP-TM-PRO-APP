@@ -1,0 +1,288 @@
+{
+  "id": "M4T9",
+  "module": {
+    "id": 4,
+    "title": "SAP TM Master Data Management",
+    "sequence": 4
+  },
+  "topic": {
+    "id": 9,
+    "title": "Product Master Data & Product Hierarchy",
+    "sequence": 9
+  },
+  "metadata": {
+    "difficulty": "Beginner",
+    "estimatedReadingTime": 35,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-15",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "Product Master",
+      "Product Hierarchy"
+    ],
+    "prerequisites": [
+      "M4T1",
+      "M4T2",
+      "M4T3",
+      "M4T4",
+      "M4T5",
+      "M4T6",
+      "M4T7",
+      "M4T8"
+    ],
+    "learningPath": [
+      "Study",
+      "Viva",
+      "Hands-on",
+      "MCQ"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Understand product master data",
+      "description": "Explain how product attributes influence package building, planning and optimization."
+    },
+    {
+      "id": "LO2",
+      "title": "Understand product hierarchy",
+      "description": "Describe category-to-item hierarchy and its role in transportation planning."
+    },
+    {
+      "id": "LO3",
+      "title": "Differentiate material and product master use",
+      "description": "Clarify ERP material information versus TM planning-specific product usage."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "Product Master Data in SAP TM"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "Product Master Data defines the characteristics of materials transported through SAP TM. It contains information such as weight, volume, dimensions, dangerous goods classification and transportation requirements. SAP TM uses this information for package building, capacity planning, optimization and freight execution."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Key Concept",
+      "content": "SAP TM does not transport sales orders-it transports products. Product master data directly influences planning and optimization decisions."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Objectives of Product Master Data"
+    },
+    {
+      "id": "SEC5",
+      "type": "bullet-list",
+      "items": [
+        "Support transportation planning",
+        "Calculate shipment weight",
+        "Calculate shipment volume",
+        "Support package building",
+        "Determine loading restrictions",
+        "Support dangerous goods management"
+      ]
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "Important Product Attributes"
+    },
+    {
+      "id": "SEC7",
+      "type": "table",
+      "title": "Product Master Attributes",
+      "headers": [
+        "Attribute",
+        "Business Purpose"
+      ],
+      "rows": [
+        [
+          "Product ID",
+          "Unique product identification"
+        ],
+        [
+          "Description",
+          "Business identification"
+        ],
+        [
+          "Gross Weight",
+          "Capacity planning"
+        ],
+        [
+          "Net Weight",
+          "Freight calculation"
+        ],
+        [
+          "Volume",
+          "Vehicle utilization"
+        ],
+        [
+          "Dimensions",
+          "Loading optimization"
+        ],
+        [
+          "Base Unit of Measure",
+          "Standard quantity"
+        ],
+        [
+          "Dangerous Goods Indicator",
+          "Safety compliance"
+        ]
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "Product Hierarchy"
+    },
+    {
+      "id": "SEC9",
+      "type": "process-flow",
+      "title": "Example Product Hierarchy",
+      "orientation": "vertical",
+      "steps": [
+        "Product Category",
+        "Product Family",
+        "Product Group",
+        "Individual Product"
+      ]
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "How Product Data is Used"
+    },
+    {
+      "id": "SEC11",
+      "type": "process-flow",
+      "title": "Product Data Flow",
+      "orientation": "horizontal",
+      "steps": [
+        "Material Master",
+        "Product Master",
+        "Package Building",
+        "Freight Unit",
+        "Capacity Planning",
+        "Freight Order"
+      ]
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Business Scenario"
+    },
+    {
+      "id": "SEC13",
+      "type": "paragraph",
+      "content": "A company transports refrigerators weighing 95 kg each. SAP TM reads the product's weight and dimensions from Product Master Data, calculates truck capacity, determines pallet requirements and creates an optimized Freight Order."
+    },
+    {
+      "id": "SEC14",
+      "type": "comparison",
+      "title": "Material Master vs Product Master",
+      "leftTitle": "Material Master",
+      "rightTitle": "Product Master in TM",
+      "rows": [
+        {
+          "feature": "Purpose",
+          "left": "ERP Material Information",
+          "right": "Transportation Planning"
+        },
+        {
+          "feature": "Managed In",
+          "left": "SAP S/4HANA",
+          "right": "SAP TM"
+        },
+        {
+          "feature": "Used For",
+          "left": "Procurement & Inventory",
+          "right": "Transportation & Optimization"
+        }
+      ]
+    },
+    {
+      "id": "SEC15",
+      "type": "heading",
+      "title": "Business Benefits"
+    },
+    {
+      "id": "SEC16",
+      "type": "bullet-list",
+      "items": [
+        "Accurate capacity planning",
+        "Improved package building",
+        "Reduced transportation cost",
+        "Better vehicle utilization",
+        "Support for dangerous goods",
+        "Improved shipment accuracy"
+      ]
+    },
+    {
+      "id": "SEC17",
+      "type": "callout",
+      "calloutType": "best-practice",
+      "title": "Best Practice",
+      "content": "Maintain accurate product dimensions, weight and volume. Incorrect product master data directly affects freight planning and vehicle utilization."
+    },
+    {
+      "id": "SEC18",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real Project Example",
+      "content": "An appliance manufacturer corrected incorrect product dimensions in SAP TM. Vehicle loading accuracy improved by 27%, reducing overloaded shipments and unnecessary truck usage."
+    },
+    {
+      "id": "SEC19",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Interview Tip",
+      "content": "Certification questions often ask which master data provides weight, volume and dimensions for transportation planning. The correct answer is Product Master Data."
+    },
+    {
+      "id": "SEC20",
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Common Mistake",
+      "content": "Do not confuse Product Master Data with Package Building Profiles. Product Master defines product characteristics, while Package Building defines how products are packed."
+    },
+    {
+      "id": "SEC21",
+      "type": "heading",
+      "title": "Revision Summary"
+    },
+    {
+      "id": "SEC22",
+      "type": "bullet-list",
+      "items": [
+        "Product Master stores transportation-related product information.",
+        "Weight, volume and dimensions influence planning.",
+        "Product data is used in package building and capacity planning.",
+        "Accurate product data improves transportation optimization.",
+        "Product Master is a critical master data object in SAP TM."
+      ]
+    }
+  ],
+  "relatedLearning": {
+    "viva": [
+      "V-M4-T9-001"
+    ],
+    "handsOnLabs": [
+      "LAB-M4-009"
+    ],
+    "caseStudies": [
+      "CASE-M4-009"
+    ],
+    "practiceMcqs": [
+      "M4T9Q001"
+    ]
+  }
+}

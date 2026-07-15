@@ -1,0 +1,297 @@
+{
+  "id": "M9T8",
+  "module": {
+    "id": 9,
+    "title": "SAP TM Reporting, Analytics & Performance Management",
+    "sequence": 9
+  },
+  "topic": {
+    "id": 8,
+    "title": "Predictive Analytics & Machine Learning in SAP TM",
+    "sequence": 8
+  },
+  "metadata": {
+    "difficulty": "Beginner",
+    "estimatedReadingTime": 35,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-15",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "Predictive Analytics",
+      "Machine Learning"
+    ],
+    "prerequisites": [
+      "M9T7"
+    ],
+    "learningPath": [
+      "Study",
+      "Viva",
+      "Hands-on",
+      "MCQ"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Understand predictive analytics",
+      "description": "Explain forecasting of delivery outcomes, costs, delays, and capacity using transportation data."
+    },
+    {
+      "id": "LO2",
+      "title": "Understand ML model inputs",
+      "description": "Identify key historical and real-time data sources used by SAP TM predictive models."
+    },
+    {
+      "id": "LO3",
+      "title": "Understand proactive planning value",
+      "description": "Describe how prediction-based insights improve logistics decisions and risk mitigation."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "Predictive Analytics & Machine Learning in SAP TM"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "Predictive Analytics and Machine Learning (ML) enhance SAP Transportation Management by using historical and real-time transportation data to forecast future outcomes. Instead of only reporting past events, predictive models estimate delivery times, transportation costs, shipment delays and capacity requirements, enabling organizations to make proactive logistics decisions."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Key Concept",
+      "content": "Traditional analytics explains what happened, while predictive analytics estimates what is likely to happen next."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Objectives of Predictive Analytics"
+    },
+    {
+      "id": "SEC5",
+      "type": "bullet-list",
+      "items": [
+        "Predict shipment delays",
+        "Forecast transportation costs",
+        "Estimate delivery times",
+        "Improve capacity planning",
+        "Optimize carrier selection",
+        "Reduce transportation risks",
+        "Support proactive decision-making"
+      ]
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "Predictive Analytics Process"
+    },
+    {
+      "id": "SEC7",
+      "type": "process-flow",
+      "title": "ML Analytics Workflow",
+      "orientation": "horizontal",
+      "steps": [
+        "Historical Transportation Data",
+        "Machine Learning Model",
+        "Prediction Generation",
+        "Risk Analysis",
+        "Planner Decision",
+        "Transportation Optimization"
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "Typical Prediction Scenarios"
+    },
+    {
+      "id": "SEC9",
+      "type": "table",
+      "title": "Predictive Use Cases",
+      "headers": [
+        "Prediction",
+        "Business Benefit"
+      ],
+      "rows": [
+        [
+          "Estimated Arrival Time (ETA)",
+          "Improve customer visibility"
+        ],
+        [
+          "Shipment Delay Probability",
+          "Proactive exception handling"
+        ],
+        [
+          "Transportation Cost Forecast",
+          "Budget planning"
+        ],
+        [
+          "Carrier Performance Forecast",
+          "Better carrier selection"
+        ],
+        [
+          "Capacity Demand Forecast",
+          "Resource planning"
+        ],
+        [
+          "Risk Prediction",
+          "Operational risk reduction"
+        ]
+      ]
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "Machine Learning Inputs"
+    },
+    {
+      "id": "SEC11",
+      "type": "table",
+      "title": "Data Used by ML Models",
+      "headers": [
+        "Input Data",
+        "Example"
+      ],
+      "rows": [
+        [
+          "Historical Shipments",
+          "Past Freight Orders"
+        ],
+        [
+          "GPS Data",
+          "Vehicle location"
+        ],
+        [
+          "Traffic Information",
+          "Road congestion"
+        ],
+        [
+          "Weather Data",
+          "Storm forecasts"
+        ],
+        [
+          "Carrier History",
+          "Past delivery performance"
+        ],
+        [
+          "Transportation Costs",
+          "Historical freight charges"
+        ]
+      ]
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Business Scenario"
+    },
+    {
+      "id": "SEC13",
+      "type": "paragraph",
+      "content": "A machine learning model analyzes previous shipments together with weather forecasts and traffic conditions. Before a shipment departs, SAP predicts a high probability of delay and recommends an alternative route, helping the planner avoid late delivery."
+    },
+    {
+      "id": "SEC14",
+      "type": "comparison",
+      "title": "Traditional Analytics vs Predictive Analytics",
+      "leftTitle": "Traditional Analytics",
+      "rightTitle": "Predictive Analytics",
+      "rows": [
+        {
+          "feature": "Focus",
+          "left": "Historical Data",
+          "right": "Future Predictions"
+        },
+        {
+          "feature": "Question Answered",
+          "left": "What Happened?",
+          "right": "What Will Likely Happen?"
+        },
+        {
+          "feature": "Business Value",
+          "left": "Reporting",
+          "right": "Proactive Planning"
+        }
+      ]
+    },
+    {
+      "id": "SEC15",
+      "type": "heading",
+      "title": "Business Benefits"
+    },
+    {
+      "id": "SEC16",
+      "type": "bullet-list",
+      "items": [
+        "Improved ETA accuracy",
+        "Reduced transportation risks",
+        "Better capacity planning",
+        "Lower transportation costs",
+        "Higher customer satisfaction",
+        "Smarter logistics decisions"
+      ]
+    },
+    {
+      "id": "SEC17",
+      "type": "callout",
+      "calloutType": "best-practice",
+      "title": "Best Practice",
+      "content": "Use high-quality historical transportation data when building predictive models. Better data quality leads to more accurate predictions."
+    },
+    {
+      "id": "SEC18",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real Project Example",
+      "content": "An international logistics company implemented machine learning to predict shipment delays using GPS, weather and traffic data. Delivery accuracy improved significantly while planners reduced manual intervention through proactive route adjustments."
+    },
+    {
+      "id": "SEC19",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Interview Tip",
+      "content": "Machine Learning in SAP TM is used for intelligent recommendations and predictions. It assists planners but does not replace transportation planning decisions."
+    },
+    {
+      "id": "SEC20",
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Common Mistake",
+      "content": "Predictive analytics estimates probabilities rather than guaranteeing outcomes. Unexpected events may still affect actual transportation execution."
+    },
+    {
+      "id": "SEC21",
+      "type": "heading",
+      "title": "Revision Summary"
+    },
+    {
+      "id": "SEC22",
+      "type": "bullet-list",
+      "items": [
+        "Predictive Analytics forecasts future transportation outcomes.",
+        "Machine Learning uses historical and real-time data.",
+        "Common predictions include ETA, delays, costs and capacity.",
+        "Predictive insights support proactive transportation planning.",
+        "ML complements human decision-making in SAP TM."
+      ]
+    }
+  ],
+  "relatedLearning": {
+    "viva": [
+      "V-M9-T8-001"
+    ],
+    "handsOnLabs": [
+      "LAB-M9-008"
+    ],
+    "caseStudies": [
+      "CASE-M9-008"
+    ],
+    "practiceMcqs": [
+      "M9T8Q001"
+    ]
+  }
+}

@@ -1,0 +1,286 @@
+{
+  "id": "M1T4",
+  "module": {
+    "id": 1,
+    "title": "ERP & SAP Overview",
+    "sequence": 1
+  },
+  "topic": {
+    "id": 4,
+    "title": "SAP GUI & SAP Fiori Navigation",
+    "sequence": 4
+  },
+  "metadata": {
+    "difficulty": "Beginner",
+    "estimatedReadingTime": 30,
+    "estimatedRevisionTime": 10,
+    "version": "1.0",
+    "lastUpdated": "2026-07-15",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP",
+      "GUI",
+      "Fiori"
+    ],
+    "prerequisites": [
+      "M1T1",
+      "M1T2",
+      "M1T3"
+    ],
+    "learningPath": [
+      "Study",
+      "Viva",
+      "Hands-on",
+      "MCQ"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Differentiate SAP GUI and SAP Fiori",
+      "description": "Explain the interface and navigation differences between GUI and Fiori."
+    },
+    {
+      "id": "LO2",
+      "title": "Understand navigation patterns",
+      "description": "Use T-code navigation in GUI and role-based tile navigation in Fiori."
+    },
+    {
+      "id": "LO3",
+      "title": "Identify practical usage",
+      "description": "Describe where business users and consultants use each interface."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "Introduction to SAP GUI and SAP Fiori"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "SAP provides two primary user interfaces for accessing business applications: SAP GUI (Graphical User Interface) and SAP Fiori. SAP GUI is the traditional desktop interface widely used by consultants and administrators, whereas SAP Fiori provides a modern, browser-based, role-oriented user experience."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Key Concept",
+      "content": "SAP GUI focuses on transaction-based navigation, while SAP Fiori focuses on business tasks and user roles."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "SAP GUI Overview"
+    },
+    {
+      "id": "SEC5",
+      "type": "paragraph",
+      "content": "SAP GUI is the classic client application used to access SAP systems. It provides direct access to transaction codes (T-Codes), configuration screens and administrative functions."
+    },
+    {
+      "id": "SEC6",
+      "type": "table",
+      "title": "Main Components of SAP GUI",
+      "headers": [
+        "Component",
+        "Purpose"
+      ],
+      "rows": [
+        ["Menu Bar", "Access application menus"],
+        ["Standard Toolbar", "Common navigation functions"],
+        ["Command Field", "Execute transaction codes"],
+        ["Application Toolbar", "Screen-specific actions"],
+        ["Status Bar", "Displays system messages"],
+        ["Favorites", "Quick access to frequently used transactions"]
+      ]
+    },
+    {
+      "id": "SEC7",
+      "type": "heading",
+      "title": "Common SAP GUI Navigation"
+    },
+    {
+      "id": "SEC8",
+      "type": "bullet-list",
+      "items": [
+        "Log in to SAP system",
+        "Open SAP Easy Access",
+        "Enter Transaction Code",
+        "Execute Transaction",
+        "Save Changes",
+        "Exit Transaction",
+        "Log Off"
+      ]
+    },
+    {
+      "id": "SEC9",
+      "type": "process-flow",
+      "title": "SAP GUI Navigation Flow",
+      "orientation": "horizontal",
+      "steps": [
+        "Login",
+        "SAP Easy Access",
+        "Enter T-Code",
+        "Execute",
+        "Save",
+        "Exit"
+      ]
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "What is SAP Fiori?"
+    },
+    {
+      "id": "SEC11",
+      "type": "paragraph",
+      "content": "SAP Fiori is SAP's modern user experience built on SAPUI5 technology. It provides role-based applications that simplify business processes and support desktop, tablet and mobile devices."
+    },
+    {
+      "id": "SEC12",
+      "type": "table",
+      "title": "SAP Fiori Features",
+      "headers": [
+        "Feature",
+        "Description"
+      ],
+      "rows": [
+        ["Role-Based", "Apps shown according to user role"],
+        ["Responsive", "Works on desktop, tablet and mobile"],
+        ["Browser Based", "Runs without desktop installation"],
+        ["Launchpad", "Central application dashboard"],
+        ["Personalized", "Users can customize tiles and groups"]
+      ]
+    },
+    {
+      "id": "SEC13",
+      "type": "comparison",
+      "title": "SAP GUI vs SAP Fiori",
+      "leftTitle": "SAP GUI",
+      "rightTitle": "SAP Fiori",
+      "rows": [
+        {
+          "feature": "Interface",
+          "left": "Desktop Application",
+          "right": "Web Browser"
+        },
+        {
+          "feature": "Navigation",
+          "left": "Transaction Codes",
+          "right": "Role-Based Tiles"
+        },
+        {
+          "feature": "Technology",
+          "left": "SAP GUI Client",
+          "right": "SAPUI5"
+        },
+        {
+          "feature": "Device Support",
+          "left": "Desktop",
+          "right": "Desktop, Tablet, Mobile"
+        },
+        {
+          "feature": "User Experience",
+          "left": "Traditional",
+          "right": "Modern"
+        }
+      ]
+    },
+    {
+      "id": "SEC14",
+      "type": "heading",
+      "title": "SAP Fiori Launchpad"
+    },
+    {
+      "id": "SEC15",
+      "type": "bullet-list",
+      "items": [
+        "Home Page",
+        "Tiles",
+        "Spaces",
+        "Pages",
+        "Search",
+        "Notifications",
+        "User Settings"
+      ]
+    },
+    {
+      "id": "SEC16",
+      "type": "heading",
+      "title": "Advantages of SAP Fiori"
+    },
+    {
+      "id": "SEC17",
+      "type": "bullet-list",
+      "items": [
+        "Simple user experience",
+        "Role-based applications",
+        "Responsive design",
+        "Improved productivity",
+        "Lower training effort",
+        "Better accessibility",
+        "Modern interface"
+      ]
+    },
+    {
+      "id": "SEC18",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real Project Example",
+      "content": "Transportation planners use SAP Fiori apps to monitor freight orders and transportation execution, while consultants still use SAP GUI for configuration and implementation activities."
+    },
+    {
+      "id": "SEC19",
+      "type": "callout",
+      "calloutType": "best-practice",
+      "title": "Best Practice",
+      "content": "Business users should primarily work with SAP Fiori apps, while functional consultants and administrators use SAP GUI for configuration and advanced system activities."
+    },
+    {
+      "id": "SEC20",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Interview Tip",
+      "content": "Interviewers often ask why SAP still supports SAP GUI when SAP Fiori exists. Explain that SAP GUI is essential for configuration, administration and legacy transactions, while SAP Fiori improves the end-user experience."
+    },
+    {
+      "id": "SEC21",
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Common Mistake",
+      "content": "Do not say SAP GUI is obsolete. Both SAP GUI and SAP Fiori coexist in SAP S/4HANA, serving different purposes."
+    },
+    {
+      "id": "SEC22",
+      "type": "heading",
+      "title": "Revision Summary"
+    },
+    {
+      "id": "SEC23",
+      "type": "bullet-list",
+      "items": [
+        "SAP GUI is transaction-code based.",
+        "SAP Fiori is role-based.",
+        "SAP Fiori uses SAPUI5 technology.",
+        "SAP GUI is widely used for configuration.",
+        "Both interfaces coexist in SAP S/4HANA."
+      ]
+    }
+  ],
+  "relatedLearning": {
+    "viva": [
+      "V-M1-T4-001"
+    ],
+    "handsOnLabs": [
+      "LAB-M1-004"
+    ],
+    "caseStudies": [
+      "CASE-M1-004"
+    ],
+    "practiceMcqs": [
+      "M1T4Q001"
+    ]
+  }
+}

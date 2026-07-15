@@ -1,14 +1,39 @@
-import { Routes, Route } from 'react-router-dom';
+import { lazy, Suspense } from 'react';
+import { Navigate, Route, Routes, useSearchParams } from 'react-router-dom';
 import AppShell from './components/layout/AppShell';
 import { ExamProvider } from './components/exam-engine/ExamProvider';
-import Dashboard from './pages/Dashboard';
-import Study from './pages/Study';
-import Analytics from './pages/Analytics';
-import Settings from './pages/Settings';
 import ExamInstructions from './pages/ExamInstructions';
 import ExamPage from './pages/ExamPage';
 import ExamResult from './pages/ExamResult';
 import SmartRevision from './pages/SmartRevision';
+
+const Dashboard = lazy(() => import('./pages/Dashboard'));
+const StudyNotes = lazy(() => import('./pages/StudyNotes'));
+const HandsOnLabs = lazy(() => import('./pages/HandsOnLabs'));
+const CapstoneProjects = lazy(() => import('./pages/CapstoneProjects'));
+const Analytics = lazy(() => import('./pages/Analytics'));
+const Settings = lazy(() => import('./pages/Settings'));
+
+function StudyNotesRoute() {
+  const [searchParams] = useSearchParams();
+  const pageTitle = searchParams.get('section') === 'viva' ? 'Viva Preparation' : 'Study Notes';
+
+  return (
+    <AppShell pageTitle={pageTitle}>
+      <Suspense fallback={<RouteFallback />}>
+        <StudyNotes />
+      </Suspense>
+    </AppShell>
+  );
+}
+
+function RouteFallback() {
+  return (
+    <div className="glass-card rounded-2xl border border-white/10 p-5 shadow-soft">
+      <p className="text-sm text-slate-300">Loading module...</p>
+    </div>
+  );
+}
 
 function App() {
   return (
@@ -18,15 +43,35 @@ function App() {
           path="/"
           element={
             <AppShell pageTitle="Dashboard">
-              <Dashboard />
+              <Suspense fallback={<RouteFallback />}>
+                <Dashboard />
+              </Suspense>
             </AppShell>
           }
         />
         <Route
-          path="/study"
+          path="/study-notes"
+          element={<StudyNotesRoute />}
+        />
+        <Route path="/viva-preparation" element={<Navigate to="/study-notes?section=viva" replace />} />
+        <Route
+          path="/hands-on-labs"
           element={
-            <AppShell pageTitle="Study">
-              <Study />
+            <AppShell pageTitle="Hands-on Labs">
+              <Suspense fallback={<RouteFallback />}>
+                <HandsOnLabs />
+              </Suspense>
+            </AppShell>
+          }
+        />
+        <Route path="/admin" element={<Navigate to="/settings" replace />} />
+        <Route
+          path="/capstone-projects"
+          element={
+            <AppShell pageTitle="Capstone Projects">
+              <Suspense fallback={<RouteFallback />}>
+                <CapstoneProjects />
+              </Suspense>
             </AppShell>
           }
         />
@@ -82,7 +127,9 @@ function App() {
           path="/analytics"
           element={
             <AppShell pageTitle="Analytics">
-              <Analytics />
+              <Suspense fallback={<RouteFallback />}>
+                <Analytics />
+              </Suspense>
             </AppShell>
           }
         />
@@ -90,10 +137,13 @@ function App() {
           path="/settings"
           element={
             <AppShell pageTitle="Settings">
-              <Settings />
+              <Suspense fallback={<RouteFallback />}>
+                <Settings />
+              </Suspense>
             </AppShell>
           }
         />
+        <Route path="/study" element={<Navigate to="/study-notes" replace />} />
       </Routes>
     </ExamProvider>
   );

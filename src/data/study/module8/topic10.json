@@ -1,0 +1,315 @@
+{
+  "id": "M8T10",
+  "module": {
+    "id": 8,
+    "title": "SAP TM Integration & Cross-System Connectivity",
+    "sequence": 8
+  },
+  "topic": {
+    "id": 10,
+    "title": "End-to-End SAP TM Integration Landscape",
+    "sequence": 10
+  },
+  "metadata": {
+    "difficulty": "Beginner",
+    "estimatedReadingTime": 35,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-15",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "Integration Landscape",
+      "End-to-End"
+    ],
+    "prerequisites": [
+      "M8T9"
+    ],
+    "learningPath": [
+      "Study",
+      "Viva",
+      "Hands-on",
+      "MCQ"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Understand end-to-end integration landscape",
+      "description": "Explain SAP TM's role within integrated SAP and partner logistics ecosystems."
+    },
+    {
+      "id": "LO2",
+      "title": "Understand system responsibilities",
+      "description": "Describe which SAP component handles each logistics and financial capability."
+    },
+    {
+      "id": "LO3",
+      "title": "Understand enterprise business flow",
+      "description": "Clarify complete process from order creation to carrier payment across systems."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "End-to-End SAP TM Integration Landscape"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "SAP Transportation Management is the central transportation execution application within the SAP Digital Supply Chain. It integrates with ERP, Warehouse Management, Finance, Business Network, GPS providers, carriers and cloud platforms to provide an end-to-end logistics solution from order creation to carrier payment."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Key Concept",
+      "content": "No SAP TM implementation works independently. Enterprise-wide integration is the foundation of every SAP TM solution."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Complete Integration Landscape"
+    },
+    {
+      "id": "SEC5",
+      "type": "process-flow",
+      "title": "SAP TM Enterprise Integration",
+      "orientation": "horizontal",
+      "steps": [
+        "SAP S/4HANA",
+        "SAP TM",
+        "SAP EWM",
+        "SAP Business Network",
+        "GPS / IoT",
+        "Carrier Systems",
+        "SAP Finance",
+        "Analytics"
+      ]
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "System Responsibilities"
+    },
+    {
+      "id": "SEC7",
+      "type": "table",
+      "title": "Integrated SAP Landscape",
+      "headers": [
+        "System",
+        "Primary Responsibility"
+      ],
+      "rows": [
+        [
+          "SAP S/4HANA",
+          "Business transactions and master data"
+        ],
+        [
+          "SAP TM",
+          "Transportation planning, execution and settlement"
+        ],
+        [
+          "SAP EWM",
+          "Warehouse execution"
+        ],
+        [
+          "SAP Business Network",
+          "Carrier collaboration"
+        ],
+        [
+          "SAP BTP",
+          "Cloud integration"
+        ],
+        [
+          "SAP Finance",
+          "Accounting and payments"
+        ],
+        [
+          "GPS / IoT",
+          "Real-time shipment visibility"
+        ]
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "End-to-End Business Flow"
+    },
+    {
+      "id": "SEC9",
+      "type": "process-flow",
+      "title": "Complete Logistics Process",
+      "orientation": "horizontal",
+      "steps": [
+        "Sales Order",
+        "Outbound Delivery",
+        "Freight Unit",
+        "Freight Order",
+        "Warehouse Loading",
+        "Transportation Execution",
+        "Proof of Delivery",
+        "Freight Settlement",
+        "Carrier Payment"
+      ]
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "Integration Technologies"
+    },
+    {
+      "id": "SEC11",
+      "type": "table",
+      "title": "Communication Technologies",
+      "headers": [
+        "Technology",
+        "Typical Usage"
+      ],
+      "rows": [
+        [
+          "IDoc",
+          "SAP-to-SAP communication"
+        ],
+        [
+          "EDI",
+          "Carrier document exchange"
+        ],
+        [
+          "REST API",
+          "Cloud applications"
+        ],
+        [
+          "OData",
+          "SAP services"
+        ],
+        [
+          "Integration Suite",
+          "Enterprise integration"
+        ],
+        [
+          "Event Mesh",
+          "Event-driven messaging"
+        ]
+      ]
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Business Scenario"
+    },
+    {
+      "id": "SEC13",
+      "type": "paragraph",
+      "content": "A customer places a Sales Order in SAP S/4HANA. SAP TM receives the delivery, creates Freight Units and Freight Orders, SAP EWM manages warehouse loading, SAP Business Network sends electronic freight tenders to carriers, GPS devices provide shipment tracking, SAP TM performs Freight Settlement and SAP Finance completes the carrier payment. All systems exchange information automatically through SAP BTP Integration Suite."
+    },
+    {
+      "id": "SEC14",
+      "type": "comparison",
+      "title": "Core SAP TM vs Integrated SAP Landscape",
+      "leftTitle": "Core SAP TM",
+      "rightTitle": "Integrated Landscape",
+      "rows": [
+        {
+          "feature": "Transportation Planning",
+          "left": "Supported",
+          "right": "Supported"
+        },
+        {
+          "feature": "Warehouse Operations",
+          "left": "Limited",
+          "right": "SAP EWM"
+        },
+        {
+          "feature": "Financial Posting",
+          "left": "Settlement Only",
+          "right": "SAP Finance"
+        },
+        {
+          "feature": "Carrier Collaboration",
+          "left": "Basic",
+          "right": "SAP Business Network"
+        }
+      ]
+    },
+    {
+      "id": "SEC15",
+      "type": "heading",
+      "title": "Business Benefits"
+    },
+    {
+      "id": "SEC16",
+      "type": "bullet-list",
+      "items": [
+        "End-to-end supply chain visibility",
+        "Single source of logistics information",
+        "Automated enterprise integration",
+        "Reduced manual processing",
+        "Improved transportation efficiency",
+        "Better financial control",
+        "Real-time business decisions"
+      ]
+    },
+    {
+      "id": "SEC17",
+      "type": "callout",
+      "calloutType": "best-practice",
+      "title": "Best Practice",
+      "content": "Adopt SAP standard integration architecture using SAP BTP Integration Suite and SAP Business Network instead of custom point-to-point interfaces. This improves scalability, maintainability and future upgrades."
+    },
+    {
+      "id": "SEC18",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real Project Example",
+      "content": "A multinational retail organization integrated SAP S/4HANA, SAP TM, SAP EWM, SAP Business Network, GPS providers and SAP Analytics Cloud. More than 100,000 shipments per month were managed through a unified digital logistics platform with complete end-to-end visibility."
+    },
+    {
+      "id": "SEC19",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Interview Tip",
+      "content": "One of the most common SAP TM certification questions is identifying which SAP solution performs which responsibility. Memorize the integration landscape: S/4HANA → TM → EWM → Business Network → Finance."
+    },
+    {
+      "id": "SEC20",
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Common Mistake",
+      "content": "Do not assume SAP TM performs every logistics activity. Transportation planning, warehouse execution, finance, analytics and collaboration are distributed across specialized SAP solutions."
+    },
+    {
+      "id": "SEC21",
+      "type": "heading",
+      "title": "Revision Summary"
+    },
+    {
+      "id": "SEC22",
+      "type": "bullet-list",
+      "items": [
+        "SAP TM is the transportation hub within the SAP Digital Supply Chain.",
+        "SAP S/4HANA creates business transactions and master data.",
+        "SAP EWM manages warehouse execution.",
+        "SAP Business Network enables carrier collaboration.",
+        "SAP BTP provides cloud integration services.",
+        "SAP Finance processes accounting and carrier payments.",
+        "Together these systems deliver complete end-to-end logistics management."
+      ]
+    }
+  ],
+  "relatedLearning": {
+    "viva": [
+      "V-M8-T10-001"
+    ],
+    "handsOnLabs": [
+      "LAB-M8-010"
+    ],
+    "caseStudies": [
+      "CASE-M8-010"
+    ],
+    "practiceMcqs": [
+      "M8T10Q001"
+    ]
+  }
+}

@@ -1,0 +1,302 @@
+{
+  "id": "M6T9",
+  "module": {
+    "id": 6,
+    "title": "SAP TM Freight Execution Management",
+    "sequence": 6
+  },
+  "topic": {
+    "id": 9,
+    "title": "Transportation Monitoring & Execution Dashboard",
+    "sequence": 9
+  },
+  "metadata": {
+    "difficulty": "Beginner",
+    "estimatedReadingTime": 35,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-15",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "Transportation Monitoring",
+      "Execution Dashboard"
+    ],
+    "prerequisites": [
+      "M6T8"
+    ],
+    "learningPath": [
+      "Study",
+      "Viva",
+      "Hands-on",
+      "MCQ"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Understand transportation monitoring",
+      "description": "Explain real-time visibility and proactive shipment management in SAP TM."
+    },
+    {
+      "id": "LO2",
+      "title": "Understand dashboard components",
+      "description": "Describe monitors, timelines, exception views, maps, and KPI dashboards."
+    },
+    {
+      "id": "LO3",
+      "title": "Understand operational KPIs",
+      "description": "Clarify key metrics used for execution control and performance decisions."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "Transportation Monitoring & Execution Dashboard"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "Transportation Monitoring provides real-time visibility into transportation execution activities. SAP TM dashboards allow planners and logistics managers to monitor Freight Orders, shipment progress, transportation events, resource utilization, exceptions and KPIs from a centralized workspace."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Key Concept",
+      "content": "Transportation Monitoring enables planners to proactively manage shipments instead of reacting after problems occur."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Objectives of Transportation Monitoring"
+    },
+    {
+      "id": "SEC5",
+      "type": "bullet-list",
+      "items": [
+        "Monitor shipment execution",
+        "Track Freight Orders",
+        "View transportation events",
+        "Identify exceptions",
+        "Monitor resource utilization",
+        "Support operational decision-making",
+        "Improve customer visibility"
+      ]
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "Transportation Monitoring Process"
+    },
+    {
+      "id": "SEC7",
+      "type": "process-flow",
+      "title": "Monitoring Workflow",
+      "orientation": "horizontal",
+      "steps": [
+        "Freight Order",
+        "Execution Events",
+        "Status Updates",
+        "Dashboard",
+        "Exception Alerts",
+        "Planner Action",
+        "Shipment Completion"
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "Dashboard Components"
+    },
+    {
+      "id": "SEC9",
+      "type": "table",
+      "title": "Monitoring Dashboard",
+      "headers": [
+        "Component",
+        "Purpose"
+      ],
+      "rows": [
+        [
+          "Freight Order Monitor",
+          "View execution status"
+        ],
+        [
+          "Shipment Timeline",
+          "Track milestones"
+        ],
+        [
+          "Event Monitor",
+          "View transportation events"
+        ],
+        [
+          "Exception Dashboard",
+          "Monitor execution issues"
+        ],
+        [
+          "Resource Monitor",
+          "Vehicle utilization"
+        ],
+        [
+          "KPI Dashboard",
+          "Operational performance"
+        ],
+        [
+          "Map View",
+          "Real-time shipment location"
+        ]
+      ]
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "Key Performance Indicators"
+    },
+    {
+      "id": "SEC11",
+      "type": "table",
+      "title": "Transportation KPIs",
+      "headers": [
+        "KPI",
+        "Business Value"
+      ],
+      "rows": [
+        [
+          "On-Time Delivery",
+          "Service performance"
+        ],
+        [
+          "Average Transit Time",
+          "Transportation efficiency"
+        ],
+        [
+          "Vehicle Utilization",
+          "Fleet efficiency"
+        ],
+        [
+          "Delayed Shipments",
+          "Execution quality"
+        ],
+        [
+          "Resource Availability",
+          "Planning readiness"
+        ],
+        [
+          "Carrier Performance",
+          "Service evaluation"
+        ]
+      ]
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Business Scenario"
+    },
+    {
+      "id": "SEC13",
+      "type": "paragraph",
+      "content": "A logistics manager monitors 2,500 active Freight Orders using the SAP TM dashboard. One shipment changes to a delayed status due to heavy traffic. The dashboard immediately highlights the exception, allowing the planner to inform the customer and coordinate with the carrier."
+    },
+    {
+      "id": "SEC14",
+      "type": "comparison",
+      "title": "Monitoring vs Reporting",
+      "leftTitle": "Transportation Monitoring",
+      "rightTitle": "Transportation Reporting",
+      "rows": [
+        {
+          "feature": "Time",
+          "left": "Real-Time",
+          "right": "Historical"
+        },
+        {
+          "feature": "Purpose",
+          "left": "Operational Decisions",
+          "right": "Performance Analysis"
+        },
+        {
+          "feature": "Users",
+          "left": "Planners & Dispatchers",
+          "right": "Managers & Executives"
+        }
+      ]
+    },
+    {
+      "id": "SEC15",
+      "type": "heading",
+      "title": "Business Benefits"
+    },
+    {
+      "id": "SEC16",
+      "type": "bullet-list",
+      "items": [
+        "Real-time shipment visibility",
+        "Improved customer communication",
+        "Early exception detection",
+        "Better fleet utilization",
+        "Improved carrier monitoring",
+        "Faster operational decisions"
+      ]
+    },
+    {
+      "id": "SEC17",
+      "type": "callout",
+      "calloutType": "best-practice",
+      "title": "Best Practice",
+      "content": "Configure role-based dashboards so transportation planners, dispatchers and managers each see the KPIs and shipment information most relevant to their responsibilities."
+    },
+    {
+      "id": "SEC18",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real Project Example",
+      "content": "A third-party logistics provider implemented SAP TM dashboards integrated with GPS tracking. Dispatchers monitored over 8,000 shipments simultaneously and reduced average issue resolution time by nearly 45%."
+    },
+    {
+      "id": "SEC19",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Interview Tip",
+      "content": "Transportation Monitoring is operational and real-time, while reporting is analytical and historical. Certification exams frequently test this distinction."
+    },
+    {
+      "id": "SEC20",
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Common Mistake",
+      "content": "Monitoring dashboards display transportation information but do not replace transportation planning. Planning creates the shipment, monitoring tracks its execution."
+    },
+    {
+      "id": "SEC21",
+      "type": "heading",
+      "title": "Revision Summary"
+    },
+    {
+      "id": "SEC22",
+      "type": "bullet-list",
+      "items": [
+        "Transportation Monitoring provides real-time shipment visibility.",
+        "Dashboards display Freight Orders, events, KPIs and exceptions.",
+        "Monitoring enables proactive transportation management.",
+        "KPIs measure execution and carrier performance.",
+        "Real-time dashboards improve operational efficiency and customer service."
+      ]
+    }
+  ],
+  "relatedLearning": {
+    "viva": [
+      "V-M6-T9-001"
+    ],
+    "handsOnLabs": [
+      "LAB-M6-009"
+    ],
+    "caseStudies": [
+      "CASE-M6-009"
+    ],
+    "practiceMcqs": [
+      "M6T9Q001"
+    ]
+  }
+}

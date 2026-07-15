@@ -1,0 +1,292 @@
+{
+  "id": "M11T2",
+  "module": {
+    "id": 11,
+    "title": "SAP TM Viva & Interview Preparation",
+    "sequence": 11
+  },
+  "topic": {
+    "id": 2,
+    "title": "SAP TM Frequently Asked Viva Questions (Technical & Functional)",
+    "sequence": 2
+  },
+  "metadata": {
+    "difficulty": "Beginner",
+    "estimatedReadingTime": 35,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-15",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "Viva Questions",
+      "Technical and Functional"
+    ],
+    "prerequisites": [
+      "M11T1"
+    ],
+    "learningPath": [
+      "Study",
+      "Viva",
+      "Hands-on",
+      "MCQ"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Understand structured viva responses",
+      "description": "Answer core SAP TM questions with definition, purpose, usage context, and practical example."
+    },
+    {
+      "id": "LO2",
+      "title": "Understand interview question categories",
+      "description": "Differentiate functional, technical, implementation, and scenario-based question patterns."
+    },
+    {
+      "id": "LO3",
+      "title": "Understand practical interview readiness",
+      "description": "Apply end-to-end transportation flow explanations in project and viva discussions."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "SAP TM Frequently Asked Viva Questions (Technical & Functional)"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "SAP TM viva examinations and interviews commonly assess a candidate's understanding of transportation processes, SAP objects, integration concepts and implementation experience. Interviewers typically begin with basic concepts and gradually move toward scenario-based and implementation-oriented questions."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Key Strategy",
+      "content": "Answer every question in four parts: Definition → Why it is needed → Where it is used → Example."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Basic Functional Questions"
+    },
+    {
+      "id": "SEC5",
+      "type": "table",
+      "title": "Frequently Asked Questions",
+      "headers": [
+        "Question",
+        "Expected Discussion"
+      ],
+      "rows": [
+        [
+          "What is SAP TM?",
+          "Transportation planning, execution and freight settlement solution."
+        ],
+        [
+          "What business problems does SAP TM solve?",
+          "Transportation optimization, cost reduction and shipment visibility."
+        ],
+        [
+          "What is Transportation Demand?",
+          "Demand generated from deliveries requiring transportation."
+        ],
+        [
+          "What is a Freight Unit?",
+          "Planning object created from transportation demand."
+        ],
+        [
+          "What is a Freight Order?",
+          "Transportation execution document."
+        ],
+        [
+          "Difference between Freight Unit and Freight Order?",
+          "Planning object vs execution document."
+        ]
+      ]
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "Implementation-Oriented Questions"
+    },
+    {
+      "id": "SEC7",
+      "type": "table",
+      "title": "Project Questions",
+      "headers": [
+        "Question",
+        "Expected Answer"
+      ],
+      "rows": [
+        [
+          "Explain SAP Activate.",
+          "Standard implementation methodology."
+        ],
+        [
+          "What is Fit-to-Standard?",
+          "Business validates standard SAP processes."
+        ],
+        [
+          "Why perform UAT?",
+          "Business verifies requirements."
+        ],
+        [
+          "What happens during Hypercare?",
+          "Immediate post-go-live production support."
+        ],
+        [
+          "What is AMS?",
+          "Application Management Services after Hypercare."
+        ]
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "Technical Questions"
+    },
+    {
+      "id": "SEC9",
+      "type": "bullet-list",
+      "items": [
+        "Explain SAP TM architecture.",
+        "How does SAP TM integrate with SAP S/4HANA?",
+        "Why integrate SAP EWM?",
+        "What is SAP Business Network?",
+        "How are APIs used in SAP TM?",
+        "What is SAP BTP's role?"
+      ]
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "Business Scenario Question"
+    },
+    {
+      "id": "SEC11",
+      "type": "paragraph",
+      "content": "Question: A customer places an order. Explain the complete transportation process in SAP TM. Expected explanation: Sales Order → Outbound Delivery → Freight Unit → Transportation Planning → Carrier Selection → Freight Order → Transportation Execution → Freight Settlement → Reporting."
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Interview Flow"
+    },
+    {
+      "id": "SEC13",
+      "type": "process-flow",
+      "title": "Typical Viva Progression",
+      "orientation": "horizontal",
+      "steps": [
+        "Introduction",
+        "Basic Concepts",
+        "Business Process",
+        "Scenario Questions",
+        "Implementation Questions",
+        "Project Discussion"
+      ]
+    },
+    {
+      "id": "SEC14",
+      "type": "comparison",
+      "title": "Theory vs Practical Answer",
+      "leftTitle": "Theory Only",
+      "rightTitle": "Practical Answer",
+      "rows": [
+        {
+          "feature": "Definition",
+          "left": "Book explanation",
+          "right": "Business explanation"
+        },
+        {
+          "feature": "Example",
+          "left": "None",
+          "right": "Real transportation scenario"
+        },
+        {
+          "feature": "Impression",
+          "left": "Average",
+          "right": "Consultant-level"
+        }
+      ]
+    },
+    {
+      "id": "SEC15",
+      "type": "heading",
+      "title": "Common HR + Functional Questions"
+    },
+    {
+      "id": "SEC16",
+      "type": "bullet-list",
+      "items": [
+        "Why SAP TM?",
+        "Why should we hire you?",
+        "Explain your project.",
+        "Which SAP TM module interested you most?",
+        "What challenges occur during implementation?",
+        "How would you solve a transportation delay?"
+      ]
+    },
+    {
+      "id": "SEC17",
+      "type": "callout",
+      "calloutType": "best-practice",
+      "title": "Best Practice",
+      "content": "Whenever possible, explain answers using a real business example involving customers, deliveries, carriers and freight orders."
+    },
+    {
+      "id": "SEC18",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Example Answer",
+      "content": "Question: Why is Carrier Selection important? Answer: Carrier Selection chooses the most suitable carrier by evaluating cost, service level, capacity and business rules. This helps reduce transportation costs while maintaining delivery commitments."
+    },
+    {
+      "id": "SEC19",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Viva Tip",
+      "content": "Interviewers often ask follow-up questions. After answering, be prepared to explain how the concept fits into the complete transportation lifecycle."
+    },
+    {
+      "id": "SEC20",
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Common Mistake",
+      "content": "Do not answer only with SAP terminology. Explain the business purpose in simple language before discussing technical details."
+    },
+    {
+      "id": "SEC21",
+      "type": "heading",
+      "title": "Revision Checklist"
+    },
+    {
+      "id": "SEC22",
+      "type": "bullet-list",
+      "items": [
+        "Practice explaining concepts aloud.",
+        "Know the end-to-end transportation flow.",
+        "Understand implementation phases.",
+        "Prepare real-world business examples.",
+        "Be confident with integration and planning concepts."
+      ]
+    }
+  ],
+  "relatedLearning": {
+    "viva": [
+      "V-M11-T2-001"
+    ],
+    "handsOnLabs": [
+      "LAB-M11-002"
+    ],
+    "caseStudies": [
+      "CASE-M11-002"
+    ],
+    "practiceMcqs": [
+      "M11T2Q001"
+    ]
+  }
+}

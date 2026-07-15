@@ -1,0 +1,260 @@
+{
+  "id": "M3T4",
+  "module": {
+    "id": 3,
+    "title": "SAP TM Organizational Structure & Master Data",
+    "sequence": 3
+  },
+  "topic": {
+    "id": 4,
+    "title": "SAP TM Organizational Assignment & Planning Profiles",
+    "sequence": 4
+  },
+  "metadata": {
+    "difficulty": "Beginner",
+    "estimatedReadingTime": 35,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-15",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "Organizational Assignment",
+      "Planning Profile"
+    ],
+    "prerequisites": [
+      "M3T1",
+      "M3T2",
+      "M3T3"
+    ],
+    "learningPath": [
+      "Study",
+      "Viva",
+      "Hands-on",
+      "MCQ"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Understand organizational assignment",
+      "description": "Explain how transportation documents are mapped to planning organizations and planners."
+    },
+    {
+      "id": "LO2",
+      "title": "Understand planning profiles",
+      "description": "Identify profile components that control planning behavior and optimization."
+    },
+    {
+      "id": "LO3",
+      "title": "Differentiate assignment and profile",
+      "description": "Clarify responsibility assignment versus planning strategy configuration."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "Organizational Assignment in SAP TM"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "Organizational Assignment in SAP TM connects transportation business documents with the appropriate planning organization, planning profile and planner. It ensures that every transportation request is handled by the correct business unit according to organizational rules."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Key Concept",
+      "content": "Planning Profiles define HOW transportation planning is performed, while Organizational Assignment defines WHO performs the planning."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Planning Profile"
+    },
+    {
+      "id": "SEC5",
+      "type": "paragraph",
+      "content": "A Planning Profile contains planning parameters, optimization settings, default values and planning strategies used by transportation planners while creating Freight Orders."
+    },
+    {
+      "id": "SEC6",
+      "type": "table",
+      "title": "Planning Profile Components",
+      "headers": [
+        "Component",
+        "Purpose"
+      ],
+      "rows": [
+        [
+          "Planning Strategy",
+          "Defines planning approach"
+        ],
+        [
+          "Optimization Settings",
+          "Controls optimization engine"
+        ],
+        [
+          "Selection Profile",
+          "Filters transportation demand"
+        ],
+        [
+          "Default Parameters",
+          "Provides default planning values"
+        ],
+        [
+          "Scheduling Settings",
+          "Determines transportation timings"
+        ]
+      ]
+    },
+    {
+      "id": "SEC7",
+      "type": "heading",
+      "title": "Planning Assignment Process"
+    },
+    {
+      "id": "SEC8",
+      "type": "process-flow",
+      "title": "Planning Assignment Flow",
+      "orientation": "horizontal",
+      "steps": [
+        "Business Document",
+        "Freight Unit",
+        "Planning Organization",
+        "Planning Profile",
+        "Planner",
+        "Transportation Cockpit"
+      ]
+    },
+    {
+      "id": "SEC9",
+      "type": "heading",
+      "title": "Planning Strategies"
+    },
+    {
+      "id": "SEC10",
+      "type": "bullet-list",
+      "items": [
+        "Manual Planning",
+        "Interactive Planning",
+        "Automatic Planning",
+        "Optimizer-Based Planning",
+        "Background Planning"
+      ]
+    },
+    {
+      "id": "SEC11",
+      "type": "heading",
+      "title": "Transportation Cockpit"
+    },
+    {
+      "id": "SEC12",
+      "type": "paragraph",
+      "content": "Transportation Cockpit is the primary planning workspace in SAP TM where planners manage Freight Units, optimize transportation, create Freight Orders and monitor planning activities using Planning Profiles."
+    },
+    {
+      "id": "SEC13",
+      "type": "heading",
+      "title": "Business Scenario"
+    },
+    {
+      "id": "SEC14",
+      "type": "paragraph",
+      "content": "ABC Logistics has different planning teams for Domestic and International transportation. Domestic planners use a Planning Profile optimized for road transportation, while International planners use a profile supporting ocean and air freight planning."
+    },
+    {
+      "id": "SEC15",
+      "type": "comparison",
+      "title": "Manual Planning vs Optimizer Planning",
+      "leftTitle": "Manual Planning",
+      "rightTitle": "Optimizer Planning",
+      "rows": [
+        {
+          "feature": "Decision Making",
+          "left": "Planner",
+          "right": "Optimization Engine"
+        },
+        {
+          "feature": "Speed",
+          "left": "Lower",
+          "right": "Higher"
+        },
+        {
+          "feature": "Cost Optimization",
+          "left": "Depends on Planner",
+          "right": "Automatic"
+        }
+      ]
+    },
+    {
+      "id": "SEC16",
+      "type": "heading",
+      "title": "Benefits"
+    },
+    {
+      "id": "SEC17",
+      "type": "bullet-list",
+      "items": [
+        "Standardized planning",
+        "Reduced manual effort",
+        "Consistent transportation planning",
+        "Better optimization",
+        "Improved planner productivity"
+      ]
+    },
+    {
+      "id": "SEC18",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real Project Example",
+      "content": "A retail company configured separate Planning Profiles for Road, Rail and Ocean transportation. Planners automatically received the correct profile based on transportation mode, improving planning efficiency."
+    },
+    {
+      "id": "SEC19",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Interview Tip",
+      "content": "Expect interview questions on Transportation Cockpit and Planning Profiles. Be able to explain how planners use them during Freight Order creation and optimization."
+    },
+    {
+      "id": "SEC20",
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Common Mistake",
+      "content": "Planning Profile is not the same as Planning Organization. Planning Organization identifies the responsible business unit, whereas Planning Profile controls the planning behavior."
+    },
+    {
+      "id": "SEC21",
+      "type": "heading",
+      "title": "Revision Summary"
+    },
+    {
+      "id": "SEC22",
+      "type": "bullet-list",
+      "items": [
+        "Planning Profiles define planning behavior.",
+        "Transportation Cockpit is the planner's workspace.",
+        "Planning Organizations assign responsibility.",
+        "Optimizer planning improves transportation efficiency.",
+        "Different Planning Profiles can be configured for different transportation scenarios."
+      ]
+    }
+  ],
+  "relatedLearning": {
+    "viva": [
+      "V-M3-T4-001"
+    ],
+    "handsOnLabs": [
+      "LAB-M3-004"
+    ],
+    "caseStudies": [
+      "CASE-M3-004"
+    ],
+    "practiceMcqs": [
+      "M3T4Q001"
+    ]
+  }
+}

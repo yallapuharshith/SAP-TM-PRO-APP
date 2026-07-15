@@ -1,0 +1,264 @@
+{
+  "id": "M4T4",
+  "module": {
+    "id": 4,
+    "title": "SAP TM Master Data Management",
+    "sequence": 4
+  },
+  "topic": {
+    "id": 4,
+    "title": "Transportation Zone Master Data",
+    "sequence": 4
+  },
+  "metadata": {
+    "difficulty": "Beginner",
+    "estimatedReadingTime": 35,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-15",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "Transportation Zone",
+      "Master Data"
+    ],
+    "prerequisites": [
+      "M4T1",
+      "M4T2",
+      "M4T3"
+    ],
+    "learningPath": [
+      "Study",
+      "Viva",
+      "Hands-on",
+      "MCQ"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Understand transportation zones",
+      "description": "Explain transportation zones as logical groupings for planning and optimization."
+    },
+    {
+      "id": "LO2",
+      "title": "Understand zone-based planning",
+      "description": "Describe how zones simplify lane maintenance and planner responsibility determination."
+    },
+    {
+      "id": "LO3",
+      "title": "Differentiate location and zone",
+      "description": "Clarify physical location versus logical regional grouping in SAP TM."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "Transportation Zone in SAP TM"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "A Transportation Zone is a logical grouping of locations used for transportation planning, route determination and planner responsibility. Instead of maintaining transportation relationships for individual locations, SAP TM allows planners to group multiple locations into a single transportation zone."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Key Concept",
+      "content": "Transportation Zones simplify transportation planning by grouping multiple locations into a single planning region."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Why Transportation Zones are Required"
+    },
+    {
+      "id": "SEC5",
+      "type": "bullet-list",
+      "items": [
+        "Simplify transportation planning",
+        "Reduce master data maintenance",
+        "Support planner responsibility",
+        "Enable transportation lane determination",
+        "Improve route planning",
+        "Support regional optimization"
+      ]
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "Transportation Zone Hierarchy"
+    },
+    {
+      "id": "SEC7",
+      "type": "process-flow",
+      "title": "Zone Assignment",
+      "orientation": "vertical",
+      "steps": [
+        "Country",
+        "State",
+        "Transportation Zone",
+        "Location",
+        "Transportation Planning"
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "Business Usage"
+    },
+    {
+      "id": "SEC9",
+      "type": "table",
+      "title": "Transportation Zone Applications",
+      "headers": [
+        "Business Area",
+        "Purpose"
+      ],
+      "rows": [
+        [
+          "Transportation Planning",
+          "Regional shipment planning"
+        ],
+        [
+          "Transportation Lanes",
+          "Lane determination"
+        ],
+        [
+          "Planner Assignment",
+          "Automatic responsibility determination"
+        ],
+        [
+          "Optimization",
+          "Shipment consolidation"
+        ],
+        [
+          "Reporting",
+          "Regional transportation analysis"
+        ]
+      ]
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "Business Scenario"
+    },
+    {
+      "id": "SEC11",
+      "type": "paragraph",
+      "content": "A company delivers products to more than 800 customer locations across South India. Instead of creating separate transportation lanes for each location, all customer locations are assigned to the 'South India' Transportation Zone. Transportation planning becomes significantly simpler."
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Zone-Based Planning"
+    },
+    {
+      "id": "SEC13",
+      "type": "process-flow",
+      "title": "Transportation Planning",
+      "orientation": "horizontal",
+      "steps": [
+        "Location",
+        "Transportation Zone",
+        "Transportation Lane",
+        "Planning Organization",
+        "Freight Order"
+      ]
+    },
+    {
+      "id": "SEC14",
+      "type": "comparison",
+      "title": "Location vs Transportation Zone",
+      "leftTitle": "Location",
+      "rightTitle": "Transportation Zone",
+      "rows": [
+        {
+          "feature": "Represents",
+          "left": "Physical Place",
+          "right": "Logical Group"
+        },
+        {
+          "feature": "Planning",
+          "left": "Individual",
+          "right": "Regional"
+        },
+        {
+          "feature": "Maintenance",
+          "left": "Higher",
+          "right": "Lower"
+        }
+      ]
+    },
+    {
+      "id": "SEC15",
+      "type": "heading",
+      "title": "Business Benefits"
+    },
+    {
+      "id": "SEC16",
+      "type": "bullet-list",
+      "items": [
+        "Reduced master data maintenance",
+        "Simplified transportation planning",
+        "Automatic planner determination",
+        "Improved optimization",
+        "Regional shipment consolidation",
+        "Better reporting"
+      ]
+    },
+    {
+      "id": "SEC17",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real Project Example",
+      "content": "A logistics company grouped over 3,500 delivery locations into 45 Transportation Zones. This reduced Transportation Lane maintenance by nearly 80% while improving transportation planning performance."
+    },
+    {
+      "id": "SEC18",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Interview Tip",
+      "content": "Certification exams frequently ask why Transportation Zones are used instead of individual Locations. The correct answer is simplified planning, easier lane maintenance and automatic planner determination."
+    },
+    {
+      "id": "SEC19",
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Common Mistake",
+      "content": "A Transportation Zone is not a physical location. It is a logical grouping of multiple locations used for planning and optimization."
+    },
+    {
+      "id": "SEC20",
+      "type": "heading",
+      "title": "Revision Summary"
+    },
+    {
+      "id": "SEC21",
+      "type": "bullet-list",
+      "items": [
+        "Transportation Zones group multiple locations.",
+        "Zones simplify Transportation Lane maintenance.",
+        "Planner responsibility can be determined using Zones.",
+        "Zones improve optimization and reporting.",
+        "Transportation Zones are logical, not physical, objects."
+      ]
+    }
+  ],
+  "relatedLearning": {
+    "viva": [
+      "V-M4-T4-001"
+    ],
+    "handsOnLabs": [
+      "LAB-M4-004"
+    ],
+    "caseStudies": [
+      "CASE-M4-004"
+    ],
+    "practiceMcqs": [
+      "M4T4Q001"
+    ]
+  }
+}

@@ -1,0 +1,293 @@
+{
+  "id": "M7T7",
+  "module": {
+    "id": 7,
+    "title": "SAP TM Freight Settlement & Charge Management",
+    "sequence": 7
+  },
+  "topic": {
+    "id": 7,
+    "title": "Cost Distribution & Cost Allocation",
+    "sequence": 7
+  },
+  "metadata": {
+    "difficulty": "Beginner",
+    "estimatedReadingTime": 35,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-15",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "Cost Distribution",
+      "Cost Allocation"
+    ],
+    "prerequisites": [
+      "M7T6"
+    ],
+    "learningPath": [
+      "Study",
+      "Viva",
+      "Hands-on",
+      "MCQ"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Understand cost distribution",
+      "description": "Explain how total freight cost is allocated across shipments or business objects."
+    },
+    {
+      "id": "LO2",
+      "title": "Understand allocation methods",
+      "description": "Describe weight, volume, quantity, value, distance, and equal split rules."
+    },
+    {
+      "id": "LO3",
+      "title": "Differentiate from charge calculation",
+      "description": "Clarify total cost calculation versus post-calculation allocation outcomes."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "Cost Distribution & Cost Allocation"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "Cost Distribution and Cost Allocation determine how transportation costs are divided among Freight Units, deliveries, sales orders or business organizations. Instead of assigning the entire transportation cost to a single shipment, SAP TM distributes costs according to predefined business rules such as weight, volume, quantity, distance or value."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Key Concept",
+      "content": "Cost Distribution answers the question: 'How should the total transportation cost be shared among multiple shipments or business objects?'"
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Objectives of Cost Allocation"
+    },
+    {
+      "id": "SEC5",
+      "type": "bullet-list",
+      "items": [
+        "Distribute transportation costs fairly",
+        "Support profitability analysis",
+        "Improve cost transparency",
+        "Allocate freight costs automatically",
+        "Support internal accounting",
+        "Enable accurate product costing",
+        "Improve financial reporting"
+      ]
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "Cost Distribution Process"
+    },
+    {
+      "id": "SEC7",
+      "type": "process-flow",
+      "title": "Cost Allocation Flow",
+      "orientation": "horizontal",
+      "steps": [
+        "Freight Settlement Document",
+        "Calculate Total Cost",
+        "Apply Allocation Rule",
+        "Distribute Cost",
+        "Update Business Documents",
+        "Financial Posting"
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "Allocation Methods"
+    },
+    {
+      "id": "SEC9",
+      "type": "table",
+      "title": "Common Allocation Rules",
+      "headers": [
+        "Method",
+        "Business Example"
+      ],
+      "rows": [
+        [
+          "Weight-Based",
+          "Heavy products pay more"
+        ],
+        [
+          "Volume-Based",
+          "Large products consume more space"
+        ],
+        [
+          "Quantity-Based",
+          "Equal cost per item"
+        ],
+        [
+          "Value-Based",
+          "High-value goods bear higher cost"
+        ],
+        [
+          "Distance-Based",
+          "Longer transport pays more"
+        ],
+        [
+          "Equal Distribution",
+          "Split equally among shipments"
+        ]
+      ]
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "Cost Allocation Targets"
+    },
+    {
+      "id": "SEC11",
+      "type": "table",
+      "title": "Business Objects",
+      "headers": [
+        "Target",
+        "Purpose"
+      ],
+      "rows": [
+        [
+          "Freight Unit",
+          "Transportation demand costing"
+        ],
+        [
+          "Delivery",
+          "Delivery cost calculation"
+        ],
+        [
+          "Sales Order",
+          "Customer profitability"
+        ],
+        [
+          "Product",
+          "Product cost analysis"
+        ],
+        [
+          "Business Unit",
+          "Internal accounting"
+        ]
+      ]
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Business Scenario"
+    },
+    {
+      "id": "SEC13",
+      "type": "paragraph",
+      "content": "Three Freight Units share one truck from Pune to Delhi. The total transportation cost is ₹60,000. SAP TM distributes the cost based on shipment weight: the heaviest shipment receives ₹30,000, the medium shipment ₹20,000 and the lightest shipment ₹10,000."
+    },
+    {
+      "id": "SEC14",
+      "type": "comparison",
+      "title": "Cost Distribution vs Charge Calculation",
+      "leftTitle": "Charge Calculation",
+      "rightTitle": "Cost Distribution",
+      "rows": [
+        {
+          "feature": "Purpose",
+          "left": "Calculate Total Freight Cost",
+          "right": "Split Total Cost"
+        },
+        {
+          "feature": "Occurs",
+          "left": "Before Settlement",
+          "right": "After Settlement Calculation"
+        },
+        {
+          "feature": "Output",
+          "left": "Total Transportation Cost",
+          "right": "Allocated Costs"
+        }
+      ]
+    },
+    {
+      "id": "SEC15",
+      "type": "heading",
+      "title": "Business Benefits"
+    },
+    {
+      "id": "SEC16",
+      "type": "bullet-list",
+      "items": [
+        "Fair transportation costing",
+        "Improved profitability analysis",
+        "Better financial reporting",
+        "Accurate product costing",
+        "Reduced manual calculations",
+        "Enhanced management reporting"
+      ]
+    },
+    {
+      "id": "SEC17",
+      "type": "callout",
+      "calloutType": "best-practice",
+      "title": "Best Practice",
+      "content": "Select allocation rules that reflect actual business operations. Weight-based allocation is common for manufacturing, while value-based allocation is often used for high-value products."
+    },
+    {
+      "id": "SEC18",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real Project Example",
+      "content": "An FMCG company distributes transportation costs across more than 8,000 retail deliveries every day based on shipment weight. This enables accurate profitability reporting for each customer and product category."
+    },
+    {
+      "id": "SEC19",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Interview Tip",
+      "content": "Certification questions often ask the difference between Charge Calculation and Cost Distribution. First SAP TM calculates the total freight charge, then it distributes that cost to the relevant business objects."
+    },
+    {
+      "id": "SEC20",
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Common Mistake",
+      "content": "Cost Distribution does not change the total freight charge. It only allocates the already calculated transportation cost among different business objects."
+    },
+    {
+      "id": "SEC21",
+      "type": "heading",
+      "title": "Revision Summary"
+    },
+    {
+      "id": "SEC22",
+      "type": "bullet-list",
+      "items": [
+        "Cost Distribution allocates transportation costs.",
+        "Allocation can be based on weight, volume, value, quantity or distance.",
+        "Charge Calculation occurs before Cost Distribution.",
+        "Cost Allocation supports profitability and financial reporting.",
+        "The total transportation cost remains unchanged after distribution."
+      ]
+    }
+  ],
+  "relatedLearning": {
+    "viva": [
+      "V-M7-T7-001"
+    ],
+    "handsOnLabs": [
+      "LAB-M7-007"
+    ],
+    "caseStudies": [
+      "CASE-M7-007"
+    ],
+    "practiceMcqs": [
+      "M7T7Q001"
+    ]
+  }
+}

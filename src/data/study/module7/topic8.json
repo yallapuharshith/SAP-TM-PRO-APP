@@ -1,0 +1,289 @@
+{
+  "id": "M7T8",
+  "module": {
+    "id": 7,
+    "title": "SAP TM Freight Settlement & Charge Management",
+    "sequence": 7
+  },
+  "topic": {
+    "id": 8,
+    "title": "Credit Memo & Debit Memo Processing",
+    "sequence": 8
+  },
+  "metadata": {
+    "difficulty": "Beginner",
+    "estimatedReadingTime": 35,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-15",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "Credit Memo",
+      "Debit Memo"
+    ],
+    "prerequisites": [
+      "M7T7"
+    ],
+    "learningPath": [
+      "Study",
+      "Viva",
+      "Hands-on",
+      "MCQ"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Understand memo adjustments",
+      "description": "Explain when and why credit/debit memos are created after settlement."
+    },
+    {
+      "id": "LO2",
+      "title": "Differentiate credit and debit",
+      "description": "Clarify payment reduction versus increase and related financial effects."
+    },
+    {
+      "id": "LO3",
+      "title": "Understand adjustment controls",
+      "description": "Describe dispute handling, audit documentation, and posting impacts."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "Credit Memo & Debit Memo Processing"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "Credit Memo and Debit Memo processing in SAP Transportation Management allows transportation charges to be adjusted after freight settlement. A Credit Memo reduces the amount payable to a carrier, while a Debit Memo increases the payable amount. These adjustments ensure that carrier payments accurately reflect actual transportation services and contractual agreements."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Key Concept",
+      "content": "Credit Memo decreases transportation charges. Debit Memo increases transportation charges."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Objectives"
+    },
+    {
+      "id": "SEC5",
+      "type": "bullet-list",
+      "items": [
+        "Correct transportation charges",
+        "Handle billing adjustments",
+        "Support dispute resolution",
+        "Maintain financial accuracy",
+        "Process carrier claims",
+        "Ensure contract compliance",
+        "Improve audit traceability"
+      ]
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "Adjustment Process"
+    },
+    {
+      "id": "SEC7",
+      "type": "process-flow",
+      "title": "Credit/Debit Memo Workflow",
+      "orientation": "horizontal",
+      "steps": [
+        "Freight Settlement Document",
+        "Invoice Review",
+        "Identify Difference",
+        "Create Credit/Debit Memo",
+        "Financial Posting",
+        "Adjusted Carrier Payment"
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "When Are Adjustments Required?"
+    },
+    {
+      "id": "SEC9",
+      "type": "table",
+      "title": "Common Adjustment Scenarios",
+      "headers": [
+        "Situation",
+        "Document"
+      ],
+      "rows": [
+        [
+          "Carrier Overcharged",
+          "Credit Memo"
+        ],
+        [
+          "Additional Waiting Charges",
+          "Debit Memo"
+        ],
+        [
+          "Incorrect Freight Rate",
+          "Credit or Debit Memo"
+        ],
+        [
+          "Additional Toll Charges",
+          "Debit Memo"
+        ],
+        [
+          "Duplicate Billing",
+          "Credit Memo"
+        ],
+        [
+          "Damage Compensation",
+          "Credit Memo"
+        ]
+      ]
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "Financial Impact"
+    },
+    {
+      "id": "SEC11",
+      "type": "table",
+      "title": "Credit vs Debit Memo",
+      "headers": [
+        "Aspect",
+        "Credit Memo",
+        "Debit Memo"
+      ],
+      "rows": [
+        [
+          "Purpose",
+          "Reduce Payment",
+          "Increase Payment"
+        ],
+        [
+          "Financial Effect",
+          "Negative Adjustment",
+          "Positive Adjustment"
+        ],
+        [
+          "Typical Reason",
+          "Overbilling",
+          "Additional Charges"
+        ]
+      ]
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Business Scenario"
+    },
+    {
+      "id": "SEC13",
+      "type": "paragraph",
+      "content": "A carrier submits an invoice including ₹8,000 as waiting charges that were not approved in the transportation contract. During invoice verification, SAP TM identifies the discrepancy and generates a Credit Memo to reduce the carrier payment by the incorrect amount."
+    },
+    {
+      "id": "SEC14",
+      "type": "comparison",
+      "title": "Credit Memo vs Debit Memo",
+      "leftTitle": "Credit Memo",
+      "rightTitle": "Debit Memo",
+      "rows": [
+        {
+          "feature": "Payment",
+          "left": "Reduced",
+          "right": "Increased"
+        },
+        {
+          "feature": "Reason",
+          "left": "Overbilling",
+          "right": "Additional Approved Charges"
+        },
+        {
+          "feature": "Financial Effect",
+          "left": "Negative Adjustment",
+          "right": "Positive Adjustment"
+        }
+      ]
+    },
+    {
+      "id": "SEC15",
+      "type": "heading",
+      "title": "Business Benefits"
+    },
+    {
+      "id": "SEC16",
+      "type": "bullet-list",
+      "items": [
+        "Accurate carrier payments",
+        "Reduced invoice disputes",
+        "Improved financial compliance",
+        "Better audit records",
+        "Automatic payment adjustments",
+        "Higher accounting accuracy"
+      ]
+    },
+    {
+      "id": "SEC17",
+      "type": "callout",
+      "calloutType": "best-practice",
+      "title": "Best Practice",
+      "content": "Always document the business reason for every Credit Memo or Debit Memo. Proper documentation simplifies audits and carrier dispute resolution."
+    },
+    {
+      "id": "SEC18",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real Project Example",
+      "content": "A global automotive manufacturer automated Credit Memo generation for duplicate freight invoices. Incorrect carrier payments were reduced significantly while invoice processing became faster."
+    },
+    {
+      "id": "SEC19",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Interview Tip",
+      "content": "Remember this simple rule: Credit Memo = Reduce Payment. Debit Memo = Increase Payment. This is frequently asked in SAP TM certification exams."
+    },
+    {
+      "id": "SEC20",
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Common Mistake",
+      "content": "Credit and Debit Memos adjust existing settlement amounts. They do not replace the original Freight Settlement Document."
+    },
+    {
+      "id": "SEC21",
+      "type": "heading",
+      "title": "Revision Summary"
+    },
+    {
+      "id": "SEC22",
+      "type": "bullet-list",
+      "items": [
+        "Credit Memo reduces carrier payment.",
+        "Debit Memo increases carrier payment.",
+        "Both documents adjust Freight Settlement results.",
+        "Invoice Verification often triggers Credit or Debit Memos.",
+        "Proper documentation improves financial transparency and auditing."
+      ]
+    }
+  ],
+  "relatedLearning": {
+    "viva": [
+      "V-M7-T8-001"
+    ],
+    "handsOnLabs": [
+      "LAB-M7-008"
+    ],
+    "caseStudies": [
+      "CASE-M7-008"
+    ],
+    "practiceMcqs": [
+      "M7T8Q001"
+    ]
+  }
+}

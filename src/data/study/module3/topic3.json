@@ -1,0 +1,267 @@
+{
+  "id": "M3T3",
+  "module": {
+    "id": 3,
+    "title": "SAP TM Organizational Structure & Master Data",
+    "sequence": 3
+  },
+  "topic": {
+    "id": 3,
+    "title": "SAP TM Organization Management & Planning Responsibility",
+    "sequence": 3
+  },
+  "metadata": {
+    "difficulty": "Beginner",
+    "estimatedReadingTime": 35,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-15",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "Organization Management",
+      "Planning Responsibility"
+    ],
+    "prerequisites": [
+      "M3T1",
+      "M3T2"
+    ],
+    "learningPath": [
+      "Study",
+      "Viva",
+      "Hands-on",
+      "MCQ"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Understand organization management",
+      "description": "Explain how planning responsibilities are distributed across TM organizations and planners."
+    },
+    {
+      "id": "LO2",
+      "title": "Understand planning responsibility criteria",
+      "description": "Identify assignment criteria such as region, plant, shipping point and transportation zone."
+    },
+    {
+      "id": "LO3",
+      "title": "Differentiate responsibility and authorization",
+      "description": "Clarify who plans transportation versus what users can access."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "Organization Management in SAP TM"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "Organization Management in SAP TM determines how transportation activities are distributed among planners and business units. It ensures that transportation requests are assigned to the correct planning organization, planning group and planner."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Key Concept",
+      "content": "Organization Management controls planning responsibility, authorization and workload distribution across transportation planners."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Objectives of Organization Management"
+    },
+    {
+      "id": "SEC5",
+      "type": "bullet-list",
+      "items": [
+        "Assign transportation responsibility",
+        "Distribute planner workload",
+        "Control authorizations",
+        "Support regional planning",
+        "Improve planning efficiency",
+        "Enable organizational reporting"
+      ]
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "Planning Responsibility"
+    },
+    {
+      "id": "SEC7",
+      "type": "paragraph",
+      "content": "Planning Responsibility determines which planner or planning organization is responsible for a transportation request. Assignment can be based on geography, transportation zone, shipping point, customer, plant or business rules."
+    },
+    {
+      "id": "SEC8",
+      "type": "table",
+      "title": "Planning Responsibility Criteria",
+      "headers": [
+        "Criteria",
+        "Example"
+      ],
+      "rows": [
+        [
+          "Region",
+          "North India Planning Team"
+        ],
+        [
+          "Plant",
+          "Hyderabad Manufacturing Plant"
+        ],
+        [
+          "Shipping Point",
+          "SP001"
+        ],
+        [
+          "Transportation Zone",
+          "South Zone"
+        ],
+        [
+          "Customer Group",
+          "Retail Customers"
+        ]
+      ]
+    },
+    {
+      "id": "SEC9",
+      "type": "heading",
+      "title": "Planning Assignment Process"
+    },
+    {
+      "id": "SEC10",
+      "type": "process-flow",
+      "title": "Planner Assignment",
+      "orientation": "horizontal",
+      "steps": [
+        "Business Document",
+        "Freight Unit",
+        "Determine Planning Organization",
+        "Assign Planning Group",
+        "Assign Planner",
+        "Transportation Planning"
+      ]
+    },
+    {
+      "id": "SEC11",
+      "type": "heading",
+      "title": "Business Rules"
+    },
+    {
+      "id": "SEC12",
+      "type": "bullet-list",
+      "items": [
+        "Rule-based planner assignment",
+        "Region-based assignment",
+        "Customer-specific assignment",
+        "Transportation mode assignment",
+        "Country-specific planning",
+        "Automatic planner determination"
+      ]
+    },
+    {
+      "id": "SEC13",
+      "type": "heading",
+      "title": "Business Scenario"
+    },
+    {
+      "id": "SEC14",
+      "type": "paragraph",
+      "content": "A global manufacturing company has planning teams in India, Europe and North America. Freight Units generated for Indian customers are automatically assigned to the India Planning Organization, while European shipments are routed to the Europe Planning Organization."
+    },
+    {
+      "id": "SEC15",
+      "type": "comparison",
+      "title": "Manual vs Automatic Planning Assignment",
+      "leftTitle": "Manual",
+      "rightTitle": "Automatic",
+      "rows": [
+        {
+          "feature": "Assignment",
+          "left": "Planner Chooses",
+          "right": "Business Rules"
+        },
+        {
+          "feature": "Speed",
+          "left": "Slower",
+          "right": "Instant"
+        },
+        {
+          "feature": "Consistency",
+          "left": "Depends on User",
+          "right": "Always Consistent"
+        }
+      ]
+    },
+    {
+      "id": "SEC16",
+      "type": "heading",
+      "title": "Business Benefits"
+    },
+    {
+      "id": "SEC17",
+      "type": "bullet-list",
+      "items": [
+        "Balanced planner workload",
+        "Reduced planning delays",
+        "Automatic responsibility assignment",
+        "Better transportation visibility",
+        "Improved operational efficiency"
+      ]
+    },
+    {
+      "id": "SEC18",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real Project Example",
+      "content": "A logistics company serving 18 countries configured planning responsibility based on Transportation Zones. Every Freight Unit was automatically assigned to the appropriate regional planning team without manual intervention."
+    },
+    {
+      "id": "SEC19",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Interview Tip",
+      "content": "Interviewers often ask how SAP TM automatically determines the responsible planner. Explain Planning Responsibility, Planning Organizations, Planning Groups and Rule-Based Assignment."
+    },
+    {
+      "id": "SEC20",
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Common Mistake",
+      "content": "Planning Responsibility is not the same as Authorization. Responsibility determines who plans transportation, while Authorization determines what a user is allowed to access."
+    },
+    {
+      "id": "SEC21",
+      "type": "heading",
+      "title": "Revision Summary"
+    },
+    {
+      "id": "SEC22",
+      "type": "bullet-list",
+      "items": [
+        "Planning Responsibility determines planner assignment.",
+        "Assignments can be based on region, plant, customer or transportation zone.",
+        "Automatic assignment improves efficiency.",
+        "Planning Organizations and Planning Groups work together.",
+        "Responsibility and Authorization are different concepts."
+      ]
+    }
+  ],
+  "relatedLearning": {
+    "viva": [
+      "V-M3-T3-001"
+    ],
+    "handsOnLabs": [
+      "LAB-M3-003"
+    ],
+    "caseStudies": [
+      "CASE-M3-003"
+    ],
+    "practiceMcqs": [
+      "M3T3Q001"
+    ]
+  }
+}

@@ -1,0 +1,287 @@
+{
+  "id": "M2T2",
+  "module": {
+    "id": 2,
+    "title": "Transportation Management Foundations",
+    "sequence": 2
+  },
+  "topic": {
+    "id": 2,
+    "title": "SAP TM Business Terminologies",
+    "sequence": 2
+  },
+  "metadata": {
+    "difficulty": "Beginner",
+    "estimatedReadingTime": 35,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-15",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "Business Terminology",
+      "Transportation Order"
+    ],
+    "prerequisites": [
+      "M2T1"
+    ],
+    "learningPath": [
+      "Study",
+      "Viva",
+      "Hands-on",
+      "MCQ"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Understand SAP TM objects",
+      "description": "Identify key business objects used in SAP TM lifecycle."
+    },
+    {
+      "id": "LO2",
+      "title": "Differentiate FU and FO",
+      "description": "Explain planning vs execution roles in transportation documents."
+    },
+    {
+      "id": "LO3",
+      "title": "Recognize TM master data",
+      "description": "Understand Business Partner, Location, Resource and related data."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "SAP TM Business Terminologies"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "SAP Transportation Management introduces several transportation-specific business objects used during planning, execution and settlement. Understanding these objects is essential before learning transportation planning."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Remember",
+      "content": "Every transportation process in SAP TM revolves around Transportation Orders (TORs). Freight Units, Freight Orders and Freight Bookings are different types of Transportation Orders."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Key SAP TM Terminologies"
+    },
+    {
+      "id": "SEC5",
+      "type": "table",
+      "title": "SAP TM Objects",
+      "headers": [
+        "Object",
+        "Purpose"
+      ],
+      "rows": [
+        [
+          "Transportation Order (TOR)",
+          "Generic transportation business document"
+        ],
+        [
+          "Freight Unit (FU)",
+          "Transportation demand generated from business documents"
+        ],
+        [
+          "Freight Order (FO)",
+          "Represents planned transportation execution"
+        ],
+        [
+          "Freight Booking (FB)",
+          "Represents ocean or air carrier booking"
+        ],
+        [
+          "Forwarding Order (FWO)",
+          "Customer transportation request"
+        ],
+        [
+          "Freight Settlement Document (FSD)",
+          "Used for freight cost settlement"
+        ]
+      ]
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "Transportation Order Hierarchy"
+    },
+    {
+      "id": "SEC7",
+      "type": "process-flow",
+      "title": "Transportation Order Flow",
+      "orientation": "vertical",
+      "steps": [
+        "Sales Order / Purchase Order",
+        "Delivery",
+        "Freight Unit",
+        "Transportation Planning",
+        "Freight Order / Freight Booking",
+        "Transportation Execution",
+        "Freight Settlement Document"
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "Freight Unit"
+    },
+    {
+      "id": "SEC9",
+      "type": "paragraph",
+      "content": "A Freight Unit represents transportation demand. It is automatically generated from business documents such as Outbound Deliveries or Purchase Orders and serves as the primary planning object in SAP TM."
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "Freight Order"
+    },
+    {
+      "id": "SEC11",
+      "type": "paragraph",
+      "content": "A Freight Order is an executable transportation document created after planning. It contains transportation stages, assigned resources, carriers and execution information."
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Freight Booking"
+    },
+    {
+      "id": "SEC13",
+      "type": "paragraph",
+      "content": "Freight Booking is primarily used for ocean and air transportation where transportation capacity is reserved with external carriers."
+    },
+    {
+      "id": "SEC14",
+      "type": "comparison",
+      "title": "Freight Unit vs Freight Order",
+      "leftTitle": "Freight Unit",
+      "rightTitle": "Freight Order",
+      "rows": [
+        {
+          "feature": "Purpose",
+          "left": "Transportation Demand",
+          "right": "Transportation Execution"
+        },
+        {
+          "feature": "Planning",
+          "left": "Input",
+          "right": "Output"
+        },
+        {
+          "feature": "Generated From",
+          "left": "Deliveries",
+          "right": "Transportation Planning"
+        },
+        {
+          "feature": "Execution",
+          "left": "No",
+          "right": "Yes"
+        }
+      ]
+    },
+    {
+      "id": "SEC15",
+      "type": "heading",
+      "title": "Master Data Terminologies"
+    },
+    {
+      "id": "SEC16",
+      "type": "table",
+      "title": "Important Master Data",
+      "headers": [
+        "Object",
+        "Purpose"
+      ],
+      "rows": [
+        [
+          "Business Partner",
+          "Customer, Supplier or Carrier"
+        ],
+        [
+          "Location",
+          "Pickup or Delivery Point"
+        ],
+        [
+          "Resource",
+          "Vehicle or Transportation Resource"
+        ],
+        [
+          "Transportation Lane",
+          "Allowed transportation path"
+        ],
+        [
+          "Transportation Zone",
+          "Grouping of locations"
+        ]
+      ]
+    },
+    {
+      "id": "SEC17",
+      "type": "heading",
+      "title": "Business Example"
+    },
+    {
+      "id": "SEC18",
+      "type": "paragraph",
+      "content": "A customer order creates an outbound delivery. SAP TM generates a Freight Unit from the delivery. Multiple Freight Units are consolidated into one Freight Order for execution by an assigned carrier. After delivery, freight costs are settled through a Freight Settlement Document."
+    },
+    {
+      "id": "SEC19",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real Project Example",
+      "content": "An automotive manufacturer generates approximately 1,200 Freight Units daily. SAP TM consolidates them into 180 Freight Orders, reducing transportation cost and improving truck utilization."
+    },
+    {
+      "id": "SEC20",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Interview Tip",
+      "content": "One of the most frequently asked SAP TM interview questions is 'What is the difference between Freight Unit and Freight Order?' Be able to explain both from business and technical perspectives."
+    },
+    {
+      "id": "SEC21",
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Common Mistake",
+      "content": "Do not say Freight Unit is used for transportation execution. Freight Units are planning objects, while Freight Orders are execution documents."
+    },
+    {
+      "id": "SEC22",
+      "type": "heading",
+      "title": "Revision Summary"
+    },
+    {
+      "id": "SEC23",
+      "type": "bullet-list",
+      "items": [
+        "Transportation Order is the generic TM document.",
+        "Freight Unit represents transportation demand.",
+        "Freight Order represents transportation execution.",
+        "Freight Booking is used for ocean and air transportation.",
+        "Business Partner, Location and Resource are important TM master data."
+      ]
+    }
+  ],
+  "relatedLearning": {
+    "viva": [
+      "V-M2-T2-001"
+    ],
+    "handsOnLabs": [
+      "LAB-M2-002"
+    ],
+    "caseStudies": [
+      "CASE-M2-002"
+    ],
+    "practiceMcqs": [
+      "M2T2Q001"
+    ]
+  }
+}

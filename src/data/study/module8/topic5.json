@@ -1,0 +1,298 @@
+{
+  "id": "M8T5",
+  "module": {
+    "id": 8,
+    "title": "SAP TM Integration & Cross-System Connectivity",
+    "sequence": 8
+  },
+  "topic": {
+    "id": 5,
+    "title": "SAP Business Network for Logistics (BN4L) & Carrier Integration",
+    "sequence": 5
+  },
+  "metadata": {
+    "difficulty": "Beginner",
+    "estimatedReadingTime": 35,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-15",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "BN4L",
+      "Carrier Integration"
+    ],
+    "prerequisites": [
+      "M8T4"
+    ],
+    "learningPath": [
+      "Study",
+      "Viva",
+      "Hands-on",
+      "MCQ"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Understand BN4L role",
+      "description": "Explain how BN4L extends SAP TM for external logistics collaboration."
+    },
+    {
+      "id": "LO2",
+      "title": "Understand carrier collaboration flow",
+      "description": "Describe tendering, acceptance, tracking, POD, and invoice exchange steps."
+    },
+    {
+      "id": "LO3",
+      "title": "Differentiate TM and network capabilities",
+      "description": "Clarify internal transportation management versus partner communication."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "SAP Business Network for Logistics & Carrier Integration"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "SAP Business Network for Logistics (BN4L), formerly SAP Logistics Business Network (LBN), extends SAP Transportation Management by connecting shippers, carriers, freight forwarders and logistics partners through a cloud-based collaboration platform. It enables electronic tendering, shipment collaboration, real-time tracking and document exchange."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Key Concept",
+      "content": "SAP TM manages transportation internally, while SAP Business Network for Logistics enables collaboration with external logistics partners."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Objectives of BN4L Integration"
+    },
+    {
+      "id": "SEC5",
+      "type": "bullet-list",
+      "items": [
+        "Connect shippers and carriers",
+        "Enable electronic freight tendering",
+        "Share shipment information",
+        "Receive real-time transportation events",
+        "Improve collaboration",
+        "Reduce manual communication",
+        "Increase transportation visibility"
+      ]
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "Business Network Process"
+    },
+    {
+      "id": "SEC7",
+      "type": "process-flow",
+      "title": "Carrier Collaboration Flow",
+      "orientation": "horizontal",
+      "steps": [
+        "Freight Order",
+        "Freight Tender",
+        "Carrier Accepts",
+        "Shipment Execution",
+        "Status Updates",
+        "Proof of Delivery",
+        "Freight Settlement"
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "Information Shared"
+    },
+    {
+      "id": "SEC9",
+      "type": "table",
+      "title": "Data Exchanged with Carriers",
+      "headers": [
+        "Information",
+        "Purpose"
+      ],
+      "rows": [
+        [
+          "Freight Tender",
+          "Transportation request"
+        ],
+        [
+          "Carrier Acceptance",
+          "Confirm transportation"
+        ],
+        [
+          "Shipment Status",
+          "Execution progress"
+        ],
+        [
+          "GPS Location",
+          "Real-time tracking"
+        ],
+        [
+          "Proof of Delivery",
+          "Delivery confirmation"
+        ],
+        [
+          "Carrier Invoice",
+          "Settlement processing"
+        ]
+      ]
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "Carrier Collaboration Features"
+    },
+    {
+      "id": "SEC11",
+      "type": "table",
+      "title": "Business Network Capabilities",
+      "headers": [
+        "Feature",
+        "Business Benefit"
+      ],
+      "rows": [
+        [
+          "Electronic Tendering",
+          "Faster carrier assignment"
+        ],
+        [
+          "Real-Time Tracking",
+          "Shipment visibility"
+        ],
+        [
+          "Document Exchange",
+          "Paperless communication"
+        ],
+        [
+          "Carrier Collaboration",
+          "Improved coordination"
+        ],
+        [
+          "Event Sharing",
+          "Automatic status updates"
+        ],
+        [
+          "Invoice Exchange",
+          "Settlement automation"
+        ]
+      ]
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Business Scenario"
+    },
+    {
+      "id": "SEC13",
+      "type": "paragraph",
+      "content": "A manufacturer creates a Freight Order in SAP TM. The shipment is electronically tendered to multiple carriers through SAP Business Network for Logistics. One carrier accepts the tender, shares GPS updates during transportation and submits Proof of Delivery and invoice electronically after delivery."
+    },
+    {
+      "id": "SEC14",
+      "type": "comparison",
+      "title": "SAP TM vs SAP Business Network for Logistics",
+      "leftTitle": "SAP TM",
+      "rightTitle": "SAP Business Network",
+      "rows": [
+        {
+          "feature": "Purpose",
+          "left": "Transportation Planning & Execution",
+          "right": "External Collaboration"
+        },
+        {
+          "feature": "Users",
+          "left": "Internal Logistics Team",
+          "right": "Carriers & Logistics Partners"
+        },
+        {
+          "feature": "Focus",
+          "left": "Transportation Management",
+          "right": "Partner Communication"
+        }
+      ]
+    },
+    {
+      "id": "SEC15",
+      "type": "heading",
+      "title": "Business Benefits"
+    },
+    {
+      "id": "SEC16",
+      "type": "bullet-list",
+      "items": [
+        "Improved carrier collaboration",
+        "Faster freight tendering",
+        "Real-time shipment visibility",
+        "Reduced email and phone communication",
+        "Paperless logistics processes",
+        "Better carrier performance monitoring"
+      ]
+    },
+    {
+      "id": "SEC17",
+      "type": "callout",
+      "calloutType": "best-practice",
+      "title": "Best Practice",
+      "content": "Integrate key carriers with SAP Business Network for Logistics to automate tendering, shipment tracking and document exchange instead of relying on manual communication."
+    },
+    {
+      "id": "SEC18",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real Project Example",
+      "content": "A multinational consumer goods company connected over 250 logistics providers through SAP Business Network for Logistics. Electronic tendering reduced carrier response time by more than 60%, while shipment visibility improved significantly."
+    },
+    {
+      "id": "SEC19",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Interview Tip",
+      "content": "For SAP TM certification, remember that SAP Business Network for Logistics primarily supports carrier collaboration, freight tendering, shipment tracking and document exchange."
+    },
+    {
+      "id": "SEC20",
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Common Mistake",
+      "content": "SAP Business Network for Logistics does not replace SAP TM. It extends SAP TM by providing collaboration with external logistics partners."
+    },
+    {
+      "id": "SEC21",
+      "type": "heading",
+      "title": "Revision Summary"
+    },
+    {
+      "id": "SEC22",
+      "type": "bullet-list",
+      "items": [
+        "SAP Business Network for Logistics connects shippers and carriers.",
+        "It supports electronic freight tendering and carrier collaboration.",
+        "Real-time shipment updates are shared through the network.",
+        "Proof of Delivery and invoices can be exchanged electronically.",
+        "Integration improves transportation visibility and logistics efficiency."
+      ]
+    }
+  ],
+  "relatedLearning": {
+    "viva": [
+      "V-M8-T5-001"
+    ],
+    "handsOnLabs": [
+      "LAB-M8-005"
+    ],
+    "caseStudies": [
+      "CASE-M8-005"
+    ],
+    "practiceMcqs": [
+      "M8T5Q001"
+    ]
+  }
+}

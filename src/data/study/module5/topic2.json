@@ -1,0 +1,284 @@
+{
+  "id": "M5T2",
+  "module": {
+    "id": 5,
+    "title": "SAP TM Transportation Planning",
+    "sequence": 5
+  },
+  "topic": {
+    "id": 2,
+    "title": "Freight Unit Management",
+    "sequence": 2
+  },
+  "metadata": {
+    "difficulty": "Beginner",
+    "estimatedReadingTime": 35,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-15",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "Freight Unit",
+      "Transportation Planning"
+    ],
+    "prerequisites": [
+      "M5T1"
+    ],
+    "learningPath": [
+      "Study",
+      "Viva",
+      "Hands-on",
+      "MCQ"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Understand freight units",
+      "description": "Explain freight unit as the core transportation demand object in SAP TM."
+    },
+    {
+      "id": "LO2",
+      "title": "Understand freight unit lifecycle",
+      "description": "Describe creation, planning, consolidation and conversion into freight orders."
+    },
+    {
+      "id": "LO3",
+      "title": "Differentiate freight unit and freight order",
+      "description": "Clarify planning input versus execution output in transportation process."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "Freight Unit Management"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "A Freight Unit (FU) is the primary transportation demand object in SAP TM. It represents the goods that must be transported from one location to another. Transportation planning begins with Freight Units, which are later consolidated into Freight Orders for execution."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Key Concept",
+      "content": "Freight Units represent transportation demand. They are the primary input to the transportation planning process."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "How Freight Units are Created"
+    },
+    {
+      "id": "SEC5",
+      "type": "bullet-list",
+      "items": [
+        "Automatically from Outbound Deliveries",
+        "Automatically from Inbound Deliveries",
+        "Automatically from Purchase Orders",
+        "Automatically from Stock Transport Orders",
+        "Manually (if required)",
+        "Generated through ERP integration"
+      ]
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "Freight Unit Lifecycle"
+    },
+    {
+      "id": "SEC7",
+      "type": "process-flow",
+      "title": "Freight Unit Lifecycle",
+      "orientation": "horizontal",
+      "steps": [
+        "Business Document",
+        "Freight Unit Creation",
+        "Planning",
+        "Consolidation",
+        "Freight Order",
+        "Execution",
+        "Settlement"
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "Information Stored in a Freight Unit"
+    },
+    {
+      "id": "SEC9",
+      "type": "table",
+      "title": "Freight Unit Attributes",
+      "headers": [
+        "Attribute",
+        "Business Purpose"
+      ],
+      "rows": [
+        [
+          "Pickup Location",
+          "Shipment origin"
+        ],
+        [
+          "Delivery Location",
+          "Shipment destination"
+        ],
+        [
+          "Product",
+          "Goods being transported"
+        ],
+        [
+          "Weight",
+          "Capacity planning"
+        ],
+        [
+          "Volume",
+          "Vehicle utilization"
+        ],
+        [
+          "Requested Delivery Date",
+          "Scheduling"
+        ],
+        [
+          "Transportation Requirements",
+          "Planning constraints"
+        ]
+      ]
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "Freight Unit Planning"
+    },
+    {
+      "id": "SEC11",
+      "type": "process-flow",
+      "title": "Planning Process",
+      "orientation": "horizontal",
+      "steps": [
+        "Freight Unit",
+        "Optimizer",
+        "Carrier Selection",
+        "Resource Assignment",
+        "Freight Order"
+      ]
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Business Scenario"
+    },
+    {
+      "id": "SEC13",
+      "type": "paragraph",
+      "content": "A manufacturing company creates ten outbound deliveries for customers in Bengaluru. SAP TM automatically generates ten Freight Units. The optimizer consolidates these Freight Units into three Freight Orders based on vehicle capacity, delivery schedule and transportation zone."
+    },
+    {
+      "id": "SEC14",
+      "type": "comparison",
+      "title": "Freight Unit vs Freight Order",
+      "leftTitle": "Freight Unit",
+      "rightTitle": "Freight Order",
+      "rows": [
+        {
+          "feature": "Purpose",
+          "left": "Transportation Demand",
+          "right": "Transportation Execution"
+        },
+        {
+          "feature": "Created From",
+          "left": "Business Documents",
+          "right": "Transportation Planning"
+        },
+        {
+          "feature": "Planning Stage",
+          "left": "Input",
+          "right": "Output"
+        },
+        {
+          "feature": "Execution",
+          "left": "No",
+          "right": "Yes"
+        }
+      ]
+    },
+    {
+      "id": "SEC15",
+      "type": "heading",
+      "title": "Benefits of Freight Units"
+    },
+    {
+      "id": "SEC16",
+      "type": "bullet-list",
+      "items": [
+        "Standardized transportation demand",
+        "Easy shipment consolidation",
+        "Improved planning flexibility",
+        "Accurate capacity planning",
+        "Better optimizer performance",
+        "Supports multimodal transportation"
+      ]
+    },
+    {
+      "id": "SEC17",
+      "type": "callout",
+      "calloutType": "best-practice",
+      "title": "Best Practice",
+      "content": "Keep Freight Units as granular transportation demands. Let the optimizer consolidate them automatically rather than creating oversized Freight Units manually."
+    },
+    {
+      "id": "SEC18",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real Project Example",
+      "content": "A consumer goods company generated approximately 8,500 Freight Units every day. SAP TM consolidated them into 2,100 optimized Freight Orders, reducing transportation costs by nearly 20%."
+    },
+    {
+      "id": "SEC19",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Interview Tip",
+      "content": "One of the most common SAP TM interview questions is: 'What is a Freight Unit?' Always answer that it is the transportation demand object and the primary input for transportation planning."
+    },
+    {
+      "id": "SEC20",
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Common Mistake",
+      "content": "Do not confuse Freight Units with Deliveries. Deliveries originate in ERP, while Freight Units are transportation planning objects created in SAP TM."
+    },
+    {
+      "id": "SEC21",
+      "type": "heading",
+      "title": "Revision Summary"
+    },
+    {
+      "id": "SEC22",
+      "type": "bullet-list",
+      "items": [
+        "Freight Unit is the primary transportation demand object.",
+        "Freight Units are generated from ERP business documents.",
+        "Transportation planning starts with Freight Units.",
+        "Multiple Freight Units can be consolidated into one Freight Order.",
+        "Freight Units are planning objects, not execution documents."
+      ]
+    }
+  ],
+  "relatedLearning": {
+    "viva": [
+      "V-M5-T2-001"
+    ],
+    "handsOnLabs": [
+      "LAB-M5-002"
+    ],
+    "caseStudies": [
+      "CASE-M5-002"
+    ],
+    "practiceMcqs": [
+      "M5T2Q001"
+    ]
+  }
+}

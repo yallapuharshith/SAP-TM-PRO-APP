@@ -1,0 +1,296 @@
+{
+  "id": "M5T1",
+  "module": {
+    "id": 5,
+    "title": "SAP TM Transportation Planning",
+    "sequence": 5
+  },
+  "topic": {
+    "id": 1,
+    "title": "Transportation Planning Overview",
+    "sequence": 1
+  },
+  "metadata": {
+    "difficulty": "Beginner",
+    "estimatedReadingTime": 35,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-15",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "Transportation Planning",
+      "Freight Order"
+    ],
+    "prerequisites": [
+      "M4T10"
+    ],
+    "learningPath": [
+      "Study",
+      "Viva",
+      "Hands-on",
+      "MCQ"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Understand transportation planning",
+      "description": "Explain how transportation demand is transformed into executable freight plans."
+    },
+    {
+      "id": "LO2",
+      "title": "Understand planning inputs and outputs",
+      "description": "Identify key planning inputs and resulting freight orders, assignments and schedules."
+    },
+    {
+      "id": "LO3",
+      "title": "Understand optimization impact",
+      "description": "Describe how SAP TM planning improves utilization, cost and service outcomes."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "Transportation Planning in SAP TM"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "Transportation Planning is the core functionality of SAP Transportation Management. It transforms transportation demand into executable transportation plans by consolidating Freight Units, selecting transportation lanes, assigning carriers and resources, and creating Freight Orders while minimizing cost and maximizing resource utilization."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Key Concept",
+      "content": "Transportation Planning converts transportation demand (Freight Units) into executable transportation documents (Freight Orders)."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Objectives of Transportation Planning"
+    },
+    {
+      "id": "SEC5",
+      "type": "bullet-list",
+      "items": [
+        "Consolidate shipments",
+        "Reduce transportation cost",
+        "Improve vehicle utilization",
+        "Select optimal carriers",
+        "Optimize transportation routes",
+        "Meet delivery commitments",
+        "Increase operational efficiency"
+      ]
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "Transportation Planning Process"
+    },
+    {
+      "id": "SEC7",
+      "type": "process-flow",
+      "title": "End-to-End Planning Flow",
+      "orientation": "horizontal",
+      "steps": [
+        "Sales Order",
+        "Delivery",
+        "Freight Unit",
+        "Planning",
+        "Optimization",
+        "Carrier Selection",
+        "Resource Assignment",
+        "Freight Order"
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "Planning Inputs"
+    },
+    {
+      "id": "SEC9",
+      "type": "table",
+      "title": "Transportation Planning Inputs",
+      "headers": [
+        "Input",
+        "Purpose"
+      ],
+      "rows": [
+        [
+          "Freight Unit",
+          "Transportation demand"
+        ],
+        [
+          "Business Partner",
+          "Customer and carrier information"
+        ],
+        [
+          "Location",
+          "Pickup and delivery points"
+        ],
+        [
+          "Transportation Lane",
+          "Valid transportation route"
+        ],
+        [
+          "Resource",
+          "Available transportation assets"
+        ],
+        [
+          "Product",
+          "Weight, volume and dimensions"
+        ]
+      ]
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "Planning Outputs"
+    },
+    {
+      "id": "SEC11",
+      "type": "table",
+      "title": "Planning Results",
+      "headers": [
+        "Output",
+        "Description"
+      ],
+      "rows": [
+        [
+          "Freight Order",
+          "Executable transportation plan"
+        ],
+        [
+          "Resource Assignment",
+          "Vehicle and driver allocation"
+        ],
+        [
+          "Carrier Assignment",
+          "Transportation provider selection"
+        ],
+        [
+          "Transportation Schedule",
+          "Pickup and delivery timings"
+        ]
+      ]
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Business Scenario"
+    },
+    {
+      "id": "SEC13",
+      "type": "paragraph",
+      "content": "A company receives 20 customer deliveries destined for nearby locations. SAP TM consolidates them into four Freight Orders based on truck capacity, delivery dates and transportation zones, reducing freight cost while maintaining on-time delivery."
+    },
+    {
+      "id": "SEC14",
+      "type": "comparison",
+      "title": "Manual Planning vs SAP TM Planning",
+      "leftTitle": "Manual Planning",
+      "rightTitle": "SAP TM Planning",
+      "rows": [
+        {
+          "feature": "Planning Speed",
+          "left": "Slow",
+          "right": "Automated"
+        },
+        {
+          "feature": "Optimization",
+          "left": "Limited",
+          "right": "Advanced Optimizer"
+        },
+        {
+          "feature": "Vehicle Utilization",
+          "left": "Depends on Planner",
+          "right": "System Optimized"
+        },
+        {
+          "feature": "Freight Cost",
+          "left": "Higher",
+          "right": "Optimized"
+        }
+      ]
+    },
+    {
+      "id": "SEC15",
+      "type": "heading",
+      "title": "Business Benefits"
+    },
+    {
+      "id": "SEC16",
+      "type": "bullet-list",
+      "items": [
+        "Reduced transportation costs",
+        "Improved shipment consolidation",
+        "Better truck utilization",
+        "Automated planning decisions",
+        "Higher customer satisfaction",
+        "Improved logistics visibility"
+      ]
+    },
+    {
+      "id": "SEC17",
+      "type": "callout",
+      "calloutType": "best-practice",
+      "title": "Best Practice",
+      "content": "Maintain accurate master data and planning profiles before enabling automatic transportation planning. The optimizer is only as good as the master data it uses."
+    },
+    {
+      "id": "SEC18",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real Project Example",
+      "content": "A retail company consolidated 350 daily deliveries into 95 optimized Freight Orders using SAP TM. Vehicle utilization increased by 28%, and transportation costs decreased by 17%."
+    },
+    {
+      "id": "SEC19",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Interview Tip",
+      "content": "The first step in Transportation Planning is planning Freight Units, not Sales Orders or Freight Orders. Freight Orders are the result of the planning process."
+    },
+    {
+      "id": "SEC20",
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Common Mistake",
+      "content": "Do not assume Transportation Planning begins with Freight Orders. Freight Orders are created only after transportation demand has been planned and optimized."
+    },
+    {
+      "id": "SEC21",
+      "type": "heading",
+      "title": "Revision Summary"
+    },
+    {
+      "id": "SEC22",
+      "type": "bullet-list",
+      "items": [
+        "Transportation Planning converts Freight Units into Freight Orders.",
+        "Planning includes optimization, carrier selection and resource assignment.",
+        "Master data drives planning quality.",
+        "SAP TM improves vehicle utilization and reduces freight cost.",
+        "Freight Orders are the primary output of transportation planning."
+      ]
+    }
+  ],
+  "relatedLearning": {
+    "viva": [
+      "V-M5-T1-001"
+    ],
+    "handsOnLabs": [
+      "LAB-M5-001"
+    ],
+    "caseStudies": [
+      "CASE-M5-001"
+    ],
+    "practiceMcqs": [
+      "M5T1Q001"
+    ]
+  }
+}

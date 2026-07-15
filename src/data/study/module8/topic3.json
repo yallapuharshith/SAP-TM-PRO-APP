@@ -1,0 +1,304 @@
+{
+  "id": "M8T3",
+  "module": {
+    "id": 8,
+    "title": "SAP TM Integration & Cross-System Connectivity",
+    "sequence": 8
+  },
+  "topic": {
+    "id": 3,
+    "title": "SAP EWM Integration with SAP TM",
+    "sequence": 3
+  },
+  "metadata": {
+    "difficulty": "Beginner",
+    "estimatedReadingTime": 35,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-15",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "SAP EWM",
+      "Integration"
+    ],
+    "prerequisites": [
+      "M8T2"
+    ],
+    "learningPath": [
+      "Study",
+      "Viva",
+      "Hands-on",
+      "MCQ"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Understand TM-EWM integration",
+      "description": "Explain synchronization between transportation planning and warehouse execution."
+    },
+    {
+      "id": "LO2",
+      "title": "Understand exchanged objects",
+      "description": "Describe business objects and status updates shared across SAP TM and SAP EWM."
+    },
+    {
+      "id": "LO3",
+      "title": "Understand execution coordination",
+      "description": "Clarify warehouse readiness and loading confirmations before shipment execution."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "SAP Extended Warehouse Management (EWM) Integration"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "SAP Extended Warehouse Management (SAP EWM) integrates closely with SAP Transportation Management to synchronize warehouse operations with transportation activities. While SAP TM plans and manages transportation, SAP EWM executes warehouse processes such as picking, packing, staging, loading and unloading. Together they provide end-to-end logistics execution."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Key Concept",
+      "content": "SAP TM decides WHEN and HOW goods move. SAP EWM manages HOW goods are physically handled inside the warehouse."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Objectives of SAP EWM Integration"
+    },
+    {
+      "id": "SEC5",
+      "type": "bullet-list",
+      "items": [
+        "Synchronize warehouse and transportation activities",
+        "Coordinate loading operations",
+        "Improve shipment visibility",
+        "Reduce warehouse delays",
+        "Support real-time execution",
+        "Enable dock scheduling",
+        "Improve logistics efficiency"
+      ]
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "Integration Process"
+    },
+    {
+      "id": "SEC7",
+      "type": "process-flow",
+      "title": "SAP TM ↔ SAP EWM Flow",
+      "orientation": "horizontal",
+      "steps": [
+        "Outbound Delivery",
+        "Freight Order",
+        "Warehouse Request",
+        "Picking",
+        "Packing",
+        "Loading",
+        "Departure",
+        "Transportation Execution"
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "Information Exchanged"
+    },
+    {
+      "id": "SEC9",
+      "type": "table",
+      "title": "SAP TM & SAP EWM Integration Data",
+      "headers": [
+        "Business Object",
+        "Purpose"
+      ],
+      "rows": [
+        [
+          "Freight Order",
+          "Transportation execution"
+        ],
+        [
+          "Transportation Unit",
+          "Vehicle management"
+        ],
+        [
+          "Delivery Document",
+          "Warehouse processing"
+        ],
+        [
+          "Loading Status",
+          "Execution synchronization"
+        ],
+        [
+          "Departure Event",
+          "Shipment tracking"
+        ],
+        [
+          "Warehouse Tasks",
+          "Physical goods movement"
+        ]
+      ]
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "Warehouse Activities"
+    },
+    {
+      "id": "SEC11",
+      "type": "table",
+      "title": "Activities Managed by SAP EWM",
+      "headers": [
+        "Activity",
+        "Description"
+      ],
+      "rows": [
+        [
+          "Picking",
+          "Collect goods from storage"
+        ],
+        [
+          "Packing",
+          "Prepare goods for shipment"
+        ],
+        [
+          "Staging",
+          "Move goods to loading area"
+        ],
+        [
+          "Loading",
+          "Load vehicle"
+        ],
+        [
+          "Unloading",
+          "Unload incoming goods"
+        ],
+        [
+          "Warehouse Confirmation",
+          "Complete warehouse processing"
+        ]
+      ]
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Business Scenario"
+    },
+    {
+      "id": "SEC13",
+      "type": "paragraph",
+      "content": "A Freight Order is created in SAP TM for delivery from a distribution center. SAP EWM receives the transportation request, generates warehouse tasks, completes picking and packing, schedules dock loading and confirms loading completion. SAP TM then updates the Freight Order and releases the shipment for transportation."
+    },
+    {
+      "id": "SEC14",
+      "type": "comparison",
+      "title": "SAP TM vs SAP EWM",
+      "leftTitle": "SAP TM",
+      "rightTitle": "SAP EWM",
+      "rows": [
+        {
+          "feature": "Primary Focus",
+          "left": "Transportation",
+          "right": "Warehouse Operations"
+        },
+        {
+          "feature": "Main Document",
+          "left": "Freight Order",
+          "right": "Warehouse Task"
+        },
+        {
+          "feature": "Execution",
+          "left": "Shipment Movement",
+          "right": "Material Handling"
+        },
+        {
+          "feature": "Planning",
+          "left": "Transportation Planning",
+          "right": "Warehouse Execution"
+        }
+      ]
+    },
+    {
+      "id": "SEC15",
+      "type": "heading",
+      "title": "Business Benefits"
+    },
+    {
+      "id": "SEC16",
+      "type": "bullet-list",
+      "items": [
+        "Better warehouse coordination",
+        "Reduced loading delays",
+        "Improved shipment readiness",
+        "Real-time warehouse visibility",
+        "Higher logistics efficiency",
+        "End-to-end execution monitoring"
+      ]
+    },
+    {
+      "id": "SEC17",
+      "type": "callout",
+      "calloutType": "best-practice",
+      "title": "Best Practice",
+      "content": "Synchronize warehouse confirmations with transportation execution so Freight Orders are released only after loading activities are completed successfully."
+    },
+    {
+      "id": "SEC18",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real Project Example",
+      "content": "A consumer goods manufacturer integrated SAP TM with SAP EWM across 12 warehouses. Automatic warehouse confirmations reduced truck waiting time by 35% and improved on-time departures."
+    },
+    {
+      "id": "SEC19",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Interview Tip",
+      "content": "Remember the division of responsibilities: SAP TM manages transportation planning and execution, while SAP EWM manages warehouse execution. They complement each other rather than replacing each other."
+    },
+    {
+      "id": "SEC20",
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Common Mistake",
+      "content": "SAP TM does not perform warehouse picking or packing. Those activities are executed in SAP EWM and synchronized back to SAP TM through integration."
+    },
+    {
+      "id": "SEC21",
+      "type": "heading",
+      "title": "Revision Summary"
+    },
+    {
+      "id": "SEC22",
+      "type": "bullet-list",
+      "items": [
+        "SAP EWM manages warehouse execution activities.",
+        "SAP TM manages transportation planning and execution.",
+        "Both systems exchange Freight Orders, loading status and execution events.",
+        "Integration improves loading efficiency and shipment visibility.",
+        "Warehouse completion triggers transportation execution in SAP TM."
+      ]
+    }
+  ],
+  "relatedLearning": {
+    "viva": [
+      "V-M8-T3-001"
+    ],
+    "handsOnLabs": [
+      "LAB-M8-003"
+    ],
+    "caseStudies": [
+      "CASE-M8-003"
+    ],
+    "practiceMcqs": [
+      "M8T3Q001"
+    ]
+  }
+}

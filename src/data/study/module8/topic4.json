@@ -1,0 +1,302 @@
+{
+  "id": "M8T4",
+  "module": {
+    "id": 8,
+    "title": "SAP TM Integration & Cross-System Connectivity",
+    "sequence": 8
+  },
+  "topic": {
+    "id": 4,
+    "title": "SAP Event Management (SAP EM) / Event Tracking Integration",
+    "sequence": 4
+  },
+  "metadata": {
+    "difficulty": "Beginner",
+    "estimatedReadingTime": 35,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-15",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "SAP Event Management",
+      "Event Tracking"
+    ],
+    "prerequisites": [
+      "M8T3"
+    ],
+    "learningPath": [
+      "Study",
+      "Viva",
+      "Hands-on",
+      "MCQ"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Understand event management integration",
+      "description": "Explain how event systems provide real-time transportation visibility to SAP TM."
+    },
+    {
+      "id": "LO2",
+      "title": "Understand event sources",
+      "description": "Describe event capture from carriers, GPS, IoT, EDI, and SAP systems."
+    },
+    {
+      "id": "LO3",
+      "title": "Differentiate TM and EM roles",
+      "description": "Clarify planning/execution ownership versus monitoring and alerting responsibilities."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "SAP Event Management Integration"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "SAP Event Management (SAP EM), now commonly delivered through SAP Business Network for Logistics and Event Management capabilities, integrates with SAP Transportation Management to provide real-time shipment visibility. It collects transportation events from SAP systems, carriers, GPS devices and IoT sensors, allowing businesses to monitor transportation progress and respond proactively to exceptions."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Key Concept",
+      "content": "SAP TM plans and executes transportation, while Event Management monitors what actually happens during transportation."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Objectives of Event Management Integration"
+    },
+    {
+      "id": "SEC5",
+      "type": "bullet-list",
+      "items": [
+        "Provide real-time shipment visibility",
+        "Track transportation milestones",
+        "Monitor shipment delays",
+        "Capture execution events automatically",
+        "Support exception management",
+        "Improve customer communication",
+        "Enable predictive logistics"
+      ]
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "Event Management Flow"
+    },
+    {
+      "id": "SEC7",
+      "type": "process-flow",
+      "title": "Transportation Event Flow",
+      "orientation": "horizontal",
+      "steps": [
+        "Freight Order",
+        "Shipment Starts",
+        "Carrier/GPS Event",
+        "SAP Event Management",
+        "SAP TM Update",
+        "Exception Check",
+        "Planner Notification"
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "Typical Transportation Events"
+    },
+    {
+      "id": "SEC9",
+      "type": "table",
+      "title": "Standard Shipment Events",
+      "headers": [
+        "Event",
+        "Business Meaning"
+      ],
+      "rows": [
+        [
+          "Loading Complete",
+          "Goods loaded successfully"
+        ],
+        [
+          "Departure",
+          "Shipment leaves origin"
+        ],
+        [
+          "Border Crossing",
+          "International milestone"
+        ],
+        [
+          "Delay Reported",
+          "Exception detected"
+        ],
+        [
+          "Arrival",
+          "Vehicle reaches destination"
+        ],
+        [
+          "Proof of Delivery",
+          "Delivery confirmed"
+        ],
+        [
+          "Shipment Completed",
+          "Execution finished"
+        ]
+      ]
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "Event Sources"
+    },
+    {
+      "id": "SEC11",
+      "type": "table",
+      "title": "Where Events Originate",
+      "headers": [
+        "Source",
+        "Example"
+      ],
+      "rows": [
+        [
+          "Carrier Portal",
+          "Carrier updates shipment"
+        ],
+        [
+          "GPS Device",
+          "Vehicle location"
+        ],
+        [
+          "IoT Sensors",
+          "Temperature monitoring"
+        ],
+        [
+          "Mobile Application",
+          "Driver confirms delivery"
+        ],
+        [
+          "EDI Messages",
+          "Electronic shipment status"
+        ],
+        [
+          "SAP EWM",
+          "Loading confirmation"
+        ]
+      ]
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Business Scenario"
+    },
+    {
+      "id": "SEC13",
+      "type": "paragraph",
+      "content": "A refrigerated pharmaceutical shipment is monitored using GPS and temperature sensors. During transportation, the temperature exceeds the permitted range. SAP Event Management immediately receives the event, updates SAP TM, creates an exception alert and notifies the transportation planner to take corrective action."
+    },
+    {
+      "id": "SEC14",
+      "type": "comparison",
+      "title": "SAP TM vs SAP Event Management",
+      "leftTitle": "SAP TM",
+      "rightTitle": "SAP Event Management",
+      "rows": [
+        {
+          "feature": "Primary Purpose",
+          "left": "Transportation Planning & Execution",
+          "right": "Shipment Monitoring"
+        },
+        {
+          "feature": "Main Focus",
+          "left": "Business Documents",
+          "right": "Transportation Events"
+        },
+        {
+          "feature": "Business Value",
+          "left": "Execute Shipments",
+          "right": "Provide Visibility"
+        }
+      ]
+    },
+    {
+      "id": "SEC15",
+      "type": "heading",
+      "title": "Business Benefits"
+    },
+    {
+      "id": "SEC16",
+      "type": "bullet-list",
+      "items": [
+        "Real-time shipment tracking",
+        "Improved customer service",
+        "Proactive exception handling",
+        "Higher transportation visibility",
+        "Reduced shipment delays",
+        "Better operational control"
+      ]
+    },
+    {
+      "id": "SEC17",
+      "type": "callout",
+      "calloutType": "best-practice",
+      "title": "Best Practice",
+      "content": "Integrate SAP TM with GPS providers, carrier portals and IoT devices to automate event capture instead of relying on manual shipment updates."
+    },
+    {
+      "id": "SEC18",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real Project Example",
+      "content": "A global food manufacturer integrated SAP TM with IoT temperature sensors and GPS tracking. Shipment events were captured automatically, enabling proactive intervention whenever cold-chain conditions were violated."
+    },
+    {
+      "id": "SEC19",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Interview Tip",
+      "content": "Remember: SAP TM plans transportation, SAP Event Management monitors transportation. Event Management does not create Freight Orders."
+    },
+    {
+      "id": "SEC20",
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Common Mistake",
+      "content": "Event Management is not a transportation planning tool. Its primary purpose is monitoring execution, tracking milestones and triggering alerts for exceptions."
+    },
+    {
+      "id": "SEC21",
+      "type": "heading",
+      "title": "Revision Summary"
+    },
+    {
+      "id": "SEC22",
+      "type": "bullet-list",
+      "items": [
+        "SAP Event Management provides real-time shipment visibility.",
+        "Events originate from carriers, GPS, IoT devices and SAP systems.",
+        "SAP TM receives execution updates through integration.",
+        "Event Management supports proactive exception handling.",
+        "Integration improves shipment tracking and customer communication."
+      ]
+    }
+  ],
+  "relatedLearning": {
+    "viva": [
+      "V-M8-T4-001"
+    ],
+    "handsOnLabs": [
+      "LAB-M8-004"
+    ],
+    "caseStudies": [
+      "CASE-M8-004"
+    ],
+    "practiceMcqs": [
+      "M8T4Q001"
+    ]
+  }
+}

@@ -1,0 +1,303 @@
+{
+  "id": "M8T8",
+  "module": {
+    "id": 8,
+    "title": "SAP TM Integration & Cross-System Connectivity",
+    "sequence": 8
+  },
+  "topic": {
+    "id": 8,
+    "title": "GPS, IoT & Telematics Integration",
+    "sequence": 8
+  },
+  "metadata": {
+    "difficulty": "Beginner",
+    "estimatedReadingTime": 35,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-15",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "GPS",
+      "IoT",
+      "Telematics"
+    ],
+    "prerequisites": [
+      "M8T7"
+    ],
+    "learningPath": [
+      "Study",
+      "Viva",
+      "Hands-on",
+      "MCQ"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Understand real-time tracking integration",
+      "description": "Explain GPS, IoT, and telematics data ingestion into SAP TM."
+    },
+    {
+      "id": "LO2",
+      "title": "Understand monitored data types",
+      "description": "Describe location, cargo conditions, vehicle state, and event information."
+    },
+    {
+      "id": "LO3",
+      "title": "Understand proactive exception handling",
+      "description": "Clarify how alerts and business rules convert sensor data into actions."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "GPS, IoT & Telematics Integration"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "SAP Transportation Management integrates with GPS devices, IoT sensors and telematics platforms to provide real-time shipment visibility. These technologies continuously transmit vehicle location, shipment conditions and transportation events to SAP TM, enabling proactive monitoring, exception management and better customer service."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Key Concept",
+      "content": "GPS tells where the vehicle is, IoT tells the condition of the shipment and telematics provides operational vehicle information. SAP TM uses this data for transportation visibility."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Objectives of GPS & IoT Integration"
+    },
+    {
+      "id": "SEC5",
+      "type": "bullet-list",
+      "items": [
+        "Provide real-time vehicle tracking",
+        "Monitor shipment conditions",
+        "Capture transportation events automatically",
+        "Improve customer visibility",
+        "Support predictive logistics",
+        "Reduce manual status updates",
+        "Enable proactive exception handling"
+      ]
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "Real-Time Tracking Process"
+    },
+    {
+      "id": "SEC7",
+      "type": "process-flow",
+      "title": "GPS & IoT Data Flow",
+      "orientation": "horizontal",
+      "steps": [
+        "Vehicle",
+        "GPS/IoT Device",
+        "Telematics Platform",
+        "SAP TM",
+        "Event Management",
+        "Planner Dashboard",
+        "Customer Visibility"
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "Types of Data Collected"
+    },
+    {
+      "id": "SEC9",
+      "type": "table",
+      "title": "Tracking Information",
+      "headers": [
+        "Data",
+        "Business Purpose"
+      ],
+      "rows": [
+        [
+          "GPS Coordinates",
+          "Vehicle location"
+        ],
+        [
+          "Speed",
+          "Transit monitoring"
+        ],
+        [
+          "Temperature",
+          "Cold-chain monitoring"
+        ],
+        [
+          "Humidity",
+          "Sensitive cargo protection"
+        ],
+        [
+          "Door Status",
+          "Cargo security"
+        ],
+        [
+          "Arrival Time",
+          "ETA calculation"
+        ],
+        [
+          "Fuel Level",
+          "Fleet management"
+        ]
+      ]
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "Telematics Events"
+    },
+    {
+      "id": "SEC11",
+      "type": "table",
+      "title": "Common Vehicle Events",
+      "headers": [
+        "Event",
+        "Business Meaning"
+      ],
+      "rows": [
+        [
+          "Vehicle Started",
+          "Transportation begins"
+        ],
+        [
+          "Departure",
+          "Leaves origin"
+        ],
+        [
+          "Unexpected Stop",
+          "Possible delay"
+        ],
+        [
+          "Route Deviation",
+          "Potential issue"
+        ],
+        [
+          "Arrival",
+          "Reached destination"
+        ],
+        [
+          "Engine Failure",
+          "Transportation exception"
+        ]
+      ]
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Business Scenario"
+    },
+    {
+      "id": "SEC13",
+      "type": "paragraph",
+      "content": "A refrigerated truck transporting vaccines continuously sends GPS location and temperature readings to SAP TM. During transit, the temperature rises above the acceptable limit. SAP TM immediately creates an exception, alerts the planner and notifies the carrier before product quality is affected."
+    },
+    {
+      "id": "SEC14",
+      "type": "comparison",
+      "title": "GPS vs IoT vs Telematics",
+      "leftTitle": "GPS",
+      "rightTitle": "IoT & Telematics",
+      "rows": [
+        {
+          "feature": "Primary Purpose",
+          "left": "Location Tracking",
+          "right": "Vehicle & Cargo Monitoring"
+        },
+        {
+          "feature": "Example",
+          "left": "Latitude & Longitude",
+          "right": "Temperature, Engine Status"
+        },
+        {
+          "feature": "Business Value",
+          "left": "Shipment Visibility",
+          "right": "Operational Intelligence"
+        }
+      ]
+    },
+    {
+      "id": "SEC15",
+      "type": "heading",
+      "title": "Business Benefits"
+    },
+    {
+      "id": "SEC16",
+      "type": "bullet-list",
+      "items": [
+        "Real-time shipment visibility",
+        "Improved ETA accuracy",
+        "Reduced transportation delays",
+        "Enhanced cargo security",
+        "Better fleet utilization",
+        "Improved customer satisfaction"
+      ]
+    },
+    {
+      "id": "SEC17",
+      "type": "callout",
+      "calloutType": "best-practice",
+      "title": "Best Practice",
+      "content": "Configure automatic alerts for temperature deviations, route deviations and unexpected stops so transportation planners can respond immediately to critical situations."
+    },
+    {
+      "id": "SEC18",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real Project Example",
+      "content": "A pharmaceutical company integrated SAP TM with IoT temperature sensors and GPS-enabled trucks. Cold-chain compliance improved significantly while spoilage claims were reduced by more than 40%."
+    },
+    {
+      "id": "SEC19",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Interview Tip",
+      "content": "Know the distinction: GPS provides location, IoT monitors shipment conditions and telematics provides vehicle operational data. SAP TM combines all three for intelligent transportation monitoring."
+    },
+    {
+      "id": "SEC20",
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Common Mistake",
+      "content": "GPS tracking alone does not guarantee transportation visibility. SAP TM also requires event processing, business rules and exception management to convert raw tracking data into meaningful logistics information."
+    },
+    {
+      "id": "SEC21",
+      "type": "heading",
+      "title": "Revision Summary"
+    },
+    {
+      "id": "SEC22",
+      "type": "bullet-list",
+      "items": [
+        "GPS provides real-time vehicle location.",
+        "IoT sensors monitor shipment conditions such as temperature and humidity.",
+        "Telematics supplies vehicle operational data.",
+        "SAP TM uses this information for event tracking and exception management.",
+        "Integration improves shipment visibility, security and customer service."
+      ]
+    }
+  ],
+  "relatedLearning": {
+    "viva": [
+      "V-M8-T8-001"
+    ],
+    "handsOnLabs": [
+      "LAB-M8-008"
+    ],
+    "caseStudies": [
+      "CASE-M8-008"
+    ],
+    "practiceMcqs": [
+      "M8T8Q001"
+    ]
+  }
+}

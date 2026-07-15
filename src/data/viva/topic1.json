@@ -1,0 +1,300 @@
+{
+  "id": "M11T1",
+  "module": {
+    "id": 11,
+    "title": "SAP TM Viva & Interview Preparation",
+    "sequence": 11
+  },
+  "topic": {
+    "id": 1,
+    "title": "Viva Preparation (SAP S/4HANA Transportation Management)",
+    "sequence": 1
+  },
+  "metadata": {
+    "difficulty": "Beginner",
+    "estimatedReadingTime": 35,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-15",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "Viva Preparation",
+      "Interview Readiness"
+    ],
+    "prerequisites": [
+      "M10T10"
+    ],
+    "learningPath": [
+      "Study",
+      "Viva",
+      "Hands-on",
+      "MCQ"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Understand viva response structure",
+      "description": "Explain SAP TM concepts with definition, business purpose, practical example, and business value."
+    },
+    {
+      "id": "LO2",
+      "title": "Understand end-to-end transportation explanation",
+      "description": "Describe full business flow from order creation through settlement and reporting."
+    },
+    {
+      "id": "LO3",
+      "title": "Understand interview readiness",
+      "description": "Apply scenario-based answers across core SAP TM objects and integration topics."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "SAP TM Viva Preparation"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "The SAP TM Viva evaluates conceptual understanding, business process knowledge and implementation awareness rather than memorization. Candidates are expected to explain transportation processes, SAP TM objects, integrations and real-world business scenarios clearly and confidently."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Viva Strategy",
+      "content": "Always answer in three steps: Define the concept → Explain its business purpose → Give a practical example."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Most Frequently Asked Viva Questions"
+    },
+    {
+      "id": "SEC5",
+      "type": "table",
+      "title": "Core SAP TM Viva Questions",
+      "headers": [
+        "Question",
+        "Expected Answer"
+      ],
+      "rows": [
+        [
+          "What is SAP TM?",
+          "Transportation planning, execution and freight settlement solution."
+        ],
+        [
+          "Why is SAP TM used?",
+          "Optimize transportation cost, resources and delivery performance."
+        ],
+        [
+          "Difference between ERP and TM?",
+          "ERP manages business transactions; TM manages transportation."
+        ],
+        [
+          "What is a Freight Unit?",
+          "Planning object created from transportation demand."
+        ],
+        [
+          "What is a Freight Order?",
+          "Execution document assigned to resources."
+        ],
+        [
+          "What is Freight Settlement?",
+          "Financial settlement with carriers."
+        ]
+      ]
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "Business Flow to Explain"
+    },
+    {
+      "id": "SEC7",
+      "type": "process-flow",
+      "title": "Complete Transportation Lifecycle",
+      "orientation": "horizontal",
+      "steps": [
+        "Sales Order",
+        "Delivery",
+        "Freight Unit",
+        "Planning",
+        "Freight Order",
+        "Execution",
+        "Settlement",
+        "Reporting"
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "Important Viva Topics"
+    },
+    {
+      "id": "SEC9",
+      "type": "bullet-list",
+      "items": [
+        "SAP TM Architecture",
+        "Business Partners",
+        "Locations",
+        "Organizational Units",
+        "Transportation Proposal",
+        "Freight Units",
+        "Freight Orders",
+        "Carrier Selection",
+        "Planning Strategies",
+        "Charge Management",
+        "Freight Settlement",
+        "SAP TM Integration",
+        "SAP EWM Integration",
+        "SAP S/4HANA Integration",
+        "SAP Business Network",
+        "SAP Analytics"
+      ]
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "Sample Viva Answers"
+    },
+    {
+      "id": "SEC11",
+      "type": "table",
+      "title": "Interview Examples",
+      "headers": [
+        "Question",
+        "Good Answer"
+      ],
+      "rows": [
+        [
+          "What is Transportation Proposal?",
+          "A planning recommendation suggesting the best transportation option before Freight Order creation."
+        ],
+        [
+          "Why is Carrier Selection required?",
+          "To choose the most suitable carrier based on cost, service level and business rules."
+        ],
+        [
+          "What is Resource Management?",
+          "Managing vehicles, drivers and transportation equipment used during execution."
+        ],
+        [
+          "Why integrate SAP TM with EWM?",
+          "To synchronize warehouse execution with transportation planning."
+        ]
+      ]
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Business Scenario"
+    },
+    {
+      "id": "SEC13",
+      "type": "paragraph",
+      "content": "Suppose a customer places an order. Explain how SAP TM handles it. The expected answer is: Sales Order creates an Outbound Delivery, which generates a Freight Unit. Planning creates a Transportation Proposal and then a Freight Order. The shipment is executed, monitored and finally settled with the carrier through Freight Settlement."
+    },
+    {
+      "id": "SEC14",
+      "type": "comparison",
+      "title": "Weak Answer vs Strong Answer",
+      "leftTitle": "Weak",
+      "rightTitle": "Strong",
+      "rows": [
+        {
+          "feature": "Definition",
+          "left": "Only textbook definition",
+          "right": "Definition + Business Purpose + Example"
+        },
+        {
+          "feature": "Confidence",
+          "left": "One-line answer",
+          "right": "Structured explanation"
+        },
+        {
+          "feature": "Impact",
+          "left": "Limited understanding",
+          "right": "Demonstrates practical knowledge"
+        }
+      ]
+    },
+    {
+      "id": "SEC15",
+      "type": "heading",
+      "title": "Viva Tips"
+    },
+    {
+      "id": "SEC16",
+      "type": "bullet-list",
+      "items": [
+        "Explain concepts using business scenarios.",
+        "Use SAP terminology correctly.",
+        "Do not memorize definitions only.",
+        "Mention practical implementation examples.",
+        "Speak confidently and clearly.",
+        "Answer step-by-step."
+      ]
+    },
+    {
+      "id": "SEC17",
+      "type": "callout",
+      "calloutType": "best-practice",
+      "title": "Best Practice",
+      "content": "Whenever asked 'What is X?', answer using this format: Definition → Purpose → Example → Business Benefit."
+    },
+    {
+      "id": "SEC18",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Example Viva Answer",
+      "content": "Question: What is a Freight Unit? Answer: A Freight Unit is the basic planning object in SAP TM. It is created from transportation demand such as an outbound delivery. The planning engine groups Freight Units into Freight Orders for execution, helping optimize transportation resources and costs."
+    },
+    {
+      "id": "SEC19",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Exam Tip",
+      "content": "Most viva questions focus on business flow rather than configuration. Be able to explain the complete transportation process confidently."
+    },
+    {
+      "id": "SEC20",
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Common Mistake",
+      "content": "Avoid giving one-word answers. Interviewers evaluate understanding, communication and logical explanation."
+    },
+    {
+      "id": "SEC21",
+      "type": "heading",
+      "title": "Revision Checklist"
+    },
+    {
+      "id": "SEC22",
+      "type": "bullet-list",
+      "items": [
+        "Know all major SAP TM objects.",
+        "Explain the end-to-end transportation process.",
+        "Understand SAP TM integrations.",
+        "Revise planning, execution and settlement.",
+        "Practice answering using business scenarios."
+      ]
+    }
+  ],
+  "relatedLearning": {
+    "viva": [
+      "V-M11-T1-001"
+    ],
+    "handsOnLabs": [
+      "LAB-M11-001"
+    ],
+    "caseStudies": [
+      "CASE-M11-001"
+    ],
+    "practiceMcqs": [
+      "M11T1Q001"
+    ]
+  }
+}

@@ -1,0 +1,298 @@
+{
+  "id": "M6T6",
+  "module": {
+    "id": 6,
+    "title": "SAP TM Freight Execution Management",
+    "sequence": 6
+  },
+  "topic": {
+    "id": 6,
+    "title": "Exception Management in Transportation Execution",
+    "sequence": 6
+  },
+  "metadata": {
+    "difficulty": "Beginner",
+    "estimatedReadingTime": 35,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-15",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "Exception Management",
+      "Transportation Execution"
+    ],
+    "prerequisites": [
+      "M6T5"
+    ],
+    "learningPath": [
+      "Study",
+      "Viva",
+      "Hands-on",
+      "MCQ"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Understand exception management",
+      "description": "Explain how SAP TM detects and manages execution deviations proactively."
+    },
+    {
+      "id": "LO2",
+      "title": "Understand exception workflow",
+      "description": "Describe detection, alerting, planner review, and corrective action flow."
+    },
+    {
+      "id": "LO3",
+      "title": "Differentiate events and exceptions",
+      "description": "Clarify normal milestones versus issue-driven deviations requiring action."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "Exception Management"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "Exception Management enables SAP TM to identify, monitor and resolve unexpected transportation events that may affect shipment execution. Instead of reacting after problems occur, planners receive proactive alerts that allow corrective actions before customer service is impacted."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Key Concept",
+      "content": "An exception is any transportation event that deviates from the planned execution process and requires attention."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Objectives of Exception Management"
+    },
+    {
+      "id": "SEC5",
+      "type": "bullet-list",
+      "items": [
+        "Detect transportation issues early",
+        "Notify planners automatically",
+        "Reduce shipment delays",
+        "Improve customer satisfaction",
+        "Support corrective actions",
+        "Minimize transportation risks",
+        "Improve operational control"
+      ]
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "Exception Management Process"
+    },
+    {
+      "id": "SEC7",
+      "type": "process-flow",
+      "title": "Exception Handling Workflow",
+      "orientation": "horizontal",
+      "steps": [
+        "Transportation Event",
+        "Exception Detected",
+        "Alert Generated",
+        "Planner Review",
+        "Corrective Action",
+        "Status Update",
+        "Shipment Continues"
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "Common Transportation Exceptions"
+    },
+    {
+      "id": "SEC9",
+      "type": "table",
+      "title": "Typical Exceptions",
+      "headers": [
+        "Exception",
+        "Business Impact"
+      ],
+      "rows": [
+        [
+          "Late Departure",
+          "Delivery delay"
+        ],
+        [
+          "Vehicle Breakdown",
+          "Shipment interruption"
+        ],
+        [
+          "Traffic Delay",
+          "Late arrival"
+        ],
+        [
+          "Carrier Cancellation",
+          "Replanning required"
+        ],
+        [
+          "Capacity Violation",
+          "Shipment split required"
+        ],
+        [
+          "Missed Delivery Window",
+          "Customer dissatisfaction"
+        ],
+        [
+          "Proof of Delivery Missing",
+          "Settlement delay"
+        ]
+      ]
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "Corrective Actions"
+    },
+    {
+      "id": "SEC11",
+      "type": "table",
+      "title": "Planner Responses",
+      "headers": [
+        "Situation",
+        "Possible Action"
+      ],
+      "rows": [
+        [
+          "Vehicle Breakdown",
+          "Assign replacement vehicle"
+        ],
+        [
+          "Carrier Unavailable",
+          "Select alternate carrier"
+        ],
+        [
+          "Traffic Delay",
+          "Notify customer"
+        ],
+        [
+          "Capacity Issue",
+          "Split Freight Order"
+        ],
+        [
+          "Delivery Delay",
+          "Reschedule appointment"
+        ]
+      ]
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Business Scenario"
+    },
+    {
+      "id": "SEC13",
+      "type": "paragraph",
+      "content": "A truck transporting medical equipment breaks down during transit. SAP TM immediately detects the delay through event management, creates an exception alert, notifies the transportation planner and recommends assigning another available truck to complete the delivery."
+    },
+    {
+      "id": "SEC14",
+      "type": "comparison",
+      "title": "Event vs Exception",
+      "leftTitle": "Transportation Event",
+      "rightTitle": "Exception",
+      "rows": [
+        {
+          "feature": "Purpose",
+          "left": "Normal milestone",
+          "right": "Unexpected issue"
+        },
+        {
+          "feature": "Example",
+          "left": "Shipment departed",
+          "right": "Shipment delayed"
+        },
+        {
+          "feature": "Planner Action",
+          "left": "Usually none",
+          "right": "Corrective action required"
+        }
+      ]
+    },
+    {
+      "id": "SEC15",
+      "type": "heading",
+      "title": "Business Benefits"
+    },
+    {
+      "id": "SEC16",
+      "type": "bullet-list",
+      "items": [
+        "Early issue detection",
+        "Reduced transportation disruptions",
+        "Improved shipment visibility",
+        "Better customer communication",
+        "Faster problem resolution",
+        "Improved service levels"
+      ]
+    },
+    {
+      "id": "SEC17",
+      "type": "callout",
+      "calloutType": "best-practice",
+      "title": "Best Practice",
+      "content": "Configure exception thresholds based on business priorities. Avoid generating excessive alerts that may overwhelm transportation planners."
+    },
+    {
+      "id": "SEC18",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real Project Example",
+      "content": "A pharmaceutical company configured automatic alerts whenever refrigerated shipments exceeded transit temperature limits. Planners received immediate notifications, reducing product spoilage and improving regulatory compliance."
+    },
+    {
+      "id": "SEC19",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Interview Tip",
+      "content": "Remember: Every exception originates from one or more transportation events, but not every transportation event becomes an exception."
+    },
+    {
+      "id": "SEC20",
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Common Mistake",
+      "content": "Do not treat every transportation event as an exception. Exceptions occur only when predefined business rules or execution expectations are violated."
+    },
+    {
+      "id": "SEC21",
+      "type": "heading",
+      "title": "Revision Summary"
+    },
+    {
+      "id": "SEC22",
+      "type": "bullet-list",
+      "items": [
+        "Exception Management identifies transportation problems.",
+        "Exceptions trigger alerts and corrective actions.",
+        "Traffic delays, vehicle breakdowns and missed delivery windows are common exceptions.",
+        "Event Management supplies the information used by Exception Management.",
+        "Proactive exception handling improves customer service and operational efficiency."
+      ]
+    }
+  ],
+  "relatedLearning": {
+    "viva": [
+      "V-M6-T6-001"
+    ],
+    "handsOnLabs": [
+      "LAB-M6-006"
+    ],
+    "caseStudies": [
+      "CASE-M6-006"
+    ],
+    "practiceMcqs": [
+      "M6T6Q001"
+    ]
+  }
+}

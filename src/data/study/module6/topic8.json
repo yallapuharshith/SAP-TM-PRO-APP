@@ -1,0 +1,298 @@
+{
+  "id": "M6T8",
+  "module": {
+    "id": 6,
+    "title": "SAP TM Freight Execution Management",
+    "sequence": 6
+  },
+  "topic": {
+    "id": 8,
+    "title": "Proof of Delivery (POD) & Delivery Confirmation",
+    "sequence": 8
+  },
+  "metadata": {
+    "difficulty": "Beginner",
+    "estimatedReadingTime": 35,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-15",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "Proof of Delivery",
+      "POD"
+    ],
+    "prerequisites": [
+      "M6T7"
+    ],
+    "learningPath": [
+      "Study",
+      "Viva",
+      "Hands-on",
+      "MCQ"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Understand proof of delivery",
+      "description": "Explain POD as formal confirmation of successful shipment delivery."
+    },
+    {
+      "id": "LO2",
+      "title": "Understand POD data and capture methods",
+      "description": "Describe POD information fields and electronic/manual capture channels."
+    },
+    {
+      "id": "LO3",
+      "title": "Understand POD business impact",
+      "description": "Clarify how POD supports settlement, invoicing, and legal compliance."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "Proof of Delivery (POD)"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "Proof of Delivery (POD) is the confirmation that goods have been successfully delivered to the customer or consignee. In SAP TM, POD is a critical transportation execution milestone that confirms completion of the delivery process and serves as the basis for freight settlement, invoicing and customer service."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Key Concept",
+      "content": "Proof of Delivery confirms successful transportation completion and marks the transition from execution to settlement."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Objectives of Proof of Delivery"
+    },
+    {
+      "id": "SEC5",
+      "type": "bullet-list",
+      "items": [
+        "Confirm successful delivery",
+        "Update transportation status",
+        "Support freight settlement",
+        "Provide legal delivery evidence",
+        "Improve customer satisfaction",
+        "Enable invoicing",
+        "Complete shipment lifecycle"
+      ]
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "POD Process"
+    },
+    {
+      "id": "SEC7",
+      "type": "process-flow",
+      "title": "Proof of Delivery Workflow",
+      "orientation": "horizontal",
+      "steps": [
+        "Freight Order",
+        "Shipment Arrives",
+        "Goods Unloaded",
+        "Customer Verification",
+        "POD Captured",
+        "Freight Order Completed",
+        "Freight Settlement"
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "Proof of Delivery Information"
+    },
+    {
+      "id": "SEC9",
+      "type": "table",
+      "title": "POD Details",
+      "headers": [
+        "Information",
+        "Purpose"
+      ],
+      "rows": [
+        [
+          "Delivery Date",
+          "Actual delivery time"
+        ],
+        [
+          "Delivery Location",
+          "Customer site"
+        ],
+        [
+          "Receiver Name",
+          "Delivery recipient"
+        ],
+        [
+          "Digital Signature",
+          "Customer confirmation"
+        ],
+        [
+          "Delivery Status",
+          "Successful or failed delivery"
+        ],
+        [
+          "Remarks",
+          "Damage or delivery comments"
+        ],
+        [
+          "Photos/Documents",
+          "Supporting evidence"
+        ]
+      ]
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "Methods of POD Capture"
+    },
+    {
+      "id": "SEC11",
+      "type": "table",
+      "title": "POD Collection Methods",
+      "headers": [
+        "Method",
+        "Example"
+      ],
+      "rows": [
+        [
+          "Mobile Application",
+          "Driver mobile device"
+        ],
+        [
+          "Digital Signature",
+          "Electronic confirmation"
+        ],
+        [
+          "Carrier Portal",
+          "Carrier updates delivery"
+        ],
+        [
+          "EDI Integration",
+          "Electronic delivery confirmation"
+        ],
+        [
+          "Manual Entry",
+          "Planner updates system"
+        ]
+      ]
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Business Scenario"
+    },
+    {
+      "id": "SEC13",
+      "type": "paragraph",
+      "content": "A driver delivers medical equipment to a hospital. The receiving officer verifies the shipment, signs electronically using the driver's mobile application and SAP TM immediately updates the Freight Order to Completed. The Proof of Delivery automatically triggers the freight settlement process."
+    },
+    {
+      "id": "SEC14",
+      "type": "comparison",
+      "title": "Delivery Completed vs Proof of Delivery",
+      "leftTitle": "Delivery Completed",
+      "rightTitle": "Proof of Delivery",
+      "rows": [
+        {
+          "feature": "Meaning",
+          "left": "Goods physically delivered",
+          "right": "Customer confirms receipt"
+        },
+        {
+          "feature": "Evidence",
+          "left": "Operational Activity",
+          "right": "Legal Confirmation"
+        },
+        {
+          "feature": "Settlement",
+          "left": "Not Always",
+          "right": "Usually Triggers Settlement"
+        }
+      ]
+    },
+    {
+      "id": "SEC15",
+      "type": "heading",
+      "title": "Business Benefits"
+    },
+    {
+      "id": "SEC16",
+      "type": "bullet-list",
+      "items": [
+        "Legal delivery confirmation",
+        "Improved customer confidence",
+        "Faster freight settlement",
+        "Reduced delivery disputes",
+        "Better shipment traceability",
+        "Improved operational efficiency"
+      ]
+    },
+    {
+      "id": "SEC17",
+      "type": "callout",
+      "calloutType": "best-practice",
+      "title": "Best Practice",
+      "content": "Capture Proof of Delivery electronically whenever possible. Digital signatures and photographs improve accuracy and reduce delivery disputes."
+    },
+    {
+      "id": "SEC18",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real Project Example",
+      "content": "A courier company implemented mobile Proof of Delivery with GPS location and customer signatures. Delivery disputes reduced by 70%, while freight settlement processing became significantly faster."
+    },
+    {
+      "id": "SEC19",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Interview Tip",
+      "content": "Proof of Delivery is not merely a status update. It is an official confirmation that supports freight settlement, customer billing and legal compliance."
+    },
+    {
+      "id": "SEC20",
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Common Mistake",
+      "content": "Do not assume vehicle arrival automatically means delivery completion. Proof of Delivery requires confirmation from the receiving party."
+    },
+    {
+      "id": "SEC21",
+      "type": "heading",
+      "title": "Revision Summary"
+    },
+    {
+      "id": "SEC22",
+      "type": "bullet-list",
+      "items": [
+        "Proof of Delivery confirms successful shipment completion.",
+        "POD is the basis for freight settlement.",
+        "Digital signatures and mobile applications are common POD methods.",
+        "POD reduces delivery disputes and improves traceability.",
+        "Transportation execution is formally completed after successful POD."
+      ]
+    }
+  ],
+  "relatedLearning": {
+    "viva": [
+      "V-M6-T8-001"
+    ],
+    "handsOnLabs": [
+      "LAB-M6-008"
+    ],
+    "caseStudies": [
+      "CASE-M6-008"
+    ],
+    "practiceMcqs": [
+      "M6T8Q001"
+    ]
+  }
+}

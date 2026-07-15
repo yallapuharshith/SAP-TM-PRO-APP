@@ -1,0 +1,234 @@
+{
+  "id": "M4T1",
+  "module": {
+    "id": 4,
+    "title": "SAP TM Master Data Management",
+    "sequence": 4
+  },
+  "topic": {
+    "id": 1,
+    "title": "SAP TM Master Data Overview",
+    "sequence": 1
+  },
+  "metadata": {
+    "difficulty": "Beginner",
+    "estimatedReadingTime": 35,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-15",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "Master Data",
+      "Transportation Planning"
+    ],
+    "prerequisites": [
+      "M3T7"
+    ],
+    "learningPath": [
+      "Study",
+      "Viva",
+      "Hands-on",
+      "MCQ"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Understand TM master data fundamentals",
+      "description": "Explain why master data is essential for planning, execution and settlement in SAP TM."
+    },
+    {
+      "id": "LO2",
+      "title": "Identify core master data objects",
+      "description": "Recognize Business Partner, Location, Resource, Transportation Lane and related objects."
+    },
+    {
+      "id": "LO3",
+      "title": "Understand master data impact",
+      "description": "Describe how data quality influences route determination, optimization and freight settlement."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "Introduction to SAP TM Master Data"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "Master data is the foundation of SAP Transportation Management. Every transportation planning, optimization, execution and settlement process depends on accurate master data. Incorrect or incomplete master data leads to planning failures, incorrect routing and freight settlement issues."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Key Concept",
+      "content": "Without master data, SAP TM cannot determine locations, resources, carriers, routes or transportation costs."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Objectives of Master Data"
+    },
+    {
+      "id": "SEC5",
+      "type": "bullet-list",
+      "items": [
+        "Support transportation planning",
+        "Enable route determination",
+        "Assign transportation resources",
+        "Calculate transportation charges",
+        "Determine planning responsibilities",
+        "Improve planning accuracy"
+      ]
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "Major Master Data Objects"
+    },
+    {
+      "id": "SEC7",
+      "type": "table",
+      "title": "SAP TM Master Data",
+      "headers": [
+        "Master Data",
+        "Business Purpose"
+      ],
+      "rows": [
+        [
+          "Business Partner",
+          "Customer, Carrier, Vendor"
+        ],
+        [
+          "Location",
+          "Pickup and Delivery Locations"
+        ],
+        [
+          "Resource",
+          "Truck, Trailer, Driver"
+        ],
+        [
+          "Transportation Lane",
+          "Allowed Transportation Route"
+        ],
+        [
+          "Transportation Zone",
+          "Group of Locations"
+        ],
+        [
+          "Means of Transport",
+          "Road, Rail, Air, Ocean"
+        ],
+        [
+          "Package Building Profile",
+          "Packaging Rules"
+        ],
+        [
+          "Planning Profile",
+          "Transportation Planning Settings"
+        ]
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "Master Data Relationships"
+    },
+    {
+      "id": "SEC9",
+      "type": "process-flow",
+      "title": "Master Data Flow",
+      "orientation": "horizontal",
+      "steps": [
+        "Business Partner",
+        "Location",
+        "Transportation Zone",
+        "Transportation Lane",
+        "Resource",
+        "Freight Unit",
+        "Freight Order"
+      ]
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "Business Scenario"
+    },
+    {
+      "id": "SEC11",
+      "type": "paragraph",
+      "content": "ABC Manufacturing ships products from Hyderabad to Chennai. SAP TM identifies the Business Partner, determines the shipping and destination Locations, validates the Transportation Lane, checks available Resources and creates an optimized Freight Order."
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Benefits of Accurate Master Data"
+    },
+    {
+      "id": "SEC13",
+      "type": "bullet-list",
+      "items": [
+        "Accurate transportation planning",
+        "Higher vehicle utilization",
+        "Correct route determination",
+        "Reduced transportation cost",
+        "Faster execution",
+        "Reliable freight settlement"
+      ]
+    },
+    {
+      "id": "SEC14",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real Project Example",
+      "content": "A logistics company corrected duplicate Location and Business Partner master data, reducing transportation planning errors by over 30% and improving optimizer performance."
+    },
+    {
+      "id": "SEC15",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Interview Tip",
+      "content": "Remember the core TM master data objects: Business Partner, Location, Resource, Transportation Lane and Transportation Zone. These are asked in almost every SAP TM interview."
+    },
+    {
+      "id": "SEC16",
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Common Mistake",
+      "content": "Many beginners think Freight Units and Freight Orders are master data. They are transactional business documents, not master data."
+    },
+    {
+      "id": "SEC17",
+      "type": "heading",
+      "title": "Revision Summary"
+    },
+    {
+      "id": "SEC18",
+      "type": "bullet-list",
+      "items": [
+        "Master data is the foundation of SAP TM.",
+        "Business Partner identifies business entities.",
+        "Locations define pickup and delivery points.",
+        "Resources represent transportation assets.",
+        "Transportation Lanes define valid transportation paths."
+      ]
+    }
+  ],
+  "relatedLearning": {
+    "viva": [
+      "V-M4-T1-001"
+    ],
+    "handsOnLabs": [
+      "LAB-M4-001"
+    ],
+    "caseStudies": [
+      "CASE-M4-001"
+    ],
+    "practiceMcqs": [
+      "M4T1Q001"
+    ]
+  }
+}

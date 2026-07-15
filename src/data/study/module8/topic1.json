@@ -1,0 +1,276 @@
+{
+  "id": "M8T1",
+  "module": {
+    "id": 8,
+    "title": "SAP TM Integration & Cross-System Connectivity",
+    "sequence": 8
+  },
+  "topic": {
+    "id": 1,
+    "title": "SAP TM Integration Overview",
+    "sequence": 1
+  },
+  "metadata": {
+    "difficulty": "Beginner",
+    "estimatedReadingTime": 35,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-15",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "Integration",
+      "Enterprise Landscape"
+    ],
+    "prerequisites": [
+      "M7T10"
+    ],
+    "learningPath": [
+      "Study",
+      "Viva",
+      "Hands-on",
+      "MCQ"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Understand SAP TM integration scope",
+      "description": "Explain why SAP TM integrates with SAP and external systems for end-to-end logistics."
+    },
+    {
+      "id": "LO2",
+      "title": "Understand integration landscape",
+      "description": "Describe major connected systems and business document exchange patterns."
+    },
+    {
+      "id": "LO3",
+      "title": "Understand integration benefits",
+      "description": "Clarify automation, visibility, consistency, and financial integration outcomes."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "SAP TM Integration Overview"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "SAP Transportation Management (SAP TM) does not operate as a standalone application. It integrates with multiple SAP and third-party systems to support end-to-end logistics processes. Integration enables automatic exchange of master data, business documents, execution events and financial information across the enterprise."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Key Concept",
+      "content": "Integration allows SAP TM to receive transportation demand from business systems and send execution and financial information back to connected applications."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Objectives of Integration"
+    },
+    {
+      "id": "SEC5",
+      "type": "bullet-list",
+      "items": [
+        "Share master data across systems",
+        "Exchange transportation documents",
+        "Automate logistics processes",
+        "Provide end-to-end visibility",
+        "Reduce manual data entry",
+        "Improve data consistency",
+        "Enable real-time communication"
+      ]
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "SAP TM Integration Landscape"
+    },
+    {
+      "id": "SEC7",
+      "type": "process-flow",
+      "title": "Enterprise Integration",
+      "orientation": "horizontal",
+      "steps": [
+        "SAP S/4HANA",
+        "SAP TM",
+        "SAP EWM",
+        "SAP EM",
+        "Carrier Systems",
+        "SAP Finance"
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "Major Integrated Systems"
+    },
+    {
+      "id": "SEC9",
+      "type": "table",
+      "title": "Integration Partners",
+      "headers": [
+        "System",
+        "Purpose"
+      ],
+      "rows": [
+        [
+          "SAP S/4HANA",
+          "Sales orders, deliveries and master data"
+        ],
+        [
+          "SAP EWM",
+          "Warehouse execution"
+        ],
+        [
+          "SAP Event Management",
+          "Shipment tracking"
+        ],
+        [
+          "SAP Finance",
+          "Freight settlement and accounting"
+        ],
+        [
+          "Carrier Systems",
+          "Tendering and shipment execution"
+        ],
+        [
+          "GPS/Telematics",
+          "Vehicle tracking"
+        ]
+      ]
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "Data Flow"
+    },
+    {
+      "id": "SEC11",
+      "type": "process-flow",
+      "title": "Business Document Flow",
+      "orientation": "horizontal",
+      "steps": [
+        "Sales Order",
+        "Outbound Delivery",
+        "Freight Unit",
+        "Freight Order",
+        "Execution Events",
+        "Freight Settlement"
+      ]
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Business Scenario"
+    },
+    {
+      "id": "SEC13",
+      "type": "paragraph",
+      "content": "A customer order is created in SAP S/4HANA. The outbound delivery is transferred automatically to SAP TM, where Freight Units and Freight Orders are generated. Warehouse activities are managed in SAP EWM, shipment events are received from GPS devices and settlement information is posted back to SAP Finance."
+    },
+    {
+      "id": "SEC14",
+      "type": "comparison",
+      "title": "Standalone SAP TM vs Integrated SAP TM",
+      "leftTitle": "Standalone",
+      "rightTitle": "Integrated",
+      "rows": [
+        {
+          "feature": "Master Data",
+          "left": "Manual",
+          "right": "Automatic Synchronization"
+        },
+        {
+          "feature": "Business Documents",
+          "left": "Limited",
+          "right": "Enterprise-wide"
+        },
+        {
+          "feature": "Visibility",
+          "left": "Transportation Only",
+          "right": "End-to-End Supply Chain"
+        }
+      ]
+    },
+    {
+      "id": "SEC15",
+      "type": "heading",
+      "title": "Business Benefits"
+    },
+    {
+      "id": "SEC16",
+      "type": "bullet-list",
+      "items": [
+        "End-to-end supply chain visibility",
+        "Reduced manual processing",
+        "Accurate data synchronization",
+        "Improved operational efficiency",
+        "Faster decision making",
+        "Better financial integration"
+      ]
+    },
+    {
+      "id": "SEC17",
+      "type": "callout",
+      "calloutType": "best-practice",
+      "title": "Best Practice",
+      "content": "Use standard SAP integration APIs and business objects wherever possible instead of custom interfaces. This simplifies upgrades and reduces maintenance effort."
+    },
+    {
+      "id": "SEC18",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real Project Example",
+      "content": "A global manufacturing company integrated SAP TM with SAP S/4HANA, SAP EWM and GPS providers. Transportation planning, warehouse execution, shipment tracking and financial settlement became fully automated across multiple countries."
+    },
+    {
+      "id": "SEC19",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Interview Tip",
+      "content": "Know the major SAP TM integration points: SAP S/4HANA, SAP EWM, SAP Finance, SAP Event Management, carrier systems and GPS/telematics."
+    },
+    {
+      "id": "SEC20",
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Common Mistake",
+      "content": "SAP TM is not designed to function in isolation for enterprise logistics. Most production implementations rely heavily on integration with ERP, warehouse, finance and external logistics systems."
+    },
+    {
+      "id": "SEC21",
+      "type": "heading",
+      "title": "Revision Summary"
+    },
+    {
+      "id": "SEC22",
+      "type": "bullet-list",
+      "items": [
+        "SAP TM integrates with multiple SAP and third-party applications.",
+        "SAP S/4HANA provides business documents and master data.",
+        "SAP EWM supports warehouse execution.",
+        "SAP Finance handles accounting and carrier payment.",
+        "Integration enables complete end-to-end logistics management."
+      ]
+    }
+  ],
+  "relatedLearning": {
+    "viva": [
+      "V-M8-T1-001"
+    ],
+    "handsOnLabs": [
+      "LAB-M8-001"
+    ],
+    "caseStudies": [
+      "CASE-M8-001"
+    ],
+    "practiceMcqs": [
+      "M8T1Q001"
+    ]
+  }
+}

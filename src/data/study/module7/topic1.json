@@ -1,0 +1,257 @@
+{
+  "id": "M7T1",
+  "module": {
+    "id": 7,
+    "title": "SAP TM Freight Settlement & Charge Management",
+    "sequence": 7
+  },
+  "topic": {
+    "id": 1,
+    "title": "Freight Settlement Overview",
+    "sequence": 1
+  },
+  "metadata": {
+    "difficulty": "Beginner",
+    "estimatedReadingTime": 35,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-15",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "Freight Settlement",
+      "FSD"
+    ],
+    "prerequisites": [
+      "M6T10"
+    ],
+    "learningPath": [
+      "Study",
+      "Viva",
+      "Hands-on",
+      "MCQ"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Understand freight settlement",
+      "description": "Explain settlement as the final SAP TM process that validates and pays carrier charges."
+    },
+    {
+      "id": "LO2",
+      "title": "Understand settlement inputs",
+      "description": "Describe freight order, agreement, carrier, and POD data used in settlement."
+    },
+    {
+      "id": "LO3",
+      "title": "Understand finance integration",
+      "description": "Clarify how FSD posting integrates SAP TM with SAP S/4HANA Finance."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "Freight Settlement Overview"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "Freight Settlement is the final business process in SAP Transportation Management. It calculates transportation charges, verifies freight agreements, generates Freight Settlement Documents (FSDs) and integrates with SAP S/4HANA Financial Accounting for carrier payment. Freight Settlement ensures that carriers are paid accurately according to contractual agreements."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Key Concept",
+      "content": "Transportation Planning creates shipments, Transportation Execution delivers shipments and Freight Settlement pays the carrier."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Objectives of Freight Settlement"
+    },
+    {
+      "id": "SEC5",
+      "type": "bullet-list",
+      "items": [
+        "Calculate transportation charges",
+        "Generate Freight Settlement Documents",
+        "Validate freight agreements",
+        "Integrate with Financial Accounting",
+        "Support carrier payment",
+        "Reduce manual invoice processing",
+        "Improve financial accuracy"
+      ]
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "Freight Settlement Process"
+    },
+    {
+      "id": "SEC7",
+      "type": "process-flow",
+      "title": "Settlement Lifecycle",
+      "orientation": "horizontal",
+      "steps": [
+        "Freight Order Completed",
+        "Proof of Delivery",
+        "Charge Calculation",
+        "Freight Settlement Document",
+        "Financial Posting",
+        "Carrier Payment"
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "Settlement Inputs"
+    },
+    {
+      "id": "SEC9",
+      "type": "table",
+      "title": "Settlement Information",
+      "headers": [
+        "Input",
+        "Purpose"
+      ],
+      "rows": [
+        [
+          "Freight Order",
+          "Transportation execution details"
+        ],
+        [
+          "Freight Agreement",
+          "Rate determination"
+        ],
+        [
+          "Carrier",
+          "Payment recipient"
+        ],
+        [
+          "Distance",
+          "Charge calculation"
+        ],
+        [
+          "Weight & Volume",
+          "Pricing basis"
+        ],
+        [
+          "Proof of Delivery",
+          "Settlement trigger"
+        ]
+      ]
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "Business Scenario"
+    },
+    {
+      "id": "SEC11",
+      "type": "paragraph",
+      "content": "After delivering goods from Hyderabad to Chennai, SAP TM retrieves the applicable freight agreement, calculates transportation charges based on weight and distance, creates a Freight Settlement Document and posts the accounting entries to SAP S/4HANA Finance for carrier payment."
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Benefits"
+    },
+    {
+      "id": "SEC13",
+      "type": "bullet-list",
+      "items": [
+        "Accurate freight cost calculation",
+        "Automated financial integration",
+        "Reduced payment errors",
+        "Improved carrier relationships",
+        "Faster invoice processing",
+        "Complete financial traceability"
+      ]
+    },
+    {
+      "id": "SEC14",
+      "type": "comparison",
+      "title": "Transportation Execution vs Freight Settlement",
+      "leftTitle": "Execution",
+      "rightTitle": "Settlement",
+      "rows": [
+        {
+          "feature": "Purpose",
+          "left": "Move Goods",
+          "right": "Pay Carrier"
+        },
+        {
+          "feature": "Main Document",
+          "left": "Freight Order",
+          "right": "Freight Settlement Document"
+        },
+        {
+          "feature": "Business Area",
+          "left": "Logistics",
+          "right": "Finance"
+        }
+      ]
+    },
+    {
+      "id": "SEC15",
+      "type": "callout",
+      "calloutType": "best-practice",
+      "title": "Best Practice",
+      "content": "Generate Freight Settlement only after successful Proof of Delivery and completion of transportation execution to avoid incorrect carrier payments."
+    },
+    {
+      "id": "SEC16",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real Project Example",
+      "content": "A logistics company automated Freight Settlement for more than 12,000 shipments every month, reducing manual invoice processing time by over 80%."
+    },
+    {
+      "id": "SEC17",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Interview Tip",
+      "content": "Freight Settlement Document (FSD) is the financial document generated by SAP TM to calculate carrier charges and integrate them with SAP Finance."
+    },
+    {
+      "id": "SEC18",
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Common Mistake",
+      "content": "Freight Settlement is not the same as carrier invoicing. SAP TM first calculates and validates charges before financial payment processing."
+    },
+    {
+      "id": "SEC19",
+      "type": "heading",
+      "title": "Revision Summary"
+    },
+    {
+      "id": "SEC20",
+      "type": "bullet-list",
+      "items": [
+        "Freight Settlement is the final SAP TM process.",
+        "Freight Settlement Document is generated after execution.",
+        "Charges are calculated using freight agreements.",
+        "Settlement integrates SAP TM with SAP Finance.",
+        "Proof of Delivery usually precedes Freight Settlement."
+      ]
+    }
+  ],
+  "relatedLearning": {
+    "viva": [
+      "V-M7-T1-001"
+    ],
+    "handsOnLabs": [
+      "LAB-M7-001"
+    ],
+    "caseStudies": [
+      "CASE-M7-001"
+    ],
+    "practiceMcqs": [
+      "M7T1Q001"
+    ]
+  }
+}

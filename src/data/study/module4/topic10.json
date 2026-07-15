@@ -1,0 +1,295 @@
+{
+  "id": "M4T10",
+  "module": {
+    "id": 4,
+    "title": "SAP TM Master Data Management",
+    "sequence": 4
+  },
+  "topic": {
+    "id": 10,
+    "title": "Master Data Integration & End-to-End Master Data Flow",
+    "sequence": 10
+  },
+  "metadata": {
+    "difficulty": "Beginner",
+    "estimatedReadingTime": 35,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-15",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "Master Data Integration",
+      "End-to-End Flow"
+    ],
+    "prerequisites": [
+      "M4T1",
+      "M4T2",
+      "M4T3",
+      "M4T4",
+      "M4T5",
+      "M4T6",
+      "M4T7",
+      "M4T8",
+      "M4T9"
+    ],
+    "learningPath": [
+      "Study",
+      "Viva",
+      "Hands-on",
+      "MCQ"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Understand master data integration",
+      "description": "Explain how core master data objects work together through planning and execution lifecycle."
+    },
+    {
+      "id": "LO2",
+      "title": "Understand end-to-end data flow",
+      "description": "Describe sequence from business partner and location determination to freight order creation."
+    },
+    {
+      "id": "LO3",
+      "title": "Differentiate master and transaction data",
+      "description": "Clarify reference data objects versus daily operational documents in SAP TM."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "Master Data Integration in SAP TM"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "SAP TM master data objects do not work independently. Business Partners, Locations, Products, Resources, Transportation Zones and Transportation Lanes work together to support transportation planning, optimization, execution and freight settlement. Master data integration ensures consistency across the complete transportation lifecycle."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Key Concept",
+      "content": "Every transportation process in SAP TM is driven by interconnected master data. Missing or inconsistent master data can prevent transportation planning."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Master Data Relationship"
+    },
+    {
+      "id": "SEC5",
+      "type": "process-flow",
+      "title": "End-to-End Master Data Flow",
+      "orientation": "horizontal",
+      "steps": [
+        "Business Partner",
+        "Location",
+        "Transportation Zone",
+        "Transportation Lane",
+        "Product",
+        "Package Building",
+        "Resource",
+        "Freight Unit",
+        "Freight Order"
+      ]
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "How Master Data Works Together"
+    },
+    {
+      "id": "SEC7",
+      "type": "table",
+      "title": "Master Data Integration",
+      "headers": [
+        "Master Data Object",
+        "Role in Transportation"
+      ],
+      "rows": [
+        [
+          "Business Partner",
+          "Identifies customers, carriers and suppliers"
+        ],
+        [
+          "Location",
+          "Defines pickup and delivery points"
+        ],
+        [
+          "Transportation Zone",
+          "Groups locations for planning"
+        ],
+        [
+          "Transportation Lane",
+          "Defines valid transportation routes"
+        ],
+        [
+          "Product",
+          "Provides weight, volume and dimensions"
+        ],
+        [
+          "Package Building Profile",
+          "Creates handling units"
+        ],
+        [
+          "Resource",
+          "Executes transportation"
+        ]
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "Transportation Planning Sequence"
+    },
+    {
+      "id": "SEC9",
+      "type": "process-flow",
+      "title": "Planning Sequence",
+      "orientation": "vertical",
+      "steps": [
+        "Sales Order",
+        "Delivery",
+        "Business Partner Determination",
+        "Location Determination",
+        "Product Validation",
+        "Package Building",
+        "Transportation Lane Selection",
+        "Resource Assignment",
+        "Freight Order Creation"
+      ]
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "Business Scenario"
+    },
+    {
+      "id": "SEC11",
+      "type": "paragraph",
+      "content": "A customer places an order for industrial equipment. SAP TM identifies the customer Business Partner, pickup Plant and delivery Location, validates the Transportation Lane, reads Product dimensions, builds handling units, selects an available truck Resource and creates the Freight Order for execution."
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Benefits of Integrated Master Data"
+    },
+    {
+      "id": "SEC13",
+      "type": "bullet-list",
+      "items": [
+        "Accurate transportation planning",
+        "Reduced planning errors",
+        "Improved shipment visibility",
+        "Higher vehicle utilization",
+        "Consistent business data",
+        "Faster transportation execution",
+        "Reliable freight settlement"
+      ]
+    },
+    {
+      "id": "SEC14",
+      "type": "comparison",
+      "title": "Master Data vs Transaction Data",
+      "leftTitle": "Master Data",
+      "rightTitle": "Transaction Data",
+      "rows": [
+        {
+          "feature": "Purpose",
+          "left": "Reference Information",
+          "right": "Business Activity"
+        },
+        {
+          "feature": "Examples",
+          "left": "Business Partner, Location, Resource",
+          "right": "Freight Unit, Freight Order"
+        },
+        {
+          "feature": "Frequency",
+          "left": "Rarely Changes",
+          "right": "Created Daily"
+        }
+      ]
+    },
+    {
+      "id": "SEC15",
+      "type": "heading",
+      "title": "Master Data Best Practices"
+    },
+    {
+      "id": "SEC16",
+      "type": "bullet-list",
+      "items": [
+        "Maintain unique Business Partners",
+        "Avoid duplicate Locations",
+        "Keep Product dimensions accurate",
+        "Maintain valid Transportation Lanes",
+        "Update Resource availability regularly",
+        "Use Transportation Zones to simplify maintenance",
+        "Perform periodic master data quality reviews"
+      ]
+    },
+    {
+      "id": "SEC17",
+      "type": "callout",
+      "calloutType": "best-practice",
+      "title": "Best Practice",
+      "content": "Implement a master data governance process. High-quality master data significantly improves transportation planning accuracy and optimizer performance."
+    },
+    {
+      "id": "SEC18",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real Project Example",
+      "content": "A global manufacturing company introduced centralized master data governance for Business Partners, Locations and Transportation Lanes. Transportation planning failures reduced by 42% after eliminating inconsistent master data."
+    },
+    {
+      "id": "SEC19",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Interview Tip",
+      "content": "If asked to explain SAP TM Master Data, describe the complete flow: Business Partner -> Location -> Transportation Zone -> Transportation Lane -> Product -> Package Building -> Resource -> Freight Order."
+    },
+    {
+      "id": "SEC20",
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Common Mistake",
+      "content": "Never treat master data objects as isolated entities. SAP TM planning depends on the relationship between all master data objects."
+    },
+    {
+      "id": "SEC21",
+      "type": "heading",
+      "title": "Revision Summary"
+    },
+    {
+      "id": "SEC22",
+      "type": "bullet-list",
+      "items": [
+        "SAP TM master data objects are fully integrated.",
+        "Business Partners, Locations and Products drive transportation planning.",
+        "Transportation Lanes and Resources support execution.",
+        "Freight Units and Freight Orders are transactional data.",
+        "High-quality master data is essential for successful SAP TM implementations."
+      ]
+    }
+  ],
+  "relatedLearning": {
+    "viva": [
+      "V-M4-T10-001"
+    ],
+    "handsOnLabs": [
+      "LAB-M4-010"
+    ],
+    "caseStudies": [
+      "CASE-M4-010"
+    ],
+    "practiceMcqs": [
+      "M4T10Q001"
+    ]
+  }
+}

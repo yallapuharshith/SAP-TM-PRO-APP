@@ -1,0 +1,301 @@
+{
+  "id": "M7T3",
+  "module": {
+    "id": 7,
+    "title": "SAP TM Freight Settlement & Charge Management",
+    "sequence": 7
+  },
+  "topic": {
+    "id": 3,
+    "title": "Freight Agreements & Rate Management",
+    "sequence": 3
+  },
+  "metadata": {
+    "difficulty": "Beginner",
+    "estimatedReadingTime": 35,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-15",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "Freight Agreement",
+      "Rate Management"
+    ],
+    "prerequisites": [
+      "M7T2"
+    ],
+    "learningPath": [
+      "Study",
+      "Viva",
+      "Hands-on",
+      "MCQ"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Understand freight agreements",
+      "description": "Explain contractual pricing terms and their role in TM charge and settlement processes."
+    },
+    {
+      "id": "LO2",
+      "title": "Understand rate management",
+      "description": "Describe rate determination using agreement components and pricing criteria."
+    },
+    {
+      "id": "LO3",
+      "title": "Differentiate agreement and rate table",
+      "description": "Clarify commercial terms versus pricing values in transportation costing."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "Freight Agreements & Rate Management"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "Freight Agreements define the commercial terms between a shipper and a carrier. They contain transportation rates, pricing conditions, validity periods and service agreements that SAP TM uses during charge calculation and freight settlement. Rate Management ensures transportation costs are calculated consistently according to negotiated contracts."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Key Concept",
+      "content": "Freight Agreements answer the question: 'How much should the carrier be paid for this transportation service?'"
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Objectives of Freight Agreements"
+    },
+    {
+      "id": "SEC5",
+      "type": "bullet-list",
+      "items": [
+        "Maintain carrier contracts",
+        "Standardize transportation pricing",
+        "Support automatic charge calculation",
+        "Reduce manual pricing",
+        "Ensure contract compliance",
+        "Support freight settlement",
+        "Improve cost transparency"
+      ]
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "Freight Agreement Lifecycle"
+    },
+    {
+      "id": "SEC7",
+      "type": "process-flow",
+      "title": "Rate Determination Flow",
+      "orientation": "horizontal",
+      "steps": [
+        "Carrier Contract",
+        "Freight Agreement",
+        "Rate Tables",
+        "Charge Calculation",
+        "Freight Settlement",
+        "Carrier Payment"
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "Freight Agreement Components"
+    },
+    {
+      "id": "SEC9",
+      "type": "table",
+      "title": "Agreement Information",
+      "headers": [
+        "Component",
+        "Purpose"
+      ],
+      "rows": [
+        [
+          "Carrier",
+          "Transportation provider"
+        ],
+        [
+          "Validity Period",
+          "Contract duration"
+        ],
+        [
+          "Transportation Mode",
+          "Applicable transport type"
+        ],
+        [
+          "Rate Table",
+          "Pricing information"
+        ],
+        [
+          "Charge Items",
+          "Base and additional charges"
+        ],
+        [
+          "Currency",
+          "Settlement currency"
+        ],
+        [
+          "Service Level",
+          "Standard or express service"
+        ]
+      ]
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "Rate Determination Factors"
+    },
+    {
+      "id": "SEC11",
+      "type": "table",
+      "title": "Pricing Criteria",
+      "headers": [
+        "Factor",
+        "Example"
+      ],
+      "rows": [
+        [
+          "Distance",
+          "₹45 per kilometer"
+        ],
+        [
+          "Weight",
+          "₹2 per kilogram"
+        ],
+        [
+          "Volume",
+          "₹150 per cubic meter"
+        ],
+        [
+          "Zone",
+          "Regional pricing"
+        ],
+        [
+          "Vehicle Type",
+          "20-ton truck"
+        ],
+        [
+          "Transportation Mode",
+          "Road or Air"
+        ]
+      ]
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Business Scenario"
+    },
+    {
+      "id": "SEC13",
+      "type": "paragraph",
+      "content": "A carrier signs a one-year contract with a manufacturing company. The Freight Agreement specifies a base transportation rate of ₹40 per kilometer, a fuel surcharge of 8% and a fixed unloading charge. During Freight Settlement, SAP TM automatically applies these rates to every eligible shipment."
+    },
+    {
+      "id": "SEC14",
+      "type": "comparison",
+      "title": "Freight Agreement vs Rate Table",
+      "leftTitle": "Freight Agreement",
+      "rightTitle": "Rate Table",
+      "rows": [
+        {
+          "feature": "Purpose",
+          "left": "Commercial Contract",
+          "right": "Pricing Values"
+        },
+        {
+          "feature": "Contains",
+          "left": "Terms & Conditions",
+          "right": "Transportation Rates"
+        },
+        {
+          "feature": "Usage",
+          "left": "Charge Determination",
+          "right": "Cost Calculation"
+        }
+      ]
+    },
+    {
+      "id": "SEC15",
+      "type": "heading",
+      "title": "Business Benefits"
+    },
+    {
+      "id": "SEC16",
+      "type": "bullet-list",
+      "items": [
+        "Consistent transportation pricing",
+        "Automatic rate determination",
+        "Reduced pricing errors",
+        "Improved contract compliance",
+        "Faster freight settlement",
+        "Better transportation cost control"
+      ]
+    },
+    {
+      "id": "SEC17",
+      "type": "callout",
+      "calloutType": "best-practice",
+      "title": "Best Practice",
+      "content": "Maintain validity dates carefully and review freight agreements regularly to ensure obsolete pricing is not used during charge calculation."
+    },
+    {
+      "id": "SEC18",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real Project Example",
+      "content": "A logistics provider maintained separate Freight Agreements for domestic road transport, international ocean freight and air cargo. SAP TM automatically selected the correct agreement based on transportation mode and route."
+    },
+    {
+      "id": "SEC19",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Interview Tip",
+      "content": "Freight Agreements contain commercial terms, while Rate Tables contain the actual pricing values used during charge calculation."
+    },
+    {
+      "id": "SEC20",
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Common Mistake",
+      "content": "Do not confuse Freight Agreements with Carrier Master Data. Carrier Master Data identifies the transportation provider, whereas Freight Agreements define pricing and contractual conditions."
+    },
+    {
+      "id": "SEC21",
+      "type": "heading",
+      "title": "Revision Summary"
+    },
+    {
+      "id": "SEC22",
+      "type": "bullet-list",
+      "items": [
+        "Freight Agreements define carrier pricing contracts.",
+        "Rate Tables store transportation rates.",
+        "Freight Agreements support automatic charge calculation.",
+        "Validity periods control when pricing is applicable.",
+        "Correct agreement maintenance is essential for accurate freight settlement."
+      ]
+    }
+  ],
+  "relatedLearning": {
+    "viva": [
+      "V-M7-T3-001"
+    ],
+    "handsOnLabs": [
+      "LAB-M7-003"
+    ],
+    "caseStudies": [
+      "CASE-M7-003"
+    ],
+    "practiceMcqs": [
+      "M7T3Q001"
+    ]
+  }
+}

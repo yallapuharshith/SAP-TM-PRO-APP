@@ -1,0 +1,297 @@
+{
+  "id": "M9T9",
+  "module": {
+    "id": 9,
+    "title": "SAP TM Reporting, Analytics & Performance Management",
+    "sequence": 9
+  },
+  "topic": {
+    "id": 9,
+    "title": "Executive Reporting & Decision Support",
+    "sequence": 9
+  },
+  "metadata": {
+    "difficulty": "Beginner",
+    "estimatedReadingTime": 35,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-15",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "Executive Reporting",
+      "Decision Support"
+    ],
+    "prerequisites": [
+      "M9T8"
+    ],
+    "learningPath": [
+      "Study",
+      "Viva",
+      "Hands-on",
+      "MCQ"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Understand executive reporting goals",
+      "description": "Explain strategic transportation reporting for management-level decision support."
+    },
+    {
+      "id": "LO2",
+      "title": "Understand executive KPIs",
+      "description": "Identify enterprise metrics for cost, profitability, service, and carrier strategy analysis."
+    },
+    {
+      "id": "LO3",
+      "title": "Understand dashboard-driven decisions",
+      "description": "Describe how executive dashboards support long-term supply chain improvements."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "Executive Reporting & Decision Support"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "Executive Reporting in SAP Transportation Management provides senior management with high-level insights into transportation performance, logistics costs and strategic KPIs. Unlike operational reports used by planners, executive reports summarize enterprise-wide performance and support long-term business decisions related to cost optimization, carrier strategy and supply chain improvement."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Key Concept",
+      "content": "Executive reports summarize transportation performance for strategic decision-making rather than daily operations."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Objectives of Executive Reporting"
+    },
+    {
+      "id": "SEC5",
+      "type": "bullet-list",
+      "items": [
+        "Provide enterprise-wide transportation visibility",
+        "Support strategic business decisions",
+        "Monitor executive KPIs",
+        "Evaluate transportation profitability",
+        "Improve carrier strategy",
+        "Optimize logistics spending",
+        "Enable management reporting"
+      ]
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "Executive Reporting Process"
+    },
+    {
+      "id": "SEC7",
+      "type": "process-flow",
+      "title": "Executive Decision Flow",
+      "orientation": "horizontal",
+      "steps": [
+        "Transportation Operations",
+        "Business Data",
+        "Executive KPIs",
+        "Management Dashboard",
+        "Strategic Analysis",
+        "Business Decisions"
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "Executive KPIs"
+    },
+    {
+      "id": "SEC9",
+      "type": "table",
+      "title": "Strategic Transportation Metrics",
+      "headers": [
+        "KPI",
+        "Business Purpose"
+      ],
+      "rows": [
+        [
+          "Total Transportation Cost",
+          "Overall logistics spending"
+        ],
+        [
+          "Cost per Shipment",
+          "Transportation efficiency"
+        ],
+        [
+          "On-Time Delivery",
+          "Customer service performance"
+        ],
+        [
+          "Carrier Performance Index",
+          "Supplier evaluation"
+        ],
+        [
+          "Transportation Spend by Region",
+          "Regional analysis"
+        ],
+        [
+          "Freight Cost Trend",
+          "Long-term budgeting"
+        ],
+        [
+          "Resource Utilization",
+          "Fleet productivity"
+        ]
+      ]
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "Executive Dashboard Components"
+    },
+    {
+      "id": "SEC11",
+      "type": "table",
+      "title": "Management Dashboard",
+      "headers": [
+        "Component",
+        "Purpose"
+      ],
+      "rows": [
+        [
+          "Executive KPI Cards",
+          "Performance summary"
+        ],
+        [
+          "Trend Charts",
+          "Historical comparison"
+        ],
+        [
+          "Regional Maps",
+          "Geographical analysis"
+        ],
+        [
+          "Cost Breakdown",
+          "Expense analysis"
+        ],
+        [
+          "Forecast Reports",
+          "Future planning"
+        ]
+      ]
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Business Scenario"
+    },
+    {
+      "id": "SEC13",
+      "type": "paragraph",
+      "content": "The Chief Supply Chain Officer reviews the quarterly executive dashboard and identifies that transportation costs in one region have increased by 18%. Further analysis shows that fuel surcharges and inefficient carrier allocation are the primary causes. Based on the report, management renegotiates carrier contracts and optimizes transportation routes."
+    },
+    {
+      "id": "SEC14",
+      "type": "comparison",
+      "title": "Operational Dashboard vs Executive Dashboard",
+      "leftTitle": "Operational Dashboard",
+      "rightTitle": "Executive Dashboard",
+      "rows": [
+        {
+          "feature": "Audience",
+          "left": "Transportation Planners",
+          "right": "Senior Management"
+        },
+        {
+          "feature": "Time Horizon",
+          "left": "Daily Operations",
+          "right": "Monthly/Quarterly Trends"
+        },
+        {
+          "feature": "Focus",
+          "left": "Execution",
+          "right": "Business Strategy"
+        }
+      ]
+    },
+    {
+      "id": "SEC15",
+      "type": "heading",
+      "title": "Business Benefits"
+    },
+    {
+      "id": "SEC16",
+      "type": "bullet-list",
+      "items": [
+        "Improved strategic planning",
+        "Better budget control",
+        "Enterprise-wide visibility",
+        "Higher profitability",
+        "Better carrier negotiations",
+        "Data-driven executive decisions"
+      ]
+    },
+    {
+      "id": "SEC17",
+      "type": "callout",
+      "calloutType": "best-practice",
+      "title": "Best Practice",
+      "content": "Design executive dashboards using a limited number of strategic KPIs that align directly with organizational business objectives."
+    },
+    {
+      "id": "SEC18",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real Project Example",
+      "content": "A multinational consumer goods company implemented executive transportation dashboards integrating SAP TM and SAP Analytics Cloud. Leadership gained complete visibility into global freight spending and achieved double-digit logistics cost reductions through strategic planning."
+    },
+    {
+      "id": "SEC19",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Interview Tip",
+      "content": "Executive reporting emphasizes business trends, profitability and strategic KPIs, whereas operational reporting focuses on day-to-day transportation execution."
+    },
+    {
+      "id": "SEC20",
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Common Mistake",
+      "content": "Executive dashboards should present summarized business insights. Including excessive operational detail makes strategic decision-making more difficult."
+    },
+    {
+      "id": "SEC21",
+      "type": "heading",
+      "title": "Revision Summary"
+    },
+    {
+      "id": "SEC22",
+      "type": "bullet-list",
+      "items": [
+        "Executive Reporting supports strategic transportation decisions.",
+        "Dashboards summarize enterprise-wide logistics performance.",
+        "Executive KPIs focus on cost, profitability and service quality.",
+        "Reports help optimize carrier strategy and transportation spending.",
+        "Strategic analytics complements operational reporting in SAP TM."
+      ]
+    }
+  ],
+  "relatedLearning": {
+    "viva": [
+      "V-M9-T9-001"
+    ],
+    "handsOnLabs": [
+      "LAB-M9-009"
+    ],
+    "caseStudies": [
+      "CASE-M9-009"
+    ],
+    "practiceMcqs": [
+      "M9T9Q001"
+    ]
+  }
+}

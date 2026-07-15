@@ -1,0 +1,52 @@
+{
+  "id": "module2.tendering-strategies",
+  "moduleId": "module2",
+  "moduleTitle": "Module 2 - Execution and Tendering",
+  "title": "Tendering Strategies",
+  "difficulty": "Advanced",
+  "estimatedMinutes": 16,
+  "relatedLinks": [
+    { "label": "Analytics Dashboard", "href": "#/analytics" },
+    { "label": "Settings", "href": "#/settings" }
+  ],
+  "sections": [
+    {
+      "id": "tendering-methods",
+      "title": "Tendering Methods",
+      "content": [
+        { "type": "heading", "level": 3, "text": "Direct vs Sequential Tendering" },
+        { "type": "paragraph", "text": "Tendering strategy defines how carriers are invited and selected based on capacity, performance, and contractual terms." },
+        {
+          "type": "table",
+          "columns": ["Method", "Best Use", "Trade-off"],
+          "rows": [
+            ["Direct", "Preferred carrier with stable lanes", "Lower competitive pricing"],
+            ["Sequential", "Fallback carrier hierarchy", "Longer assignment cycle"],
+            ["Spot Bidding", "Volatile lanes", "Operational overhead"]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tendering-controls",
+      "title": "Control Framework",
+      "content": [
+        {
+          "type": "callout",
+          "calloutType": "warning",
+          "title": "Governance",
+          "text": "Unbounded tender retries can create duplicate communications and planning delays. Define retry limits and fallback criteria."
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "Define maximum retry attempts per tender cycle",
+            "Set response timeout by mode and region",
+            "Maintain carrier ranking with periodic performance updates"
+          ]
+        }
+      ]
+    }
+  ]
+}

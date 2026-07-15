@@ -1,0 +1,305 @@
+{
+  "id": "M6T3",
+  "module": {
+    "id": 6,
+    "title": "SAP TM Freight Execution Management",
+    "sequence": 6
+  },
+  "topic": {
+    "id": 3,
+    "title": "Freight Order Lifecycle & Status Management",
+    "sequence": 3
+  },
+  "metadata": {
+    "difficulty": "Beginner",
+    "estimatedReadingTime": 35,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-15",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "Freight Order Lifecycle",
+      "Status Management"
+    ],
+    "prerequisites": [
+      "M6T1",
+      "M6T2"
+    ],
+    "learningPath": [
+      "Study",
+      "Viva",
+      "Hands-on",
+      "MCQ"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Understand freight order lifecycle",
+      "description": "Explain status progression from creation to settlement."
+    },
+    {
+      "id": "LO2",
+      "title": "Understand status management",
+      "description": "Describe status categories and operational visibility controls."
+    },
+    {
+      "id": "LO3",
+      "title": "Understand execution monitoring",
+      "description": "Clarify how timely status updates improve control and communication."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "Freight Order Lifecycle"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "Every Freight Order in SAP TM progresses through a predefined lifecycle from creation until freight settlement. Status Management enables transportation planners, dispatchers and managers to monitor the execution progress, identify delays and ensure every shipment reaches its destination successfully."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Key Concept",
+      "content": "Status Management provides complete visibility into the execution progress of every Freight Order."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Freight Order Lifecycle"
+    },
+    {
+      "id": "SEC5",
+      "type": "process-flow",
+      "title": "Complete Freight Order Lifecycle",
+      "orientation": "horizontal",
+      "steps": [
+        "Created",
+        "Planned",
+        "Carrier Assigned",
+        "Released",
+        "Loading",
+        "In Transit",
+        "Delivered",
+        "Completed",
+        "Freight Settlement"
+      ]
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "Execution Statuses"
+    },
+    {
+      "id": "SEC7",
+      "type": "table",
+      "title": "Freight Order Statuses",
+      "headers": [
+        "Status",
+        "Business Meaning"
+      ],
+      "rows": [
+        [
+          "Created",
+          "Freight Order generated"
+        ],
+        [
+          "Planned",
+          "Transportation plan finalized"
+        ],
+        [
+          "Released",
+          "Ready for execution"
+        ],
+        [
+          "Loading",
+          "Goods being loaded"
+        ],
+        [
+          "In Transit",
+          "Shipment moving"
+        ],
+        [
+          "Delivered",
+          "Goods delivered"
+        ],
+        [
+          "Completed",
+          "Transportation finished"
+        ],
+        [
+          "Settled",
+          "Freight payment completed"
+        ]
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "Status Update Process"
+    },
+    {
+      "id": "SEC9",
+      "type": "process-flow",
+      "title": "Execution Monitoring",
+      "orientation": "horizontal",
+      "steps": [
+        "Freight Order",
+        "Carrier Update",
+        "Status Change",
+        "Planner Notification",
+        "Customer Visibility"
+      ]
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "Types of Status"
+    },
+    {
+      "id": "SEC11",
+      "type": "table",
+      "title": "Status Categories",
+      "headers": [
+        "Category",
+        "Purpose"
+      ],
+      "rows": [
+        [
+          "Execution Status",
+          "Transportation progress"
+        ],
+        [
+          "Planning Status",
+          "Planning completion"
+        ],
+        [
+          "Tendering Status",
+          "Carrier acceptance"
+        ],
+        [
+          "Settlement Status",
+          "Freight payment progress"
+        ],
+        [
+          "Document Status",
+          "Business document lifecycle"
+        ]
+      ]
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Business Scenario"
+    },
+    {
+      "id": "SEC13",
+      "type": "paragraph",
+      "content": "A shipment leaves Hyderabad at 9:00 AM. The carrier updates the Freight Order status to 'In Transit'. After successful delivery in Chennai, the status changes to 'Delivered' and finally to 'Completed', allowing freight settlement to begin."
+    },
+    {
+      "id": "SEC14",
+      "type": "comparison",
+      "title": "Planned vs Released",
+      "leftTitle": "Planned",
+      "rightTitle": "Released",
+      "rows": [
+        {
+          "feature": "Execution",
+          "left": "Not Started",
+          "right": "Ready to Execute"
+        },
+        {
+          "feature": "Carrier",
+          "left": "Assigned",
+          "right": "Confirmed"
+        },
+        {
+          "feature": "Transportation",
+          "left": "Preparation",
+          "right": "Operational Execution"
+        }
+      ]
+    },
+    {
+      "id": "SEC15",
+      "type": "heading",
+      "title": "Business Benefits"
+    },
+    {
+      "id": "SEC16",
+      "type": "bullet-list",
+      "items": [
+        "Real-time shipment visibility",
+        "Better customer communication",
+        "Improved transportation monitoring",
+        "Exception management",
+        "Faster freight settlement",
+        "Improved operational control"
+      ]
+    },
+    {
+      "id": "SEC17",
+      "type": "callout",
+      "calloutType": "best-practice",
+      "title": "Best Practice",
+      "content": "Update Freight Order statuses immediately after operational events such as loading, departure and delivery to maintain accurate transportation visibility."
+    },
+    {
+      "id": "SEC18",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real Project Example",
+      "content": "A logistics company integrated GPS tracking with SAP TM. Freight Order statuses changed automatically based on vehicle location, reducing manual updates by more than 80%."
+    },
+    {
+      "id": "SEC19",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Interview Tip",
+      "content": "Certification questions frequently ask for the Freight Order lifecycle. Remember the sequence: Created -> Planned -> Released -> In Transit -> Delivered -> Completed -> Settled."
+    },
+    {
+      "id": "SEC20",
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Common Mistake",
+      "content": "Completing a Freight Order does not automatically complete Freight Settlement. Settlement is a separate business process that begins after transportation execution."
+    },
+    {
+      "id": "SEC21",
+      "type": "heading",
+      "title": "Revision Summary"
+    },
+    {
+      "id": "SEC22",
+      "type": "bullet-list",
+      "items": [
+        "Freight Orders progress through multiple execution statuses.",
+        "Status Management provides end-to-end shipment visibility.",
+        "Execution, Planning and Settlement statuses are maintained separately.",
+        "Accurate status updates improve customer communication.",
+        "Freight Settlement begins after transportation completion."
+      ]
+    }
+  ],
+  "relatedLearning": {
+    "viva": [
+      "V-M6-T3-001"
+    ],
+    "handsOnLabs": [
+      "LAB-M6-003"
+    ],
+    "caseStudies": [
+      "CASE-M6-003"
+    ],
+    "practiceMcqs": [
+      "M6T3Q001"
+    ]
+  }
+}

@@ -1,0 +1,311 @@
+{
+  "id": "M1T6",
+  "module": {
+    "id": 1,
+    "title": "ERP & SAP Overview",
+    "sequence": 1
+  },
+  "topic": {
+    "id": 6,
+    "title": "SAP Organizational Structure & Enterprise Structure",
+    "sequence": 6
+  },
+  "metadata": {
+    "difficulty": "Beginner",
+    "estimatedReadingTime": 32,
+    "estimatedRevisionTime": 10,
+    "version": "1.0",
+    "lastUpdated": "2026-07-15",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP",
+      "Enterprise Structure",
+      "Organizational Structure"
+    ],
+    "prerequisites": [
+      "M1T1",
+      "M1T2",
+      "M1T3",
+      "M1T4",
+      "M1T5"
+    ],
+    "learningPath": [
+      "Study",
+      "Viva",
+      "Hands-on",
+      "MCQ"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Understand enterprise structure",
+      "description": "Explain how SAP models real-world business hierarchy."
+    },
+    {
+      "id": "LO2",
+      "title": "Identify key organizational units",
+      "description": "Differentiate client, company, company code, plant and storage location."
+    },
+    {
+      "id": "LO3",
+      "title": "Relate structure to SAP TM",
+      "description": "Describe how organizational units are used in TM planning and settlement."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "Introduction to SAP Organizational Structure"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "SAP Organizational Structure (Enterprise Structure) represents how a company is modeled inside the SAP system. It defines legal entities, business units, plants, storage locations and sales organizations, enabling SAP to process business transactions according to the organization's real-world hierarchy."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Key Concept",
+      "content": "Enterprise Structure defines 'where' business transactions occur, while Organizational Management defines 'who' performs them."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Why Enterprise Structure is Important"
+    },
+    {
+      "id": "SEC5",
+      "type": "bullet-list",
+      "items": [
+        "Represents the company's business hierarchy",
+        "Controls financial reporting",
+        "Supports procurement and sales processes",
+        "Defines logistics operations",
+        "Enables authorization and reporting",
+        "Provides integration across SAP modules"
+      ]
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "Enterprise Structure Hierarchy"
+    },
+    {
+      "id": "SEC7",
+      "type": "process-flow",
+      "title": "SAP Enterprise Structure",
+      "orientation": "vertical",
+      "steps": [
+        "Client",
+        "Company",
+        "Company Code",
+        "Plant",
+        "Storage Location",
+        "Warehouse",
+        "Shipping Point"
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "Key Organizational Units"
+    },
+    {
+      "id": "SEC9",
+      "type": "table",
+      "title": "Enterprise Structure Components",
+      "headers": [
+        "Organizational Unit",
+        "Purpose"
+      ],
+      "rows": [
+        [
+          "Client",
+          "Highest organizational level representing an SAP system"
+        ],
+        [
+          "Company",
+          "Represents the corporate group"
+        ],
+        [
+          "Company Code",
+          "Independent legal accounting entity"
+        ],
+        [
+          "Plant",
+          "Manufacturing or distribution location"
+        ],
+        [
+          "Storage Location",
+          "Stores inventory within a plant"
+        ],
+        [
+          "Warehouse",
+          "Warehouse operations and inventory management"
+        ],
+        [
+          "Shipping Point",
+          "Responsible for goods dispatch"
+        ],
+        [
+          "Sales Organization",
+          "Responsible for selling products"
+        ],
+        [
+          "Distribution Channel",
+          "Method used to sell products"
+        ],
+        [
+          "Division",
+          "Product line or business category"
+        ]
+      ]
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "Enterprise Structure in SAP TM"
+    },
+    {
+      "id": "SEC11",
+      "type": "paragraph",
+      "content": "SAP Transportation Management integrates with organizational units from SAP S/4HANA. Plants, shipping points, warehouses and company codes are used during transportation planning, execution and freight settlement."
+    },
+    {
+      "id": "SEC12",
+      "type": "table",
+      "title": "SAP TM Integration",
+      "headers": [
+        "SAP Organizational Unit",
+        "Used in SAP TM"
+      ],
+      "rows": [
+        [
+          "Plant",
+          "Pickup and delivery locations"
+        ],
+        [
+          "Shipping Point",
+          "Transportation execution"
+        ],
+        [
+          "Company Code",
+          "Freight settlement"
+        ],
+        [
+          "Warehouse",
+          "Warehouse integration"
+        ],
+        [
+          "Sales Organization",
+          "Sales order integration"
+        ]
+      ]
+    },
+    {
+      "id": "SEC13",
+      "type": "heading",
+      "title": "Business Scenario"
+    },
+    {
+      "id": "SEC14",
+      "type": "paragraph",
+      "content": "ABC Manufacturing has headquarters in Hyderabad with production plants in Chennai and Pune. Customer orders are received by the Sales Organization, fulfilled from Plants, shipped through Shipping Points and financially reported under the Company Code. SAP Enterprise Structure models this entire business hierarchy."
+    },
+    {
+      "id": "SEC15",
+      "type": "comparison",
+      "title": "Company vs Company Code",
+      "leftTitle": "Company",
+      "rightTitle": "Company Code",
+      "rows": [
+        {
+          "feature": "Purpose",
+          "left": "Corporate Group",
+          "right": "Legal Accounting Entity"
+        },
+        {
+          "feature": "Financial Statements",
+          "left": "No",
+          "right": "Yes"
+        },
+        {
+          "feature": "Legal Entity",
+          "left": "Business Group",
+          "right": "Legal Organization"
+        }
+      ]
+    },
+    {
+      "id": "SEC16",
+      "type": "heading",
+      "title": "Benefits of Enterprise Structure"
+    },
+    {
+      "id": "SEC17",
+      "type": "bullet-list",
+      "items": [
+        "Standardized business hierarchy",
+        "Accurate financial reporting",
+        "Integrated logistics execution",
+        "Centralized master data",
+        "Better organizational control",
+        "Improved reporting and analytics"
+      ]
+    },
+    {
+      "id": "SEC18",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real Project Example",
+      "content": "A multinational retail company configured multiple Company Codes for different countries while sharing one Client. SAP TM planned transportation across multiple Plants and Shipping Points while freight settlement was posted to the correct Company Code."
+    },
+    {
+      "id": "SEC19",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Interview Tip",
+      "content": "Interviewers frequently ask the difference between Client, Company, Company Code and Plant. Always explain the hierarchy from highest level to lowest level with a practical business example."
+    },
+    {
+      "id": "SEC20",
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Common Mistake",
+      "content": "Do not confuse Plant with Storage Location. A Plant represents a manufacturing or distribution facility, whereas a Storage Location represents a physical inventory area within a Plant."
+    },
+    {
+      "id": "SEC21",
+      "type": "heading",
+      "title": "Revision Summary"
+    },
+    {
+      "id": "SEC22",
+      "type": "bullet-list",
+      "items": [
+        "Client is the highest organizational level.",
+        "Company Code is the legal accounting entity.",
+        "Plant represents a manufacturing or distribution facility.",
+        "Storage Location stores inventory inside a Plant.",
+        "SAP TM uses Enterprise Structure for planning, execution and settlement."
+      ]
+    }
+  ],
+  "relatedLearning": {
+    "viva": [
+      "V-M1-T6-001"
+    ],
+    "handsOnLabs": [
+      "LAB-M1-006"
+    ],
+    "caseStudies": [
+      "CASE-M1-006"
+    ],
+    "practiceMcqs": [
+      "M1T6Q001"
+    ]
+  }
+}

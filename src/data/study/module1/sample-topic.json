@@ -1,0 +1,374 @@
+{
+  "id": "module1.sample-topic",
+  "module": {
+    "id": "module1",
+    "title": "Module 1 - Transportation Planning Foundation"
+  },
+  "topic": {
+    "title": "Sample Study Renderer Topic"
+  },
+  "metadata": {
+    "difficulty": "Intermediate",
+    "estimatedReadingTime": 12
+  },
+  "content": {
+    "learningObjectives": [
+      {
+        "id": "obj-1",
+        "title": "Understand nested JSON-driven topic rendering"
+      },
+      {
+        "id": "obj-2",
+        "title": "Interpret process, architecture, and comparison blocks"
+      }
+    ],
+    "sections": [
+      {
+        "id": "SEC1",
+        "type": "heading",
+        "title": "Introduction to SAP GUI and SAP Fiori"
+      },
+      {
+        "id": "SEC2",
+        "type": "paragraph",
+        "content": "SAP provides two primary user interfaces for accessing business applications: SAP GUI (Graphical User Interface) and SAP Fiori. SAP GUI is the traditional desktop interface widely used by consultants and administrators, whereas SAP Fiori provides a modern, browser-based, role-oriented user experience."
+      },
+      {
+        "id": "SEC3",
+        "type": "callout",
+        "calloutType": "important",
+        "title": "Key Concept",
+        "content": "SAP GUI focuses on transaction-based navigation, while SAP Fiori focuses on business tasks and user roles."
+      },
+      {
+        "id": "SEC4",
+        "type": "heading",
+        "title": "SAP GUI Overview"
+      },
+      {
+        "id": "SEC5",
+        "type": "paragraph",
+        "content": "SAP GUI is the classic client application used to access SAP systems. It provides direct access to transaction codes (T-Codes), configuration screens and administrative functions."
+      },
+      {
+        "id": "SEC6",
+        "type": "table",
+        "title": "Main Components of SAP GUI",
+        "headers": [
+          "Component",
+          "Purpose"
+        ],
+        "rows": [
+          ["Menu Bar", "Access application menus"],
+          ["Standard Toolbar", "Common navigation functions"],
+          ["Command Field", "Execute transaction codes"],
+          ["Application Toolbar", "Screen-specific actions"],
+          ["Status Bar", "Displays system messages"],
+          ["Favorites", "Quick access to frequently used transactions"]
+        ]
+      },
+      {
+        "id": "SEC7",
+        "type": "heading",
+        "title": "Common SAP GUI Navigation"
+      },
+      {
+        "id": "SEC8",
+        "type": "bullet-list",
+        "items": [
+          "Log in to SAP system",
+          "Open SAP Easy Access",
+          "Enter Transaction Code",
+          "Execute Transaction",
+          "Save Changes",
+          "Exit Transaction",
+          "Log Off"
+        ]
+      },
+      {
+        "id": "SEC9",
+        "type": "process-flow",
+        "title": "SAP GUI Navigation Flow",
+        "orientation": "horizontal",
+        "steps": [
+          "Login",
+          "SAP Easy Access",
+          "Enter T-Code",
+          "Execute",
+          "Save",
+          "Exit"
+        ]
+      },
+      {
+        "id": "SEC10",
+        "type": "heading",
+        "title": "What is SAP Fiori?"
+      },
+      {
+        "id": "SEC11",
+        "type": "paragraph",
+        "content": "SAP Fiori is SAP's modern user experience built on SAPUI5 technology. It provides role-based applications that simplify business processes and support desktop, tablet and mobile devices."
+      },
+      {
+        "id": "SEC12",
+        "type": "table",
+        "title": "SAP Fiori Features",
+        "headers": [
+          "Feature",
+          "Description"
+        ],
+        "rows": [
+          ["Role-Based", "Apps shown according to user role"],
+          ["Responsive", "Works on desktop, tablet and mobile"],
+          ["Browser Based", "Runs without desktop installation"],
+          ["Launchpad", "Central application dashboard"],
+          ["Personalized", "Users can customize tiles and groups"]
+        ]
+      },
+      {
+        "id": "SEC13",
+        "type": "comparison",
+        "title": "SAP GUI vs SAP Fiori",
+        "leftTitle": "SAP GUI",
+        "rightTitle": "SAP Fiori",
+        "rows": [
+          {
+            "feature": "Interface",
+            "left": "Desktop Application",
+            "right": "Web Browser"
+          },
+          {
+            "feature": "Navigation",
+            "left": "Transaction Codes",
+            "right": "Role-Based Tiles"
+          },
+          {
+            "feature": "Technology",
+            "left": "SAP GUI Client",
+            "right": "SAPUI5"
+          },
+          {
+            "feature": "Device Support",
+            "left": "Desktop",
+            "right": "Desktop, Tablet, Mobile"
+          },
+          {
+            "feature": "User Experience",
+            "left": "Traditional",
+            "right": "Modern"
+          }
+        ]
+      },
+      {
+        "id": "SEC14",
+        "type": "heading",
+        "title": "SAP Fiori Launchpad"
+      },
+      {
+        "id": "SEC15",
+        "type": "bullet-list",
+        "items": [
+          "Home Page",
+          "Tiles",
+          "Spaces",
+          "Pages",
+          "Search",
+          "Notifications",
+          "User Settings"
+        ]
+      },
+      {
+        "id": "SEC16",
+        "type": "heading",
+        "title": "Advantages of SAP Fiori"
+      },
+      {
+        "id": "SEC17",
+        "type": "bullet-list",
+        "items": [
+          "Simple user experience",
+          "Role-based applications",
+          "Responsive design",
+          "Improved productivity",
+          "Lower training effort",
+          "Better accessibility",
+          "Modern interface"
+        ]
+      },
+      {
+        "id": "SEC18",
+        "type": "callout",
+        "calloutType": "example",
+        "title": "Real Project Example",
+        "content": "Transportation planners use SAP Fiori apps to monitor freight orders and transportation execution, while consultants still use SAP GUI for configuration and implementation activities."
+      },
+      {
+        "id": "SEC19",
+        "type": "callout",
+        "calloutType": "best-practice",
+        "title": "Best Practice",
+        "content": "Business users should primarily work with SAP Fiori apps, while functional consultants and administrators use SAP GUI for configuration and advanced system activities."
+      },
+      {
+        "id": "SEC20",
+        "type": "callout",
+        "calloutType": "interview-tip",
+        "title": "Interview Tip",
+        "content": "Interviewers often ask why SAP still supports SAP GUI when SAP Fiori exists. Explain that SAP GUI is essential for configuration, administration and legacy transactions, while SAP Fiori improves the end-user experience."
+      },
+      {
+        "id": "SEC21",
+        "type": "callout",
+        "calloutType": "warning",
+        "title": "Common Mistake",
+        "content": "Do not say SAP GUI is obsolete. Both SAP GUI and SAP Fiori coexist in SAP S/4HANA, serving different purposes."
+      },
+      {
+        "id": "SEC22",
+        "type": "heading",
+        "title": "Revision Summary"
+      },
+      {
+        "id": "SEC23",
+        "type": "bullet-list",
+        "items": [
+          "SAP GUI is transaction-code based.",
+          "SAP Fiori is role-based.",
+          "SAP Fiori uses SAPUI5 technology.",
+          "SAP GUI is widely used for configuration.",
+          "Both interfaces coexist in SAP S/4HANA."
+        ]
+      }
+    ],
+    "businessBackground": {
+      "title": "Business Context",
+      "businessProblem": "Study content often becomes hardcoded and difficult to scale.",
+      "solution": "Move to schema-driven rendering with reusable typed blocks.",
+      "businessBenefit": "Faster topic onboarding with lower maintenance overhead."
+    },
+    "businessScenario": {
+      "title": "Scenario",
+      "company": "Global Logistics Co.",
+      "industry": "Supply Chain",
+      "businessProblem": "Teams need to roll out study topics quickly.",
+      "currentProcess": "Manual page updates for every module.",
+      "sapSolution": "Use normalized dynamic blocks and shared renderer components.",
+      "expectedBenefits": "Consistency, speed, and reliability across all modules."
+    },
+    "processFlows": [
+      {
+        "title": "Study Authoring Flow",
+        "orientation": "horizontal",
+        "steps": [
+          { "title": "Author JSON", "description": "Create topic metadata and content blocks" },
+          { "title": "Normalize", "description": "Service converts nested schema to canonical blocks" },
+          { "title": "Render", "description": "StudyRenderer dispatches each block type" },
+          { "title": "Persist", "description": "Bookmarks, notes, progress, and completion saved" }
+        ]
+      }
+    ],
+    "architecture": [
+      {
+        "title": "Renderer Architecture",
+        "description": "Service normalization feeds the registry-based dynamic renderer.",
+        "groups": [
+          { "id": "data", "title": "Data Layer" },
+          { "id": "ui", "title": "UI Layer" }
+        ],
+        "nodes": [
+          { "id": "json", "title": "Topic JSON", "groupId": "data", "iconKey": "database" },
+          { "id": "service", "title": "StudyNotesService", "groupId": "data", "iconKey": "cog" },
+          { "id": "renderer", "title": "StudyRenderer", "groupId": "ui", "iconKey": "app-window" },
+          { "id": "registry", "title": "Renderer Registry", "groupId": "ui", "iconKey": "workflow" }
+        ],
+        "connections": [
+          { "from": "json", "to": "service", "label": "load + normalize" },
+          { "from": "service", "to": "renderer", "label": "topic model" },
+          { "from": "renderer", "to": "registry", "label": "block dispatch" }
+        ]
+      }
+    ],
+    "sapObjects": [
+      {
+        "title": "Study Topic",
+        "definition": "A canonical normalized unit rendered by the Study Notes page.",
+        "purpose": "Represent one complete learning topic.",
+        "businessUse": "Enable scalable module-level learning delivery.",
+        "configuration": "Stored as JSON under data/study/moduleX/*.json.",
+        "relationships": ["Sections", "Learning Objectives", "Related Learning"]
+      }
+    ],
+    "comparisonTables": [
+      {
+        "title": "Legacy vs Dynamic",
+        "columns": ["Aspect", "Legacy", "Dynamic"],
+        "rows": [
+          { "values": ["Authoring", "Hardcoded UI", "JSON driven"] },
+          { "values": ["Extensibility", "Code-heavy", "Register new renderer"] },
+          { "values": ["Resilience", "Can break on mismatch", "Unknown fallback"] }
+        ]
+      }
+    ],
+    "knowledgeChecks": [
+      {
+        "title": "Quick Check",
+        "questions": [
+          {
+            "id": "kc-1",
+            "question": "What enables dynamic rendering?",
+            "options": ["Hardcoded if-else only", "Registry-based block dispatch", "Inline CSS"],
+            "correctIndex": 1,
+            "explanation": "A registry maps block type to renderer component."
+          }
+        ]
+      }
+    ],
+    "glossary": [
+      {
+        "term": "Block Registry",
+        "definition": "A mapping between block type and renderer component."
+      },
+      {
+        "term": "Normalizer",
+        "definition": "Logic that converts varying input schema into canonical topic structure."
+      }
+    ],
+    "timeline": [
+      {
+        "title": "Phase 1",
+        "date": "Week 1",
+        "description": "Set up canonical types and topic loading"
+      },
+      {
+        "title": "Phase 2",
+        "date": "Week 2",
+        "description": "Add dynamic block renderer and registry"
+      }
+    ],
+    "revisionSummary": [
+      "Dynamic rendering improves maintainability.",
+      "Unknown block fallback improves reliability.",
+      {
+        "front": "What should every block include?",
+        "back": "A type field and block-specific payload."
+      }
+    ],
+    "relatedLearning": {
+      "viva": [
+        {
+          "label": "Viva Prep - Renderer Architecture",
+          "href": "#/viva-preparation"
+        }
+      ],
+      "practiceMcqs": [
+        {
+          "label": "Practice MCQ - Study Renderer",
+          "href": "#/exam"
+        }
+      ]
+    }
+  },
+  "relatedLinks": [
+    { "label": "Go to Dashboard", "href": "#/dashboard" }
+  ]
+}

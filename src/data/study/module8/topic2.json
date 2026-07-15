@@ -1,0 +1,294 @@
+{
+  "id": "M8T2",
+  "module": {
+    "id": 8,
+    "title": "SAP TM Integration & Cross-System Connectivity",
+    "sequence": 8
+  },
+  "topic": {
+    "id": 2,
+    "title": "SAP S/4HANA Integration with SAP TM",
+    "sequence": 2
+  },
+  "metadata": {
+    "difficulty": "Beginner",
+    "estimatedReadingTime": 35,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-15",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "SAP S/4HANA",
+      "Integration"
+    ],
+    "prerequisites": [
+      "M8T1"
+    ],
+    "learningPath": [
+      "Study",
+      "Viva",
+      "Hands-on",
+      "MCQ"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Understand ERP-TM integration",
+      "description": "Explain how SAP S/4HANA provides transportation demand to SAP TM."
+    },
+    {
+      "id": "LO2",
+      "title": "Understand document synchronization",
+      "description": "Describe flow of orders, deliveries, freight units, and execution updates."
+    },
+    {
+      "id": "LO3",
+      "title": "Understand master data alignment",
+      "description": "Clarify synchronized master data as foundation for planning and execution."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "SAP S/4HANA Integration with SAP TM"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "SAP S/4HANA is the primary source of business transactions for SAP Transportation Management. Business documents such as Sales Orders, Purchase Orders, Outbound Deliveries and Inbound Deliveries are transferred automatically from SAP S/4HANA to SAP TM, where transportation planning and execution take place."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Key Concept",
+      "content": "SAP S/4HANA creates transportation demand, while SAP TM plans, executes and settles transportation."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Objectives of Integration"
+    },
+    {
+      "id": "SEC5",
+      "type": "bullet-list",
+      "items": [
+        "Exchange business documents",
+        "Synchronize master data",
+        "Automate transportation planning",
+        "Maintain document consistency",
+        "Support end-to-end logistics",
+        "Reduce manual processing",
+        "Enable financial integration"
+      ]
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "Business Document Flow"
+    },
+    {
+      "id": "SEC7",
+      "type": "process-flow",
+      "title": "SAP S/4HANA → SAP TM Flow",
+      "orientation": "horizontal",
+      "steps": [
+        "Sales Order",
+        "Outbound Delivery",
+        "Transportation Requirement",
+        "Freight Unit",
+        "Freight Order",
+        "Transportation Execution",
+        "Freight Settlement"
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "Master Data Synchronization"
+    },
+    {
+      "id": "SEC9",
+      "type": "table",
+      "title": "Master Data Exchanged",
+      "headers": [
+        "Master Data",
+        "Purpose"
+      ],
+      "rows": [
+        [
+          "Business Partners",
+          "Customers and carriers"
+        ],
+        [
+          "Materials",
+          "Product information"
+        ],
+        [
+          "Locations",
+          "Plants and warehouses"
+        ],
+        [
+          "Organizational Units",
+          "Enterprise structure"
+        ],
+        [
+          "Transportation Zones",
+          "Route planning"
+        ],
+        [
+          "Units of Measure",
+          "Weight and volume calculations"
+        ]
+      ]
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "Business Documents Exchanged"
+    },
+    {
+      "id": "SEC11",
+      "type": "table",
+      "title": "Document Integration",
+      "headers": [
+        "SAP S/4HANA",
+        "SAP TM"
+      ],
+      "rows": [
+        [
+          "Sales Order",
+          "Transportation Demand"
+        ],
+        [
+          "Outbound Delivery",
+          "Freight Unit"
+        ],
+        [
+          "Inbound Delivery",
+          "Inbound Freight Unit"
+        ],
+        [
+          "Purchase Order",
+          "Inbound Planning"
+        ],
+        [
+          "Billing",
+          "Settlement Reference"
+        ]
+      ]
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Business Scenario"
+    },
+    {
+      "id": "SEC13",
+      "type": "paragraph",
+      "content": "A customer places a Sales Order in SAP S/4HANA. After the Outbound Delivery is created, the delivery is automatically transferred to SAP TM. SAP TM builds Freight Units, optimizes transportation, creates Freight Orders and sends execution updates back to SAP S/4HANA after shipment completion."
+    },
+    {
+      "id": "SEC14",
+      "type": "comparison",
+      "title": "Responsibilities of SAP S/4HANA vs SAP TM",
+      "leftTitle": "SAP S/4HANA",
+      "rightTitle": "SAP TM",
+      "rows": [
+        {
+          "feature": "Business Orders",
+          "left": "Creates Orders & Deliveries",
+          "right": "Consumes Demand"
+        },
+        {
+          "feature": "Transportation",
+          "left": "Request Transportation",
+          "right": "Plan & Execute Transportation"
+        },
+        {
+          "feature": "Settlement",
+          "left": "Financial Posting",
+          "right": "Freight Settlement Calculation"
+        }
+      ]
+    },
+    {
+      "id": "SEC15",
+      "type": "heading",
+      "title": "Business Benefits"
+    },
+    {
+      "id": "SEC16",
+      "type": "bullet-list",
+      "items": [
+        "Automatic document transfer",
+        "Single source of business data",
+        "Reduced duplicate data entry",
+        "Improved planning accuracy",
+        "End-to-end logistics visibility",
+        "Integrated financial processing"
+      ]
+    },
+    {
+      "id": "SEC17",
+      "type": "callout",
+      "calloutType": "best-practice",
+      "title": "Best Practice",
+      "content": "Maintain master data in SAP S/4HANA as the system of record and synchronize it with SAP TM to ensure consistent planning and execution."
+    },
+    {
+      "id": "SEC18",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real Project Example",
+      "content": "An automotive manufacturer integrated SAP S/4HANA with SAP TM to automatically transfer more than 25,000 outbound deliveries daily. Transportation planning became fully automated, reducing manual planning effort by over 80%."
+    },
+    {
+      "id": "SEC19",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Interview Tip",
+      "content": "A very common SAP TM certification question asks: Which system creates Sales Orders and Deliveries? Answer: SAP S/4HANA. Which system creates Freight Units and Freight Orders? Answer: SAP TM."
+    },
+    {
+      "id": "SEC20",
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Common Mistake",
+      "content": "SAP TM does not replace SAP S/4HANA ERP. ERP manages business transactions, while SAP TM specializes in transportation planning, execution and settlement."
+    },
+    {
+      "id": "SEC21",
+      "type": "heading",
+      "title": "Revision Summary"
+    },
+    {
+      "id": "SEC22",
+      "type": "bullet-list",
+      "items": [
+        "SAP S/4HANA is the source of transportation demand.",
+        "SAP TM receives deliveries and creates Freight Units.",
+        "Master data is synchronized between both systems.",
+        "Execution updates and settlement integrate back with SAP S/4HANA.",
+        "SAP S/4HANA and SAP TM together provide end-to-end logistics management."
+      ]
+    }
+  ],
+  "relatedLearning": {
+    "viva": [
+      "V-M8-T2-001"
+    ],
+    "handsOnLabs": [
+      "LAB-M8-002"
+    ],
+    "caseStudies": [
+      "CASE-M8-002"
+    ],
+    "practiceMcqs": [
+      "M8T2Q001"
+    ]
+  }
+}

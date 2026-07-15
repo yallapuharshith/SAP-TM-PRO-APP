@@ -1,0 +1,298 @@
+{
+  "id": "M9T6",
+  "module": {
+    "id": 9,
+    "title": "SAP TM Reporting, Analytics & Performance Management",
+    "sequence": 9
+  },
+  "topic": {
+    "id": 6,
+    "title": "Exception Management & Operational Analytics",
+    "sequence": 6
+  },
+  "metadata": {
+    "difficulty": "Beginner",
+    "estimatedReadingTime": 35,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-15",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "Exception Management",
+      "Operational Analytics"
+    ],
+    "prerequisites": [
+      "M9T5"
+    ],
+    "learningPath": [
+      "Study",
+      "Viva",
+      "Hands-on",
+      "MCQ"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Understand exception management",
+      "description": "Explain detection, alerting, and correction of transportation deviations."
+    },
+    {
+      "id": "LO2",
+      "title": "Understand operational analytics",
+      "description": "Describe real-time exception visibility and KPI-driven operational control."
+    },
+    {
+      "id": "LO3",
+      "title": "Understand response effectiveness",
+      "description": "Clarify how resolution metrics improve service reliability and recovery rates."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "Exception Management & Operational Analytics"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "Exception Management in SAP Transportation Management identifies, monitors and resolves transportation issues that deviate from planned execution. Operational Analytics provides real-time visibility into these exceptions through dashboards, alerts and KPIs, enabling transportation planners to take corrective actions before service levels are affected."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Key Concept",
+      "content": "Operational Analytics tells you what is happening now, while Exception Management highlights what requires immediate attention."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Objectives of Exception Management"
+    },
+    {
+      "id": "SEC5",
+      "type": "bullet-list",
+      "items": [
+        "Detect transportation exceptions",
+        "Provide real-time alerts",
+        "Reduce operational disruptions",
+        "Improve delivery performance",
+        "Support proactive decision-making",
+        "Minimize transportation risks",
+        "Enhance customer satisfaction"
+      ]
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "Exception Management Process"
+    },
+    {
+      "id": "SEC7",
+      "type": "process-flow",
+      "title": "Operational Exception Flow",
+      "orientation": "horizontal",
+      "steps": [
+        "Transportation Execution",
+        "Event Monitoring",
+        "Exception Detection",
+        "Alert Generation",
+        "Planner Action",
+        "Issue Resolution",
+        "Performance Analysis"
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "Common Transportation Exceptions"
+    },
+    {
+      "id": "SEC9",
+      "type": "table",
+      "title": "Typical Operational Exceptions",
+      "headers": [
+        "Exception",
+        "Business Impact"
+      ],
+      "rows": [
+        [
+          "Shipment Delay",
+          "Late customer delivery"
+        ],
+        [
+          "Vehicle Breakdown",
+          "Transportation disruption"
+        ],
+        [
+          "Route Deviation",
+          "Increased transit risk"
+        ],
+        [
+          "Capacity Shortage",
+          "Planning failure"
+        ],
+        [
+          "Temperature Violation",
+          "Product quality risk"
+        ],
+        [
+          "Missed Delivery Window",
+          "Customer dissatisfaction"
+        ],
+        [
+          "Customs Delay",
+          "International shipment delay"
+        ]
+      ]
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "Operational KPIs"
+    },
+    {
+      "id": "SEC11",
+      "type": "table",
+      "title": "Exception Monitoring KPIs",
+      "headers": [
+        "KPI",
+        "Purpose"
+      ],
+      "rows": [
+        [
+          "Number of Exceptions",
+          "Operational workload"
+        ],
+        [
+          "Average Resolution Time",
+          "Response efficiency"
+        ],
+        [
+          "Delayed Shipments",
+          "Service performance"
+        ],
+        [
+          "Exception Frequency",
+          "Process stability"
+        ],
+        [
+          "On-Time Recovery Rate",
+          "Corrective action effectiveness"
+        ]
+      ]
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Business Scenario"
+    },
+    {
+      "id": "SEC13",
+      "type": "paragraph",
+      "content": "A truck transporting medical supplies experiences an unexpected breakdown. GPS tracking immediately reports the event to SAP TM. An exception alert appears on the planner's dashboard, who assigns another vehicle to complete the delivery and minimize customer impact."
+    },
+    {
+      "id": "SEC14",
+      "type": "comparison",
+      "title": "Operational Monitoring vs Exception Management",
+      "leftTitle": "Operational Monitoring",
+      "rightTitle": "Exception Management",
+      "rows": [
+        {
+          "feature": "Purpose",
+          "left": "Track Daily Operations",
+          "right": "Resolve Critical Issues"
+        },
+        {
+          "feature": "Focus",
+          "left": "All Shipments",
+          "right": "Abnormal Events"
+        },
+        {
+          "feature": "Business Value",
+          "left": "Visibility",
+          "right": "Corrective Action"
+        }
+      ]
+    },
+    {
+      "id": "SEC15",
+      "type": "heading",
+      "title": "Business Benefits"
+    },
+    {
+      "id": "SEC16",
+      "type": "bullet-list",
+      "items": [
+        "Reduced transportation disruptions",
+        "Improved service reliability",
+        "Faster issue resolution",
+        "Higher customer satisfaction",
+        "Better planner productivity",
+        "Enhanced operational visibility"
+      ]
+    },
+    {
+      "id": "SEC17",
+      "type": "callout",
+      "calloutType": "best-practice",
+      "title": "Best Practice",
+      "content": "Configure automatic alerts for critical transportation exceptions such as shipment delays, route deviations and temperature violations so planners can respond immediately."
+    },
+    {
+      "id": "SEC18",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real Project Example",
+      "content": "A pharmaceutical company integrated SAP TM with GPS and IoT monitoring. Real-time exception alerts reduced cold-chain delivery failures by over 35% and significantly improved regulatory compliance."
+    },
+    {
+      "id": "SEC19",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Interview Tip",
+      "content": "Remember: Monitoring observes all transportation activities, whereas Exception Management focuses only on events that require corrective action."
+    },
+    {
+      "id": "SEC20",
+      "type": "callout",
+      "calloutType": "warning",
+      "title": "Common Mistake",
+      "content": "Not every transportation event is an exception. Only deviations from planned execution that require business intervention should trigger exception management."
+    },
+    {
+      "id": "SEC21",
+      "type": "heading",
+      "title": "Revision Summary"
+    },
+    {
+      "id": "SEC22",
+      "type": "bullet-list",
+      "items": [
+        "Exception Management detects transportation issues requiring action.",
+        "Operational Analytics provides real-time visibility.",
+        "Alerts help planners resolve issues quickly.",
+        "KPIs measure exception frequency and resolution performance.",
+        "Effective exception management improves transportation reliability and customer service."
+      ]
+    }
+  ],
+  "relatedLearning": {
+    "viva": [
+      "V-M9-T6-001"
+    ],
+    "handsOnLabs": [
+      "LAB-M9-006"
+    ],
+    "caseStudies": [
+      "CASE-M9-006"
+    ],
+    "practiceMcqs": [
+      "M9T6Q001"
+    ]
+  }
+}
