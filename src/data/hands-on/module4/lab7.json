@@ -1,0 +1,291 @@
+{
+  "id": "LAB-M4-007",
+  "module": {
+    "id": "module4",
+    "title": "ABC Electronics India - SAP TM End-to-End Implementation",
+    "sequence": 4
+  },
+  "topic": {
+    "id": "topic7",
+    "title": "Lab 7: Freight Invoice Mismatch & Freight Settlement",
+    "sequence": 7
+  },
+  "metadata": {
+    "difficulty": "Intermediate",
+    "estimatedReadingTime": 32,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-16",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "Hands-on",
+      "Freight Settlement",
+      "Invoice Validation",
+      "Charge Dispute"
+    ],
+    "prerequisites": [
+      "LAB-M4-006"
+    ],
+    "learningPath": [
+      "Hands-on"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Validate freight settlement charges",
+      "description": "Compare carrier invoices with planned transportation charges and approvals."
+    },
+    {
+      "id": "LO2",
+      "title": "Investigate invoice discrepancies",
+      "description": "Use execution events and evidence documents to identify unsupported claims."
+    },
+    {
+      "id": "LO3",
+      "title": "Approve only legitimate payments",
+      "description": "Apply settlement controls to prevent overpayment and financial leakage."
+    },
+    {
+      "id": "LO4",
+      "title": "Document carrier dispute resolution",
+      "description": "Record findings and request corrected invoices with proper justification."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "Real-Time Lab 7: Freight Invoice Mismatch & Freight Settlement"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "The shipment has been successfully delivered to Reliance Digital. Proof of Delivery (POD) has been received and the transportation process has entered the Freight Settlement phase. However, during invoice verification, the Finance team identifies a discrepancy between the planned transportation charges and the carrier's invoice."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Your Role",
+      "content": "You are the SAP TM Freight Settlement Consultant responsible for validating transportation charges, identifying invoice discrepancies and ensuring that only accurate payments are made to the carrier."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Business Scenario"
+    },
+    {
+      "id": "SEC5",
+      "type": "paragraph",
+      "content": "Blue Dart submits an invoice after successful delivery. The carrier claims additional charges for truck detention, emergency vehicle replacement and overnight parking. Finance refuses to approve the invoice because the billed amount is significantly higher than the amount calculated during transportation planning."
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "Transportation Charges"
+    },
+    {
+      "id": "SEC7",
+      "type": "table",
+      "title": "Planned vs Actual Invoice",
+      "headers": [
+        "Charge Type",
+        "Planned Amount",
+        "Carrier Invoice"
+      ],
+      "rows": [
+        [
+          "Base Transportation",
+          "INR 34,000",
+          "INR 34,000"
+        ],
+        [
+          "Replacement Vehicle",
+          "INR 18,000",
+          "INR 18,000"
+        ],
+        [
+          "Truck Detention",
+          "INR 0",
+          "INR 25,000"
+        ],
+        [
+          "Parking Charges",
+          "INR 0",
+          "INR 8,000"
+        ],
+        [
+          "Total",
+          "INR 52,000",
+          "INR 85,000"
+        ]
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "Business Challenge"
+    },
+    {
+      "id": "SEC9",
+      "type": "paragraph",
+      "content": "The carrier states that the detention charges resulted from the customer's last-minute delivery postponement in Lab 6. However, the Transportation Manager argues that the shipment was unloaded into a temporary warehouse specifically to avoid truck detention."
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "Your Investigation Tasks"
+    },
+    {
+      "id": "SEC11",
+      "type": "bullet-list",
+      "items": [
+        "Review the Freight Settlement Document.",
+        "Compare planned and actual charges.",
+        "Verify transportation execution events.",
+        "Review Proof of Delivery (POD).",
+        "Validate detention approvals.",
+        "Check temporary warehouse records.",
+        "Approve only legitimate charges."
+      ]
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Settlement Validation Flow"
+    },
+    {
+      "id": "SEC13",
+      "type": "process-flow",
+      "title": "Invoice Verification Process",
+      "orientation": "horizontal",
+      "steps": [
+        "Delivery Complete",
+        "Carrier Invoice",
+        "Charge Comparison",
+        "Exception Analysis",
+        "Approval / Rejection",
+        "Carrier Payment"
+      ]
+    },
+    {
+      "id": "SEC14",
+      "type": "heading",
+      "title": "Supporting Evidence"
+    },
+    {
+      "id": "SEC15",
+      "type": "table",
+      "title": "Evidence Review",
+      "headers": [
+        "Document",
+        "Observation"
+      ],
+      "rows": [
+        [
+          "Freight Order Events",
+          "Truck released immediately after unloading."
+        ],
+        [
+          "Warehouse Confirmation",
+          "Goods moved to temporary warehouse."
+        ],
+        [
+          "POD",
+          "Final delivery completed next day."
+        ],
+        [
+          "Carrier Approval Email",
+          "Only replacement truck charge approved."
+        ]
+      ]
+    },
+    {
+      "id": "SEC16",
+      "type": "heading",
+      "title": "Consultant Analysis"
+    },
+    {
+      "id": "SEC17",
+      "type": "table",
+      "title": "Charge Validation",
+      "headers": [
+        "Charge",
+        "Decision",
+        "Reason"
+      ],
+      "rows": [
+        [
+          "Base Transportation",
+          "Approve",
+          "Matches agreed rate."
+        ],
+        [
+          "Replacement Vehicle",
+          "Approve",
+          "Business-approved during Lab 5."
+        ],
+        [
+          "Truck Detention",
+          "Reject",
+          "Truck was released; no detention occurred."
+        ],
+        [
+          "Parking Charges",
+          "Reject",
+          "No supporting documentation."
+        ]
+      ]
+    },
+    {
+      "id": "SEC18",
+      "type": "heading",
+      "title": "Recommended Consultant Solution"
+    },
+    {
+      "id": "SEC19",
+      "type": "paragraph",
+      "content": "Reject the unsupported detention and parking charges. Approve payment only for the agreed transportation and replacement vehicle costs. Document the invoice discrepancy, communicate the findings to the carrier and request a corrected invoice. Update the Freight Settlement Document to reflect the approved payment amount."
+    },
+    {
+      "id": "SEC20",
+      "type": "callout",
+      "calloutType": "best-practice",
+      "title": "Consultant Best Practice",
+      "content": "Never approve a carrier invoice based solely on the submitted amount. Always compare it against SAP TM charge calculations, transportation events, approvals and supporting documents before settlement."
+    },
+    {
+      "id": "SEC21",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real Production Incident",
+      "content": "A global retail company discovered that a carrier had repeatedly billed unauthorized detention charges. By comparing SAP TM execution events with freight invoices, the company recovered over INR 1.2 Crores in incorrect transportation payments during a single financial year."
+    },
+    {
+      "id": "SEC22",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Accenture Scenario Question",
+      "content": "A carrier invoice is INR 33,000 higher than the planned transportation cost. How would you investigate? A consultant should review Freight Orders, execution events, charge calculation profiles, approvals, POD, settlement documents and supporting evidence before approving or rejecting the invoice."
+    },
+    {
+      "id": "SEC23",
+      "type": "heading",
+      "title": "Lab Outcome"
+    },
+    {
+      "id": "SEC24",
+      "type": "bullet-list",
+      "items": [
+        "Freight Settlement completed.",
+        "Invoice discrepancy identified.",
+        "Unsupported charges rejected.",
+        "Correct carrier payment approved.",
+        "Financial controls maintained.",
+        "Project continues to Lab 8: Transportation Performance KPIs & Management Dashboard."
+      ]
+    }
+  ]
+}

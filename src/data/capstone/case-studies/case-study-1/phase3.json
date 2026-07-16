@@ -1,0 +1,183 @@
+{
+  "id": "S5CS1_PHASE3",
+  "module": "Sprint 5",
+  "topic": 3,
+  "title": "Capstone Case Study 1 - Phase 3 Configuration & Integration",
+  "difficulty": "Solution Architect",
+  "estimatedDuration": "1 Day",
+  "projectPhase": "Realize",
+  "learningObjectives": [
+    "Configure SAP TM",
+    "Validate master data",
+    "Configure planning",
+    "Configure carrier selection",
+    "Configure charge management",
+    "Perform integration testing",
+    "Resolve configuration issues"
+  ],
+  "sections": [
+    { "id": "SEC1", "type": "cover", "title": "Configuration Sprint Begins", "subtitle": "SAP TM Configuration Workshop" },
+    { "id": "SEC2", "type": "paragraph", "content": "The Business Blueprint has been approved. The SAP TM project now enters the Realize phase. Configuration activities begin while developers work on interfaces and Basis prepares the system landscape." },
+    { "id": "SEC3", "type": "heading", "title": "Configuration Sprint Scope" },
+    {
+      "id": "SEC4",
+      "type": "table",
+      "title": "Sprint Backlog",
+      "headers": ["Configuration Area", "Owner", "Status"],
+      "rows": [
+        ["Master Data", "TM Consultant", "Pending"],
+        ["Planning Profiles", "TM Consultant", "Pending"],
+        ["Carrier Selection", "TM Consultant", "Pending"],
+        ["Charge Management", "TM Consultant", "Pending"],
+        ["SAP EWM Integration", "Technical Team", "In Progress"],
+        ["Finance Integration", "FI Consultant", "Pending"]
+      ]
+    },
+    { "id": "SEC5", "type": "heading", "title": "Configuration Activity 1" },
+    {
+      "id": "SEC6",
+      "type": "scenario",
+      "scenarioTitle": "Transportation Planning Profile",
+      "background": "The customer wants automatic planning every hour. The planning profile must consolidate deliveries heading to the same destination while respecting truck capacity and delivery commitments.",
+      "questions": [
+        "Should planning be manual or automatic?",
+        "How frequently should planning run?",
+        "Should optimization consider capacity?",
+        "Should planning respect customer SLA?"
+      ]
+    },
+    {
+      "id": "SEC7",
+      "type": "decision-point",
+      "title": "Planning Strategy",
+      "question": "Which planning strategy should be configured?",
+      "options": [
+        { "id": "A", "text": "Manual planning only" },
+        { "id": "B", "text": "Automatic optimization every hour with planner review for exceptions" },
+        { "id": "C", "text": "Create Freight Orders immediately after every delivery" }
+      ],
+      "recommendedAnswer": "B",
+      "explanation": "Automatic planning improves efficiency while allowing planners to handle exceptions manually."
+    },
+    { "id": "SEC8", "type": "heading", "title": "Configuration Activity 2" },
+    {
+      "id": "SEC9",
+      "type": "email",
+      "from": "Warehouse Manager",
+      "subject": "Planning Issue",
+      "body": "Several Freight Units were generated but were assigned to trucks exceeding legal vehicle capacity. Please investigate before tomorrow's testing."
+    },
+    {
+      "id": "SEC10",
+      "type": "consultant-task",
+      "title": "Root Cause Investigation",
+      "tasks": [
+        "Review planning profile.",
+        "Verify vehicle capacity master data.",
+        "Check optimizer constraints.",
+        "Validate load consolidation rules.",
+        "Retest planning."
+      ]
+    },
+    { "id": "SEC11", "type": "heading", "title": "Integration Testing Begins" },
+    {
+      "id": "SEC12",
+      "type": "table",
+      "title": "Integration Test Cases",
+      "headers": ["Scenario", "Expected Result"],
+      "rows": [
+        ["Sales Order Created", "Delivery generated"],
+        ["Outbound Delivery", "Freight Unit created"],
+        ["Planning Run", "Freight Order created"],
+        ["Warehouse Confirmation", "Execution updated"],
+        ["Proof of Delivery", "Freight Settlement available"]
+      ]
+    },
+    { "id": "SEC13", "type": "heading", "title": "Unexpected Defect" },
+    { "id": "SEC14", "type": "paragraph", "content": "During integration testing, planners discover that deliveries from Pune never generate Freight Units. Hyderabad deliveries work correctly." },
+    {
+      "id": "SEC15",
+      "type": "consultant-task",
+      "title": "Defect Analysis",
+      "tasks": [
+        "Check transportation relevance.",
+        "Verify Pune location master.",
+        "Review integration logs.",
+        "Validate organizational assignment.",
+        "Confirm master data replication."
+      ]
+    },
+    {
+      "id": "SEC16",
+      "type": "decision-point",
+      "title": "Customer Escalation",
+      "question": "The customer asks whether configuration should continue before fixing the defect.",
+      "options": [
+        { "id": "A", "text": "Continue configuration and ignore the issue." },
+        { "id": "B", "text": "Pause testing, resolve the defect and then continue." },
+        { "id": "C", "text": "Ask users to manually create Freight Orders." }
+      ],
+      "recommendedAnswer": "B",
+      "explanation": "Critical integration defects should be resolved before further testing to avoid cascading issues."
+    },
+    { "id": "SEC17", "type": "heading", "title": "Configuration Review Meeting" },
+    {
+      "id": "SEC18",
+      "type": "meeting-notes",
+      "participants": [
+        "SAP TM Lead",
+        "Basis Team",
+        "Integration Team",
+        "Warehouse Lead",
+        "Business Owner"
+      ],
+      "notes": [
+        "Planning profile configured successfully.",
+        "Carrier determination validated.",
+        "Charge calculation working.",
+        "Pune integration defect assigned for correction.",
+        "Configuration freeze planned for Friday."
+      ]
+    },
+    {
+      "id": "SEC19",
+      "type": "consultant-deliverable",
+      "title": "Sprint Deliverables",
+      "deliverables": [
+        "Planning Configuration",
+        "Carrier Selection Configuration",
+        "Charge Management Configuration",
+        "Integration Test Evidence",
+        "Defect Log",
+        "Configuration Document"
+      ]
+    },
+    {
+      "id": "SEC20",
+      "type": "callout",
+      "calloutType": "best-practice",
+      "title": "Real Project Advice",
+      "content": "Never move configuration into testing without documenting every configuration object. Proper documentation significantly reduces production support effort after Go-Live."
+    },
+    {
+      "id": "SEC21",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Production Lesson",
+      "content": "Many SAP TM implementation issues are caused by incomplete master data or incorrect organizational assignments rather than software defects. Validate business configuration before assuming technical failure."
+    },
+    {
+      "id": "SEC22",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Accenture Scenario",
+      "content": "During Realize phase, Freight Units are generated for one plant but not another. As an SAP TM consultant, explain your investigation approach, including master data validation, transportation relevance, organizational assignments, integration monitoring and configuration review."
+    },
+    {
+      "id": "SEC23",
+      "type": "summary",
+      "title": "Phase 3 Complete",
+      "content": "Configuration activities are substantially complete. Integration defects have been identified and assigned. The project is ready to enter System Integration Testing (SIT)."
+    }
+  ]
+}

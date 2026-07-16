@@ -1,0 +1,287 @@
+{
+  "id": "LAB-M4-009",
+  "module": {
+    "id": "module4",
+    "title": "ABC Electronics India - SAP TM End-to-End Implementation",
+    "sequence": 4
+  },
+  "topic": {
+    "id": "topic9",
+    "title": "Lab 9: Hypercare - Priority 1 (P1) Production Issue",
+    "sequence": 9
+  },
+  "metadata": {
+    "difficulty": "Advanced",
+    "estimatedReadingTime": 34,
+    "estimatedRevisionTime": 14,
+    "version": "1.0",
+    "lastUpdated": "2026-07-16",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "Hands-on",
+      "Hypercare",
+      "P1 Incident",
+      "Production Support"
+    ],
+    "prerequisites": [
+      "LAB-M4-008"
+    ],
+    "learningPath": [
+      "Hands-on"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Handle P1 incidents under hypercare",
+      "description": "Execute rapid triage and restoration steps during critical go-live disruptions."
+    },
+    {
+      "id": "LO2",
+      "title": "Diagnose integration-driven planning failures",
+      "description": "Identify why transportation demand and Freight Unit generation stopped."
+    },
+    {
+      "id": "LO3",
+      "title": "Coordinate technical and business response",
+      "description": "Work with Basis, Security and business stakeholders with frequent updates."
+    },
+    {
+      "id": "LO4",
+      "title": "Drive post-incident stabilization",
+      "description": "Define monitoring and preventive controls after service restoration."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "Real-Time Lab 9: Hypercare - Priority 1 (P1) Production Issue"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "The SAP TM project has gone live successfully. It is now Day 3 of the Hypercare period. At 8:15 AM, the Transportation Control Tower receives multiple calls stating that no Freight Orders are being created for today's customer deliveries. More than 250 outbound deliveries are waiting for transportation planning."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Incident Severity",
+      "content": "Priority: P1 (Critical). Business operations across India are stopped. Every minute of downtime increases delivery delays and financial losses."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Your Role"
+    },
+    {
+      "id": "SEC5",
+      "type": "paragraph",
+      "content": "You are the SAP TM Hypercare Consultant. The Incident Manager has assigned the ticket to you. Your responsibility is to restore transportation planning as quickly as possible while keeping business stakeholders informed."
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "Initial Business Impact"
+    },
+    {
+      "id": "SEC7",
+      "type": "table",
+      "title": "Production Status",
+      "headers": [
+        "Business Area",
+        "Current Status"
+      ],
+      "rows": [
+        [
+          "Sales Orders",
+          "Created Successfully"
+        ],
+        [
+          "Outbound Deliveries",
+          "Created Successfully"
+        ],
+        [
+          "Freight Units",
+          "Not Generated"
+        ],
+        [
+          "Freight Orders",
+          "Not Created"
+        ],
+        [
+          "Warehouse Loading",
+          "Stopped"
+        ],
+        [
+          "Customer Deliveries",
+          "Delayed"
+        ]
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "Incident Timeline"
+    },
+    {
+      "id": "SEC9",
+      "type": "table",
+      "title": "Timeline",
+      "headers": [
+        "Time",
+        "Event"
+      ],
+      "rows": [
+        [
+          "08:15 AM",
+          "First incident reported"
+        ],
+        [
+          "08:20 AM",
+          "Incident declared as P1"
+        ],
+        [
+          "08:30 AM",
+          "Hypercare bridge call started"
+        ],
+        [
+          "08:40 AM",
+          "Investigation initiated"
+        ]
+      ]
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "Your Investigation Tasks"
+    },
+    {
+      "id": "SEC11",
+      "type": "bullet-list",
+      "items": [
+        "Verify SAP TM system health.",
+        "Check SAP S/4HANA integration.",
+        "Review failed application logs.",
+        "Verify background jobs.",
+        "Check CIF/DRF replication status.",
+        "Validate transportation relevance configuration.",
+        "Determine business impact.",
+        "Communicate updates every 30 minutes."
+      ]
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Hypercare Investigation Flow"
+    },
+    {
+      "id": "SEC13",
+      "type": "process-flow",
+      "title": "P1 Incident Handling",
+      "orientation": "horizontal",
+      "steps": [
+        "Incident Raised",
+        "Impact Assessment",
+        "Technical Investigation",
+        "Root Cause",
+        "Temporary Fix",
+        "Permanent Resolution",
+        "Business Validation",
+        "Incident Closure"
+      ]
+    },
+    {
+      "id": "SEC14",
+      "type": "heading",
+      "title": "Root Cause Discovery"
+    },
+    {
+      "id": "SEC15",
+      "type": "paragraph",
+      "content": "After reviewing the logs, you discover that a scheduled integration job responsible for transferring transportation-relevant delivery data from SAP S/4HANA to SAP TM failed overnight because of an authorization change introduced during a security update. Since no deliveries reached SAP TM, Freight Units could not be generated."
+    },
+    {
+      "id": "SEC16",
+      "type": "heading",
+      "title": "Decision Options"
+    },
+    {
+      "id": "SEC17",
+      "type": "table",
+      "title": "Resolution Analysis",
+      "headers": [
+        "Option",
+        "Result"
+      ],
+      "rows": [
+        [
+          "Restart failed integration job",
+          "Temporary recovery if authorization is corrected."
+        ],
+        [
+          "Manually create Freight Orders",
+          "Not feasible for 250 deliveries."
+        ],
+        [
+          "Restore previous authorization",
+          "Restores integration immediately."
+        ],
+        [
+          "Ignore issue until next job cycle",
+          "Business outage continues."
+        ]
+      ]
+    },
+    {
+      "id": "SEC18",
+      "type": "heading",
+      "title": "Consultant Resolution"
+    },
+    {
+      "id": "SEC19",
+      "type": "paragraph",
+      "content": "Coordinate with the Basis and Security teams to restore the missing authorization. Restart the failed integration job, verify that transportation demand is replicated successfully, confirm Freight Unit generation, execute transportation planning and validate Freight Order creation with the business team before closing the P1 incident."
+    },
+    {
+      "id": "SEC20",
+      "type": "callout",
+      "calloutType": "best-practice",
+      "title": "Hypercare Best Practice",
+      "content": "During a P1 incident, restoring business operations is the first priority. Permanent root cause analysis and preventive actions should be completed after production stability has been restored."
+    },
+    {
+      "id": "SEC21",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real Production Incident",
+      "content": "A manufacturing company experienced a four-hour logistics outage after an overnight security role update blocked integration jobs. Although SAP TM itself was healthy, transportation planning stopped because no delivery data entered the system. Restoring the authorization resolved the issue immediately."
+    },
+    {
+      "id": "SEC22",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Accenture P1 Scenario",
+      "content": "If Freight Orders suddenly stop being created after Go-Live, never assume the planning engine is at fault. First verify whether transportation demand, master data and system integrations are reaching SAP TM before investigating planning configuration."
+    },
+    {
+      "id": "SEC23",
+      "type": "heading",
+      "title": "Post-Incident Review"
+    },
+    {
+      "id": "SEC24",
+      "type": "bullet-list",
+      "items": [
+        "Root cause documented.",
+        "Authorization issue corrected.",
+        "Integration monitoring alert created.",
+        "Background job monitoring enhanced.",
+        "Knowledge Base article published.",
+        "Project continues to Lab 10: Final End-to-End Consultant Challenge."
+      ]
+    }
+  ]
+}

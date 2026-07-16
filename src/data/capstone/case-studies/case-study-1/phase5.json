@@ -1,0 +1,235 @@
+{
+  "id": "S5CS1_PHASE5",
+  "module": "Sprint 5",
+  "topic": 5,
+  "title": "Capstone Case Study 1 - Phase 5 User Acceptance Testing (UAT)",
+  "difficulty": "Solution Architect",
+  "estimatedDuration": "3 Days",
+  "projectPhase": "Deploy -> User Acceptance Testing",
+  "learningObjectives": [
+    "Execute business-driven UAT scenarios",
+    "Manage business change requests",
+    "Validate end-to-end transportation processes",
+    "Obtain business sign-off",
+    "Prepare for production deployment",
+    "Manage UAT defect lifecycle"
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "cover",
+      "title": "User Acceptance Testing",
+      "subtitle": "Business Validation Before Go-Live"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "System Integration Testing has been successfully completed. The project now enters User Acceptance Testing (UAT), where actual business users validate that SAP TM supports their daily transportation operations. Unlike SIT, business users-not consultants-decide whether the solution meets operational expectations."
+    },
+    {
+      "id": "SEC3",
+      "type": "heading",
+      "title": "UAT Team"
+    },
+    {
+      "id": "SEC4",
+      "type": "table",
+      "title": "Business Participants",
+      "headers": [
+        "Role",
+        "Responsibility",
+        "Approval Required"
+      ],
+      "rows": [
+        ["Transportation Planner", "Planning Validation", "Yes"],
+        ["Warehouse Supervisor", "Execution Validation", "Yes"],
+        ["Finance Analyst", "Freight Settlement", "Yes"],
+        ["Logistics Manager", "Business Process", "Yes"],
+        ["Project Sponsor", "Final Approval", "Yes"]
+      ]
+    },
+    {
+      "id": "SEC5",
+      "type": "heading",
+      "title": "Business Acceptance Process"
+    },
+    {
+      "id": "SEC6",
+      "type": "process-flow",
+      "title": "UAT Workflow",
+      "orientation": "horizontal",
+      "steps": [
+        "Execute Test",
+        "Business Review",
+        "Raise Defect / Change Request",
+        "Consultant Analysis",
+        "Retest",
+        "Business Sign-Off"
+      ]
+    },
+    {
+      "id": "SEC7",
+      "type": "heading",
+      "title": "Business Test Scenarios"
+    },
+    {
+      "id": "SEC8",
+      "type": "table",
+      "title": "UAT Test Cases",
+      "headers": [
+        "Scenario",
+        "Business Expectation"
+      ],
+      "rows": [
+        ["Domestic Shipment", "Freight Order created automatically"],
+        ["Urgent Delivery", "Highest priority carrier selected"],
+        ["Truck Capacity Exceeded", "Shipment split automatically"],
+        ["Carrier Unavailable", "Backup carrier selected"],
+        ["Warehouse Delay", "Transportation schedule updated"],
+        ["Freight Invoice", "Charges calculated correctly"],
+        ["Management Dashboard", "KPIs displayed correctly"]
+      ]
+    },
+    {
+      "id": "SEC9",
+      "type": "heading",
+      "title": "Business Change Request"
+    },
+    {
+      "id": "SEC10",
+      "type": "email",
+      "from": "Transportation Manager",
+      "subject": "New Requirement During UAT",
+      "body": "Business users want planners to manually override the automatically selected carrier whenever VIP customers place urgent orders. This requirement was not discussed during Blueprint workshops."
+    },
+    {
+      "id": "SEC11",
+      "type": "decision-point",
+      "title": "Consultant Decision",
+      "question": "How should you handle this request?",
+      "options": [
+        { "id": "A", "text": "Implement immediately before Go-Live." },
+        { "id": "B", "text": "Evaluate business value, perform impact analysis and process through formal Change Request (CR)." },
+        { "id": "C", "text": "Reject the request without discussion." }
+      ],
+      "recommendedAnswer": "B",
+      "explanation": "New requirements discovered during UAT should be handled through formal change management. Direct implementation may impact project timelines, testing and Go-Live stability."
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Unexpected Business Defect"
+    },
+    {
+      "id": "SEC13",
+      "type": "paragraph",
+      "content": "Business users report that SAP TM selected the lowest-cost carrier instead of the preferred premium carrier for a high-value shipment. The system behaved according to configuration, but the business expected different behavior."
+    },
+    {
+      "id": "SEC14",
+      "type": "consultant-task",
+      "title": "Your Investigation",
+      "tasks": [
+        "Review carrier selection profile.",
+        "Compare configuration with Blueprint.",
+        "Determine whether this is a defect or a change request.",
+        "Estimate implementation impact.",
+        "Present recommendation to Change Control Board."
+      ]
+    },
+    {
+      "id": "SEC15",
+      "type": "table",
+      "title": "Defect vs Change Request Analysis",
+      "headers": [
+        "Situation",
+        "Classification",
+        "Reason"
+      ],
+      "rows": [
+        ["System not following approved design", "Defect", "Configuration issue"],
+        ["Business wants new functionality", "Change Request", "Scope enhancement"],
+        ["Master data missing", "Defect", "Incorrect setup"],
+        ["New business policy introduced", "Change Request", "Business decision"]
+      ]
+    },
+    {
+      "id": "SEC16",
+      "type": "heading",
+      "title": "Daily UAT Status Meeting"
+    },
+    {
+      "id": "SEC17",
+      "type": "meeting-notes",
+      "participants": [
+        "Business Owner",
+        "SAP TM Lead",
+        "Project Manager",
+        "Testing Lead",
+        "Warehouse Manager",
+        "Finance Manager"
+      ],
+      "notes": [
+        "95% test cases passed.",
+        "2 High-priority defects resolved.",
+        "1 Change Request deferred to Phase 2.",
+        "Business users satisfied with transportation planning.",
+        "Final sign-off planned tomorrow."
+      ]
+    },
+    {
+      "id": "SEC18",
+      "type": "heading",
+      "title": "UAT Exit Criteria"
+    },
+    {
+      "id": "SEC19",
+      "type": "table",
+      "title": "Business Readiness Checklist",
+      "headers": [
+        "Criteria",
+        "Status Required"
+      ],
+      "rows": [
+        ["Critical Business Processes Validated", "Complete"],
+        ["P1 & P2 Defects Closed", "Complete"],
+        ["Business Sign-Off", "Approved"],
+        ["Training Completed", "Complete"],
+        ["Go-Live Approval", "Approved"]
+      ]
+    },
+    {
+      "id": "SEC20",
+      "type": "consultant-deliverable",
+      "title": "UAT Deliverables",
+      "deliverables": [
+        "Business Test Evidence",
+        "UAT Defect Register",
+        "Change Request Register",
+        "Business Sign-Off Document",
+        "Go-Live Readiness Report",
+        "Deployment Recommendation"
+      ]
+    },
+    {
+      "id": "SEC21",
+      "type": "callout",
+      "calloutType": "best-practice",
+      "title": "Senior Consultant Advice",
+      "content": "Not every issue reported during UAT is a defect. Always determine whether the system is failing to meet the approved design (defect) or whether the business is requesting new functionality (change request)."
+    },
+    {
+      "id": "SEC22",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Accenture UAT Scenario",
+      "content": "A business user requests additional functionality during UAT. Would you implement it before Go-Live? A consultant should discuss scope management, impact analysis, change control procedures, project timelines and business priorities before making a recommendation."
+    },
+    {
+      "id": "SEC23",
+      "type": "summary",
+      "title": "Phase 5 Complete",
+      "content": "Business users have validated the SAP TM solution and provided formal approval. The project is now ready for Cutover Planning and Production Go-Live."
+    }
+  ]
+}

@@ -1,0 +1,228 @@
+{
+  "id": "S5CP5",
+  "module": "Sprint 5",
+  "projectNo": 5,
+  "title": "Accenture SAP TM Stream Training - Final Capstone Project",
+  "version": "1.0",
+  "difficulty": "Final Assessment",
+  "duration": "5 Days",
+  "projectType": "Individual Assessment",
+  "maximumMarks": 100,
+  "presentationRequired": true,
+  "vivaRequired": true,
+  "objective": "Analyze the business scenario, design an SAP Transportation Management solution following SAP Best Practices, prepare all required deliverables and defend the proposed solution during the final viva.",
+  "learningObjectives": [
+    "Analyze transportation business challenges end-to-end",
+    "Design SAP TM solution using standard best practices",
+    "Define planning, execution, and settlement approach",
+    "Identify consolidation and carrier strategy opportunities",
+    "Define KPI-driven management reporting",
+    "Defend solution decisions in final viva"
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "Background"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "You have recently joined Accenture as an Associate Software Engineer and completed the SAP S/4HANA Transportation Management learning journey. As part of the final stream assessment, you have been assigned an individual capstone project. Your objective is to analyze the client's transportation challenges and propose a complete SAP TM solution using SAP standard functionality wherever possible."
+    },
+    {
+      "id": "SEC3",
+      "type": "heading",
+      "title": "Client Profile"
+    },
+    {
+      "id": "SEC4",
+      "type": "table",
+      "title": "Organization Information",
+      "headers": [
+        "Attribute",
+        "Value"
+      ],
+      "rows": [
+        [
+          "Client",
+          "FreshMart Retail Pvt Ltd"
+        ],
+        [
+          "Industry",
+          "Retail Distribution"
+        ],
+        [
+          "Manufacturing Plants",
+          "3"
+        ],
+        [
+          "Distribution Centers",
+          "5"
+        ],
+        [
+          "Retail Stores",
+          "120"
+        ],
+        [
+          "Daily Deliveries",
+          "480"
+        ],
+        [
+          "Transportation Mode",
+          "Road"
+        ]
+      ]
+    },
+    {
+      "id": "SEC5",
+      "type": "heading",
+      "title": "Business Scenario"
+    },
+    {
+      "id": "SEC6",
+      "type": "paragraph",
+      "content": "FreshMart Retail distributes packaged food products across South India. Transportation planning is currently performed manually. Different planners use different planning approaches, resulting in inconsistent carrier selection, poor truck utilization, delivery delays and increasing transportation costs. Senior management has approved the implementation of SAP S/4HANA Embedded Transportation Management."
+    },
+    {
+      "id": "SEC7",
+      "type": "heading",
+      "title": "Business Challenges"
+    },
+    {
+      "id": "SEC8",
+      "type": "bullet-list",
+      "items": [
+        "Transportation planning requires approximately 4 hours every morning.",
+        "Vehicles frequently depart with unused capacity.",
+        "Multiple shipments travel to the same destination independently.",
+        "Different planners select different carriers for similar deliveries.",
+        "Transportation costs have increased by 14% during the last financial year.",
+        "Business users cannot monitor shipment status centrally.",
+        "Freight invoice verification is performed manually.",
+        "Management cannot measure transportation performance."
+      ]
+    },
+    {
+      "id": "SEC9",
+      "type": "heading",
+      "title": "Business Data"
+    },
+    {
+      "id": "SEC10",
+      "type": "table",
+      "title": "Locations",
+      "headers": [
+        "Location ID",
+        "Description",
+        "Type"
+      ],
+      "rows": [
+        [
+          "PL01",
+          "Hyderabad",
+          "Plant"
+        ],
+        [
+          "PL02",
+          "Bengaluru",
+          "Plant"
+        ],
+        [
+          "PL03",
+          "Chennai",
+          "Plant"
+        ],
+        [
+          "DC01",
+          "Vijayawada",
+          "Distribution Center"
+        ],
+        [
+          "DC02",
+          "Mysuru",
+          "Distribution Center"
+        ],
+        [
+          "DC03",
+          "Coimbatore",
+          "Distribution Center"
+        ]
+      ]
+    },
+    {
+      "id": "SEC11",
+      "type": "table",
+      "title": "Daily Shipment Requests",
+      "headers": [
+        "Shipment",
+        "Source",
+        "Destination",
+        "Weight"
+      ],
+      "rows": [
+        [
+          "SR001",
+          "Hyderabad",
+          "Vijayawada",
+          "9 Tons"
+        ],
+        [
+          "SR002",
+          "Hyderabad",
+          "Vijayawada",
+          "8 Tons"
+        ],
+        [
+          "SR003",
+          "Bengaluru",
+          "Mysuru",
+          "12 Tons"
+        ],
+        [
+          "SR004",
+          "Chennai",
+          "Coimbatore",
+          "16 Tons"
+        ],
+        [
+          "SR005",
+          "Hyderabad",
+          "Coimbatore",
+          "7 Tons"
+        ]
+      ]
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Candidate Instructions"
+    },
+    {
+      "id": "SEC13",
+      "type": "paragraph",
+      "content": "This assignment intentionally does not specify which SAP TM objects, configuration activities or business documents should be used. Your responsibility is to identify the appropriate SAP TM solution based on the business scenario. Wherever multiple solutions are possible, justify your recommendation using SAP Best Practices."
+    },
+    {
+      "id": "SEC14",
+      "type": "heading",
+      "title": "Assignment Tasks"
+    },
+    {
+      "id": "SEC15",
+      "type": "numbered-list",
+      "items": [
+        "Analyze the business scenario and identify the transportation challenges.",
+        "Identify all business master data required for the solution.",
+        "Design the complete transportation process.",
+        "Recommend an appropriate transportation planning strategy.",
+        "Recommend a carrier selection strategy.",
+        "Identify opportunities for shipment consolidation.",
+        "Design the transportation execution process.",
+        "Recommend a freight settlement approach.",
+        "Identify transportation KPIs for management reporting.",
+        "Prepare recommendations for future process improvements."
+      ]
+    }
+  ]
+}

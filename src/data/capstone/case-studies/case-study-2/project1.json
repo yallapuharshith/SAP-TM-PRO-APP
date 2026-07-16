@@ -1,0 +1,377 @@
+{
+  "id": "S5CP1",
+  "module": "Sprint 5",
+  "projectNo": 1,
+  "title": "ABC Electronics Transportation Optimization using SAP TM",
+  "difficulty": "ASE / Beginner Consultant",
+  "duration": "5 Days",
+  "industry": "Consumer Electronics",
+  "objective": "Design a complete SAP Transportation Management solution for ABC Electronics by analyzing business requirements, identifying SAP TM objects, proposing a transportation process, validating business scenarios and documenting the complete solution.",
+  "learningObjectives": [
+    "Analyze transportation business requirements",
+    "Identify SAP TM master data and documents",
+    "Design end-to-end transportation process",
+    "Recommend planning and carrier strategies",
+    "Define KPI-driven reporting approach",
+    "Prepare final solution documentation"
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "Project Statement"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "ABC Electronics manufactures laptops, monitors and networking devices. The company distributes products from Hyderabad and Pune to regional distribution centers across South India. Transportation planning is currently manual, resulting in high freight costs, poor truck utilization and delayed deliveries. Management has decided to implement SAP S/4HANA Embedded Transportation Management to standardize transportation planning and improve logistics efficiency."
+    },
+    {
+      "id": "SEC3",
+      "type": "heading",
+      "title": "Project Information"
+    },
+    {
+      "id": "SEC4",
+      "type": "table",
+      "title": "Company Details",
+      "headers": [
+        "Attribute",
+        "Value"
+      ],
+      "rows": [
+        [
+          "Company",
+          "ABC Electronics India Pvt Ltd"
+        ],
+        [
+          "Industry",
+          "Consumer Electronics"
+        ],
+        [
+          "Plants",
+          "Hyderabad, Pune"
+        ],
+        [
+          "Distribution Centers",
+          "Bengaluru, Chennai, Kochi"
+        ],
+        [
+          "Transportation Mode",
+          "Road"
+        ],
+        [
+          "SAP Solution",
+          "SAP S/4HANA Embedded TM"
+        ]
+      ]
+    },
+    {
+      "id": "SEC5",
+      "type": "heading",
+      "title": "Current Business Problems"
+    },
+    {
+      "id": "SEC6",
+      "type": "bullet-list",
+      "items": [
+        "Transportation planning is performed manually using Excel.",
+        "Carrier selection depends on planner experience.",
+        "Truck utilization is below 70%.",
+        "Customers experience delayed deliveries.",
+        "Freight invoices require manual verification.",
+        "Management has no transportation KPI dashboard."
+      ]
+    },
+    {
+      "id": "SEC7",
+      "type": "heading",
+      "title": "Business Requirements"
+    },
+    {
+      "id": "SEC8",
+      "type": "table",
+      "title": "Functional Requirements",
+      "headers": [
+        "Requirement ID",
+        "Requirement",
+        "Priority"
+      ],
+      "rows": [
+        [
+          "BR-01",
+          "Automatic transportation planning",
+          "High"
+        ],
+        [
+          "BR-02",
+          "Carrier selection",
+          "High"
+        ],
+        [
+          "BR-03",
+          "Freight Order creation",
+          "High"
+        ],
+        [
+          "BR-04",
+          "Freight Settlement",
+          "High"
+        ],
+        [
+          "BR-05",
+          "Transportation KPI reporting",
+          "Medium"
+        ]
+      ]
+    },
+    {
+      "id": "SEC9",
+      "type": "heading",
+      "title": "Provided Business Data"
+    },
+    {
+      "id": "SEC10",
+      "type": "table",
+      "title": "Locations",
+      "headers": [
+        "Location ID",
+        "Location Name",
+        "Type"
+      ],
+      "rows": [
+        [
+          "PL01",
+          "Hyderabad Plant",
+          "Plant"
+        ],
+        [
+          "PL02",
+          "Pune Plant",
+          "Plant"
+        ],
+        [
+          "DC01",
+          "Bengaluru DC",
+          "Distribution Center"
+        ],
+        [
+          "DC02",
+          "Chennai DC",
+          "Distribution Center"
+        ],
+        [
+          "DC03",
+          "Kochi DC",
+          "Distribution Center"
+        ]
+      ]
+    },
+    {
+      "id": "SEC11",
+      "type": "table",
+      "title": "Carriers",
+      "headers": [
+        "Carrier",
+        "Maximum Capacity",
+        "Cost / KM"
+      ],
+      "rows": [
+        [
+          "DHL",
+          "25 Tons",
+          "INR 65"
+        ],
+        [
+          "Blue Dart",
+          "18 Tons",
+          "INR 60"
+        ],
+        [
+          "TCI",
+          "30 Tons",
+          "INR 55"
+        ]
+      ]
+    },
+    {
+      "id": "SEC12",
+      "type": "table",
+      "title": "Products",
+      "headers": [
+        "Product",
+        "Weight"
+      ],
+      "rows": [
+        [
+          "Laptop",
+          "4 Kg"
+        ],
+        [
+          "Monitor",
+          "8 Kg"
+        ],
+        [
+          "Router",
+          "2 Kg"
+        ]
+      ]
+    },
+    {
+      "id": "SEC13",
+      "type": "table",
+      "title": "Customer Orders",
+      "headers": [
+        "Order",
+        "Product",
+        "Quantity",
+        "Destination"
+      ],
+      "rows": [
+        [
+          "SO1001",
+          "Laptop",
+          "100",
+          "Chennai"
+        ],
+        [
+          "SO1002",
+          "Monitor",
+          "60",
+          "Bengaluru"
+        ],
+        [
+          "SO1003",
+          "Router",
+          "250",
+          "Kochi"
+        ]
+      ]
+    },
+    {
+      "id": "SEC14",
+      "type": "heading",
+      "title": "Capstone Tasks"
+    },
+    {
+      "id": "SEC15",
+      "type": "numbered-list",
+      "items": [
+        "Analyze the business requirements.",
+        "Identify the SAP TM master data required.",
+        "Identify all SAP TM business documents used in the process.",
+        "Design the end-to-end transportation process.",
+        "Recommend a transportation planning strategy.",
+        "Recommend a carrier selection strategy.",
+        "Explain how Freight Orders will be created.",
+        "Explain how Freight Settlement will be performed.",
+        "Design five transportation KPIs.",
+        "Prepare a final solution summary."
+      ]
+    },
+    {
+      "id": "SEC16",
+      "type": "heading",
+      "title": "Expected Deliverables"
+    },
+    {
+      "id": "SEC17",
+      "type": "checklist",
+      "items": [
+        "Requirement Analysis Document",
+        "SAP TM Master Data List",
+        "Business Process Flow",
+        "Transportation Planning Strategy",
+        "Carrier Selection Strategy",
+        "Testing Summary",
+        "KPI Dashboard Design",
+        "Final Solution Document",
+        "Presentation (PPT)"
+      ]
+    },
+    {
+      "id": "SEC18",
+      "type": "heading",
+      "title": "Evaluation Rubric"
+    },
+    {
+      "id": "SEC19",
+      "type": "table",
+      "title": "Marks Distribution",
+      "headers": [
+        "Evaluation Area",
+        "Marks"
+      ],
+      "rows": [
+        [
+          "Requirement Analysis",
+          "15"
+        ],
+        [
+          "SAP TM Concepts",
+          "20"
+        ],
+        [
+          "Solution Design",
+          "20"
+        ],
+        [
+          "Business Process",
+          "15"
+        ],
+        [
+          "Documentation",
+          "10"
+        ],
+        [
+          "Presentation",
+          "10"
+        ],
+        [
+          "Viva",
+          "10"
+        ]
+      ]
+    },
+    {
+      "id": "SEC20",
+      "type": "heading",
+      "title": "Submission Checklist"
+    },
+    {
+      "id": "SEC21",
+      "type": "checklist",
+      "items": [
+        "Business Requirement Analysis",
+        "Process Flow Diagram",
+        "SAP TM Objects",
+        "Transportation Strategy",
+        "Carrier Strategy",
+        "Testing Document",
+        "Final Report",
+        "PowerPoint Presentation"
+      ]
+    },
+    {
+      "id": "SEC22",
+      "type": "heading",
+      "title": "Viva Preparation"
+    },
+    {
+      "id": "SEC23",
+      "type": "bullet-list",
+      "items": [
+        "Explain the difference between Freight Unit and Freight Order.",
+        "Why is Business Partner master data required?",
+        "How is carrier selection performed in SAP TM?",
+        "How does SAP TM integrate with SAP S/4HANA?",
+        "What is Freight Settlement?",
+        "Why is transportation planning important?",
+        "What KPIs would you present to management?",
+        "How would you improve truck utilization?",
+        "What happens if no carrier is available?",
+        "What business benefits does SAP TM provide?"
+      ]
+    }
+  ]
+}

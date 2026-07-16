@@ -1,0 +1,222 @@
+{
+  "id": "S5CS1_PHASE8",
+  "module": "Sprint 5",
+  "topic": 8,
+  "title": "Capstone Case Study 1 - Phase 8 Project Closure, AMS Transition & Lessons Learned",
+  "difficulty": "Solution Architect",
+  "estimatedDuration": "1 Day",
+  "projectPhase": "Closure",
+  "learningObjectives": [
+    "Transition SAP TM support to AMS",
+    "Perform project closure activities",
+    "Conduct lessons learned workshop",
+    "Measure business benefits",
+    "Prepare executive closure report",
+    "Complete knowledge transfer"
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "cover",
+      "title": "Project Closure",
+      "subtitle": "Official Completion of SAP TM Implementation"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "Thirty days after Go-Live, the SAP TM implementation has stabilized successfully. Business users are using the new transportation processes daily, critical incidents have been resolved and the Steering Committee has scheduled the final project closure meeting."
+    },
+    {
+      "id": "SEC3",
+      "type": "heading",
+      "title": "Project Summary"
+    },
+    {
+      "id": "SEC4",
+      "type": "table",
+      "title": "Implementation Overview",
+      "headers": ["Item", "Result"],
+      "rows": [
+        ["Project Duration", "9 Months"],
+        ["Methodology", "SAP Activate"],
+        ["Go-Live", "Successful"],
+        ["Hypercare", "Completed"],
+        ["Current Status", "Production Stable"]
+      ]
+    },
+    {
+      "id": "SEC5",
+      "type": "heading",
+      "title": "Business Benefits Achieved"
+    },
+    {
+      "id": "SEC6",
+      "type": "table",
+      "title": "Before vs After SAP TM",
+      "headers": ["KPI", "Before Implementation", "After Implementation"],
+      "rows": [
+        ["Planning Time", "3 Hours", "15 Minutes"],
+        ["Truck Utilization", "68%", "93%"],
+        ["On-Time Delivery", "81%", "98%"],
+        ["Invoice Disputes", "14%", "2%"],
+        ["Transportation Cost", "Baseline", "Reduced by 16%"],
+        ["Customer Satisfaction", "3.7/5", "4.8/5"]
+      ]
+    },
+    {
+      "id": "SEC7",
+      "type": "heading",
+      "title": "AMS Transition"
+    },
+    {
+      "id": "SEC8",
+      "type": "process-flow",
+      "title": "Support Handover",
+      "orientation": "horizontal",
+      "steps": [
+        "Implementation Team",
+        "Knowledge Transfer",
+        "AMS Team",
+        "Production Support",
+        "Continuous Improvement"
+      ]
+    },
+    {
+      "id": "SEC9",
+      "type": "heading",
+      "title": "Knowledge Transfer Checklist"
+    },
+    {
+      "id": "SEC10",
+      "type": "table",
+      "title": "KT Activities",
+      "headers": ["Knowledge Area", "Status"],
+      "rows": [
+        ["SAP TM Configuration", "Completed"],
+        ["Integration Architecture", "Completed"],
+        ["Production Support Guide", "Completed"],
+        ["Run Books", "Completed"],
+        ["Known Issues", "Completed"],
+        ["Monitoring Procedures", "Completed"]
+      ]
+    },
+    {
+      "id": "SEC11",
+      "type": "heading",
+      "title": "Lessons Learned Workshop"
+    },
+    {
+      "id": "SEC12",
+      "type": "meeting-notes",
+      "participants": [
+        "Project Sponsor",
+        "Business Owner",
+        "SAP TM Lead",
+        "Project Manager",
+        "AMS Manager"
+      ],
+      "notes": [
+        "Master data quality is critical.",
+        "Early business involvement improved adoption.",
+        "Daily Hypercare meetings reduced incident resolution time.",
+        "Standard SAP functionality reduced customization effort.",
+        "Automated monitoring prevented repeat incidents."
+      ]
+    },
+    {
+      "id": "SEC13",
+      "type": "heading",
+      "title": "Executive Steering Committee"
+    },
+    {
+      "id": "SEC14",
+      "type": "scenario",
+      "scenarioTitle": "Final Executive Review",
+      "background": "The CIO asks whether the SAP TM implementation achieved its original objectives and whether the organization should invest in additional SAP TM capabilities such as AI-based optimization and predictive transportation planning.",
+      "questions": [
+        "Was the project successful?",
+        "Did SAP TM deliver measurable business value?",
+        "What improvements should be planned next?",
+        "What risks remain after project closure?"
+      ]
+    },
+    {
+      "id": "SEC15",
+      "type": "decision-point",
+      "title": "Future Roadmap",
+      "question": "Which recommendation should be presented to the Steering Committee?",
+      "options": [
+        { "id": "A", "text": "Close the project and make no further improvements." },
+        { "id": "B", "text": "Continue with a Phase-2 roadmap including AI optimization, advanced analytics, carrier collaboration and continuous process improvement." },
+        { "id": "C", "text": "Replace SAP TM with custom development." }
+      ],
+      "recommendedAnswer": "B",
+      "explanation": "Successful SAP implementations typically continue with optimization phases that increase business value after the initial Go-Live has stabilized."
+    },
+    {
+      "id": "SEC16",
+      "type": "heading",
+      "title": "Project Closure Deliverables"
+    },
+    {
+      "id": "SEC17",
+      "type": "consultant-deliverable",
+      "title": "Final Deliverables",
+      "deliverables": [
+        "Project Closure Report",
+        "Business Benefit Analysis",
+        "Lessons Learned Document",
+        "Knowledge Transfer Sign-Off",
+        "AMS Transition Plan",
+        "Future Roadmap",
+        "Executive Presentation"
+      ]
+    },
+    {
+      "id": "SEC18",
+      "type": "heading",
+      "title": "Project Success Metrics"
+    },
+    {
+      "id": "SEC19",
+      "type": "table",
+      "title": "Overall Project Scorecard",
+      "headers": ["Category", "Outcome"],
+      "rows": [
+        ["Scope", "100% Delivered"],
+        ["Schedule", "Delivered On Time"],
+        ["Budget", "Within Approved Budget"],
+        ["Business Adoption", "Excellent"],
+        ["Production Stability", "Stable"],
+        ["Executive Satisfaction", "Very High"]
+      ]
+    },
+    {
+      "id": "SEC20",
+      "type": "callout",
+      "calloutType": "best-practice",
+      "title": "Solution Architect Advice",
+      "content": "Project closure is not the end of the SAP journey. A successful implementation establishes a stable foundation for continuous optimization, innovation and business transformation."
+    },
+    {
+      "id": "SEC21",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real SAP Project",
+      "content": "Many organizations begin Phase-2 improvements within six months of Go-Live, focusing on predictive analytics, AI-assisted transportation planning, sustainability metrics, carrier collaboration portals and transportation network optimization."
+    },
+    {
+      "id": "SEC22",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Accenture Project Closure Question",
+      "content": "How do you determine whether an SAP TM implementation was successful? A consultant should evaluate business KPIs, user adoption, production stability, budget, schedule, executive satisfaction and measurable business benefits rather than simply confirming that the system went live."
+    },
+    {
+      "id": "SEC23",
+      "type": "summary",
+      "title": "Capstone Completed",
+      "content": "The SAP TM implementation has been successfully completed from project initiation through production stabilization and AMS transition. The organization has achieved measurable business improvements and established a roadmap for future transportation innovation."
+    }
+  ]
+}

@@ -1,0 +1,281 @@
+{
+  "id": "LAB-M4-003",
+  "module": {
+    "id": "module4",
+    "title": "ABC Electronics India - SAP TM End-to-End Implementation",
+    "sequence": 4
+  },
+  "topic": {
+    "id": "topic3",
+    "title": "Lab 3: Freight Order Creation & Load Consolidation",
+    "sequence": 3
+  },
+  "metadata": {
+    "difficulty": "Intermediate",
+    "estimatedReadingTime": 30,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-16",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "Hands-on",
+      "Freight Order",
+      "Load Consolidation",
+      "Capacity Planning"
+    ],
+    "prerequisites": [
+      "LAB-M4-002"
+    ],
+    "learningPath": [
+      "Hands-on"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Analyze Freight Units for consolidation",
+      "description": "Evaluate demand lines for grouping opportunities before Freight Order creation."
+    },
+    {
+      "id": "LO2",
+      "title": "Apply capacity and route constraints",
+      "description": "Use truck limits and route compatibility to determine feasible load plans."
+    },
+    {
+      "id": "LO3",
+      "title": "Create optimized Freight Orders",
+      "description": "Build cost-effective orders without violating legal or operational constraints."
+    },
+    {
+      "id": "LO4",
+      "title": "Handle production planning failures",
+      "description": "Investigate and correct over-capacity or wrong-route consolidation issues."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "Real-Time Lab 3: Freight Order Creation & Load Consolidation"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "Blue Dart has been selected as the carrier in Lab 2. Before creating the Freight Order, three additional customer orders arrive. As the SAP TM Consultant, you must determine whether the shipments should be consolidated into one truck or transported separately while satisfying delivery commitments and minimizing transportation costs."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Your Role",
+      "content": "You are responsible for load planning and transportation optimization. Your decision directly affects freight cost, truck utilization and customer service levels."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Current Orders"
+    },
+    {
+      "id": "SEC5",
+      "type": "table",
+      "title": "Transportation Demand",
+      "headers": [
+        "Customer",
+        "Destination",
+        "Weight",
+        "Delivery Date",
+        "Priority"
+      ],
+      "rows": [
+        [
+          "Reliance Digital",
+          "Chennai",
+          "8 Tons",
+          "Tomorrow",
+          "High"
+        ],
+        [
+          "Croma",
+          "Chennai",
+          "4 Tons",
+          "Tomorrow",
+          "Medium"
+        ],
+        [
+          "Vijay Sales",
+          "Chennai",
+          "3 Tons",
+          "Tomorrow",
+          "Medium"
+        ],
+        [
+          "Poorvika Mobiles",
+          "Vellore",
+          "2 Tons",
+          "Tomorrow",
+          "Low"
+        ]
+      ]
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "Available Vehicle"
+    },
+    {
+      "id": "SEC7",
+      "type": "table",
+      "title": "Truck Capacity",
+      "headers": [
+        "Vehicle",
+        "Maximum Capacity",
+        "Current Load",
+        "Available Capacity"
+      ],
+      "rows": [
+        [
+          "Truck TN-09-4587",
+          "16 Tons",
+          "0 Tons",
+          "16 Tons"
+        ]
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "Business Challenge"
+    },
+    {
+      "id": "SEC9",
+      "type": "paragraph",
+      "content": "The planner proposes loading all four deliveries into one truck because the total weight is 17 tons. However, the truck can carry only 16 tons. Additionally, the Vellore delivery requires a different transportation route than the Chennai deliveries."
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "Your Tasks"
+    },
+    {
+      "id": "SEC11",
+      "type": "bullet-list",
+      "items": [
+        "Analyze all Freight Units.",
+        "Check truck capacity constraints.",
+        "Identify deliveries eligible for consolidation.",
+        "Separate deliveries requiring different routes.",
+        "Create optimized Freight Orders.",
+        "Verify resource utilization."
+      ]
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Expected Planning Logic"
+    },
+    {
+      "id": "SEC13",
+      "type": "process-flow",
+      "title": "Load Consolidation Process",
+      "orientation": "horizontal",
+      "steps": [
+        "Freight Units",
+        "Capacity Check",
+        "Route Compatibility",
+        "Load Consolidation",
+        "Freight Order Creation",
+        "Resource Assignment"
+      ]
+    },
+    {
+      "id": "SEC14",
+      "type": "heading",
+      "title": "Production Issue"
+    },
+    {
+      "id": "SEC15",
+      "type": "paragraph",
+      "content": "A junior planner creates a single Freight Order containing all four deliveries. During execution, the warehouse reports that the truck exceeds its legal weight limit and cannot be dispatched. Transportation operations are delayed."
+    },
+    {
+      "id": "SEC16",
+      "type": "table",
+      "title": "Consultant Investigation",
+      "headers": [
+        "Question",
+        "Expected Analysis"
+      ],
+      "rows": [
+        [
+          "Why did planning fail?",
+          "Vehicle capacity exceeded."
+        ],
+        [
+          "Can all deliveries be consolidated?",
+          "No, due to capacity and route constraints."
+        ],
+        [
+          "Which deliveries should be grouped?",
+          "The three Chennai deliveries."
+        ],
+        [
+          "What about the Vellore shipment?",
+          "Create a separate Freight Order."
+        ],
+        [
+          "How many Freight Orders should be created?",
+          "Two."
+        ]
+      ]
+    },
+    {
+      "id": "SEC17",
+      "type": "heading",
+      "title": "Recommended Solution"
+    },
+    {
+      "id": "SEC18",
+      "type": "paragraph",
+      "content": "SAP TM should consolidate the Chennai Freight Units into one optimized Freight Order because they share the same destination region and delivery window. The Vellore shipment should be assigned to a separate Freight Order due to its different route. If the combined Chennai load still exceeds truck capacity, either split the load across two vehicles or assign a larger vehicle based on available resources."
+    },
+    {
+      "id": "SEC19",
+      "type": "callout",
+      "calloutType": "best-practice",
+      "title": "Consultant Best Practice",
+      "content": "Never consolidate shipments based only on destination. Always evaluate weight, volume, loading capacity, delivery window, route compatibility, dangerous goods requirements and vehicle restrictions before approving a Freight Order."
+    },
+    {
+      "id": "SEC20",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real Production Incident",
+      "content": "A logistics company consolidated six customer deliveries into one truck without validating axle-weight restrictions. The truck was stopped during a highway inspection, resulting in delivery delays and financial penalties. The issue was resolved by updating SAP TM planning constraints to enforce legal weight limits."
+    },
+    {
+      "id": "SEC21",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Accenture Scenario Question",
+      "content": "A planner wants to merge all Freight Units into one Freight Order to reduce transportation cost. Would you approve it? Explain your decision. A consultant should discuss capacity utilization, routing, delivery windows, legal restrictions and optimization objectives before approving consolidation."
+    },
+    {
+      "id": "SEC22",
+      "type": "heading",
+      "title": "Lab Outcome"
+    },
+    {
+      "id": "SEC23",
+      "type": "bullet-list",
+      "items": [
+        "Freight Units analyzed successfully.",
+        "Capacity constraints identified.",
+        "Load consolidation optimized.",
+        "Two Freight Orders created based on route and capacity.",
+        "Vehicle utilization improved while maintaining delivery commitments.",
+        "Project continues to Lab 4: Warehouse Loading Delay & SAP EWM Integration."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,393 @@
+{
+  "id": "S5CP2",
+  "module": "Sprint 5",
+  "projectNo": 2,
+  "title": "Global Retail Ltd. - Multi-Plant Transportation Planning using SAP TM",
+  "difficulty": "Intermediate",
+  "duration": "5 Days",
+  "industry": "Retail Distribution",
+  "objective": "Design an SAP TM solution for a retail company operating multiple distribution centers, multiple carriers and different transportation priorities while minimizing transportation cost and improving delivery performance.",
+  "learningObjectives": [
+    "Analyze multi-plant transportation requirements",
+    "Design SAP TM master data and organizational structure",
+    "Plan consolidation-aware transportation flows",
+    "Select carriers using cost and service criteria",
+    "Design positive and negative transportation test scenarios",
+    "Define transportation KPI dashboard recommendations"
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "Project Statement"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "Global Retail Ltd. operates a nationwide retail distribution network supplying supermarkets across South India. The company currently plans transportation manually. Due to increasing order volumes and multiple shipping locations, planners frequently select inefficient routes, trucks are underutilized and transportation costs continue to increase."
+    },
+    {
+      "id": "SEC3",
+      "type": "heading",
+      "title": "Business Objectives"
+    },
+    {
+      "id": "SEC4",
+      "type": "bullet-list",
+      "items": [
+        "Reduce transportation cost by at least 12%.",
+        "Increase truck utilization above 90%.",
+        "Automate carrier selection.",
+        "Improve on-time deliveries.",
+        "Reduce manual planning effort.",
+        "Provide transportation visibility."
+      ]
+    },
+    {
+      "id": "SEC5",
+      "type": "heading",
+      "title": "Business Requirements"
+    },
+    {
+      "id": "SEC6",
+      "type": "table",
+      "title": "Requirements",
+      "headers": [
+        "Requirement",
+        "Priority"
+      ],
+      "rows": [
+        [
+          "Multi-Plant Planning",
+          "High"
+        ],
+        [
+          "Automatic Freight Unit Creation",
+          "High"
+        ],
+        [
+          "Load Consolidation",
+          "High"
+        ],
+        [
+          "Automatic Carrier Selection",
+          "High"
+        ],
+        [
+          "Freight Settlement",
+          "Medium"
+        ],
+        [
+          "Transportation Dashboard",
+          "Medium"
+        ]
+      ]
+    },
+    {
+      "id": "SEC7",
+      "type": "heading",
+      "title": "Provided Business Data"
+    },
+    {
+      "id": "SEC8",
+      "type": "table",
+      "title": "Plants",
+      "headers": [
+        "Plant",
+        "City"
+      ],
+      "rows": [
+        [
+          "PL01",
+          "Hyderabad"
+        ],
+        [
+          "PL02",
+          "Bengaluru"
+        ],
+        [
+          "PL03",
+          "Chennai"
+        ]
+      ]
+    },
+    {
+      "id": "SEC9",
+      "type": "table",
+      "title": "Distribution Centers",
+      "headers": [
+        "DC",
+        "Location"
+      ],
+      "rows": [
+        [
+          "DC01",
+          "Vijayawada"
+        ],
+        [
+          "DC02",
+          "Visakhapatnam"
+        ],
+        [
+          "DC03",
+          "Coimbatore"
+        ],
+        [
+          "DC04",
+          "Mysuru"
+        ]
+      ]
+    },
+    {
+      "id": "SEC10",
+      "type": "table",
+      "title": "Transportation Resources",
+      "headers": [
+        "Truck",
+        "Capacity"
+      ],
+      "rows": [
+        [
+          "TRUCK-01",
+          "20 Tons"
+        ],
+        [
+          "TRUCK-02",
+          "25 Tons"
+        ],
+        [
+          "TRUCK-03",
+          "30 Tons"
+        ],
+        [
+          "TRUCK-04",
+          "18 Tons"
+        ]
+      ]
+    },
+    {
+      "id": "SEC11",
+      "type": "table",
+      "title": "Carrier Information",
+      "headers": [
+        "Carrier",
+        "Rating",
+        "Cost/KM",
+        "Available Vehicles"
+      ],
+      "rows": [
+        [
+          "DHL",
+          "4.9",
+          "INR 67",
+          "20"
+        ],
+        [
+          "Blue Dart",
+          "4.8",
+          "INR 63",
+          "15"
+        ],
+        [
+          "TCI",
+          "4.5",
+          "INR 56",
+          "30"
+        ],
+        [
+          "Safexpress",
+          "4.7",
+          "INR 60",
+          "18"
+        ]
+      ]
+    },
+    {
+      "id": "SEC12",
+      "type": "table",
+      "title": "Daily Customer Orders",
+      "headers": [
+        "Order",
+        "Source",
+        "Destination",
+        "Weight"
+      ],
+      "rows": [
+        [
+          "SO2001",
+          "Hyderabad",
+          "Visakhapatnam",
+          "8 Tons"
+        ],
+        [
+          "SO2002",
+          "Hyderabad",
+          "Vijayawada",
+          "6 Tons"
+        ],
+        [
+          "SO2003",
+          "Chennai",
+          "Coimbatore",
+          "12 Tons"
+        ],
+        [
+          "SO2004",
+          "Bengaluru",
+          "Mysuru",
+          "10 Tons"
+        ],
+        [
+          "SO2005",
+          "Hyderabad",
+          "Visakhapatnam",
+          "5 Tons"
+        ]
+      ]
+    },
+    {
+      "id": "SEC13",
+      "type": "heading",
+      "title": "Project Tasks"
+    },
+    {
+      "id": "SEC14",
+      "type": "numbered-list",
+      "items": [
+        "Analyze transportation requirements.",
+        "Identify all required SAP TM master data.",
+        "Design the organizational structure.",
+        "Recommend transportation planning strategy.",
+        "Determine which deliveries can be consolidated.",
+        "Recommend the most suitable carrier for each shipment.",
+        "Identify SAP TM business documents generated during processing.",
+        "Prepare five positive test scenarios.",
+        "Prepare five negative test scenarios.",
+        "Design a transportation KPI dashboard.",
+        "Recommend process improvements."
+      ]
+    },
+    {
+      "id": "SEC15",
+      "type": "heading",
+      "title": "Bonus Challenge"
+    },
+    {
+      "id": "SEC16",
+      "type": "paragraph",
+      "content": "Two deliveries (SO2001 and SO2005) have the same source and destination. Explain whether they should be consolidated into a single Freight Order. Justify your answer based on truck capacity, delivery schedule and transportation efficiency."
+    },
+    {
+      "id": "SEC17",
+      "type": "heading",
+      "title": "Expected Deliverables"
+    },
+    {
+      "id": "SEC18",
+      "type": "checklist",
+      "items": [
+        "Business Analysis",
+        "Master Data Design",
+        "Organization Structure",
+        "Transportation Process Flow",
+        "Planning Strategy",
+        "Carrier Selection Strategy",
+        "Load Consolidation Analysis",
+        "Positive Test Cases",
+        "Negative Test Cases",
+        "KPI Dashboard",
+        "Final Report",
+        "PowerPoint Presentation"
+      ]
+    },
+    {
+      "id": "SEC19",
+      "type": "heading",
+      "title": "Evaluation Rubric"
+    },
+    {
+      "id": "SEC20",
+      "type": "table",
+      "title": "Assessment Criteria",
+      "headers": [
+        "Area",
+        "Marks"
+      ],
+      "rows": [
+        [
+          "Requirement Analysis",
+          "10"
+        ],
+        [
+          "SAP TM Object Identification",
+          "15"
+        ],
+        [
+          "Planning & Consolidation",
+          "20"
+        ],
+        [
+          "Carrier Selection",
+          "15"
+        ],
+        [
+          "Testing",
+          "15"
+        ],
+        [
+          "Documentation",
+          "10"
+        ],
+        [
+          "Presentation",
+          "5"
+        ],
+        [
+          "Viva",
+          "10"
+        ]
+      ]
+    },
+    {
+      "id": "SEC21",
+      "type": "heading",
+      "title": "Submission Checklist"
+    },
+    {
+      "id": "SEC22",
+      "type": "checklist",
+      "items": [
+        "Requirement Analysis",
+        "SAP TM Master Data",
+        "Organization Structure",
+        "Transportation Planning Design",
+        "Carrier Recommendation",
+        "Test Cases",
+        "Dashboard Design",
+        "Final Documentation",
+        "Presentation"
+      ]
+    },
+    {
+      "id": "SEC23",
+      "type": "heading",
+      "title": "Viva Preparation"
+    },
+    {
+      "id": "SEC24",
+      "type": "bullet-list",
+      "items": [
+        "What is load consolidation?",
+        "When should Freight Units be consolidated?",
+        "Why was a particular carrier selected?",
+        "How does truck capacity affect planning?",
+        "Can one Freight Order contain multiple Freight Units?",
+        "How does SAP TM improve truck utilization?",
+        "Which KPI is most important for logistics managers?",
+        "What happens if truck capacity is exceeded?",
+        "How can transportation costs be reduced using SAP TM?",
+        "What would you improve in this solution?"
+      ]
+    }
+  ]
+}

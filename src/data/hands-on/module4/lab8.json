@@ -1,0 +1,306 @@
+{
+  "id": "LAB-M4-008",
+  "module": {
+    "id": "module4",
+    "title": "ABC Electronics India - SAP TM End-to-End Implementation",
+    "sequence": 4
+  },
+  "topic": {
+    "id": "topic8",
+    "title": "Lab 8: Transportation Performance KPIs, Analytics & Management Dashboard",
+    "sequence": 8
+  },
+  "metadata": {
+    "difficulty": "Intermediate",
+    "estimatedReadingTime": 32,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-16",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "Hands-on",
+      "KPI Analytics",
+      "Management Dashboard",
+      "Continuous Improvement"
+    ],
+    "prerequisites": [
+      "LAB-M4-007"
+    ],
+    "learningPath": [
+      "Hands-on"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Interpret transportation KPIs",
+      "description": "Assess delivery, cost, utilization and incident metrics for business performance."
+    },
+    {
+      "id": "LO2",
+      "title": "Perform root cause analysis",
+      "description": "Link operational incidents to underlying process gaps and system controls."
+    },
+    {
+      "id": "LO3",
+      "title": "Present management-level conclusions",
+      "description": "Balance outcome success with operational stability and risk exposure."
+    },
+    {
+      "id": "LO4",
+      "title": "Define improvement roadmap",
+      "description": "Recommend preventive controls and monitoring actions for continuous optimization."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "Real-Time Lab 8: Transportation Performance KPIs & Management Dashboard"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "The transportation cycle has been completed successfully. Senior management has requested a performance review to understand why transportation costs increased, whether customer commitments were met and what improvements can be implemented for future shipments. As the SAP TM Consultant, you must analyze operational KPIs and present recommendations."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Your Role",
+      "content": "You are preparing a weekly Transportation Performance Review for the Logistics Director using SAP TM analytics and operational KPIs."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Business Background"
+    },
+    {
+      "id": "SEC5",
+      "type": "paragraph",
+      "content": "The shipment experienced multiple events during its lifecycle including master data issues, carrier unavailability, warehouse loading delays, vehicle breakdown and customer-requested delivery changes. Management wants to know whether these incidents affected overall logistics performance."
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "Transportation Performance Report"
+    },
+    {
+      "id": "SEC7",
+      "type": "table",
+      "title": "Operational KPIs",
+      "headers": [
+        "KPI",
+        "Target",
+        "Actual",
+        "Status"
+      ],
+      "rows": [
+        [
+          "On-Time Delivery",
+          "98%",
+          "100%",
+          "Achieved"
+        ],
+        [
+          "Transportation Cost",
+          "INR 52,000",
+          "INR 52,000",
+          "Achieved"
+        ],
+        [
+          "Planning Time",
+          "< 15 Minutes",
+          "13 Minutes",
+          "Achieved"
+        ],
+        [
+          "Truck Utilization",
+          "> 90%",
+          "94%",
+          "Achieved"
+        ],
+        [
+          "Customer Satisfaction",
+          "> 4.5/5",
+          "4.9/5",
+          "Achieved"
+        ],
+        [
+          "Production Incidents",
+          "0",
+          "5",
+          "Needs Review"
+        ]
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "Management Questions"
+    },
+    {
+      "id": "SEC9",
+      "type": "bullet-list",
+      "items": [
+        "Why were there five production incidents?",
+        "Which incident caused the highest business risk?",
+        "Could transportation costs have been reduced?",
+        "Which department caused the most delays?",
+        "What preventive actions should be implemented?",
+        "Should carrier performance be reviewed?"
+      ]
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "Incident Summary"
+    },
+    {
+      "id": "SEC11",
+      "type": "table",
+      "title": "Root Cause Analysis",
+      "headers": [
+        "Incident",
+        "Root Cause",
+        "Preventive Action"
+      ],
+      "rows": [
+        [
+          "Freight Unit Not Created",
+          "Missing location master data",
+          "Automate master data validation"
+        ],
+        [
+          "Carrier Not Available",
+          "Resource shortage",
+          "Maintain backup carrier contracts"
+        ],
+        [
+          "Warehouse Delay",
+          "Inventory under quality inspection",
+          "Improve SAP EWM notifications"
+        ],
+        [
+          "Truck Breakdown",
+          "Vehicle mechanical failure",
+          "Monitor fleet maintenance schedules"
+        ],
+        [
+          "Invoice Dispute",
+          "Unsupported carrier charges",
+          "Automate charge validation"
+        ]
+      ]
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Dashboard Review Process"
+    },
+    {
+      "id": "SEC13",
+      "type": "process-flow",
+      "title": "Management Reporting Flow",
+      "orientation": "horizontal",
+      "steps": [
+        "Collect KPIs",
+        "Analyze Trends",
+        "Identify Root Cause",
+        "Recommend Improvements",
+        "Management Review",
+        "Continuous Improvement"
+      ]
+    },
+    {
+      "id": "SEC14",
+      "type": "heading",
+      "title": "Unexpected Management Question"
+    },
+    {
+      "id": "SEC15",
+      "type": "paragraph",
+      "content": "The Logistics Director asks: 'Although five production incidents occurred, the customer still received the shipment on time and transportation cost remained within the approved budget. Should we consider this shipment successful or unsuccessful?'"
+    },
+    {
+      "id": "SEC16",
+      "type": "table",
+      "title": "Consultant Response Analysis",
+      "headers": [
+        "Evaluation Area",
+        "Recommended Conclusion"
+      ],
+      "rows": [
+        [
+          "Customer Service",
+          "Successful"
+        ],
+        [
+          "Transportation Cost",
+          "Successful"
+        ],
+        [
+          "Operational Stability",
+          "Needs Improvement"
+        ],
+        [
+          "Risk Management",
+          "Needs Improvement"
+        ],
+        [
+          "Overall Project",
+          "Successful with improvement opportunities"
+        ]
+      ]
+    },
+    {
+      "id": "SEC17",
+      "type": "heading",
+      "title": "Consultant Recommendations"
+    },
+    {
+      "id": "SEC18",
+      "type": "paragraph",
+      "content": "Recommend implementing automated master data validation before planning, introducing secondary carrier agreements, integrating warehouse quality status with SAP TM, monitoring vehicle health proactively and using automated freight invoice validation. These improvements will reduce operational incidents while maintaining current customer service levels."
+    },
+    {
+      "id": "SEC19",
+      "type": "callout",
+      "calloutType": "best-practice",
+      "title": "Consultant Best Practice",
+      "content": "KPIs should not be viewed individually. A consultant evaluates the complete business outcome by balancing customer satisfaction, transportation cost, operational efficiency, risk and resource utilization."
+    },
+    {
+      "id": "SEC20",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real Production Example",
+      "content": "A global FMCG company reduced transportation incidents by 42% after implementing KPI dashboards that tracked carrier performance, warehouse delays, planning exceptions and invoice disputes. Management reviewed these dashboards weekly to drive continuous process improvements."
+    },
+    {
+      "id": "SEC21",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Accenture Scenario Question",
+      "content": "Management asks whether a transportation process with multiple operational issues but successful customer delivery should be considered a success. A consultant should explain that business success depends on overall outcomes while also highlighting process improvement opportunities identified through KPI analysis."
+    },
+    {
+      "id": "SEC22",
+      "type": "heading",
+      "title": "Lab Outcome"
+    },
+    {
+      "id": "SEC23",
+      "type": "bullet-list",
+      "items": [
+        "Transportation KPIs analyzed.",
+        "Operational incidents reviewed.",
+        "Root causes identified.",
+        "Management dashboard presented.",
+        "Continuous improvement plan prepared.",
+        "Project continues to Lab 9: Hypercare - Priority 1 Production Issue."
+      ]
+    }
+  ]
+}

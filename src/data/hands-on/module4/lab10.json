@@ -1,0 +1,328 @@
+{
+  "id": "LAB-M4-010",
+  "module": {
+    "id": "module4",
+    "title": "ABC Electronics India - SAP TM End-to-End Implementation",
+    "sequence": 4
+  },
+  "topic": {
+    "id": "topic10",
+    "title": "Lab 10: Final End-to-End Consultant Challenge (Go-Live Day)",
+    "sequence": 10
+  },
+  "metadata": {
+    "difficulty": "Advanced",
+    "estimatedReadingTime": 35,
+    "estimatedRevisionTime": 15,
+    "version": "1.0",
+    "lastUpdated": "2026-07-16",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "Hands-on",
+      "Go-Live",
+      "War Room",
+      "End-to-End Production Support"
+    ],
+    "prerequisites": [
+      "LAB-M4-009"
+    ],
+    "learningPath": [
+      "Hands-on"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Prioritize multi-incident go-live situations",
+      "description": "Classify incidents by business impact and assign consultant capacity effectively."
+    },
+    {
+      "id": "LO2",
+      "title": "Coordinate end-to-end production recovery",
+      "description": "Resolve planning, execution and settlement disruptions in a single control cycle."
+    },
+    {
+      "id": "LO3",
+      "title": "Lead management communication",
+      "description": "Summarize impact, remediation and risk controls for executive stakeholders."
+    },
+    {
+      "id": "LO4",
+      "title": "Define preventive operating model",
+      "description": "Convert incident lessons into monitoring, automation and governance improvements."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "Real-Time Lab 10: Final End-to-End Consultant Challenge"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "It is Monday morning after a successful Go-Live. ABC Electronics has scheduled more than 450 deliveries across India. At 8:00 AM, multiple business teams begin reporting issues simultaneously. The Incident Manager opens a War Room and assigns you as the SAP TM Functional Consultant."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Your Mission",
+      "content": "Restore business operations as quickly as possible while minimizing customer impact, financial loss and operational disruption."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Current Business Landscape"
+    },
+    {
+      "id": "SEC5",
+      "type": "table",
+      "title": "Today's Operations",
+      "headers": [
+        "Business Area",
+        "Value"
+      ],
+      "rows": [
+        [
+          "Sales Orders",
+          "520"
+        ],
+        [
+          "Outbound Deliveries",
+          "470"
+        ],
+        [
+          "Freight Units",
+          "462"
+        ],
+        [
+          "Freight Orders",
+          "398"
+        ],
+        [
+          "Carriers",
+          "18"
+        ],
+        [
+          "Distribution Centers",
+          "5"
+        ]
+      ]
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "War Room Dashboard"
+    },
+    {
+      "id": "SEC7",
+      "type": "table",
+      "title": "Open Production Issues",
+      "headers": [
+        "Incident",
+        "Priority",
+        "Business Impact"
+      ],
+      "rows": [
+        [
+          "8 Freight Units not generated",
+          "P1",
+          "Orders cannot be planned"
+        ],
+        [
+          "Carrier rejected 12 shipments",
+          "P2",
+          "Replanning required"
+        ],
+        [
+          "Warehouse loading delayed",
+          "P2",
+          "Shipment execution delayed"
+        ],
+        [
+          "One truck accident",
+          "P1",
+          "Shipment at risk"
+        ],
+        [
+          "Carrier invoice dispute",
+          "P3",
+          "Finance approval pending"
+        ],
+        [
+          "Management requesting KPI report",
+          "P3",
+          "Executive review"
+        ]
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "Challenge 1 - Prioritization"
+    },
+    {
+      "id": "SEC9",
+      "type": "paragraph",
+      "content": "You have only four consultants available. Which incidents will you address first and why?"
+    },
+    {
+      "id": "SEC10",
+      "type": "table",
+      "title": "Expected Prioritization",
+      "headers": [
+        "Priority",
+        "Reason"
+      ],
+      "rows": [
+        [
+          "P1 Issues",
+          "Business completely blocked"
+        ],
+        [
+          "P2 Issues",
+          "Business partially affected"
+        ],
+        [
+          "P3 Issues",
+          "Business continues normally"
+        ]
+      ]
+    },
+    {
+      "id": "SEC11",
+      "type": "heading",
+      "title": "Challenge 2 - Root Cause Investigation"
+    },
+    {
+      "id": "SEC12",
+      "type": "bullet-list",
+      "items": [
+        "Why were Freight Units not generated?",
+        "Why did the carrier reject shipments?",
+        "Why is warehouse loading delayed?",
+        "Can the truck accident affect other deliveries?",
+        "Is the invoice dispute preventing operations?"
+      ]
+    },
+    {
+      "id": "SEC13",
+      "type": "heading",
+      "title": "Expected Consultant Workflow"
+    },
+    {
+      "id": "SEC14",
+      "type": "process-flow",
+      "title": "Production Support Workflow",
+      "orientation": "horizontal",
+      "steps": [
+        "Incident Reported",
+        "Business Impact",
+        "Root Cause",
+        "Temporary Fix",
+        "Permanent Solution",
+        "Business Validation",
+        "Closure"
+      ]
+    },
+    {
+      "id": "SEC15",
+      "type": "heading",
+      "title": "Management Review Meeting"
+    },
+    {
+      "id": "SEC16",
+      "type": "paragraph",
+      "content": "At 11:00 AM the CIO asks why multiple issues occurred immediately after Go-Live and requests a corrective action plan that will prevent similar incidents in the future."
+    },
+    {
+      "id": "SEC17",
+      "type": "table",
+      "title": "Consultant Recommendations",
+      "headers": [
+        "Area",
+        "Recommendation"
+      ],
+      "rows": [
+        [
+          "Master Data",
+          "Automated validation before planning"
+        ],
+        [
+          "Integration",
+          "Real-time interface monitoring and alerts"
+        ],
+        [
+          "Carrier Management",
+          "Maintain backup carriers and capacity"
+        ],
+        [
+          "Warehouse",
+          "Improve SAP EWM synchronization"
+        ],
+        [
+          "Fleet",
+          "Preventive vehicle maintenance"
+        ],
+        [
+          "Finance",
+          "Automated freight invoice validation"
+        ],
+        [
+          "Operations",
+          "Daily KPI review meetings"
+        ]
+      ]
+    },
+    {
+      "id": "SEC18",
+      "type": "heading",
+      "title": "Final Consultant Presentation"
+    },
+    {
+      "id": "SEC19",
+      "type": "paragraph",
+      "content": "Present a five-minute summary covering business impact, root causes, corrective actions, preventive actions and lessons learned. Explain not only what happened but why it happened and how similar issues can be prevented."
+    },
+    {
+      "id": "SEC20",
+      "type": "callout",
+      "calloutType": "best-practice",
+      "title": "Senior Consultant Thinking",
+      "content": "A good consultant fixes today's issue. A great consultant ensures the issue never happens again through process improvements, automation, monitoring and documentation."
+    },
+    {
+      "id": "SEC21",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real SAP TM Project",
+      "content": "During a nationwide SAP TM rollout, one company experienced more than 40 production incidents in the first week. By introducing automated monitoring for interfaces, carrier capacity, background jobs and KPI dashboards, incident volume decreased by nearly 70% within two months."
+    },
+    {
+      "id": "SEC22",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Accenture Final Assessment Question",
+      "content": "If you are the SAP TM Consultant during Go-Live and multiple production issues occur simultaneously, how would you manage the situation? A strong answer includes prioritizing incidents by business impact, coordinating with cross-functional teams, restoring operations first, performing root cause analysis, communicating with stakeholders and implementing preventive measures."
+    },
+    {
+      "id": "SEC23",
+      "type": "heading",
+      "title": "Project Completion"
+    },
+    {
+      "id": "SEC24",
+      "type": "bullet-list",
+      "items": [
+        "Successfully handled end-to-end SAP TM lifecycle.",
+        "Resolved planning, execution and settlement issues.",
+        "Managed Hypercare and production support.",
+        "Presented KPI analysis to management.",
+        "Completed consultant-level production simulation.",
+        "Sprint 4 Hands-on Labs completed."
+      ]
+    }
+  ]
+}

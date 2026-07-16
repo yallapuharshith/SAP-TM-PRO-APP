@@ -1,0 +1,310 @@
+{
+  "id": "LAB-M4-005",
+  "module": {
+    "id": "module4",
+    "title": "ABC Electronics India - SAP TM End-to-End Implementation",
+    "sequence": 4
+  },
+  "topic": {
+    "id": "topic5",
+    "title": "Lab 5: Truck Breakdown During Transit & Transportation Replanning",
+    "sequence": 5
+  },
+  "metadata": {
+    "difficulty": "Intermediate",
+    "estimatedReadingTime": 32,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-16",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "Hands-on",
+      "Transportation Replanning",
+      "Exception Handling",
+      "In-Transit Disruption"
+    ],
+    "prerequisites": [
+      "LAB-M4-004"
+    ],
+    "learningPath": [
+      "Hands-on"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Manage in-transit transportation exceptions",
+      "description": "Handle truck breakdown events using structured impact analysis and replanning."
+    },
+    {
+      "id": "LO2",
+      "title": "Evaluate business and cost trade-offs",
+      "description": "Compare repair wait time versus replacement resource assignment against SLA commitments."
+    },
+    {
+      "id": "LO3",
+      "title": "Coordinate cross-functional incident response",
+      "description": "Align planner, carrier, customer service and management decisions during disruptions."
+    },
+    {
+      "id": "LO4",
+      "title": "Update execution plans and communication",
+      "description": "Record exceptions, revise ETA and continue shipment execution with approved decisions."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "Real-Time Lab 5: Truck Breakdown During Transit & Transportation Replanning"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "The shipment successfully left the Bengaluru Distribution Center after the warehouse delay was resolved in Lab 4. Two hours into the journey, the carrier's driver reports that the truck has broken down on NH-48 near Krishnagiri due to a gearbox failure. The shipment contains high-value laptops worth INR 2.5 Crores and must still reach the customer before 9:00 AM tomorrow."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Your Role",
+      "content": "You are the SAP TM Production Support Consultant on duty. The transportation planner, carrier manager, customer service team and warehouse manager are waiting for your recommendation."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Current Transportation Status"
+    },
+    {
+      "id": "SEC5",
+      "type": "table",
+      "title": "Shipment Status",
+      "headers": [
+        "Parameter",
+        "Current Value"
+      ],
+      "rows": [
+        [
+          "Freight Order",
+          "FO-45000891"
+        ],
+        [
+          "Shipment Status",
+          "In Transit"
+        ],
+        [
+          "Current Location",
+          "Krishnagiri (NH-48)"
+        ],
+        [
+          "Distance Remaining",
+          "285 KM"
+        ],
+        [
+          "Delivery Deadline",
+          "Tomorrow 09:00 AM"
+        ],
+        [
+          "Cargo Value",
+          "INR 2.5 Crores"
+        ]
+      ]
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "Information Received"
+    },
+    {
+      "id": "SEC7",
+      "type": "table",
+      "title": "Carrier Update",
+      "headers": [
+        "Information",
+        "Status"
+      ],
+      "rows": [
+        [
+          "Driver Safe",
+          "Yes"
+        ],
+        [
+          "Vehicle Repair Time",
+          "Approximately 6 Hours"
+        ],
+        [
+          "Goods Damaged",
+          "No"
+        ],
+        [
+          "Replacement Truck Nearby",
+          "Available in Hosur"
+        ],
+        [
+          "Customer Notified",
+          "No"
+        ]
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "Business Challenge"
+    },
+    {
+      "id": "SEC9",
+      "type": "paragraph",
+      "content": "Waiting six hours for repairs will almost certainly cause the customer to miss the agreed delivery time. A replacement truck is available 40 kilometers away, but transferring the cargo will increase transportation costs by INR 18,000."
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "Your Investigation Tasks"
+    },
+    {
+      "id": "SEC11",
+      "type": "bullet-list",
+      "items": [
+        "Verify shipment event status.",
+        "Confirm cargo condition.",
+        "Estimate delivery delay.",
+        "Evaluate replacement vehicle availability.",
+        "Update transportation execution plan.",
+        "Notify business stakeholders.",
+        "Document the transportation exception."
+      ]
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Decision Process"
+    },
+    {
+      "id": "SEC13",
+      "type": "process-flow",
+      "title": "Transportation Exception Handling",
+      "orientation": "horizontal",
+      "steps": [
+        "Exception Reported",
+        "Impact Analysis",
+        "Replacement Resource Check",
+        "Business Approval",
+        "Shipment Replanning",
+        "Execution Continues"
+      ]
+    },
+    {
+      "id": "SEC14",
+      "type": "heading",
+      "title": "Stakeholder Responses"
+    },
+    {
+      "id": "SEC15",
+      "type": "table",
+      "title": "Business Opinions",
+      "headers": [
+        "Stakeholder",
+        "Request"
+      ],
+      "rows": [
+        [
+          "Finance Manager",
+          "Avoid additional transportation cost."
+        ],
+        [
+          "Sales Manager",
+          "Customer must receive shipment before SLA expires."
+        ],
+        [
+          "Carrier",
+          "Repair truck instead of replacing it."
+        ],
+        [
+          "Customer",
+          "On-time delivery is more important than cost."
+        ]
+      ]
+    },
+    {
+      "id": "SEC16",
+      "type": "heading",
+      "title": "Consultant Analysis"
+    },
+    {
+      "id": "SEC17",
+      "type": "table",
+      "title": "Decision Options",
+      "headers": [
+        "Option",
+        "Business Impact"
+      ],
+      "rows": [
+        [
+          "Wait for truck repair",
+          "Lowest cost but SLA violation is highly likely."
+        ],
+        [
+          "Transfer shipment to replacement truck",
+          "Higher transportation cost but delivery commitment maintained."
+        ],
+        [
+          "Cancel shipment",
+          "Major customer dissatisfaction and financial loss."
+        ],
+        [
+          "Return shipment to warehouse",
+          "Unnecessary operational disruption."
+        ]
+      ]
+    },
+    {
+      "id": "SEC18",
+      "type": "heading",
+      "title": "Recommended Consultant Solution"
+    },
+    {
+      "id": "SEC19",
+      "type": "paragraph",
+      "content": "Approve the replacement vehicle immediately. Update the Freight Order execution details, record the transportation exception, notify the customer about the revised ETA, obtain management approval for the additional transportation cost and continue shipment execution. The additional INR 18,000 transportation cost is significantly lower than the potential penalties, lost business and customer dissatisfaction caused by missing the delivery commitment."
+    },
+    {
+      "id": "SEC20",
+      "type": "callout",
+      "calloutType": "best-practice",
+      "title": "Consultant Best Practice",
+      "content": "During transportation exceptions, prioritize business continuity and customer commitments. Every replanning decision should be documented with its business justification, financial impact and stakeholder approval."
+    },
+    {
+      "id": "SEC21",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real Production Incident",
+      "content": "A consumer electronics company transporting premium smartphones experienced a truck engine failure during transit. Instead of waiting for repairs, the SAP TM planning team reassigned the shipment to another carrier within one hour. Although transportation costs increased by 12%, the company avoided SLA penalties worth over INR 8 lakhs and retained an important retail customer."
+    },
+    {
+      "id": "SEC22",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Accenture Production Scenario",
+      "content": "If a truck breaks down during transportation, what is your first action? A consultant should answer: ensure safety, verify cargo condition, assess business impact, evaluate alternative resources, communicate with stakeholders and then update SAP TM execution records and transportation plans."
+    },
+    {
+      "id": "SEC23",
+      "type": "heading",
+      "title": "Lab Outcome"
+    },
+    {
+      "id": "SEC24",
+      "type": "bullet-list",
+      "items": [
+        "Transportation exception analyzed.",
+        "Replacement vehicle assigned.",
+        "Freight Order updated.",
+        "Customer informed of revised ETA.",
+        "SLA successfully maintained.",
+        "Project continues to Lab 6: Customer Changes Delivery Date During Transit."
+      ]
+    }
+  ]
+}

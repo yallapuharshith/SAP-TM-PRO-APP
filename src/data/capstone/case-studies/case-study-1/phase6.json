@@ -1,0 +1,214 @@
+{
+  "id": "S5CS1_PHASE6",
+  "module": "Sprint 5",
+  "topic": 6,
+  "title": "Capstone Case Study 1 - Phase 6 Cutover Planning & Production Go-Live",
+  "difficulty": "Solution Architect",
+  "estimatedDuration": "2 Days",
+  "projectPhase": "Deploy -> Go-Live",
+  "learningObjectives": [
+    "Execute Cutover activities",
+    "Manage Production Go-Live",
+    "Coordinate cross-functional teams",
+    "Validate production readiness",
+    "Handle Go/No-Go decisions",
+    "Respond to Day-1 production issues"
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "cover",
+      "title": "Production Go-Live Weekend",
+      "subtitle": "The Most Critical Phase of the Project"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "After months of implementation, configuration, SIT and UAT, ABC Electronics is ready to deploy SAP TM into Production. Every activity must be executed according to the approved Cutover Plan because any mistake could stop nationwide transportation operations."
+    },
+    {
+      "id": "SEC3",
+      "type": "heading",
+      "title": "Cutover Timeline"
+    },
+    {
+      "id": "SEC4",
+      "type": "timeline",
+      "title": "Deployment Schedule",
+      "events": [
+        { "time": "Friday 18:00", "activity": "Business Freeze Begins" },
+        { "time": "Friday 20:00", "activity": "Backup Production System" },
+        { "time": "Friday 22:00", "activity": "Import Production Transports" },
+        { "time": "Saturday 01:00", "activity": "Master Data Validation" },
+        { "time": "Saturday 05:00", "activity": "Integration Validation" },
+        { "time": "Saturday 09:00", "activity": "Smoke Testing" },
+        { "time": "Saturday 12:00", "activity": "Go/No-Go Meeting" },
+        { "time": "Monday 08:00", "activity": "Business Starts Using SAP TM" }
+      ]
+    },
+    {
+      "id": "SEC5",
+      "type": "heading",
+      "title": "Cutover Checklist"
+    },
+    {
+      "id": "SEC6",
+      "type": "table",
+      "title": "Deployment Activities",
+      "headers": ["Task", "Owner", "Status"],
+      "rows": [
+        ["Production Backup", "Basis Team", "Pending"],
+        ["Transport Import", "Basis Team", "Pending"],
+        ["Master Data Validation", "SAP TM Consultant", "Pending"],
+        ["Integration Testing", "Integration Team", "Pending"],
+        ["Business Smoke Test", "Business Users", "Pending"],
+        ["Executive Approval", "Steering Committee", "Pending"]
+      ]
+    },
+    {
+      "id": "SEC7",
+      "type": "heading",
+      "title": "Unexpected Production Issue"
+    },
+    {
+      "id": "SEC8",
+      "type": "paragraph",
+      "content": "During Saturday morning smoke testing, planners discover that outbound deliveries from the Pune plant are not generating Freight Units in Production, although everything worked correctly in QA."
+    },
+    {
+      "id": "SEC9",
+      "type": "email",
+      "from": "Program Manager",
+      "subject": "URGENT - Go-Live Risk",
+      "body": "The Steering Committee meeting starts in 45 minutes. Please investigate whether this issue is caused by transport migration, master data, authorization or integration. We need a recommendation before the Go/No-Go meeting."
+    },
+    {
+      "id": "SEC10",
+      "type": "consultant-task",
+      "title": "Production Investigation",
+      "tasks": [
+        "Verify production master data.",
+        "Compare QA and Production configuration.",
+        "Check transport import logs.",
+        "Review integration queues.",
+        "Validate organizational assignments.",
+        "Estimate business impact.",
+        "Prepare recommendation."
+      ]
+    },
+    {
+      "id": "SEC11",
+      "type": "heading",
+      "title": "Go / No-Go Meeting"
+    },
+    {
+      "id": "SEC12",
+      "type": "decision-point",
+      "title": "Executive Decision",
+      "question": "Freight Units cannot be generated only for the Pune plant. Hyderabad, Bengaluru and Chennai are working correctly. What should the Steering Committee decide?",
+      "options": [
+        { "id": "A", "text": "Proceed with nationwide Go-Live." },
+        { "id": "B", "text": "Postpone the entire project." },
+        { "id": "C", "text": "Evaluate business impact, determine whether Pune can operate temporarily using an approved contingency plan, and make a risk-based Go/No-Go decision." }
+      ],
+      "recommendedAnswer": "C",
+      "explanation": "A Go/No-Go decision should be based on business impact, risk, available workarounds and executive approval-not solely on the existence of a defect."
+    },
+    {
+      "id": "SEC13",
+      "type": "heading",
+      "title": "War Room Dashboard"
+    },
+    {
+      "id": "SEC14",
+      "type": "table",
+      "title": "Production Readiness",
+      "headers": ["Area", "Current Status"],
+      "rows": [
+        ["Configuration", "Completed"],
+        ["Transport Import", "Successful"],
+        ["Integration", "Validated"],
+        ["Smoke Testing", "1 Critical Issue"],
+        ["Business Sign-Off", "Pending"],
+        ["Executive Approval", "Pending"]
+      ]
+    },
+    {
+      "id": "SEC15",
+      "type": "heading",
+      "title": "Production Day - Monday Morning"
+    },
+    {
+      "id": "SEC16",
+      "type": "scenario",
+      "scenarioTitle": "First Live Shipment",
+      "background": "At 08:05 AM the first production Sales Order is created. Business users watch the system closely as the first Freight Unit, Transportation Proposal and Freight Order are generated.",
+      "questions": [
+        "What should be verified first?",
+        "Which integrations must be confirmed?",
+        "How will business validate success?",
+        "Who gives final production approval?"
+      ]
+    },
+    {
+      "id": "SEC17",
+      "type": "heading",
+      "title": "Go-Live Success Criteria"
+    },
+    {
+      "id": "SEC18",
+      "type": "table",
+      "title": "Production Validation",
+      "headers": ["Validation", "Expected Result"],
+      "rows": [
+        ["Sales Order", "Created Successfully"],
+        ["Outbound Delivery", "Transferred to TM"],
+        ["Freight Unit", "Generated"],
+        ["Planning", "Completed"],
+        ["Freight Order", "Created"],
+        ["Warehouse Execution", "Successful"],
+        ["Freight Settlement", "Ready"]
+      ]
+    },
+    {
+      "id": "SEC19",
+      "type": "consultant-deliverable",
+      "title": "Go-Live Deliverables",
+      "deliverables": [
+        "Cutover Checklist",
+        "Go-Live Report",
+        "Production Validation Report",
+        "Issue Register",
+        "Executive Go-Live Approval",
+        "Hypercare Handover Document"
+      ]
+    },
+    {
+      "id": "SEC20",
+      "type": "callout",
+      "calloutType": "best-practice",
+      "title": "Senior Consultant Advice",
+      "content": "A successful Go-Live is not measured by whether zero issues occur. It is measured by whether critical business processes remain operational, risks are managed effectively and the business can continue operating with confidence."
+    },
+    {
+      "id": "SEC21",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real Project Experience",
+      "content": "Many SAP implementations experience minor issues during the first production weekend. Mature project teams rely on contingency plans, structured war-room communication and risk-based decision making rather than expecting a perfect deployment."
+    },
+    {
+      "id": "SEC22",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Accenture Go-Live Scenario",
+      "content": "During the Go/No-Go meeting, a defect affects one manufacturing plant but the rest of the business is operational. Explain how you would assess business impact, available workarounds, project risk, executive approval and contingency planning before recommending whether to proceed with Go-Live."
+    },
+    {
+      "id": "SEC23",
+      "type": "summary",
+      "title": "Phase 6 Complete",
+      "content": "Production deployment has been completed successfully. SAP TM is now live. The project enters the Hypercare phase, where consultants provide intensive production support and rapidly resolve business-critical incidents."
+    }
+  ]
+}

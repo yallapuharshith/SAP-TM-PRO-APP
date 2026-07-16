@@ -1,0 +1,185 @@
+{
+  "id": "S5CS1_PHASE4",
+  "module": "Sprint 5",
+  "topic": 4,
+  "title": "Capstone Case Study 1 - Phase 4 System Integration Testing (SIT)",
+  "difficulty": "Solution Architect",
+  "estimatedDuration": "2 Days",
+  "projectPhase": "Realize -> SIT",
+  "learningObjectives": [
+    "Execute end-to-end business scenarios",
+    "Identify integration defects",
+    "Classify production defects",
+    "Perform defect triage",
+    "Validate SAP TM integrations",
+    "Prepare SIT sign-off"
+  ],
+  "sections": [
+    { "id": "SEC1", "type": "cover", "title": "System Integration Testing", "subtitle": "Testing the Complete Transportation Process" },
+    { "id": "SEC2", "type": "paragraph", "content": "Configuration has been completed and transported into the QA environment. The objective of SIT is to validate that all integrated business processes work correctly across SAP S/4HANA, SAP TM, SAP EWM and Finance." },
+    { "id": "SEC3", "type": "heading", "title": "SIT Scope" },
+    {
+      "id": "SEC4",
+      "type": "table",
+      "title": "Applications Under Test",
+      "headers": ["Application", "Purpose", "Status"],
+      "rows": [
+        ["SAP S/4HANA", "Sales & Deliveries", "Ready"],
+        ["SAP TM", "Planning & Execution", "Ready"],
+        ["SAP EWM", "Warehouse Execution", "Ready"],
+        ["Finance", "Freight Settlement", "Ready"],
+        ["SAP Analytics", "KPI Reporting", "Ready"]
+      ]
+    },
+    { "id": "SEC5", "type": "heading", "title": "End-to-End Test Scenario" },
+    {
+      "id": "SEC6",
+      "type": "process-flow",
+      "title": "Business Process Under Test",
+      "orientation": "horizontal",
+      "steps": [
+        "Sales Order",
+        "Outbound Delivery",
+        "Freight Unit",
+        "Planning",
+        "Freight Order",
+        "Warehouse Loading",
+        "Goods Issue",
+        "Delivery",
+        "Freight Settlement"
+      ]
+    },
+    { "id": "SEC7", "type": "heading", "title": "Business Test Cases" },
+    {
+      "id": "SEC8",
+      "type": "table",
+      "title": "SIT Test Suite",
+      "headers": ["Test Case", "Expected Result"],
+      "rows": [
+        ["TC001 - Sales Order", "Delivery Created"],
+        ["TC002 - Delivery", "Freight Unit Generated"],
+        ["TC003 - Planning", "Transportation Proposal Created"],
+        ["TC004 - Carrier Selection", "Optimal Carrier Assigned"],
+        ["TC005 - Freight Order", "Created Successfully"],
+        ["TC006 - Warehouse", "Loading Completed"],
+        ["TC007 - Delivery", "POD Received"],
+        ["TC008 - Settlement", "Freight Settlement Document Created"]
+      ]
+    },
+    { "id": "SEC9", "type": "heading", "title": "Unexpected Defects" },
+    {
+      "id": "SEC10",
+      "type": "table",
+      "title": "Defect Log",
+      "headers": ["Defect ID", "Issue", "Severity", "Status"],
+      "rows": [
+        ["DEF-101", "Freight Unit not generated for export deliveries", "P1", "Open"],
+        ["DEF-102", "Carrier ranking ignored during planning", "P2", "Open"],
+        ["DEF-103", "Warehouse confirmation delayed by 10 minutes", "P3", "Open"],
+        ["DEF-104", "Freight settlement tax rounding mismatch", "P2", "Open"]
+      ]
+    },
+    { "id": "SEC11", "type": "heading", "title": "Defect Classification Exercise" },
+    {
+      "id": "SEC12",
+      "type": "scenario",
+      "scenarioTitle": "Root Cause Identification",
+      "background": "The project manager asks you to classify each defect before assigning it to a support team.",
+      "questions": [
+        "Which defect is caused by master data?",
+        "Which defect is caused by configuration?",
+        "Which defect is an integration issue?",
+        "Which defect belongs to Finance?",
+        "Which issue blocks Go-Live?"
+      ]
+    },
+    {
+      "id": "SEC13",
+      "type": "decision-point",
+      "title": "Go-Live Decision",
+      "question": "Can the project proceed to UAT with DEF-101 still unresolved?",
+      "options": [
+        { "id": "A", "text": "Yes, continue testing." },
+        { "id": "B", "text": "No. P1 defects must be resolved before UAT." },
+        { "id": "C", "text": "Ignore the issue because only export deliveries are affected." }
+      ],
+      "recommendedAnswer": "B",
+      "explanation": "A P1 defect affecting Freight Unit generation blocks a core business process and must be resolved before User Acceptance Testing."
+    },
+    { "id": "SEC14", "type": "heading", "title": "Daily Defect Triage Meeting" },
+    {
+      "id": "SEC15",
+      "type": "meeting-notes",
+      "participants": [
+        "SAP TM Lead",
+        "Business Owner",
+        "Integration Team",
+        "SAP Basis",
+        "SAP EWM Lead",
+        "Finance Consultant",
+        "Project Manager"
+      ],
+      "notes": [
+        "P1 defects reviewed first.",
+        "Development effort estimated.",
+        "Retest schedule finalized.",
+        "Go-Live risks updated.",
+        "Business sign-off postponed until P1 closure."
+      ]
+    },
+    { "id": "SEC16", "type": "heading", "title": "SIT Exit Criteria" },
+    {
+      "id": "SEC17",
+      "type": "table",
+      "title": "Go / No-Go Checklist",
+      "headers": ["Criteria", "Required"],
+      "rows": [
+        ["All P1 Defects Closed", "Mandatory"],
+        ["Critical Business Flows Passed", "Mandatory"],
+        ["Integration Stable", "Mandatory"],
+        ["Business Approval", "Mandatory"],
+        ["Regression Testing Completed", "Mandatory"]
+      ]
+    },
+    {
+      "id": "SEC18",
+      "type": "consultant-deliverable",
+      "title": "Deliverables",
+      "deliverables": [
+        "SIT Test Execution Report",
+        "Defect Register",
+        "Root Cause Analysis",
+        "Retest Evidence",
+        "SIT Sign-off Document",
+        "Go-Live Risk Assessment"
+      ]
+    },
+    {
+      "id": "SEC19",
+      "type": "callout",
+      "calloutType": "best-practice",
+      "title": "Senior Consultant Advice",
+      "content": "Never classify every issue as a configuration defect. First determine whether the root cause lies in master data, integration, business process, authorization or configuration. Accurate classification speeds up resolution."
+    },
+    {
+      "id": "SEC20",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real Project Example",
+      "content": "During an SAP TM rollout, a P1 defect prevented Freight Unit generation for export deliveries. Investigation revealed that export shipping conditions were missing from master data rather than the planning configuration. Correcting the master data resolved the issue without any code changes."
+    },
+    {
+      "id": "SEC21",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Accenture SIT Question",
+      "content": "If a P1 defect is found during SIT, should UAT continue? Explain your reasoning. A consultant should discuss business impact, defect severity, exit criteria and project risk before making a recommendation."
+    },
+    {
+      "id": "SEC22",
+      "type": "summary",
+      "title": "Phase 4 Complete",
+      "content": "System Integration Testing has been completed. Critical defects have been analyzed, classified and resolved. The project is now ready to begin User Acceptance Testing (UAT) with business users."
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "id": "S5CS1_PHASE2",
+  "module": "Sprint 5",
+  "topic": 2,
+  "title": "Capstone Case Study 1 - Phase 2 Business Blueprint & Solution Architecture",
+  "difficulty": "Solution Architect",
+  "estimatedDuration": "4 Hours",
+  "projectPhase": "Explore -> Solution Blueprint",
+  "learningObjectives": [
+    "Design SAP TM organizational structure",
+    "Create transportation planning strategy",
+    "Perform solution blueprinting",
+    "Design integrations",
+    "Prepare Functional Specification",
+    "Present architecture to stakeholders"
+  ],
+  "sections": [
+    { "id": "SEC1", "type": "cover", "title": "Business Blueprint Workshop", "subtitle": "Designing the Future Transportation Solution" },
+    { "id": "SEC2", "type": "paragraph", "content": "The requirement gathering workshops are complete. The customer has approved the project scope. Your next responsibility is to design the SAP TM solution before configuration begins." },
+    { "id": "SEC3", "type": "heading", "title": "Workshop Agenda" },
+    {
+      "id": "SEC4",
+      "type": "timeline",
+      "title": "Today's Sessions",
+      "events": [
+        { "time": "09:00", "activity": "Organization Structure" },
+        { "time": "10:30", "activity": "Transportation Planning" },
+        { "time": "12:00", "activity": "Carrier Selection" },
+        { "time": "14:00", "activity": "Integration Design" },
+        { "time": "16:00", "activity": "Architecture Review" }
+      ]
+    },
+    { "id": "SEC5", "type": "heading", "title": "Organization Structure Design" },
+    {
+      "id": "SEC6",
+      "type": "table",
+      "title": "Business Organizational Model",
+      "headers": ["Object", "Business Value"],
+      "rows": [
+        ["Company Code", "ABC India"],
+        ["Sales Organizations", "North, South, East, West"],
+        ["Plants", "Hyderabad, Pune"],
+        ["Distribution Centers", "5"],
+        ["Transportation Planning Organization", "Central Planning Team"]
+      ]
+    },
+    { "id": "SEC7", "type": "heading", "title": "Transportation Network Design" },
+    {
+      "id": "SEC8",
+      "type": "process-flow",
+      "title": "Transportation Architecture",
+      "orientation": "horizontal",
+      "steps": ["Manufacturing Plant", "Distribution Center", "Regional Hub", "Customer"]
+    },
+    { "id": "SEC9", "type": "heading", "title": "Business Decision Workshop" },
+    {
+      "id": "SEC10",
+      "type": "scenario",
+      "scenarioTitle": "Carrier Strategy",
+      "background": "The Procurement Manager wants planners to always select the cheapest carrier. The Logistics Director disagrees because delayed deliveries cost more than transportation savings.",
+      "questions": [
+        "Should cost be the primary selection criterion?",
+        "How should SAP TM rank carriers?",
+        "What happens when the cheapest carrier has no available vehicles?"
+      ]
+    },
+    {
+      "id": "SEC11",
+      "type": "decision-point",
+      "title": "Transportation Strategy",
+      "question": "Which planning strategy should be implemented?",
+      "options": [
+        { "id": "A", "text": "Always choose the cheapest carrier." },
+        { "id": "B", "text": "Choose the carrier based on SLA, capacity, cost and performance." },
+        { "id": "C", "text": "Allow planners to manually decide every shipment." }
+      ],
+      "recommendedAnswer": "B",
+      "explanation": "SAP TM optimization should evaluate multiple constraints rather than only transportation cost. This provides the best overall business outcome."
+    },
+    { "id": "SEC12", "type": "heading", "title": "Integration Architecture" },
+    {
+      "id": "SEC13",
+      "type": "architecture-diagram",
+      "title": "System Landscape",
+      "components": ["SAP S/4HANA", "Embedded SAP TM", "SAP EWM", "SAP Business Network", "SAP Analytics Cloud", "Finance"]
+    },
+    { "id": "SEC14", "type": "heading", "title": "Integration Matrix" },
+    {
+      "id": "SEC15",
+      "type": "table",
+      "title": "System Interfaces",
+      "headers": ["Source", "Target", "Business Purpose"],
+      "rows": [
+        ["SAP S/4HANA", "SAP TM", "Sales Orders & Deliveries"],
+        ["SAP TM", "SAP EWM", "Warehouse Execution"],
+        ["SAP TM", "Finance", "Freight Settlement"],
+        ["SAP TM", "SAP Analytics Cloud", "Transportation KPIs"]
+      ]
+    },
+    { "id": "SEC16", "type": "heading", "title": "Unexpected Customer Request" },
+    {
+      "id": "SEC17",
+      "type": "email",
+      "from": "Chief Financial Officer",
+      "subject": "Transportation Budget",
+      "body": "The Board has reduced the implementation budget by 15%. We cannot implement every requested feature during Phase 1. Please recommend which capabilities should be included immediately and which can be postponed."
+    },
+    {
+      "id": "SEC18",
+      "type": "consultant-task",
+      "title": "Solution Prioritization",
+      "tasks": [
+        "Identify mandatory Phase-1 features.",
+        "Move low-priority features to Phase-2.",
+        "Estimate business impact.",
+        "Prepare recommendation for Steering Committee."
+      ]
+    },
+    {
+      "id": "SEC19",
+      "type": "table",
+      "title": "Recommended Prioritization",
+      "headers": ["Feature", "Recommendation", "Reason"],
+      "rows": [
+        ["Transportation Planning", "Phase 1", "Core Business Requirement"],
+        ["Carrier Selection", "Phase 1", "Critical Automation"],
+        ["Freight Settlement", "Phase 1", "Finance Dependency"],
+        ["SAP Analytics Cloud", "Phase 2", "Can follow Go-Live"],
+        ["Advanced AI Optimization", "Phase 2", "Future Enhancement"]
+      ]
+    },
+    {
+      "id": "SEC20",
+      "type": "consultant-deliverable",
+      "title": "Blueprint Deliverables",
+      "deliverables": [
+        "Business Blueprint Document",
+        "Solution Architecture",
+        "Integration Design",
+        "Functional Specification",
+        "Configuration Scope",
+        "Phase-1 Prioritization",
+        "Risk Assessment"
+      ]
+    },
+    {
+      "id": "SEC21",
+      "type": "callout",
+      "calloutType": "best-practice",
+      "title": "Solution Architect Advice",
+      "content": "A successful blueprint balances business requirements, implementation effort, project budget and future scalability. Avoid including every requested feature in the initial Go-Live if it increases project risk."
+    },
+    {
+      "id": "SEC22",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Accenture Solution Design Question",
+      "content": "A client requests all SAP TM features in Phase 1, but the budget is reduced by 15%. How would you respond? Prioritize business-critical capabilities, defer lower-value enhancements, explain the impact to stakeholders and document the roadmap for future phases."
+    },
+    {
+      "id": "SEC23",
+      "type": "summary",
+      "title": "Phase 2 Complete",
+      "content": "The Business Blueprint has been approved. The project is ready to move into the Realize phase, where SAP TM configuration, integration development and unit testing will begin."
+    }
+  ]
+}

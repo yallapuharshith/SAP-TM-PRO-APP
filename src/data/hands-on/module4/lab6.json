@@ -1,0 +1,307 @@
+{
+  "id": "LAB-M4-006",
+  "module": {
+    "id": "module4",
+    "title": "ABC Electronics India - SAP TM End-to-End Implementation",
+    "sequence": 4
+  },
+  "topic": {
+    "id": "topic6",
+    "title": "Lab 6: Customer Changes Delivery Date During Transit",
+    "sequence": 6
+  },
+  "metadata": {
+    "difficulty": "Intermediate",
+    "estimatedReadingTime": 32,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-16",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "Hands-on",
+      "In-Transit Change",
+      "Delivery Rescheduling",
+      "Execution Control Tower"
+    ],
+    "prerequisites": [
+      "LAB-M4-005"
+    ],
+    "learningPath": [
+      "Hands-on"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Assess in-transit customer change requests",
+      "description": "Evaluate operational and financial impact of revised delivery dates during shipment execution."
+    },
+    {
+      "id": "LO2",
+      "title": "Compare alternative execution strategies",
+      "description": "Analyze detention, temporary storage and return options based on network impact."
+    },
+    {
+      "id": "LO3",
+      "title": "Coordinate stakeholder approvals",
+      "description": "Drive aligned decisions across sales, transportation, carrier and warehouse teams."
+    },
+    {
+      "id": "LO4",
+      "title": "Update SAP TM execution accurately",
+      "description": "Record approved changes and create follow-on transportation actions for final delivery."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "Real-Time Lab 6: Customer Changes Delivery Date During Transit"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "The replacement truck successfully resumed the journey after the breakdown in Lab 5. The shipment is now approaching Vellore when ABC Electronics receives an urgent call from Reliance Digital. Due to unexpected maintenance work at their Chennai warehouse, they cannot receive the shipment tomorrow morning as originally planned."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Your Role",
+      "content": "You are the SAP TM Functional Consultant supporting the transportation control tower. You must determine the best business solution while minimizing additional logistics costs and maintaining customer satisfaction."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Customer Request"
+    },
+    {
+      "id": "SEC5",
+      "type": "table",
+      "title": "Updated Delivery Requirement",
+      "headers": [
+        "Parameter",
+        "Original",
+        "New Request"
+      ],
+      "rows": [
+        [
+          "Delivery Date",
+          "Tomorrow 09:00 AM",
+          "Day After Tomorrow 10:00 AM"
+        ],
+        [
+          "Delivery Location",
+          "Chennai DC",
+          "Same"
+        ],
+        [
+          "Order Quantity",
+          "500 Laptops",
+          "No Change"
+        ],
+        [
+          "Priority",
+          "Urgent",
+          "Still High"
+        ]
+      ]
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "Current Shipment Status"
+    },
+    {
+      "id": "SEC7",
+      "type": "table",
+      "title": "Transportation Execution",
+      "headers": [
+        "Business Object",
+        "Status"
+      ],
+      "rows": [
+        [
+          "Freight Order",
+          "In Transit"
+        ],
+        [
+          "Shipment Progress",
+          "70% Complete"
+        ],
+        [
+          "Estimated Arrival",
+          "Tomorrow 6:30 AM"
+        ],
+        [
+          "Driver Hours Remaining",
+          "Within Legal Limits"
+        ],
+        [
+          "Truck Availability",
+          "Committed to another shipment after delivery"
+        ]
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "Business Challenge"
+    },
+    {
+      "id": "SEC9",
+      "type": "paragraph",
+      "content": "If the truck waits until the customer's new delivery date, it will miss its next scheduled assignment and the carrier will charge INR 45,000 for vehicle detention. Alternatively, the shipment can be unloaded into a temporary warehouse near Chennai and delivered later using a local distribution vehicle."
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "Available Options"
+    },
+    {
+      "id": "SEC11",
+      "type": "table",
+      "title": "Decision Analysis",
+      "headers": [
+        "Option",
+        "Cost",
+        "Business Impact"
+      ],
+      "rows": [
+        [
+          "Truck Waits at Customer Site",
+          "INR 45,000",
+          "Vehicle unavailable for next trip"
+        ],
+        [
+          "Use Temporary Warehouse",
+          "INR 18,000",
+          "Additional handling required"
+        ],
+        [
+          "Return Shipment",
+          "INR 72,000",
+          "Major operational disruption"
+        ],
+        [
+          "Reject Customer Request",
+          "INR 0",
+          "Customer dissatisfaction and SLA dispute"
+        ]
+      ]
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Your Investigation Tasks"
+    },
+    {
+      "id": "SEC13",
+      "type": "bullet-list",
+      "items": [
+        "Verify customer change request.",
+        "Review Freight Order execution status.",
+        "Estimate detention charges.",
+        "Evaluate temporary storage options.",
+        "Coordinate with customer, carrier and warehouse.",
+        "Update transportation execution plan.",
+        "Document all approved changes."
+      ]
+    },
+    {
+      "id": "SEC14",
+      "type": "heading",
+      "title": "Decision Workflow"
+    },
+    {
+      "id": "SEC15",
+      "type": "process-flow",
+      "title": "Handling Customer Delivery Changes",
+      "orientation": "horizontal",
+      "steps": [
+        "Customer Request",
+        "Impact Analysis",
+        "Cost Comparison",
+        "Business Approval",
+        "Freight Order Update",
+        "Customer Confirmation"
+      ]
+    },
+    {
+      "id": "SEC16",
+      "type": "heading",
+      "title": "Unexpected Challenge"
+    },
+    {
+      "id": "SEC17",
+      "type": "paragraph",
+      "content": "The Sales Director insists that the truck should wait because the customer is strategically important. However, the Transportation Manager points out that delaying the truck will also delay another shipment worth INR 4 Crores scheduled for the same vehicle."
+    },
+    {
+      "id": "SEC18",
+      "type": "table",
+      "title": "Consultant Evaluation",
+      "headers": [
+        "Question",
+        "Recommended Analysis"
+      ],
+      "rows": [
+        [
+          "Should the truck wait?",
+          "Not if it impacts higher-priority business operations."
+        ],
+        [
+          "Is temporary storage acceptable?",
+          "Yes, if approved and secure."
+        ],
+        [
+          "Should the Freight Order be updated?",
+          "Yes, execution details and events must reflect the change."
+        ],
+        [
+          "Who approves the decision?",
+          "Business stakeholders after cost-benefit evaluation."
+        ]
+      ]
+    },
+    {
+      "id": "SEC19",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Consultant Resolution",
+      "content": "Recommend unloading the goods into an approved temporary warehouse near Chennai. Update SAP TM with the revised execution events, create a follow-on local transportation requirement for final delivery, release the long-haul truck for its next assignment and notify all stakeholders of the revised plan."
+    },
+    {
+      "id": "SEC20",
+      "type": "callout",
+      "calloutType": "best-practice",
+      "title": "Consultant Best Practice",
+      "content": "Whenever a customer changes delivery requirements after shipment execution has started, evaluate the impact on the entire transportation network rather than optimizing only the affected shipment."
+    },
+    {
+      "id": "SEC21",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Accenture Scenario Question",
+      "content": "A customer changes the delivery date while the shipment is already in transit. How would you respond? A strong consultant answer includes impact analysis, stakeholder communication, cost comparison, Freight Order updates and selection of the option that delivers the greatest overall business value."
+    },
+    {
+      "id": "SEC22",
+      "type": "heading",
+      "title": "Lab Outcome"
+    },
+    {
+      "id": "SEC23",
+      "type": "bullet-list",
+      "items": [
+        "Customer request evaluated.",
+        "Business impact analyzed.",
+        "Temporary warehouse selected.",
+        "Freight Order execution updated.",
+        "Long-haul truck released for next assignment.",
+        "Project continues to Lab 7: Freight Invoice Mismatch & Freight Settlement."
+      ]
+    }
+  ]
+}

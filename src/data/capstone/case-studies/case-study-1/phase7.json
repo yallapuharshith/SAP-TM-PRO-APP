@@ -1,0 +1,233 @@
+{
+  "id": "S5CS1_PHASE7",
+  "module": "Sprint 5",
+  "topic": 7,
+  "title": "Capstone Case Study 1 - Phase 7 Hypercare & Production Support",
+  "difficulty": "Solution Architect",
+  "estimatedDuration": "30 Days (Simulation)",
+  "projectPhase": "Hypercare",
+  "learningObjectives": [
+    "Manage production incidents",
+    "Prioritize business-critical issues",
+    "Perform Root Cause Analysis",
+    "Coordinate cross-functional teams",
+    "Meet SLA commitments",
+    "Stabilize production operations"
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "cover",
+      "title": "Hypercare Begins",
+      "subtitle": "30-Day Production Stabilization"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "SAP TM has successfully gone live. During the first 30 days, the project enters Hypercare, where consultants provide immediate support to business users, monitor system stability and resolve production incidents with the highest priority."
+    },
+    {
+      "id": "SEC3",
+      "type": "heading",
+      "title": "Hypercare Team"
+    },
+    {
+      "id": "SEC4",
+      "type": "table",
+      "title": "Support Organization",
+      "headers": [
+        "Role",
+        "Responsibility",
+        "Availability"
+      ],
+      "rows": [
+        ["SAP TM Functional Consultant", "Transportation Issues", "24x7 On Call"],
+        ["SAP Basis", "System Availability", "24x7"],
+        ["Integration Team", "Interfaces", "Business Hours + Critical Support"],
+        ["SAP EWM Consultant", "Warehouse Integration", "Business Hours"],
+        ["Finance Consultant", "Freight Settlement", "Business Hours"]
+      ]
+    },
+    {
+      "id": "SEC5",
+      "type": "heading",
+      "title": "Incident Priority Matrix"
+    },
+    {
+      "id": "SEC6",
+      "type": "table",
+      "title": "Support SLA",
+      "headers": [
+        "Priority",
+        "Business Impact",
+        "Target Response",
+        "Target Resolution"
+      ],
+      "rows": [
+        ["P1", "Business Stopped", "15 Minutes", "4 Hours"],
+        ["P2", "Major Business Impact", "30 Minutes", "8 Hours"],
+        ["P3", "Moderate Impact", "2 Hours", "2 Business Days"],
+        ["P4", "Minor Issue / Enhancement", "1 Business Day", "Next Release"]
+      ]
+    },
+    {
+      "id": "SEC7",
+      "type": "heading",
+      "title": "Week 1 - Production Incidents"
+    },
+    {
+      "id": "SEC8",
+      "type": "table",
+      "title": "Incident Dashboard",
+      "headers": [
+        "Incident ID",
+        "Description",
+        "Priority",
+        "Status"
+      ],
+      "rows": [
+        ["INC-001", "Freight Units not generated", "P1", "Open"],
+        ["INC-002", "Carrier rejected shipment", "P2", "Open"],
+        ["INC-003", "Warehouse loading delay", "P2", "Open"],
+        ["INC-004", "Incorrect freight charge", "P3", "Open"],
+        ["INC-005", "Dashboard refresh delay", "P4", "Open"]
+      ]
+    },
+    {
+      "id": "SEC9",
+      "type": "heading",
+      "title": "Critical Production Scenario"
+    },
+    {
+      "id": "SEC10",
+      "type": "scenario",
+      "scenarioTitle": "Monday Morning P1 Incident",
+      "background": "At 08:10 AM, business users report that no Freight Orders are being created. More than 300 deliveries are waiting for planning. Warehouse loading has stopped nationwide.",
+      "questions": [
+        "How do you classify the incident?",
+        "Which team should be contacted immediately?",
+        "Which SAP TM objects should be verified first?",
+        "How will you communicate with business users?"
+      ]
+    },
+    {
+      "id": "SEC11",
+      "type": "decision-point",
+      "title": "Immediate Response",
+      "question": "What should the consultant do first?",
+      "options": [
+        { "id": "A", "text": "Start debugging configuration immediately." },
+        { "id": "B", "text": "Assess business impact, initiate the P1 bridge call, verify integrations and restore business operations first." },
+        { "id": "C", "text": "Wait for users to provide more screenshots." }
+      ],
+      "recommendedAnswer": "B",
+      "explanation": "For P1 incidents, restoring business operations and coordinating stakeholders takes priority over detailed root cause analysis."
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Root Cause Analysis (RCA)"
+    },
+    {
+      "id": "SEC13",
+      "type": "table",
+      "title": "Five Why Analysis",
+      "headers": ["Question", "Answer"],
+      "rows": [
+        ["Why were Freight Orders missing?", "Planning was never executed."],
+        ["Why did planning fail?", "Freight Units were missing."],
+        ["Why were Freight Units missing?", "Outbound deliveries were not replicated."],
+        ["Why was replication failing?", "Integration queue stopped."],
+        ["Why did the queue stop?", "Authorization change after security patch."]
+      ]
+    },
+    {
+      "id": "SEC14",
+      "type": "heading",
+      "title": "Knowledge Base Creation"
+    },
+    {
+      "id": "SEC15",
+      "type": "consultant-deliverable",
+      "title": "Knowledge Article",
+      "deliverables": [
+        "Problem Description",
+        "Business Impact",
+        "Root Cause",
+        "Temporary Workaround",
+        "Permanent Fix",
+        "Validation Steps",
+        "Preventive Monitoring"
+      ]
+    },
+    {
+      "id": "SEC16",
+      "type": "heading",
+      "title": "Daily Hypercare Meeting"
+    },
+    {
+      "id": "SEC17",
+      "type": "meeting-notes",
+      "participants": [
+        "Project Manager",
+        "SAP TM Lead",
+        "Business Owner",
+        "SAP Basis",
+        "Integration Lead",
+        "Warehouse Manager",
+        "Finance Manager"
+      ],
+      "notes": [
+        "P1 incidents reviewed first.",
+        "SLA compliance monitored.",
+        "Open risks discussed.",
+        "Business satisfaction improving.",
+        "Incident trend decreasing."
+      ]
+    },
+    {
+      "id": "SEC18",
+      "type": "heading",
+      "title": "Production Stabilization Metrics"
+    },
+    {
+      "id": "SEC19",
+      "type": "table",
+      "title": "30-Day KPI Dashboard",
+      "headers": ["Metric", "Week 1", "Week 4"],
+      "rows": [
+        ["P1 Incidents", "8", "0"],
+        ["P2 Incidents", "16", "2"],
+        ["Average Resolution Time", "5.8 Hours", "1.2 Hours"],
+        ["Business Satisfaction", "72%", "96%"]
+      ]
+    },
+    {
+      "id": "SEC20",
+      "type": "callout",
+      "calloutType": "best-practice",
+      "title": "Senior Consultant Advice",
+      "content": "Hypercare is successful when the number of incidents consistently decreases, business confidence increases and the support team transitions knowledge to the long-term Application Management Support (AMS) team."
+    },
+    {
+      "id": "SEC21",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real Production Experience",
+      "content": "During the first month after Go-Live, most SAP TM incidents are caused by master data quality, business process misunderstandings and integration timing rather than software defects. Daily monitoring and rapid communication significantly reduce business disruption."
+    },
+    {
+      "id": "SEC22",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Accenture Hypercare Question",
+      "content": "Describe how you would handle a P1 production issue during Hypercare. A strong consultant answer should include incident prioritization, bridge call coordination, business communication, temporary recovery, root cause analysis, permanent fix and knowledge base documentation."
+    },
+    {
+      "id": "SEC23",
+      "type": "summary",
+      "title": "Phase 7 Complete",
+      "content": "Production has stabilized successfully. Incident volume has reduced significantly, business users are confident in SAP TM and the project is ready for transition to the AMS support organization."
+    }
+  ]
+}

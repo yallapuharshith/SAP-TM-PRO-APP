@@ -1,0 +1,204 @@
+{
+  "id": "S5CS1",
+  "module": "Sprint 5",
+  "topic": 1,
+  "title": "Capstone Case Study 1 - ABC Electronics India Transportation Transformation",
+  "difficulty": "Solution Architect",
+  "estimatedDuration": "3 Days",
+  "industry": "Consumer Electronics",
+  "projectType": "Greenfield Implementation",
+  "implementationMethodology": "SAP Activate",
+  "projectRole": "SAP TM Functional Consultant",
+  "learningObjectives": [
+    "Perform business requirement gathering",
+    "Conduct Fit-to-Standard workshops",
+    "Design SAP TM business processes",
+    "Perform solution architecture decisions",
+    "Handle stakeholder discussions",
+    "Prepare solution documentation"
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "cover",
+      "title": "Project Kickoff",
+      "subtitle": "ABC Electronics India SAP TM Transformation Program",
+      "description": "You are joining the implementation team as an SAP TM Functional Consultant."
+    },
+    {
+      "id": "SEC2",
+      "type": "heading",
+      "title": "Client Overview"
+    },
+    {
+      "id": "SEC3",
+      "type": "table",
+      "title": "Organization Details",
+      "headers": [
+        "Business Area",
+        "Information"
+      ],
+      "rows": [
+        ["Company", "ABC Electronics India Pvt Ltd"],
+        ["Industry", "Consumer Electronics"],
+        ["Annual Revenue", "INR 8,500 Crores"],
+        ["Employees", "18,500"],
+        ["Distribution Centers", "5"],
+        ["Manufacturing Plants", "2"],
+        ["Countries", "India"]
+      ]
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Stakeholders"
+    },
+    {
+      "id": "SEC5",
+      "type": "table",
+      "title": "Project Team",
+      "headers": [
+        "Stakeholder",
+        "Designation",
+        "Primary Concern"
+      ],
+      "rows": [
+        ["Rajesh Sharma", "CIO", "Digital Transformation"],
+        ["Anita Rao", "Logistics Director", "Transportation Optimization"],
+        ["Rakesh Gupta", "Warehouse Manager", "Loading Delays"],
+        ["Neha Kapoor", "Finance Manager", "Freight Cost Control"],
+        ["Arjun Nair", "Sales Head", "Customer Delivery Performance"]
+      ]
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "Kickoff Meeting Notes"
+    },
+    {
+      "id": "SEC7",
+      "type": "meeting-notes",
+      "participants": [
+        "CIO",
+        "Logistics Director",
+        "Warehouse Manager",
+        "Finance Manager",
+        "SAP TM Consultant"
+      ],
+      "notes": [
+        "Current transportation planning is manual.",
+        "No centralized carrier management.",
+        "Transportation cost increased by 18% in two years.",
+        "Customer complaints increased by 23%.",
+        "Management wants shipment visibility."
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "Current Transportation Process"
+    },
+    {
+      "id": "SEC9",
+      "type": "process-flow",
+      "title": "AS-IS Business Process",
+      "orientation": "vertical",
+      "steps": [
+        "Customer Order",
+        "Sales Order",
+        "Outbound Delivery",
+        "Planner Exports Excel",
+        "Carrier Phone Calls",
+        "Manual Truck Assignment",
+        "Warehouse Loading",
+        "Customer Delivery",
+        "Manual Invoice Verification"
+      ]
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "Business Pain Points"
+    },
+    {
+      "id": "SEC11",
+      "type": "table",
+      "title": "Pain Point Analysis",
+      "headers": [
+        "Department",
+        "Problem",
+        "Business Impact",
+        "Priority"
+      ],
+      "rows": [
+        ["Planning", "Excel Planning", "Planning takes 3 hours", "High"],
+        ["Warehouse", "Truck Waiting", "Detention Charges", "High"],
+        ["Finance", "Invoice Mismatch", "Delayed Payments", "High"],
+        ["Management", "No KPI Dashboard", "Poor Decisions", "Medium"]
+      ]
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Consultant Task 1"
+    },
+    {
+      "id": "SEC13",
+      "type": "scenario",
+      "scenarioTitle": "Requirement Gathering",
+      "background": "The Logistics Director asks you to explain how SAP TM will solve the company's transportation challenges.",
+      "questions": [
+        "Which business problems can SAP TM solve immediately?",
+        "Which problems require integration with SAP EWM?",
+        "Which KPIs should management monitor?",
+        "Which transportation processes should be automated?"
+      ]
+    },
+    {
+      "id": "SEC14",
+      "type": "decision-point",
+      "title": "Consultant Decision",
+      "question": "The client requests complete manual carrier selection because planners do not trust automatic planning. What should you recommend?",
+      "options": [
+        { "id": "A", "text": "Implement complete manual planning." },
+        { "id": "B", "text": "Use SAP standard automatic planning with planner approval." },
+        { "id": "C", "text": "Develop a custom carrier selection engine." }
+      ],
+      "recommendedAnswer": "B",
+      "explanation": "SAP Best Practice recommends automated planning with planner intervention only for exceptions. This reduces planning effort while maintaining business control."
+    },
+    {
+      "id": "SEC15",
+      "type": "consultant-deliverable",
+      "title": "Deliverables for Phase 1",
+      "deliverables": [
+        "Business Requirement Document (BRD)",
+        "Fit-to-Standard Workshop Notes",
+        "High-Level Solution Design",
+        "Gap Analysis",
+        "Risk Register",
+        "Initial Project Scope"
+      ]
+    },
+    {
+      "id": "SEC16",
+      "type": "callout",
+      "calloutType": "best-practice",
+      "title": "Senior Consultant Advice",
+      "content": "Do not begin system configuration during requirement gathering. First understand the business, document requirements, perform fit-gap analysis and obtain business approval before moving into solution design."
+    },
+    {
+      "id": "SEC17",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Accenture Interview Scenario",
+      "content": "If a client requests a customization that conflicts with SAP standard functionality, first understand the business need, demonstrate the SAP standard solution, explain the long-term maintenance impact of customization and recommend custom development only if the business requirement cannot reasonably be achieved through configuration."
+    },
+    {
+      "id": "SEC18",
+      "type": "summary",
+      "title": "Phase Completion",
+      "content": "Requirement gathering is complete. The project team has documented business pain points, identified high-priority requirements, completed the initial fit-gap analysis and received approval to begin solution blueprinting."
+    }
+  ]
+}

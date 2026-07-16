@@ -1,0 +1,371 @@
+{
+  "id": "S5CP3",
+  "module": "Sprint 5",
+  "projectNo": 3,
+  "title": "PharmaCare Ltd. - Cold Chain & Export Transportation using SAP TM",
+  "difficulty": "Advanced",
+  "duration": "5 Days",
+  "industry": "Pharmaceutical",
+  "objective": "Design an SAP TM solution for domestic and export pharmaceutical transportation while ensuring temperature compliance, regulatory requirements, carrier selection and transportation visibility.",
+  "learningObjectives": [
+    "Design cold-chain compliant transportation processes",
+    "Model domestic and export planning flows in SAP TM",
+    "Select qualified carriers based on constraints",
+    "Define transportation exception handling",
+    "Prepare validation scenarios for critical shipments",
+    "Design KPI-driven pharmaceutical transportation reporting"
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "Project Statement"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "PharmaCare Ltd. manufactures vaccines, insulin and temperature-sensitive medicines. Products are shipped from Hyderabad to hospitals across India and exported to Singapore and Dubai. The company wants SAP TM to optimize transportation while maintaining cold-chain compliance and improving shipment visibility."
+    },
+    {
+      "id": "SEC3",
+      "type": "heading",
+      "title": "Business Objectives"
+    },
+    {
+      "id": "SEC4",
+      "type": "bullet-list",
+      "items": [
+        "Maintain cold-chain temperature throughout transportation.",
+        "Improve shipment visibility.",
+        "Reduce transportation planning time.",
+        "Select qualified pharmaceutical carriers.",
+        "Support both domestic and export shipments.",
+        "Monitor transportation exceptions."
+      ]
+    },
+    {
+      "id": "SEC5",
+      "type": "heading",
+      "title": "Business Requirements"
+    },
+    {
+      "id": "SEC6",
+      "type": "table",
+      "title": "Functional Requirements",
+      "headers": [
+        "Requirement",
+        "Priority"
+      ],
+      "rows": [
+        [
+          "Automatic Planning",
+          "High"
+        ],
+        [
+          "Temperature Controlled Transportation",
+          "High"
+        ],
+        [
+          "Carrier Qualification",
+          "High"
+        ],
+        [
+          "Export Shipment Planning",
+          "Medium"
+        ],
+        [
+          "Transportation Tracking",
+          "High"
+        ],
+        [
+          "Freight Settlement",
+          "Medium"
+        ]
+      ]
+    },
+    {
+      "id": "SEC7",
+      "type": "heading",
+      "title": "Provided Business Data"
+    },
+    {
+      "id": "SEC8",
+      "type": "table",
+      "title": "Manufacturing Plants",
+      "headers": [
+        "Plant",
+        "Location"
+      ],
+      "rows": [
+        [
+          "PL01",
+          "Hyderabad"
+        ],
+        [
+          "PL02",
+          "Ahmedabad"
+        ]
+      ]
+    },
+    {
+      "id": "SEC9",
+      "type": "table",
+      "title": "Destination Locations",
+      "headers": [
+        "Location",
+        "Type"
+      ],
+      "rows": [
+        [
+          "Chennai Hospital",
+          "Domestic Customer"
+        ],
+        [
+          "Mumbai Hospital",
+          "Domestic Customer"
+        ],
+        [
+          "Singapore Pharma Hub",
+          "Export Customer"
+        ],
+        [
+          "Dubai Medical Center",
+          "Export Customer"
+        ]
+      ]
+    },
+    {
+      "id": "SEC10",
+      "type": "table",
+      "title": "Products",
+      "headers": [
+        "Product",
+        "Temperature Requirement",
+        "Weight"
+      ],
+      "rows": [
+        [
+          "COVID Vaccine",
+          "2C to 8C",
+          "2 Kg"
+        ],
+        [
+          "Insulin",
+          "2C to 8C",
+          "1 Kg"
+        ],
+        [
+          "Medical Equipment",
+          "Ambient",
+          "15 Kg"
+        ]
+      ]
+    },
+    {
+      "id": "SEC11",
+      "type": "table",
+      "title": "Qualified Carriers",
+      "headers": [
+        "Carrier",
+        "Cold Chain Support",
+        "International Support",
+        "Rating"
+      ],
+      "rows": [
+        [
+          "DHL Life Sciences",
+          "Yes",
+          "Yes",
+          "4.9"
+        ],
+        [
+          "FedEx Healthcare",
+          "Yes",
+          "Yes",
+          "4.8"
+        ],
+        [
+          "Local Express",
+          "No",
+          "No",
+          "4.2"
+        ]
+      ]
+    },
+    {
+      "id": "SEC12",
+      "type": "table",
+      "title": "Shipment Requests",
+      "headers": [
+        "Shipment",
+        "Destination",
+        "Product",
+        "Quantity"
+      ],
+      "rows": [
+        [
+          "SR1001",
+          "Chennai Hospital",
+          "COVID Vaccine",
+          "600"
+        ],
+        [
+          "SR1002",
+          "Singapore Pharma Hub",
+          "Insulin",
+          "350"
+        ],
+        [
+          "SR1003",
+          "Dubai Medical Center",
+          "Medical Equipment",
+          "45"
+        ]
+      ]
+    },
+    {
+      "id": "SEC13",
+      "type": "heading",
+      "title": "Capstone Tasks"
+    },
+    {
+      "id": "SEC14",
+      "type": "numbered-list",
+      "items": [
+        "Analyze business requirements.",
+        "Identify SAP TM master data.",
+        "Design the transportation process for domestic shipments.",
+        "Design the transportation process for export shipments.",
+        "Recommend the most suitable carrier for each shipment.",
+        "Explain how temperature-sensitive shipments should be handled.",
+        "Identify SAP TM business documents created during processing.",
+        "Design transportation exception handling.",
+        "Prepare five positive test scenarios.",
+        "Prepare five negative test scenarios.",
+        "Design a transportation KPI dashboard.",
+        "Recommend future process improvements."
+      ]
+    },
+    {
+      "id": "SEC15",
+      "type": "heading",
+      "title": "Scenario-Based Challenge"
+    },
+    {
+      "id": "SEC16",
+      "type": "paragraph",
+      "content": "Shipment SR1002 (Singapore) requires transportation under 2C to 8C conditions. The preferred carrier is unavailable. Explain how you would select an alternative carrier while ensuring business requirements and shipment quality are maintained."
+    },
+    {
+      "id": "SEC17",
+      "type": "heading",
+      "title": "Expected Deliverables"
+    },
+    {
+      "id": "SEC18",
+      "type": "checklist",
+      "items": [
+        "Requirement Analysis",
+        "Master Data Design",
+        "Domestic Process Flow",
+        "Export Process Flow",
+        "Carrier Recommendation",
+        "Exception Handling Strategy",
+        "Positive Test Cases",
+        "Negative Test Cases",
+        "Transportation Dashboard",
+        "Final Report",
+        "PowerPoint Presentation"
+      ]
+    },
+    {
+      "id": "SEC19",
+      "type": "heading",
+      "title": "Evaluation Rubric"
+    },
+    {
+      "id": "SEC20",
+      "type": "table",
+      "title": "Assessment Criteria",
+      "headers": [
+        "Area",
+        "Marks"
+      ],
+      "rows": [
+        [
+          "Requirement Analysis",
+          "10"
+        ],
+        [
+          "SAP TM Object Identification",
+          "15"
+        ],
+        [
+          "Transportation Design",
+          "20"
+        ],
+        [
+          "Carrier & Exception Handling",
+          "15"
+        ],
+        [
+          "Testing",
+          "15"
+        ],
+        [
+          "Documentation",
+          "10"
+        ],
+        [
+          "Presentation",
+          "5"
+        ],
+        [
+          "Viva",
+          "10"
+        ]
+      ]
+    },
+    {
+      "id": "SEC21",
+      "type": "heading",
+      "title": "Submission Checklist"
+    },
+    {
+      "id": "SEC22",
+      "type": "checklist",
+      "items": [
+        "Business Requirement Analysis",
+        "SAP TM Master Data",
+        "Transportation Process Design",
+        "Carrier Selection Strategy",
+        "Exception Handling",
+        "Test Cases",
+        "Dashboard Design",
+        "Final Documentation",
+        "Presentation"
+      ]
+    },
+    {
+      "id": "SEC23",
+      "type": "heading",
+      "title": "Viva Preparation"
+    },
+    {
+      "id": "SEC24",
+      "type": "bullet-list",
+      "items": [
+        "Why is cold-chain transportation important?",
+        "How would you choose a carrier for temperature-sensitive goods?",
+        "How are export shipments different from domestic shipments?",
+        "Which SAP TM master data is essential for this project?",
+        "How should transportation exceptions be handled?",
+        "What happens if the preferred carrier is unavailable?",
+        "Which KPIs are most important in pharmaceutical transportation?",
+        "How can SAP TM improve regulatory compliance?",
+        "What business risks exist if temperature requirements are not met?",
+        "How would you enhance this solution in the future?"
+      ]
+    }
+  ]
+}

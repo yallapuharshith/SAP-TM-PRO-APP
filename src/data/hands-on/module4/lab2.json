@@ -1,0 +1,261 @@
+{
+  "id": "LAB-M4-002",
+  "module": {
+    "id": "module4",
+    "title": "ABC Electronics India - SAP TM End-to-End Implementation",
+    "sequence": 4
+  },
+  "topic": {
+    "id": "topic2",
+    "title": "Lab 2: Transportation Planning & Carrier Selection",
+    "sequence": 2
+  },
+  "metadata": {
+    "difficulty": "Intermediate",
+    "estimatedReadingTime": 30,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-16",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "Hands-on",
+      "Transportation Planning",
+      "Carrier Selection",
+      "Optimization"
+    ],
+    "prerequisites": [
+      "LAB-M4-001"
+    ],
+    "learningPath": [
+      "Hands-on"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Plan transportation with constraints",
+      "description": "Create an optimized transportation proposal while balancing SLA, availability and cost."
+    },
+    {
+      "id": "LO2",
+      "title": "Understand carrier selection logic",
+      "description": "Evaluate carriers using business rule priorities in SAP TM."
+    },
+    {
+      "id": "LO3",
+      "title": "Explain optimization outcomes",
+      "description": "Justify planning decisions using objective constraints, not price alone."
+    },
+    {
+      "id": "LO4",
+      "title": "Validate proposal before approval",
+      "description": "Review profiles, resource checks, deadlines and ranking rules before confirming selection."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "Real-Time Lab 2: Transportation Planning & Carrier Selection"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "The Freight Unit has now been successfully created after resolving the master data issue in Lab 1. The transportation planner must now create an optimized transportation plan while meeting customer delivery commitments and minimizing logistics costs."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Your Role",
+      "content": "You are the Transportation Planner responsible for selecting the most suitable carrier while balancing cost, delivery commitment and resource availability."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Business Situation"
+    },
+    {
+      "id": "SEC5",
+      "type": "paragraph",
+      "content": "The customer requires delivery within 24 hours. SAP TM begins transportation planning and evaluates available carriers based on predefined selection strategies."
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "Available Carriers"
+    },
+    {
+      "id": "SEC7",
+      "type": "table",
+      "title": "Carrier Comparison",
+      "headers": [
+        "Carrier",
+        "Cost",
+        "Truck Available",
+        "Transit Time",
+        "Performance Rating"
+      ],
+      "rows": [
+        [
+          "DHL Logistics",
+          "INR 28,000",
+          "No",
+          "18 Hours",
+          "4.9/5"
+        ],
+        [
+          "Blue Dart Express",
+          "INR 34,000",
+          "Yes",
+          "20 Hours",
+          "4.7/5"
+        ],
+        [
+          "TCI Freight",
+          "INR 26,500",
+          "Yes",
+          "32 Hours",
+          "4.6/5"
+        ]
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "Business Rule Configuration"
+    },
+    {
+      "id": "SEC9",
+      "type": "bullet-list",
+      "items": [
+        "Highest priority: Customer delivery commitment",
+        "Second priority: Resource availability",
+        "Third priority: Transportation cost",
+        "Fourth priority: Carrier performance rating"
+      ]
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "Planner Decision"
+    },
+    {
+      "id": "SEC11",
+      "type": "paragraph",
+      "content": "Although DHL offers the best price-performance combination, no truck is available. TCI is cheaper than Blue Dart but cannot meet the customer's required delivery time. Blue Dart is more expensive but satisfies both availability and delivery requirements."
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Expected SAP TM Decision Flow"
+    },
+    {
+      "id": "SEC13",
+      "type": "process-flow",
+      "title": "Carrier Selection Logic",
+      "orientation": "horizontal",
+      "steps": [
+        "Freight Unit",
+        "Carrier Evaluation",
+        "Availability Check",
+        "Transit Time Check",
+        "Cost Comparison",
+        "Carrier Selection",
+        "Transportation Proposal"
+      ]
+    },
+    {
+      "id": "SEC14",
+      "type": "heading",
+      "title": "Production Incident"
+    },
+    {
+      "id": "SEC15",
+      "type": "paragraph",
+      "content": "The Sales Manager questions why SAP selected Blue Dart instead of DHL, even though DHL is cheaper. He believes the planning engine made an incorrect decision and requests an explanation."
+    },
+    {
+      "id": "SEC16",
+      "type": "table",
+      "title": "Consultant Analysis",
+      "headers": [
+        "Question",
+        "Expected Consultant Answer"
+      ],
+      "rows": [
+        [
+          "Why wasn't DHL selected?",
+          "No transportation resource was available."
+        ],
+        [
+          "Why wasn't TCI selected?",
+          "Transit time exceeds SLA."
+        ],
+        [
+          "Why was Blue Dart selected?",
+          "Only carrier meeting both availability and delivery commitment."
+        ],
+        [
+          "Did SAP choose the cheapest carrier?",
+          "No. SAP chose the optimal carrier based on business rules."
+        ]
+      ]
+    },
+    {
+      "id": "SEC17",
+      "type": "heading",
+      "title": "Your Investigation Tasks"
+    },
+    {
+      "id": "SEC18",
+      "type": "bullet-list",
+      "items": [
+        "Review carrier selection profile.",
+        "Check transportation proposal.",
+        "Verify truck availability.",
+        "Validate delivery deadline.",
+        "Review carrier ranking rules.",
+        "Approve the transportation proposal."
+      ]
+    },
+    {
+      "id": "SEC19",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Consultant Resolution",
+      "content": "Explain to the Sales Manager that SAP TM follows optimization rules rather than selecting the lowest-cost carrier. Since DHL lacked an available truck and TCI could not meet the SLA, Blue Dart became the optimal transportation solution despite its higher cost."
+    },
+    {
+      "id": "SEC20",
+      "type": "callout",
+      "calloutType": "best-practice",
+      "title": "Project Learning",
+      "content": "Transportation optimization always considers multiple constraints simultaneously. Cost is only one factor; service level agreements, resource availability and transit times are equally important."
+    },
+    {
+      "id": "SEC21",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Accenture Scenario Question",
+      "content": "A customer asks why SAP TM selected a more expensive carrier. Explain the decision. The correct approach is to discuss optimization objectives, carrier selection profiles, resource availability and SLA compliance-not simply transportation cost."
+    },
+    {
+      "id": "SEC22",
+      "type": "heading",
+      "title": "Lab Outcome"
+    },
+    {
+      "id": "SEC23",
+      "type": "bullet-list",
+      "items": [
+        "Transportation Proposal approved.",
+        "Optimal carrier selected.",
+        "Business rules validated.",
+        "Customer SLA protected.",
+        "Project continues to Lab 3: Freight Order Creation & Load Consolidation."
+      ]
+    }
+  ]
+}

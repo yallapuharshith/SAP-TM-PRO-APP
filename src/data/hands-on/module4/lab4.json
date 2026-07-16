@@ -1,0 +1,258 @@
+{
+  "id": "LAB-M4-004",
+  "module": {
+    "id": "module4",
+    "title": "ABC Electronics India - SAP TM End-to-End Implementation",
+    "sequence": 4
+  },
+  "topic": {
+    "id": "topic4",
+    "title": "Lab 4: Warehouse Loading Delay & SAP EWM Integration",
+    "sequence": 4
+  },
+  "metadata": {
+    "difficulty": "Intermediate",
+    "estimatedReadingTime": 30,
+    "estimatedRevisionTime": 12,
+    "version": "1.0",
+    "lastUpdated": "2026-07-16",
+    "author": "SAP TM Master Pro",
+    "tags": [
+      "SAP TM",
+      "SAP EWM",
+      "Hands-on",
+      "Execution Delay",
+      "Cross-Functional Coordination"
+    ],
+    "prerequisites": [
+      "LAB-M4-003"
+    ],
+    "learningPath": [
+      "Hands-on"
+    ]
+  },
+  "learningObjectives": [
+    {
+      "id": "LO1",
+      "title": "Investigate loading delays",
+      "description": "Identify root causes for warehouse execution blocks impacting transportation schedules."
+    },
+    {
+      "id": "LO2",
+      "title": "Coordinate SAP TM and SAP EWM decisions",
+      "description": "Connect warehouse status insights with transportation execution actions."
+    },
+    {
+      "id": "LO3",
+      "title": "Evaluate execution alternatives",
+      "description": "Assess wait, partial dispatch and replanning options based on business impact."
+    },
+    {
+      "id": "LO4",
+      "title": "Protect delivery commitments",
+      "description": "Align carrier, warehouse and customer communications to maintain SLA outcomes."
+    }
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "Real-Time Lab 4: Warehouse Loading Delay & SAP EWM Integration"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "The Freight Orders were successfully created in Lab 3. Trucks have arrived at the Bengaluru Distribution Center for loading. During warehouse execution, an unexpected operational issue occurs that threatens the customer delivery commitment."
+    },
+    {
+      "id": "SEC3",
+      "type": "callout",
+      "calloutType": "important",
+      "title": "Your Role",
+      "content": "You are the SAP TM Functional Consultant supporting both the Transportation Planning team and the Warehouse Operations team. Your responsibility is to identify the root cause, coordinate with SAP EWM and minimize delivery delays."
+    },
+    {
+      "id": "SEC4",
+      "type": "heading",
+      "title": "Business Scenario"
+    },
+    {
+      "id": "SEC5",
+      "type": "paragraph",
+      "content": "The warehouse has scheduled Truck BD-102 for loading at 10:00 AM. When warehouse workers begin picking the laptops, they discover that only 350 of the required 500 laptops are available in the shipping zone. The remaining 150 units are still undergoing quality inspection."
+    },
+    {
+      "id": "SEC6",
+      "type": "heading",
+      "title": "Current System Status"
+    },
+    {
+      "id": "SEC7",
+      "type": "table",
+      "title": "Warehouse Situation",
+      "headers": [
+        "Business Object",
+        "Status"
+      ],
+      "rows": [
+        [
+          "Freight Order",
+          "Created"
+        ],
+        [
+          "Warehouse Order",
+          "Picking in Progress"
+        ],
+        [
+          "Loading",
+          "Blocked"
+        ],
+        [
+          "Goods Availability",
+          "70%"
+        ],
+        [
+          "Delivery Deadline",
+          "Tomorrow 9:00 AM"
+        ]
+      ]
+    },
+    {
+      "id": "SEC8",
+      "type": "heading",
+      "title": "Business Impact"
+    },
+    {
+      "id": "SEC9",
+      "type": "bullet-list",
+      "items": [
+        "Truck is waiting at the dock.",
+        "Carrier detention charges may apply.",
+        "Customer delivery SLA is at risk.",
+        "Warehouse resources are idle.",
+        "Transportation schedule may require replanning."
+      ]
+    },
+    {
+      "id": "SEC10",
+      "type": "heading",
+      "title": "Your Investigation Tasks"
+    },
+    {
+      "id": "SEC11",
+      "type": "bullet-list",
+      "items": [
+        "Check SAP EWM warehouse monitor.",
+        "Verify stock availability.",
+        "Identify reason for inventory shortage.",
+        "Communicate with warehouse supervisor.",
+        "Evaluate transportation impact.",
+        "Decide whether to wait, partially load or replan."
+      ]
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Decision Flow"
+    },
+    {
+      "id": "SEC13",
+      "type": "process-flow",
+      "title": "Warehouse Delay Resolution",
+      "orientation": "horizontal",
+      "steps": [
+        "Warehouse Alert",
+        "Inventory Verification",
+        "Quality Inspection Check",
+        "Planner Notification",
+        "Transportation Decision",
+        "Execution Update"
+      ]
+    },
+    {
+      "id": "SEC14",
+      "type": "heading",
+      "title": "Unexpected Twist"
+    },
+    {
+      "id": "SEC15",
+      "type": "paragraph",
+      "content": "Quality inspection informs you that the remaining 150 laptops will be released in approximately 45 minutes. However, the carrier's truck can wait only 30 minutes without additional detention charges. Waiting longer will also affect the driver's next scheduled pickup."
+    },
+    {
+      "id": "SEC16",
+      "type": "table",
+      "title": "Consultant Decision Analysis",
+      "headers": [
+        "Option",
+        "Business Consequence"
+      ],
+      "rows": [
+        [
+          "Wait for complete quantity",
+          "Customer receives full shipment but detention charges increase."
+        ],
+        [
+          "Dispatch partial shipment",
+          "Meets schedule but customer receives incomplete order."
+        ],
+        [
+          "Assign another truck later",
+          "Additional transportation cost."
+        ],
+        [
+          "Discuss with customer and sales team",
+          "Allows business-driven decision based on customer priority."
+        ]
+      ]
+    },
+    {
+      "id": "SEC17",
+      "type": "heading",
+      "title": "Recommended Consultant Solution"
+    },
+    {
+      "id": "SEC18",
+      "type": "paragraph",
+      "content": "The consultant coordinates with Sales, Warehouse and Transportation teams. After discussing the customer's priority, the customer agrees to receive the complete shipment. The planner updates the expected loading time, informs the carrier about the delay, obtains approval for the detention charge and updates the Freight Order with the revised execution schedule."
+    },
+    {
+      "id": "SEC19",
+      "type": "callout",
+      "calloutType": "best-practice",
+      "title": "Consultant Best Practice",
+      "content": "Never make transportation decisions in isolation. Always coordinate with Warehouse (SAP EWM), Sales, Customer Service and the Carrier before changing execution plans. Cross-functional communication is critical in production support."
+    },
+    {
+      "id": "SEC20",
+      "type": "callout",
+      "calloutType": "example",
+      "title": "Real Production Incident",
+      "content": "An automotive manufacturer experienced repeated loading delays because quality inspection releases were not synchronized with transportation planning. The SAP TM and SAP EWM integration was enhanced to automatically notify planners when inventory became available, reducing loading delays by over 35%."
+    },
+    {
+      "id": "SEC21",
+      "type": "callout",
+      "calloutType": "interview-tip",
+      "title": "Accenture Scenario Question",
+      "content": "During loading, only 70% of the goods are available. Would you dispatch the truck or wait? A consultant should first gather business information, evaluate customer priority, assess financial impact, coordinate with stakeholders and then recommend the most appropriate business decision."
+    },
+    {
+      "id": "SEC22",
+      "type": "heading",
+      "title": "Lab Outcome"
+    },
+    {
+      "id": "SEC23",
+      "type": "bullet-list",
+      "items": [
+        "Warehouse issue identified.",
+        "SAP EWM coordination completed.",
+        "Transportation schedule updated.",
+        "Carrier informed about revised loading time.",
+        "Customer delivery commitment maintained through coordinated decision-making.",
+        "Project continues to Lab 5: Truck Breakdown During Transit & Transportation Replanning."
+      ]
+    }
+  ]
+}

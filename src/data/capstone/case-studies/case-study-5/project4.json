@@ -1,0 +1,397 @@
+{
+  "id": "S5CP4",
+  "module": "Sprint 5",
+  "projectNo": 4,
+  "title": "Smart Manufacturing Ltd. - Transportation Planning & Warehouse Optimization",
+  "difficulty": "Advanced+",
+  "duration": "5 Days",
+  "industry": "Discrete Manufacturing",
+  "objective": "Design an SAP TM solution that optimizes transportation planning, warehouse loading schedules, carrier utilization and freight costs while handling production constraints and urgent customer orders.",
+  "learningObjectives": [
+    "Design integrated transportation and warehouse planning flows",
+    "Prioritize urgent shipments using business rules",
+    "Improve load consolidation and truck utilization",
+    "Handle resource and bay constraints in planning",
+    "Define KPI-based optimization outcomes",
+    "Propose process improvements for operational resilience"
+  ],
+  "sections": [
+    {
+      "id": "SEC1",
+      "type": "heading",
+      "title": "Project Statement"
+    },
+    {
+      "id": "SEC2",
+      "type": "paragraph",
+      "content": "Smart Manufacturing Ltd. manufactures industrial motors and electrical equipment for customers across India. Daily production exceeds 800 customer orders. Transportation planning is partially automated, but warehouse loading bottlenecks, vehicle shortages and urgent customer requests frequently delay deliveries. Management wants SAP TM to improve transportation planning while coordinating efficiently with warehouse operations."
+    },
+    {
+      "id": "SEC3",
+      "type": "heading",
+      "title": "Business Objectives"
+    },
+    {
+      "id": "SEC4",
+      "type": "bullet-list",
+      "items": [
+        "Increase warehouse loading efficiency.",
+        "Reduce truck waiting time.",
+        "Improve truck utilization above 92%.",
+        "Prioritize urgent customer deliveries.",
+        "Reduce transportation planning effort.",
+        "Improve carrier utilization."
+      ]
+    },
+    {
+      "id": "SEC5",
+      "type": "heading",
+      "title": "Business Requirements"
+    },
+    {
+      "id": "SEC6",
+      "type": "table",
+      "title": "Functional Requirements",
+      "headers": [
+        "Requirement",
+        "Priority"
+      ],
+      "rows": [
+        [
+          "Automatic Planning",
+          "High"
+        ],
+        [
+          "Load Consolidation",
+          "High"
+        ],
+        [
+          "Warehouse Appointment Coordination",
+          "High"
+        ],
+        [
+          "Urgent Shipment Planning",
+          "High"
+        ],
+        [
+          "Freight Settlement",
+          "Medium"
+        ],
+        [
+          "Transportation KPI Dashboard",
+          "Medium"
+        ]
+      ]
+    },
+    {
+      "id": "SEC7",
+      "type": "heading",
+      "title": "Provided Business Data"
+    },
+    {
+      "id": "SEC8",
+      "type": "table",
+      "title": "Manufacturing Plants",
+      "headers": [
+        "Plant",
+        "Location",
+        "Daily Capacity"
+      ],
+      "rows": [
+        [
+          "PL01",
+          "Hyderabad",
+          "450 Orders"
+        ],
+        [
+          "PL02",
+          "Pune",
+          "350 Orders"
+        ]
+      ]
+    },
+    {
+      "id": "SEC9",
+      "type": "table",
+      "title": "Warehouse Loading Bays",
+      "headers": [
+        "Bay",
+        "Maximum Trucks per Hour"
+      ],
+      "rows": [
+        [
+          "Bay-01",
+          "2"
+        ],
+        [
+          "Bay-02",
+          "3"
+        ],
+        [
+          "Bay-03",
+          "2"
+        ]
+      ]
+    },
+    {
+      "id": "SEC10",
+      "type": "table",
+      "title": "Transportation Resources",
+      "headers": [
+        "Truck",
+        "Capacity",
+        "Current Status"
+      ],
+      "rows": [
+        [
+          "TR001",
+          "20 Tons",
+          "Available"
+        ],
+        [
+          "TR002",
+          "25 Tons",
+          "Available"
+        ],
+        [
+          "TR003",
+          "30 Tons",
+          "Maintenance"
+        ],
+        [
+          "TR004",
+          "18 Tons",
+          "Available"
+        ],
+        [
+          "TR005",
+          "15 Tons",
+          "Available"
+        ]
+      ]
+    },
+    {
+      "id": "SEC11",
+      "type": "table",
+      "title": "Customer Orders",
+      "headers": [
+        "Order",
+        "Priority",
+        "Destination",
+        "Weight"
+      ],
+      "rows": [
+        [
+          "SO4001",
+          "Normal",
+          "Bengaluru",
+          "12 Tons"
+        ],
+        [
+          "SO4002",
+          "Urgent",
+          "Chennai",
+          "18 Tons"
+        ],
+        [
+          "SO4003",
+          "Normal",
+          "Vijayawada",
+          "8 Tons"
+        ],
+        [
+          "SO4004",
+          "Urgent",
+          "Mysuru",
+          "16 Tons"
+        ],
+        [
+          "SO4005",
+          "Normal",
+          "Coimbatore",
+          "10 Tons"
+        ]
+      ]
+    },
+    {
+      "id": "SEC12",
+      "type": "heading",
+      "title": "Project Tasks"
+    },
+    {
+      "id": "SEC13",
+      "type": "numbered-list",
+      "items": [
+        "Analyze the transportation requirements.",
+        "Identify SAP TM master data.",
+        "Design the transportation planning process.",
+        "Recommend a warehouse loading strategy.",
+        "Identify which orders should receive transportation priority.",
+        "Determine which orders can be consolidated.",
+        "Recommend transportation resources.",
+        "Design carrier selection logic.",
+        "Prepare five positive test scenarios.",
+        "Prepare five negative test scenarios.",
+        "Recommend transportation KPIs.",
+        "Suggest business process improvements."
+      ]
+    },
+    {
+      "id": "SEC14",
+      "type": "heading",
+      "title": "Business Challenges"
+    },
+    {
+      "id": "SEC15",
+      "type": "table",
+      "title": "Unexpected Situations",
+      "headers": [
+        "Situation",
+        "Expected Analysis"
+      ],
+      "rows": [
+        [
+          "Truck TR003 unavailable",
+          "Recommend alternate transportation resource"
+        ],
+        [
+          "Warehouse Bay-02 occupied",
+          "Adjust loading schedule"
+        ],
+        [
+          "Urgent customer order received",
+          "Reprioritize planning"
+        ],
+        [
+          "Carrier declines shipment",
+          "Select backup carrier"
+        ],
+        [
+          "Truck exceeds capacity",
+          "Split Freight Units or assign another vehicle"
+        ]
+      ]
+    },
+    {
+      "id": "SEC16",
+      "type": "heading",
+      "title": "Optimization Challenge"
+    },
+    {
+      "id": "SEC17",
+      "type": "paragraph",
+      "content": "Management wants to reduce truck waiting time by 30% without purchasing additional vehicles. Recommend changes to transportation planning, warehouse scheduling and load consolidation that achieve this objective."
+    },
+    {
+      "id": "SEC18",
+      "type": "heading",
+      "title": "Expected Deliverables"
+    },
+    {
+      "id": "SEC19",
+      "type": "checklist",
+      "items": [
+        "Requirement Analysis",
+        "SAP TM Master Data",
+        "Transportation Planning Design",
+        "Warehouse Coordination Strategy",
+        "Load Consolidation Analysis",
+        "Carrier Selection Strategy",
+        "Positive Test Cases",
+        "Negative Test Cases",
+        "KPI Dashboard",
+        "Optimization Recommendations",
+        "Final Report",
+        "PowerPoint Presentation"
+      ]
+    },
+    {
+      "id": "SEC20",
+      "type": "heading",
+      "title": "Evaluation Rubric"
+    },
+    {
+      "id": "SEC21",
+      "type": "table",
+      "title": "Marks Distribution",
+      "headers": [
+        "Evaluation Area",
+        "Marks"
+      ],
+      "rows": [
+        [
+          "Requirement Analysis",
+          "10"
+        ],
+        [
+          "SAP TM Design",
+          "20"
+        ],
+        [
+          "Transportation Planning",
+          "20"
+        ],
+        [
+          "Problem Solving",
+          "15"
+        ],
+        [
+          "Testing",
+          "10"
+        ],
+        [
+          "Documentation",
+          "10"
+        ],
+        [
+          "Presentation",
+          "5"
+        ],
+        [
+          "Viva",
+          "10"
+        ]
+      ]
+    },
+    {
+      "id": "SEC22",
+      "type": "heading",
+      "title": "Submission Checklist"
+    },
+    {
+      "id": "SEC23",
+      "type": "checklist",
+      "items": [
+        "Business Requirement Analysis",
+        "Transportation Process",
+        "Warehouse Strategy",
+        "Carrier Strategy",
+        "Optimization Proposal",
+        "Test Cases",
+        "Final Report",
+        "PowerPoint Presentation"
+      ]
+    },
+    {
+      "id": "SEC24",
+      "type": "heading",
+      "title": "Viva Preparation"
+    },
+    {
+      "id": "SEC25",
+      "type": "bullet-list",
+      "items": [
+        "How would you prioritize urgent customer orders?",
+        "How can SAP TM reduce truck waiting time?",
+        "How does warehouse loading affect transportation planning?",
+        "Why is load consolidation important?",
+        "How would you handle a truck under maintenance?",
+        "How do transportation resources influence planning?",
+        "What happens if warehouse capacity becomes a bottleneck?",
+        "How can KPIs improve transportation performance?",
+        "How would you balance transportation cost and delivery commitments?",
+        "Which SAP TM concepts were most important in this project?"
+      ]
+    }
+  ]
+}
