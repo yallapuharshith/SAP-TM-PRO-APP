@@ -39,6 +39,8 @@ function App() {
   return (
     <ExamProvider>
       <Routes>
+        <Route path="/SAP-TM-PRO-APP" element={<Navigate to="/" replace />} />
+        <Route path="/SAP-TM-PRO-APP/*" element={<Navigate to="/" replace />} />
         <Route
           path="/"
           element={

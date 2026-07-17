@@ -7,6 +7,14 @@ import './styles/globals.css';
 const baseUrl = import.meta.env.BASE_URL;
 const basePath = baseUrl.endsWith('/') ? baseUrl.slice(0, -1) : baseUrl;
 
+const hash = window.location.hash || '';
+if (hash.startsWith('#/SAP-TM-PRO-APP')) {
+  const normalizedHash = hash.replace(/^#\/SAP-TM-PRO-APP\/?/, '#/');
+  if (normalizedHash !== hash) {
+    window.history.replaceState(null, '', `${window.location.pathname}${normalizedHash}${window.location.search}`);
+  }
+}
+
 if (!window.location.hash) {
   let routePath = window.location.pathname;
 
